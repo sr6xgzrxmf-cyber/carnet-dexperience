@@ -12,18 +12,32 @@ export default function ParcoursPage() {
   const items = getAllParcours().filter((it) => it.meta.type !== "formation");
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
+      {/* Navigation */}
+      <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+        <Link href="/" className="hover:underline">
+          ← Accueil
+        </Link>
+        <Link href="/articles" className="hover:underline">
+          Articles
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          Contact
+        </Link>
+      </nav>
+
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">Parcours</h1>
-        <p className="text-neutral-700">
-          Une timeline chronologique&nbsp;: expériences, rôles, contextes, apprentissages.
+        <p className="text-neutral-700 dark:text-neutral-300">
+          Une timeline chronologique&nbsp;: expériences, rôles, contextes,
+          apprentissages.
         </p>
       </header>
 
-      <ol className="mt-10 space-y-6 border-l border-neutral-200 pl-6">
+      <ol className="mt-10 space-y-6 border-l border-neutral-200 dark:border-neutral-800 pl-6">
         {items.map((item) => (
           <li key={item.slug} className="relative">
-            <span className="absolute -left-[30px] top-2 h-3 w-3 rounded-full border border-neutral-300 bg-white" />
+            <span className="absolute -left-[30px] top-2 h-3 w-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950" />
 
             <div className="space-y-2">
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -33,32 +47,41 @@ export default function ParcoursPage() {
                 >
                   {item.meta.title}
                 </Link>
-                <span className="text-sm text-neutral-600">
+
+                <span className="text-sm text-neutral-600 dark:text-neutral-400">
                   {formatRange(item.meta.start, item.meta.end)}
                 </span>
               </div>
 
-              <p className="text-sm text-neutral-700">
-                {(item.meta.company ?? "")}
-                {item.meta.location ? ` — ${item.meta.location}` : ""}
-                {item.meta.role ? ` • ${item.meta.role}` : ""}
-              </p>
+              <div className="text-sm text-neutral-700 dark:text-neutral-300">
+                <div>
+                  {item.meta.company ?? ""}
+                  {item.meta.location ? ` — ${item.meta.location}` : ""}
+                </div>
 
-              {Array.isArray(item.meta.highlights) && item.meta.highlights.length > 0 && (
-                <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900">
-                  {item.meta.highlights.slice(0, 3).map((h) => (
-                    <li key={h}>{h}</li>
-                  ))}
-                </ul>
-              )}
+                {item.meta.role ? (
+                  <div className="mt-1 text-neutral-600 dark:text-neutral-400">
+                    {item.meta.role}
+                  </div>
+                ) : null}
+              </div>
+
+              {Array.isArray(item.meta.highlights) &&
+                item.meta.highlights.length > 0 && (
+                  <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
+                    {item.meta.highlights.slice(0, 3).map((h) => (
+                      <li key={h}>{h}</li>
+                    ))}
+                  </ul>
+                )}
             </div>
           </li>
         ))}
       </ol>
 
-      <div className="mt-12 rounded-2xl border border-neutral-200 p-6">
+      <div className="mt-12 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30">
         <h2 className="text-lg font-semibold">Formation</h2>
-        <p className="mt-2 text-sm text-neutral-700">
+        <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
           Accessible sur une page dédiée (on la fait juste après si tu veux).
         </p>
       </div>

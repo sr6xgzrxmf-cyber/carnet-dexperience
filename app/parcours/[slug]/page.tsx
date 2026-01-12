@@ -18,37 +18,53 @@ function formatRange(start?: string, end?: string) {
 export default async function ParcoursDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const item = getParcoursBySlug(params.slug);
+  const { slug } = await params;
+
+  const item = getParcoursBySlug(slug);
   if (!item) return notFound();
 
   const contentHtml = await markdownToHtml(item.content);
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <div className="mb-8">
-        <Link href="/parcours" className="text-sm text-neutral-600 hover:underline">
+    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
+      {/* Navigation */}
+      <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+        <Link href="/parcours" className="hover:underline">
           ← Retour au parcours
         </Link>
-      </div>
+        <Link href="/" className="hover:underline">
+          Accueil
+        </Link>
+        <Link href="/articles" className="hover:underline">
+          Articles
+        </Link>
+        <Link href="/contact" className="hover:underline">
+          Contact
+        </Link>
+      </nav>
 
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">{item.meta.title}</h1>
 
-        <p className="text-sm text-neutral-700">
-          {formatRange(item.meta.start, item.meta.end)}
-          {item.meta.company ? ` • ${item.meta.company}` : ""}
-          {item.meta.location ? ` — ${item.meta.location}` : ""}
-          {item.meta.role ? ` • ${item.meta.role}` : ""}
-        </p>
+        <div className="text-sm text-neutral-700 dark:text-neutral-300">
+          <div>
+            {formatRange(item.meta.start, item.meta.end)}
+            {item.meta.company ? ` • ${item.meta.company}` : ""}
+            {item.meta.location ? ` — ${item.meta.location}` : ""}
+          </div>
+          {item.meta.role ? (
+            <div className="mt-1 text-neutral-600 dark:text-neutral-400">{item.meta.role}</div>
+          ) : null}
+        </div>
 
         {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 && (
           <div className="flex flex-wrap gap-2 pt-2">
             {item.meta.tags.map((t) => (
               <span
                 key={t}
-                className="rounded-full border border-neutral-200 px-3 py-1 text-xs text-neutral-700"
+                className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-xs text-neutral-700 dark:text-neutral-300 bg-white/50 dark:bg-neutral-950/30"
               >
                 {t}
               </span>
@@ -58,7 +74,25 @@ export default async function ParcoursDetailPage({
       </header>
 
       <article
-        className="prose prose-neutral mt-10 max-w-none text-[14px] leading-[1.55]"
+        className="
+          prose prose-neutral dark:prose-invert
+          mt-10 max-w-none
+          text-[12px] leading-6
+
+          prose-p:my-3 prose-p:leading-6
+          prose-li:my-1 prose-li:leading-6
+
+          prose-ul:list-disc prose-ul:pl-5
+          prose-ol:list-decimal prose-ol:pl-5
+
+          prose-hr:hidden
+
+          prose-h2:mt-10 prose-h2:mb-3
+          prose-h2:text-xl prose-h2:font-semibold prose-h2:tracking-tight
+
+          prose-h3:mt-8 prose-h3:mb-2
+          prose-h3:text-lg prose-h3:font-semibold prose-h3:tracking-tight
+        "
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
     </main>
