@@ -3,58 +3,58 @@ export default function HomePage() {
     <main className="mx-auto max-w-3xl px-6 py-16">
       {/* Header */}
 <header className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-  {/* TEXTE */}
-  <div className="space-y-4">
+  {/* Colonne texte */}
+  <div className="space-y-5">
     <h1 className="text-4xl font-semibold tracking-tight">
       Carnet d’expérience
     </h1>
 
-    <p className="text-lg text-neutral-700">
-      Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
-    </p>
+    <div className="max-w-md space-y-3">
+      <p className="text-lg text-neutral-700 leading-relaxed">
+        Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
+      </p>
 
-    <p className="text-xl font-medium">
-      Je fais le lien entre stratégie et terrain.
-    </p>
+<p className="text-xl font-medium leading-snug">
+  Je fais le lien entre stratégie&nbsp;et&nbsp;terrain.
+</p>
+    </div>
 
-    <div className="flex flex-wrap gap-3 pt-2">
+    <div className="flex flex-wrap md:flex-nowrap gap-3 pt-2">
       <a
         href="/parcours"
-        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
+        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 whitespace-nowrap"
       >
         Voir le parcours
       </a>
       <a
         href="/articles"
-        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
+        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 whitespace-nowrap"
       >
         Lire les articles
       </a>
       <a
         href="/contact"
-        className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
+        className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 whitespace-nowrap"
       >
         Me contacter
       </a>
     </div>
   </div>
 
-  {/* PHOTO */}
+  {/* Colonne image */}
   <div className="flex justify-center md:justify-end">
-    <div className="relative w-48 h-48 rounded-full bg-white shadow-lg overflow-hidden flex items-center justify-center">
+    <div className="relative w-56 aspect-[3/4] rounded-full bg-white shadow-lg overflow-hidden flex items-end justify-center">
       <img
         src="/images/laurent-portrait.png"
         alt="Laurent Guyonnet"
-        className="w-full h-full object-contain p-3"
+        className="w-full h-full object-cover object-top"
       />
     </div>
   </div>
-
 </header>
 
       {/* Body */}
-      <section className="mt-12 space-y-10 text-base leading-7 text-neutral-900">
+      <section className="mt-12 space-y-8 text-[14px] leading-[1.55] text-neutral-900">
         <div className="space-y-3">
           <h2 className="text-xl font-semibold">Bienvenue</h2>
           <p>
