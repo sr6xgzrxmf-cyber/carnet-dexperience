@@ -2,40 +2,56 @@ export default function HomePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
       {/* Header */}
-      <header className="space-y-4">
-        <h1 className="text-4xl font-semibold tracking-tight">
-          Carnet d’expérience
-        </h1>
+<header className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <p className="text-lg text-neutral-700">
-          Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
-        </p>
+  {/* TEXTE */}
+  <div className="space-y-4">
+    <h1 className="text-4xl font-semibold tracking-tight">
+      Carnet d’expérience
+    </h1>
 
-        <p className="text-xl font-medium">
-          Je fais le lien entre stratégie et terrain.
-        </p>
+    <p className="text-lg text-neutral-700">
+      Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
+    </p>
 
-        <div className="flex flex-wrap gap-3 pt-2">
-          <a
-            href="/parcours"
-            className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
-          >
-            Voir le parcours
-          </a>
-          <a
-            href="/articles"
-            className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
-          >
-            Lire les articles
-          </a>
-          <a
-            href="/contact"
-            className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
-          >
-            Me contacter
-          </a>
-        </div>
-      </header>
+    <p className="text-xl font-medium">
+      Je fais le lien entre stratégie et terrain.
+    </p>
+
+    <div className="flex flex-wrap gap-3 pt-2">
+      <a
+        href="/parcours"
+        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
+      >
+        Voir le parcours
+      </a>
+      <a
+        href="/articles"
+        className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50"
+      >
+        Lire les articles
+      </a>
+      <a
+        href="/contact"
+        className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800"
+      >
+        Me contacter
+      </a>
+    </div>
+  </div>
+
+  {/* PHOTO */}
+  <div className="flex justify-center md:justify-end">
+    <div className="relative w-48 h-48 rounded-full bg-white shadow-lg overflow-hidden flex items-center justify-center">
+      <img
+        src="/images/laurent-portrait.png"
+        alt="Laurent Guyonnet"
+        className="w-full h-full object-contain p-3"
+      />
+    </div>
+  </div>
+
+</header>
 
       {/* Body */}
       <section className="mt-12 space-y-10 text-base leading-7 text-neutral-900">
