@@ -73,28 +73,52 @@ export default async function ParcoursDetailPage({
         )}
       </header>
 
-      <article
-        className="
-          prose prose-neutral dark:prose-invert
-          mt-10 max-w-none
-          text-[12px] leading-6
+      {/* Contenu markdown -> HTML */}
+<article
+  className="
+    mt-10 max-w-none
+    text-[12px] leading-6
+    text-neutral-900 dark:text-neutral-100
 
-          prose-p:my-3 prose-p:leading-6
-          prose-li:my-1 prose-li:leading-6
+    /* Paragraphes: pas de marge par défaut, mais un léger espacement entre eux */
+    [&_p]:m-0
+    [&_p]:leading-6
+    [&_p+_p]:mt-2
 
-          prose-ul:list-disc prose-ul:pl-5
-          prose-ol:list-decimal prose-ol:pl-5
+    /* Respiration après un titre (le premier paragraphe après h2) */
+    [&_h2+_p]:mt-4
 
-          prose-hr:hidden
+    /* Titres de section (Contexte, Mon rôle, ...) */
+    [&_h2]:mt-10
+    [&_h2]:mb-2
+    [&_h2]:text-xl
+    [&_h2]:font-semibold
+    [&_h2]:tracking-tight
+    [&_h2]:border-b
+    [&_h2]:border-neutral-200
+    dark:[&_h2]:border-neutral-800
+    [&_h2]:pb-2
 
-          prose-h2:mt-10 prose-h2:mb-3
-          prose-h2:text-xl prose-h2:font-semibold prose-h2:tracking-tight
+    /* Sous-titres éventuels */
+    [&_h3]:mt-8
+    [&_h3]:mb-2
+    [&_h3]:text-lg
+    [&_h3]:font-semibold
+    [&_h3]:tracking-tight
 
-          prose-h3:mt-8 prose-h3:mb-2
-          prose-h3:text-lg prose-h3:font-semibold prose-h3:tracking-tight
-        "
-        dangerouslySetInnerHTML={{ __html: contentHtml }}
-      />
+    /* Listes: rapprochées du texte */
+    [&_ul]:my-0
+    [&_ul]:list-disc
+    [&_ul]:pl-5
+    [&_li]:my-1
+    [&_p+_ul]:mt-2
+    [&_ul+_p]:mt-2
+
+    /* Masque les séparateurs markdown --- */
+    [&_hr]:hidden
+  "
+  dangerouslySetInnerHTML={{ __html: contentHtml }}
+/>
     </main>
   );
 }

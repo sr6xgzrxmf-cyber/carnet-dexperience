@@ -52,18 +52,14 @@ En haute saison, ces interactions étaient courtes, efficaces, et très orienté
 
 Sur mon secteur multi-régional, cette stratégie a produit un résultat clair :
 - **+15 % de chiffre d’affaires par rapport à l’année précédente**
-
-Ce gain ne venait pas d’un accroissement du marché, mais d’une meilleure **activation du réseau existant**.
-
-Les vendeurs que je suivais devenaient de vrais relais de la marque Parc Astérix dans leurs agences.
+- Ce gain ne venait pas d’un accroissement du marché, mais d’une meilleure **activation du réseau existant**.
+- Les vendeurs que je suivais devenaient de vrais relais de la marque Parc Astérix dans leurs agences.
 
 ---
 
 ## Ce que j’en retiens
 
-Ce poste m’a appris quelque chose de fondamental que je n’ai jamais oublié :
-
-> Ce ne sont pas les organisations qui font la différence, ce sont les personnes qui les incarnent sur le terrain.
+Ce poste m’a appris quelque chose de fondamental que je n’ai jamais oublié : Ce ne sont pas les organisations qui font la différence, ce sont les personnes qui les incarnent sur le terrain.
 
 En travaillant directement avec les meilleurs vendeurs, j’ai compris très tôt que :
 - la valeur est toujours **dans l’interface**
