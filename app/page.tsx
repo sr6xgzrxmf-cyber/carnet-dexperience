@@ -1,3 +1,6 @@
+import Link from "next/link";
+import ContactButton from "@/components/ContactButton";
+
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
@@ -20,24 +23,24 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap gap-3 pt-2">
-            <a
+            <Link
               href="/parcours"
               className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
             >
               Voir le parcours
-            </a>
-            <a
+            </Link>
+
+            <Link
               href="/articles"
               className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
             >
               Lire les articles
-            </a>
-            <a
-              href="/contact"
-              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 whitespace-nowrap hover:bg-neutral-800 dark:hover:bg-neutral-200"
-            >
-              Me contacter
-            </a>
+            </Link>
+
+            <ContactButton
+              label="Me contacter"
+              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 whitespace-nowrap hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0"
+            />
           </div>
         </div>
 
@@ -89,15 +92,23 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold">Ce que vous trouverez ici</h2>
           <ul className="list-disc space-y-1 pl-5 text-neutral-800 dark:text-neutral-200">
             <li>
-              <strong className="text-neutral-900 dark:text-neutral-100">Un parcours</strong> — raconté, pas résumé.
+              <strong className="text-neutral-900 dark:text-neutral-100">
+                Un parcours
+              </strong>{" "}
+              — raconté, pas résumé.
             </li>
             <li>
-              <strong className="text-neutral-900 dark:text-neutral-100">Des articles</strong> — issus du terrain, de la formation,
-              du management et de l’expérience client.
+              <strong className="text-neutral-900 dark:text-neutral-100">
+                Des articles
+              </strong>{" "}
+              — issus du terrain, de la formation, du management et de
+              l’expérience client.
             </li>
             <li>
-              <strong className="text-neutral-900 dark:text-neutral-100">Une méthode de travail</strong> — fondée sur l’exigence,
-              la simplicité et la mesure de l’impact.
+              <strong className="text-neutral-900 dark:text-neutral-100">
+                Une méthode de travail
+              </strong>{" "}
+              — fondée sur l’exigence, la simplicité et la mesure de l’impact.
             </li>
           </ul>
           <p className="text-neutral-800 dark:text-neutral-200">
@@ -127,25 +138,26 @@ export default function HomePage() {
             Vous pouvez lire mon parcours, parcourir les articles, ou m’écrire
             si vous souhaitez échanger, questionner ou travailler ensemble.
           </p>
+
           <div className="flex flex-wrap gap-3 pt-2">
-            <a
+            <Link
               href="/parcours"
               className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
             >
               Parcours
-            </a>
-            <a
+            </Link>
+
+            <Link
               href="/articles"
               className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
             >
               Articles
-            </a>
-            <a
-              href="/contact"
-              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200"
-            >
-              Contact
-            </a>
+            </Link>
+
+            <ContactButton
+              label="Contact"
+              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0"
+            />
           </div>
         </div>
       </section>

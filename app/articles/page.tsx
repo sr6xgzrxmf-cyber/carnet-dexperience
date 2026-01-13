@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
+import ContactButton from "@/components/ContactButton";
 
 function formatDate(date?: string) {
   if (!date) return "";
-  // garde simple, stable, sans i18n lourde
-  // attendu: "YYYY-MM-DD"
   const [y, m, d] = date.split("-");
   if (!y || !m || !d) return date;
   return `${d}/${m}/${y}`;
@@ -21,12 +20,15 @@ export default function ArticlesPage() {
         <Link href="/" className="hover:underline">
           ← Accueil
         </Link>
+
         <Link href="/parcours" className="hover:underline">
           Parcours
         </Link>
-        <Link href="/contact" className="hover:underline">
-          Contact
-        </Link>
+
+        <ContactButton
+          label="Contact"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+        />
       </nav>
 
       <header className="space-y-3">
@@ -36,7 +38,7 @@ export default function ArticlesPage() {
         </p>
       </header>
 
-      {/* Grille responsive: 1 / 2 / 3 colonnes */}
+      {/* Grille responsive */}
       <section className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((a) => {
           const href = `/articles/${a.slug}`;
@@ -57,7 +59,6 @@ export default function ArticlesPage() {
                     fill
                     className="object-cover transition group-hover:scale-[1.02]"
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    priority={false}
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center text-sm text-neutral-500 dark:text-neutral-400">
@@ -69,8 +70,8 @@ export default function ArticlesPage() {
               {/* Contenu */}
               <div className="p-5">
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-600 dark:text-neutral-400">
-                  {a.meta.date ? <span>{formatDate(a.meta.date)}</span> : null}
-                  {a.meta.source ? <span>• {a.meta.source}</span> : null}
+                  {a.meta.date && <span>{formatDate(a.meta.date)}</span>}
+                  {a.meta.source && <span>• {a.meta.source}</span>}
                 </div>
 
                 <h2 className="mt-2 text-base font-semibold leading-snug tracking-tight">
@@ -87,7 +88,7 @@ export default function ArticlesPage() {
                   </p>
                 )}
 
-                {Array.isArray(a.meta.tags) && a.meta.tags.length > 0 ? (
+                {Array.isArray(a.meta.tags) && a.meta.tags.length > 0 && (
                   <div className="mt-4 flex flex-wrap gap-2">
                     {a.meta.tags.slice(0, 4).map((t) => (
                       <span
@@ -98,7 +99,7 @@ export default function ArticlesPage() {
                       </span>
                     ))}
                   </div>
-                ) : null}
+                )}
               </div>
             </Link>
           );

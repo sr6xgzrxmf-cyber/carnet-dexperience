@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllParcours } from "@/lib/parcours";
+import ContactButton from "@/components/ContactButton";
 
 function formatRange(start?: string, end?: string) {
   if (!start && !end) return "";
@@ -21,9 +22,11 @@ export default function ParcoursPage() {
         <Link href="/articles" className="hover:underline">
           Articles
         </Link>
-        <Link href="/contact" className="hover:underline">
-          Contact
-        </Link>
+
+        <ContactButton
+          label="Contact"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+        />
       </nav>
 
       <header className="space-y-3">
@@ -79,15 +82,15 @@ export default function ParcoursPage() {
         ))}
       </ol>
 
-<Link
-  href="/parcours/formation"
-  className="mt-12 block rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30 hover:border-neutral-400 dark:hover:border-neutral-600 transition"
->
-  <h2 className="text-lg font-semibold">Formation</h2>
-  <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-    Voir le parcours de formation et les apprentissages.
-  </p>
-</Link>
+      <Link
+        href="/parcours/formation"
+        className="mt-12 block rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30 hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+      >
+        <h2 className="text-lg font-semibold">Formation</h2>
+        <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+          Voir le parcours de formation et les apprentissages.
+        </p>
+      </Link>
     </main>
   );
 }
