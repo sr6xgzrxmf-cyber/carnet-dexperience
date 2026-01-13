@@ -1,13 +1,16 @@
 ---
-title: "Exploration du management par coaching"
+title: "Management par coaching : accompagner pour faire grandir"
 date: "2023-07-20"
-excerpt: "Accompagnement, formation et évaluation au service du développement des équipes."
+excerpt: "Comment le management par coaching développe l’autonomie, la performance et l’épanouissement des équipes grâce à l’écoute et au feedback."
+cover: /images/articles/management-coaching.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - management
   - coaching
-  - formation
   - leadership
+  - formation
   - développement
+  - accompagnement
 ---
 Exploration du Management par Coaching : Accompagnement, Formation et Évaluation 🚀🎯
 
