@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Carnet d’expérience",
   description: "Carnet d’expérience — parcours, articles, méthodes et retours de terrain.",
+  verification: {
+    google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw" // ← colle la valeur exacte ici
+  }
 };
 
 export default function RootLayout({
