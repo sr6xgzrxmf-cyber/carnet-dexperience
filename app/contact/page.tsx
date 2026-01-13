@@ -1,11 +1,12 @@
 import Link from "next/link";
+import ContactButton from "@/components/ContactButton";
 import ContactForm from "@/components/ContactForm";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbddjpnq";
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
+    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100 text-[14px] leading-[1.55]">
       {/* Navigation */}
       <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
         <Link href="/" className="hover:underline">
@@ -17,6 +18,11 @@ export default function ContactPage() {
         <Link href="/articles" className="hover:underline">
           Articles
         </Link>
+
+        <ContactButton
+          label="Contact"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+        />
       </nav>
 
       <header className="space-y-3">

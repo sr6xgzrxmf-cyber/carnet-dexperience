@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllParcours, getParcoursBySlug, markdownToHtml } from "@/lib/parcours";
+import {
+  getAllParcours,
+  getParcoursBySlug,
+  markdownToHtml,
+} from "@/lib/parcours";
 import ContactButton from "@/components/ContactButton";
 
 export function generateStaticParams() {
@@ -44,14 +48,12 @@ export default async function ParcoursDetailPage({
 
         <ContactButton
           label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
         />
       </nav>
 
       <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">
-          {item.meta.title}
-        </h1>
+        <h1 className="text-3xl font-semibold tracking-tight">{item.meta.title}</h1>
 
         <div className="text-sm text-neutral-700 dark:text-neutral-300">
           <div>
@@ -84,12 +86,11 @@ export default async function ParcoursDetailPage({
       <article
         className="
           mt-10 max-w-none
-          text-[12px] leading-6
           text-neutral-900 dark:text-neutral-100
 
           [&_p]:m-0
-          [&_p]:leading-6
-          [&_p+_p]:mt-2
+          [&_p]:leading-7
+          [&_p+_p]:mt-3
 
           [&_h2+_p]:mt-4
 
@@ -113,8 +114,8 @@ export default async function ParcoursDetailPage({
           [&_ul]:list-disc
           [&_ul]:pl-5
           [&_li]:my-1
-          [&_p+_ul]:mt-2
-          [&_ul+_p]:mt-2
+          [&_p+_ul]:mt-3
+          [&_ul+_p]:mt-3
 
           [&_hr]:hidden
         "

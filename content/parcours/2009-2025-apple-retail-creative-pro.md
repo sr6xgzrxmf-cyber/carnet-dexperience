@@ -70,9 +70,8 @@ C’est à cette période que j’ai développé une spécialisation forte dans 
 Mais cette spécialisation n’était pas marginale :
 elle est rapidement devenue un levier commercial majeur pour le magasin.
 
-⸻
 
-Un Créatif Pro au cœur de l’éducation
+**Un Créatif Pro au cœur de l’éducation**
 
 J'ai intégré rapidement le réseau Apple Education & ADE (Apple Distinguished Educators – EMEIA).
 
@@ -90,30 +89,24 @@ Mon rôle était de faire le lien entre :
 Je n’étais pas là pour « présenter des produits »,
 mais pour traduire la technologie en projets pédagogiques concrets.
 
-⸻
 
-La technologie comme levier d’engagement
+**La technologie comme levier d’engagement**
 
-Mon moteur était simple.
-
-Je savais, par mon propre parcours, que certains élèves apprennent mieux avec :
+Mon moteur était simple. Je savais, par mon propre parcours, que certains élèves apprennent mieux avec :
 	•	l’image,
 	•	la vidéo,
 	•	la narration,
 	•	la création.
 
-Comme lorsque, enfant, je découvrais la télévision, l’informatique, le projecteur ou les premiers ordinateurs à l’école,
-je voyais la technologie comme un amplificateur d’envie d’apprendre.
+Comme lorsque, enfant, je découvrais la télévision, l’informatique, le projecteur ou les premiers ordinateurs à l’école, je voyais la technologie comme un amplificateur d’envie d’apprendre.
 
-L’iPad, pour moi, n’était pas un gadget :
-c’était un moyen pour des enfants qui n’entrent pas dans le moule scolaire classique de trouver leur voix.
+L’iPad, pour moi, n’était pas un gadget : c’était un moyen pour des enfants qui n’entrent pas dans le moule scolaire classique de trouver leur voix.
 
 Pour les enseignants, c’était un nouvel outil pour renouer avec leurs élèves.
 Pour l’institution, c’était une façon de réellement entrer dans l’ère du numérique.
 
-⸻
 
-Organisation de projets éducatifs
+**Organisation de projets éducatifs**
 
 J’ai organisé et animé de nombreux événements pédagogiques en magasin, notamment autour de l’iPad dans l’éducation, bien avant que ces usages ne soient banalisés.
 
@@ -139,9 +132,8 @@ leurs élèves engagés, concentrés, actifs.
 C’est là que la technologie faisait son vrai travail :
 elle changeait le rapport à l’apprentissage.
 
-⸻
 
-Convaincre sans argumenter
+**Convaincre sans argumenter**
 
 La majorité des enseignants que je rencontrais étaient réticents,
 non pas par idéologie, mais parce que :
@@ -163,18 +155,15 @@ Je me suis positionné comme un facilitateur entre :
 	•	l’administration,
 	•	et Apple.
 
-Je rendais possible ce qui semblait trop complexe.
+**Je rendais possible ce qui semblait trop complexe.**
 
 Et je savais que le meilleur argument, ce n’était pas le discours :
 c’était de montrer les élèves apprendre autrement.
 
-⸻
 
-Un impact commercial très réel
+**Un impact commercial très réel**
 
-Côté Apple, ces projets avaient une conséquence directe :
-ils généraient des ventes en volume importantes.
-
+Côté Apple, ces projets avaient une conséquence directe : ils généraient des ventes en volume importantes.
 Quand un établissement adoptait un projet iPad ou Mac, ce n’était pas une machine vendue,
 c’était parfois des centaines.
 
@@ -192,9 +181,8 @@ Apple y trouvait son compte parce que :
 je ne vendais pas un produit,
 je faisais naître un écosystème d’usage.
 
-⸻
 
-Actions caritatives et projets internationaux
+**Actions caritatives et projets internationaux**
 
 Au-delà du cadre strictement commercial, j’ai aussi piloté des actions solidaires autour de l’éducation.
 
@@ -209,9 +197,8 @@ Ces projets combinaient :
 	•	partenaires locaux,
 	•	et alignement avec les valeurs éducatives d’Apple.
 
-⸻
 
-Ce que cette période a construit
+**Ce que cette période a construit**
 
 Montpellier m’a forgé comme Créatif Pro à 360° :
 	•	pédagogue,
@@ -226,9 +213,7 @@ une compétence qui deviendra déterminante pour la suite de mon parcours.
 
 ## Lille (2017–2022)<!-- {"fold":true} -->
 
-À Lille, mon rôle a changé de nature.
-
-Je suis resté **Créatif Pro** dans mon intitulé, mais dans les faits je suis devenu un **acteur clé de l’orchestration quotidienne du magasin**.
+À Lille, mon rôle a changé de nature. Je suis resté **Créatif Pro** dans mon intitulé, mais dans les faits je suis devenu un **acteur clé de l’orchestration quotidienne du magasin**.
 
 L’Apple Store de Lille est un environnement à forte intensité :
 - gros flux clients,

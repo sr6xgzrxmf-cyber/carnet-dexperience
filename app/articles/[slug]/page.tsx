@@ -1,7 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { getAllArticles, getArticleBySlug, markdownToHtml } from "@/lib/articles";
+import {
+  getAllArticles,
+  getArticleBySlug,
+  markdownToHtml,
+} from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
 import ContactButton from "@/components/ContactButton";
@@ -42,13 +46,15 @@ export default async function ArticleDetailPage({
 
         <ContactButton
           label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
         />
       </nav>
 
       {/* Header */}
       <header className="space-y-4">
-        <h1 className="text-3xl font-semibold tracking-tight">{item.meta.title}</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">
+          {item.meta.title}
+        </h1>
 
         <div className="text-sm text-neutral-700 dark:text-neutral-300">
           <div className="flex flex-wrap gap-x-3 gap-y-1">

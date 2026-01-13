@@ -1,14 +1,25 @@
 import Link from "next/link";
+import ContactButton from "@/components/ContactButton";
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
-      
+    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100 text-[14px] leading-[1.55]">
       {/* Navigation */}
       <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-        <Link href="/" className="hover:underline">← Accueil</Link>
-        <Link href="/articles" className="hover:underline">Articles</Link>
-        <Link href="/parcours" className="hover:underline">Parcours</Link>
+        <Link href="/" className="hover:underline">
+          ← Accueil
+        </Link>
+        <Link href="/articles" className="hover:underline">
+          Articles
+        </Link>
+        <Link href="/parcours" className="hover:underline">
+          Parcours
+        </Link>
+
+        <ContactButton
+          label="Contact"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+        />
       </nav>
 
       {/* Header */}
@@ -22,7 +33,7 @@ export default function ContactPage() {
       {/* Formulaire */}
       <section className="mt-10 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-950/30 p-6">
         <form
-          action="https://formspree.io/f/YOUR_FORM_ID"
+          action="https://formspree.io/f/mbddjpnq"
           method="POST"
           className="space-y-4"
         >
@@ -31,7 +42,7 @@ export default function ContactPage() {
             <input
               name="name"
               required
-              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm"
+              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-100"
               placeholder="Ton nom"
             />
           </div>
@@ -42,7 +53,7 @@ export default function ContactPage() {
               type="email"
               name="email"
               required
-              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm"
+              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-100"
               placeholder="ton@email.com"
             />
           </div>
@@ -53,7 +64,7 @@ export default function ContactPage() {
               name="message"
               required
               rows={7}
-              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm"
+              className="mt-2 w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-100"
               placeholder="Écris ton message ici…"
             />
           </div>

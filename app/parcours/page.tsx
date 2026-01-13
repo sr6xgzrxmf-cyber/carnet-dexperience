@@ -25,7 +25,7 @@ export default function ParcoursPage() {
 
         <ContactButton
           label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400"
+          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
         />
       </nav>
 
