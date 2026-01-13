@@ -22,48 +22,45 @@ export default function HomePage() {
             </p>
           </div>
 
-<div className="pt-2 w-full max-w-sm mx-auto md:mx-0">
-  <div className="grid grid-cols-3 gap-3">
-    <Link
-      href="/parcours"
-      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-    >
-      Voir le parcours
-    </Link>
+          <div className="mt-4 w-full max-w-md mx-auto md:mx-0">
+            <div className="grid grid-cols-3 gap-3">
+              <Link
+                href="/parcours"
+                className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+              >
+                Voir le parcours
+              </Link>
 
-    <Link
-      href="/articles"
-      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-    >
-      Lire les articles
-    </Link>
+              <Link
+                href="/articles"
+                className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+              >
+                Lire les articles
+              </Link>
 
-    <ContactButton
-      label="Me contacter"
-      className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-3 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full whitespace-nowrap"
-    />
-  </div>
-</div>
-
+              <ContactButton
+                label="Me contacter"
+                className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-3 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Colonne image */}
-{/* Colonne image */}
-{/* Colonne image */}
-<div className="flex justify-center md:justify-end">
-  <div className="w-full max-w-[210px]">
-    <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
-      <img
-        src="/images/laurent-portrait.png"
-        alt="Laurent Guyonnet"
-        className="h-full w-full object-cover object-top"
-      />
-    </div>
-    <p className="mt-2 text-center text-[11px] text-neutral-500">
-      Laurent Guyonnet
-    </p>
-  </div>
-</div>
+        <div className="flex justify-center md:justify-end">
+          <div className="w-full max-w-[210px]">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
+              <img
+                src="/images/laurent-portrait.png"
+                alt="Laurent Guyonnet"
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
+            <p className="mt-2 text-center text-[11px] text-neutral-500">
+              Laurent Guyonnet
+            </p>
+          </div>
+        </div>
       </header>
 
       {/* Body */}
@@ -149,34 +146,36 @@ export default function HomePage() {
             si vous souhaitez échanger, questionner ou travailler ensemble.
           </p>
 
-<div className="pt-2 w-full max-w-sm mx-auto md:mx-0">
-  <div className="grid grid-cols-3 gap-3">
-    <Link
-      href="/parcours"
-      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-    >
-      Parcours
-    </Link>
+          <div className="pt-2 w-full max-w-md mx-auto md:mx-0">
+            <div className="grid grid-cols-3 gap-3">
+              <Link
+                href="/parcours"
+                className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+              >
+                Parcours
+              </Link>
 
-    <Link
-      href="/articles"
-      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-    >
-      Articles
-    </Link>
+              <Link
+                href="/articles"
+                className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+              >
+                Articles
+              </Link>
 
-    <ContactButton
-      label="Contact"
-      className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full whitespace-nowrap"
-    />
-  </div>
-</div>      
-  </div>
-</section>
+              <ContactButton
+                label="Contact"
+                className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full whitespace-nowrap"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
-        <p>© {new Date().getFullYear()} Carnet d’expérience — Tous droits réservés.</p>
+        <p>
+          © {new Date().getFullYear()} Carnet d’expérience — Tous droits réservés.
+        </p>
       </footer>
     </main>
   );
