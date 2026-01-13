@@ -1,13 +1,16 @@
 ---
-title: "Transformer le Management Transactionnel : du rôle du formateur à l’optimisation des équipes"
+title: "Management transactionnel : comment le formateur optimise la performance par les règles et les objectifs"
 date: "2023-07-17"
-excerpt: "Comprendre, entraîner et optimiser le management transactionnel grâce à la formation, aux KPI et aux leviers de motivation."
+excerpt: "Comment le management transactionnel s’appuie sur les règles, les objectifs et la reconnaissance pour structurer la performance et l’engagement."
+cover: /images/articles/2023-07-17-management-transactionnel-optimisation-equipes.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - management
-  - formation
   - transactionnel
   - leadership
+  - formation
   - performance
+  - motivation
 ---
 « Bienvenue, navigateurs de la précision ! 🎯 Aujourd’hui, nous hissons les voiles dans le monde du Management Transactionnel. Un monde où chaque action compte, chaque échange a une valeur. Un océan où le formateur devient un guide indispensable. Préparez-vous à naviguer ! » 
 
