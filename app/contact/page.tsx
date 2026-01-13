@@ -35,15 +35,6 @@ export default function ContactPage() {
       <ContactForm action={FORMSPREE_ENDPOINT} />
 
       <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
-        <p>
-          Ou directement :{" "}
-          <a
-            className="underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-500"
-            href="mailto:laurent.guyonnet@gmail.com"
-          >
-            laurent.guyonnet@gmail.com
-          </a>
-        </p>
       </footer>
     </main>
   );
