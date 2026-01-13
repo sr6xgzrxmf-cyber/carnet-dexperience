@@ -11,7 +11,6 @@ tags:
   - apprentissage
   - accompagnement
 ---
-
 On parle souvent de « formation » comme d’un bloc homogène. Pourtant, enseigner à un enfant et accompagner un adulte dans ses apprentissages relèvent de logiques profondément différentes.
 
 C’est précisément ce que distinguent deux notions clés : **la pédagogie** et **l’andragogie**.

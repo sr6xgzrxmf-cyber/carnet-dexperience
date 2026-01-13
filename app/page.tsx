@@ -7,12 +7,12 @@ export default function HomePage() {
       {/* Header */}
       <header className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Colonne texte */}
-        <div className="space-y-5">
+        <div className="space-y-5 text-center md:text-left">
           <h1 className="text-4xl font-semibold tracking-tight">
             Carnet d’expérience
           </h1>
 
-          <div className="max-w-md space-y-3">
+          <div className="max-w-md space-y-3 mx-auto md:mx-0">
             <p className="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
               Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
             </p>

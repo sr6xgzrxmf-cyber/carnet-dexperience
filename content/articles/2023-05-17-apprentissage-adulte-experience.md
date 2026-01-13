@@ -37,7 +37,7 @@ En vieillissant, les raisons qui poussent les gens à apprendre deviennent plus 
 L'expérience de vie des adultes est un trésor précieux qui facilite grandement leur apprentissage. En tirant profit de leurs récits, de leur curiosité, de leur façon de gérer leur temps et de leur motivation, les adultes peuvent élargir considérablement leurs connaissances. Alors, à tous les adultes en quête d'apprentissage : n'oubliez jamais que vous êtes la source même de votre apprentissage et que chaque expérience, chaque choix, chaque instant, contribue à construire votre bibliothèque de savoirs. N’hésitez pas à vous servir de ces ressources pour vous renouveler constamment, vous améliorer et continuer à progresser.
 
   
-
+## De plus 
 Et rappelez-vous, il n'y a pas d'âge pour apprendre, pas de date d'expiration pour la curiosité. Chaque jour est une occasion d’enrichir votre bibliothèque personnelle, de découvrir de nouvelles passions et de comprendre de nouvelles perspectives. L'apprentissage adulte n'est pas une obligation ou une corvée, mais plutôt un privilège, une aventure palpitante et enrichissante.
 
 Alors, à vos marques, prêts, apprenez ! Et n'oubliez pas, peu importe l'ampleur de votre bibliothèque, il y a toujours de la place pour un livre de plus. Ce livre-là pourrait changer votre vie, il pourrait vous ouvrir à de nouveaux horizons, il pourrait vous permettre de regarder le monde autrement. Alors, chers adultes, saisissez cette chance et embarquez dans cette aventure d’apprentissage. Chaque jour deviendra un chapitre passionnant de votre livre de la vie.

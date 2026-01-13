@@ -12,7 +12,6 @@ cover: /images/articles/clown-prise-de-parole.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 excerpt: "Un atelier de prise de parole sous la pluie, un formateur-clown, et une transformation : oser, rater, recommencer."
 ---
-
 La pluie tambourinait contre les vitres de la salle de formation, un rythme monotone qui collait à l’humeur des participants. Une dizaine d’adultes, venus de secteurs aussi variés que la finance, la santé ou le commerce, s’étaient assis en cercle, les épaules légèrement voûtées, les doigts serrant des tasses de café tiède. Certains fixaient leurs chaussures, d’autres feuilletaient nerveusement des notes froissées. L’air sentait le café brûlé et le désinfectant bon marché. Personne ne parlait. Personne n’osait.
 
 C’est alors que la porte s’ouvrit à la volée, laissant entrer une bourrasque d’air humide et un homme vêtu d’un pantalon à carreaux trop large, d’une veste en velours élimée, et d’un nez rouge qui tranchait avec la grisaille ambiante. « Bienvenue sous le chapiteau, mesdames et messieurs ! » lança-t-il en faisant claquer une paire de chaussures surdimensionnées. « Aujourd’hui, on ne va pas apprendre à parler en public. On va apprendre à survivre à la scène. »

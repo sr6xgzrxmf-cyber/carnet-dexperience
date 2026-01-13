@@ -12,15 +12,6 @@ tags:
   - pédagogie
   - adultes
 ---
-
-# L’apprentissage chez l’adulte : un voyage entre tâches, problèmes et éclats de rire !
-
-**Laurent Guyonnet**  
-Creative Pro chez Apple Retail France EURL  
-*19 mai 2023*
-
----
-
 Nous le savons tous : les adultes sont des êtres à part. Ils ont des responsabilités, des priorités, et surtout une approche différente de l’apprentissage. Plus question de jouer à la marelle ou de faire des châteaux de sable. Désormais, l’apprenant adulte est orienté vers les tâches et la résolution de problèmes. Mais rassurez-vous, chers adultes, il est tout à fait possible de mêler humour et apprentissage pour rendre l’expérience plus agréable et inspirante.
 
 ## Trouver le juste équilibre entre travail et détente
