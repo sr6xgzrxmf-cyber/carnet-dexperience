@@ -1,7 +1,7 @@
 ---
 title: "Chargé de communication & accueil clients"
 company: "ASTS"
-location: "France"
+location: "Annonay"
 role: "Communication, relation client, support et coordination"
 start: "2007"
 end: "2009"
@@ -68,9 +68,7 @@ Les clients avaient un interlocuteur unique, lisible, humain — ce qui réduisa
 
 ## Ce que j’en retiens
 
-ASTS m’a appris une chose clé :
-
-> La technologie n’a de valeur que lorsqu’elle est traduite en expérience humaine.
+ASTS m’a appris une chose clé : **La technologie n’a de valeur que lorsqu’elle est traduite en expérience humaine.**
 
 C’est là que j’ai ancré ce qui deviendra central chez Apple ensuite :
 - la médiation

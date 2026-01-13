@@ -1,7 +1,7 @@
 ---
 title: "Commercial"
 company: "Parc Astérix"
-location: "Grand Sud-Est (Montpellier, Toulouse, Nice, Valence…)"
+location: "Grand Sud-Est (de Montpellier, Toulouse, jusqu'à Nice, Valence…)"
 role: "Développement réseau agences de voyage"
 start: "2002"
 end: "2002"

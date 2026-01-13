@@ -1,7 +1,7 @@
 ---
 title: "Assistant laborantin & vente"
 company: "Photo Service"
-location: "France"
+location: "Aix en Provence"
 role: "Développement photo, vente & conseil client"
 start: "2005"
 end: "2005"
@@ -34,7 +34,7 @@ Je me situais donc à l’endroit exact où la technologie rencontrait le client
 ## Ce que j’ai fait
 
 J’ai participé activement au lancement de l’une des premières **offres photo numériques par abonnement** :
-- 15 € par mois
+- 30 € par mois
 - un appareil photo inclus
 - la possibilité de faire jusqu’à **2000 tirages par an**
 

@@ -79,12 +79,15 @@ export default function ParcoursPage() {
         ))}
       </ol>
 
-      <div className="mt-12 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30">
-        <h2 className="text-lg font-semibold">Formation</h2>
-        <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-          Accessible sur une page dédiée (on la fait juste après si tu veux).
-        </p>
-      </div>
+<Link
+  href="/parcours/formation"
+  className="mt-12 block rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30 hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+>
+  <h2 className="text-lg font-semibold">Formation</h2>
+  <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+    Voir le parcours de formation et les apprentissages.
+  </p>
+</Link>
     </main>
   );
 }

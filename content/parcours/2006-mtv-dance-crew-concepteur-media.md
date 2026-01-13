@@ -1,7 +1,7 @@
 ---
 title: "Concepteur média"
 company: "MTV Dance Crew"
-location: "France"
+location: "Marseille"
 role: "Création de contenus, communication et valorisation de projets artistiques"
 start: "2006"
 end: "2006"

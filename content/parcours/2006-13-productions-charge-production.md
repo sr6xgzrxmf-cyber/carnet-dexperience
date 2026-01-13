@@ -1,7 +1,7 @@
 ---
 title: "Chargé de production média"
 company: "13 Productions"
-location: "France"
+location: "Marseille"
 role: "Production de contenus audiovisuels et supports éditoriaux"
 start: "2006"
 end: "2006"

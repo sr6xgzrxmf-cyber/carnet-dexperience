@@ -80,15 +80,12 @@ export default async function ParcoursDetailPage({
     text-[12px] leading-6
     text-neutral-900 dark:text-neutral-100
 
-    /* Paragraphes: pas de marge par défaut, mais un léger espacement entre eux */
     [&_p]:m-0
     [&_p]:leading-6
     [&_p+_p]:mt-2
 
-    /* Respiration après un titre (le premier paragraphe après h2) */
     [&_h2+_p]:mt-4
 
-    /* Titres de section (Contexte, Mon rôle, ...) */
     [&_h2]:mt-10
     [&_h2]:mb-2
     [&_h2]:text-xl
@@ -99,14 +96,12 @@ export default async function ParcoursDetailPage({
     dark:[&_h2]:border-neutral-800
     [&_h2]:pb-2
 
-    /* Sous-titres éventuels */
     [&_h3]:mt-8
     [&_h3]:mb-2
     [&_h3]:text-lg
     [&_h3]:font-semibold
     [&_h3]:tracking-tight
 
-    /* Listes: rapprochées du texte */
     [&_ul]:my-0
     [&_ul]:list-disc
     [&_ul]:pl-5
@@ -114,7 +109,6 @@ export default async function ParcoursDetailPage({
     [&_p+_ul]:mt-2
     [&_ul+_p]:mt-2
 
-    /* Masque les séparateurs markdown --- */
     [&_hr]:hidden
   "
   dangerouslySetInnerHTML={{ __html: contentHtml }}

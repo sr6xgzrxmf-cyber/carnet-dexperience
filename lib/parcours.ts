@@ -33,7 +33,9 @@ function toSortKey(date?: string) {
 }
 
 export function getAllParcours(): ParcoursItem[] {
-  const fileNames = fs.readdirSync(parcoursDirectory).filter((f) => f.endsWith(".md"));
+  const fileNames = fs
+    .readdirSync(parcoursDirectory)
+    .filter((f) => f.endsWith(".md"));
 
   const items = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, "");

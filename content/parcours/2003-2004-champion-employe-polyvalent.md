@@ -1,7 +1,7 @@
 ---
 title: "Employé polyvalent"
 company: "Champion"
-location: "France"
+location: "Pertuis"
 role: "Animation commerciale, caisse, logistique"
 start: "2003"
 end: "2004"
@@ -23,8 +23,7 @@ Les périodes comme Noël, la Toussaint ou les fêtes généraient des pics de f
 
 ## Mon rôle
 
-J’étais employé polyvalent, ce qui signifiait en pratique être affecté là où l’enjeu était le plus fort :  
-là où il fallait **vendre, animer et absorber du flux client**.
+J’étais employé polyvalent, ce qui signifiait en pratique être affecté là où l’enjeu était le plus fort : là où il fallait **vendre, animer et absorber du flux client**.
 
 ---
 
@@ -37,10 +36,7 @@ J’ai été mobilisé sur plusieurs missions à forte intensité commerciale :
 
 La boulangerie était l’un des pôles les plus stratégiques du magasin : trafic élevé, attente client forte, relation directe et immédiate avec le public.
 
-J’y ai appris à :
-- Gérer le débit
-- Maintenir la qualité de service sous pression
-- Vendre sans casser la relation
+J’y ai appris à : Gérer le débit, Maintenir la qualité de service sous pression et Vendre sans casser la relation.
 
 En parallèle, j’intervenais aussi en caisse et en logistique selon les besoins du magasin.
 
