@@ -1,10 +1,15 @@
 ---
-title: "Parler en public, c’est un numéro de cirque"
+title: Parler en public, c’est un numéro de cirque
 date: "2023-05-08"
-type: "article"
-tags: ["formation", "prise de parole", "pédagogie", "confiance", "improvisation"]
-cover: "/images/articles/clown-prise-de-parole.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+type: article
+tags:
+  - formation
+  - prise de parole
+  - pédagogie
+  - confiance
+  - improvisation
+cover: /images/articles/clown-prise-de-parole.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 excerpt: "Un atelier de prise de parole sous la pluie, un formateur-clown, et une transformation : oser, rater, recommencer."
 ---
 
