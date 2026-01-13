@@ -22,26 +22,29 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex flex-wrap md:flex-nowrap gap-3 pt-2">
-            <Link
-              href="/parcours"
-              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-            >
-              Voir le parcours
-            </Link>
+<div className="pt-2 w-full max-w-sm mx-auto md:mx-0">
+  <div className="grid grid-cols-3 gap-3">
+    <Link
+      href="/parcours"
+      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+    >
+      Voir le parcours
+    </Link>
 
-            <Link
-              href="/articles"
-              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-            >
-              Lire les articles
-            </Link>
+    <Link
+      href="/articles"
+      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+    >
+      Lire les articles
+    </Link>
 
-            <ContactButton
-              label="Me contacter"
-              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 whitespace-nowrap hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0"
-            />
-          </div>
+    <ContactButton
+      label="Me contacter"
+      className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-3 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full whitespace-nowrap"
+    />
+  </div>
+</div>
+
         </div>
 
         {/* Colonne image */}
@@ -146,28 +149,30 @@ export default function HomePage() {
             si vous souhaitez échanger, questionner ou travailler ensemble.
           </p>
 
-          <div className="flex flex-wrap gap-3 pt-2">
-            <Link
-              href="/parcours"
-              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-            >
-              Parcours
-            </Link>
+<div className="pt-2 w-full max-w-sm mx-auto md:mx-0">
+  <div className="grid grid-cols-3 gap-3">
+    <Link
+      href="/parcours"
+      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+    >
+      Parcours
+    </Link>
 
-            <Link
-              href="/articles"
-              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-            >
-              Articles
-            </Link>
+    <Link
+      href="/articles"
+      className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+    >
+      Articles
+    </Link>
 
-            <ContactButton
-              label="Contact"
-              className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0"
-            />
-          </div>
-        </div>
-      </section>
+    <ContactButton
+      label="Contact"
+      className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 w-full whitespace-nowrap"
+    />
+  </div>
+</div>      
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
