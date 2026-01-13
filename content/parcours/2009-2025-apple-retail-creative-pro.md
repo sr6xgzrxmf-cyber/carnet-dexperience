@@ -25,38 +25,44 @@ Un Créatif Pro ne vend pas des produits.
 Il aide les personnes à faire quelque chose de concret avec les produits qu’elles ont achetés — et à découvrir tout ce qu’elles pourraient encore faire.
 
 Le cœur du métier repose sur trois piliers :
-	•	L’apprentissage
-	•	La relation
-	•	L’écosystème
+- L’apprentissage,
+- La relation,
+- L’écosystème.
 
-Chaque jour, le Créatif Pro accompagne des clients très différents — débutants, créatifs, professionnels, curieux — pour leur permettre de :
-	•	configurer leurs appareils,
-	•	comprendre les outils,
-	•	développer de nouvelles compétences,
-	•	et se sentir capables.
+Chaque jour, le Créatif Pro accompagne des clients très différents :
+- débutants, 
+- créatifs, 
+- professionnels, 
+- curieux 
+
+Pour leur permettre de :
+	-	configurer leurs appareils,
+	-	comprendre les outils,
+	-	développer de nouvelles compétences,
+	-	et se sentir capables.
 
 Ce travail prend principalement la forme de :
-	•	séances Today at Apple (ateliers collectifs),
-	•	rendez-vous individuels,
-	•	démonstrations,
-	•	et accompagnement sur le Floor.
+- séances Today at Apple (ateliers collectifs),
+- rendez-vous individuels,
+- démonstrations,
+- et accompagnement sur le Floor.
 
 Mais au-delà des formats, le vrai rôle est plus subtil :
 le Créatif Pro est un traducteur entre la technologie et la vie réelle des gens.
 
 Il doit être capable de :
-	•	comprendre les besoins exprimés (et souvent mal formulés),
-	•	identifier les usages possibles,
-	•	et connecter ces usages à l’écosystème Apple.
+- comprendre les besoins exprimés (et souvent mal formulés),
+- identifier les usages possibles,
+- et connecter ces usages à l’écosystème Apple.
 
 C’est aussi un métier profondément relationnel.
 L’efficacité ne vient pas de la maîtrise technique seule, mais de la capacité à créer un climat de confiance où la personne ose apprendre, essayer, se tromper et progresser.
 
 Enfin, le Créatif Pro joue un rôle clé dans la dynamique commerciale du magasin :
 en aidant les clients à découvrir de nouveaux usages, il contribue naturellement à :
-	•	l’adoption de services,
-	•	l’attachement à la marque,
-	•	et la satisfaction long terme.
+- l’adoption de services,
+- l’attachement à la marque,
+- et la satisfaction long terme.
 
 Dans un Apple Store, le bouche-à-oreille naît rarement d’une bonne vente.
 Il naît presque toujours d’une bonne expérience d’apprentissage.
@@ -76,15 +82,15 @@ elle est rapidement devenue un levier commercial majeur pour le magasin.
 J'ai intégré rapidement le réseau Apple Education & ADE (Apple Distinguished Educators – EMEIA).
 
 Concrètement, je travaillais directement avec :
-	•	des enseignants du primaire, du secondaire et du supérieur,
-	•	des chefs d’établissement,
-	•	des rectorats et décideurs publics,
-	•	des formateurs et responsables pédagogiques.
+- des enseignants du primaire, du secondaire et du supérieur,
+- des chefs d’établissement,
+- des rectorats et décideurs publics,
+- des formateurs et responsables pédagogiques.
 
 Mon rôle était de faire le lien entre :
-	•	les outils Apple (iPad, Mac, apps éducatives),
-	•	les pratiques pédagogiques,
-	•	et les contraintes réelles du terrain scolaire.
+- les outils Apple (iPad, Mac, apps éducatives),
+- les pratiques pédagogiques,
+- et les contraintes réelles du terrain scolaire.
 
 Je n’étais pas là pour « présenter des produits »,
 mais pour traduire la technologie en projets pédagogiques concrets.
@@ -93,10 +99,10 @@ mais pour traduire la technologie en projets pédagogiques concrets.
 **La technologie comme levier d’engagement**
 
 Mon moteur était simple. Je savais, par mon propre parcours, que certains élèves apprennent mieux avec :
-	•	l’image,
-	•	la vidéo,
-	•	la narration,
-	•	la création.
+- l’image,
+- la vidéo,
+- la narration,
+- la création.
 
 Comme lorsque, enfant, je découvrais la télévision, l’informatique, le projecteur ou les premiers ordinateurs à l’école, je voyais la technologie comme un amplificateur d’envie d’apprendre.
 
@@ -111,18 +117,18 @@ Pour l’institution, c’était une façon de réellement entrer dans l’ère 
 J’ai organisé et animé de nombreux événements pédagogiques en magasin, notamment autour de l’iPad dans l’éducation, bien avant que ces usages ne soient banalisés.
 
 Nous faisions venir des classes entières en Apple Store dans des formats de type :
-	•	« sortie de classe »,
-	•	ateliers créatifs,
-	•	projets transdisciplinaires.
+- « sortie de classe »,
+- ateliers créatifs,
+- projets transdisciplinaires.
 
 Ce n’étaient pas des démonstrations commerciales.
 
 Les élèves venaient :
-	•	produire,
-	•	créer,
-	•	raconter,
-	•	filmer,
-	•	programmer.
+- produire,
+- créer,
+- raconter,
+- filmer,
+- programmer.
 
 Ils étaient captés.
 
@@ -137,23 +143,23 @@ elle changeait le rapport à l’apprentissage.
 
 La majorité des enseignants que je rencontrais étaient réticents,
 non pas par idéologie, mais parce que :
-	•	cela impliquait de refaire leurs cours,
-	•	de gérer de la bureaucratie,
-	•	et surtout de se retrouver seuls dans un système rigide.
+- cela impliquait de refaire leurs cours,
+- de gérer de la bureaucratie,
+- et surtout de se retrouver seuls dans un système rigide.
 
 Les quelques enseignants motivés se heurtaient souvent à :
-	•	l’administration,
-	•	les procédures,
-	•	les rectorats,
-	•	les inspecteurs.
+- l’administration,
+- les procédures,
+- les rectorats,
+- les inspecteurs.
 
 Mon travail a été de simplifier ce parcours.
 
 Je me suis positionné comme un facilitateur entre :
-	•	l’enseignant,
-	•	l’établissement,
-	•	l’administration,
-	•	et Apple.
+- l’enseignant,
+- l’établissement,
+- l’administration,
+- et Apple.
 
 **Je rendais possible ce qui semblait trop complexe.**
 
@@ -168,14 +174,14 @@ Quand un établissement adoptait un projet iPad ou Mac, ce n’était pas une ma
 c’était parfois des centaines.
 
 Mon travail reliait :
-	•	la pédagogie,
-	•	la confiance des enseignants,
-	•	et les décisions d’achat.
+- la pédagogie,
+- la confiance des enseignants,
+- et les décisions d’achat.
 
 J’étais à la fois :
-	•	un acteur éducatif,
-	•	un bâtisseur de relations institutionnelles,
-	•	et un moteur commercial.
+- un acteur éducatif,
+- un bâtisseur de relations institutionnelles,
+- et un moteur commercial.
 
 Apple y trouvait son compte parce que :
 je ne vendais pas un produit,
@@ -187,25 +193,25 @@ je faisais naître un écosystème d’usage.
 Au-delà du cadre strictement commercial, j’ai aussi piloté des actions solidaires autour de l’éducation.
 
 Nous avons monté des projets destinés à soutenir des écoles, principalement en Turquie, en fournissant :
-	•	du matériel,
-	•	de la formation,
-	•	et un accompagnement pédagogique.
+- du matériel,
+- de la formation,
+- et un accompagnement pédagogique.
 
 Ces projets combinaient :
-	•	logistique,
-	•	coordination,
-	•	partenaires locaux,
-	•	et alignement avec les valeurs éducatives d’Apple.
+- logistique,
+- coordination,
+- partenaires locaux,
+- et alignement avec les valeurs éducatives d’Apple.
 
 
 **Ce que cette période a construit**
 
 Montpellier m’a forgé comme Créatif Pro à 360° :
-	•	pédagogue,
-	•	animateur de communauté,
-	•	interface entre technologie et éducation,
-	•	facilitateur institutionnel,
-	•	et acteur de la performance commerciale.
+- pédagogue,
+- animateur de communauté,
+- interface entre technologie et éducation,
+- facilitateur institutionnel,
+- et acteur de la performance commerciale.
 
 C’est là que s’est construite ma capacité à travailler entre vision, institutions et terrain réel —
 une compétence qui deviendra déterminante pour la suite de mon parcours.

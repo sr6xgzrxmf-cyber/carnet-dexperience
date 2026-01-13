@@ -45,15 +45,22 @@ export default function HomePage() {
         </div>
 
         {/* Colonne image */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-56 aspect-[3/4] rounded-full overflow-hidden shadow-lg bg-neutral-100 dark:bg-neutral-900/40 flex items-end justify-center">
-            <img
-              src="/images/laurent-portrait.png"
-              alt="Laurent Guyonnet"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
-        </div>
+{/* Colonne image */}
+{/* Colonne image */}
+<div className="flex justify-center md:justify-end">
+  <div className="w-full max-w-[210px]">
+    <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
+      <img
+        src="/images/laurent-portrait.png"
+        alt="Laurent Guyonnet"
+        className="h-full w-full object-cover object-top"
+      />
+    </div>
+    <p className="mt-2 text-center text-[11px] text-neutral-500">
+      Laurent Guyonnet
+    </p>
+  </div>
+</div>
       </header>
 
       {/* Body */}
