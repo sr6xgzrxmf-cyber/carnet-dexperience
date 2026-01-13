@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type ShareBarProps = {
   title: string;
@@ -9,61 +9,65 @@ type ShareBarProps = {
 
 export default function ShareBar({ title, className }: ShareBarProps) {
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [canNativeShare, setCanNativeShare] = useState(false);
 
-  const url = useMemo(() => {
-    if (typeof window === "undefined") return "";
-    return window.location.href;
+  useEffect(() => {
+    setMounted(true);
+    setCanNativeShare(typeof navigator !== "undefined" && "share" in navigator);
   }, []);
 
+  const url = useMemo(() => {
+    if (!mounted) return "";
+    return window.location.href;
+  }, [mounted]);
+
   async function copyLink() {
+    const link = window.location.href;
+
     try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1200);
+      await navigator.clipboard.writeText(link);
     } catch {
       // fallback minimal
       const textArea = document.createElement("textarea");
-      textArea.value = window.location.href;
+      textArea.value = link;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1200);
     }
+
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1200);
   }
 
   async function nativeShare() {
-    if (!navigator.share) return;
+    if (!canNativeShare) return;
     try {
-      await navigator.share({ title, url: window.location.href });
+      await (navigator as any).share({ title, url: window.location.href });
     } catch {
       // user cancelled → no-op
     }
   }
 
   const xUrl = useMemo(() => {
-    const u = typeof window === "undefined" ? "" : window.location.href;
+    if (!mounted) return "#";
     return `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       title
-    )}&url=${encodeURIComponent(u)}`;
-  }, [title]);
+    )}&url=${encodeURIComponent(window.location.href)}`;
+  }, [mounted, title]);
 
   const linkedInUrl = useMemo(() => {
-    const u = typeof window === "undefined" ? "" : window.location.href;
+    if (!mounted) return "#";
     return `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-      u
+      window.location.href
     )}`;
-  }, []);
+  }, [mounted]);
 
   return (
-    <div
-      className={[
-        "mt-10 flex flex-wrap items-center gap-2",
-        className ?? "",
-      ].join(" ")}
-    >
-      {"share" in navigator ? (
+    <div className={["mt-10 flex flex-wrap items-center gap-2", className ?? ""].join(" ")}>
+      {/* IMPORTANT: ne pas rendre conditionnellement avant mount → évite hydration mismatch */}
+      {mounted && canNativeShare ? (
         <button
           onClick={nativeShare}
           className="rounded-full border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm hover:border-neutral-400 dark:hover:border-neutral-600 transition"

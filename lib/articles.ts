@@ -10,7 +10,7 @@ export type ArticleMeta = {
   title: string;
   date?: string; // "YYYY-MM-DD"
   tags?: string[];
-  cover?: string; // "/images/articles/xxx.png"
+  cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
   excerpt?: string;
 };
@@ -49,12 +49,19 @@ export function getAllArticles(): ArticleItem[] {
 }
 
 export function getArticleBySlug(slug: string): ArticleItem | null {
-  const fullPath = path.join(articlesDirectory, `${slug}.md`);
+  const clean = decodeURIComponent(slug).trim();
+  const fullPath = path.join(articlesDirectory, `${clean}.md`);
+
+  console.log("[getArticleBySlug] slug =", JSON.stringify(slug));
+  console.log("[getArticleBySlug] clean =", JSON.stringify(clean));
+  console.log("[getArticleBySlug] fullPath =", fullPath);
+  console.log("[getArticleBySlug] exists =", fs.existsSync(fullPath));
+
   if (!fs.existsSync(fullPath)) return null;
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  return { slug, meta: data as ArticleMeta, content };
+  return { slug: clean, meta: data as ArticleMeta, content };
 }
 
 export async function markdownToHtml(markdown: string) {

@@ -10,9 +10,7 @@ export function generateStaticParams() {
 }
 
 function formatDate(date?: string) {
-  if (!date) return "";
-  // garde simple (tu pourras localiser plus tard si tu veux)
-  return date;
+  return date ?? "";
 }
 
 export default async function ArticleDetailPage({
@@ -47,7 +45,9 @@ export default async function ArticleDetailPage({
 
       {/* Header */}
       <header className="space-y-4">
-        <h1 className="text-3xl font-semibold tracking-tight">{item.meta.title}</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">
+          {item.meta.title}
+        </h1>
 
         <div className="text-sm text-neutral-700 dark:text-neutral-300">
           <div className="flex flex-wrap gap-x-3 gap-y-1">
@@ -154,8 +154,12 @@ export default async function ArticleDetailPage({
         "
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
-<ShareBar title={article.meta.title} />
-<GiscusComments />
+
+      {/* Share + Comments */}
+      <ShareBar title={item.meta.title} />
+      <div className="mt-12 border-t border-neutral-200 dark:border-neutral-800 pt-10">
+        <GiscusComments />
+      </div>
 
       {/* Footer nav */}
       <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
