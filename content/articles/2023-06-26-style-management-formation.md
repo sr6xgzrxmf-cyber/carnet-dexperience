@@ -1,7 +1,7 @@
 ---
 title: "Épouser le style de management : l’essence d’une formation efficace"
-date: "2023-06-26"
-excerpt: "Comprendre les styles de management pour concevoir des formations réellement adaptées aux organisations."
+date: 2023-06-26
+excerpt: Comprendre les styles de management pour concevoir des formations réellement adaptées aux organisations.
 cover: /images/articles/styles-management.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
@@ -10,6 +10,7 @@ tags:
   - leadership
   - pédagogie
   - organisation
+  - Astuce
 ---
 Le monde du management est vaste et complexe, regorgeant de différentes méthodes et approches pour diriger et motiver une équipe. Dans le premier article de notre série à venir, nous jetons un coup d’œil à plusieurs styles de management, chacun possédant ses propres forces et faiblesses. L’objectif est d’aider les formateurs à identifier le style de management d’une organisation afin d’adapter leurs formations de manière pertinente.
 

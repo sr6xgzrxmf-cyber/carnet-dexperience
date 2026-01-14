@@ -1,6 +1,6 @@
 ---
-title: "Les six qualités incontournables d’un bon formateur"
-date: "2023-07-07"
+title: Les six qualités incontournables d’un bon formateur
+date: 2023-07-07
 excerpt: "Empathie, adaptabilité, passion, patience, communication et développement continu : les piliers d’une formation réussie."
 cover: /images/articles/six-qualites-formateur.jpg
 source: Laurent Guyonnet — Carnet d’expérience
@@ -10,6 +10,7 @@ tags:
   - formateur
   - développement
   - soft-skills
+  - Astuce
 ---
 Un bon formateur est bien plus qu’un simple transmetteur de connaissances. Il doit être capable de comprendre les besoins des apprenants, de s’adapter à différents styles d’apprentissage et de créer un environnement propice à l’éducation. Cet article met en lumière six qualités humaines qui font d’un formateur un véritable catalyseur de succès.
 

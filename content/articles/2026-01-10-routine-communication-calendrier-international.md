@@ -1,7 +1,7 @@
 ---
-title: "Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux"
-date: "2026-01-10"
-excerpt: "En 2026, les entreprises qui communiquent juste ne parlent pas plus, elles parlent au bon moment. Une routine simple basée sur les journées internationales permet d’aligner sens, visibilité et stratégie."
+title: Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux
+date: 2026-01-10
+excerpt: En 2026, les entreprises qui communiquent juste ne parlent pas plus, elles parlent au bon moment. Une routine simple basée sur les journées internationales permet d’aligner sens, visibilité et stratégie.
 cover: /images/articles/2026-01-10-routine-communication-calendrier-international.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
@@ -10,6 +10,7 @@ tags:
   - Calendrier
   - Marketing
   - Organisation
+  - Astuce
 ---
 
 # Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux
