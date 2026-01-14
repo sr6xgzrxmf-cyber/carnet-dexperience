@@ -11,9 +11,6 @@ tags:
   - Communication
   - Crédibilité
 ---
-
-# Marketing durable et engagé : construire une marque personnelle crédible à l’ère de la transparence
-
 ## Quand la visibilité ne suffit plus  
 Pendant longtemps, construire une marque personnelle consistait surtout à se rendre visible. Publier, commenter, se positionner, occuper l’espace. En 2026, cette approche atteint ses limites. Les réseaux sont saturés de discours, mais rares sont les personnes perçues comme réellement crédibles. La différence ne se fait plus sur la fréquence de prise de parole, mais sur la **cohérence** entre ce qui est affiché et ce qui est vécu.
 

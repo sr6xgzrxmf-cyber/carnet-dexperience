@@ -11,9 +11,6 @@ tags:
   - Expérience client
   - Performance
 ---
-
-# Marketing durable et engagé : concilier performance commerciale et responsabilité en point de vente
-
 ## Quand la durabilité cesse d’être un slogan  
 Pendant longtemps, le marketing durable a été traité comme un supplément d’âme, souvent cantonné aux rapports RSE et aux campagnes institutionnelles. En 2026, cette séparation n’existe plus. Pour les réseaux de magasins, la responsabilité environnementale et sociale est devenue un levier direct de performance. Les clients ne veulent plus seulement acheter un produit, ils veulent comprendre ce qu’il représente, comment il a été fabriqué et quelle vision il porte.
 
