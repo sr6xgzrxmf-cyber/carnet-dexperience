@@ -1,13 +1,15 @@
 ---
-title: "Évaluer l’efficacité d’une formation"
+title: "Comment évaluer l’efficacité d’une formation"
 date: "2023-08-17"
-excerpt: "Pourquoi, quand et comment mesurer réellement l’impact d’un programme de formation en entreprise."
+excerpt: "Mesurer l’impact réel d’une formation pour améliorer la performance et l’apprentissage."
+cover: /images/articles/evaluer-efficacite-formation.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - formation
   - évaluation
-  - ROI
   - performance
-  - learning
+  - apprentissage
+  - qualité
 ---
 Évaluer l’efficacité d’une formation : pourquoi, quand et comment ?
 

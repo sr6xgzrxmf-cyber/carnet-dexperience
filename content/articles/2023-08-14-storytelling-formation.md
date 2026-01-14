@@ -1,13 +1,15 @@
 ---
-title: "La place du storytelling dans la formation"
+title: "Le storytelling : un puissant levier en formation"
 date: "2023-08-14"
-excerpt: "Comment le narratif devient un levier puissant pour stimuler l’engagement, la compréhension et la mémorisation."
+excerpt: "Pourquoi raconter des histoires aide les apprenants à mieux comprendre, retenir et s’approprier les savoirs."
+cover: /images/articles/storytelling-formation.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
+  - formation
   - storytelling
   - pédagogie
-  - formation
-  - apprentissage
   - engagement
+  - communication
 ---
 La place du storytelling dans la formation : comment le narratif peut stimuler l’apprentissage
 

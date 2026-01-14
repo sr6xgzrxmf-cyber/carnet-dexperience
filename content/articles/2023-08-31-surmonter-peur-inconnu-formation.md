@@ -1,12 +1,15 @@
 ---
-title: "Surmonter la peur de l’inconnu : clé de la réussite de la formation en entreprise"
+title: "Surmonter la peur de l’inconnu : transformer l’incertitude en moteur d’apprentissage"
 date: "2023-08-31"
-excerpt: "Comment réduire l’anxiété liée au changement et créer un climat de confiance propice à l’apprentissage."
+excerpt: "Comment aider les apprenants à dépasser l’angoisse du changement et à s’engager avec confiance dans l’inconnu."
+cover: /images/articles/2023-08-31-surmonter-peur-inconnu-formation.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - formation
   - changement
   - peur
+  - formation
   - accompagnement
+  - psychologie
   - apprentissage
 ---
 Lorsqu’il s’agit de résister au changement dans la formation, la peur de l’inconnu est souvent le principal déclencheur. Les collaborateurs peuvent craindre de ne pas maîtriser les nouvelles compétences attendues, de ne pas être à la hauteur des exigences ou même de perdre leur légitimité professionnelle. Comprendre et traiter cette peur est donc un levier essentiel pour réussir toute transformation en matière de formation.

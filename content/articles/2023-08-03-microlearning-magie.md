@@ -1,7 +1,9 @@
 ---
-title: "La magie du microlearning"
+title: "La magie du microlearning en formation professionnelle"
 date: "2023-08-03"
-excerpt: "Pourquoi découper l’apprentissage en micro-modules transforme durablement l’efficacité de la formation."
+excerpt: "Comment de courtes séquences d’apprentissage peuvent produire de grands effets sur la mémorisation et l’engagement."
+cover: /images/articles/microlearning-magie.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - formation
   - microlearning

@@ -1,13 +1,15 @@
 ---
-title: "Des ciseaux à la sagesse"
+title: "Barbier, passion et succès : quand la formation devient un art"
 date: "2023-08-02"
-excerpt: "Une rencontre chez le barbier pour interroger la passion, la reconnaissance et les vrais chemins du succès au travail."
+excerpt: "Comment la passion du métier et la formation continue transforment l’artisanat en réussite durable."
+cover: /images/articles/barbier-passion-succes.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - travail
+  - formation
+  - artisanat
   - passion
-  - carrière
-  - reconnaissance
-  - management
+  - réussite
+  - compétences
 ---
 Des ciseaux à la sagesse : comment mon barbier a transformé ma vision de la passion et du succès au travail
 

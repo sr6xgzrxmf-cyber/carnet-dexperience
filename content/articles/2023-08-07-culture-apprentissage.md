@@ -1,13 +1,15 @@
 ---
-title: "Créer une culture d’apprentissage en entreprise"
+title: "Construire une culture de l’apprentissage dans l’entreprise"
 date: "2023-08-07"
-excerpt: "Pourquoi l’apprentissage continu n’est plus un luxe mais une condition de survie pour les organisations modernes."
+excerpt: "Pourquoi et comment installer une culture d’apprentissage continu au cœur des organisations."
+cover: /images/articles/culture-apprentissage.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - formation
-  - apprentissage
   - culture
+  - entreprise
+  - apprentissage
   - management
-  - innovation
 ---
 Création d’une culture d’apprentissage en entreprise : plus qu’un luxe, une nécessité
 

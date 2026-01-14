@@ -1,13 +1,16 @@
 ---
-title: "Le confort de la routine : surmonter l’inertie pour favoriser le changement en formation"
+title: "Sortir du confort pour traverser le changement"
 date: "2023-09-04"
-excerpt: "Comment dépasser la sécurité des habitudes pour installer une dynamique d’apprentissage et d’innovation."
+excerpt: "Pourquoi la routine rassure mais freine, et comment accompagner les équipes à quitter leur zone de confort pour réussir la transformation."
+cover: /images/articles/confort-routine-changement.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - formation
   - changement
-  - routine
-  - innovation
-  - apprentissage
+  - résistance
+  - formation
+  - management
+  - transformation
+  - accompagnement
 ---
 Dans le troisième volet de notre série sur la résistance au changement en formation, nous abordons un obstacle majeur : le confort de la routine. Les routines offrent un sentiment de sécurité et de stabilité. Elles sont familières et prévisibles. Mais cette même familiarité peut freiner l’innovation et la croissance.
 

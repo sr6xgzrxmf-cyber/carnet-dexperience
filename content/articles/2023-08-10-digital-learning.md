@@ -1,13 +1,15 @@
 ---
-title: "L’impact du digital learning sur la formation en entreprise"
+title: "Le digital learning au service de la formation moderne"
 date: "2023-08-10"
-excerpt: "Comment le e-learning, les LMS et le mobile learning transforment durablement la manière de former en entreprise."
+excerpt: "Comment les outils numériques transforment l’expérience d’apprentissage et la montée en compétences."
+cover: /images/articles/digital-learning.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - digital learning
   - formation
-  - lms
-  - mooc
+  - digital
+  - e-learning
   - innovation
+  - pédagogie
 ---
 L’impact du digital learning sur la formation en entreprise
 
