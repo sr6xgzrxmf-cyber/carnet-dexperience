@@ -1,5 +1,5 @@
 ---
-title: "Pourquoi résiste-t-on au changement en formation ? (1/7)"
+title: "Pourquoi résiste-t-on au changement en formation ?"
 date: "2023-08-28"
 excerpt: "Comprendre les mécanismes psychologiques et organisationnels qui freinent l’adoption du changement en formation."
 cover: /images/articles/resistance-changement-1.jpg
