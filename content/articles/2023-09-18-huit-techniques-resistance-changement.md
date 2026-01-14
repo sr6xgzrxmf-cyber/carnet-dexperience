@@ -1,7 +1,6 @@
 ---
 title: Huit techniques clés pour surmonter la résistance au changement en formation
-date: 2023-09-18
-excerpt: Un aide-mémoire pratique pour comprendre, anticiper et dépasser les résistances humaines face aux nouvelles méthodes de formation.
+date: "2023-09-18"excerpt: Un aide-mémoire pratique pour comprendre, anticiper et dépasser les résistances humaines face aux nouvelles méthodes de formation.
 cover: /images/articles/resistance-changement-techniques.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
