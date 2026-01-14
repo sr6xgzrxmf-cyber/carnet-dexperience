@@ -58,7 +58,7 @@ Ce fichier contient toutes les journées internationales (droite des femmes, pai
 
 ### Comment l’ajouter à ton propre calendrier
 
-#### Sur Apple Calendar (macOS / iPhone)
+#### *Sur Apple Calendar (macOS / iPhone)*
 1. Ouvre **Calendrier**
 2. Menu **Fichier → Nouvel abonnement à un calendrier**
 3. Colle l’URL du fichier `.ics`
@@ -66,7 +66,8 @@ Ce fichier contient toutes les journées internationales (droite des femmes, pai
 5. Choisis une couleur dédiée (ex. vert ou bleu)
 6. Laisse l’option **Actualiser automatiquement**
 
-#### Sur Google Calendar
+ 
+#### *Sur Google Calendar*
 1. Ouvre Google Calendar
 2. Clique sur **+** à côté de “Autres agendas”
 3. Choisis **À partir de l’URL**
