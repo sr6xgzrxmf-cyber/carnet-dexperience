@@ -109,6 +109,25 @@ C’est là que s’est forgée ma capacité à :
 
 ---
 
+### **BEP Électrotechnique & CAP Petite enfance**  
+*Lycée professionnel Marc-Seguin – Saint-Charles, Annonay — 1999*
+
+Cette année marque une phase d’exploration décisive.  
+Je possédais de bonnes capacités scolaires, mais sans projet clair — une adolescence chaotique, beaucoup d’énergie, et la nécessité de trouver une direction.
+
+L’électrotechnique m’a apporté la rigueur, la logique et le rapport aux systèmes.  
+Le CAP Petite enfance m’a mis en contact avec l’humain, le soin et la transmission.
+
+J’ai également été attiré par les filières **Vente Action Marchande** et **Sanitaire & Social**, mais un choix devait être fait.  
+J’ai choisi la vente — parce qu’elle me permettait de relier **relation humaine, action concrète et impact**.
+
+Ce moment fondateur explique la suite de mon parcours :  
+un équilibre constant entre **technique, humain et terrain**.
+
+
+---
+
+
 ### **Ce que ma formation m’a donné**
 
 Au-delà des diplômes, mon parcours de formation m’a donné trois piliers :
