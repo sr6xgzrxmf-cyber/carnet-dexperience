@@ -185,6 +185,7 @@
   },
   "active": "5769fa2705617dc4",
   "lastOpenFiles": [
+    "public/images/articles/2026-01-15-article-zero-manifeste.jpg",
     "content/articles/2026-01-15-article-zero-manifeste.md",
     "content/articles/2025-01-15-article-zero-manifeste.md",
     "2025-01-15-article-zero-manifeste.md",
@@ -222,7 +223,6 @@
     "node_modules/mdast-util-gfm-autolink-literal/lib",
     "node_modules/mdast-util-gfm-autolink-literal/license",
     "node_modules/mdast-util-gfm/index.d.ts",
-    "node_modules/mdast-util-gfm/readme.md",
     "node_modules/mdast-util-gfm/package.json",
     "public/images/articles/apprentissage-adulte-humour.jpg",
     "public/images/articles/apprenant-adulte-super-heros.jpg",
