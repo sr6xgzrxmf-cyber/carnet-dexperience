@@ -1,6 +1,6 @@
 ---
 title: "Contenu génératif vs contenu humain : comment combiner les deux pour gagner en 2026"
-date: 2026-01-02
+date: "2026-01-02"
 author: Laurent Guyonnet
 image: "/images/2026-01-02-contenu-generatif-vs-humain.jpg"
 tags:
