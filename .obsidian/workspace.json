@@ -185,6 +185,9 @@
   },
   "active": "5769fa2705617dc4",
   "lastOpenFiles": [
+    "content/articles/2026-01-15-article-zero-manifeste.md",
+    "content/articles/2025-01-15-article-zero-manifeste.md",
+    "2025-01-15-article-zero-manifeste.md",
     "content/articles/2023-07-31-management-agile.md",
     "content/articles/2023-07-07-six-qualites-bon-formateur.md",
     "content/articles/2023-06-29-management-autoritaire-formation.md",
@@ -221,9 +224,6 @@
     "node_modules/mdast-util-gfm/index.d.ts",
     "node_modules/mdast-util-gfm/readme.md",
     "node_modules/mdast-util-gfm/package.json",
-    "node_modules/mdast-util-gfm-footnote/readme.md",
-    "node_modules/mdast-util-gfm-task-list-item/readme.md",
-    "node_modules/micromark-extension-gfm/readme.md",
     "public/images/articles/apprentissage-adulte-humour.jpg",
     "public/images/articles/apprenant-adulte-super-heros.jpg",
     "public/images/articles/Dunning-Kruger.jpg"
