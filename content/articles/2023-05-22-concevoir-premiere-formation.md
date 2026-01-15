@@ -1,6 +1,7 @@
 ---
 title: "Concevoir votre première formation : une aventure palpitante"
-date: "2023-05-22"excerpt: Comment transformer la création d’une formation en véritable exploration pédagogique, entre besoins, objectifs et trésor de compétences.
+date: "2023-05-22"
+excerpt: Comment transformer la création d’une formation en véritable exploration pédagogique, entre besoins, objectifs et trésor de compétences.
 cover: /images/articles/concevoir-premiere-formation.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:

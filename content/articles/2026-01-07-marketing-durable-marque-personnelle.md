@@ -4,6 +4,12 @@ date: "2026-01-07"
 excerpt: "En 2026, la crédibilité d’une marque personnelle repose moins sur la visibilité que sur la cohérence entre ce que l’on dit, ce que l’on fait et ce que les autres peuvent vérifier."
 cover: /images/articles/2026-01-07-marketing-durable-marque-personnelle.jpg
 source: Laurent Guyonnet — Carnet d’expérience
+
+series:
+  name: "Marketing durable et engagé"
+  slug: "durableetengage"
+  order: 1
+
 tags:
   - Marque personnelle
   - Marketing

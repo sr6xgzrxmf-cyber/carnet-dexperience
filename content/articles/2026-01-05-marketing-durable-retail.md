@@ -4,6 +4,12 @@ date: "2026-01-05"
 excerpt: "En 2026, la durabilité n’est plus un supplément d’âme pour le retail. C’est un levier direct de confiance, de conversion et de fidélisation en magasin."
 cover: /images/articles/2026-01-05-marketing-durable-retail.jpg
 source: Laurent Guyonnet — Carnet d’expérience
+
+series:
+  name: "Marketing durable et engagé"
+  slug: "durableetengage"
+  order: 0
+
 tags:
   - Retail
   - Marketing

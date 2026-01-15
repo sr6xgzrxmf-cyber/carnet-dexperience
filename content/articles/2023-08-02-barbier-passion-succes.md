@@ -1,6 +1,7 @@
 ---
 title: "Barbier, passion et succès : quand la formation devient un art"
-date: "2023-08-02"excerpt: Comment la passion du métier et la formation continue transforment l’artisanat en réussite durable.
+date: "2023-08-02"
+excerpt: Comment la passion du métier et la formation continue transforment l’artisanat en réussite durable.
 cover: /images/articles/barbier-passion-succes.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:

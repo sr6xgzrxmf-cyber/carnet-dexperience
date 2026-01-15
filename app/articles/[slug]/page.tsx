@@ -10,12 +10,42 @@ import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
 import ContactButton from "@/components/ContactButton";
 
-export function generateStaticParams() {
-  return getAllArticles().map((it) => ({ slug: it.slug }));
+export async function generateStaticParams() {
+  const all = await getAllArticles();
+  return (all ?? []).map((it: any) => ({ slug: it.slug }));
 }
 
 function formatDate(date?: string) {
   return date ?? "";
+}
+
+function getMeta(item: any) {
+  return item?.meta ?? item ?? {};
+}
+
+function getSeriesInfo(item: any): { slug?: string; title?: string; order?: number } {
+  const m = getMeta(item);
+  const s = m?.series;
+  return {
+    slug: typeof s?.slug === "string" ? s.slug : undefined,
+    title: typeof s?.title === "string" ? s.title : undefined,
+    order:
+      typeof s?.order === "number"
+        ? s.order
+        : typeof s?.order === "string"
+          ? Number(s.order)
+          : undefined,
+  };
+}
+
+function asDateValue(d: any): number {
+  if (typeof d !== "string") return 0;
+  const t = Date.parse(d);
+  return Number.isFinite(t) ? t : 0;
+}
+
+function getSlug(item: any): string {
+  return item?.slug ?? getMeta(item)?.slug ?? "";
 }
 
 export default async function ArticleDetailPage({
@@ -29,6 +59,41 @@ export default async function ArticleDetailPage({
   if (!item) return notFound();
 
   const contentHtml = await markdownToHtml(item.content);
+
+  // =========================
+  // A) Série (prev/next par series.order)
+  // B) Fallback chrono (prev/next par date)
+  // =========================
+  const all = await getAllArticles();
+  const allItems = all ?? [];
+
+  const current = allItems.find((x: any) => getSlug(x) === slug) ?? item;
+  const currentSeries = getSeriesInfo(current);
+
+  let prev: any = null;
+  let next: any = null;
+
+  // A) Série
+  if (currentSeries.slug && Number.isFinite(currentSeries.order)) {
+    const seriesItems = allItems
+      .filter((x: any) => getSeriesInfo(x).slug === currentSeries.slug)
+      .filter((x: any) => Number.isFinite(getSeriesInfo(x).order))
+      .sort((a: any, b: any) => (getSeriesInfo(a).order! - getSeriesInfo(b).order!));
+
+    const idx = seriesItems.findIndex((x: any) => getSlug(x) === slug);
+    prev = idx > 0 ? seriesItems[idx - 1] : null;
+    next = idx >= 0 && idx < seriesItems.length - 1 ? seriesItems[idx + 1] : null;
+  }
+
+  // B) Fallback chrono si pas de série exploitable
+  if (!prev && !next) {
+    const sorted = [...allItems].sort(
+      (a: any, b: any) => asDateValue(getMeta(b)?.date) - asDateValue(getMeta(a)?.date)
+    );
+    const idx = sorted.findIndex((x: any) => getSlug(x) === slug);
+    prev = idx > 0 ? sorted[idx - 1] : null;
+    next = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
+  }
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
@@ -161,6 +226,31 @@ export default async function ArticleDetailPage({
         "
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      {/* Série / Chrono : Précédent / Suivant */}
+      <div className="mt-12 flex items-center justify-between gap-4 border-t border-neutral-200 dark:border-neutral-800 pt-8">
+        {prev ? (
+          <Link
+            href={`/articles/${getSlug(prev)}`}
+            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-white/70 dark:hover:bg-neutral-950/50"
+          >
+            ← Précédent
+          </Link>
+        ) : (
+          <div />
+        )}
+
+        {next ? (
+          <Link
+            href={`/articles/${getSlug(next)}`}
+            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-white/70 dark:hover:bg-neutral-950/50"
+          >
+            Suivant →
+          </Link>
+        ) : (
+          <div />
+        )}
+      </div>
 
       {/* Share + Comments */}
       <ShareBar title={item.meta.title} />
