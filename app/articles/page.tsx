@@ -402,6 +402,22 @@ export default async function ArticlesHubPage(props: {
             </div>
           )}
         </section>
+
+{/* ======================
+    ARCHIVES COMPLÈTES
+====================== */}
+<section className="flex justify-center pt-4">
+  <Link
+    href="/articles/archives"
+    className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+  >
+    Parcourir toutes les archives →
+  </Link>
+</section>
+
+
+
+
       </div>
     </main>
   );
