@@ -17,7 +17,7 @@ export default function ParcoursPage() {
         <h1 className="text-3xl font-semibold tracking-tight">Parcours</h1>
         <p className="text-neutral-700 dark:text-neutral-300">
           Une timeline chronologique&nbsp;: expériences, rôles, contextes,
-          apprentissages. Cliquez sur le titre du métier pour découvrir cette expérience en détail.
+          apprentissages. <br /> Cliquez sur le titre du métier pour découvrir cette expérience en détail.
         </p>
       </header>
 
