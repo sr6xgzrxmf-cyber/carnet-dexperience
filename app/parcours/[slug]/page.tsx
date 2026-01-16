@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllParcours,
@@ -33,10 +34,18 @@ export default async function ParcoursDetailPage({
   return (
     <section>
       <div className="mx-auto max-w-3xl">
-        <header className="space-y-3">
-          <h1 className="text-3xl font-semibold tracking-tight">
-            {item.meta.title}
-          </h1>
+<header className="space-y-3">
+  <Link
+    href="/parcours"
+    className="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
+  >
+    <span aria-hidden className="text-base leading-none">←</span>
+    <span>Retour </span>
+  </Link>
+
+  <h1 className="text-3xl font-semibold tracking-tight">
+    {item.meta.title}
+  </h1>
 
           <div className="text-sm text-neutral-700 dark:text-neutral-300">
             <div>
