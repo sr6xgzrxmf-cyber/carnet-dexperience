@@ -169,84 +169,106 @@ export default async function ArticlesHubPage(props: {
       </header>
 
       <div className="space-y-14">
-        {/* ======================
-            RÉTROSPECTIVES
-        ====================== */}
-        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-            Rétrospectives
-          </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {seriesCards.map((s) => {
-              const startHref = s.start?.slug ? `/articles/${s.start.slug}` : "#";
+{/* ======================
+    RÉTROSPECTIVES
+====================== */}
+<section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+  <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+    Rétrospectives
+  </h2>
 
-              return (
-                <div
-                  key={s.slug}
-                  className="overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
-                >
-                  {s.covers.length ? (
-                    <Mosaic covers={s.covers} />
-                  ) : (
-                    <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-                  )}
+  <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+    {seriesCards.map((s) => {
+      const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
 
-                  <div className="p-6">
-                    <div className="text-xs text-neutral-600 dark:text-neutral-400">
-                      Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
-                    </div>
-
-                    <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                      {s.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-                      {s.description}
-                    </p>
-
-                    <div className="mt-5 flex flex-wrap items-center gap-3">
-                      <Link
-                        href={startHref}
-                        className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
-                      >
-                        Commencer
-                      </Link>
-
-                      <div className="text-xs text-neutral-500">
-                        Départ :{" "}
-                        <span className="text-neutral-700 dark:text-neutral-300">
-                          {s.start?.title ?? "—"}
-                        </span>
-                      </div>
-                    </div>
-
-                    {s.items.length ? (
-                      <ul className="mt-5 space-y-2 text-sm">
-                        {s.items.slice(0, 5).map((a) => (
-                          <li
-                            key={a.slug}
-                            className="text-neutral-700 dark:text-neutral-300"
-                          >
-                            <span className="text-neutral-500">
-                              {(a.series?.order ?? 0).toString().padStart(2, "0")}
-                            </span>
-                            <span className="text-neutral-500"> – </span>
-                            <span>{a.title}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="mt-5 text-sm text-neutral-500">
-                        Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
-                      </p>
-                    )}
-                  </div>
+      return (
+        <div
+          key={s.slug}
+          className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+        >
+          {startHref ? (
+            <Link
+              href={startHref}
+              aria-label={`Commencer la série : ${s.title}`}
+              className="block"
+            >
+              {s.covers.length ? (
+                <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
+                  <Mosaic covers={s.covers} />
                 </div>
-              );
-            })}
+              ) : (
+                <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30 transition-transform duration-300 ease-out group-hover:scale-[1.02]" />
+              )}
+            </Link>
+          ) : s.covers.length ? (
+            <Mosaic covers={s.covers} />
+          ) : (
+            <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+          )}
+
+          <div className="p-6">
+            <div className="text-xs text-neutral-600 dark:text-neutral-400">
+              Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
+            </div>
+
+            <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              {s.title}
+            </h3>
+
+            <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+              {s.description}
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              {startHref ? (
+                <Link
+                  href={startHref}
+                  className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
+                >
+                  Commencer
+                </Link>
+              ) : (
+                <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
+                  Commencer
+                </span>
+              )}
+
+              <div className="text-xs text-neutral-500">
+                Départ :{" "}
+                <span className="text-neutral-700 dark:text-neutral-300">
+                  {s.start?.title ?? "—"}
+                </span>
+              </div>
+            </div>
+
+            {s.items.length ? (
+              <ul className="mt-5 space-y-2 text-sm">
+                {s.items.slice(0, 5).map((a) => (
+                  <li
+                    key={a.slug}
+                    className="text-neutral-700 dark:text-neutral-300"
+                  >
+                    <span className="text-neutral-500">
+                      {(a.series?.order ?? 0).toString().padStart(2, "0")}
+                    </span>
+                    <span className="text-neutral-500"> – </span>
+                    <span>{a.title}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-5 text-sm text-neutral-500">
+                Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
+              </p>
+            )}
           </div>
-        </section>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
 
         {/* ======================
             FILTRES
