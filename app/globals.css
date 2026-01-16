@@ -55,6 +55,40 @@ body {
   max-width: none;
 }
 
+/* ==== Compact & editorial lists (important) ==== */
+
+.prose ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.1rem;
+}
+
+.prose ul li {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+
+/* Remove extra spacing when a list follows a paragraph */
+.prose p + ul,
+.prose p + ol {
+  margin-top: 0.25rem;
+}
+
+/* Editorial list without bullets (Apple-like)
+   Usage in Markdown: <ul class="list-tight"> ... </ul>
+   (Only if you explicitly want dash lists; otherwise ignore this) */
+.prose ul.list-tight {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prose ul.list-tight li::before {
+  content: "— ";
+  color: rgb(115 115 115); /* neutral-500 */
+}
+
+/* ==== Layout container ==== */
 @layer components {
   .site-container {
     @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
