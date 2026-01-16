@@ -9,7 +9,7 @@ const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
 export type ArticleMeta = {
   title: string;
-  date?: any; // <- important: peut être string OU Date selon le YAML parser
+  date?: any; // important: peut être string OU Date selon le YAML parser
   tags?: string[];
   cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
@@ -22,7 +22,12 @@ export type ArticleItem = {
   content: string;
 };
 
-function toTimestamp(input: any): number {
+/**
+ * Convertit une date (string | Date | number | objet) en timestamp UTC robuste.
+ * - Supporte "YYYY-MM-DD" (converti en UTC)
+ * - Supporte dates ISO et formats parseables par Date.parse
+ */
+export function toTimestamp(input: any): number {
   if (!input) return 0;
 
   if (input instanceof Date) {
@@ -48,7 +53,25 @@ function toTimestamp(input: any): number {
   return 0;
 }
 
-export function getAllArticles(): ArticleItem[] {
+/**
+ * Article "publié" si:
+ * - pas de date => publié
+ * - date <= maintenant
+ */
+export function isPublishedDate(input: any, now: number = Date.now()): boolean {
+  const ts = toTimestamp(input);
+  if (!ts) return true;
+  return ts <= now;
+}
+
+/**
+ * Renvoie tous les articles triés par date décroissante.
+ * Options:
+ * - includeFuture: inclure les articles datés dans le futur (default: true)
+ */
+export function getAllArticles(options?: { includeFuture?: boolean }): ArticleItem[] {
+  const includeFuture = options?.includeFuture ?? true;
+
   const fileNames = fs
     .readdirSync(articlesDirectory)
     .filter((f) => f.endsWith(".md"));
@@ -62,22 +85,24 @@ export function getAllArticles(): ArticleItem[] {
     return { slug, meta: data as ArticleMeta, content };
   });
 
-  // tri décroissant par date (robuste)
-  return items.sort((a, b) => {
-    const at = toTimestamp(a.meta.date);
-    const bt = toTimestamp(b.meta.date);
-    return bt - at;
-  });
+  const sorted = items.sort((a, b) => toTimestamp(b.meta.date) - toTimestamp(a.meta.date));
+
+  if (includeFuture) return sorted;
+
+  const now = Date.now();
+  return sorted.filter((a) => isPublishedDate(a.meta.date, now));
+}
+
+/**
+ * Raccourci: articles publiés seulement (date <= maintenant)
+ */
+export function getPublishedArticles(): ArticleItem[] {
+  return getAllArticles({ includeFuture: false });
 }
 
 export function getArticleBySlug(slug: string): ArticleItem | null {
   const clean = decodeURIComponent(slug).trim();
   const fullPath = path.join(articlesDirectory, `${clean}.md`);
-
-  console.log("[getArticleBySlug] slug =", JSON.stringify(slug));
-  console.log("[getArticleBySlug] clean =", JSON.stringify(clean));
-  console.log("[getArticleBySlug] fullPath =", fullPath);
-  console.log("[getArticleBySlug] exists =", fs.existsSync(fullPath));
 
   if (!fs.existsSync(fullPath)) return null;
 
@@ -88,7 +113,7 @@ export function getArticleBySlug(slug: string): ArticleItem | null {
 
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
-    .use(remarkGfm) // ✅ tables, task lists, strikethrough, etc.
+    .use(remarkGfm) // tables, task lists, strikethrough, etc.
     .use(html)
     .process(markdown);
 

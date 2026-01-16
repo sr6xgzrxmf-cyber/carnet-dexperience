@@ -4,13 +4,15 @@ import Image from "next/image";
 import {
   getAllArticles,
   getArticleBySlug,
+  isPublishedDate,
   markdownToHtml,
 } from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
 
 export async function generateStaticParams() {
-  const all = await getAllArticles();
+  // ✅ Only pre-render published articles
+  const all = await getAllArticles({ includeFuture: false });
   return (all ?? []).map((it: any) => ({ slug: it.slug }));
 }
 
@@ -57,13 +59,16 @@ export default async function ArticleDetailPage({
   const item = getArticleBySlug(slug);
   if (!item) return notFound();
 
+  // ✅ Block direct access to future-dated articles
+  if (!isPublishedDate(item.meta?.date)) return notFound();
+
   const contentHtml = await markdownToHtml(item.content);
 
   // =========================
   // A) Série (prev/next par series.order)
   // B) Fallback chrono (prev/next par date)
   // =========================
-  const all = await getAllArticles();
+  const all = await getAllArticles({ includeFuture: false });
   const allItems = all ?? [];
 
   const current = allItems.find((x: any) => getSlug(x) === slug) ?? item;
@@ -102,6 +107,15 @@ export default async function ArticleDetailPage({
       <div className="mx-auto max-w-3xl">
         {/* Header */}
         <header className="space-y-4">
+          <Link
+            href="/articles"
+            className="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
+            aria-label="Retour à la liste des articles"
+          >
+            <span aria-hidden className="text-base leading-none">←</span>
+            <span>Retour</span>
+          </Link>
+
           <h1 className="text-3xl font-semibold tracking-tight">
             {item.meta.title}
           </h1>

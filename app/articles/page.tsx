@@ -50,6 +50,28 @@ function getItemMeta(item: any): ArticleMeta {
   };
 }
 
+/* ---------- Publication gating (date <= now) ---------- */
+function parseDateSafe(input?: string): Date | null {
+  if (!input) return null;
+
+  const s = String(input).trim();
+  if (!s) return null;
+
+  // Support "YYYY-MM-DD" (force UTC to avoid timezone surprises)
+  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
+    return new Date(`${s}T00:00:00.000Z`);
+  }
+
+  const d = new Date(s);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+function isPublished(date?: string): boolean {
+  const d = parseDateSafe(date);
+  if (!d) return true; // no date => visible
+  return d.getTime() <= Date.now();
+}
+
 /* ---------- Mosaic (covers séries) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 5);
@@ -112,9 +134,12 @@ export default async function ArticlesHubPage(props: {
   const raw = await getAllArticles();
   const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
 
+  // ✅ Only show published items (date <= now)
+  const published = all.filter((a) => isPublished(a.date));
+
   /* ---------- Séries (Par où commencer) ---------- */
   const seriesCards = featuredSeriesList.map((s) => {
-    const items = all
+    const items = published
       .filter((a) => a.series?.slug === s.slug)
       .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
 
@@ -130,7 +155,7 @@ export default async function ArticlesHubPage(props: {
 
   /* ---------- Filtres & résultats ---------- */
   const tagCount = new Map<string, number>();
-  for (const a of all) {
+  for (const a of published) {
     for (const t of a.tags ?? []) {
       const k = normalizeTag(t);
       if (!k) continue;
@@ -140,8 +165,8 @@ export default async function ArticlesHubPage(props: {
 
   const results =
     selected.length === 0
-      ? all
-      : all.filter((a) => selected.every((t) => (a.tags ?? []).includes(t)));
+      ? published
+      : published.filter((a) => selected.every((t) => (a.tags ?? []).includes(t)));
 
   const availableTagCount = new Map<string, number>();
   for (const a of results) {
@@ -170,106 +195,109 @@ export default async function ArticlesHubPage(props: {
       </header>
 
       <div className="space-y-14">
-{/* ======================
-    RÉTROSPECTIVES
-====================== */}
-<section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-  <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-    Rétrospectives
-  </h2>
+        {/* ======================
+            RÉTROSPECTIVES
+        ====================== */}
+        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+            Rétrospectives
+          </h2>
 
-  <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-    {seriesCards.map((s) => {
-      const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {seriesCards.map((s) => {
+              const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
 
-      return (
-        <div
-          key={s.slug}
-          className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
-        >
-{/* Image cliquable + micro-zoom */}
-{startHref ? (
-  <Link
-    href={startHref}
-    aria-label={`Commencer la série : ${s.title}`}
-    className="block overflow-hidden"
-  >
-    <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
-      {s.covers.length ? (
-        <Mosaic covers={s.covers} />
-      ) : (
-        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-      )}
-    </div>
-  </Link>
-) : (
-  <div>
-    {s.covers.length ? (
-      <Mosaic covers={s.covers} />
-    ) : (
-      <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-    )}
-  </div>
-)}
-          <div className="p-6">
-            <div className="text-xs text-neutral-600 dark:text-neutral-400">
-              Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
-            </div>
-
-            <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-              {s.title}
-            </h3>
-
-            <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-              {s.description}
-            </p>
-
-            <div className="mt-5 flex flex-wrap items-center gap-3">
-              {startHref ? (
-                <Link
-                  href={startHref}
-                  className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
+              return (
+                <div
+                  key={s.slug}
+                  className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
                 >
-                  Commencer
-                </Link>
-              ) : (
-                <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
-                  Commencer
-                </span>
-              )}
+                  {/* Image cliquable + micro-zoom */}
+                  {startHref ? (
+                    <Link
+                      href={startHref}
+                      aria-label={`Commencer la série : ${s.title}`}
+                      className="block overflow-hidden"
+                    >
+                      <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
+                        {s.covers.length ? (
+                          <Mosaic covers={s.covers} />
+                        ) : (
+                          <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+                        )}
+                      </div>
+                    </Link>
+                  ) : (
+                    <div>
+                      {s.covers.length ? (
+                        <Mosaic covers={s.covers} />
+                      ) : (
+                        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+                      )}
+                    </div>
+                  )}
 
-              <div className="text-xs text-neutral-500">
-                Départ :{" "}
-                <span className="text-neutral-700 dark:text-neutral-300">
-                  {s.start?.title ?? "—"}
-                </span>
-              </div>
-            </div>
+                  <div className="p-6">
+                    <div className="text-xs text-neutral-600 dark:text-neutral-400">
+                      Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
+                    </div>
 
-            {s.items.length ? (
-              <ul className="mt-5 space-y-2 text-sm">
-                {s.items.slice(0, 5).map((a) => (
-                  <li key={a.slug} className="text-neutral-700 dark:text-neutral-300">
-                    <span className="text-neutral-500">
-                      {(a.series?.order ?? 0).toString().padStart(2, "0")}
-                    </span>
-                    <span className="text-neutral-500"> – </span>
-                    <span>{a.title}</span>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="mt-5 text-sm text-neutral-500">
-                Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
-              </p>
-            )}
+                    <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                      {s.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+                      {s.description}
+                    </p>
+
+                    <div className="mt-5 flex flex-wrap items-center gap-3">
+                      {startHref ? (
+                        <Link
+                          href={startHref}
+                          className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
+                        >
+                          Commencer
+                        </Link>
+                      ) : (
+                        <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
+                          Commencer
+                        </span>
+                      )}
+
+                      <div className="text-xs text-neutral-500">
+                        Départ :{" "}
+                        <span className="text-neutral-700 dark:text-neutral-300">
+                          {s.start?.title ?? "—"}
+                        </span>
+                      </div>
+                    </div>
+
+                    {s.items.length ? (
+                      <ul className="mt-5 space-y-2 text-sm">
+                        {s.items.slice(0, 5).map((a) => (
+                          <li
+                            key={a.slug}
+                            className="text-neutral-700 dark:text-neutral-300"
+                          >
+                            <span className="text-neutral-500">
+                              {(a.series?.order ?? 0).toString().padStart(2, "0")}
+                            </span>
+                            <span className="text-neutral-500"> – </span>
+                            <span>{a.title}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="mt-5 text-sm text-neutral-500">
+                        Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
+                      </p>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        </div>
-      );
-    })}
-  </div>
-</section>
-
+        </section>
 
         {/* ======================
             FILTRES
