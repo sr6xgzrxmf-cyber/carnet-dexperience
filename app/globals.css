@@ -94,3 +94,48 @@ body {
     @apply mx-auto w-full max-w-6xl px-6 sm:px-8;
   }
 }
+
+
+/* ==== Typography override (must be LAST in globals.css) ==== */
+.prose :where(ul):not(:where([class~="not-prose"], [class~="not-prose"] *)),
+.prose :where(ol):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin-top: 0.35rem;
+  margin-bottom: 0.6rem;
+  padding-left: 1.1rem;
+}
+
+.prose :where(li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin-top: 0.12rem;
+  margin-bottom: 0.12rem;
+  line-height: 1.35;
+}
+
+/* THE key: Typography wraps list items content in <p> -> remove its margins */
+.prose :where(li > p):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin: 0;
+}
+
+/* keep a small separation only if there are multiple paragraphs inside the same li */
+.prose :where(li > p + p):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  margin-top: 0.45rem;
+}
+
+
+/* ==== FORCE OVERRIDE prose lists (LAST RULES) ==== */
+.prose ul,
+.prose ol {
+  margin-top: 0.35rem !important;
+  margin-bottom: 0.6rem !important;
+  padding-left: 1.1rem !important;
+}
+
+.prose li {
+  margin-top: 0.12rem !important;
+  margin-bottom: 0.12rem !important;
+  line-height: 1.35 !important;
+}
+
+/* The real culprit: typography adds margins on <p> inside <li> */
+.prose li > p {
+  margin: 0 !important;
+}

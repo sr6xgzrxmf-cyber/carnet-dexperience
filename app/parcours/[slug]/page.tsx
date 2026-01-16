@@ -94,12 +94,25 @@ export default async function ParcoursDetailPage({
             [&_h3]:font-semibold
             [&_h3]:tracking-tight
 
-            [&_ul]:my-0
+            [&_ul]:my-2
             [&_ul]:list-disc
             [&_ul]:pl-5
-            [&_li]:my-1
-            [&_p+_ul]:mt-3
-            [&_ul+_p]:mt-3
+
+            [&_li]:my-0
+            [&_li]:leading-6
+
+            [&_li>p]:m-0
+            [&_li>p]:leading-6
+
+            [&_p+_ul]:mt-2
+            [&_ul+_p]:mt-2
+
+
+            [&_ol]:my-2
+            [&_ol]:pl-5
+            [&_ol>li]:my-0
+            [&_ol>li>p]:m-0
+
 
             [&_hr]:hidden
           "
