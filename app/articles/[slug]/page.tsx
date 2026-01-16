@@ -59,8 +59,14 @@ export default async function ArticleDetailPage({
   const item = getArticleBySlug(slug);
   if (!item) return notFound();
 
-  // ✅ Block direct access to future-dated articles
-  if (!isPublishedDate(item.meta?.date)) return notFound();
+  // ✅ Show future-dated items only in dev or Vercel preview deployments
+  const allowFuture =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+
+  const isFuture = !isPublishedDate(item.meta?.date);
+
+  // ✅ Block direct access to future-dated articles in production
+  if (isFuture && !allowFuture) return notFound();
 
   const contentHtml = await markdownToHtml(item.content);
 
@@ -121,11 +127,20 @@ export default async function ArticleDetailPage({
           </h1>
 
           <div className="text-sm text-neutral-700 dark:text-neutral-300">
-            <div className="flex flex-wrap gap-x-3 gap-y-1">
+            <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
               {item.meta.date ? <span>{formatDate(item.meta.date)}</span> : null}
               {item.meta.source ? (
                 <span className="text-neutral-600 dark:text-neutral-400">
                   • {item.meta.source}
+                </span>
+              ) : null}
+
+              {allowFuture && isFuture ? (
+                <span className="text-neutral-600 dark:text-neutral-400">
+                  •{" "}
+                  <span className="inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-2 py-0.5 text-[11px]">
+                    À paraître
+                  </span>
                 </span>
               ) : null}
             </div>

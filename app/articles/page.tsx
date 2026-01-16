@@ -72,6 +72,23 @@ function isPublished(date?: string): boolean {
   return d.getTime() <= Date.now();
 }
 
+function startOfDayUTC(d: Date) {
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+}
+
+function daysUntil(date?: string): number | null {
+  const d = parseDateSafe(date);
+  if (!d) return null;
+
+  const todayUTC = startOfDayUTC(new Date());
+  const targetUTC = startOfDayUTC(d);
+
+  const diffDays = Math.round(
+    (targetUTC - todayUTC) / (24 * 60 * 60 * 1000)
+  );
+  return diffDays;
+}
+
 /* ---------- Mosaic (covers séries) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 5);
@@ -131,13 +148,22 @@ export default async function ArticlesHubPage(props: {
     .map(normalizeTag)
     .filter(Boolean);
 
-  const raw = await getAllArticles();
+  // ✅ Show future-dated items only in dev or Vercel preview deployments
+  const allowFuture =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+
+  const raw = await getAllArticles({ includeFuture: allowFuture });
   const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
 
-  // ✅ Only show published items (date <= now)
+  // Published vs À paraître
   const published = all.filter((a) => isPublished(a.date));
 
+  // ✅ En dev/preview : Résultats affiche tout (publiés + futurs)
+  // ✅ En prod : Résultats affiche uniquement les publiés
+  const resultsBase = allowFuture ? all : published;
+
   /* ---------- Séries (Par où commencer) ---------- */
+  // On garde volontairement "published" ici pour que les rétrospectives restent "publiées-only".
   const seriesCards = featuredSeriesList.map((s) => {
     const items = published
       .filter((a) => a.series?.slug === s.slug)
@@ -154,8 +180,9 @@ export default async function ArticlesHubPage(props: {
   });
 
   /* ---------- Filtres & résultats ---------- */
+  // ✅ Tags calculés sur la même base que Résultats
   const tagCount = new Map<string, number>();
-  for (const a of published) {
+  for (const a of resultsBase) {
     for (const t of a.tags ?? []) {
       const k = normalizeTag(t);
       if (!k) continue;
@@ -165,8 +192,10 @@ export default async function ArticlesHubPage(props: {
 
   const results =
     selected.length === 0
-      ? published
-      : published.filter((a) => selected.every((t) => (a.tags ?? []).includes(t)));
+      ? resultsBase
+      : resultsBase.filter((a) =>
+          selected.every((t) => (a.tags ?? []).includes(t))
+        );
 
   const availableTagCount = new Map<string, number>();
   for (const a of results) {
@@ -212,7 +241,6 @@ export default async function ArticlesHubPage(props: {
                   key={s.slug}
                   className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
                 >
-                  {/* Image cliquable + micro-zoom */}
                   {startHref ? (
                     <Link
                       href={startHref}
@@ -394,6 +422,8 @@ export default async function ArticlesHubPage(props: {
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
               {results.map((a) => {
                 const coverSrc = normalizeCoverSrc(a.cover);
+                const futureLabel = allowFuture && !isPublished(a.date);
+
                 return (
                   <Link
                     key={a.slug}
@@ -417,9 +447,36 @@ export default async function ArticlesHubPage(props: {
                     )}
 
                     <div className="p-6">
-                      <div className="text-xs text-neutral-600 dark:text-neutral-400">
-                        {a.date} — {a.source}
-                      </div>
+                      <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+  {futureLabel ? (
+    <>
+      <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
+        À paraître
+      </span>
+{(() => {
+  const d = daysUntil(a.date);
+  if (typeof d === "number" && d > 0) {
+    return (
+      <span className="text-neutral-400 dark:text-neutral-500">
+        J-{d}
+      </span>
+    );
+  }
+  return a.date ? (
+    <span className="text-neutral-400 dark:text-neutral-500">
+      {a.date}
+    </span>
+  ) : null;
+})()}
+    </>
+  ) : (
+    <span>{a.date}</span>
+  )}
+{/*
+  <span className="text-neutral-400">—</span>
+  <span>{a.source}</span>
+*/}
+</div>
 
                       <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
                         {a.title}

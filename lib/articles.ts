@@ -64,14 +64,22 @@ export function isPublishedDate(input: any, now: number = Date.now()): boolean {
   return ts <= now;
 }
 
-/**
- * Renvoie tous les articles triés par date décroissante.
- * Options:
- * - includeFuture: inclure les articles datés dans le futur (default: true)
- */
-export function getAllArticles(options?: { includeFuture?: boolean }): ArticleItem[] {
-  const includeFuture = options?.includeFuture ?? true;
+/* =========================
+   Cache (mémoire) simple
+   - évite de re-lire le disque à répétition pendant un rendu
+   - s'invalide tout seul si le nombre de fichiers change
+   - safe pour ton usage (petit volume)
+========================= */
 
+type Cache = {
+  fileCount: number;
+  items: ArticleItem[];
+  bySlug: Map<string, ArticleItem>;
+};
+
+let cache: Cache | null = null;
+
+function readAllFromDisk(): ArticleItem[] {
   const fileNames = fs
     .readdirSync(articlesDirectory)
     .filter((f) => f.endsWith(".md"));
@@ -85,12 +93,40 @@ export function getAllArticles(options?: { includeFuture?: boolean }): ArticleIt
     return { slug, meta: data as ArticleMeta, content };
   });
 
-  const sorted = items.sort((a, b) => toTimestamp(b.meta.date) - toTimestamp(a.meta.date));
+  return items.sort((a, b) => toTimestamp(b.meta.date) - toTimestamp(a.meta.date));
+}
 
-  if (includeFuture) return sorted;
+function getCache(): Cache {
+  const fileNames = fs
+    .readdirSync(articlesDirectory)
+    .filter((f) => f.endsWith(".md"));
+
+  const fileCount = fileNames.length;
+
+  if (cache && cache.fileCount === fileCount) return cache;
+
+  const items = readAllFromDisk();
+  const bySlug = new Map<string, ArticleItem>();
+  for (const it of items) bySlug.set(it.slug, it);
+
+  cache = { fileCount, items, bySlug };
+  return cache;
+}
+
+/**
+ * Renvoie tous les articles triés par date décroissante.
+ * Options:
+ * - includeFuture: inclure les articles datés dans le futur (default: true)
+ */
+export function getAllArticles(options?: { includeFuture?: boolean }): ArticleItem[] {
+  const includeFuture = options?.includeFuture ?? true;
+
+  const { items } = getCache();
+
+  if (includeFuture) return items;
 
   const now = Date.now();
-  return sorted.filter((a) => isPublishedDate(a.meta.date, now));
+  return items.filter((a) => isPublishedDate(a.meta.date, now));
 }
 
 /**
@@ -100,15 +136,33 @@ export function getPublishedArticles(): ArticleItem[] {
   return getAllArticles({ includeFuture: false });
 }
 
-export function getArticleBySlug(slug: string): ArticleItem | null {
+/**
+ * Renvoie l'article par slug.
+ * Options:
+ * - includeFuture: autorise le renvoi d'un article futur (default: true)
+ *   (si false, renvoie null si date > maintenant)
+ */
+export function getArticleBySlug(
+  slug: string,
+  options?: { includeFuture?: boolean }
+): ArticleItem | null {
+  const includeFuture = options?.includeFuture ?? true;
   const clean = decodeURIComponent(slug).trim();
-  const fullPath = path.join(articlesDirectory, `${clean}.md`);
 
-  if (!fs.existsSync(fullPath)) return null;
+  const { bySlug } = getCache();
+  const item = bySlug.get(clean) ?? null;
+  if (!item) return null;
 
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-  return { slug: clean, meta: data as ArticleMeta, content };
+  if (!includeFuture && !isPublishedDate(item.meta?.date)) return null;
+
+  return item;
+}
+
+/**
+ * Raccourci: article publié uniquement (null si futur)
+ */
+export function getPublishedArticleBySlug(slug: string): ArticleItem | null {
+  return getArticleBySlug(slug, { includeFuture: false });
 }
 
 export async function markdownToHtml(markdown: string) {
