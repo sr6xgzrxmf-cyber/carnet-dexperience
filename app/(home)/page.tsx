@@ -70,6 +70,8 @@ export default function HomePage() {
         <div className="mx-auto space-y-8 max-w-3xl">
           <div className="space-y-3">
             <h2 className="text-xl font-semibold">Bienvenue</h2>
+
+
             <p className="text-neutral-800 dark:text-neutral-200">
               <strong>Carnet d'expérience</strong> est un espace personnel et
               professionnel. Il prolonge mon CV en donnant accès à ce qui n'y tient
@@ -81,6 +83,12 @@ export default function HomePage() {
               formation, le management, l'adoption des outils et la manière dont
               les organisations fonctionnent — ou dysfonctionnent — au quotidien.
             </p>
+
+            <p className="text-neutral-800 dark:text-neutral-200"> 
+J’interviens quand il faut clarifier, transmettre ou faire adopter des usages complexes — sans simplifier à l’excès.
+            </p>
+
+
           </div>
 
           <div className="space-y-3">
@@ -140,7 +148,16 @@ export default function HomePage() {
               observations et des manières de faire qui aident à mieux comprendre
               ce qui se joue entre la stratégie et le terrain.
             </p>
-          </div>
+<p className="mt-8 text-right text-xs text-neutral-500 dark:text-neutral-500">
+  <Link
+    href="/situations-d-intervention"
+    className="hover:underline"
+  >
+    Voir aussi les situations dans lesquelles j’interviens →
+  </Link>
+</p>
+</div>
+
 
           <div className="space-y-3 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30">
             <h2 className="text-xl font-semibold">Et après</h2>
