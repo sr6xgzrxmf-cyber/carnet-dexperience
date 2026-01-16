@@ -120,6 +120,7 @@ export default async function ArticlesHubPage(props: {
 
     const start =
       items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
+
     const covers = items
       .map((a) => normalizeCoverSrc(a.cover))
       .filter(Boolean) as string[];
@@ -169,7 +170,6 @@ export default async function ArticlesHubPage(props: {
       </header>
 
       <div className="space-y-14">
-
 {/* ======================
     RÉTROSPECTIVES
 ====================== */}
@@ -187,26 +187,30 @@ export default async function ArticlesHubPage(props: {
           key={s.slug}
           className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
         >
-          {startHref ? (
-            <Link
-              href={startHref}
-              aria-label={`Commencer la série : ${s.title}`}
-              className="block"
-            >
-              {s.covers.length ? (
-                <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
-                  <Mosaic covers={s.covers} />
-                </div>
-              ) : (
-                <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30 transition-transform duration-300 ease-out group-hover:scale-[1.02]" />
-              )}
-            </Link>
-          ) : s.covers.length ? (
-            <Mosaic covers={s.covers} />
-          ) : (
-            <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-          )}
-
+{/* Image cliquable + micro-zoom */}
+{startHref ? (
+  <Link
+    href={startHref}
+    aria-label={`Commencer la série : ${s.title}`}
+    className="block overflow-hidden"
+  >
+    <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
+      {s.covers.length ? (
+        <Mosaic covers={s.covers} />
+      ) : (
+        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+      )}
+    </div>
+  </Link>
+) : (
+  <div>
+    {s.covers.length ? (
+      <Mosaic covers={s.covers} />
+    ) : (
+      <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+    )}
+  </div>
+)}
           <div className="p-6">
             <div className="text-xs text-neutral-600 dark:text-neutral-400">
               Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
@@ -245,10 +249,7 @@ export default async function ArticlesHubPage(props: {
             {s.items.length ? (
               <ul className="mt-5 space-y-2 text-sm">
                 {s.items.slice(0, 5).map((a) => (
-                  <li
-                    key={a.slug}
-                    className="text-neutral-700 dark:text-neutral-300"
-                  >
+                  <li key={a.slug} className="text-neutral-700 dark:text-neutral-300">
                     <span className="text-neutral-500">
                       {(a.series?.order ?? 0).toString().padStart(2, "0")}
                     </span>
@@ -320,7 +321,9 @@ export default async function ArticlesHubPage(props: {
           <div className="mt-5 flex flex-wrap gap-2">
             {tagsToShow.map(({ tag, count }) => {
               const active = selected.includes(tag);
-              const next = active ? selected.filter((t) => t !== tag) : [...selected, tag];
+              const next = active
+                ? selected.filter((t) => t !== tag)
+                : [...selected, tag];
 
               return (
                 <Link
