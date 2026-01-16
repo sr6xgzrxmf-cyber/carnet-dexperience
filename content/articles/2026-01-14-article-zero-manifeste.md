@@ -1,13 +1,13 @@
 ---
 title: "Pourquoi je ne me reconnais plus dans un CV"
-date: "2026-01-15"
+date: "2026-01-14"
 excerpt: "Ce texte ouvre une série d’articles consacrés à la conception de ce site — ses choix, ses détours, ses renoncements et ce qu’ils disent d’un parcours professionnel."
 cover: "/images/articles/2026-01-15-article-zero-manifeste.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 0
+  order: 1
 tags:
   - manifeste
   - parcours professionnel

@@ -8,7 +8,7 @@ source: Laurent Guyonnet — Carnet d’expérience
 series:
   name: "Marketing durable et engagé"
   slug: "durableetengage"
-  order: 0
+  order: 1
 
 tags:
   - Retail

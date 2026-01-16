@@ -8,7 +8,7 @@ source: Laurent Guyonnet — Carnet d’expérience
 series:
   name: "Marketing durable et engagé"
   slug: "durableetengage"
-  order: 1
+  order: 2
 
 tags:
   - Marque personnelle

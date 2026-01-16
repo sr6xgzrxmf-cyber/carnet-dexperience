@@ -8,7 +8,7 @@ source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 1
+  order: 2
 
 tags:
   - parcours
