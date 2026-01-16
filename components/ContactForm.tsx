@@ -5,9 +5,14 @@ import { useState } from "react";
 type ContactFormProps = {
   action: string; // Formspree endpoint
   className?: string;
+  showEmailButton?: boolean; // NEW
 };
 
-export default function ContactForm({ action, className }: ContactFormProps) {
+export default function ContactForm({
+  action,
+  className,
+  showEmailButton = true, // NEW (par défaut on garde le bouton)
+}: ContactFormProps) {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
     "idle"
   );
@@ -52,7 +57,13 @@ export default function ContactForm({ action, className }: ContactFormProps) {
       ].join(" ")}
     >
       {/* anti-spam honeypot */}
-      <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+      <input
+        type="text"
+        name="_gotcha"
+        className="hidden"
+        tabIndex={-1}
+        autoComplete="off"
+      />
 
       <div className="grid grid-cols-1 gap-4">
         <div className="grid grid-cols-1 gap-2">
@@ -120,12 +131,14 @@ export default function ContactForm({ action, className }: ContactFormProps) {
             {status === "sending" ? "Envoi…" : "Envoyer"}
           </button>
 
-          <a
-            href="mailto:laurent.guyonnet.pro@gmail.com"
-            className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-          >
-            Écrire par email
-          </a>
+          {showEmailButton ? (
+            <a
+              href="mailto:laurent.guyonnet.pro@gmail.com"
+              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+            >
+              Écrire par email
+            </a>
+          ) : null}
 
           {message ? (
             <span
@@ -144,7 +157,8 @@ export default function ContactForm({ action, className }: ContactFormProps) {
 
         {/* petite info */}
         <p className="text-xs text-neutral-600 dark:text-neutral-400">
-          En envoyant ce formulaire, tu acceptes que je reçoive ton message par email (via Formspree).
+          En envoyant ce formulaire, tu acceptes que je reçoive ton message par
+          email (via Formspree).
         </p>
       </div>
     </form>

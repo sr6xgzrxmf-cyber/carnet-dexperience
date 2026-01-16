@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
-import ContactButton from "@/components/ContactButton";
 import { featuredSeriesList } from "@/content/editorial";
 
 type SearchParams = {
@@ -161,26 +160,9 @@ export default async function ArticlesHubPage(props: {
   const tagsToShow = showAllTags ? sortedTags : sortedTags.slice(0, 12);
 
   return (
-    <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      {/* Header "public" (comme l’ancien /articles) */}
-      <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-        <Link href="/" className="hover:underline">
-          ← Accueil
-        </Link>
-        <Link href="/parcours" className="hover:underline">
-          Parcours
-        </Link>
-
-        <ContactButton
-          label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
-        />
-      </nav>
-
+    <section>
       <header className="mb-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Articles
-        </h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
         <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
           Entrer par une rétrospective, ou explorer par thèmes.
         </p>
@@ -403,22 +385,18 @@ export default async function ArticlesHubPage(props: {
           )}
         </section>
 
-{/* ======================
-    ARCHIVES COMPLÈTES
-====================== */}
-<section className="flex justify-center pt-4">
-  <Link
-    href="/articles/archives"
-    className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-  >
-    Parcourir toutes les archives →
-  </Link>
-</section>
-
-
-
-
+        {/* ======================
+            ARCHIVES COMPLÈTES
+        ====================== */}
+        <section className="flex justify-center pt-4">
+          <Link
+            href="/articles/archives"
+            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          >
+            Parcourir toutes les archives →
+          </Link>
+        </section>
       </div>
-    </main>
+    </section>
   );
 }

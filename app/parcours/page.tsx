@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getAllParcours } from "@/lib/parcours";
-import ContactButton from "@/components/ContactButton";
 
 function formatRange(start?: string, end?: string) {
   if (!start && !end) return "";
@@ -13,22 +12,7 @@ export default function ParcoursPage() {
   const items = getAllParcours().filter((it) => it.meta.type !== "formation");
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16 text-neutral-900 dark:text-neutral-100">
-      {/* Navigation */}
-      <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-        <Link href="/" className="hover:underline">
-          ← Accueil
-        </Link>
-        <Link href="/articles" className="hover:underline">
-          Articles
-        </Link>
-
-        <ContactButton
-          label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
-        />
-      </nav>
-
+    <section>
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">Parcours</h1>
         <p className="text-neutral-700 dark:text-neutral-300">
@@ -70,13 +54,13 @@ export default function ParcoursPage() {
               </div>
 
               {Array.isArray(item.meta.highlights) &&
-                item.meta.highlights.length > 0 && (
-                  <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
-                    {item.meta.highlights.slice(0, 3).map((h) => (
-                      <li key={h}>{h}</li>
-                    ))}
-                  </ul>
-                )}
+              item.meta.highlights.length > 0 ? (
+                <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
+                  {item.meta.highlights.slice(0, 3).map((h) => (
+                    <li key={h}>{h}</li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           </li>
         ))}
@@ -91,6 +75,6 @@ export default function ParcoursPage() {
           Voir le parcours de formation et les apprentissages.
         </p>
       </Link>
-    </main>
+    </section>
   );
 }

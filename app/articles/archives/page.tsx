@@ -1,7 +1,6 @@
 // app/articles/archives/page.tsx
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
-import ContactButton from "@/components/ContactButton";
 
 type ArticleMeta = {
   slug: string;
@@ -30,27 +29,9 @@ export default async function ArticlesArchivesPage() {
     .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
   return (
-    <main className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-      <nav className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
-        <Link href="/" className="hover:underline">
-          ← Accueil
-        </Link>
-        <Link href="/articles" className="hover:underline">
-          Articles
-        </Link>
-        <Link href="/parcours" className="hover:underline">
-          Parcours
-        </Link>
-        <ContactButton
-          label="Contact"
-          className="hover:underline text-sm text-neutral-600 dark:text-neutral-400 bg-transparent border-0 px-0 py-0 rounded-none"
-        />
-      </nav>
-
+    <section>
       <header className="mb-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
-          Archives
-        </h1>
+        <h1 className="text-3xl font-semibold tracking-tight">Archives</h1>
         <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
           Liste complète, classée par date (du plus récent au plus ancien).
         </p>
@@ -66,6 +47,7 @@ export default async function ArticlesArchivesPage() {
                   <span className="text-neutral-500"> – </span>
                   <span className="font-medium">{a.title}</span>
                 </div>
+
                 {a.excerpt ? (
                   <div className="mt-1 italic text-neutral-600 dark:text-neutral-400">
                     {a.excerpt}
@@ -76,6 +58,6 @@ export default async function ArticlesArchivesPage() {
           ))}
         </ul>
       </section>
-    </main>
+    </section>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import SiteHeader from "@/components/SiteHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,10 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Carnet d’expérience",
-  description: "Carnet d’expérience — parcours, articles, méthodes et retours de terrain.",
+  description:
+    "Carnet d’expérience — parcours, articles, méthodes et retours de terrain.",
   verification: {
-    google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw" // ← colle la valeur exacte ici
-  }
+    google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw",
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JZFMYF98BZ"
           strategy="afterInteractive"
@@ -48,13 +49,17 @@ export default function RootLayout({
         className={[
           geistSans.variable,
           geistMono.variable,
-          "bg-white dark:bg-neutral-950",
-          "text-neutral-900 dark:text-neutral-100",
+          "bg-[var(--background)]",
+          "text-[var(--foreground)]",
           "text-[15px] leading-[1.6]",
           "antialiased",
         ].join(" ")}
       >
-        {children}
+        <SiteHeader />
+
+        <main className="site-container py-10 sm:py-14">
+          {children}
+        </main>
       </body>
     </html>
   );
