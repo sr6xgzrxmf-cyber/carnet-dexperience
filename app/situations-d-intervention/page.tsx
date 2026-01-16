@@ -36,7 +36,7 @@ export default async function SituationsInterventionPage() {
           </p>
         </header>
 
-        <article
+<article
   className="
     mt-10 max-w-none
     text-neutral-900 dark:text-neutral-100
@@ -85,15 +85,22 @@ export default async function SituationsInterventionPage() {
     [&_li]:p-4
     [&_li]:leading-6
 
+    [&_ul+_p]:mt-6
+    [&_p+_ul]:mt-4
+
     [&_a]:underline
     [&_a]:underline-offset-4
     [&_a]:decoration-neutral-500/50
     hover:[&_a]:decoration-neutral-400
 
-    [&_hr]:hidden
+    [&_hr]:my-10
+    [&_hr]:border-0
+    [&_hr]:h-px
+    [&_hr]:bg-transparent
   "
   dangerouslySetInnerHTML={{ __html: contentHtml }}
 />
+
       </div>
     </section>
   );

@@ -139,3 +139,12 @@ body {
 .prose li > p {
   margin: 0 !important;
 }
+
+/* ==== Editorial break (use --- in Markdown) ==== */
+.prose hr {
+  margin: 2rem 0 !important;
+  border: 0 !important;
+  height: 1px;
+  background: transparent; /* juste du vide, pas de trait */
+  display: block !important;
+}

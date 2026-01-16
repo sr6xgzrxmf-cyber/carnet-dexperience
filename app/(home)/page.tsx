@@ -153,7 +153,7 @@ J’interviens quand il faut clarifier, transmettre ou faire adopter des usages 
     href="/situations-d-intervention"
     className="hover:underline"
   >
-    Voir aussi les situations dans lesquelles j’interviens →
+    → Voir les situations dans lesquelles j’interviens
   </Link>
 </p>
 </div>
