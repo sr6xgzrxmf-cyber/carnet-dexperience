@@ -14,53 +14,26 @@ source: "CV + expérience terrain"
 ---
 
 ## Contexte
-En 2009, je ne travaille pas chez Apple. Je suis chez ASTS, en Ardèche, dans un environnement technique et BtoC. C’est à ce moment-là que Marisa Bryan, alors chez Apple Retail, me contacte directement sur LinkedIn, sur recommandation d’un ami. Elle ne me recrute pas sur un CV, mais sur une intuition : ma capacité à faire le lien entre technologie, pédagogie et relation client.
+En 2009, je ne travaille pas encore chez Apple. Je suis chez ASTS, en Ardèche, dans un environnement technique et BtoC. C’est à ce moment-là que Marisa Bryan, alors chez Apple Retail, me contacte directement sur LinkedIn, sur recommandation d’un ami. Elle ne me recrute pas sur un CV, mais sur une intuition : ma capacité à faire le lien entre technologie, pédagogie et relation client.
 
 ## Mon métier : Créatif
-Chez Apple Retail, un magasin n’est pas conçu comme un point de vente, mais comme un lieu d’apprentissage, de rencontre et d’appropriation technologique. La vente n’est pas la fin du parcours client : c’est souvent son point de départ.
+Chez Apple Retail, un magasin n’est pas pensé comme un simple point de vente, mais comme un lieu d’apprentissage, de rencontre et d’appropriation technologique. La vente n’est pas une fin en soi : elle marque souvent le début du parcours client.
 
-Le rôle de Créatif s’inscrit précisément dans cette philosophie.
-
-Un Créatif ne vend pas des produits. Il aide les personnes à faire quelque chose de concret avec les produits qu’elles ont achetés — et à découvrir tout ce qu’elles pourraient encore faire.
+Le rôle de Créatif s’inscrit pleinement dans cette philosophie. Un Créatif ne vend pas des produits. Il aide les personnes à faire quelque chose de concret avec ceux qu’elles possèdent déjà — et à découvrir ce qu’elles pourraient encore en faire.
 
 Le cœur du métier repose sur trois piliers :
-- L’apprentissage,
-- La relation,
-- L’écosystème.
+- l’apprentissage,
+- la relation,
+- l’écosystème.
 
-Chaque jour, le Créatif accompagne des clients très différents :
-- débutants,
-- créatifs,
-- professionnels,
-- curieux
+ 
+Chaque jour, le Créatif accompagne des profils très variés — débutants, créatifs, professionnels ou simples curieux — pour leur permettre de configurer leurs appareils, comprendre les outils, développer de nouvelles compétences et, surtout, se sentir capables.
 
-Pour leur permettre de :
-- configurer leurs appareils,
-- comprendre les outils,
-- développer de nouvelles compétences,
-- et se sentir capables.
+Cet accompagnement prend plusieurs formes : séances Today at Apple, rendez-vous individuels, démonstrations, présence active sur le Floor. Mais au-delà des formats, le rôle est plus subtil : le Créatif agit comme un traducteur entre la technologie et la vie réelle des gens.
 
-Ce travail prend principalement la forme de :
-- séances Today at Apple (ateliers collectifs),
-- rendez-vous individuels,
-- démonstrations,
-- et accompagnement sur le Floor.
+Il doit comprendre des besoins souvent mal formulés, identifier des usages possibles et les relier à l’écosystème Apple. C’est un métier profondément relationnel, où l’efficacité ne repose pas uniquement sur la maîtrise technique, mais sur la capacité à instaurer un climat de confiance, propice à l’apprentissage, à l’essai et au progrès.
 
-Mais au-delà des formats, le vrai rôle est plus subtil : le Créatif est un traducteur entre la technologie et la vie réelle des gens.
-
-Il doit être capable de :
-- comprendre les besoins exprimés (et souvent mal formulés),
-- identifier les usages possibles,
-- et connecter ces usages à l’écosystème Apple.
-
-C’est aussi un métier profondément relationnel. L’efficacité ne vient pas de la maîtrise technique seule, mais de la capacité à créer un climat de confiance où la personne ose apprendre, essayer, se tromper et progresser.
-
-Enfin, le Créatif joue un rôle clé dans la dynamique commerciale du magasin : en aidant les clients à découvrir de nouveaux usages, il contribue naturellement à :
-- l’adoption de services,
-- l’attachement à la marque,
-- et la satisfaction long terme.
-
-Dans un Apple Store, le bouche-à-oreille naît rarement d’une bonne vente. Il naît presque toujours d’une bonne expérience d’apprentissage.
+Enfin, le Créatif joue un rôle clé dans la dynamique commerciale du magasin. En aidant les clients à découvrir de nouveaux usages, il contribue naturellement à l’adoption des services, à l’attachement à la marque et à la satisfaction sur le long terme. Dans un Apple Store, le bouche-à-oreille naît rarement d’une bonne vente. Il naît presque toujours d’une bonne expérience d’apprentissage.
 
 ## Montpellier (2009–2017)<!-- {"fold":true} -->
 À Montpellier, mon rôle de Créatif dépassait largement l’animation d’ateliers ou l’accompagnement client individuel. J’étais impliqué dans tout ce qui faisait d’un Apple Store un acteur éducatif, culturel et territorial.
