@@ -14,53 +14,13 @@ source: "CV + expérience terrain"
 ---
 
 ## Contexte
-En 2009, je ne travaille pas chez Apple. Je suis chez ASTS, en Ardèche, dans un environnement technique et BtoC. C’est à ce moment-là que Marisa Bryan, alors chez Apple Retail, me contacte directement sur LinkedIn, sur recommandation d’un ami. Elle ne me recrute pas sur un CV, mais sur une intuition : ma capacité à faire le lien entre technologie, pédagogie et relation client.
+À Lyon, j’intègre un Apple Store conçu dès l’origine pour répondre à des enjeux business forts. La clientèle professionnelle y est plus présente, les attentes plus structurées, les usages souvent déjà avancés. Le rôle du Créatif s’inscrit alors dans un écosystème plus stratégique.
 
-## Mon métier : Créatif Pro
-Chez Apple Retail, un magasin n’est pas conçu comme un point de vente, mais comme un lieu d’apprentissage, de rencontre et d’appropriation technologique. La vente n’est pas la fin du parcours client : c’est souvent son point de départ.
+L’accompagnement ne consiste plus seulement à faire découvrir des usages, mais à aider des professionnels à optimiser leurs outils, à structurer leurs pratiques, à gagner en efficacité. La pédagogie devient un levier direct de valeur.
 
-Le rôle de Créatif Pro s’inscrit précisément dans cette philosophie.
+Dans ce contexte, mon rôle évolue naturellement vers plus de transmission et de structuration. J’accompagne non seulement les clients, mais aussi les équipes : partage de méthodes, ajustement des discours, réflexion sur les formats Today at Apple et leur pertinence face aux enjeux business.
 
-Un Créatif Pro ne vend pas des produits. Il aide les personnes à faire quelque chose de concret avec les produits qu’elles ont achetés — et à découvrir tout ce qu’elles pourraient encore faire.
-
-Le cœur du métier repose sur trois piliers :
-- L’apprentissage,
-- La relation,
-- L’écosystème.
-
-Chaque jour, le Créatif Pro accompagne des clients très différents :
-- débutants,
-- créatifs,
-- professionnels,
-- curieux
-
-Pour leur permettre de :
-- configurer leurs appareils,
-- comprendre les outils,
-- développer de nouvelles compétences,
-- et se sentir capables.
-
-Ce travail prend principalement la forme de :
-- séances Today at Apple (ateliers collectifs),
-- rendez-vous individuels,
-- démonstrations,
-- et accompagnement sur le Floor.
-
-Mais au-delà des formats, le vrai rôle est plus subtil : le Créatif Pro est un traducteur entre la technologie et la vie réelle des gens.
-
-Il doit être capable de :
-- comprendre les besoins exprimés (et souvent mal formulés),
-- identifier les usages possibles,
-- et connecter ces usages à l’écosystème Apple.
-
-C’est aussi un métier profondément relationnel. L’efficacité ne vient pas de la maîtrise technique seule, mais de la capacité à créer un climat de confiance où la personne ose apprendre, essayer, se tromper et progresser.
-
-Enfin, le Créatif Pro joue un rôle clé dans la dynamique commerciale du magasin : en aidant les clients à découvrir de nouveaux usages, il contribue naturellement à :
-- l’adoption de services,
-- l’attachement à la marque,
-- et la satisfaction long terme.
-
-Dans un Apple Store, le bouche-à-oreille naît rarement d’une bonne vente. Il naît presque toujours d’une bonne expérience d’apprentissage.
+Je contribue à faire le lien entre les usages créatifs, les besoins professionnels et les objectifs du magasin. Cette période marque un basculement important : je ne suis plus uniquement dans l’exécution d’un rôle, mais dans son rayonnement. Le Créatif devient un point d’appui stratégique, capable d’influencer positivement l’expérience client, la dynamique d’équipe et la performance globale..
 
 ## Lyon (2022–2025)<!-- {"fold":true} -->
 À Lyon, mon rôle a pris une dimension encore différente.
