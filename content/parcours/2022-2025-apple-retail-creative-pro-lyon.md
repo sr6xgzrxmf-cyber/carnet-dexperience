@@ -23,9 +23,7 @@ Dans ce contexte, mon rôle évolue naturellement vers plus de transmission et d
 Je contribue à faire le lien entre les usages créatifs, les besoins professionnels et les objectifs du magasin. Cette période marque un basculement important : je ne suis plus uniquement dans l’exécution d’un rôle, mais dans son rayonnement. Le Créatif devient un point d’appui stratégique, capable d’influencer positivement l’expérience client, la dynamique d’équipe et la performance globale..
 
 ## Lyon (2022–2025)<!-- {"fold":true} -->
-À Lyon, mon rôle a pris une dimension encore différente.
-
-Je ne travaillais plus seulement dans le magasin, mais sur le magasin.
+À Lyon, mon rôle a pris une dimension encore différente. Je ne travaillais plus seulement dans le magasin, mais sur le magasin.
 
 Mon terrain n’était plus seulement le client final, mais :
 - les équipes,
