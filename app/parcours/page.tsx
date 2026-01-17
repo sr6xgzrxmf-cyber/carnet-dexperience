@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { getAllParcours } from "@/lib/parcours";
+export const metadata = {
+  title: "Parcours",
+  description:
+    "Timeline chronologique des expériences de Laurent Guyonnet : rôles, contextes et apprentissages.",
+};
 
 function formatRange(start?: string, end?: string) {
   if (!start && !end) return "";
