@@ -58,12 +58,13 @@ export default function HomePage() {
               />
             </div>
             <p className="mt-2 text-center text-[11px] text-neutral-500">
-              Laurent Guyonnet
+               
             </p>
           </div>
         </div>
         </header>
       </div>
+
 
       {/* CONTENU */}
       <section className="mt-12 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
@@ -73,8 +74,8 @@ export default function HomePage() {
 
 
             <p className="text-neutral-800 dark:text-neutral-200">
-              <strong>Carnet d'expérience</strong> est un espace personnel et
-              professionnel. Il prolonge mon CV en donnant accès à ce qui n'y tient
+              <strong>Carnet d'expérience</strong> est un espace personnel et professionnel
+  tenu par <strong>Laurent Guyonnet</strong>. Il prolonge mon CV en donnant accès à ce qui n'y tient
               pas&nbsp;: le contexte, les décisions, les méthodes, les doutes et
               les apprentissages qui accompagnent toute trajectoire réelle.
             </p>

@@ -3,13 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 import { featuredSeriesList } from "@/content/editorial";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Articles",
   description:
     "Articles et retours d’expérience de Laurent Guyonnet sur l’innovation, la pédagogie et le travail de terrain.",
 };
-
 
 type SearchParams = {
   tag?: string | string[];
