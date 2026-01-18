@@ -23,6 +23,29 @@ export const metadata: Metadata = {
   },
 };
 
+const siteUrl = "https://www.carnetdexperience.fr";
+
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Carnet d’expérience",
+      inLanguage: "fr-FR",
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#laurent-guyonnet`,
+      name: "Laurent Guyonnet",
+      url: siteUrl,
+      // Mets ici uniquement des URLs publiques solides si tu en as
+      // sameAs: ["https://github.com/…", "https://…"],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,6 +66,14 @@ export default function RootLayout({
             gtag('config', 'G-JZFMYF98BZ');
           `}
         </Script>
+
+        {/* JSON-LD sitewide : WebSite + Person */}
+        <Script
+          id="jsonld-site"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
       </head>
 
       <body
@@ -57,9 +88,7 @@ export default function RootLayout({
       >
         <SiteHeader />
 
-        <main className="site-container py-10 sm:py-14">
-          {children}
-        </main>
+        <main className="site-container py-10 sm:py-14">{children}</main>
       </body>
     </html>
   );

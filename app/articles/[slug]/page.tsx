@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import {
   getAllArticles,
   getArticleBySlug,
@@ -71,6 +72,35 @@ export default async function ArticleDetailPage({
   const contentHtml = await markdownToHtml(item.content);
 
   // =========================
+  // JSON-LD (Article)
+  // =========================
+  const siteUrl = "https://www.carnetdexperience.fr";
+
+  function toAbsoluteUrl(url?: string) {
+    if (!url) return undefined;
+    const s = String(url).trim();
+    if (!s) return undefined;
+    if (/^https?:\/\//i.test(s)) return s;
+    return `${siteUrl}${s.startsWith("/") ? "" : "/"}${s}`;
+  }
+
+  const coverUrl = toAbsoluteUrl(item.meta?.cover);
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${siteUrl}/articles/${slug}#article`,
+    headline: item.meta?.title ?? slug,
+    description: item.meta?.excerpt ?? "",
+    datePublished: item.meta?.date ? String(item.meta.date) : undefined,
+    dateModified: item.meta?.date ? String(item.meta.date) : undefined,
+    mainEntityOfPage: `${siteUrl}/articles/${slug}`,
+    author: { "@id": `${siteUrl}/#laurent-guyonnet` },
+    publisher: { "@id": `${siteUrl}/#website` },
+    image: coverUrl ? [coverUrl] : undefined,
+  };
+
+  // =========================
   // A) Série (prev/next par series.order)
   // B) Fallback chrono (prev/next par date)
   // =========================
@@ -110,6 +140,13 @@ export default async function ArticleDetailPage({
 
   return (
     <article>
+      <Script
+        id={`jsonld-article-${slug}`}
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+
       <div className="mx-auto max-w-3xl">
         {/* Header */}
         <header className="space-y-4">
@@ -154,7 +191,7 @@ export default async function ArticleDetailPage({
 
           {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
             <div className="flex flex-wrap gap-2 pt-1">
-              {item.meta.tags.map((t) => (
+              {item.meta.tags.map((t: string) => (
                 <span
                   key={t}
                   className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-xs text-neutral-700 dark:text-neutral-300 bg-white/50 dark:bg-neutral-950/30"
