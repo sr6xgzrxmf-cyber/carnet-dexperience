@@ -25,6 +25,20 @@ function anchorFromSlug(slug: string) {
   return `s-${slug}`;
 }
 
+function getSeries(meta: unknown): any {
+  return (meta as any)?.series ?? null;
+}
+
+function getSeriesSlug(meta: unknown): string | null {
+  const s = getSeries(meta);
+  return typeof s?.slug === "string" ? s.slug : null;
+}
+
+function getSeriesOrder(meta: unknown): any {
+  return getSeries(meta)?.order ?? null;
+}
+
+
 /* ---------- Interludes (order décimal) ---------- */
 function toNumber(v: any): number {
   if (typeof v === "number") return v;
@@ -107,10 +121,10 @@ export default async function AtelierPage() {
   const raw = await getAllArticles({ includeFuture: isLocalhost });
 
   const series = (raw ?? [])
-    .filter((it) => it?.meta?.series?.slug === "atelier-de-posture")
+    .filter((it) => getSeriesSlug(it?.meta) === "atelier-de-posture")
     .sort(
       (a, b) =>
-        orderValue(a?.meta?.series?.order) - orderValue(b?.meta?.series?.order)
+          orderValue(getSeriesOrder(a?.meta)) - orderValue(getSeriesOrder(b?.meta))
     );
 
   const rendered = await Promise.all(
@@ -155,7 +169,7 @@ export default async function AtelierPage() {
 
 <ul className="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
   {rendered.map((it) => {
-    const inter = isInterlude(it.meta?.series?.order);
+      const inter = isInterlude(getSeriesOrder(it.meta));
     const isFuture = isLocalhost && !isPublishedDate(it.meta?.date);
 
     const baseLink =
@@ -174,7 +188,7 @@ export default async function AtelierPage() {
           className={[baseLink, isFuture ? futureLink : ""].join(" ")}
           href={`#${it.anchor}`}
         >
-          {orderLabel(it.meta?.series?.order)}{" "}
+            {orderLabel(getSeriesOrder(it.meta))}{" "}
           <span className="text-neutral-500 dark:text-neutral-500">—</span>{" "}
           {it.meta?.title ?? it.slug}
         </a>
@@ -188,7 +202,7 @@ export default async function AtelierPage() {
         {/* Articles enchaînés */}
         <div className="space-y-14">
           {rendered.map((it) => {
-            const inter = isInterlude(it.meta?.series?.order);
+              const inter = isInterlude(getSeriesOrder(it.meta));
             const isFuture = isLocalhost && !isPublishedDate(it.meta?.date);
 
             return (
@@ -287,7 +301,7 @@ export default async function AtelierPage() {
                         src={it.coverSrc}
                         alt={it.meta?.title ?? ""}
                         fill
-                        priority={orderValue(it.meta?.series?.order) === 0}
+                        priority={orderValue(getSeriesOrder(it.meta)) === 0}
                         sizes="(max-width: 768px) 100vw, 768px"
                         className="object-cover"
                         unoptimized
