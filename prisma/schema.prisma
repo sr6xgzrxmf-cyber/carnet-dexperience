@@ -1,0 +1,20 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Submission {
+  id            String   @id @default(uuid())
+  email         String
+  codeHash      String
+  codeExpiresAt DateTime
+  currentStep   Int      @default(1)
+  data          Json     @default("{}")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([email])
+}

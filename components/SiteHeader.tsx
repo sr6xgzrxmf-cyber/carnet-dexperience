@@ -13,18 +13,23 @@ export default function SiteHeader() {
     pathname === "/parcours" || pathname.startsWith("/parcours/");
   const isArticles =
     pathname === "/articles" || pathname.startsWith("/articles/");
+  const isAccompagnement =
+    pathname === "/atelier" || pathname.startsWith("/atelier/");
   const isContact =
     pathname === "/contact" || pathname.startsWith("/contact/");
 
-  const activeClass = "font-bold text-neutral-300 dark:text-neutral-400";
-  const linkClass = "hover:underline";
+  // ✅ Actif en gris (pas noir)
+  const activeClass =
+    "font-semibold text-neutral-300 dark:text-neutral-300";
+  const linkClass =
+    "text-neutral-600 dark:text-neutral-400 hover:underline underline-offset-4";
 
   return (
     <header className="border-b border-neutral-200/70 dark:border-neutral-800">
       <div className="site-container pt-5 pb-3">
         <div className="flex items-center justify-between gap-6">
           {/* Navigation à gauche */}
-          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             <Link href="/" className={linkClass}>
               Accueil
             </Link>
@@ -46,6 +51,16 @@ export default function SiteHeader() {
             ) : (
               <Link href="/articles" className={linkClass}>
                 Articles
+              </Link>
+            )}
+
+            {isAccompagnement ? (
+              <span className={activeClass} aria-current="page">
+                Accompagnement
+              </span>
+            ) : (
+              <Link href="/atelier" className={linkClass}>
+                Accompagnement
               </Link>
             )}
 

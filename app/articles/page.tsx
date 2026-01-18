@@ -40,7 +40,11 @@ function normalizeTag(t: string) {
 
 function normalizeCoverSrc(cover: unknown): string | null {
   if (typeof cover !== "string" || !cover.trim()) return null;
-  return cover.startsWith("/") ? cover : `/${cover}`;
+  const s = cover.trim();
+  // accepte URL absolue
+  if (/^https?:\/\//i.test(s)) return s;
+  // accepte chemins public "/..."
+  return s.startsWith("/") ? s : `/${s}`;
 }
 
 function getItemMeta(item: any): ArticleMeta {
@@ -73,21 +77,21 @@ function parseDateSafe(input?: string): Date | null {
   return isNaN(d.getTime()) ? null : d;
 }
 
-function isPublished(date?: string): boolean {
+function isPublished(date: string | undefined, nowMs: number): boolean {
   const d = parseDateSafe(date);
   if (!d) return true; // no date => visible
-  return d.getTime() <= Date.now();
+  return d.getTime() <= nowMs;
 }
 
 function startOfDayUTC(d: Date) {
   return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
 }
 
-function daysUntil(date?: string): number | null {
+function daysUntil(date: string | undefined, now: Date): number | null {
   const d = parseDateSafe(date);
   if (!d) return null;
 
-  const todayUTC = startOfDayUTC(new Date());
+  const todayUTC = startOfDayUTC(now);
   const targetUTC = startOfDayUTC(d);
 
   const diffDays = Math.round(
@@ -155,6 +159,10 @@ export default async function ArticlesHubPage(props: {
     .map(normalizeTag)
     .filter(Boolean);
 
+  // ⚠️ Fix “hydration-ish” : on fige now une fois (évite toute divergence)
+  const now = new Date();
+  const nowMs = now.getTime();
+
   // ✅ Show future-dated items only in dev or Vercel preview deployments
   const allowFuture =
     process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
@@ -163,14 +171,13 @@ export default async function ArticlesHubPage(props: {
   const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
 
   // Published vs À paraître
-  const published = all.filter((a) => isPublished(a.date));
+  const published = all.filter((a) => isPublished(a.date, nowMs));
 
   // ✅ En dev/preview : Résultats affiche tout (publiés + futurs)
   // ✅ En prod : Résultats affiche uniquement les publiés
   const resultsBase = allowFuture ? all : published;
 
   /* ---------- Séries (Par où commencer) ---------- */
-  // On garde volontairement "published" ici pour que les rétrospectives restent "publiées-only".
   const seriesCards = featuredSeriesList.map((s) => {
     const items = published
       .filter((a) => a.series?.slug === s.slug)
@@ -187,7 +194,6 @@ export default async function ArticlesHubPage(props: {
   });
 
   /* ---------- Filtres & résultats ---------- */
-  // ✅ Tags calculés sur la même base que Résultats
   const tagCount = new Map<string, number>();
   for (const a of resultsBase) {
     for (const t of a.tags ?? []) {
@@ -222,7 +228,9 @@ export default async function ArticlesHubPage(props: {
   const tagsToShow = showAllTags ? sortedTags : sortedTags.slice(0, 12);
 
   return (
-    <section>
+    // ✅ IMPORTANT : on met space-y-14 sur le wrapper racine
+    // au lieu d’un <div> “intermédiaire” (source fréquente de mismatch en dev)
+    <section className="space-y-14">
       <header className="mb-10">
         <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
         <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
@@ -230,290 +238,288 @@ export default async function ArticlesHubPage(props: {
         </p>
       </header>
 
-      <div className="space-y-14">
-        {/* ======================
-            RÉTROSPECTIVES
-        ====================== */}
-        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-            Rétrospectives
-          </h2>
+      {/* ======================
+          RÉTROSPECTIVES
+      ====================== */}
+      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+        <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+          Rétrospectives
+        </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {seriesCards.map((s) => {
-              const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
+        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {seriesCards.map((s) => {
+            const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
 
-              return (
-                <div
-                  key={s.slug}
-                  className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
-                >
-                  {startHref ? (
-                    <Link
-                      href={startHref}
-                      aria-label={`Commencer la série : ${s.title}`}
-                      className="block overflow-hidden"
-                    >
-                      <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
-                        {s.covers.length ? (
-                          <Mosaic covers={s.covers} />
-                        ) : (
-                          <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-                        )}
-                      </div>
-                    </Link>
-                  ) : (
-                    <div>
+            return (
+              <div
+                key={s.slug}
+                className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+              >
+                {startHref ? (
+                  <Link
+                    href={startHref}
+                    aria-label={`Commencer la série : ${s.title}`}
+                    className="block overflow-hidden"
+                  >
+                    <div className="transition-transform duration-300 ease-out group-hover:scale-[1.02]">
                       {s.covers.length ? (
                         <Mosaic covers={s.covers} />
                       ) : (
                         <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
                       )}
                     </div>
-                  )}
-
-                  <div className="p-6">
-                    <div className="text-xs text-neutral-600 dark:text-neutral-400">
-                      Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
-                    </div>
-
-                    <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-                      {s.title}
-                    </h3>
-
-                    <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-                      {s.description}
-                    </p>
-
-                    <div className="mt-5 flex flex-wrap items-center gap-3">
-                      {startHref ? (
-                        <Link
-                          href={startHref}
-                          className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
-                        >
-                          Commencer
-                        </Link>
-                      ) : (
-                        <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
-                          Commencer
-                        </span>
-                      )}
-
-                      <div className="text-xs text-neutral-500">
-                        Départ :{" "}
-                        <span className="text-neutral-700 dark:text-neutral-300">
-                          {s.start?.title ?? "—"}
-                        </span>
-                      </div>
-                    </div>
-
-                    {s.items.length ? (
-                      <ul className="mt-5 space-y-2 text-sm">
-                        {s.items.slice(0, 5).map((a) => (
-                          <li
-                            key={a.slug}
-                            className="text-neutral-700 dark:text-neutral-300"
-                          >
-                            <span className="text-neutral-500">
-                              {(a.series?.order ?? 0).toString().padStart(2, "0")}
-                            </span>
-                            <span className="text-neutral-500"> – </span>
-                            <span>{a.title}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="mt-5 text-sm text-neutral-500">
-                        Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
-                      </p>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* ======================
-            FILTRES
-        ====================== */}
-        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-          <div className="flex items-end justify-between gap-4">
-            <div>
-              <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-                Filtres
-              </h2>
-              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-                Filtrer les articles par thèmes.
-              </p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              {sortedTags.length > 12 ? (
-                showAllTags ? (
-                  <Link
-                    scroll={false}
-                    href={hrefFor(selected, false)}
-                    className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-                  >
-                    Voir moins
                   </Link>
                 ) : (
-                  <Link
-                    scroll={false}
-                    href={hrefFor(selected, true)}
-                    className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-                  >
-                    Voir plus ({sortedTags.length - 12})
-                  </Link>
-                )
-              ) : null}
-
-              {selected.length > 0 && (
-                <Link
-                  scroll={false}
-                  href={hrefFor([], showAllTags)}
-                  className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/50"
-                >
-                  Réinitialiser
-                </Link>
-              )}
-            </div>
-          </div>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            {tagsToShow.map(({ tag, count }) => {
-              const active = selected.includes(tag);
-              const next = active
-                ? selected.filter((t) => t !== tag)
-                : [...selected, tag];
-
-              return (
-                <Link
-                  scroll={false}
-                  key={tag}
-                  href={hrefFor(next, showAllTags)}
-                  className={[
-                    "rounded-full border px-3 py-1 text-xs transition",
-                    active
-                      ? "border-neutral-900/15 dark:border-white/15 bg-neutral-900/5 dark:bg-white/10 text-neutral-900 dark:text-neutral-100"
-                      : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-950/50",
-                  ].join(" ")}
-                >
-                  {tag} <span className="text-neutral-500">({count})</span>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* ======================
-            RÉSULTATS
-        ====================== */}
-        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-          <div className="flex items-end justify-between gap-4">
-            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-              Résultats
-            </h2>
-
-            <div className="text-xs text-neutral-500">
-              {results.length} article{results.length > 1 ? "s" : ""}
-            </div>
-          </div>
-
-          {results.length === 0 ? (
-            <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
-              Aucun article trouvé.
-            </p>
-          ) : (
-            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-              {results.map((a) => {
-                const coverSrc = normalizeCoverSrc(a.cover);
-                const futureLabel = allowFuture && !isPublished(a.date);
-
-                return (
-                  <Link
-                    key={a.slug}
-                    href={`/articles/${a.slug}`}
-                    className="group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
-                  >
-                    {coverSrc ? (
-                      <div className="relative h-56 w-full overflow-hidden">
-                        <Image
-                          src={coverSrc}
-                          alt={a.title}
-                          fill
-                          className="object-cover opacity-90 transition group-hover:opacity-100"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                          unoptimized
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-                      </div>
+                  <div>
+                    {s.covers.length ? (
+                      <Mosaic covers={s.covers} />
                     ) : (
                       <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
                     )}
+                  </div>
+                )}
 
-                    <div className="p-6">
-                      <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
-  {futureLabel ? (
-    <>
-      <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
-        À paraître
-      </span>
-{(() => {
-  const d = daysUntil(a.date);
-  if (typeof d === "number" && d > 0) {
-    return (
-      <span className="text-neutral-400 dark:text-neutral-500">
-        J-{d}
-      </span>
-    );
-  }
-  return a.date ? (
-    <span className="text-neutral-400 dark:text-neutral-500">
-      {a.date}
-    </span>
-  ) : null;
-})()}
-    </>
-  ) : (
-    <span>{a.date}</span>
-  )}
-{/*
-  <span className="text-neutral-400">—</span>
-  <span>{a.source}</span>
-*/}
-</div>
+                <div className="p-6">
+                  <div className="text-xs text-neutral-600 dark:text-neutral-400">
+                    Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
+                  </div>
 
-                      <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
-                        {a.title}
-                      </h3>
+                  <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                    {s.title}
+                  </h3>
 
-                      {a.excerpt ? (
-                        <p className="mt-2 text-sm italic text-neutral-700 dark:text-neutral-300 line-clamp-3">
-                          {a.excerpt}
-                        </p>
-                      ) : null}
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+                    {s.description}
+                  </p>
+
+                  <div className="mt-5 flex flex-wrap items-center gap-3">
+                    {startHref ? (
+                      <Link
+                        href={startHref}
+                        className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
+                      >
+                        Commencer
+                      </Link>
+                    ) : (
+                      <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
+                        Commencer
+                      </span>
+                    )}
+
+                    <div className="text-xs text-neutral-500">
+                      Départ :{" "}
+                      <span className="text-neutral-700 dark:text-neutral-300">
+                        {s.start?.title ?? "—"}
+                      </span>
                     </div>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-        </section>
+                  </div>
 
-        {/* ======================
-            ARCHIVES COMPLÈTES
-        ====================== */}
-        <section className="flex justify-center pt-4">
-          <Link
-            href="/articles/archives"
-            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-          >
-            Parcourir toutes les archives →
-          </Link>
-        </section>
-      </div>
+                  {s.items.length ? (
+                    <ul className="mt-5 space-y-2 text-sm">
+                      {s.items.slice(0, 5).map((a) => (
+                        <li
+                          key={a.slug}
+                          className="text-neutral-700 dark:text-neutral-300"
+                        >
+                          <span className="text-neutral-500">
+                            {(a.series?.order ?? 0).toString().padStart(2, "0")}
+                          </span>
+                          <span className="text-neutral-500"> – </span>
+                          <span>{a.title}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="mt-5 text-sm text-neutral-500">
+                      Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
+                    </p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ======================
+          FILTRES
+      ====================== */}
+      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+              Filtres
+            </h2>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Filtrer les articles par thèmes.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {sortedTags.length > 12 ? (
+              showAllTags ? (
+                <Link
+                  scroll={false}
+                  href={hrefFor(selected, false)}
+                  className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+                >
+                  Voir moins
+                </Link>
+              ) : (
+                <Link
+                  scroll={false}
+                  href={hrefFor(selected, true)}
+                  className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+                >
+                  Voir plus ({sortedTags.length - 12})
+                </Link>
+              )
+            ) : null}
+
+            {selected.length > 0 && (
+              <Link
+                scroll={false}
+                href={hrefFor([], showAllTags)}
+                className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/50"
+              >
+                Réinitialiser
+              </Link>
+            )}
+          </div>
+        </div>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {tagsToShow.map(({ tag, count }) => {
+            const active = selected.includes(tag);
+            const next = active
+              ? selected.filter((t) => t !== tag)
+              : [...selected, tag];
+
+            return (
+              <Link
+                scroll={false}
+                key={tag}
+                href={hrefFor(next, showAllTags)}
+                className={[
+                  "rounded-full border px-3 py-1 text-xs transition",
+                  active
+                    ? "border-neutral-900/15 dark:border-white/15 bg-neutral-900/5 dark:bg-white/10 text-neutral-900 dark:text-neutral-100"
+                    : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-950/50",
+                ].join(" ")}
+              >
+                {tag} <span className="text-neutral-500">({count})</span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ======================
+          RÉSULTATS
+      ====================== */}
+      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+            Résultats
+          </h2>
+
+          <div className="text-xs text-neutral-500">
+            {results.length} article{results.length > 1 ? "s" : ""}
+          </div>
+        </div>
+
+        {results.length === 0 ? (
+          <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
+            Aucun article trouvé.
+          </p>
+        ) : (
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {results.map((a) => {
+              const coverSrc = normalizeCoverSrc(a.cover);
+              const futureLabel = allowFuture && !isPublished(a.date, nowMs);
+
+              return (
+                <Link
+                  key={a.slug}
+                  href={`/articles/${a.slug}`}
+                  className="group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+                >
+                  {coverSrc ? (
+                    <div className="relative h-56 w-full overflow-hidden">
+                      <Image
+                        src={coverSrc}
+                        alt={a.title}
+                        fill
+                        className="object-cover opacity-90 transition group-hover:opacity-100"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                        unoptimized
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+                    </div>
+                  ) : (
+                    <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+                  )}
+
+                  <div className="p-6">
+                    <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+                      {futureLabel ? (
+                        <>
+                          <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
+                            À paraître
+                          </span>
+                          {(() => {
+                            const d = daysUntil(a.date, now);
+                            if (typeof d === "number" && d > 0) {
+                              return (
+                                <span className="text-neutral-400 dark:text-neutral-500">
+                                  J-{d}
+                                </span>
+                              );
+                            }
+                            return a.date ? (
+                              <span className="text-neutral-400 dark:text-neutral-500">
+                                {a.date}
+                              </span>
+                            ) : null;
+                          })()}
+                        </>
+                      ) : (
+                        <span>{a.date}</span>
+                      )}
+                      {/*
+                        <span className="text-neutral-400">—</span>
+                        <span>{a.source}</span>
+                      */}
+                    </div>
+
+                    <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
+                      {a.title}
+                    </h3>
+
+                    {a.excerpt ? (
+                      <p className="mt-2 text-sm italic text-neutral-700 dark:text-neutral-300 line-clamp-3">
+                        {a.excerpt}
+                      </p>
+                    ) : null}
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </section>
+
+      {/* ======================
+          ARCHIVES COMPLÈTES
+      ====================== */}
+      <section className="flex justify-center pt-4">
+        <Link
+          href="/articles/archives"
+          className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+        >
+          Parcourir toutes les archives →
+        </Link>
+      </section>
     </section>
   );
 }

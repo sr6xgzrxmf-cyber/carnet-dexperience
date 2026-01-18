@@ -2,16 +2,23 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { getAllArticles, markdownToHtml, isPublishedDate, toTimestamp } from "@/lib/articles";
+import {
+  getAllArticles,
+  markdownToHtml,
+  isPublishedDate,
+  toTimestamp,
+} from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Atelier de posture",
+  title: "Mon accompagnement",
   description: "Lecture continue des épisodes de la série Atelier de posture.",
 };
 
 function normalizeCoverSrc(cover: unknown): string | null {
   if (typeof cover !== "string" || !cover.trim()) return null;
-  return cover.startsWith("/") ? cover : `/${cover}`;
+  const s = cover.trim();
+  if (/^https?:\/\//i.test(s)) return s;
+  return s.startsWith("/") ? s : `/${s}`;
 }
 
 function anchorFromSlug(slug: string) {
@@ -65,8 +72,8 @@ function ToolBox() {
       </div>
 
       <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-        Une fiche courte pour passer du flou à une prochaine action : faits, tension, décision, puis message à envoyer.
-        Zéro blabla, que du praticable.
+        Une fiche courte pour passer du flou à une prochaine action : faits,
+        tension, décision, puis message à envoyer. Zéro blabla, que du praticable.
       </p>
 
       <div className="mt-5 flex flex-wrap items-center gap-3">
@@ -126,14 +133,18 @@ export default async function AtelierPage() {
             className="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
             aria-label="Retour à la liste des articles"
           >
-            <span aria-hidden className="text-base leading-none">←</span>
+            <span aria-hidden className="text-base leading-none">
+              ←
+            </span>
             <span>Retour</span>
           </Link>
 
-          <h1 className="text-3xl font-semibold tracking-tight">Atelier de posture</h1>
+          <h1 className="text-3xl font-semibold tracking-tight">
+            Mon accompagnement
+          </h1>
 
           <p className="text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-            Lecture continue de la série, dans l’ordre. Sommaire puis textes complets.
+            Ici, tu trouves un accompagnement guidé : une série à lire dans l’ordre + une fiche en ligne pour structurer ta demande et recevoir un récap complet.
           </p>
 
           {/* Sommaire */}
@@ -142,32 +153,35 @@ export default async function AtelierPage() {
               Sommaire
             </div>
 
-            <ul className="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-              {rendered.map((it) => {
-                const inter = isInterlude(it.meta?.series?.order);
-                const isFuture = isLocalhost && !isPublishedDate(it.meta?.date);
+<ul className="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+  {rendered.map((it) => {
+    const inter = isInterlude(it.meta?.series?.order);
+    const isFuture = isLocalhost && !isPublishedDate(it.meta?.date);
 
-                return (
-                  <li
-                    key={it.slug}
-                    className={[
-                      inter ? "pl-5 opacity-90" : "",
-                      isFuture ? "text-red-700 dark:text-red-400" : "",
-                    ].join(" ")}
-                  >
-                    <a
-                      className={[
-                        "underline underline-offset-4",
-                        isFuture ? "decoration-red-300 dark:decoration-red-500/50" : "",
-                      ].join(" ")}
-                      href={`#${it.anchor}`}
-                    >
-                      {orderLabel(it.meta?.series?.order)} — {it.meta?.title ?? it.slug}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+    const baseLink =
+      "underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-500 dark:hover:decoration-neutral-500";
+    const futureLink = "decoration-red-300 dark:decoration-red-500/50";
+
+    return (
+      <li
+        key={it.slug}
+        className={[
+          inter ? "pl-5 opacity-90" : "",
+          isFuture ? "text-red-700 dark:text-red-400" : "",
+        ].join(" ")}
+      >
+        <a
+          className={[baseLink, isFuture ? futureLink : ""].join(" ")}
+          href={`#${it.anchor}`}
+        >
+          {orderLabel(it.meta?.series?.order)}{" "}
+          <span className="text-neutral-500 dark:text-neutral-500">—</span>{" "}
+          {it.meta?.title ?? it.slug}
+        </a>
+      </li>
+    );
+  })}
+</ul>
           </div>
         </header>
 
@@ -178,7 +192,16 @@ export default async function AtelierPage() {
             const isFuture = isLocalhost && !isPublishedDate(it.meta?.date);
 
             return (
-              <article key={it.slug} id={it.anchor} className="scroll-mt-24">
+              <article
+                key={it.slug}
+                id={it.anchor}
+                className={[
+                  "scroll-mt-24",
+                  inter
+                    ? "rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+                    : "",
+                ].join(" ")}
+              >
                 {/* Header article */}
                 <header className="space-y-4">
                   <div className="text-sm text-neutral-700 dark:text-neutral-300">
@@ -198,17 +221,31 @@ export default async function AtelierPage() {
                             ) : null;
                           })()}
                         </>
-                      ) : (
-                        it.meta?.date ? <span>{String(it.meta.date)}</span> : null
-                      )}
+                      ) : it.meta?.date ? (
+                        <span>{String(it.meta.date)}</span>
+                      ) : null}
 
-                      <span className="text-neutral-600 dark:text-neutral-400">•</span>
+                      <span className="text-neutral-600 dark:text-neutral-400">
+                        •
+                      </span>
+
                       <Link
                         href={`/articles/${it.slug}`}
                         className="text-neutral-600 dark:text-neutral-400 hover:underline"
                       >
                         Voir la page de l’article
                       </Link>
+
+                      {inter ? (
+                        <>
+                          <span className="text-neutral-600 dark:text-neutral-400">
+                            •
+                          </span>
+                          <span className="inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-2 py-0.5 text-[11px] text-neutral-700 dark:text-neutral-300">
+                            Interlude
+                          </span>
+                        </>
+                      ) : null}
                     </div>
 
                     {it.meta?.excerpt ? (
@@ -218,7 +255,13 @@ export default async function AtelierPage() {
                     ) : null}
                   </div>
 
-                  <h2 className="text-3xl font-semibold tracking-tight">
+                  <h2
+                    className={
+                      inter
+                        ? "text-2xl font-semibold tracking-tight"
+                        : "text-3xl font-semibold tracking-tight"
+                    }
+                  >
                     {it.meta?.title ?? it.slug}
                   </h2>
 
