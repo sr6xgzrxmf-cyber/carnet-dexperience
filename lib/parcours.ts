@@ -10,6 +10,7 @@ export type ParcoursMeta = {
   title: string;
   company?: string;
   location?: string;
+  logo?: string;
   role?: string;
   start?: string;
   end?: string;
