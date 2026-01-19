@@ -24,31 +24,31 @@ export default function HomePage() {
             </div>
 
             <div className="mt-4 w-full max-w-xl mx-auto md:mx-0">
-              <div className="flex flex-nowrap justify-center md:justify-start gap-2">
+              <div className="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:justify-start">
                 <Link
                   href="/parcours"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
                 >
                   Voir le parcours
                 </Link>
 
                 <Link
                   href="/articles"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
                 >
                   Lire les articles
                 </Link>
 
-                <Link
-                  href="/atelier"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Accompagnement
-                </Link>
+<Link
+  href="/atelier"
+  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+>
+  Accompagnement
+</Link>
 
                 <ContactButton
                   label="Me contacter"
-                  className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-3 py-2 text-xs md:text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 whitespace-nowrap"
+                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
                 />
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function HomePage() {
             </p>
 
             <div className="pt-2 w-full max-w-xl">
-              <div className="flex flex-wrap md:flex-nowrap gap-3">
+              <div className="grid grid-cols-2 gap-3 md:flex md:flex-nowrap">
                 <Link
                   href="/parcours"
                   className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"

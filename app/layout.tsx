@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   verification: {
     google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 const siteUrl = "https://www.carnetdexperience.fr";
