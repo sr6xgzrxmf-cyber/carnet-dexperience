@@ -11,6 +11,7 @@ highlights:
   - "Participation à des projets diffusés sur Canal+ Afrique"
   - "Interface entre création, technique et diffusion"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/13prods.png"
 ---
 
 ## Contexte

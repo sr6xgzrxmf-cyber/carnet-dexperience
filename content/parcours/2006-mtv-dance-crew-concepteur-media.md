@@ -11,6 +11,7 @@ highlights:
   - "Conception de l’identité visuelle et des supports digitaux"
   - "Interface entre artistes, technologie et diffusion"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/Mtv.png"
 ---
 
 ## Contexte

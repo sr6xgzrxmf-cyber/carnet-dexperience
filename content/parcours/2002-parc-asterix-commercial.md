@@ -11,6 +11,7 @@ highlights:
   - "Animation ciblée d’un réseau d’agences de voyage multi-régional"
   - "Diffusion rapide des nouveautés du parc en haute saison"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/asterix.png"
 ---
 
 ## Contexte

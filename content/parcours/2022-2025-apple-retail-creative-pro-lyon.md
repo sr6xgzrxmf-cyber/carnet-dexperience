@@ -11,6 +11,7 @@ highlights:
   - "Animation d’ateliers équipes et transmission des nouveautés"
   - "Déploiement et diffusion de l’innovation dans l’organisation"
 source: "CV + expérience terrain"
+logo: "/images/logos/apple.png"
 ---
 
 ## Contexte

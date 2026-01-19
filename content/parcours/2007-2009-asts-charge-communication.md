@@ -11,6 +11,7 @@ highlights:
   - "Interface entre clients, techniciens et organisation"
   - "Communication et support dans des environnements techniques variés"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/asts.png"
 ---
 
 ## Contexte

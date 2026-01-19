@@ -11,6 +11,7 @@ highlights:
   - "Animation et vente en boulangerie sur la durée"
   - "Polyvalence caisse, rayon et opérations"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/champion.png"
 ---
 
 ## Contexte

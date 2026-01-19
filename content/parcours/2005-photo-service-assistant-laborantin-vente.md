@@ -11,6 +11,7 @@ highlights:
   - "Premier vendeur du magasin lors de l’arrivée des smartphones"
   - "Interface entre technologie, usage et client"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/photoservice.png"
 ---
 
 ## Contexte

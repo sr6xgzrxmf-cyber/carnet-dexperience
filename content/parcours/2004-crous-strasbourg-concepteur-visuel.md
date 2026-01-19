@@ -11,6 +11,7 @@ highlights:
   - "Participation aux prémices du site internet du CROUS de Strasbourg"
   - "Production de documents de prévention et d’information"
 source: "CV 2025 + mémoire terrain"
+logo: "/images/logos/crous.png"
 ---
 
 ## Contexte
