@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllParcours } from "@/lib/parcours";
 
+
 export const metadata = {
   title: "Parcours",
   description:
