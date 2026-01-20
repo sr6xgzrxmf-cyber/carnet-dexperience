@@ -5,7 +5,7 @@ import QRCode from "qrcode";
 
 const URL = "https://www.carnetdexperience.fr/?utm_source=badge&utm_medium=qr&utm_campaign=rencontre";
 
-ffunction usePrefersDark() {
+function usePrefersDark() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
