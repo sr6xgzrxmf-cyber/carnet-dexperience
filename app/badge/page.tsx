@@ -3,24 +3,32 @@
 import { useEffect, useMemo, useState } from "react";
 import QRCode from "qrcode";
 
-const URL = "https://www.carnetdexperience.fr";
+const URL = "https://www.carnetdexperience.fr/?utm_source=badge&utm_medium=qr&utm_campaign=rencontre";
 
-function usePrefersDark() {
+ffunction usePrefersDark() {
   const [dark, setDark] = useState(false);
+
   useEffect(() => {
     const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
     if (!mq) return;
+
     const apply = () => setDark(!!mq.matches);
     apply();
-    if (mq.addEventListener) {
+
+    if (typeof mq.addEventListener === "function") {
       mq.addEventListener("change", apply);
       return () => mq.removeEventListener("change", apply);
     }
-    // @ts-expect-error older Safari
-    mq.addListener(apply);
-    // @ts-expect-error older Safari
-    return () => mq.removeListener(apply);
+
+    const legacy = mq as unknown as {
+      addListener?: (cb: () => void) => void;
+      removeListener?: (cb: () => void) => void;
+    };
+
+    legacy.addListener?.(apply);
+    return () => legacy.removeListener?.(apply);
   }, []);
+
   return dark;
 }
 
