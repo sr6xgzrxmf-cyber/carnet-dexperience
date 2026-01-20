@@ -3,14 +3,13 @@
 import { useEffect, useMemo, useState } from "react";
 import QRCode from "qrcode";
 
-const URL = "https://www.carnetdexperience.fr/?utm_source=badge&utm_medium=qr&utm_campaign=rencontre";
+const URL =
+  "https://www.carnetdexperience.fr/?utm_source=badge&utm_medium=qr&utm_campaign=rencontre";
 
 function usePrefersDark() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
 
     const apply = () => setDark(mq.matches);
@@ -26,11 +25,13 @@ function usePrefersDark() {
 export default function BadgePage() {
   const prefersDark = usePrefersDark();
 
-  const colors = useMemo(() => {
-    return prefersDark
-      ? { bg: "#0b0b0c", fg: "#ffffff" }
-      : { bg: "#ffffff", fg: "#0b0b0c" };
-  }, [prefersDark]);
+  const colors = useMemo(
+    () =>
+      prefersDark
+        ? { bg: "#0b0b0c", fg: "#ffffff" }
+        : { bg: "#ffffff", fg: "#0b0b0c" },
+    [prefersDark]
+  );
 
   const [svg, setSvg] = useState("");
 
@@ -46,7 +47,7 @@ export default function BadgePage() {
         errorCorrectionLevel: "M",
       });
 
-      // Important : on enlève width/height pour que le SVG devienne 100% responsive
+      // rendre le SVG 100% responsive (pas de width/height fixes)
       const responsive = raw
         .replace(/width="[^"]*"/, "")
         .replace(/height="[^"]*"/, "");
@@ -65,7 +66,6 @@ export default function BadgePage() {
       style={{
         background: colors.bg,
         color: colors.fg,
-        // On prend la hauteur visible iPhone sans se faire manger par les barres
         minHeight: "100svh",
         paddingBottom: "calc(env(safe-area-inset-bottom) + 12px)",
         paddingTop: "12px",
@@ -79,13 +79,7 @@ export default function BadgePage() {
           </h1>
         </div>
 
-        {/* Zone QR : toujours carré + jamais trop grand */}
-        <div
-          className="mx-auto w-full"
-          style={{
-            maxWidth: "min(92vw, 420px)",
-          }}
-        >
+        <div className="mx-auto w-full" style={{ maxWidth: "min(92vw, 420px)" }}>
           <div
             className="rounded-3xl p-3"
             style={{
@@ -101,22 +95,16 @@ export default function BadgePage() {
               className="rounded-2xl overflow-hidden"
               style={{
                 background: colors.bg,
-                // carré parfait, et le contenu s’adapte
                 aspectRatio: "1 / 1",
               }}
             >
               <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                }}
-                // SVG inline
+                style={{ width: "100%", height: "100%" }}
                 dangerouslySetInnerHTML={{ __html: svg }}
               />
             </div>
           </div>
 
-          {/* Force le SVG à remplir le carré */}
           <style jsx>{`
             :global(svg) {
               width: 100% !important;
