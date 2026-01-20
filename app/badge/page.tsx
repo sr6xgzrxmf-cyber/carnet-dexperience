@@ -5,28 +5,19 @@ import QRCode from "qrcode";
 
 const URL = "https://www.carnetdexperience.fr/?utm_source=badge&utm_medium=qr&utm_campaign=rencontre";
 
-ffunction usePrefersDark() {
+function usePrefersDark() {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
-    if (!mq) return;
+    if (typeof window === "undefined") return;
 
-    const apply = () => setDark(!!mq.matches);
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const apply = () => setDark(mq.matches);
     apply();
 
-    if (typeof mq.addEventListener === "function") {
-      mq.addEventListener("change", apply);
-      return () => mq.removeEventListener("change", apply);
-    }
-
-    const legacy = mq as unknown as {
-      addListener?: (cb: () => void) => void;
-      removeListener?: (cb: () => void) => void;
-    };
-
-    legacy.addListener?.(apply);
-    return () => legacy.removeListener?.(apply);
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
   }, []);
 
   return dark;
