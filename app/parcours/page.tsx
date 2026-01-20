@@ -30,65 +30,78 @@ export default function ParcoursPage() {
       </header>
 
 
-      <ol className="mt-10 space-y-6 list-none border-l border-neutral-200 dark:border-neutral-800 pl-6">
-        {items.map((item) => (
-          <li key={item.slug} className="relative">
-{/* Point (ancré sur la ligne, centré verticalement) */}
-<span className="absolute -left-[30px] top-[0.9em] h-3 w-3 -translate-y-1/2 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950" />
-
-{/* Logo (centre aligné sur le centre du point) */}
-{item.meta.logo ? (
-  <img
-    src={item.meta.logo}
-    alt={item.meta.company ?? "Logo"}
-    className="absolute -left-[112px] top-[6px] h-16 w-16 -translate-y-1/2 object-contain opacity-80 dark:opacity-70"
-    loading="lazy"
+<div className="relative mt-10 overflow-visible">
+  {/* Ligne globale, alignée au centre de la colonne "points" */}
+  <div
+    aria-hidden
+    className="absolute left-[100px] top-0 bottom-0 w-px bg-neutral-200 dark:bg-neutral-800"
   />
-) : null}
 
-            <div className="space-y-2">
-              {/* Ligne 1 : Métier — Entreprise/Ville (italique) — Date */}
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <Link
-                  href={`/parcours/${item.slug}`}
-                  className="text-lg font-semibold hover:underline"
-                >
-                  {item.meta.title}
-                </Link>
+  <ol className="space-y-8 list-none">
+    {items.map((item) => (
+      <li
+        key={item.slug}
+        className="grid grid-cols-[72px_24px_1fr] items-start gap-x-4"
+      >
+        {/* Colonne A — Logo */}
+        <div className="relative flex justify-center">
+          {item.meta.logo ? (
+<img
+  src={item.meta.logo}
+  alt={item.meta.company ?? "Logo"}
+  className="absolute top-[0.9em] h-16 w-16 -translate-y-1/2 object-contain opacity-80 dark:opacity-70"
+  loading="lazy"
+/>
+          ) : (
+            <div className="h-16 w-16" />
+          )}
+        </div>
 
-                {item.meta.company || item.meta.location ? (
-                  <span className="text-sm italic text-neutral-600 dark:text-neutral-400">
-                    {item.meta.company ?? ""}
-                    {item.meta.location ? ` — ${item.meta.location}` : ""}
-                  </span>
-                ) : null}
+        {/* Colonne B — Point (plus de ligne locale) */}
+        <div className="relative flex justify-center">
+          <span className="mt-[0.9em] h-3 w-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950" />
+        </div>
 
-                <span className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {formatRange(item.meta.start, item.meta.end)}
-                </span>
-              </div>
+        {/* Colonne C — Contenu */}
+        <div className="space-y-2">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <Link
+              href={`/parcours/${item.slug}`}
+              className="text-lg font-semibold hover:underline"
+            >
+              {item.meta.title}
+            </Link>
 
-              {/* Rôle / contexte */}
-              {item.meta.role ? (
-                <div className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {item.meta.role}
-                </div>
-              ) : null}
+            {item.meta.company || item.meta.location ? (
+              <span className="text-sm italic text-neutral-600 dark:text-neutral-400">
+                {item.meta.company ?? ""}
+                {item.meta.location ? ` — ${item.meta.location}` : ""}
+              </span>
+            ) : null}
 
-              {/* Highlights */}
-              {Array.isArray(item.meta.highlights) &&
-              item.meta.highlights.length > 0 ? (
-                <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
-                  {item.meta.highlights.slice(0, 3).map((h) => (
-                    <li key={h}>{h}</li>
-                  ))}
-                </ul>
-              ) : null}
+            <span className="text-sm text-neutral-600 dark:text-neutral-400">
+              {formatRange(item.meta.start, item.meta.end)}
+            </span>
+          </div>
+
+          {item.meta.role ? (
+            <div className="text-sm text-neutral-600 dark:text-neutral-400">
+              {item.meta.role}
             </div>
-          </li>
-        ))}
-      </ol>
+          ) : null}
 
+          {Array.isArray(item.meta.highlights) && item.meta.highlights.length > 0 ? (
+            <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
+              {item.meta.highlights.slice(0, 3).map((h) => (
+                <li key={h}>{h}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      </li>
+    ))}
+  </ol>
+</div>
 
       <Link
         href="/parcours/formation"
