@@ -34,6 +34,9 @@ export async function GET() {
       slug,
       title: String(data.title ?? slug),
       date: data.date ? String(data.date).slice(0, 10) : null,
+      excerpt: data.excerpt ? String(data.excerpt) : null,
+      cover: data.cover ? String(data.cover) : null,
+      tags: Array.isArray(data.tags) ? data.tags.map((t: any) => String(t)) : [],
       seriesName: series?.name ? String(series.name) : null,
       seriesSlug: series?.slug ? String(series.slug) : null,
       seriesOrder:

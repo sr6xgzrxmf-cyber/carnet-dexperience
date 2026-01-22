@@ -9,9 +9,7 @@ const IS_LOCAL =
   process.env.NODE_ENV !== "production" &&
   !process.env.VERCEL;
 
-type Body = { slug: string; date: string };
-
-export async function PATCH(req: Request) {
+export async function GET(req: Request) {
   if (!IS_LOCAL) {
     return NextResponse.json(
       { error: "Not supported in production. Local-only admin feature." },
@@ -19,13 +17,13 @@ export async function PATCH(req: Request) {
     );
   }
 
-  const body = (await req.json()) as Body;
-
-  if (!body?.slug || !body?.date) {
-    return NextResponse.json({ error: "Missing slug or date" }, { status: 400 });
+  const url = new URL(req.url);
+  const slug = url.searchParams.get("slug");
+  if (!slug) {
+    return NextResponse.json({ error: "Missing slug" }, { status: 400 });
   }
 
-  const filePath = path.join(ARTICLES_DIR, `${body.slug}.md`);
+  const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
   if (!fs.existsSync(filePath)) {
     return NextResponse.json({ error: "File not found" }, { status: 404 });
   }
@@ -33,10 +31,9 @@ export async function PATCH(req: Request) {
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
 
-  const nextData = { ...parsed.data, date: body.date };
-  const nextRaw = matter.stringify(parsed.content, nextData);
-
-  fs.writeFileSync(filePath, nextRaw, "utf8");
-
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({
+    slug,
+    data: parsed.data ?? {},
+    contentPreview: (parsed.content ?? "").slice(0, 500),
+  });
 }
