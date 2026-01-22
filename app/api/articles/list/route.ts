@@ -5,9 +5,20 @@ import matter from "gray-matter";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
-type Series = { slug?: unknown; order?: unknown };
+const IS_LOCAL =
+  process.env.NODE_ENV !== "production" &&
+  !process.env.VERCEL;
+
+type Series = { name?: unknown; slug?: unknown; order?: unknown };
 
 export async function GET() {
+  if (!IS_LOCAL) {
+    return NextResponse.json(
+      { error: "Not supported in production. Local-only admin feature." },
+      { status: 403 }
+    );
+  }
+
   const files = fs.existsSync(ARTICLES_DIR)
     ? fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"))
     : [];
@@ -22,7 +33,8 @@ export async function GET() {
     return {
       slug,
       title: String(data.title ?? slug),
-      date: data.date ? String(data.date).slice(0, 10) : null, // YYYY-MM-DD
+      date: data.date ? String(data.date).slice(0, 10) : null,
+      seriesName: series?.name ? String(series.name) : null,
       seriesSlug: series?.slug ? String(series.slug) : null,
       seriesOrder:
         typeof series?.order === "number"
