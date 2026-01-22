@@ -12,6 +12,27 @@ const IS_LOCAL =
 
 type Series = { name?: unknown; slug?: unknown; order?: unknown };
 
+const DA_PREFIX = `Tu es directeur artistique pour mon site “Carnet d’expérience”.
+
+Je te donne une image de référence qui définit mon univers visuel :
+une scène réaliste, narrative, avec des personnages en situation, comme une photo de reportage ou de magazine, éclairée par un flash de photographe.
+
+Tu dois toujours générer des images qui respectent cette DA :
+– Toujours avec une image en paysage même si je te donne des images de reference en portrait
+– Photographie ultra-réaliste (pas illustration, pas cartoon)
+– Éclairage au flash puissant, frontal, type studio ou reportage
+– Arrière-plan plus sombre ou plus doux, sujets très nets et lumineux
+– Personnages crédibles, modernes, professionnels, incarnés
+– Sens du récit (on doit comprendre une histoire)
+– Esthétique premium, éditoriale, pas stock photo
+– Pas d’icônes, pas d’UI, pas d’effets futuristes
+– Pas de texte incrusté
+
+Les images doivent ressembler à une photo de magazine ou de plateau photo racontant une scène réelle, comme l’image de référence.
+
+Voici la scène que je veux illustrer :
+`;
+
 function fileExistsPublic(publicPath: string) {
   // publicPath like "/images/articles/xxx.jpg"
   if (!publicPath.startsWith("/")) return false;
@@ -26,34 +47,26 @@ function normalizeDate(v: any): string | null {
 }
 
 function guessCover(slug: string) {
-  // Heuristique simple : /images/articles/<slug>.jpg
-  // (tu peux changer .jpg -> .webp si tu standardises)
   return `/images/articles/${slug}.jpg`;
 }
 
 function extractBriefFromMarkdown(md: string) {
-  // Sans IA : on prend un extrait "utilisable" (premiers paragraphes, sans markdown lourd)
   const cleaned = md
-    .replace(/^#{1,6}\s+/gm, "") // headings
-    .replace(/!\[[^\]]*\]\([^)]+\)/g, "") // images
-    .replace(/\[[^\]]*\]\(([^)]+)\)/g, "") // links (remove)
-    .replace(/[`*_>#-]/g, " ") // basic md chars
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, "")
+    .replace(/\[[^\]]*\]\(([^)]+)\)/g, "")
+    .replace(/[`*_>#-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 
-  // ~280 chars de “brief”
   return cleaned.slice(0, 280);
 }
 
 function extractLinkedFiles(md: string) {
-  // On remonte des liens qui ressemblent à des assets locaux :
-  // - /files/...
-  // - /docs/...
-  // - /downloads/...
-  // - /images/...
   const links: string[] = [];
-  const re = /$begin:math:display$[^$end:math:display$]*\]$begin:math:text$([^)]+)$end:math:text$/g;
+  const re = /$begin:math:display$[^$end:math:display$]*\]$begin:math:text$([^)]+)$end:math:text$/g; // ✅ corrigé
   let m: RegExpExecArray | null;
+
   while ((m = re.exec(md))) {
     const href = m[1].trim();
     if (
@@ -65,7 +78,6 @@ function extractLinkedFiles(md: string) {
       links.push(href);
     }
   }
-  // dédoublonnage
   return Array.from(new Set(links));
 }
 
@@ -112,14 +124,19 @@ export async function GET() {
       ? excerpt.trim()
       : extractBriefFromMarkdown(content ?? "");
 
-    // Brief DA (heuristique)
+    // “fiche DA” (courte)
     const da = [
       `Titre: ${title}`,
       date ? `Date: ${date}` : `Date: (manquante)`,
-      series?.slug ? `Série: ${String(series.slug)}${series?.order != null ? ` (order ${String(series.order)})` : ""}` : "Série: hors-série",
+      series?.slug
+        ? `Série: ${String(series.slug)}${series?.order != null ? ` (order ${String(series.order)})` : ""}`
+        : "Série: hors-série",
       tags.length ? `Tags: ${tags.join(", ")}` : "Tags: (aucun)",
       `Brief: ${brief || "(vide)"}`,
     ].join("\n");
+
+    // ✅ prompt complet prêt à coller
+    const daPrompt = `${DA_PREFIX}${brief || "(vide)"}`;
 
     const problems: string[] = [];
     if (!date) problems.push("date manquante ou invalide");
@@ -135,6 +152,7 @@ export async function GET() {
       slug,
       title,
       date,
+
       seriesName: series?.name ? String(series.name) : null,
       seriesSlug: series?.slug ? String(series.slug) : null,
       seriesOrder:
@@ -143,20 +161,34 @@ export async function GET() {
           : series?.order != null
             ? Number(series.order)
             : null,
+
       tags,
       excerpt,
+
       cover,
       coverOk,
+
       coverExpected,
       coverExpectedOk,
+
+      // ✅ pour ton bouton “copier nom”
+      expectedBasename: slug, // sans extension
+      expectedCoverPath: coverExpected, // si tu veux aussi un bouton “copier chemin”
+
       linked: linkedChecks,
+
       brief,
+
+      // ancien bloc (utile)
       da,
+
+      // ✅ nouveau bloc (prompt prêt à coller)
+      daPrompt,
+
       problems,
     };
   });
 
-  // tri : problèmes d’abord, puis date
   items.sort((a, b) => {
     const pa = a.problems.length;
     const pb = b.problems.length;

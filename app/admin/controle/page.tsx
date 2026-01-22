@@ -21,11 +21,43 @@ type Item = {
   brief: string;
   da: string;
   problems: string[];
+
+  // ✅ Ajouts Batch 1 (fallback si absent)
+  expectedBasename?: string; // nom fichier sans extension
+  daPrompt?: string; // DA fixe + brief
 };
+
+type CopyEvent = {
+  ts: number;
+  slug: string;
+  kind: "basename" | "daPrompt";
+  value: string;
+};
+
+const HISTORY_KEY = "ce_editor_copy_history_v1";
 
 function isLocalHost() {
   if (typeof window === "undefined") return true;
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+}
+
+function loadHistory(): CopyEvent[] {
+  try {
+    return JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+  } catch {
+    return [];
+  }
+}
+
+function pushHistory(evt: CopyEvent): CopyEvent[] {
+  const prev = loadHistory();
+  const next = [evt, ...prev].slice(0, 50);
+  localStorage.setItem(HISTORY_KEY, JSON.stringify(next));
+  return next;
+}
+
+async function copyToClipboard(text: string) {
+  await navigator.clipboard.writeText(text);
 }
 
 export default function ControleEditorialPage() {
@@ -33,6 +65,10 @@ export default function ControleEditorialPage() {
   const [q, setQ] = useState("");
   const [onlyProblems, setOnlyProblems] = useState(true);
   const [selected, setSelected] = useState<Item | null>(null);
+
+  // ✅ feedback + historique
+  const [copiedKey, setCopiedKey] = useState<string>("");
+  const [history, setHistory] = useState<CopyEvent[]>([]);
 
   async function refresh() {
     const res = await fetch("/api/articles/audit");
@@ -43,6 +79,10 @@ export default function ControleEditorialPage() {
 
   useEffect(() => {
     refresh();
+  }, []);
+
+  useEffect(() => {
+    setHistory(loadHistory());
   }, []);
 
   const local = isLocalHost();
@@ -61,6 +101,37 @@ export default function ControleEditorialPage() {
       );
     });
   }, [items, q, onlyProblems]);
+
+  async function copyBasename(it: Item) {
+    const basename = (it.expectedBasename ?? it.slug).trim();
+    await copyToClipboard(basename);
+    setCopiedKey(`basename:${it.slug}`);
+    setHistory(
+      pushHistory({
+        ts: Date.now(),
+        slug: it.slug,
+        kind: "basename",
+        value: basename,
+      })
+    );
+    window.setTimeout(() => setCopiedKey(""), 1200);
+  }
+
+  async function copyDABrief(it: Item) {
+    const value = (it.daPrompt ?? it.da ?? "").trim();
+    if (!value) return;
+    await copyToClipboard(value);
+    setCopiedKey(`da:${it.slug}`);
+    setHistory(
+      pushHistory({
+        ts: Date.now(),
+        slug: it.slug,
+        kind: "daPrompt",
+        value,
+      })
+    );
+    window.setTimeout(() => setCopiedKey(""), 1200);
+  }
 
   return (
     <div style={{ padding: 24 }}>
@@ -170,9 +241,7 @@ export default function ControleEditorialPage() {
                           <span style={{ opacity: 0.7 }}>Hors série</span>
                         )}
                       </td>
-                      <td style={{ padding: 10, borderBottom: "1px solid rgba(0,0,0,0.06)" }}>
-                        {coverStatus}
-                      </td>
+                      <td style={{ padding: 10, borderBottom: "1px solid rgba(0,0,0,0.06)" }}>{coverStatus}</td>
                       <td style={{ padding: 10, borderBottom: "1px solid rgba(0,0,0,0.06)" }}>
                         {it.linked.length ? (
                           <span>{missingLinks ? `${missingLinks} manquant(s)` : "OK"}</span>
@@ -223,8 +292,25 @@ export default function ControleEditorialPage() {
                 <div style={{ fontSize: 13, marginTop: 4 }}>
                   Référencée : <code>{selected.cover ?? "—"}</code>
                   <br />
-                  Attendue : <code>{selected.coverExpected}</code>
+                  <span style={{ opacity: 0.65 }}>Nom attendu :</span>{" "}
+                  <code>{(selected.expectedBasename ?? selected.slug) + ".jpg"}</code>
                 </div>
+
+                <div style={{ marginTop: 10, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                  <button
+                    onClick={() => copyBasename(selected)}
+                    style={{
+                      padding: "10px 12px",
+                      borderRadius: 12,
+                      border: "1px solid rgba(0,0,0,0.18)",
+                      background: "rgba(0,0,0,0.04)",
+                    }}
+                    type="button"
+                  >
+                    {copiedKey === `basename:${selected.slug}` ? "Copié ✓" : "Copier le nom du fichier"}
+                  </button>
+                </div>
+
                 <div style={{ marginTop: 6, opacity: 0.8 }}>
                   {selected.cover
                     ? selected.coverOk
@@ -257,11 +343,87 @@ export default function ControleEditorialPage() {
                 <div style={{ fontSize: 13, marginTop: 6, opacity: 0.85 }}>{selected.brief || "—"}</div>
 
                 <button
-                  onClick={() => navigator.clipboard.writeText(selected.da)}
-                  style={{ marginTop: 10, padding: "10px 12px", borderRadius: 12, border: "1px solid rgba(0,0,0,0.18)", background: "rgba(0,0,0,0.04)" }}
+                  onClick={() => copyDABrief(selected)}
+                  style={{
+                    marginTop: 10,
+                    padding: "10px 12px",
+                    borderRadius: 12,
+                    border: "1px solid rgba(0,0,0,0.18)",
+                    background: "rgba(0,0,0,0.04)",
+                  }}
+                  type="button"
                 >
-                  Copier le brief DA
+                  {copiedKey === `da:${selected.slug}` ? "Copié ✓" : "Copier le brief DA"}
                 </button>
+
+                {/* Petit hint si Batch 1 n'est pas encore branché */}
+                {!selected.daPrompt && (
+                  <div style={{ marginTop: 8, fontSize: 12, opacity: 0.65 }}>
+                    Astuce : applique le Batch 1 pour copier la DA complète (DA fixe + brief). Pour l’instant, copie la fiche courte.
+                  </div>
+                )}
+              </div>
+
+              <div style={{ paddingTop: 8, borderTop: "1px solid rgba(0,0,0,0.08)" }}>
+                <div style={{ fontWeight: 700 }}>Historique</div>
+
+                {history.length === 0 ? (
+                  <div style={{ opacity: 0.7, marginTop: 6, fontSize: 13 }}>Aucune copie pour le moment.</div>
+                ) : (
+                  <div style={{ display: "grid", gap: 8, marginTop: 8 }}>
+                    {history.slice(0, 12).map((h, idx) => (
+                      <div key={`${h.ts}-${idx}`} style={{ border: "1px solid rgba(0,0,0,0.08)", borderRadius: 12, padding: 10 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "center" }}>
+                          <div style={{ fontSize: 12, opacity: 0.7 }}>
+                            {new Date(h.ts).toLocaleString("fr-FR")} ·{" "}
+                            <span style={{ fontWeight: 700 }}>{h.kind === "basename" ? "Nom" : "DA"}</span>
+                          </div>
+
+                          <button
+                            onClick={async () => {
+                              await copyToClipboard(h.value);
+                              setCopiedKey(`hist:${idx}`);
+                              window.setTimeout(() => setCopiedKey(""), 900);
+                            }}
+                            style={{
+                              padding: "6px 10px",
+                              borderRadius: 10,
+                              border: "1px solid rgba(0,0,0,0.18)",
+                              background: "white",
+                              fontSize: 12,
+                            }}
+                            type="button"
+                          >
+                            {copiedKey === `hist:${idx}` ? "Copié ✓" : "Re-copier"}
+                          </button>
+                        </div>
+
+                        <div style={{ marginTop: 6, fontSize: 12 }}>
+                          <div style={{ opacity: 0.7, marginBottom: 4 }}>{h.slug}</div>
+                          <code style={{ display: "block", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                            {h.value}
+                          </code>
+                        </div>
+                      </div>
+                    ))}
+
+                    <button
+                      onClick={() => {
+                        localStorage.removeItem(HISTORY_KEY);
+                        setHistory([]);
+                      }}
+                      style={{
+                        padding: "10px 12px",
+                        borderRadius: 12,
+                        border: "1px solid rgba(0,0,0,0.18)",
+                        background: "white",
+                      }}
+                      type="button"
+                    >
+                      Vider l’historique
+                    </button>
+                  </div>
+                )}
               </div>
 
               {selected.problems.length > 0 && (
