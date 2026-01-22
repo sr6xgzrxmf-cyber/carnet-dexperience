@@ -3,7 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
-import interactionPlugin, { EventDropArg } from "@fullcalendar/interaction";
+import interactionPlugin from "@fullcalendar/interaction";
+import type { EventDropArg } from "@fullcalendar/core";
+
 
 type Item = {
   slug: string;
@@ -40,8 +42,8 @@ export default function CalendrierArticlesPage() {
       .map((it) => {
         const isSeries = !!it.seriesSlug;
         const label = isSeries
-          ? `${it.title}${it.seriesOrder != null ? ` — ${it.seriesOrder}` : ""}`
-          : it.title;
+       ? `[${it.seriesName ?? it.seriesSlug}] ${it.title}${it.seriesOrder != null ? ` — ${it.seriesOrder}` : ""}`
+        : it.title;
 
         const color = isSeries ? colorFromSlug(it.seriesSlug!) : "hsl(210 80% 55%)";
 
