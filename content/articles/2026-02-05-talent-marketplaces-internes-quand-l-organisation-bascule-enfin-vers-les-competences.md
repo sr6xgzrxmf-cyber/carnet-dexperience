@@ -2,7 +2,7 @@
 title: >-
   Talent marketplaces internes : quand l’organisation bascule enfin vers les
   compétences
-date: '2026-02-06'
+date: '2026-02-05'
 excerpt: >-
   Les organisations continuent de piloter par postes et hiérarchie, alors que le
   travail réel se fait déjà par compétences et par projets. Les talent

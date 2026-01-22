@@ -1,9 +1,12 @@
 ---
-title: "Les choix que j’ai faits (et ceux que j’ai refusés)"
-date: "2026-03-01"
-excerpt: "Construire un média, c’est d’abord faire des choix. Et surtout en refuser d’autres. Public, open, écrit : ce cadre n’est pas neutre. Il filtre pour rester aligné."
-cover: "/images/articles/les-choix-que-j-ai-faits.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Les choix que j’ai faits (et ceux que j’ai refusés)
+date: '2026-02-23'
+excerpt: >-
+  Construire un média, c’est d’abord faire des choix. Et surtout en refuser
+  d’autres. Public, open, écrit : ce cadre n’est pas neutre. Il filtre pour
+  rester aligné.
+cover: /images/articles/les-choix-que-j-ai-faits.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - stratégie
   - alignement
@@ -11,8 +14,8 @@ tags:
   - posture professionnelle
   - média
 series:
-  name: "Construire Carnet d’expérience"
-  slug: "construire-carnet-experience"
+  name: Construire Carnet d’expérience
+  slug: construire-carnet-experience
   order: 11
 ---
 

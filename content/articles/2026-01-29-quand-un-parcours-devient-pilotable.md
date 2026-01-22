@@ -1,6 +1,6 @@
 ---
 title: Quand un parcours devient pilotable
-date: '2026-01-27'
+date: '2026-01-29'
 excerpt: >-
   Du point de vue de l’organisation, un professionnel qui a fait ce travail
   n’est pas plus ‘vendeur’. Il est plus lisible, plus fiable, plus engageable.

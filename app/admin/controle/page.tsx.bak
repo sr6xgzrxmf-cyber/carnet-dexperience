@@ -61,32 +61,6 @@ async function copyToClipboard(text: string) {
   await navigator.clipboard.writeText(text);
 }
 
-function buildDaPrompt(it: Item) {
-  const scene = (it.brief ?? "").trim();
-  return `
-Tu es directeur artistique pour mon site “Carnet d’expérience”.
-
-Je te donne une image de référence qui définit mon univers visuel :
-une scène réaliste, narrative, avec des personnages en situation, comme une photo de reportage ou de magazine, éclairée par un flash de photographe.
-
-Tu dois toujours générer des images qui respectent cette DA :
-– Toujours avec une image en paysage même si je te donne des images de reference en portrait
-– Photographie ultra-réaliste (pas illustration, pas cartoon)
-– Éclairage au flash puissant, frontal, type studio ou reportage
-– Arrière-plan plus sombre ou plus doux, sujets très nets et lumineux
-– Personnages crédibles, modernes, professionnels, incarnés
-– Sens du récit (on doit comprendre une histoire)
-– Esthétique premium, éditoriale, pas stock photo
-– Pas d’icônes, pas d’UI, pas d’effets futuristes
-– Pas de texte incrusté
-
-Les images doivent ressembler à une photo de magazine ou de plateau photo racontant une scène réelle, comme l’image de référence.
-
-Voici la scène que je veux illustrer :
-${scene || "(brief manquant : renseigne it.brief dans l’audit)"}`
-  .trim();
-}
-
 export default function ControleEditorialPage() {
   const [items, setItems] = useState<Item[]>([]);
   const [q, setQ] = useState("");
@@ -145,7 +119,7 @@ export default function ControleEditorialPage() {
   }
 
   async function copyDABrief(it: Item) {
-    const value = buildDaPrompt(it);
+    const value = (it.daPrompt ?? it.da ?? "").trim();
     if (!value) return;
     await copyToClipboard(value);
     setCopiedKey(`da:${it.slug}`);
@@ -392,7 +366,7 @@ export default function ControleEditorialPage() {
                   }}
                   type="button"
                 >
-                  {copiedKey === `da:${selected.slug}` ? "Copié ✓" : "Copier le prompt DA"}
+                  {copiedKey === `da:${selected.slug}` ? "Copié ✓" : "Copier le brief DA"}
                 </button>
 
                 {/* Petit hint si Batch 1 n'est pas encore branché */}

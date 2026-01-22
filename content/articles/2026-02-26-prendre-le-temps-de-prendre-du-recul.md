@@ -1,9 +1,11 @@
 ---
-title: "Prendre le temps de prendre du recul"
-date: "2026-03-08"
-excerpt: "Avec le temps, l’urgence cesse d’être un moteur. Prendre du recul n’est pas un luxe, mais une compétence acquise : celle qui permet de durer sans s’épuiser."
-cover: "/images/articles/prendre-le-temps-de-prendre-du-recul.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Prendre le temps de prendre du recul
+date: '2026-02-26'
+excerpt: >-
+  Avec le temps, l’urgence cesse d’être un moteur. Prendre du recul n’est pas un
+  luxe, mais une compétence acquise : celle qui permet de durer sans s’épuiser.
+cover: /images/articles/prendre-le-temps-de-prendre-du-recul.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - temps long
   - maturité professionnelle
@@ -11,8 +13,8 @@ tags:
   - posture
   - durabilité
 series:
-  name: "Construire Carnet d’expérience"
-  slug: "construire-carnet-experience"
+  name: Construire Carnet d’expérience
+  slug: construire-carnet-experience
   order: 12
 ---
 

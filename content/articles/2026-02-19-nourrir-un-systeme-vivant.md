@@ -1,9 +1,12 @@
 ---
-title: "Nourrir un système vivant"
-date: "2026-02-22"
-excerpt: "Un média durable ne se pilote pas à l’énergie ni à l’inspiration. Il se nourrit. Veille, calendrier, IA comme partenaire : penser long terme, c’est cultiver plutôt que produire."
-cover: "/images/articles/nourrir-un-systeme-vivant.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Nourrir un système vivant
+date: '2026-02-19'
+excerpt: >-
+  Un média durable ne se pilote pas à l’énergie ni à l’inspiration. Il se
+  nourrit. Veille, calendrier, IA comme partenaire : penser long terme, c’est
+  cultiver plutôt que produire.
+cover: /images/articles/nourrir-un-systeme-vivant.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - veille
   - continuité
@@ -11,8 +14,8 @@ tags:
   - stratégie éditoriale
   - long terme
 series:
-  name: "Construire Carnet d’expérience"
-  slug: "construire-carnet-experience"
+  name: Construire Carnet d’expérience
+  slug: construire-carnet-experience
   order: 10
 ---
 
