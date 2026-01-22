@@ -1,9 +1,13 @@
 ---
-title: "La fiche pour se rendre lisible"
-date: "2026-01-25"
-excerpt: "Après avoir clarifié ses axes et appris à se dire sans se justifier, il reste une étape décisive : poser tout cela dans un document simple, contraignant et partageable. Cette fiche n’est pas un exercice de plus. C’est un outil pour ralentir, choisir et devenir lisible."
-cover: "/images/articles/episode-3-5-la-fiche-pour-se-rendre-lisible.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: La fiche pour se rendre lisible
+date: '2026-01-27'
+excerpt: >-
+  Après avoir clarifié ses axes et appris à se dire sans se justifier, il reste
+  une étape décisive : poser tout cela dans un document simple, contraignant et
+  partageable. Cette fiche n’est pas un exercice de plus. C’est un outil pour
+  ralentir, choisir et devenir lisible.
+cover: /images/articles/episode-3-5-la-fiche-pour-se-rendre-lisible.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - atelier
   - accompagnement
@@ -11,6 +15,9 @@ tags:
   - posture professionnelle
   - clarification
   - management
+series:
+  slug: atelier-de-posture
+  order: 4.5
 ---
 
 À ce stade du parcours, beaucoup de choses sont déjà plus claires. On a nommé des axes. On a identifié ce qui compte vraiment. On sait mieux se dire. Et pourtant, quelque chose résiste encore. Non pas un manque d’idées, mais un manque de **support**.

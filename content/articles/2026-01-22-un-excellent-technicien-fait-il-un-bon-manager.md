@@ -1,6 +1,6 @@
 ---
 title: Un excellent technicien fait-il un bon manager ?
-date: "2026-01-25"
+date: '2026-01-26'
 excerpt: >-
   Promouvoir les meilleurs techniciens managers est une évidence… en apparence.
   Sur le terrain, cette décision révèle une confusion fréquente entre expertise,

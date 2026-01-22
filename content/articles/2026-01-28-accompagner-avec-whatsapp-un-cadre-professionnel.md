@@ -1,9 +1,13 @@
 ---
-title: "Accompagner avec WhatsApp : un cadre professionnel"
-date: "2026-01-28"
-excerpt: "Utiliser WhatsApp dans un accompagnement professionnel n’a rien d’évident. Ce n’est ni un espace informel, ni une hotline. À condition d’être cadré, assumé et explicite, cet outil devient un levier de formulation, de responsabilité et de maturation — pour la personne accompagnée comme pour l’accompagnant."
-cover: "/images/articles/accompagner-avec-whatsapp-un-cadre-professionnel.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Accompagner avec WhatsApp : un cadre professionnel'
+date: '2026-02-05'
+excerpt: >-
+  Utiliser WhatsApp dans un accompagnement professionnel n’a rien d’évident. Ce
+  n’est ni un espace informel, ni une hotline. À condition d’être cadré, assumé
+  et explicite, cet outil devient un levier de formulation, de responsabilité et
+  de maturation — pour la personne accompagnée comme pour l’accompagnant.
+cover: /images/articles/accompagner-avec-whatsapp-un-cadre-professionnel.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - accompagnement
   - posture professionnelle
@@ -11,6 +15,9 @@ tags:
   - numérique
   - management
   - confidentialité
+series:
+  slug: atelier-de-posture
+  order: 7
 ---
 
 À ce stade de l’accompagnement, une question revient souvent : comment travailler entre deux temps formels, sans devenir une présence permanente, ni un recours implicite à chaque tension du quotidien ?
