@@ -1,6 +1,6 @@
 ---
 title: "Apprendre à bâtir un média, pas un site"
-date: "2026-01-22"
+date: "2026-01-23"
 excerpt: "Passer de la logique du site bricolé à celle d’un média durable implique un changement d’échelle : apprendre, structurer, et penser l’ensemble comme un système éditorial vivant."
 cover: "/images/articles/2026-01-23-batir-un-media-pas-un-site.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
