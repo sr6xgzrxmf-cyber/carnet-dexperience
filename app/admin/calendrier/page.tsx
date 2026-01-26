@@ -35,6 +35,44 @@ function isLocalHost() {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
 
+function parisTodayISO(now: Date = new Date()): string {
+  // YYYY-MM-DD en Europe/Paris
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Paris",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+}
+
+function normalizeISODate(input?: string | null): string | null {
+  if (!input) return null;
+  const s = String(input).trim();
+  if (!s) return null;
+  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
+}
+
+function isPublishedParis(date: string | null | undefined, now: Date): boolean {
+  const d = normalizeISODate(date);
+  if (!d) return true; // pas de date => visible
+  return d <= parisTodayISO(now);
+}
+
+function daysUntilParis(date: string | null | undefined, now: Date): number | null {
+  const d = normalizeISODate(date);
+  if (!d) return null;
+
+  const today = parisTodayISO(now);
+
+  // Diff en jours sur base YYYY-MM-DD -> Date UTC "neutre" (uniquement pour diff jours, pas pour publication)
+  const toUTC = (iso: string) => {
+    const [y, m, dd] = iso.split("-").map(Number);
+    return Date.UTC(y, m - 1, dd);
+  };
+
+  return Math.round((toUTC(d) - toUTC(today)) / (24 * 60 * 60 * 1000));
+}
+
 function Modal({
   open,
   title,

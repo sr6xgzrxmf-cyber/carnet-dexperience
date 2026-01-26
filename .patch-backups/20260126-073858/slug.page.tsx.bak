@@ -10,24 +10,11 @@ import {
 } from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
-import type { Metadata } from "next";
-
-export const revalidate = 300;
 
 export async function generateStaticParams() {
   // ✅ Only pre-render published articles
-  const all = await getAllArticles({ includeFuture: true });
+  const all = await getAllArticles({ includeFuture: false });
   return (all ?? []).map((it: any) => ({ slug: it.slug }));
-}
-
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const item = getArticleBySlug(params.slug, { includeFuture: true });
-  if (!item) return {};
-  const published = isPublishedDate(item.meta?.date, new Date());
-  return {
-    title: item.meta?.title ?? params.slug,
-    robots: published ? { index: true, follow: true } : { index: false, follow: false },
-  };
 }
 
 function formatDate(date?: string) {
@@ -70,9 +57,17 @@ export default async function ArticleDetailPage({
 }) {
   const { slug } = await params;
 
-  const item = getArticleBySlug(slug, { includeFuture: true });
-if (!item) return notFound();
-  const isFuture = !isPublishedDate(item.meta?.date, new Date());
+  const item = getArticleBySlug(slug);
+  if (!item) return notFound();
+
+  // ✅ Show future-dated items only in dev or Vercel preview deployments
+  const allowFuture =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+
+  const isFuture = !isPublishedDate(item.meta?.date);
+
+  // ✅ Block direct access to future-dated articles in production
+  if (isFuture && !allowFuture) return notFound();
 
   const contentHtml = await markdownToHtml(item.content);
 
@@ -109,7 +104,7 @@ if (!item) return notFound();
   // A) Série (prev/next par series.order)
   // B) Fallback chrono (prev/next par date)
   // =========================
-  const all = await getAllArticles({ includeFuture: true });
+  const all = await getAllArticles({ includeFuture: false });
   const allItems = all ?? [];
 
   const current = allItems.find((x: any) => getSlug(x) === slug) ?? item;
@@ -177,7 +172,7 @@ if (!item) return notFound();
                 </span>
               ) : null}
 
-               {isFuture ? (
+              {allowFuture && isFuture ? (
                 <span className="text-neutral-600 dark:text-neutral-400">
                   •{" "}
                   <span className="inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-2 py-0.5 text-[11px]">

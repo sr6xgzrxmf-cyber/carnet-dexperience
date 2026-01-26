@@ -9,7 +9,7 @@ const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
 export type ArticleMeta = {
   title: string;
-  date?: any; // peut être string OU Date selon le YAML parser
+  date?: any; // important: peut être string OU Date selon le YAML parser
   tags?: string[];
   cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
@@ -26,9 +26,6 @@ export type ArticleItem = {
  * Convertit une date (string | Date | number | objet) en timestamp UTC robuste.
  * - Supporte "YYYY-MM-DD" (converti en UTC)
  * - Supporte dates ISO et formats parseables par Date.parse
- *
- * NOTE : ce timestamp sert surtout au tri. La publication est gérée par isPublishedDate()
- *        en Europe/Paris (Option C / cas 1).
  */
 export function toTimestamp(input: any): number {
   if (!input) return 0;
@@ -56,68 +53,22 @@ export function toTimestamp(input: any): number {
   return 0;
 }
 
-/* -------------------------
-   Publication (Option C / cas 1)
-   - La `date` YAML (YYYY-MM-DD) EST la date de publication
-   - Référence: Europe/Paris
--------------------------- */
-
-function parisTodayISO(now: Date = new Date()): string {
-  // YYYY-MM-DD en Europe/Paris (comparable lexicographiquement)
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Paris",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
-}
-
-function toParisISODate(input: any): string | null {
-  if (!input) return null;
-
-  if (input instanceof Date) {
-    const t = input.getTime();
-    if (!Number.isFinite(t)) return null;
-    return parisTodayISO(input);
-  }
-
-  if (typeof input === "number") {
-    if (!Number.isFinite(input)) return null;
-    return parisTodayISO(new Date(input));
-  }
-
-  if (typeof input === "string") {
-    const s = input.trim();
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
-    if (m) return s; // déjà canonique
-
-    const t = Date.parse(s);
-    if (!Number.isNaN(t)) return parisTodayISO(new Date(t));
-
-    return null;
-  }
-
-  if (typeof input === "object") {
-    if (typeof input.date === "string") return toParisISODate(input.date);
-    if (typeof input.value === "string") return toParisISODate(input.value);
-  }
-
-  return null;
-}
-
 /**
  * Article "publié" si:
  * - pas de date => publié
- * - date (YYYY-MM-DD) <= aujourd’hui Europe/Paris => publié
+ * - date <= maintenant
  */
-export function isPublishedDate(input: any, now: Date = new Date()): boolean {
-  const d = toParisISODate(input);
-  if (!d) return true;
-  return d <= parisTodayISO(now);
+export function isPublishedDate(input: any, now: number = Date.now()): boolean {
+  const ts = toTimestamp(input);
+  if (!ts) return true;
+  return ts <= now;
 }
 
 /* =========================
    Cache (mémoire) simple
+   - évite de re-lire le disque à répétition pendant un rendu
+   - s'invalide tout seul si le nombre de fichiers change
+   - safe pour ton usage (petit volume)
 ========================= */
 
 type Cache = {
@@ -169,15 +120,17 @@ function getCache(): Cache {
  */
 export function getAllArticles(options?: { includeFuture?: boolean }): ArticleItem[] {
   const includeFuture = options?.includeFuture ?? true;
+
   const { items } = getCache();
+
   if (includeFuture) return items;
 
-  const now = new Date();
+  const now = Date.now();
   return items.filter((a) => isPublishedDate(a.meta.date, now));
 }
 
 /**
- * Raccourci: articles publiés seulement (date <= aujourd’hui Europe/Paris)
+ * Raccourci: articles publiés seulement (date <= maintenant)
  */
 export function getPublishedArticles(): ArticleItem[] {
   return getAllArticles({ includeFuture: false });
@@ -187,7 +140,7 @@ export function getPublishedArticles(): ArticleItem[] {
  * Renvoie l'article par slug.
  * Options:
  * - includeFuture: autorise le renvoi d'un article futur (default: true)
- *   (si false, renvoie null si date > aujourd’hui Europe/Paris)
+ *   (si false, renvoie null si date > maintenant)
  */
 export function getArticleBySlug(
   slug: string,
@@ -200,7 +153,7 @@ export function getArticleBySlug(
   const item = bySlug.get(clean) ?? null;
   if (!item) return null;
 
-  if (!includeFuture && !isPublishedDate(item.meta?.date, new Date())) return null;
+  if (!includeFuture && !isPublishedDate(item.meta?.date)) return null;
 
   return item;
 }
@@ -214,7 +167,7 @@ export function getPublishedArticleBySlug(slug: string): ArticleItem | null {
 
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
-    .use(remarkGfm)
+    .use(remarkGfm) // tables, task lists, strikethrough, etc.
     .use(html)
     .process(markdown);
 

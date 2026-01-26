@@ -11,8 +11,6 @@ export const metadata: Metadata = {
     "Articles et retours d’expérience de Laurent Guyonnet sur l’innovation, la pédagogie et le travail de terrain.",
 };
 
-export const revalidate = 300;
-
 type SearchParams = {
   tag?: string | string[];
   tags?: string | string[];
@@ -102,44 +100,6 @@ function daysUntil(date: string | undefined, now: Date): number | null {
   return diffDays;
 }
 
-function parisTodayISO(now: Date = new Date()): string {
-  // YYYY-MM-DD en Europe/Paris
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Paris",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
-}
-
-function normalizeISODate(input?: string | null): string | null {
-  if (!input) return null;
-  const s = String(input).trim();
-  if (!s) return null;
-  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
-}
-
-function isPublishedParis(date: string | null | undefined, now: Date): boolean {
-  const d = normalizeISODate(date);
-  if (!d) return true; // pas de date => visible
-  return d <= parisTodayISO(now);
-}
-
-function daysUntilParis(date: string | null | undefined, now: Date): number | null {
-  const d = normalizeISODate(date);
-  if (!d) return null;
-
-  const today = parisTodayISO(now);
-
-  // Diff en jours sur base YYYY-MM-DD -> Date UTC "neutre" (uniquement pour diff jours, pas pour publication)
-  const toUTC = (iso: string) => {
-    const [y, m, dd] = iso.split("-").map(Number);
-    return Date.UTC(y, m - 1, dd);
-  };
-
-  return Math.round((toUTC(d) - toUTC(today)) / (24 * 60 * 60 * 1000));
-}
-
 /* ---------- Mosaic (covers séries) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 5);
@@ -211,7 +171,7 @@ export default async function ArticlesHubPage(props: {
   const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
 
   // Published vs À paraître
-  const published = all.filter((a) => isPublishedParis(a.date ?? null, now));
+  const published = all.filter((a) => isPublished(a.date, nowMs));
 
   // ✅ En dev/preview : Résultats affiche tout (publiés + futurs)
   // ✅ En prod : Résultats affiche uniquement les publiés
@@ -476,7 +436,7 @@ export default async function ArticlesHubPage(props: {
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             {results.map((a) => {
               const coverSrc = normalizeCoverSrc(a.cover);
-              const futureLabel = !isPublishedParis(a.date ?? null, now);
+              const futureLabel = allowFuture && !isPublished(a.date, nowMs);
 
               return (
                 <Link
@@ -508,7 +468,7 @@ export default async function ArticlesHubPage(props: {
                             À paraître
                           </span>
                           {(() => {
-                            const d = daysUntilParis(a.date ?? null, now);
+                            const d = daysUntil(a.date, now);
                             if (typeof d === "number" && d > 0) {
                               return (
                                 <span className="text-neutral-400 dark:text-neutral-500">

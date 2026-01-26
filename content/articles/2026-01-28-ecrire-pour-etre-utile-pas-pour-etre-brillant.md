@@ -1,9 +1,12 @@
 ---
-title: "Écrire pour être utile, pas pour être brillant"
-date: "2026-01-29"
-excerpt: "Quand un site devient un média, l’écriture cesse d’être décorative. Trouver sa voix éditoriale, c’est renoncer au brillant pour parler à celles et ceux qui travaillent vraiment."
-cover: "/images/articles/ecrire-pour-etre-utile.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Écrire pour être utile, pas pour être brillant'
+date: '2026-01-28'
+excerpt: >-
+  Quand un site devient un média, l’écriture cesse d’être décorative. Trouver sa
+  voix éditoriale, c’est renoncer au brillant pour parler à celles et ceux qui
+  travaillent vraiment.
+cover: /images/articles/ecrire-pour-etre-utile.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - écriture professionnelle
   - média
@@ -11,8 +14,8 @@ tags:
   - terrain
   - posture
 series:
-  name: "Construire Carnet d’expérience"
-  slug: "construire-carnet-experience"
+  name: Construire Carnet d’expérience
+  slug: construire-carnet-experience
   order: 5
 ---
 

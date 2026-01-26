@@ -1,3 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "=== Patch Option C (cas 1) — date YAML = publication (Europe/Paris) ==="
+echo
+
+# --- 0) Run from repo root
+if [ ! -f package.json ]; then
+  echo "❌ package.json introuvable. Lance ce script à la racine du repo."
+  exit 1
+fi
+
+ART_LIB="lib/articles.ts"
+SLUG_PAGE="app/articles/[slug]/page.tsx"
+LIST_PAGE="app/articles/page.tsx"
+
+for f in "$ART_LIB" "$SLUG_PAGE" "$LIST_PAGE"; do
+  if [ ! -f "$f" ]; then
+    echo "❌ Fichier manquant: $f"
+    exit 1
+  fi
+done
+
+STAMP="$(date +%Y%m%d-%H%M%S)"
+BKDIR=".patch-backups/${STAMP}"
+mkdir -p "$BKDIR"
+cp "$ART_LIB"  "$BKDIR/articles.ts.bak"
+cp "$SLUG_PAGE" "$BKDIR/slug.page.tsx.bak"
+cp "$LIST_PAGE" "$BKDIR/list.page.tsx.bak"
+echo "✅ Backups créés dans: $BKDIR"
+echo
+
+# ------------------------------------------------------------
+# 1) lib/articles.ts : publication par date en Europe/Paris
+#    (tri inchangé, publication = date <= aujourd'hui Paris)
+# ------------------------------------------------------------
+cat > "$ART_LIB" <<'TS'
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -220,3 +257,64 @@ export async function markdownToHtml(markdown: string) {
 
   return result.toString();
 }
+TS
+
+echo "✅ 1/3 lib/articles.ts mis à jour (publication Europe/Paris)."
+
+# ------------------------------------------------------------
+# 2) app/articles/[slug]/page.tsx
+#    - generateStaticParams: inclure TOUS les slugs (includeFuture: true)
+#    - ne plus bloquer l'accès prod aux futurs (plus de notFound)
+#    - robots noindex pour futur (generateMetadata)
+# ------------------------------------------------------------
+
+# a) generateStaticParams: includeFuture true
+perl -0777 -i -pe 's/getAllArticles\(\{\s*includeFuture:\s*false\s*\}\)/getAllArticles({ includeFuture: true })/g' "$SLUG_PAGE"
+
+# b) item fetch: garantir includeFuture true (au cas où)
+perl -0777 -i -pe 's/const item = getArticleBySlug\(slug\);\s*/const item = getArticleBySlug(slug, { includeFuture: true });\n/s' "$SLUG_PAGE"
+
+# c) supprimer le bloc "allowFuture" + blocage notFound en prod
+#    (on garde le label "À paraître" mais sans condition d'env)
+perl -0777 -i -pe 's/\n\s*\/\/\s*✅\s*Show future-dated[\s\S]*?const isFuture = !isPublishedDate\(item\.meta\?\.\s*date\);\n\n\s*\/\/\s*✅\s*Block direct access[\s\S]*?\n\s*if \(isFuture && !allowFuture\) return notFound\(\);\n/\n  const isFuture = !isPublishedDate(item.meta?.date, new Date());\n/s' "$SLUG_PAGE"
+
+# d) afficher le badge "À paraître" dès que futur (sans allowFuture)
+perl -0777 -i -pe 's/\{allowFuture && isFuture \?\s*\(/ \{isFuture ? (/g' "$SLUG_PAGE"
+
+# e) ajouter generateMetadata si absent (robots noindex)
+if ! grep -q "export async function generateMetadata" "$SLUG_PAGE"; then
+  perl -0777 -i -pe 's/(import[\s\S]*?from \"@\/components\/ShareBar\";\n)/$1import type { Metadata } from \"next\";\n/s' "$SLUG_PAGE" || true
+  # Inject after imports block (best-effort)
+  perl -0777 -i -pe 's/(\nexport async function generateStaticParams\(\)[\s\S]*?\n\}\n)/$1\nexport async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {\n  const item = getArticleBySlug(params.slug, { includeFuture: true });\n  if (!item) return {};\n  const published = isPublishedDate(item.meta?.date, new Date());\n  return {\n    title: item.meta?.title ?? params.slug,\n    robots: published ? { index: true, follow: true } : { index: false, follow: false },\n  };\n}\n/s' "$SLUG_PAGE"
+fi
+
+# f) (optionnel) ISR léger sur la page détail aussi
+if ! grep -q "export const revalidate" "$SLUG_PAGE"; then
+  perl -0777 -i -pe 's/(import[\s\S]*?\n\n)/$1export const revalidate = 300;\n\n/s' "$SLUG_PAGE"
+fi
+
+echo "✅ 2/3 app/articles/[slug]/page.tsx patché (slugs complets + noindex + plus de blocage prod)."
+
+# ------------------------------------------------------------
+# 3) app/articles/page.tsx (hub)
+#    - ajouter ISR sur la liste pour que les articles apparaissent automatiquement
+#    - on garde ta logique preview (allowFuture), mais on ne touche pas au rendu
+# ------------------------------------------------------------
+if ! grep -q "export const revalidate" "$LIST_PAGE"; then
+  # Place juste après metadata (safe)
+  perl -0777 -i -pe 's/(export const metadata:[\s\S]*?\};\n)/$1\nexport const revalidate = 300;\n/s' "$LIST_PAGE"
+fi
+
+echo "✅ 3/3 app/articles/page.tsx patché (revalidate=300)."
+
+echo
+echo "=== Terminé ==="
+echo "➡️ Vérifie:"
+echo "   git diff"
+echo "   npm run dev"
+echo
+echo "Attendus:"
+echo " - /articles/<slug-futur> ne 404 pas en prod"
+echo " - robots: noindex pour futur"
+echo " - /articles n'affiche pas les futurs en prod, mais peut les afficher en preview/dev"
+echo "Backups: $BKDIR"
