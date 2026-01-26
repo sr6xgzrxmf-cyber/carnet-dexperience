@@ -1,6 +1,6 @@
 ---
 title: De la fatigue à la méthode
-date: '2026-02-17'
+date: '2026-02-18'
 excerpt: >-
   La méthode ne naît pas de la discipline héroïque, mais de la fatigue bien
   comprise. Passer du chaos à la routine, c’est cesser de dépendre de son

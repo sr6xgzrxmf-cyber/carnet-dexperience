@@ -1,6 +1,6 @@
 ---
 title: Nourrir un système vivant
-date: '2026-02-19'
+date: '2026-02-20'
 excerpt: >-
   Un média durable ne se pilote pas à l’énergie ni à l’inspiration. Il se
   nourrit. Veille, calendrier, IA comme partenaire : penser long terme, c’est
