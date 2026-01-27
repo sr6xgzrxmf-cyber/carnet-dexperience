@@ -90,6 +90,17 @@ Si vous sentez que votre parcours mérite mieux que des explications à rallonge
 
 Posez-la sur une table. Prenez un stylo. Et voyez ce qui se passe.
 
+
+### Une invitation concrète
+
+Si vous sentez que votre parcours mérite mieux que des explications à rallonge ou des ajustements permanents, cette fiche peut devenir un vrai point d’appui. Pas un exercice de développement personnel de plus, mais un **outil de travail**, simple, contraignant, tenable.
+
+Vous pouvez la poser sur une table, prendre un stylo, et vous donner une heure. Pas plus. L’objectif n’est pas de tout dire, mais de **choisir ce qui compte vraiment**.
+
+👉 **[Télécharger la fiche “Se rendre lisible” (format Word)](/downloads/Fiche_se_rendre_lisible.docx)**
+
+Utilisez-la comme un espace de clarification. Revenez-y si nécessaire. Ce n’est pas un document à réussir, c’est un document à **habiter**.
+
 ### Une question pour terminer
 
-Si vous deviez aujourd’hui vous rendre lisible sans vous justifier, qu’est-ce qui aurait le plus de valeur pour vous : dire enfin tout ce que vous avez fait… ou choisir ce qui mérite vraiment d’être transmis ?
+Si vous deviez aujourd’hui vous rendre lisible sans vous justifier, qu’est-ce qui aurait le plus de valeur pour vous : continuer à expliquer… ou enfin choisir ce qui mérite d’être transmis ?
