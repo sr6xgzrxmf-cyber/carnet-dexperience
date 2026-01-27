@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -97,6 +98,7 @@ export default function RootLayout({
         <main className="site-container py-10 sm:py-14">{children}</main>
 
         <SpeedInsights />
+        <Analytics />
 
       </body>
     </html>
