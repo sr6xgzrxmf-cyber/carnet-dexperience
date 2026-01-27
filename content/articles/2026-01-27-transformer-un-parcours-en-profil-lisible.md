@@ -1,6 +1,6 @@
 ---
 title: Transformer un parcours en profil lisible
-date: '2026-02-03'
+date: '2026-01-27'
 excerpt: >-
   Karim n’est plus perdu. Il a nommé ses axes. Mais quand il parle de lui,
   quelque chose déraille encore. Trop long, trop flou, trop juste. Ce jour-là,
