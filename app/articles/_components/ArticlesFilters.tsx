@@ -1,6 +1,9 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
+const SCROLL_KEY = "articles:scrollY";
 
 function hrefFor(pathname: string, nextTags: string[], showAllTags: boolean) {
   const params = new URLSearchParams();
@@ -21,9 +24,30 @@ export default function ArticlesFilters({
 }) {
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  // ✅ Restore scroll after URL/searchParams changes (Safari/prod-proof)
+  useEffect(() => {
+    const raw = sessionStorage.getItem(SCROLL_KEY);
+    if (!raw) return;
+
+    const y = Number(raw);
+    if (!Number.isFinite(y)) return;
+
+    // next render/layout might shift, so wait a tick
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: y, left: 0, behavior: "auto" });
+    });
+  }, [pathname, searchParams.toString()]);
 
   function go(nextTags: string[], nextShowAll: boolean) {
+    // ✅ Save current scroll position BEFORE navigation
+    sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+
     router.replace(hrefFor(pathname, nextTags, nextShowAll), { scroll: false });
+
+    // ✅ Force refresh to ensure server output matches new params in prod
+    router.refresh();
   }
 
   return (
