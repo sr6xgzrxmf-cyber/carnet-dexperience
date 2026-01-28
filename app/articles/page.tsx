@@ -4,6 +4,7 @@ import Image from "next/image";
 import { getAllArticles } from "@/lib/articles";
 import { featuredSeriesList } from "@/content/editorial";
 import type { Metadata } from "next";
+import ArticlesFilters from "./_components/ArticlesFilters";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -425,30 +426,7 @@ export default async function ArticlesHubPage(props: {
           </div>
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-2">
-          {tagsToShow.map(({ tag, count }) => {
-            const active = selected.includes(tag);
-            const next = active
-              ? selected.filter((t) => t !== tag)
-              : [...selected, tag];
-
-            return (
-              <Link
-                scroll={false}
-                key={tag}
-                href={hrefFor(next, showAllTags)}
-                className={[
-                  "rounded-full border px-3 py-1 text-xs transition",
-                  active
-                    ? "border-neutral-900/15 dark:border-white/15 bg-neutral-900/5 dark:bg-white/10 text-neutral-900 dark:text-neutral-100"
-                    : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-950/50",
-                ].join(" ")}
-              >
-                {tag} <span className="text-neutral-500">({count})</span>
-              </Link>
-            );
-          })}
-        </div>
+        <ArticlesFilters tagsToShow={tagsToShow} selected={selected} showAllTags={showAllTags} />
       </section>
 
       {/* ======================
