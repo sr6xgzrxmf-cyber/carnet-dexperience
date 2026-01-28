@@ -140,36 +140,33 @@ function daysUntilParis(date: string | null | undefined, now: Date): number | nu
   return Math.round((toUTC(d) - toUTC(today)) / (24 * 60 * 60 * 1000));
 }
 
-/* ---------- Mosaic (covers séries) ---------- */
+/* ---------- Mosaic (5 bandes horizontales) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 5);
   const count = c.length;
 
-  const gridClass =
-    count <= 2 ? "grid-cols-2" : count === 3 ? "grid-cols-3" : "grid-cols-4";
+  if (!count) {
+    return <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />;
+  }
 
   return (
     <div className="relative h-56 w-full overflow-hidden">
-      <div className={`grid h-full w-full ${gridClass} gap-[2px] bg-black/30`}>
-        {c.map((src, idx) => {
-          const spanForFive =
-            count === 5 && idx === 4 ? "row-span-2 col-span-1" : "";
-          return (
-            <div
-              key={`${src}-${idx}`}
-              className={`relative overflow-hidden ${spanForFive}`}
-            >
-              <Image
-                src={src}
-                alt=""
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 768px"
-                unoptimized
-              />
-            </div>
-          );
-        })}
+      <div
+        className="grid h-full w-full gap-[2px] bg-black/30"
+        style={{ gridTemplateColumns: `repeat(${count}, minmax(0, 1fr))` }}
+      >
+        {c.map((src, idx) => (
+          <div key={`${src}-${idx}`} className="relative overflow-hidden">
+            <Image
+              src={src}
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              unoptimized
+            />
+          </div>
+        ))}
       </div>
 
       {/* voile + vignettage premium */}
