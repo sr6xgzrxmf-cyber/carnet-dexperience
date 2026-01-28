@@ -1,6 +1,7 @@
 // app/articles/page.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { unstable_noStore as noStore } from "next/cache";
 import { getAllArticles } from "@/lib/articles";
 import { featuredSeriesList } from "@/content/editorial";
 import type { Metadata } from "next";
@@ -12,7 +13,6 @@ export const metadata: Metadata = {
     "Articles et retours d’expérience de Laurent Guyonnet sur l’innovation, la pédagogie et le travail de terrain.",
 };
 
-export const revalidate = 300;
 
 type SearchParams = {
   tag?: string | string[];
@@ -187,6 +187,7 @@ function hrefFor(nextTags: string[], showAllTags: boolean) {
 export default async function ArticlesHubPage(props: {
   searchParams?: Promise<SearchParams> | SearchParams;
 }) {
+  noStore();
   const sp =
     props.searchParams instanceof Promise
       ? await props.searchParams
