@@ -15,7 +15,7 @@ tags:
 series:
   name: Atelier de posture
   slug: atelier-de-posture
-  order: 12.5
+  order: 12.75
 ---
 
 ### Le contexte : un bilan après recadrage

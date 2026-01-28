@@ -13,7 +13,7 @@ tags:
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
-  order: 12
+  order: 12.5
 ---
 
 ### Le bilan comme moment à risque

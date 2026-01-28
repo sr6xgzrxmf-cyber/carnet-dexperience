@@ -10,6 +10,10 @@ tags:
   - posture
   - progression
   - organisation
+series:
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 12
 ---
 
 ### Pourquoi tant de mails bilan tombent à plat
