@@ -2,7 +2,7 @@
 title: "La résistance au changement organisationnel en formation"
 date: "2023-09-14"
 excerpt: "Quand le changement touche l’organisation elle-même, la formation devient un terrain de tension. Comprendre, accompagner et transformer cette résistance est un enjeu clé de performance collective."
-cover: "/images/articles/la-resistance-au-changement-organisationnel-en-formation.jpg"
+cover: "/images/articles/changement-organisationnel-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

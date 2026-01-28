@@ -2,7 +2,7 @@
 title: "Épouser le style de management autoritaire et révéler l’essence d’une formation efficace"
 date: "2023-06-29"
 excerpt: "Comprendre, expérimenter et évaluer le management autoritaire pour mieux l’utiliser en formation."
-cover: "/images/articles/epouser-le-style-de-management-autoritaire-et-reveler-l-essence-d-une-formation-efficace.jpg"
+cover: "/images/articles/management-autoritaire.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

@@ -2,7 +2,7 @@
 title: "Quand l’équipe se transforme en brigade : création collaborative d’un site de formation interne"
 date: "2023-06-19"
 excerpt: "Pourquoi impliquer toute l’équipe dans la création d’un site de formation interne renforce à la fois la qualité du contenu et la culture d’apprentissage."
-cover: "/images/articles/quand-l-equipe-se-transforme-en-brigade-creation-collaborative-d-un-site-de-formation-interne.jpg"
+cover: "/images/articles/brigade-formation-interne.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

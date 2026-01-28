@@ -2,7 +2,7 @@
 title: "Projection de compétence vs écoute active"
 date: "2023-10-09"
 excerpt: "Deux postures opposées en vente : projeter son expertise ou écouter réellement son client. Un guide pour vendre mieux, plus juste et plus durable."
-cover: "/images/articles/projection-de-competence-vs-ecoute-active.jpg"
+cover: "/images/articles/projection-competence-ecoute-active.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

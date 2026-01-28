@@ -2,7 +2,7 @@
 title: "Marketing durable et engagé : construire une marque personnelle crédible à l’ère de la transparence"
 date: "2026-01-07"
 excerpt: "En 2026, la crédibilité d’une marque personnelle repose moins sur la visibilité que sur la cohérence entre ce que l’on dit, ce que l’on fait et ce que les autres peuvent vérifier."
-cover: "/images/articles/marketing-durable-et-engage-construire-une-marque-personnelle-credible-a-l-ere-de-la-transparence.jpg"
+cover: "/images/articles/2026-01-07-marketing-durable-marque-personnelle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Marketing durable et engagé"

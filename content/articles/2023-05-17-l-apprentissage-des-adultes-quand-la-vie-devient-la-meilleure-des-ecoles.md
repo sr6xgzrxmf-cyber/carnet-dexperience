@@ -2,7 +2,7 @@
 title: "L’apprentissage des adultes : quand la vie devient la meilleure des écoles"
 date: "2023-05-17"
 excerpt: "Pourquoi l’expérience de vie, la curiosité et la motivation font des adultes des apprenants redoutablement efficaces."
-cover: "/images/articles/l-apprentissage-des-adultes-quand-la-vie-devient-la-meilleure-des-ecoles.jpg"
+cover: "/images/articles/episode-4-quand-un-parcours-devient-pilotable.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"

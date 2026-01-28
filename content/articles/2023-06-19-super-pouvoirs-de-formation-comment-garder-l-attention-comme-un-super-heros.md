@@ -2,7 +2,7 @@
 title: "Super-pouvoirs de formation : comment garder l’attention comme un super-héros"
 date: "2023-06-19"
 excerpt: "Engagement, humour, surprise, narration et pauses : cinq super-pouvoirs pour transformer vos formations en expériences mémorables."
-cover: "/images/articles/super-pouvoirs-de-formation-comment-garder-l-attention-comme-un-super-heros.jpg"
+cover: "/images/articles/super-heros-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

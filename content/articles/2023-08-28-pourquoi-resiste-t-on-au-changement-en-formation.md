@@ -2,7 +2,7 @@
 title: "Pourquoi résiste-t-on au changement en formation ?"
 date: "2023-08-28"
 excerpt: "Comprendre les mécanismes psychologiques et organisationnels qui freinent l’adoption du changement en formation."
-cover: "/images/articles/pourquoi-resiste-t-on-au-changement-en-formation.jpg"
+cover: "/images/articles/changement-organisationnel-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

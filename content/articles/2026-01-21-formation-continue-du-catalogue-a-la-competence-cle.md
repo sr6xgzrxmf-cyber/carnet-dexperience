@@ -2,7 +2,7 @@
 title: "Formation continue : du catalogue à la compétence clé"
 date: "2026-01-21"
 excerpt: "La formation ne manque pas d’offres. Elle manque de résultats. Passer d’une logique événementielle à un développement de compétences actionnables impose de repenser le rôle de la formation dans la performance réelle."
-cover: "/images/articles/formation-continue-du-catalogue-a-la-competence-cle.jpg"
+cover: "/images/articles/2026-01-21-formation-du-catalogue-a-la-competence-cle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

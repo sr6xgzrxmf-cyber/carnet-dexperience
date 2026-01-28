@@ -2,7 +2,7 @@
 title: "Épouser le style de management : l’essence d’une formation efficace"
 date: "2023-06-26"
 excerpt: "Comprendre les styles de management pour concevoir des formations réellement adaptées aux organisations."
-cover: "/images/articles/epouser-le-style-de-management-l-essence-d-une-formation-efficace.jpg"
+cover: "/images/articles/styles-management.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

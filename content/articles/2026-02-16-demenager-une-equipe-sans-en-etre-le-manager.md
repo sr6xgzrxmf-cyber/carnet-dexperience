@@ -2,7 +2,7 @@
 title: "Déménager, une équipe sans en être le manager"
 date: "2026-02-16"
 excerpt: "Une journée de déménagement entre famille, amis et collègues révèle une vérité simple : quand l’objectif est clair et les consignes ajustées aux compétences réelles, chacun donne naturellement le meilleur."
-cover: "/images/articles/demenager-une-equipe-sans-en-etre-le-manager.jpg"
+cover: "/images/articles/demenager-une-equipe-sans-manager.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

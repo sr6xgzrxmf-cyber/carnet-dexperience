@@ -2,7 +2,7 @@
 title: "Contenu génératif vs contenu humain : comment combiner les deux pour gagner en 2026"
 date: "2026-01-02"
 excerpt: "En 2026, l’IA accélère la production, mais l’humain crée la résonance. Une méthode simple pour orchestrer les deux et publier vite sans devenir interchangeable."
-cover: "/images/articles/contenu-generatif-vs-contenu-humain-comment-combiner-les-deux-pour-gagner-en-2026.jpg"
+cover: "/images/articles/2026-01-02-contenu-generatif-vs-humain.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags: []
 ---

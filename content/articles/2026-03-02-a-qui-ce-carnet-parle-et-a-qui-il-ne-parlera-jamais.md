@@ -2,7 +2,7 @@
 title: "À qui ce carnet parle (et à qui il ne parlera jamais)"
 date: "2026-03-02"
 excerpt: "Ce carnet n’est pas fait pour plaire. Il parle à ceux qui se reconnaissent dans le travail réel, le temps long et les décisions imparfaites — et il assume de ne pas répondre à d’autres attentes."
-cover: "/images/articles/a-qui-ce-carnet-parle-et-a-qui-il-ne-parlera-jamais.jpg"
+cover: "/images/articles/a-qui-ce-carnet-parle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags: []
 series:

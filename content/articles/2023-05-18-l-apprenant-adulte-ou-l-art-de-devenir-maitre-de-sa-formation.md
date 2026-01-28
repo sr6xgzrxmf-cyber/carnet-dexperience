@@ -2,7 +2,7 @@
 title: "L’apprenant adulte, ou l’art de devenir maître de sa formation"
 date: "2023-05-18"
 excerpt: "Pourquoi l’autonomie, l’humour et la participation transforment l’apprentissage des adultes en aventure vivante et motivante."
-cover: "/images/articles/l-apprenant-adulte-ou-l-art-de-devenir-maitre-de-sa-formation.jpg"
+cover: "/images/articles/apprenant-adulte-super-heros.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"

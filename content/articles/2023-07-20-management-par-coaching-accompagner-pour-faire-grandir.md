@@ -2,7 +2,7 @@
 title: "Management par coaching : accompagner pour faire grandir"
 date: "2023-07-20"
 excerpt: "Comment le management par coaching développe l’autonomie, la performance et l’épanouissement des équipes grâce à l’écoute et au feedback."
-cover: "/images/articles/management-par-coaching-accompagner-pour-faire-grandir.jpg"
+cover: "/images/articles/management-coaching.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

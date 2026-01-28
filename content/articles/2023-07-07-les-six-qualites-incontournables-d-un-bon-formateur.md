@@ -2,7 +2,7 @@
 title: "Les six qualités incontournables d’un bon formateur"
 date: "2023-07-07"
 excerpt: "Empathie, adaptabilité, passion, patience, communication et développement continu : les piliers d’une formation réussie."
-cover: "/images/articles/les-six-qualites-incontournables-d-un-bon-formateur.jpg"
+cover: "/images/articles/six-qualites-formateur.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

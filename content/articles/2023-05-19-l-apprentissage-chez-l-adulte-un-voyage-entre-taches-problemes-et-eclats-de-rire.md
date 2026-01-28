@@ -2,7 +2,7 @@
 title: "L’apprentissage chez l’adulte : un voyage entre tâches, problèmes et éclats de rire"
 date: "2023-05-19"
 excerpt: "Comment les adultes peuvent apprendre efficacement en combinant résolution de problèmes, humour et méthodes non conventionnelles."
-cover: "/images/articles/l-apprentissage-chez-l-adulte-un-voyage-entre-taches-problemes-et-eclats-de-rire.jpg"
+cover: "/images/articles/apprentissage-adulte-bibliotheque.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"

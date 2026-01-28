@@ -2,7 +2,7 @@
 title: "Nommer ses axes : le moment où un parcours sort du flou"
 date: "2026-01-22"
 excerpt: "Ce jour-là, Karim n’a pas trouvé son avenir. Mais il a cessé de dire qu’il était perdu. En nommant ses axes de développement, il a transformé un trop-plein d’expériences en un plan tenable, lisible et actionnable."
-cover: "/images/articles/nommer-ses-axes-le-moment-ou-un-parcours-sort-du-flou.jpg"
+cover: "/images/articles/nommer-ses-axes-sortir-du-flou.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags: []
 series:

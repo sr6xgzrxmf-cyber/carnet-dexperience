@@ -2,7 +2,7 @@
 title: "Management par projets : piloter des équipes comme des expéditions"
 date: "2023-07-27"
 excerpt: "Comment conduire des missions temporaires avec méthode, clarté et engagement collectif."
-cover: "/images/articles/management-par-projets-piloter-des-equipes-comme-des-expeditions.jpg"
+cover: "/images/articles/management-par-projets.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

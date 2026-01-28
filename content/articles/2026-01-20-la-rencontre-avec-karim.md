@@ -2,7 +2,7 @@
 title: "La rencontre avec Karim"
 date: "2026-01-20"
 excerpt: "Un afterwork ordinaire, un soleil trop bas, une paire de lunettes en trop. Et, à la table d’à côté, un professionnel qui tient tout… sauf lui-même : courir partout, sans reconnaissance, jusqu’à confondre aider et porter."
-cover: "/images/articles/la-rencontre-avec-karim.jpg"
+cover: "/images/articles/2026-02-01-episode-1-la-rencontre-avec-karim.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   slug: "atelier-de-posture"

@@ -5,7 +5,7 @@ type: "article"
 tags:
   - "formation"
   - "pedagogie"
-cover: "/images/articles/parler-en-public-c-est-un-numero-de-cirque.jpg"
+cover: "/images/articles/clown-prise-de-parole.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 excerpt: "Un atelier de prise de parole sous la pluie, un formateur-clown, et une transformation : oser, rater, recommencer."
 series:

@@ -2,7 +2,7 @@
 title: "L’inclusion : clé de voûte de la formation en entreprise"
 date: "2023-07-05"
 excerpt: "Pourquoi une formation inclusive est un levier stratégique pour la performance, la cohésion et l’innovation."
-cover: "/images/articles/l-inclusion-cle-de-voute-de-la-formation-en-entreprise.jpg"
+cover: "/images/articles/inclusion-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

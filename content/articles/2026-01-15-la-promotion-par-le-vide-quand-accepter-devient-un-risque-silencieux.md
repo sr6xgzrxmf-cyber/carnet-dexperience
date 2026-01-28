@@ -2,7 +2,7 @@
 title: "La promotion par le vide : quand accepter devient un risque silencieux"
 date: "2026-01-15"
 excerpt: "Promu parce qu’il fallait quelqu’un, pas parce qu’il était prêt. La promotion par le vide est un mécanisme courant, rarement nommé, qui fabrique des managers isolés et des organisations fragiles."
-cover: "/images/articles/la-promotion-par-le-vide-quand-accepter-devient-un-risque-silencieux.jpg"
+cover: "/images/articles/2026-01-15-promotion-par-le-vide-management.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

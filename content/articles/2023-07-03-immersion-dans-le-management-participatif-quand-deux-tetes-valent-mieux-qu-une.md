@@ -2,7 +2,7 @@
 title: "Immersion dans le management participatif : quand deux têtes valent mieux qu’une"
 date: "2023-07-03"
 excerpt: "Comprendre, pratiquer et évaluer le management participatif pour renforcer l’engagement et la performance collective."
-cover: "/images/articles/immersion-dans-le-management-participatif-quand-deux-tetes-valent-mieux-qu-une.jpg"
+cover: "/images/articles/management-participatif.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"
