@@ -2,7 +2,7 @@
 title: "Dire non sans se justifier quand la charge explose"
 date: "2026-03-10"
 excerpt: "Sous pression, dire non devient vital. Pas pour s’opposer, mais pour protéger ce qui compte vraiment — sans s’expliquer à l’infini."
-cover: "/images/articles/2026-03-22-dire-non-sans-se-justifier.jpg"
+cover: "/images/articles/dire-non-sans-se-justifier.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

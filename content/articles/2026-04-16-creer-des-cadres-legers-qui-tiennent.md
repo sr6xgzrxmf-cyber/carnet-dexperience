@@ -2,7 +2,7 @@
 title: "Créer des cadres légers qui tiennent dans le réel"
 date: "2026-04-16"
 excerpt: "Un cadre n’a pas besoin d’être lourd pour être efficace. Il doit être lisible, ajustable et relié au terrain pour tenir dans la durée."
-cover: "/images/articles/2026-05-02-creer-des-cadres-legers-qui-tiennent.jpg"
+cover: "/images/articles/creer-des-cadres-legers-qui-tiennent.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

@@ -2,7 +2,7 @@
 title: "Comment évaluer l’efficacité d’une formation"
 date: "2023-08-17"
 excerpt: "Mesurer l’impact réel d’une formation pour améliorer la performance et l’apprentissage."
-cover: "/images/articles/evaluer-efficacite-formation.jpg"
+cover: "/images/articles/comment-evaluer-l-efficacite-d-une-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

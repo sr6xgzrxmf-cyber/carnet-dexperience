@@ -2,7 +2,7 @@
 title: "Quand arrêter de relancer est la meilleure décision"
 date: "2026-05-12"
 excerpt: "Savoir relancer est une compétence. Savoir s’arrêter en est une autre. Arrêter de relancer peut être un acte de pilotage, pas un abandon."
-cover: "/images/articles/2026-06-02-quand-arreter-de-relancer-est-la-meilleure-decision.jpg"
+cover: "/images/articles/quand-arreter-de-relancer-est-la-meilleure-decision.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

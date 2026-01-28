@@ -2,7 +2,7 @@
 title: "Pourquoi certains rôles invisibles sont indispensables au système"
 date: "2026-03-20"
 excerpt: "Dans toutes les organisations, des rôles essentiels existent sans être formalisés. Ils font tenir le système, sans reconnaissance explicite."
-cover: "/images/articles/2026-04-01-pourquoi-certains-roles-invisibles-sont-indispensables.jpg"
+cover: "/images/articles/pourquoi-certains-roles-invisibles-sont-indispensables.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

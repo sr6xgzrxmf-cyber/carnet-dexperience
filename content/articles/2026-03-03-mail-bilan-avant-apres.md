@@ -2,7 +2,7 @@
 title: "Un mail bilan réel, avant/après, décortiqué ligne par ligne"
 date: "2026-03-03"
 excerpt: "Même contenu, même contexte, deux mails très différents. Ce qui change : la structure, la posture, et la qualité de la réponse obtenue."
-cover: "/images/articles/2026-03-03-mail-bilan-avant-apres.jpg"
+cover: "/images/articles/mail-bilan-avant-apres.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

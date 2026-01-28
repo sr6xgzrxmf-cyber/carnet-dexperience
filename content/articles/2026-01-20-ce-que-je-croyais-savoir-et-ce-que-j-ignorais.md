@@ -2,7 +2,7 @@
 title: "Ce que je croyais savoir (et ce que j’ignorais)"
 date: "2026-01-20"
 slug: "ce-que-je-croyais-savoir-et-ce-que-j-ignorais"
-cover: "/images/articles/2026-01-20-savoir-ignorer.jpg"
+cover: "/images/articles/ce-que-je-croyais-savoir-et-ce-que-j-ignorais.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"

@@ -2,7 +2,7 @@
 title: "Pourquoi les équipes relancent mal"
 date: "2026-05-19"
 excerpt: "Si les équipes relancent mal, ce n’est pas un problème de motivation. C’est souvent un manque de cadre, de méthode et de décision managériale."
-cover: "/images/articles/2026-06-09-pourquoi-les-equipes-relancent-mal.jpg"
+cover: "/images/articles/pourquoi-les-equipes-relancent-mal.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

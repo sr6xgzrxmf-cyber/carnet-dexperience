@@ -2,7 +2,7 @@
 title: "Arrêter de débattre : tester 30 jours, décider ensuite"
 date: "2026-04-14"
 excerpt: "Quand les discussions tournent en rond, le prototype est une sortie élégante. Tester sur un mois permet d’avancer sans forcer, ni imposer."
-cover: "/images/articles/2026-05-06-arreter-de-debattre-tester-30-jours.jpg"
+cover: "/images/articles/arreter-de-debattre-tester-30-jours.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

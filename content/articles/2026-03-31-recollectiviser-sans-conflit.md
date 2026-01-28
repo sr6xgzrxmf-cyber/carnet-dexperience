@@ -2,7 +2,7 @@
 title: "Recollectiviser sans conflit : trois mécanismes simples"
 date: "2026-03-31"
 excerpt: "Quand la charge devient invisible, tout repose sur quelques-uns. Trois mécanismes simples suffisent souvent à rendre le travail collectif à nouveau partageable."
-cover: "/images/articles/2026-04-12-recollectiviser-sans-conflit.jpg"
+cover: "/images/articles/recollectiviser-sans-conflit.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

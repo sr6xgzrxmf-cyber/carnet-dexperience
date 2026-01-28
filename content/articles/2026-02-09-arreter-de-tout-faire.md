@@ -2,7 +2,7 @@
 title: "Arrêter de tout faire : la loi des 20 % qui changent vraiment la donne"
 date: "2026-02-09"
 excerpt: "La loi de Pareto n’est pas une invitation à en faire moins, mais à choisir où mettre son énergie. Quand tout est prioritaire, plus rien ne l’est."
-cover: "/images/articles/2026-03-10-arreter-de-tout-faire.jpg"
+cover: "/images/articles/arreter-de-tout-faire.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "prise-de-decision"

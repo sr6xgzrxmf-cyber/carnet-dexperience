@@ -2,7 +2,7 @@
 title: "Tester sans indicateurs est une illusion"
 date: "2026-04-21"
 excerpt: "Un test sans indicateurs ne produit pas de décision. Il fabrique un récit. Pour qu’un prototype serve vraiment, il doit être mesurable."
-cover: "/images/articles/2026-05-10-tester-sans-indicateurs-est-une-illusion.jpg"
+cover: "/images/articles/tester-sans-indicateurs-est-une-illusion.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

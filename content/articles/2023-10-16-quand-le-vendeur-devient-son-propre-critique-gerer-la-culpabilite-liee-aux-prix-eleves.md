@@ -2,7 +2,7 @@
 title: "Quand le vendeur devient son propre critique : gérer la culpabilité liée aux prix élevés"
 date: "2023-10-16"
 excerpt: "Quand le vendeur doute du prix avant même que le client ne le fasse, toute la relation de vente est fragilisée. Comprendre, recadrer et transformer cette culpabilité."
-cover: "/images/articles/culpabilite-prix-eleves.jpg"
+cover: "/images/articles/quand-le-vendeur-devient-son-propre-critique-gerer-la-culpabilite-liee-aux-prix-eleves.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

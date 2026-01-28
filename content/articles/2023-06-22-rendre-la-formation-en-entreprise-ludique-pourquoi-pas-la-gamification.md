@@ -2,7 +2,7 @@
 title: "Rendre la formation en entreprise ludique : pourquoi pas la gamification ?"
 date: "2023-06-22"
 excerpt: "Comment les mécaniques de jeu peuvent transformer l’engagement, la mémorisation et l’efficacité des formations en entreprise."
-cover: "/images/articles/gamification-formation.jpg"
+cover: "/images/articles/rendre-la-formation-en-entreprise-ludique-pourquoi-pas-la-gamification.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

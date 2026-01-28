@@ -2,7 +2,7 @@
 title: "Sortir du confort pour traverser le changement"
 date: "2023-09-04"
 excerpt: "Pourquoi la routine rassure mais freine, et comment accompagner les équipes à quitter leur zone de confort pour réussir la transformation."
-cover: "/images/articles/confort-routine-changement.jpg"
+cover: "/images/articles/sortir-du-confort-pour-traverser-le-changement.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

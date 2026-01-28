@@ -2,7 +2,7 @@
 title: "Survivre au rush : la routine minimale"
 date: "2026-03-06"
 excerpt: "Quand tout s’accélère, ce ne sont pas les grandes méthodes qui tiennent, mais une routine minimale : priorités claires, actions visibles et temps protégé."
-cover: "/images/articles/2026-03-20-survivre-au-rush-la-routine-minimale.jpg"
+cover: "/images/articles/survivre-au-rush-la-routine-minimale.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

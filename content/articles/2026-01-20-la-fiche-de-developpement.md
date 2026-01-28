@@ -2,7 +2,7 @@
 title: "La fiche de développement"
 date: "2026-01-20"
 excerpt: "Un outil court, concret : clarifier ton parcours, tes forces, ce que tu veux pour la suite, et tes 3 prochaines actions. PDF discret, version en ligne, et récap envoyé par mail."
-cover: "/images/articles/flou-en-message.jpg"
+cover: "/images/articles/la-fiche-de-developpement.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   slug: "atelier-de-posture"

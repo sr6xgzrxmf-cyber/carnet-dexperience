@@ -2,7 +2,7 @@
 title: "L’andragogie au prisme du genre : repenser la formation des adultes"
 date: "2023-05-15"
 excerpt: "Comment la dimension de genre transforme notre manière de comprendre, concevoir et vivre la formation des adultes, à travers les travaux d’Edmée Ollagnier."
-cover: "/images/articles/andragogie-genre-ollagnier.jpg"
+cover: "/images/articles/l-andragogie-au-prisme-du-genre-repenser-la-formation-des-adultes.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"

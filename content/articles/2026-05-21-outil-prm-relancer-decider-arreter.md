@@ -2,7 +2,7 @@
 title: "PRM — Relancer, décider, arrêter"
 date: "2026-05-21"
 excerpt: "Un outil simple pour structurer les relances, décider sans s’épuiser, et arrêter proprement quand c’est nécessaire."
-cover: "/images/articles/2026-06-12-outil-prm-relancer-decider-arreter.jpg"
+cover: "/images/articles/outil-prm-relancer-decider-arreter.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

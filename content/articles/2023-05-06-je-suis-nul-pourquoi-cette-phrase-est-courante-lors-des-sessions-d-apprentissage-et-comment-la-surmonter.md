@@ -4,7 +4,7 @@ date: "2023-05-06"
 tags:
   - "pedagogie"
   - "apprentissage"
-cover: "/images/articles/je-suis-nul.jpg"
+cover: "/images/articles/je-suis-nul-pourquoi-cette-phrase-est-courante-lors-des-sessions-d-apprentissage-et-comment-la-surmonter.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 excerpt: "Pourquoi cette phrase revient si souvent en apprentissage, et comment la désamorcer côté apprenant comme côté formateur."
 series:

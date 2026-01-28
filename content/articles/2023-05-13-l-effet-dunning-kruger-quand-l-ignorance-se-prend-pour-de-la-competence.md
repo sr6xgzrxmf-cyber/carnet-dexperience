@@ -2,7 +2,7 @@
 title: "L’effet Dunning-Kruger : quand l’ignorance se prend pour de la compétence"
 date: "2023-05-13"
 excerpt: "Pourquoi les personnes les moins compétentes se sentent souvent les plus sûres d’elles — et comment ce biais influence nos décisions."
-cover: "/images/articles/dunning-kruger.jpg"
+cover: "/images/articles/l-effet-dunning-kruger-quand-l-ignorance-se-prend-pour-de-la-competence.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "apprentissage"

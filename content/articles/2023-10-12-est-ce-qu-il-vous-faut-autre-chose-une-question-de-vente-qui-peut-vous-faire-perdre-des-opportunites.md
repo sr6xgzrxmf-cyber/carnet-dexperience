@@ -2,7 +2,7 @@
 title: "« Est-ce qu’il vous faut autre chose ? » — une question de vente qui peut vous faire perdre des opportunités"
 date: "2023-10-12"
 excerpt: "Une formule de politesse devenue un frein commercial. Pourquoi cette question clôt la relation au lieu de l’enrichir — et comment la remplacer."
-cover: "/images/articles/est-ce-qu-il-vous-faut-autre-chose.jpg"
+cover: "/images/articles/est-ce-qu-il-vous-faut-autre-chose-une-question-de-vente-qui-peut-vous-faire-perdre-des-opportunites.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

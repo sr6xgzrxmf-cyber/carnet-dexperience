@@ -2,7 +2,7 @@
 title: "Le pire scénario est rarement celui qui arrive"
 date: "2026-02-25"
 excerpt: "Nous surestimons presque toujours le pire. La loi de Gilbert rappelle une chose simple : l’action, même minuscule, dissout plus de peur que n’importe quelle réflexion."
-cover: "/images/articles/2026-03-14-le-pire-scenario-est-rarement-celui-qui-arrive.jpg"
+cover: "/images/articles/le-pire-scenario-est-rarement-celui-qui-arrive.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "prise-de-decision"

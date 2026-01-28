@@ -2,7 +2,7 @@
 title: "Le soir où le CV ne suffisait plus"
 date: "2026-01-16"
 excerpt: "Un dîner à Lyon, une discussion anodine sur les CV, et une question simple qui s’impose : comment se souvenir de tout ce que l’on a réellement traversé professionnellement, quand vingt ans d’expérience ne tiennent plus sur une page ?"
-cover: "/images/articles/2026-01-16-le-soir-ou-le-cv-ne-suffisait-plus.jpg"
+cover: "/images/articles/le-soir-ou-le-cv-ne-suffisait-plus.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"

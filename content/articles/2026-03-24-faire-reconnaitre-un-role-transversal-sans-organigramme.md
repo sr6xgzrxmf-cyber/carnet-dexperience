@@ -2,7 +2,7 @@
 title: "Comment faire reconnaître un rôle transversal sans passer par l’organigramme"
 date: "2026-03-24"
 excerpt: "La reconnaissance d’un rôle ne vient pas d’un titre, mais de sa clarté, de sa constance et de ses effets visibles."
-cover: "/images/articles/2026-04-04-faire-reconnaitre-un-role-transversal-sans-organigramme.jpg"
+cover: "/images/articles/faire-reconnaitre-un-role-transversal-sans-organigramme.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

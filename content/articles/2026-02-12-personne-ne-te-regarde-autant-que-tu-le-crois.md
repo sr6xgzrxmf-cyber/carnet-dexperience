@@ -2,7 +2,7 @@
 title: "Personne ne te regarde autant que tu le crois"
 date: "2026-02-12"
 excerpt: "L’effet projecteur nous pousse à surestimer le regard des autres. En réalité, cette peur invisible freine bien plus d’actions qu’elle ne protège."
-cover: "/images/articles/2026-03-12-personne-ne-te-regarde-autant-que-tu-le-crois.jpg"
+cover: "/images/articles/personne-ne-te-regarde-autant-que-tu-le-crois.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "posture-professionnelle"

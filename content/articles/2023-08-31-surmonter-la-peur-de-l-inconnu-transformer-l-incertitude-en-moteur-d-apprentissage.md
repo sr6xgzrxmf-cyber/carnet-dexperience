@@ -2,7 +2,7 @@
 title: "Surmonter la peur de l’inconnu : transformer l’incertitude en moteur d’apprentissage"
 date: "2023-08-31"
 excerpt: "Comment aider les apprenants à dépasser l’angoisse du changement et à s’engager avec confiance dans l’inconnu."
-cover: "/images/articles/2023-08-31-surmonter-peur-inconnu-formation.jpg"
+cover: "/images/articles/surmonter-la-peur-de-l-inconnu-transformer-l-incertitude-en-moteur-d-apprentissage.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

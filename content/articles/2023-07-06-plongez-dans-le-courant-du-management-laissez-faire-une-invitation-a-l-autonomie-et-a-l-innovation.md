@@ -2,7 +2,7 @@
 title: "Plongez dans le courant du management laissez-faire : une invitation à l’autonomie et à l’innovation"
 date: "2023-07-06"
 excerpt: "Quand la liberté, la confiance et la créativité deviennent les moteurs de la performance collective."
-cover: "/images/articles/management-laissez-faire.jpg"
+cover: "/images/articles/plongez-dans-le-courant-du-management-laissez-faire-une-invitation-a-l-autonomie-et-a-l-innovation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

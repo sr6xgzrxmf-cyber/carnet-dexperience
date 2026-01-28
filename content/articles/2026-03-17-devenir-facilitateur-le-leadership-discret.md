@@ -2,7 +2,7 @@
 title: "Devenir facilitateur : le leadership discret"
 date: "2026-03-17"
 excerpt: "Même sans titre officiel, il est possible d’occuper une posture centrale. Le rôle de facilitateur crée les conditions pour que le collectif avance — sans s’imposer."
-cover: "/images/articles/2026-03-17-devenir-facilitateur-le-leadership-discret.jpg"
+cover: "/images/articles/devenir-facilitateur-le-leadership-discret.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

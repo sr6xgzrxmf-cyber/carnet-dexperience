@@ -2,7 +2,7 @@
 title: "Construire une culture de l’apprentissage dans l’entreprise"
 date: "2023-08-07"
 excerpt: "Pourquoi et comment installer une culture d’apprentissage continu au cœur des organisations."
-cover: "/images/articles/culture-apprentissage.jpg"
+cover: "/images/articles/construire-une-culture-de-l-apprentissage-dans-l-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

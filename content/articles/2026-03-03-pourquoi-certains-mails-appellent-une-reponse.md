@@ -2,7 +2,7 @@
 title: "Pourquoi certains mails appellent toujours une réponse, et d’autres jamais"
 date: "2026-03-03"
 excerpt: "Ce n’est pas une question de politesse, ni de timing. Si un mail reste sans réponse, c’est souvent parce qu’il ne crée aucune nécessité d’agir."
-cover: "/images/articles/2026-03-03-pourquoi-certains-mails-appellent-une-reponse.jpg"
+cover: "/images/articles/pourquoi-certains-mails-appellent-une-reponse.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "communication"

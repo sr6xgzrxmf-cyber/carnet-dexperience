@@ -2,7 +2,7 @@
 title: "La magie du microlearning en formation professionnelle"
 date: "2023-08-03"
 excerpt: "Comment de courtes séquences d’apprentissage peuvent produire de grands effets sur la mémorisation et l’engagement."
-cover: "/images/articles/microlearning-magie.jpg"
+cover: "/images/articles/la-magie-du-microlearning-en-formation-professionnelle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

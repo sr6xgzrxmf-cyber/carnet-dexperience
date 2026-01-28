@@ -2,7 +2,7 @@
 title: "Trouver l’équilibre entre théorie et pratique en formation"
 date: "2023-08-21"
 excerpt: "Comment combiner savoirs et mise en pratique pour maximiser l’efficacité pédagogique."
-cover: "/images/articles/equilibre-theorie-pratique.jpg"
+cover: "/images/articles/trouver-l-equilibre-entre-theorie-et-pratique-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

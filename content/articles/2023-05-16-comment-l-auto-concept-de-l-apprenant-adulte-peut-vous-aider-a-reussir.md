@@ -2,7 +2,7 @@
 title: "Comment l’auto-concept de l’apprenant adulte peut vous aider à réussir"
 date: "2023-05-16"
 excerpt: "Pourquoi les adultes apprennent mieux quand ils savent qui ils sont, ce qu’ils veulent, et pourquoi ils apprennent — et comment transformer cette conscience en moteur de progression."
-cover: "/images/articles/auto-concept-apprenant.jpg"
+cover: "/images/articles/comment-l-auto-concept-de-l-apprenant-adulte-peut-vous-aider-a-reussir.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"

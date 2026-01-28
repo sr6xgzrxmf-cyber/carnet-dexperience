@@ -2,7 +2,7 @@
 title: "Quand un parcours devient pilotable"
 date: "2026-01-29"
 excerpt: "Du point de vue de l’organisation, un professionnel qui a fait ce travail n’est pas plus ‘vendeur’. Il est plus lisible, plus fiable, plus engageable. Cet article explore ce que change, concrètement, un parcours clarifié côté manager, RH ou responsable de réseau."
-cover: "/images/articles/episode-4-quand-un-parcours-devient-pilotable.jpg"
+cover: "/images/articles/quand-un-parcours-devient-pilotable.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

@@ -2,7 +2,7 @@
 title: "Tant que ce n’est pas écrit, ce n’est pas clair"
 date: "2026-03-04"
 excerpt: "La loi de Kidlin est simple : formuler clairement un problème en résout déjà une grande partie. Écrire n’est pas documenter, c’est décider."
-cover: "/images/articles/2026-03-16-tant-que-ce-n-est-pas-ecrit-ce-n-est-pas-clair.jpg"
+cover: "/images/articles/tant-que-ce-n-est-pas-ecrit-ce-n-est-pas-clair.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "prise-de-decision"

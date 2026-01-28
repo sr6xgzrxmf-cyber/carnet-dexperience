@@ -2,7 +2,7 @@
 title: "Le « comment tu ferais ? » : l’astuce qui transforme une idée en décision"
 date: "2026-02-10"
 excerpt: "Une question simple, souvent sous-estimée, qui permet d’obtenir l’alignement d’un manager sans perdre son leadership : demander « comment tu ferais ? » au bon moment."
-cover: "/images/articles/2026-02-10-le-comment-tu-ferais.jpg"
+cover: "/images/articles/le-comment-tu-ferais.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

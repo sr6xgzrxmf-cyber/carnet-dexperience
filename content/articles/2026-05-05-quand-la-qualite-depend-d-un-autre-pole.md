@@ -2,7 +2,7 @@
 title: "Quand la qualité dépend d’un autre pôle : sécuriser sans subir"
 date: "2026-05-05"
 excerpt: "Quand ton travail dépend d’un autre pôle, la qualité devient fragile. Sécuriser sans subir suppose de déplacer le sujet de la relation vers le système."
-cover: "/images/articles/2026-05-25-quand-la-qualite-depend-d-un-autre-pole.jpg"
+cover: "/images/articles/quand-la-qualite-depend-d-un-autre-pole.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "organisation"

@@ -2,7 +2,7 @@
 title: "Relancer sans harceler : la séquence PRM"
 date: "2026-05-07"
 excerpt: "Relancer n’est pas insister au hasard. Une séquence simple, structurée et mesurable permet de transformer un listing froid en décisions claires, sans pression inutile."
-cover: "/images/articles/2026-05-29-relancer-sans-harceler-la-sequence-prm.jpg"
+cover: "/images/articles/relancer-sans-harceler-la-sequence-prm.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

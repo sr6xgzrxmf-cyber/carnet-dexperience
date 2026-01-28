@@ -2,7 +2,7 @@
 title: "Relancer, décider, arrêter"
 date: "2026-05-26"
 excerpt: "Relancer n’est pas insister. Décider n’est pas forcer. Arrêter n’est pas renoncer. Trois gestes simples pour reprendre la maîtrise."
-cover: "/images/articles/2026-06-16-relancer-decider-arreter.jpg"
+cover: "/images/articles/relancer-decider-arreter.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "posture-professionnelle"

@@ -2,7 +2,7 @@
 title: "Zigzaguer à travers les défis avec le management agile"
 date: "2023-07-31"
 excerpt: "Comment développer l’adaptabilité, la collaboration et la réactivité grâce au management agile."
-cover: "/images/articles/management-agile.jpg"
+cover: "/images/articles/zigzaguer-a-travers-les-defis-avec-le-management-agile.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

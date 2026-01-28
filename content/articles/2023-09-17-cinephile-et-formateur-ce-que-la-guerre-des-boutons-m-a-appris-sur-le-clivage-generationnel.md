@@ -2,7 +2,7 @@
 title: "Cinéphile et formateur : ce que La Guerre des Boutons m’a appris sur le clivage générationnel"
 date: "2023-09-17"
 excerpt: "À travers un film de 1962, une réflexion moderne sur la peur d’apprendre, la transmission et la fracture générationnelle dans le monde du travail."
-cover: "/images/articles/guerre-des-boutons-generation.jpg"
+cover: "/images/articles/cinephile-et-formateur-ce-que-la-guerre-des-boutons-m-a-appris-sur-le-clivage-generationnel.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

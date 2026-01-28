@@ -2,7 +2,7 @@
 title: "Répondre sans conclure"
 date: "2026-01-19"
 excerpt: "Quand une demande est floue, chargée ou piégeuse, répondre trop vite ferme la situation. Un triptyque simple — constater, penser, proposer — permet de rester présent sans répondre à la place de l’autre."
-cover: "/images/articles/2026-01-19-repondre-sans-conclure.jpg"
+cover: "/images/articles/repondre-sans-conclure.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "communication"

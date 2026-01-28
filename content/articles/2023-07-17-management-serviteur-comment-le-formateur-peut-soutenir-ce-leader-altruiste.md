@@ -2,7 +2,7 @@
 title: "Management serviteur : comment le formateur peut soutenir ce leader altruiste"
 date: "2023-07-17"
 excerpt: "Comment le management serviteur place le bien-être, la croissance et la confiance au cœur de la performance collective."
-cover: "/images/articles/management-serviteur.jpg"
+cover: "/images/articles/management-serviteur-comment-le-formateur-peut-soutenir-ce-leader-altruiste.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"

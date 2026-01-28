@@ -2,7 +2,7 @@
 title: "La création de votre propre université interne : une formule savoureuse pour la formation en entreprise"
 date: "2023-06-15"
 excerpt: "Pourquoi et comment créer un site de formation interne structuré, engageant et efficace pour développer les compétences de vos équipes."
-cover: "/images/articles/universite-interne-formation.jpg"
+cover: "/images/articles/la-creation-de-votre-propre-universite-interne-une-formule-savoureuse-pour-la-formation-en-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

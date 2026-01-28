@@ -2,7 +2,7 @@
 title: "De « désolé » à « merci » : repenser la communication dans le commerce"
 date: "2023-10-19"
 excerpt: "Les mots que nous utilisons façonnent l’expérience client. Remplacer l’excuse par la gratitude peut transformer la relation commerciale."
-cover: "/images/articles/desole-vers-merci.jpg"
+cover: "/images/articles/de-desole-a-merci-repenser-la-communication-dans-le-commerce.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"

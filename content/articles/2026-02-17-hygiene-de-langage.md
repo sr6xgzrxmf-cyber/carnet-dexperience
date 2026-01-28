@@ -2,7 +2,7 @@
 title: "Langage et posture : la micro-différence qui change tout"
 date: "2026-02-17"
 excerpt: "Quelques mots en trop, une formule mal choisie, et la posture bascule. L’hygiène de langage est un levier simple pour gagner instantanément en crédibilité."
-cover: "/images/articles/2026-02-17-hygiene-de-langage.jpg"
+cover: "/images/articles/hygiene-de-langage.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "posture-professionnelle"

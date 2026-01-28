@@ -2,7 +2,7 @@
 title: "De l’apprentissage à l’adaptation : une réflexion sur les méthodologies agiles et Scrum"
 date: "2023-09-10"
 excerpt: "Une réflexion personnelle sur l’agilité, Scrum et l’adaptation des méthodes au monde réel de l’entreprise et de la formation."
-cover: "/images/articles/reflexion-apprentissage-agile-scrum.jpg"
+cover: "/images/articles/de-l-apprentissage-a-l-adaptation-une-reflexion-sur-les-methodologies-agiles-et-scrum.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

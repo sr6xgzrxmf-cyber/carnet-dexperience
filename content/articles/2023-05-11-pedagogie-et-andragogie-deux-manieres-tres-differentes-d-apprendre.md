@@ -2,7 +2,7 @@
 title: "Pédagogie et andragogie : deux manières très différentes d’apprendre"
 date: "2023-05-11"
 excerpt: "Pourquoi on ne forme pas un adulte comme on enseigne à un enfant — et ce que ça change concrètement dans les dispositifs de formation."
-cover: "/images/articles/pedagogie-andragogie.jpg"
+cover: "/images/articles/pedagogie-et-andragogie-deux-manieres-tres-differentes-d-apprendre.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

@@ -2,7 +2,7 @@
 title: "Rendre visible ton leadership : la note 3×3"
 date: "2026-03-27"
 excerpt: "Quand ton rôle est transversal, il doit devenir lisible. La note 3×3 transforme un leadership discret en lecture claire et partageable."
-cover: "/images/articles/2026-04-08-rendre-visible-ton-leadership-la-note-3x3.jpg"
+cover: "/images/articles/rendre-visible-ton-leadership-la-note-3x3.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "leadership"

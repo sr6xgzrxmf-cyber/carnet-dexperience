@@ -2,7 +2,7 @@
 title: "La surcharge de travail : surmonter la résistance au changement en formation"
 date: "2023-09-11"
 excerpt: "Quand la charge mentale et opérationnelle explose, la formation devient un frein au lieu d’un levier. Comment dépasser ce paradoxe et rendre l’apprentissage compatible avec le réel."
-cover: "/images/articles/surcharge-travail-formation.jpg"
+cover: "/images/articles/la-surcharge-de-travail-surmonter-la-resistance-au-changement-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"

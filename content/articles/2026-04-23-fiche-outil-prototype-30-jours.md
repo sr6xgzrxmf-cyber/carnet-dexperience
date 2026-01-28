@@ -2,7 +2,7 @@
 title: "Fiche outil : le prototype 30 jours"
 date: "2026-04-23"
 excerpt: "Un cadre simple pour tester une idée pendant 30 jours, produire de la preuve, et décider sans s’enliser dans le débat."
-cover: "/images/articles/2026-05-13-fiche-outil-prototype-30-jours.jpg"
+cover: "/images/articles/fiche-outil-prototype-30-jours.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"
