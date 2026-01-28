@@ -122,3 +122,6 @@ next-env.d.ts
 # -----------------------------
 sandbox/
 audit.json
+
+# Local Obsidian
+.obsidian/
