@@ -98,7 +98,9 @@ export default async function ArticlesArchivesPage(props: {
                   : "border border-neutral-300 text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-900/30"
               }`}
             >
-              <span className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`} />
+              {s.slug && (
+  <span className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`} />
+)}
               {s.name}
             </Link>
           ))}
