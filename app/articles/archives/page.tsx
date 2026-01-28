@@ -99,8 +99,10 @@ export default async function ArticlesArchivesPage(props: {
               }`}
             >
               {s.slug && (
-  <span className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`} />
-)}
+                <span
+                  className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`}
+                />
+              )}
               {s.name}
             </Link>
           ))}
