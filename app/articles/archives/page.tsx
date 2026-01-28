@@ -100,7 +100,7 @@ export default async function ArticlesArchivesPage(props: {
             >
               {s.slug && (
                 <span
-                  className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`}
+                  className={`h-2 w-2 rounded-full ${seriesColorClass(s.color ?? "slate")}`}
                 />
               )}
               {s.name}
@@ -119,7 +119,7 @@ export default async function ArticlesArchivesPage(props: {
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-start gap-3 min-w-0">
                       {a.series && (
-                        <div className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass(a.series.slug)}`} />
+                        <div className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass((a.series as any).color ?? "slate")}`} />
                       )}
                       <div className="text-neutral-900 dark:text-neutral-100 min-w-0">
                         <span className="text-neutral-500">{a.date}</span>
