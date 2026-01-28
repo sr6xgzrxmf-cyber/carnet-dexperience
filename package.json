@@ -12,7 +12,10 @@
     "admin:help": "bash scripts/admin/help.sh",
     "admin:calendar": "bash scripts/admin/setup_calendar_editor.sh",
     "admin:audit": "bash scripts/admin/setup_articles_audit.sh",
-    "admin:slugs": "bash scripts/admin/uniformize_articles_filenames.sh"
+    "admin:slugs": "bash scripts/admin/uniformize_articles_filenames.sh",
+    "audit:covers": "node scripts/audit-covers.mjs",
+    "audit:covers:fix": "node scripts/audit-covers.mjs --fix",
+    "audit:covers:strict": "node scripts/audit-covers.mjs --strict"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.20",
