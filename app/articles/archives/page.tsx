@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
 import { seriesColorClass } from "@/lib/series-ui";
+import { getAllSeriesCatalog } from "@/lib/series-catalog";
 
 type ArticleMeta = {
   slug: string;
@@ -51,13 +52,21 @@ export default async function ArticlesArchivesPage(props: {
     .map(getItemMeta)
     .filter((a) => a.slug);
 
-  const uniqueSeries = Array.from(
-    new Map(
-      allItems
-        .filter((a) => a.series)
-        .map((a) => [a.series!.slug, a.series!])
-    ).values()
-  ).sort((a, b) => (a.name ?? "").localeCompare(b.name ?? ""));
+  // Couleurs depuis le catalogue (source de vérité)
+  const catalog = getAllSeriesCatalog();
+  const colorBySlug = new Map(catalog.map((s) => [s.slug, s.color] as const));
+
+  // Slugs de séries réellement présentes dans les articles
+  const usedSeriesSlugs = new Set(
+    allItems
+      .map((a) => a.series?.slug)
+      .filter((v): v is string => typeof v === "string" && v.length > 0)
+  );
+
+  // Séries d’archives = catalogue ∩ séries utilisées
+  const uniqueSeries = catalog
+    .filter((s) => usedSeriesSlugs.has(s.slug))
+    .sort((a, b) => a.title.localeCompare(b.title, "fr"));
 
   return (
     <section>
@@ -103,7 +112,7 @@ export default async function ArticlesArchivesPage(props: {
                   className={`h-2 w-2 rounded-full ${seriesColorClass(s.color ?? "slate")}`}
                 />
               )}
-              {s.name}
+              {s.title}
             </Link>
           ))}
         </div>
@@ -118,8 +127,12 @@ export default async function ArticlesArchivesPage(props: {
                 <Link href={`/articles/${a.slug}`} className="block hover:underline">
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-start gap-3 min-w-0">
-                      {a.series && (
-                        <div className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass((a.series as any).color ?? "slate")}`} />
+                      {a.series?.slug && (
+                        <div
+                          className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass(
+                            colorBySlug.get(a.series.slug) ?? "slate"
+                          )}`}
+                        />
                       )}
                       <div className="text-neutral-900 dark:text-neutral-100 min-w-0">
                         <span className="text-neutral-500">{a.date}</span>
