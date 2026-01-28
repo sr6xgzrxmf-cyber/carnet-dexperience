@@ -5,18 +5,12 @@ excerpt: "Passer de la logique du site bricolé à celle d’un média durable i
 cover: "/images/articles/2026-01-23-batir-un-media-pas-un-site.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - média
-  - apprentissage
-  - structuration
-  - numérique
-  - transmission
-  - stratégie
+  - "apprentissage"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 4
+  order: 3
 ---
-
 ## Le faux confort du site qui fonctionne
 
 Un site qui s’affiche, qui charge vite, qui ne plante pas, donne une illusion de réussite. On coche des cases : un framework moderne, un hébergement propre, quelques pages bien rangées. Techniquement, tout va bien. Stratégiquement, rien n’est encore posé.

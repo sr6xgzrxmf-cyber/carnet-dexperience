@@ -1,23 +1,18 @@
 ---
-title: 'Fiche outil : la relance structurée PRM'
-date: '2026-05-14'
-excerpt: >-
-  Un tableau simple pour structurer ses relances, mesurer les retours et décider
-  sans s’épuiser.
-cover: /images/articles/2026-06-05-fiche-outil-prm-relance-structuree.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Fiche outil : la relance structurée PRM"
+date: "2026-05-14"
+excerpt: "Un tableau simple pour structurer ses relances, mesurer les retours et décider sans s’épuiser."
+cover: "/images/articles/2026-06-05-fiche-outil-prm-relance-structuree.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - outil
-  - vente
-  - prospection
-  - organisation
-  - pilotage
+  - "retail"
+  - "organisation"
+  - "pilotage"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 31.5
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 44
 ---
-
 ### Objectif de la fiche
 
 Cette fiche permet de :

@@ -1,23 +1,18 @@
 ---
-title: 'PRM — Relancer, décider, arrêter'
-date: '2026-05-21'
-excerpt: >-
-  Un outil simple pour structurer les relances, décider sans s’épuiser, et
-  arrêter proprement quand c’est nécessaire.
-cover: /images/articles/2026-06-12-outil-prm-relancer-decider-arreter.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "PRM — Relancer, décider, arrêter"
+date: "2026-05-21"
+excerpt: "Un outil simple pour structurer les relances, décider sans s’épuiser, et arrêter proprement quand c’est nécessaire."
+cover: "/images/articles/2026-06-12-outil-prm-relancer-decider-arreter.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - outil
-  - vente
-  - prospection
-  - organisation
-  - pilotage
+  - "retail"
+  - "organisation"
+  - "pilotage"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 32.5
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 46
 ---
-
 ## À quoi sert PRM
 
 PRM est un **outil de décision**, pas une méthode de pression commerciale.  

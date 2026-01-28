@@ -2,14 +2,15 @@
 title: "« Est-ce qu’il vous faut autre chose ? » — une question de vente qui peut vous faire perdre des opportunités"
 date: "2023-10-12"
 excerpt: "Une formule de politesse devenue un frein commercial. Pourquoi cette question clôt la relation au lieu de l’enrichir — et comment la remplacer."
-cover: /images/articles/est-ce-qu-il-vous-faut-autre-chose.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/est-ce-qu-il-vous-faut-autre-chose.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - retail
-  - expérience-client
-  - communication
-  - upsell
+  - "retail"
+  - "communication"
+series:
+  name: "Vendre et servir en retail"
+  slug: "vendre-et-servir-en-retail"
+  order: 0
 ---
 Il existe un rituel universel dans la vente : la fameuse question finale —  
 « Est-ce qu’il vous faut autre chose ? »  

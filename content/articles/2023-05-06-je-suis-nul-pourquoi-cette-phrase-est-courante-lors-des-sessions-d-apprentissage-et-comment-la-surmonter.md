@@ -1,13 +1,17 @@
 ---
 title: "« Je suis nul » — Pourquoi cette phrase est courante lors des sessions d'apprentissage et comment la surmonter ?"
 date: "2023-05-06"
-tags: ["pédagogie", "apprentissage", "confiance"]
+tags:
+  - "pedagogie"
+  - "apprentissage"
 cover: "/images/articles/je-suis-nul.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 excerpt: "Pourquoi cette phrase revient si souvent en apprentissage, et comment la désamorcer côté apprenant comme côté formateur."
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 0
 ---
-
-
 # Pourquoi disons-nous si souvent *« Je suis nul »* ?
 ## Et comment transformer ce doute en moteur d’apprentissage ?
 

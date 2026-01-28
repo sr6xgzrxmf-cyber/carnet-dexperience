@@ -1,24 +1,18 @@
 ---
-title: 'Améliorer un process sans conflit : audit léger et check-list'
-date: '2026-04-30'
-excerpt: >-
-  Quand les erreurs se répètent, le problème n’est pas toujours la compétence.
-  Un audit léger et une check-list co-construite permettent de sécuriser la
-  qualité sans accuser.
-cover: /images/articles/2026-05-21-ameliorer-un-process-sans-conflit.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Améliorer un process sans conflit : audit léger et check-list"
+date: "2026-04-30"
+excerpt: "Quand les erreurs se répètent, le problème n’est pas toujours la compétence. Un audit léger et une check-list co-construite permettent de sécuriser la qualité sans accuser."
+cover: "/images/articles/2026-05-21-ameliorer-un-process-sans-conflit.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - organisation
-  - qualite
-  - process
-  - management
-  - posture
+  - "organisation"
+  - "management"
+  - "posture-professionnelle"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 28
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 40
 ---
-
 ### Quand les retours deviennent secs
 
 Karim reçoit encore un retour. Sec. Lapidaire.  

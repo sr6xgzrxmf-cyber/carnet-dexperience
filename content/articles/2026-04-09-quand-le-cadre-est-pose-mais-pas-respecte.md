@@ -1,23 +1,18 @@
 ---
-title: Quand le cadre est posé… mais pas respecté
-date: '2026-04-09'
-excerpt: >-
-  Un cadre posé qui n’est pas respecté n’est pas un échec. C’est un signal.
-  Encore faut-il savoir le lire sans retomber dans la sanction ou le laxisme.
-cover: /images/articles/2026-04-24-quand-le-cadre-est-pose-mais-pas-respecte.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Quand le cadre est posé… mais pas respecté"
+date: "2026-04-09"
+excerpt: "Un cadre posé qui n’est pas respecté n’est pas un échec. C’est un signal. Encore faut-il savoir le lire sans retomber dans la sanction ou le laxisme."
+cover: "/images/articles/2026-04-24-quand-le-cadre-est-pose-mais-pas-respecte.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture
-  - collectif
-  - regulation
-  - leadership
+  - "management"
+  - "posture-professionnelle"
+  - "leadership"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 22
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 34
 ---
-
 ### Le faux confort du cadre affiché
 
 Karim a posé un cadre clair. Des règles simples. Une charte d’attitude partagée. Et pourtant, certaines situations dérapent encore. Le réflexe est tentant : renforcer les règles, rappeler plus fermement, pointer les manquements.

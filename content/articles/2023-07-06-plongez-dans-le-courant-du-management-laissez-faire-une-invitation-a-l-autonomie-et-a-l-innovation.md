@@ -2,14 +2,16 @@
 title: "Plongez dans le courant du management laissez-faire : une invitation à l’autonomie et à l’innovation"
 date: "2023-07-06"
 excerpt: "Quand la liberté, la confiance et la créativité deviennent les moteurs de la performance collective."
-cover: /images/articles/management-laissez-faire.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/management-laissez-faire.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - laissez-faire
-  - autonomie
-  - innovation
-  - formation
+  - "management"
+  - "innovation"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 19
 ---
 Bonjour à tous les amoureux de l’autonomie ! Cette semaine, nous naviguons dans les eaux libres du **management laissez-faire**, où l’autonomie et l’innovation sont nos compagnons de route. Imaginez une mer de possibilités où chaque navigateur trace son propre itinéraire. C’est le défi du manager laissez-faire.
 

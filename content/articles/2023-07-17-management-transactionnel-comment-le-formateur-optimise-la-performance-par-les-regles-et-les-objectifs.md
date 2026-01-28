@@ -2,15 +2,16 @@
 title: "Management transactionnel : comment le formateur optimise la performance par les règles et les objectifs"
 date: "2023-07-17"
 excerpt: "Comment le management transactionnel s’appuie sur les règles, les objectifs et la reconnaissance pour structurer la performance et l’engagement."
-cover: /images/articles/2023-07-17-management-transactionnel-optimisation-equipes.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/2023-07-17-management-transactionnel-optimisation-equipes.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - transactionnel
-  - leadership
-  - formation
-  - performance
-  - motivation
+  - "management"
+  - "leadership"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 24
 ---
 « Bienvenue, navigateurs de la précision ! 🎯 Aujourd’hui, nous hissons les voiles dans le monde du Management Transactionnel. Un monde où chaque action compte, chaque échange a une valeur. Un océan où le formateur devient un guide indispensable. Préparez-vous à naviguer ! » 
 

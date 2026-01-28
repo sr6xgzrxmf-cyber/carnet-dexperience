@@ -1,23 +1,19 @@
 ---
-title: 'Pourquoi certains mails appellent toujours une réponse, et d’autres jamais'
-date: '2026-03-03'
-excerpt: >-
-  Ce n’est pas une question de politesse, ni de timing. Si un mail reste sans
-  réponse, c’est souvent parce qu’il ne crée aucune nécessité d’agir.
-cover: /images/articles/2026-03-03-pourquoi-certains-mails-appellent-une-reponse.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi certains mails appellent toujours une réponse, et d’autres jamais"
+date: "2026-03-03"
+excerpt: "Ce n’est pas une question de politesse, ni de timing. Si un mail reste sans réponse, c’est souvent parce qu’il ne crée aucune nécessité d’agir."
+cover: "/images/articles/2026-03-03-pourquoi-certains-mails-appellent-une-reponse.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - communication
-  - posture
-  - management
-  - organisation
-  - decision
+  - "communication"
+  - "posture-professionnelle"
+  - "management"
+  - "organisation"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 12.75
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 23
 ---
-
 ### Le malaise du mail sans réponse
 
 Karim connaît bien cette situation. Il envoie un mail clair, poli, structuré — du moins le pense-t-il. Et pourtant, rien. Pas de réponse. Pas même un accusé de réception. Le doute s’installe : est-ce que le mail a été lu ? Faut-il relancer ? A-t-il été maladroit ?

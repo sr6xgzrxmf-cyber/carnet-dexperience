@@ -2,14 +2,15 @@
 title: "L’effet Dunning-Kruger : quand l’ignorance se prend pour de la compétence"
 date: "2023-05-13"
 excerpt: "Pourquoi les personnes les moins compétentes se sentent souvent les plus sûres d’elles — et comment ce biais influence nos décisions."
-cover: /images/articles/Dunning-Kruger.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/Dunning-Kruger.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - psychologie
-  - biais cognitifs
-  - décision
-  - apprentissage
-  - leadership
+  - "apprentissage"
+  - "leadership"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 3
 ---
 David Dunning et Justin Kruger sont deux psychologues sociaux américains qui ont travaillé ensemble pour étudier les biais cognitifs liés à l’attribution causale et à la prise de décision.
 

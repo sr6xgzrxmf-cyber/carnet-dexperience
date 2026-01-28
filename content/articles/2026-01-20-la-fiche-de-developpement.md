@@ -6,13 +6,12 @@ cover: "/images/articles/flou-en-message.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   slug: "atelier-de-posture"
-  order: 1.5
+  order: 3
+  name: "Atelier de posture"
 tags:
-  - posture
-  - communication
-  - situations-reelles
+  - "posture-professionnelle"
+  - "communication"
 ---
-
 Entre deux épisodes, je te propose un outil. Pas un « bonus ». Un raccourci. Quand une situation devient floue, on cherche souvent une phrase qui calme. En réalité, ce qui stabilise, ce n’est pas une formule. C’est une clarification. Revenir au réel : ce que tu as fait, ce que tu sais faire, ce que tu veux, et ce que tu fais ensuite.
 
 Cette fiche sert à ça. Elle est courte, structurée, et elle t’oblige à transformer une impression (« je suis perdu », « je stagne », « je ne sais pas quoi viser ») en éléments actionnables : un récit simple, des compétences nommées, des critères, puis un plan.

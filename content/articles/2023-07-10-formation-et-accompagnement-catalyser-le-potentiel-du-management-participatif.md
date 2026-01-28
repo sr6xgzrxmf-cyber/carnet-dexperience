@@ -2,14 +2,15 @@
 title: "Formation et accompagnement : catalyser le potentiel du management participatif"
 date: "2023-07-10"
 excerpt: "Comment la formation et l’accompagnement transforment le management participatif en levier de collaboration, d’engagement et de performance."
-cover: /images/articles/management-participatif-accompagnement.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/management-participatif-accompagnement.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - participatif
-  - formation
-  - accompagnement
-  - collaboration
+  - "management"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 21
 ---
 Salut à tous, chers managers en quête d’efficacité et de collaboration ! 🚀  
 Aujourd’hui, nous allons explorer les profondeurs du management participatif, une approche qui transforme chaque employé en acteur principal de la réussite de l’entreprise. Préparez-vous, nous allons plonger dans un océan de coopération et de démocratie participative.

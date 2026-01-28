@@ -1,23 +1,37 @@
 app
+apply-series.mjs
 arborescence.txt
 articles-index.json
 components
 content
 eslint.config.mjs
+generate-series-map.mjs
 lib
 next-env.d.ts
 next.config.ts
 node_modules
+normalize-frontmatter.mjs
+normalize-report.json
+normalize.sh
 package-lock.json
 package.json
 postcss.config.mjs
 prisma
 prisma.config.ts
 public
+quote-yaml-everywhere.mjs
+quote-yaml-everywhere.sh
+quote-yaml-report.json
 README.md
+reorder-series-by-date.mjs
+reorder-series.sh
 sandbox
 scripts
+series-map.json
+series-reorder-report.json
+series-report.json
 setup_calendar_admin.sh
+tags-map.json
 tree.txt
 tsconfig.json
 types
@@ -271,6 +285,7 @@ situations-d-intervention
 2026-05-19-pourquoi-les-equipes-relancent-mal.md
 2026-05-21-outil-prm-relancer-decider-arreter.md
 2026-05-26-relancer-decider-arreter.md
+series-batch.sh
 
 ./content/parcours:
 2002-parc-asterix-commercial.md
@@ -289,6 +304,10 @@ formation.md
 atelier-de-posture.yml
 construire-carnet-experience.yml
 durableetengage.yml
+former-des-adultes.yml
+lois-utiles.yml
+styles-de-management.yml
+vendre-et-servir-en-retail.yml
 
 ./content/situations-d-intervention:
 page.md

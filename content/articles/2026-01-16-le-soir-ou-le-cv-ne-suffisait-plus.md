@@ -2,22 +2,14 @@
 title: "Le soir où le CV ne suffisait plus"
 date: "2026-01-16"
 excerpt: "Un dîner à Lyon, une discussion anodine sur les CV, et une question simple qui s’impose : comment se souvenir de tout ce que l’on a réellement traversé professionnellement, quand vingt ans d’expérience ne tiennent plus sur une page ?"
-cover: /images/articles/2026-01-16-le-soir-ou-le-cv-ne-suffisait-plus.jpg
+cover: "/images/articles/2026-01-16-le-soir-ou-le-cv-ne-suffisait-plus.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
-
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 2
-
-tags:
-  - parcours
-  - cv
-  - mémoire professionnelle
-  - expérience
-  - réflexion
+  order: 1
+tags: []
 ---
-
 Nous étions à Lyon. Un dîner simple, sans enjeu particulier. Autour de la table, Cédric, Jérôme et moi. On parlait de tout et de rien, puis, comme souvent quand on avance en âge et en carrière, la conversation a glissé vers le travail. Vers les parcours. Vers les CV.
 
 Cédric expliquait que le sien faisait désormais deux pages. Vingt ans d’expérience, c’était logique. Jérôme acquiesçait. Dans le public comme dans le privé, l’empilement des missions finit toujours par poser la même question : comment tout faire tenir ?

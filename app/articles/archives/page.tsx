@@ -1,6 +1,7 @@
 // app/articles/archives/page.tsx
 import Link from "next/link";
 import { getAllArticles } from "@/lib/articles";
+import { seriesColorClass } from "@/lib/series-ui";
 
 type ArticleMeta = {
   slug: string;
@@ -8,6 +9,7 @@ type ArticleMeta = {
   date?: string;
   excerpt?: string;
   source?: string;
+  series?: { name?: string; slug?: string; order?: number };
 };
 
 function getItemMeta(item: any): ArticleMeta {
@@ -17,45 +19,132 @@ function getItemMeta(item: any): ArticleMeta {
     title: m?.title ?? "",
     date: m?.date ?? "",
     excerpt: m?.excerpt ?? "",
-    source: m?.source ?? "Carnet d’expérience",
+    source: m?.source ?? "Carnet d'expérience",
+    series: m?.series ?? undefined,
   };
 }
 
-export default async function ArticlesArchivesPage() {
+function isPublished(date?: string): boolean {
+  if (!date) return true;
+  const d = new Date(`${date}T00:00:00.000Z`);
+  return d.getTime() <= Date.now();
+}
+
+export default async function ArticlesArchivesPage(props: {
+  searchParams?: Promise<{ series?: string }>;
+}) {
+  const searchParams = await props.searchParams;
+  const selectedSeries = searchParams?.series ?? null;
+
   const raw = await getAllArticles();
-  const items = (raw ?? [])
+  let items = (raw ?? [])
     .map(getItemMeta)
     .filter((a) => a.slug)
     .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
 
+  if (selectedSeries) {
+    items = items.filter((a) => a.series?.slug === selectedSeries);
+  }
+
+  // Récupère les séries uniques
+  const allItems = (raw ?? [])
+    .map(getItemMeta)
+    .filter((a) => a.slug);
+
+  const uniqueSeries = Array.from(
+    new Map(
+      allItems
+        .filter((a) => a.series)
+        .map((a) => [a.series!.slug, a.series!])
+    ).values()
+  ).sort((a, b) => (a.name ?? "").localeCompare(b.name ?? ""));
+
   return (
     <section>
       <header className="mb-10">
-        <h1 className="text-3xl font-semibold tracking-tight">Archives</h1>
-        <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-          Liste complète, classée par date (du plus récent au plus ancien).
-        </p>
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h1 className="text-3xl font-semibold tracking-tight">Archives</h1>
+            <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
+              Liste complète, classée par date (du plus récent au plus ancien).
+            </p>
+          </div>
+          <div className="text-sm text-neutral-600 dark:text-neutral-400 shrink-0">
+            {items.length} article{items.length !== 1 ? "s" : ""}
+          </div>
+        </div>
       </header>
+
+      {/* Filtres par série */}
+      {uniqueSeries.length > 0 && (
+        <div className="mb-6 flex flex-wrap gap-2">
+          <Link
+            href="/articles/archives"
+            className={`rounded-full px-3 py-1 text-xs font-medium transition ${
+              selectedSeries === null
+                ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+                : "border border-neutral-300 text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-900/30"
+            }`}
+          >
+            Toutes les séries
+          </Link>
+          {uniqueSeries.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/articles/archives?series=${s.slug}`}
+              className={`rounded-full px-3 py-1 text-xs font-medium transition flex items-center gap-1.5 ${
+                selectedSeries === s.slug
+                  ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+                  : "border border-neutral-300 text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-900/30"
+              }`}
+            >
+              <span className={`h-2 w-2 rounded-full ${seriesColorClass(s.slug)}`} />
+              {s.name}
+            </Link>
+          ))}
+        </div>
+      )}
 
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
         <ul className="space-y-5">
-          {items.map((a) => (
-            <li key={a.slug} className="text-sm">
-              <Link href={`/articles/${a.slug}`} className="block hover:underline">
-                <div className="text-neutral-900 dark:text-neutral-100">
-                  <span className="text-neutral-500">{a.date}</span>
-                  <span className="text-neutral-500"> – </span>
-                  <span className="font-medium">{a.title}</span>
-                </div>
-
-                {a.excerpt ? (
-                  <div className="mt-1 italic text-neutral-600 dark:text-neutral-400">
-                    {a.excerpt}
+          {items.map((a) => {
+            const published = isPublished(a.date);
+            return (
+              <li key={a.slug} className="text-sm">
+                <Link href={`/articles/${a.slug}`} className="block hover:underline">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-start gap-3 min-w-0">
+                      {a.series && (
+                        <div className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass(a.series.slug)}`} />
+                      )}
+                      <div className="text-neutral-900 dark:text-neutral-100 min-w-0">
+                        <span className="text-neutral-500">{a.date}</span>
+                        <span className="text-neutral-500"> – </span>
+                        <span className="font-medium">{a.title}</span>
+                        {!published && (
+                          <span className="ml-2 inline-block rounded-full bg-amber-100/50 px-2 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-900/30 dark:text-amber-200">
+                            À paraître
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    {a.series?.name && (
+                      <div className="text-neutral-600 dark:text-neutral-400 shrink-0 text-right text-xs">
+                        {a.series.name}
+                        {a.series.order !== undefined && ` #${a.series.order + 1}`}
+                      </div>
+                    )}
                   </div>
-                ) : null}
-              </Link>
-            </li>
-          ))}
+
+                  {a.excerpt ? (
+                    <div className="mt-1 italic text-neutral-600 dark:text-neutral-400">
+                      {a.excerpt}
+                    </div>
+                  ) : null}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </section>

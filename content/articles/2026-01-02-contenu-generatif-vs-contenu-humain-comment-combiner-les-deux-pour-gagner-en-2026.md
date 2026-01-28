@@ -2,14 +2,9 @@
 title: "Contenu génératif vs contenu humain : comment combiner les deux pour gagner en 2026"
 date: "2026-01-02"
 excerpt: "En 2026, l’IA accélère la production, mais l’humain crée la résonance. Une méthode simple pour orchestrer les deux et publier vite sans devenir interchangeable."
-cover: /images/articles/2026-01-02-contenu-generatif-vs-humain.jpg
-source: Laurent Guyonnet — Carnet d’expérience
-tags:
-  - IA
-  - Contenu
-  - Marketing
-  - Stratégie
-  - Création
+cover: "/images/articles/2026-01-02-contenu-generatif-vs-humain.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
+tags: []
 ---
 ## Quand produire ne suffit plus
 Pendant longtemps, le débat opposait création humaine et intelligence artificielle. En 2026, cette opposition est devenue stérile. Les entreprises qui performent ont compris une chose essentielle : l’IA produit du volume, mais seule la pensée humaine crée de la valeur. Les outils génératifs ont rendu la publication quasi instantanée, mais cette abondance a provoqué un effet paradoxal : tout se ressemble. Dans un monde saturé de contenus, la bataille ne se joue plus sur la quantité, mais sur la capacité à résonner.

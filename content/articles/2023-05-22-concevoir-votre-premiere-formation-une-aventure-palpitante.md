@@ -1,16 +1,17 @@
 ---
 title: "Concevoir votre première formation : une aventure palpitante"
 date: "2023-05-22"
-excerpt: Comment transformer la création d’une formation en véritable exploration pédagogique, entre besoins, objectifs et trésor de compétences.
-cover: /images/articles/concevoir-premiere-formation.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+excerpt: "Comment transformer la création d’une formation en véritable exploration pédagogique, entre besoins, objectifs et trésor de compétences."
+cover: "/images/articles/concevoir-premiere-formation.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - ingénierie pédagogique
-  - andragogie
-  - conception
-  - pédagogie
-  - Astuce
+  - "formation"
+  - "andragogie"
+  - "pedagogie"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 10
 ---
 Vos yeux brillent d’excitation tandis que vous tenez entre vos mains l’opportunité de créer votre première formation professionnelle. C’est comme recevoir un ensemble de LEGO à assembler — sauf que cette fois, au lieu de briques colorées, vous avez des idées, des compétences et un groupe avide d’apprenants.
 

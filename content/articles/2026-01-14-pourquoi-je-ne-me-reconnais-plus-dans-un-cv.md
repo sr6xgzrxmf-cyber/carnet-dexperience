@@ -7,16 +7,10 @@ source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 1
+  order: 0
 tags:
-  - manifeste
-  - parcours professionnel
-  - leadership
-  - créativité
-  - authenticité
-  - transformation
+  - "leadership"
 ---
-
 ## Ce que je refuse, d’abord
 
 Je n’ai plus rien à prouver, seulement quelque chose à offrir.  

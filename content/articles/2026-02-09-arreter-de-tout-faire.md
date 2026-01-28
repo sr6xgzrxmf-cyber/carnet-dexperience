@@ -1,23 +1,18 @@
 ---
-title: 'Arrêter de tout faire : la loi des 20 % qui changent vraiment la donne'
-date: '2026-02-09'
-excerpt: >-
-  La loi de Pareto n’est pas une invitation à en faire moins, mais à choisir où
-  mettre son énergie. Quand tout est prioritaire, plus rien ne l’est.
-cover: /images/articles/2026-03-10-arreter-de-tout-faire.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Arrêter de tout faire : la loi des 20 % qui changent vraiment la donne"
+date: "2026-02-09"
+excerpt: "La loi de Pareto n’est pas une invitation à en faire moins, mais à choisir où mettre son énergie. Quand tout est prioritaire, plus rien ne l’est."
+cover: "/images/articles/2026-03-10-arreter-de-tout-faire.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - priorisation
-  - decision
-  - management
-  - organisation
-  - efficacite
+  - "prise-de-decision"
+  - "management"
+  - "organisation"
 series:
-  name: Lois utiles
-  slug: lois-utiles
-  order: 1
+  name: "Lois utiles"
+  slug: "lois-utiles"
+  order: 0
 ---
-
 ### La fausse bonne idée de « tout bien faire »
 
 Sur le terrain, Karim ne manque ni d’envie, ni de compétences. Le problème est ailleurs : tout semble important. Chaque tâche a une bonne raison d’exister. Chaque demande paraît légitime. Résultat : les journées se remplissent, l’énergie se disperse, et la sensation d’avancer vraiment s’effrite.

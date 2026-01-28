@@ -5,11 +5,14 @@ excerpt: "Pourquoi on ne forme pas un adulte comme on enseigne à un enfant — 
 cover: "/images/articles/pedagogie-andragogie.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - pédagogie
-  - andragogie
-  - apprentissage
-  - accompagnement
+  - "formation"
+  - "pedagogie"
+  - "andragogie"
+  - "apprentissage"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 2
 ---
 On parle souvent de « formation » comme d’un bloc homogène. Pourtant, enseigner à un enfant et accompagner un adulte dans ses apprentissages relèvent de logiques profondément différentes.
 

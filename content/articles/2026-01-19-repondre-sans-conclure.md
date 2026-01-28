@@ -5,14 +5,15 @@ excerpt: "Quand une demande est floue, chargée ou piégeuse, répondre trop vit
 cover: "/images/articles/2026-01-19-repondre-sans-conclure.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - communication
-  - management
-  - posture
-  - clarification
-  - prise-de-decision
-  - responsabilite
+  - "communication"
+  - "management"
+  - "posture-professionnelle"
+  - "prise-de-decision"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 2
 ---
-
 Il y a un réflexe très humain, très valorisé en entreprise aussi : répondre vite. Rassurer. Trancher. Solutionner. Montrer qu’on maîtrise. Et parfois, ça marche. Mais sur le terrain, ce réflexe a un coût caché : il ferme trop tôt ce qui avait besoin d’être clarifié, il prend une responsabilité qui n’a pas été explicitée, et il transforme une parole en verdict.
 
 J’ai appris à ralentir non pas pour être prudent, mais pour être juste. Pas “juste” au sens moral. Juste au sens opérationnel : répondre à la bonne chose, au bon niveau, au bon moment. Pour ça, j’utilise un triptyque simple — constater, penser, proposer — non pas comme une méthode universelle, mais comme une discipline de réponse.

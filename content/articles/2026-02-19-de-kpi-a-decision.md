@@ -1,24 +1,19 @@
 ---
-title: 'De KPI à décision : la chaîne simple en cinq étapes'
-date: '2026-02-19'
-excerpt: >-
-  Un chiffre seul ne pilote rien. Ce qui crée la valeur, c’est la lecture que tu
-  en fais et la décision que tu proposes. Passer du reporting au pilotage est
-  avant tout une question de posture.
-cover: /images/articles/2026-02-20-de-kpi-a-decision.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "De KPI à décision : la chaîne simple en cinq étapes"
+date: "2026-02-19"
+excerpt: "Un chiffre seul ne pilote rien. Ce qui crée la valeur, c’est la lecture que tu en fais et la décision que tu proposes. Passer du reporting au pilotage est avant tout une question de posture."
+cover: "/images/articles/2026-02-20-de-kpi-a-decision.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - pilotage
-  - indicateurs
-  - decision
-  - organisation
+  - "management"
+  - "pilotage"
+  - "prise-de-decision"
+  - "organisation"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 10
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 18
 ---
-
 ### Les chiffres ne parlent pas, contrairement à ce qu’on croit
 
 Dans beaucoup d’organisations, les chiffres sont omniprésents. Tableaux de bord, KPI, reportings hebdomadaires, bilans mensuels. Karim maîtrise ses données, ses taux, ses volumes. Pourtant, lors des échanges avec son manager ou ses partenaires, il sent un décalage : il rapporte bien, mais il ne pilote pas encore.

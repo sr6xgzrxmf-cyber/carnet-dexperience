@@ -1,24 +1,15 @@
 ---
-title: Les choix que j’ai faits (et ceux que j’ai refusés)
-date: '2026-02-23'
-excerpt: >-
-  Construire un média, c’est d’abord faire des choix. Et surtout en refuser
-  d’autres. Public, open, écrit : ce cadre n’est pas neutre. Il filtre pour
-  rester aligné.
-cover: /images/articles/les-choix-que-j-ai-faits.jpg
-source: Laurent Guyonnet — Carnet d’expérience
-tags:
-  - stratégie
-  - alignement
-  - choix
-  - posture professionnelle
-  - média
+title: "Les choix que j’ai faits (et ceux que j’ai refusés)"
+date: "2026-02-23"
+excerpt: "Construire un média, c’est d’abord faire des choix. Et surtout en refuser d’autres. Public, open, écrit : ce cadre n’est pas neutre. Il filtre pour rester aligné."
+cover: "/images/articles/les-choix-que-j-ai-faits.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
+tags: []
 series:
-  name: Construire Carnet d’expérience
-  slug: construire-carnet-experience
-  order: 11
+  name: "Construire Carnet d’expérience"
+  slug: "construire-carnet-experience"
+  order: 10
 ---
-
 Un média professionnel ne se définit pas seulement par ce qu’il publie.  
 Il se définit surtout par ce qu’il **choisit de ne pas faire**.
 

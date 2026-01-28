@@ -1,24 +1,19 @@
 ---
-title: Pourquoi certains rôles invisibles sont indispensables au système
-date: '2026-03-20'
-excerpt: >-
-  Dans toutes les organisations, des rôles essentiels existent sans être
-  formalisés. Ils font tenir le système, sans reconnaissance explicite.
-cover: >-
-  /images/articles/2026-04-01-pourquoi-certains-roles-invisibles-sont-indispensables.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi certains rôles invisibles sont indispensables au système"
+date: "2026-03-20"
+excerpt: "Dans toutes les organisations, des rôles essentiels existent sans être formalisés. Ils font tenir le système, sans reconnaissance explicite."
+cover: "/images/articles/2026-04-01-pourquoi-certains-roles-invisibles-sont-indispensables.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - organisation
-  - collectif
-  - posture
-  - leadership
+  - "management"
+  - "organisation"
+  - "posture-professionnelle"
+  - "leadership"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 16
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 28
 ---
-
 ### Ce qui fait tenir un système n’est pas toujours visible
 
 Dans beaucoup d’organisations, on confond ce qui est **nommé** avec ce qui est **utile**. Les rôles visibles — managers, chefs de projet, responsables — structurent l’organigramme. Mais ils ne racontent pas toute l’histoire.

@@ -7,15 +7,11 @@ source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
-  order: 0
+  order: 1
 tags:
-  - atelier-de-posture
-  - manifeste
-  - posture
-  - communication
-  - situations-reelles
+  - "posture-professionnelle"
+  - "communication"
 ---
-
 Je pourrais donner des conseils. Des phrases “qui marchent”. Des techniques. Des recettes de mail. Des listes de “bonnes pratiques”. Ce serait facile, et parfois même utile. Mais ce serait incomplet. Parce que, dans la vraie vie, les situations qui coincent ne sont pas des exercices. Elles sont floues. Chargées. Ambiguës. Et c’est précisément ce flou — plus que le problème lui-même — qui abîme les gens, les équipes, et la qualité du travail.
 
 Ce que j’ai vu, année après année, ce n’est pas un manque de compétence. C’est un manque de lisibilité. Un rôle qui déborde sans être nommé. Une attente implicite qui se transforme en reproche. Une tension qui s’installe parce que personne n’a osé poser une limite claire. Un professionnel qui “tient” tellement qu’il finit par porter à la place de cadrer. Une organisation qui croit gagner du temps en laissant l’implicite faire le travail — et qui le paye ensuite en rattrapage, en fatigue, en crispation.

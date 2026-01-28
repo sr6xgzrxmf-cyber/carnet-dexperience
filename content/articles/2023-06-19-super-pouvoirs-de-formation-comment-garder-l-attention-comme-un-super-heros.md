@@ -2,14 +2,15 @@
 title: "Super-pouvoirs de formation : comment garder l’attention comme un super-héros"
 date: "2023-06-19"
 excerpt: "Engagement, humour, surprise, narration et pauses : cinq super-pouvoirs pour transformer vos formations en expériences mémorables."
-cover: /images/articles/super-heros-formation.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/super-heros-formation.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - engagement
-  - pédagogie
-  - attention
-  - animation
+  - "formation"
+  - "pedagogie"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 13
 ---
 Si vous vous êtes déjà assis pendant une session de formation en sentant votre esprit s’échapper vers des contrées lointaines, vous n’êtes pas seul. Maintenir l’attention est parfois aussi complexe que de comprendre le dernier film de super-héros sans avoir lu les 400 comics précédents. Heureusement, les Avengers de la formation sont là pour sauver la journée.
 

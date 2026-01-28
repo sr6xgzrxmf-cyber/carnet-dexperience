@@ -2,14 +2,14 @@
 title: "Quand le vendeur devient son propre critique : gérer la culpabilité liée aux prix élevés"
 date: "2023-10-16"
 excerpt: "Quand le vendeur doute du prix avant même que le client ne le fasse, toute la relation de vente est fragilisée. Comprendre, recadrer et transformer cette culpabilité."
-cover: /images/articles/culpabilite-prix-eleves.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/culpabilite-prix-eleves.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - retail
-  - pricing
-  - psychologie
-  - expérience-client
+  - "retail"
+series:
+  name: "Vendre et servir en retail"
+  slug: "vendre-et-servir-en-retail"
+  order: 1
 ---
 Dans la vente, la confiance est un actif invisible.  
 Quand le vendeur commence à douter du produit ou du prix qu’il propose, c’est toute la relation commerciale qui se fragilise.

@@ -1,24 +1,19 @@
 ---
-title: Comment faire reconnaître un rôle transversal sans passer par l’organigramme
-date: '2026-03-24'
-excerpt: >-
-  La reconnaissance d’un rôle ne vient pas d’un titre, mais de sa clarté, de sa
-  constance et de ses effets visibles.
-cover: >-
-  /images/articles/2026-04-04-faire-reconnaitre-un-role-transversal-sans-organigramme.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Comment faire reconnaître un rôle transversal sans passer par l’organigramme"
+date: "2026-03-24"
+excerpt: "La reconnaissance d’un rôle ne vient pas d’un titre, mais de sa clarté, de sa constance et de ses effets visibles."
+cover: "/images/articles/2026-04-04-faire-reconnaitre-un-role-transversal-sans-organigramme.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture
-  - reconnaissance
-  - organisation
-  - leadership
+  - "management"
+  - "posture-professionnelle"
+  - "organisation"
+  - "leadership"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 17
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 29
 ---
-
 ### Attendre un titre est souvent une impasse
 
 Beaucoup espèrent qu’un rôle sera reconnu une fois “officialisé”. En pratique, l’organigramme vient presque toujours **après** la reconnaissance réelle, jamais avant.

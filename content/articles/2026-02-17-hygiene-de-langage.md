@@ -5,17 +5,15 @@ excerpt: "Quelques mots en trop, une formule mal choisie, et la posture bascule.
 cover: "/images/articles/2026-02-17-hygiene-de-langage.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - posture
-  - communication
-  - management
-  - vente
-  - organisation
+  - "posture-professionnelle"
+  - "communication"
+  - "management"
+  - "retail"
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
-  order: 9
+  order: 17
 ---
-
 ### Quand la posture chute avant même le fond
 
 Sur le terrain, Karim le constate vite : ce n’est pas toujours le contenu d’un message qui pose problème, mais la manière dont il est formulé. Un mail, un message Teams, une phrase en collectif — et sans s’en rendre compte, la posture s’abaisse. Trop d’excuses, trop de précautions, trop de justification avant même d’avoir parlé du sujet.

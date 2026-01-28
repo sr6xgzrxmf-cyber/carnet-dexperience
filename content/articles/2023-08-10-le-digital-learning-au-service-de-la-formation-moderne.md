@@ -2,14 +2,16 @@
 title: "Le digital learning au service de la formation moderne"
 date: "2023-08-10"
 excerpt: "Comment les outils numériques transforment l’expérience d’apprentissage et la montée en compétences."
-cover: /images/articles/digital-learning.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/digital-learning.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - digital
-  - e-learning
-  - innovation
-  - pédagogie
+  - "formation"
+  - "innovation"
+  - "pedagogie"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 31
 ---
 L’impact du digital learning sur la formation en entreprise
 

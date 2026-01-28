@@ -1,23 +1,19 @@
 ---
-title: 'Un mail bilan réel, avant/après, décortiqué ligne par ligne'
-date: '2026-03-03'
-excerpt: >-
-  Même contenu, même contexte, deux mails très différents. Ce qui change : la
-  structure, la posture, et la qualité de la réponse obtenue.
-cover: /images/articles/2026-03-03-mail-bilan-avant-apres.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Un mail bilan réel, avant/après, décortiqué ligne par ligne"
+date: "2026-03-03"
+excerpt: "Même contenu, même contexte, deux mails très différents. Ce qui change : la structure, la posture, et la qualité de la réponse obtenue."
+cover: "/images/articles/2026-03-03-mail-bilan-avant-apres.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture
-  - communication
-  - feedback
-  - progression
+  - "management"
+  - "posture-professionnelle"
+  - "communication"
+  - "feedback"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 12.75
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 22
 ---
-
 ### Le contexte : un bilan après recadrage
 
 Karim sort d’un échange tendu avec son manager. Plusieurs points ont été soulevés : manque de clarté, priorisation perfectible, communication parfois trop détaillée. On lui demande un bilan écrit, « pour faire le point ».

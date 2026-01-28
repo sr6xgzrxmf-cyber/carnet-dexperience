@@ -1,16 +1,17 @@
 ---
-title: Parler en public, c’est un numéro de cirque
+title: "Parler en public, c’est un numéro de cirque"
 date: "2023-05-08"
-type: article
+type: "article"
 tags:
-  - formation
-  - prise de parole
-  - pédagogie
-  - confiance
-  - improvisation
-cover: /images/articles/clown-prise-de-parole.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+  - "formation"
+  - "pedagogie"
+cover: "/images/articles/clown-prise-de-parole.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 excerpt: "Un atelier de prise de parole sous la pluie, un formateur-clown, et une transformation : oser, rater, recommencer."
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 1
 ---
 La pluie tambourinait contre les vitres de la salle de formation, un rythme monotone qui collait à l’humeur des participants. Une dizaine d’adultes, venus de secteurs aussi variés que la finance, la santé ou le commerce, s’étaient assis en cercle, les épaules légèrement voûtées, les doigts serrant des tasses de café tiède. Certains fixaient leurs chaussures, d’autres feuilletaient nerveusement des notes froissées. L’air sentait le café brûlé et le désinfectant bon marché. Personne ne parlait. Personne n’osait.
 

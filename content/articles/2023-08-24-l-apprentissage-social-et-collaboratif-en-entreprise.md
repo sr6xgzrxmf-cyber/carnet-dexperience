@@ -2,14 +2,15 @@
 title: "L’apprentissage social et collaboratif en entreprise"
 date: "2023-08-24"
 excerpt: "Un levier puissant pour renforcer l’engagement des équipes et améliorer durablement la performance."
-cover: /images/articles/apprentissage-social-collaboratif.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/apprentissage-social-collaboratif.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - apprentissage
-  - collaboration
-  - engagement
-  - performance
+  - "formation"
+  - "apprentissage"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 35
 ---
 L’apprentissage social et collaboratif en entreprise : un atout pour l’engagement et la performance
 

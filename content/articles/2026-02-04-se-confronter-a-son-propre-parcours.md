@@ -5,17 +5,12 @@ excerpt: "Relire son parcours n’est pas un exercice de valorisation, mais de l
 cover: "/images/articles/se-confronter-a-son-propre-parcours.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - parcours professionnel
-  - vulnérabilité
-  - posture
-  - vérité
-  - écriture éditoriale
+  - "posture-professionnelle"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 6
+  order: 5
 ---
-
 Arrive toujours un moment, quand on tient un média professionnel un peu sérieusement, où la question n’est plus technique, ni même éditoriale.  
 Ce moment où l’on comprend que l’on ne peut plus parler *des autres*, *du terrain*, *des organisations*, sans se confronter à ce que l’on a soi-même fait, accepté, évité ou raté.
 

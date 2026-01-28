@@ -1,24 +1,15 @@
 ---
-title: Nourrir un système vivant
-date: '2026-02-20'
-excerpt: >-
-  Un média durable ne se pilote pas à l’énergie ni à l’inspiration. Il se
-  nourrit. Veille, calendrier, IA comme partenaire : penser long terme, c’est
-  cultiver plutôt que produire.
-cover: /images/articles/nourrir-un-systeme-vivant.jpg
-source: Laurent Guyonnet — Carnet d’expérience
-tags:
-  - veille
-  - continuité
-  - intelligence artificielle
-  - stratégie éditoriale
-  - long terme
+title: "Nourrir un système vivant"
+date: "2026-02-20"
+excerpt: "Un média durable ne se pilote pas à l’énergie ni à l’inspiration. Il se nourrit. Veille, calendrier, IA comme partenaire : penser long terme, c’est cultiver plutôt que produire."
+cover: "/images/articles/nourrir-un-systeme-vivant.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
+tags: []
 series:
-  name: Construire Carnet d’expérience
-  slug: construire-carnet-experience
-  order: 10
+  name: "Construire Carnet d’expérience"
+  slug: "construire-carnet-experience"
+  order: 9
 ---
-
 Un système bien conçu ne suffit pas à lui seul.  
 S’il n’est pas nourri, il s’assèche. S’il est sursollicité, il s’épuise. Comme tout organisme vivant, un média a besoin d’un apport régulier, mesuré, ajusté.
 

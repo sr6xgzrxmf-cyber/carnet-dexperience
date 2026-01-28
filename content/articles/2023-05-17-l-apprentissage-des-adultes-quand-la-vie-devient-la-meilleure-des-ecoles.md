@@ -2,15 +2,16 @@
 title: "L’apprentissage des adultes : quand la vie devient la meilleure des écoles"
 date: "2023-05-17"
 excerpt: "Pourquoi l’expérience de vie, la curiosité et la motivation font des adultes des apprenants redoutablement efficaces."
-cover: /images/articles/apprentissage-adulte-bibliotheque.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/apprentissage-adulte-bibliotheque.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - andragogie
-  - apprentissage
-  - formation
-  - reconversion
-  - motivation
-  - expérience
+  - "andragogie"
+  - "apprentissage"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 7
 ---
 Ah, l’âge adulte ! C’est le moment où nous devons payer des impôts, faire les commissions, occuper un emploi, élever une famille… et, bien sûr, continuer à apprendre ! En effet, les adultes ont la chance unique de pouvoir enrichir leurs connaissances grâce à leur expérience de vie. Comment cette expérience peut-elle faciliter l’apprentissage des adultes ? Je vais tenter de vous expliquer cela en y ajoutant une touche d’inspiration et une pincée d’humour.
 

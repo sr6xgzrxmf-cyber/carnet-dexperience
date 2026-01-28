@@ -5,14 +5,14 @@ excerpt: "La formation ne manque pas d’offres. Elle manque de résultats. Pass
 cover: "/images/articles/2026-01-21-formation-du-catalogue-a-la-competence-cle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - développement des compétences
-  - management
-  - performance
-  - apprentissage
-  - stratégie RH
+  - "formation"
+  - "management"
+  - "apprentissage"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 5
 ---
-
 ## La formation n’a jamais été aussi abondante — et aussi peu décisive
 
 Catalogues interminables, plateformes LMS bien remplies, calendriers de sessions bouclés un an à l’avance. Sur le papier, les organisations forment. Beaucoup. Régulièrement. Pourtant, sur le terrain, les écarts persistent : mêmes erreurs, mêmes blocages, mêmes écarts de performance entre équipes.

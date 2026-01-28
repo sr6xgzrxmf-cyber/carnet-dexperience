@@ -2,14 +2,16 @@
 title: "Zigzaguer à travers les défis avec le management agile"
 date: "2023-07-31"
 excerpt: "Comment développer l’adaptabilité, la collaboration et la réactivité grâce au management agile."
-cover: /images/articles/management-agile.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/management-agile.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - agile
-  - formation
-  - leadership
-  - transformation
+  - "management"
+  - "formation"
+  - "leadership"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 27
 ---
 Zigzaguer à travers les défis avec le management agile : devenez le ninja de l’agilité
 

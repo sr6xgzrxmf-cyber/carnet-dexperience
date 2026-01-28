@@ -2,14 +2,16 @@
 title: "La résistance au changement organisationnel en formation"
 date: "2023-09-14"
 excerpt: "Quand le changement touche l’organisation elle-même, la formation devient un terrain de tension. Comprendre, accompagner et transformer cette résistance est un enjeu clé de performance collective."
-cover: /images/articles/changement-organisationnel-formation.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/changement-organisationnel-formation.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - changement
-  - organisation
-  - leadership
-  - conduite-du-changement
+  - "formation"
+  - "organisation"
+  - "leadership"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 41
 ---
 Le changement organisationnel peut susciter une résistance dans tous les domaines d’une entreprise, y compris la formation. Lorsqu’une organisation modifie ses méthodes pédagogiques, ses outils ou ses processus, ce n’est pas seulement une question technique — c’est une transformation de repères, de rôles et parfois d’identité professionnelle.
 

@@ -5,17 +5,14 @@ excerpt: "Tout garder en trace est une force. Tout montrer est une erreur. Savoi
 cover: "/images/articles/2026-02-24-remonter-une-photo-strategique.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - priorisation
-  - pilotage
-  - reporting
-  - posture
+  - "management"
+  - "pilotage"
+  - "posture-professionnelle"
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
-  order: 11
+  order: 19
 ---
-
 ### Quand l’activité déborde, la lisibilité disparaît
 
 Sur le terrain, Karim fait beaucoup. Trop, parfois. Actions, urgences, ajustements, sollicitations multiples. Tout est tracé : mails, notes, tableaux, to-do list. Objectivement, le travail est là. Pourtant, face à la direction, il a souvent le sentiment de ne pas être compris. Ou pire : de devoir se justifier.

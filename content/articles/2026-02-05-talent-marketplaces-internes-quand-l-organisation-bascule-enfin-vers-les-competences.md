@@ -1,24 +1,19 @@
 ---
-title: >-
-  Talent marketplaces internes : quand l’organisation bascule enfin vers les
-  compétences
-date: '2026-02-05'
-excerpt: >-
-  Les organisations continuent de piloter par postes et hiérarchie, alors que le
-  travail réel se fait déjà par compétences et par projets. Les talent
-  marketplaces internes rendent ce décalage visible et obligent dirigeants et
-  managers à changer de posture.
-cover: /images/articles/talent-marketplaces-internes.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Talent marketplaces internes : quand l’organisation bascule enfin vers les compétences"
+date: "2026-02-05"
+excerpt: "Les organisations continuent de piloter par postes et hiérarchie, alors que le travail réel se fait déjà par compétences et par projets. Les talent marketplaces internes rendent ce décalage visible et obligent dirigeants et managers à changer de posture."
+cover: "/images/articles/talent-marketplaces-internes.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - organisation
-  - compétences
-  - transformation
-  - leadership
-  - talent marketplaces
+  - "management"
+  - "organisation"
+  - "developpement-des-competences"
+  - "leadership"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 12
 ---
-
 Dans beaucoup d’entreprises, l’organisation officielle raconte une histoire rassurante. Des postes clairement définis, des périmètres établis, des lignes hiérarchiques lisibles. Sur le papier, tout est structuré. Sur le terrain, c’est une autre réalité qui se joue.
 
 Le travail se fait déjà par ajustements permanents, par compétences mobilisées au bon moment, par projets transverses souvent informels. Les *talent marketplaces internes* ne créent pas cette réalité : elles la rendent visible. Et ce faisant, elles bousculent profondément la manière d’organiser… et de manager.

@@ -1,22 +1,19 @@
 ---
-title: Quand un parcours devient pilotable
-date: '2026-01-29'
-excerpt: >-
-  Du point de vue de l’organisation, un professionnel qui a fait ce travail
-  n’est pas plus ‘vendeur’. Il est plus lisible, plus fiable, plus engageable.
-  Cet article explore ce que change, concrètement, un parcours clarifié côté
-  manager, RH ou responsable de réseau.
-cover: /images/articles/episode-4-quand-un-parcours-devient-pilotable.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Quand un parcours devient pilotable"
+date: "2026-01-29"
+excerpt: "Du point de vue de l’organisation, un professionnel qui a fait ce travail n’est pas plus ‘vendeur’. Il est plus lisible, plus fiable, plus engageable. Cet article explore ce que change, concrètement, un parcours clarifié côté manager, RH ou responsable de réseau."
+cover: "/images/articles/episode-4-quand-un-parcours-devient-pilotable.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - organisation
-  - leadership
-  - développement des talents
-  - pilotage
-  - accompagnement
+  - "management"
+  - "organisation"
+  - "leadership"
+  - "pilotage"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 10
 ---
-
 Il y a une idée tenace dans beaucoup d’organisations : on pense que la clarté est un luxe individuel. Quelque chose de “personnel”, presque introspectif. Et pourtant, sur le terrain, c’est exactement l’inverse que j’observe.
 
 Quand un professionnel a fait le travail de clarification — axes, posture, cadre, next step — il ne devient pas plus exigeant. Il devient **pilotable**.

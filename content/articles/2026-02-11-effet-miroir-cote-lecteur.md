@@ -4,18 +4,12 @@ date: "2026-02-11"
 excerpt: "Ce qui touche vraiment un lecteur professionnel n’est pas la réussite affichée, mais la reconnaissance silencieuse de ce qu’il vit déjà. Quand un média devient un miroir, il commence à travailler tout seul."
 cover: "/images/articles/effet-miroir-cote-lecteur.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
-tags:
-  - lecteur
-  - confiance
-  - transmission
-  - média
-  - éthique du travail
+tags: []
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 7
+  order: 6
 ---
-
 Il y a un moment particulier, quand on tient un média professionnel dans la durée, où l’on comprend que l’essentiel ne se mesure plus.  
 Plus de commentaires visibles. Peu de réactions publiques. Pas de signaux spectaculaires.
 

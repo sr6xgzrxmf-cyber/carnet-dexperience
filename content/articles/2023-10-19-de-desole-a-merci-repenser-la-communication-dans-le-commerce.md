@@ -2,14 +2,15 @@
 title: "De « désolé » à « merci » : repenser la communication dans le commerce"
 date: "2023-10-19"
 excerpt: "Les mots que nous utilisons façonnent l’expérience client. Remplacer l’excuse par la gratitude peut transformer la relation commerciale."
-cover: /images/articles/desole-vers-merci.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/desole-vers-merci.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - expérience-client
-  - retail
-  - communication
-  - vente
-  - psychologie
+  - "retail"
+  - "communication"
+series:
+  name: "Vendre et servir en retail"
+  slug: "vendre-et-servir-en-retail"
+  order: 2
 ---
 Dans le commerce moderne, l’expérience client est devenue un véritable levier de différenciation.  
 Mais cette expérience ne se construit pas uniquement avec des produits ou des services : elle se façonne surtout par les **mots**.

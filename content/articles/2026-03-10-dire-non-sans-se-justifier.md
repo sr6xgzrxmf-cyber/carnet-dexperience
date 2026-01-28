@@ -1,23 +1,18 @@
 ---
-title: Dire non sans se justifier quand la charge explose
-date: '2026-03-10'
-excerpt: >-
-  Sous pression, dire non devient vital. Pas pour s’opposer, mais pour protéger
-  ce qui compte vraiment — sans s’expliquer à l’infini.
-cover: /images/articles/2026-03-22-dire-non-sans-se-justifier.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Dire non sans se justifier quand la charge explose"
+date: "2026-03-10"
+excerpt: "Sous pression, dire non devient vital. Pas pour s’opposer, mais pour protéger ce qui compte vraiment — sans s’expliquer à l’infini."
+cover: "/images/articles/2026-03-22-dire-non-sans-se-justifier.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture
-  - priorisation
-  - communication
-  - charge-de-travail
+  - "management"
+  - "posture-professionnelle"
+  - "communication"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 13.5
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 25
 ---
-
 ### Quand dire oui devient dangereux
 
 Dans les périodes de surcharge, Karim remarque un réflexe quasi automatique : dire oui pour tenir, pour aider, pour ne pas créer de tension. Chaque demande prise isolément est légitime. C’est leur accumulation qui devient toxique.

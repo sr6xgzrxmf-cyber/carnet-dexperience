@@ -1,24 +1,19 @@
 ---
-title: Quand arrêter de relancer est la meilleure décision
-date: '2026-05-12'
-excerpt: >-
-  Savoir relancer est une compétence. Savoir s’arrêter en est une autre. Arrêter
-  de relancer peut être un acte de pilotage, pas un abandon.
-cover: >-
-  /images/articles/2026-06-02-quand-arreter-de-relancer-est-la-meilleure-decision.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Quand arrêter de relancer est la meilleure décision"
+date: "2026-05-12"
+excerpt: "Savoir relancer est une compétence. Savoir s’arrêter en est une autre. Arrêter de relancer peut être un acte de pilotage, pas un abandon."
+cover: "/images/articles/2026-06-02-quand-arreter-de-relancer-est-la-meilleure-decision.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - decision
-  - priorisation
-  - posture
-  - organisation
+  - "retail"
+  - "prise-de-decision"
+  - "posture-professionnelle"
+  - "organisation"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 31
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 43
 ---
-
 ### Relancer indéfiniment est une fuite
 
 Karim a longtemps cru que ne pas relancer assez était un manque de professionnalisme. Alors il insistait. Encore. Et encore. Sans cadre clair.

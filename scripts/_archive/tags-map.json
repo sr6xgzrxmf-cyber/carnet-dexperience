@@ -1,0 +1,45 @@
+{
+  "Posture": "posture-professionnelle",
+  "posture": "posture-professionnelle",
+  "posture pro": "posture-professionnelle",
+
+  "manager": "management",
+  "managers": "management",
+  "management terrain": "management-de-proximite",
+  "management de terrain": "management-de-proximite",
+
+  "leadership managérial": "leadership",
+
+  "organisation du travail": "organisation",
+  "organisation interne": "organisation",
+
+  "decision": "prise-de-decision",
+  "prise de décision": "prise-de-decision",
+
+  "pilotage de l’activité": "pilotage",
+
+  "pédagogie": "pedagogie",
+  "pédagogie adultes": "andragogie",
+  "formation continue": "formation",
+
+  "apprendre": "apprentissage",
+  "compétences": "developpement-des-competences",
+
+  "relation client": "relation-client",
+  "client": "relation-client",
+  "clients": "relation-client",
+
+  "communication interne": "communication",
+  "communiquer": "communication",
+
+  "retour": "feedback",
+
+  "terrain managérial": "terrain",
+
+  "expérience client": "experience-client",
+
+  "vente": "retail",
+  "commerce": "retail",
+
+  "innovation managériale": "innovation"
+}

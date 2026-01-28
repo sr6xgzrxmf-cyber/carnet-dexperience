@@ -7,17 +7,11 @@ source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 3
-
+  order: 2
 tags:
-  - apprentissage
-  - code
-  - internet
-  - humilité
-  - montée en compétences
+  - "apprentissage"
 excerpt: "Entre illusion de maîtrise et découverte des angles morts, revenir au code m’a obligé à déconstruire une expertise supposée pour retrouver une posture d’apprentissage lucide."
 ---
-
 Je pensais connaître Internet. Ou plus exactement : **je pensais en avoir gardé l’essentiel.**
 
 Après tout, j’avais appris le HTML très jeune. J’avais compris la logique des pages, des liens, des structures. J’avais manipulé des bases de données, utilisé des CMS, animé des sites, accompagné des enfants et des adultes dans la découverte du code. Le langage ne m’était pas étranger. La pensée informatique encore moins. Elle m’avait accompagné longtemps, parfois en filigrane, parfois très concrètement.

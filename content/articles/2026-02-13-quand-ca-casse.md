@@ -4,18 +4,12 @@ date: "2026-02-13"
 excerpt: "Les échecs techniques et mentaux font partie du travail réel. Bugs, déploiements ratés, découragement : ce qui compte n’est pas de les romantiser, mais de comprendre ce qu’ils révèlent."
 cover: "/images/articles/quand-ca-casse.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
-tags:
-  - échec
-  - résilience
-  - travail réel
-  - technique
-  - lucidité
+tags: []
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
-  order: 8
+  order: 7
 ---
-
 Il y a un moment inévitable, dans tout projet tenu un peu sérieusement, où ça casse.  
 Pas forcément de manière spectaculaire. Parfois juste un détail qui lâche. Une accumulation. Un point de rupture discret mais net.
 

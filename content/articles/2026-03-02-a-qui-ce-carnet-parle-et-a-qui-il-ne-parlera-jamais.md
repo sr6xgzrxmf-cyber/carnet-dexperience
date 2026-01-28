@@ -1,24 +1,15 @@
 ---
-title: À qui ce carnet parle (et à qui il ne parlera jamais)
-date: '2026-03-02'
-excerpt: >-
-  Ce carnet n’est pas fait pour plaire. Il parle à ceux qui se reconnaissent
-  dans le travail réel, le temps long et les décisions imparfaites — et il
-  assume de ne pas répondre à d’autres attentes.
-cover: /images/articles/a-qui-ce-carnet-parle.jpg
-source: Laurent Guyonnet — Carnet d’expérience
-tags:
-  - lectorat
-  - alignement
-  - filtre
-  - posture éditoriale
-  - maturité professionnelle
+title: "À qui ce carnet parle (et à qui il ne parlera jamais)"
+date: "2026-03-02"
+excerpt: "Ce carnet n’est pas fait pour plaire. Il parle à ceux qui se reconnaissent dans le travail réel, le temps long et les décisions imparfaites — et il assume de ne pas répondre à d’autres attentes."
+cover: "/images/articles/a-qui-ce-carnet-parle.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
+tags: []
 series:
-  name: Construire Carnet d’expérience
-  slug: construire-carnet-experience
-  order: 13
+  name: "Construire Carnet d’expérience"
+  slug: "construire-carnet-experience"
+  order: 12
 ---
-
 Tout média, qu’il le veuille ou non, parle à quelqu’un.  
 La question n’est pas de savoir *si* un carnet s’adresse à un public, mais **à qui**, et surtout **à qui il accepte de ne pas parler**.
 

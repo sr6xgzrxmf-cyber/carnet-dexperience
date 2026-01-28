@@ -2,20 +2,14 @@
 title: "Marketing durable et engagé : concilier performance commerciale et responsabilité en point de vente"
 date: "2026-01-05"
 excerpt: "En 2026, la durabilité n’est plus un supplément d’âme pour le retail. C’est un levier direct de confiance, de conversion et de fidélisation en magasin."
-cover: /images/articles/2026-01-05-marketing-durable-retail.jpg
-source: Laurent Guyonnet — Carnet d’expérience
-
+cover: "/images/articles/2026-01-05-marketing-durable-retail.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   name: "Marketing durable et engagé"
   slug: "durableetengage"
-  order: 1
-
+  order: 0
 tags:
-  - Retail
-  - Marketing
-  - Durabilité
-  - Expérience client
-  - Performance
+  - "experience-client"
 ---
 ## Quand la durabilité cesse d’être un slogan  
 Pendant longtemps, le marketing durable a été traité comme un supplément d’âme, souvent cantonné aux rapports RSE et aux campagnes institutionnelles. En 2026, cette séparation n’existe plus. Pour les réseaux de magasins, la responsabilité environnementale et sociale est devenue un levier direct de performance. Les clients ne veulent plus seulement acheter un produit, ils veulent comprendre ce qu’il représente, comment il a été fabriqué et quelle vision il porte.

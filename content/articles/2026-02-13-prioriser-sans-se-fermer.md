@@ -5,17 +5,15 @@ excerpt: "Dire oui à une bonne idée peut parfois être une erreur. Savoir reco
 cover: "/images/articles/2026-02-13-prioriser-sans-se-fermer.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture
-  - priorisation
-  - leadership
-  - organisation
+  - "management"
+  - "posture-professionnelle"
+  - "leadership"
+  - "organisation"
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
-  order: 8
+  order: 15
 ---
-
 ### Le piège des « bonnes idées »
 
 Sur le terrain, le problème n’est pas le manque d’idées. C’est leur accumulation. Karim le vit souvent : un collègue, un manager, parfois un partenaire externe arrive avec une proposition pertinente, intelligente, bien intentionnée. Rien à redire sur le fond. Pourtant, quelque chose résiste intérieurement. Il sent que dire oui maintenant va coûter cher — en énergie, en focus, en cohérence.

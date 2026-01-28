@@ -5,14 +5,15 @@ excerpt: "Promu parce qu’il fallait quelqu’un, pas parce qu’il était prê
 cover: "/images/articles/2026-01-15-promotion-par-le-vide-management.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - leadership
-  - organisation
-  - ressources humaines
-  - formation
-  - gouvernance
+  - "management"
+  - "leadership"
+  - "organisation"
+  - "formation"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 0
 ---
-
 ## Un glissement fréquent, rarement interrogé
 
 La majorité des managers sont issus du terrain. Ce sont d’abord de bons techniciens, des personnes reconnues pour leur fiabilité, leur expertise, leur capacité à faire. Et, très souvent, on part d’un raisonnement simple : puisque cette personne est performante dans son métier, elle sera naturellement performante dans un rôle de management.

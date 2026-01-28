@@ -1,23 +1,18 @@
 ---
-title: Personne ne te regarde autant que tu le crois
-date: '2026-02-12'
-excerpt: >-
-  L’effet projecteur nous pousse à surestimer le regard des autres. En réalité,
-  cette peur invisible freine bien plus d’actions qu’elle ne protège.
-cover: /images/articles/2026-03-12-personne-ne-te-regarde-autant-que-tu-le-crois.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Personne ne te regarde autant que tu le crois"
+date: "2026-02-12"
+excerpt: "L’effet projecteur nous pousse à surestimer le regard des autres. En réalité, cette peur invisible freine bien plus d’actions qu’elle ne protège."
+cover: "/images/articles/2026-03-12-personne-ne-te-regarde-autant-que-tu-le-crois.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - posture
-  - passage-a-l-action
-  - communication
-  - leadership
-  - confiance
+  - "posture-professionnelle"
+  - "communication"
+  - "leadership"
 series:
-  name: Lois utiles
-  slug: lois-utiles
-  order: 2
+  name: "Lois utiles"
+  slug: "lois-utiles"
+  order: 1
 ---
-
 ### Cette impression étrange d’être observé
 
 Avant d’agir, Karim hésite. Publier ce texte. Prendre la parole en réunion. Poser une question qui n’est pas parfaitement formulée. À chaque fois, la même sensation : celle d’être observé, jugé, évalué.

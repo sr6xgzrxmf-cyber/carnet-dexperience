@@ -2,14 +2,16 @@
 title: "Le formateur à la conquête du management par objectifs"
 date: "2023-07-17"
 excerpt: "Comment définir, former et évaluer la performance avec le Management par Objectifs."
-cover: /images/articles/2023-07-17-management-par-objectifs-formateur.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/2023-07-17-management-par-objectifs-formateur.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - objectifs
-  - performance
-  - formation
-  - leadership
+  - "management"
+  - "formation"
+  - "leadership"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 22
 ---
 Le Formateur à la Conquête du Management par Objectifs : Un guide pour Définir, Former et Évaluer 🎯
 

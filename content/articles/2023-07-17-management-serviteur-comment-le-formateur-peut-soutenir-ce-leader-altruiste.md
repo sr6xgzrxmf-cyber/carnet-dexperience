@@ -2,15 +2,16 @@
 title: "Management serviteur : comment le formateur peut soutenir ce leader altruiste"
 date: "2023-07-17"
 excerpt: "Comment le management serviteur place le bien-être, la croissance et la confiance au cœur de la performance collective."
-cover: /images/articles/management-serviteur.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/management-serviteur.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - serviteur
-  - leadership
-  - formation
-  - accompagnement
-  - bien-être
+  - "management"
+  - "leadership"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 23
 ---
 Bonjour, gardiens du bien-être d’équipe ! 🌟  
 Aujourd’hui, rangez vos couronnes et enfilez vos tabliers, car nous allons nous immerger dans l’art du management serviteur. Dans ce monde, le leader est un humble serviteur qui met le bien-être de son équipe avant tout. Imaginez-vous en majordome de la réussite collective, toujours prêt à donner un coup de main.

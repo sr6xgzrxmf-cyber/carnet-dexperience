@@ -2,14 +2,15 @@
 title: "La surcharge de travail : surmonter la résistance au changement en formation"
 date: "2023-09-11"
 excerpt: "Quand la charge mentale et opérationnelle explose, la formation devient un frein au lieu d’un levier. Comment dépasser ce paradoxe et rendre l’apprentissage compatible avec le réel."
-cover: /images/articles/surcharge-travail-formation.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/surcharge-travail-formation.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - formation
-  - changement
-  - surcharge
-  - apprentissage
-  - microlearning
+  - "formation"
+  - "apprentissage"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 40
 ---
 La surcharge de travail est l’une des causes les plus fréquentes de résistance à la formation en entreprise. Lorsque les collaborateurs se sentent déjà sous pression, la formation est souvent perçue non pas comme une aide, mais comme une contrainte supplémentaire. Apprendre devient alors une charge de plus, plutôt qu’un levier de soulagement ou de progrès.
 

@@ -2,15 +2,17 @@
 title: "L’apprentissage chez l’adulte : un voyage entre tâches, problèmes et éclats de rire"
 date: "2023-05-19"
 excerpt: "Comment les adultes peuvent apprendre efficacement en combinant résolution de problèmes, humour et méthodes non conventionnelles."
-cover: /images/articles/apprentissage-adulte-humour.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/apprentissage-adulte-humour.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - andragogie
-  - apprentissage
-  - formation
-  - humour
-  - pédagogie
-  - adultes
+  - "andragogie"
+  - "apprentissage"
+  - "formation"
+  - "pedagogie"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 9
 ---
 Nous le savons tous : les adultes sont des êtres à part. Ils ont des responsabilités, des priorités, et surtout une approche différente de l’apprentissage. Plus question de jouer à la marelle ou de faire des châteaux de sable. Désormais, l’apprenant adulte est orienté vers les tâches et la résolution de problèmes. Mais rassurez-vous, chers adultes, il est tout à fait possible de mêler humour et apprentissage pour rendre l’expérience plus agréable et inspirante.
 

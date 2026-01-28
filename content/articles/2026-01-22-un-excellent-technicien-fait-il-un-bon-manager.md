@@ -1,20 +1,19 @@
 ---
-title: Un excellent technicien fait-il un bon manager ?
-date: '2026-01-26'
-excerpt: >-
-  Promouvoir les meilleurs techniciens managers est une évidence… en apparence.
-  Sur le terrain, cette décision révèle une confusion fréquente entre expertise,
-  posture et leadership. Et si la vraie question était ailleurs ?
-cover: /images/articles/excellent-technicien-manager.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Un excellent technicien fait-il un bon manager ?"
+date: "2026-01-26"
+excerpt: "Promouvoir les meilleurs techniciens managers est une évidence… en apparence. Sur le terrain, cette décision révèle une confusion fréquente entre expertise, posture et leadership. Et si la vraie question était ailleurs ?"
+cover: "/images/articles/excellent-technicien-manager.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - management de terrain
-  - leadership
-  - développement professionnel
-  - organisation
+  - "management"
+  - "management-de-proximite"
+  - "leadership"
+  - "organisation"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 7
 ---
-
 Il y a une promesse implicite, presque jamais formulée, mais profondément ancrée dans les organisations : *le meilleur fera grandir les autres*.  
 Alors on promeut. On confie une équipe. On officialise un nouveau rôle. Et on espère que tout suivra.
 

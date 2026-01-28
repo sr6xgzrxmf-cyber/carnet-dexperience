@@ -2,14 +2,16 @@
 title: "L’apprenant adulte, ou l’art de devenir maître de sa formation"
 date: "2023-05-18"
 excerpt: "Pourquoi l’autonomie, l’humour et la participation transforment l’apprentissage des adultes en aventure vivante et motivante."
-cover: /images/articles/apprenant-adulte-super-heros.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+cover: "/images/articles/apprenant-adulte-super-heros.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - andragogie
-  - apprentissage
-  - formation
-  - autonomie
-  - motivation
+  - "andragogie"
+  - "apprentissage"
+  - "formation"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 8
 ---
 On dit souvent que l’on n’a pas fini d’apprendre tant que l’on vit. Mais qui, parmi nous, ne s’est jamais retrouvé dans une formation professionnelle en s’imaginant plutôt sur une plage ensoleillée, un cocktail à la main ? L’apprentissage, ce n’est pas toujours une partie de plaisir, surtout quand on est adulte et qu’on a mille autres choses à penser : le travail, les factures, la famille, la fatigue. Pourtant, il est crucial pour notre développement professionnel et personnel. Alors comment transformer cet apprentissage en une expérience inspirante, drôle et motivante ? La réponse réside dans la participation active de l’apprenant adulte.
 

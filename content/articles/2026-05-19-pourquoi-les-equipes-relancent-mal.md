@@ -1,23 +1,19 @@
 ---
-title: Pourquoi les équipes relancent mal
-date: '2026-05-19'
-excerpt: >-
-  Si les équipes relancent mal, ce n’est pas un problème de motivation. C’est
-  souvent un manque de cadre, de méthode et de décision managériale.
-cover: /images/articles/2026-06-09-pourquoi-les-equipes-relancent-mal.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi les équipes relancent mal"
+date: "2026-05-19"
+excerpt: "Si les équipes relancent mal, ce n’est pas un problème de motivation. C’est souvent un manque de cadre, de méthode et de décision managériale."
+cover: "/images/articles/2026-06-09-pourquoi-les-equipes-relancent-mal.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - vente
-  - organisation
-  - pilotage
-  - posture
+  - "management"
+  - "retail"
+  - "organisation"
+  - "pilotage"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
-  order: 32
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 45
 ---
-
 ### Le mythe du manque d’engagement
 
 Beaucoup de managers pensent que si les équipes relancent mal, c’est par manque d’envie. En réalité, c’est souvent l’inverse : elles relancent trop, mal, et sans cadre.

@@ -1,24 +1,16 @@
 ---
-title: De la fatigue à la méthode
-date: '2026-02-18'
-excerpt: >-
-  La méthode ne naît pas de la discipline héroïque, mais de la fatigue bien
-  comprise. Passer du chaos à la routine, c’est cesser de dépendre de son
-  énergie pour construire un système qui tient.
-cover: /images/articles/de-la-fatigue-a-la-methode.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "De la fatigue à la méthode"
+date: "2026-02-18"
+excerpt: "La méthode ne naît pas de la discipline héroïque, mais de la fatigue bien comprise. Passer du chaos à la routine, c’est cesser de dépendre de son énergie pour construire un système qui tient."
+cover: "/images/articles/de-la-fatigue-a-la-methode.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - méthode
-  - organisation
-  - automatisation
-  - posture professionnelle
-  - durabilité
+  - "organisation"
 series:
-  name: Construire Carnet d’expérience
-  slug: construire-carnet-experience
-  order: 9
+  name: "Construire Carnet d’expérience"
+  slug: "construire-carnet-experience"
+  order: 8
 ---
-
 Il y a un moment précis où la fatigue cesse d’être un signal d’alerte pour devenir un point de bascule.  
 Non pas parce qu’elle disparaît, mais parce qu’elle ne peut plus être ignorée.
 

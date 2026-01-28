@@ -5,13 +5,14 @@ excerpt: "Une journée de déménagement entre famille, amis et collègues rév�
 cover: "/images/articles/demenager-une-equipe-sans-manager.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - leadership
-  - soft skills
-  - coordination
-  - terrain
+  - "management"
+  - "leadership"
+  - "terrain"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 16
 ---
-
 Ce jour-là, il ne s’agissait pas de « manager ».  
 Il s’agissait de déménager.
 

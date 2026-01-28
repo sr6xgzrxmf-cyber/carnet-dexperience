@@ -1,22 +1,19 @@
 ---
-title: Ce que la direction entend vraiment
-date: '2026-02-02'
-excerpt: >-
-  Entre ce que le terrain dit et ce que la direction entend, il y a souvent un
-  décalage. Non pas par mauvaise volonté, mais par différence de rôle, de
-  temporalité et de responsabilité. Comprendre ce décalage est une condition
-  essentielle du leadership du quotidien.
-cover: /images/articles/ce-que-la-direction-entend-vraiment.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Ce que la direction entend vraiment"
+date: "2026-02-02"
+excerpt: "Entre ce que le terrain dit et ce que la direction entend, il y a souvent un décalage. Non pas par mauvaise volonté, mais par différence de rôle, de temporalité et de responsabilité. Comprendre ce décalage est une condition essentielle du leadership du quotidien."
+cover: "/images/articles/ce-que-la-direction-entend-vraiment.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - direction
-  - leadership
-  - communication
-  - arbitrage
-  - organisation
+  - "management"
+  - "leadership"
+  - "communication"
+  - "organisation"
+series:
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
+  order: 11
 ---
-
 Il y a une incompréhension récurrente dans les organisations. Le terrain a le sentiment de s’exprimer clairement. La direction a le sentiment d’entendre surtout des plaintes, des alertes floues ou des remontées sans proposition. Les deux ont souvent raison. Et pourtant, ils ne se parlent pas vraiment.
 
 Ce décalage ne vient pas d’un manque d’écoute.  

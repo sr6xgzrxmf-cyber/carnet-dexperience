@@ -6,15 +6,11 @@ cover: "/images/articles/2026-02-01-episode-1-la-rencontre-avec-karim.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
   slug: "atelier-de-posture"
-  order: 1
+  order: 4
+  name: "Atelier de posture"
 tags:
-  - atelier-de-posture
-  - chronique
-  - posture
-  - situations-reelles
-  - services-a-domicile
+  - "posture-professionnelle"
 ---
-
 Je suis au Bercail, à Lyon. Mon espace d’afterwork, mon sas. La journée est finie, je n’attends plus rien que l’arrivée tardive de quelques personnes du travail. Ici, je suis un habitué. On me connaît. Je peux me détendre sans surveiller mon rôle. Il y a ce soleil de fin de journée qui rase les tables, une lumière chaude et belle, mais qui devient vite une gêne quand elle tombe pile dans les yeux. Karim est assis à la table juste à côté. Il plisse, il bouge un peu sa chaise, cherche un angle, sans succès. Il n’y a pas de place ailleurs. Je le vois hésiter entre “supporter” et “partir”. Je sors alors une deuxième paire de lunettes de soleil de mon sac — une paire en trop, le genre d’objet qu’on transporte sans y penser — et je lui propose de les prendre. Il relève la tête, surpris, puis sourit avec une gratitude immédiate, presque disproportionnée pour un geste aussi simple. Il me remercie. Et, sans qu’on sache trop comment, la conversation commence.
 
 ## Un détail banal qui ouvre une porte

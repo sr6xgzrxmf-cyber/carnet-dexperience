@@ -1,16 +1,18 @@
 ---
-title: 5 principes de l’andragogie pour une formation centrée sur l’apprenant
+title: "5 principes de l’andragogie pour une formation centrée sur l’apprenant"
 date: "2023-05-14"
-excerpt: Comment Malcolm Knowles a révolutionné la formation des adultes en plaçant l’expérience, l’autonomie et l’utilité concrète au cœur de l’apprentissage.
-cover: /images/articles/Malcolm-Knowles.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+excerpt: "Comment Malcolm Knowles a révolutionné la formation des adultes en plaçant l’expérience, l’autonomie et l’utilité concrète au cœur de l’apprentissage."
+cover: "/images/articles/Malcolm-Knowles.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - andragogie
-  - formation
-  - pédagogie
-  - apprentissage
-  - leadership
-  - Astuce
+  - "andragogie"
+  - "formation"
+  - "pedagogie"
+  - "apprentissage"
+series:
+  name: "Former des adultes"
+  slug: "former-des-adultes"
+  order: 4
 ---
 # 5 principes de l’andragogie pour une formation centrée sur l’apprenant
 **Ou comment Malcolm Knowles a révolutionné l’art d’apprendre… en écoutant les adultes**
