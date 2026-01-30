@@ -10,8 +10,8 @@ tags:
   - "organisation"
   - "formation"
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
+  name: ""
+  slug: ""
   order: 0
 ---
 ## Un glissement fréquent, rarement interrogé

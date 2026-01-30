@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -9,10 +10,26 @@ const IS_LOCAL =
   process.env.NODE_ENV !== "production" &&
   !process.env.VERCEL;
 
+function isLocalRequest(req: NextRequest) {
+  const host =
+    (req.headers.get("x-forwarded-host") ||
+      req.headers.get("host") ||
+      "")
+      .toLowerCase()
+      .trim();
+
+  // accepte avec ou sans port
+  if (host === "localhost" || host.startsWith("localhost:")) return true;
+  if (host === "127.0.0.1" || host.startsWith("127.0.0.1:")) return true;
+  if (host === "[::1]" || host.startsWith("[::1]:")) return true; // IPv6 local
+
+  return false;
+}
+
 type Series = { name?: unknown; slug?: unknown; order?: unknown };
 
-export async function GET() {
-  if (!IS_LOCAL) {
+export async function GET(req: NextRequest) {
+  if (!isLocalRequest(req)) {
     return NextResponse.json(
       { error: "Not supported in production. Local-only admin feature." },
       { status: 403 }
