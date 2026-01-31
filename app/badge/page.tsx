@@ -125,53 +125,47 @@ export default function BadgePage() {
     }
   }
 
-  // ✅ NOUVEAU : écran plein (QR seul)
-  if (present) {
-    return (
-      <main
-        className="w-full"
-        onClick={() => setPresent(false)}
+// MODE PRÉSENTATION — QR seul, centré, double-tap pour sortir
+if (present) {
+  return (
+    <main
+      className="w-full"
+      onDoubleClick={() => setPresent(false)}
+      style={{
+        background: "#000",
+        minHeight: "100svh",
+        display: "grid",
+        placeItems: "center",
+        padding:
+          "env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)",
+      }}
+    >
+      <div
         style={{
-          background: "#000",
-          color: "#fff",
-          minHeight: "100svh",
-          display: "grid",
-          placeItems: "center",
-          padding: "max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom))",
+          width: "min(96vw, 96vh)",
+          aspectRatio: "1 / 1",
+          background: "#fff",
+          borderRadius: "20px",
+          overflow: "hidden",
         }}
       >
         <div
-          onClick={(e) => {
-            // évite le double toggle si tu cliques pile sur le QR
-            e.stopPropagation();
-            setPresent(false);
-          }}
-          style={{
-            width: "min(92vw, 540px)",
-            aspectRatio: "1 / 1",
-            background: "#fff",
-            borderRadius: "24px",
-            overflow: "hidden",
-            display: "grid",
-            placeItems: "center",
-          }}
-        >
-          <div
-            style={{ width: "100%", height: "100%" }}
-            dangerouslySetInnerHTML={{ __html: svg }}
-          />
-        </div>
+          style={{ width: "100%", height: "100%" }}
+          dangerouslySetInnerHTML={{ __html: svg }}
+        />
+      </div>
 
-        <style jsx>{`
-          :global(svg) {
-            width: 100% !important;
-            height: 100% !important;
-            display: block;
-          }
-        `}</style>
-      </main>
-    );
-  }
+      <style jsx>{`
+        :global(svg) {
+          width: 100% !important;
+          height: 100% !important;
+          display: block;
+        }
+      `}</style>
+    </main>
+  );
+}
+
 
   return (
     <main
@@ -305,7 +299,7 @@ export default function BadgePage() {
                 background: colors.bg,
                 aspectRatio: "1 / 1",
               }}
-              onClick={() => setPresent(true)}
+              onDoubleClick={() => setPresent(true)}
               role="button"
               aria-label="Afficher le QR code en plein écran"
             >
