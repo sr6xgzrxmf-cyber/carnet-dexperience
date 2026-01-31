@@ -34,7 +34,6 @@ function buildUrl(s: BadgeState) {
   params.set("utm_medium", s.utm_medium);
   params.set("utm_campaign", s.utm_campaign);
 
-  // context facultatif (si vide, on ne l’ajoute pas)
   const ctx = s.context.trim();
   if (ctx) params.set("context", ctx);
 
@@ -56,10 +55,12 @@ export default function BadgePage() {
     utm_source: "badge",
     utm_medium: "qr",
     utm_campaign: "rencontre",
-    context: "techfest_grenoble",
+    context: "",
   });
 
-  // charger depuis localStorage
+  // ✅ NOUVEAU : mode présentation (QR seul)
+  const [present, setPresent] = useState(false);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -76,7 +77,6 @@ export default function BadgePage() {
     }
   }, []);
 
-  // sauvegarder en localStorage à chaque changement
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
@@ -86,7 +86,6 @@ export default function BadgePage() {
   }, [state]);
 
   const url = useMemo(() => buildUrl(state), [state]);
-
   const [svg, setSvg] = useState("");
 
   useEffect(() => {
@@ -117,7 +116,6 @@ export default function BadgePage() {
     try {
       await navigator.clipboard.writeText(url);
     } catch {
-      // fallback
       const ta = document.createElement("textarea");
       ta.value = url;
       document.body.appendChild(ta);
@@ -125,6 +123,54 @@ export default function BadgePage() {
       document.execCommand("copy");
       document.body.removeChild(ta);
     }
+  }
+
+  // ✅ NOUVEAU : écran plein (QR seul)
+  if (present) {
+    return (
+      <main
+        className="w-full"
+        onClick={() => setPresent(false)}
+        style={{
+          background: "#000",
+          color: "#fff",
+          minHeight: "100svh",
+          display: "grid",
+          placeItems: "center",
+          padding: "max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom))",
+        }}
+      >
+        <div
+          onClick={(e) => {
+            // évite le double toggle si tu cliques pile sur le QR
+            e.stopPropagation();
+            setPresent(false);
+          }}
+          style={{
+            width: "min(92vw, 540px)",
+            aspectRatio: "1 / 1",
+            background: "#fff",
+            borderRadius: "24px",
+            overflow: "hidden",
+            display: "grid",
+            placeItems: "center",
+          }}
+        >
+          <div
+            style={{ width: "100%", height: "100%" }}
+            dangerouslySetInnerHTML={{ __html: svg }}
+          />
+        </div>
+
+        <style jsx>{`
+          :global(svg) {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+          }
+        `}</style>
+      </main>
+    );
   }
 
   return (
@@ -146,7 +192,7 @@ export default function BadgePage() {
           </h1>
         </div>
 
-        {/* FORMULAIRE CONTEXTE */}
+        {/* FORMULAIRE */}
         <div
           className="rounded-2xl p-3 mb-3"
           style={{
@@ -240,7 +286,7 @@ export default function BadgePage() {
           </div>
         </div>
 
-        {/* QR */}
+        {/* QR (tap pour basculer en mode présentation) */}
         <div className="mx-auto w-full" style={{ maxWidth: "min(92vw, 420px)" }}>
           <div
             className="rounded-3xl p-3"
@@ -259,6 +305,9 @@ export default function BadgePage() {
                 background: colors.bg,
                 aspectRatio: "1 / 1",
               }}
+              onClick={() => setPresent(true)}
+              role="button"
+              aria-label="Afficher le QR code en plein écran"
             >
               <div
                 style={{ width: "100%", height: "100%" }}
@@ -278,6 +327,10 @@ export default function BadgePage() {
 
         <p className="mt-3 text-xs opacity-70 text-center">
           {url.replace("https://", "")}
+        </p>
+
+        <p className="mt-2 text-[11px] opacity-60 text-center">
+          Touchez le QR pour l’afficher en plein écran.
         </p>
       </div>
     </main>
