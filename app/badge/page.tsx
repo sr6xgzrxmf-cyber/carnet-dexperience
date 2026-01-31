@@ -125,28 +125,30 @@ export default function BadgePage() {
     }
   }
 
-// MODE PRÉSENTATION — QR seul, centré, double-tap pour sortir
+// MODE PRÉSENTATION — overlay type Photos.app
 if (present) {
   return (
-    <main
-      className="w-full"
+    <div
       onDoubleClick={() => setPresent(false)}
       style={{
-        background: "#000",
-        minHeight: "100svh",
-        display: "grid",
-        placeItems: "center",
-        padding:
-          "env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)",
+        position: "fixed",
+        inset: 0,
+        backgroundColor: "#000",
+        zIndex: 9999,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        touchAction: "manipulation",
       }}
     >
       <div
         style={{
-          width: "min(96vw, 96vh)",
+          width: "min(90vw, 90vh)",
           aspectRatio: "1 / 1",
           background: "#fff",
-          borderRadius: "20px",
+          borderRadius: "18px",
           overflow: "hidden",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.6)",
         }}
       >
         <div
@@ -162,9 +164,10 @@ if (present) {
           display: block;
         }
       `}</style>
-    </main>
+    </div>
   );
 }
+
 
 
   return (
