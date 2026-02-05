@@ -202,12 +202,31 @@ export default async function ArticleDetailPage({
               ) : null}
             </div>
 
-            {item.meta.excerpt ? (
-              <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-                {item.meta.excerpt}
+          {item.meta.excerpt ? (
+            <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
+              {item.meta.excerpt}
+            </p>
+          ) : null}
+        </div>
+
+        {/* Impact / Mise en pratique */}
+        {item.meta.impact && (item.meta.impact.text || item.meta.impact.example) ? (
+          <div className="mt-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-5">
+            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Impact / Mise en pratique
+            </div>
+            {item.meta.impact.text ? (
+              <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+                {item.meta.impact.text}
+              </p>
+            ) : null}
+            {item.meta.impact.example ? (
+              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+                Exemple : {item.meta.impact.example}
               </p>
             ) : null}
           </div>
+        ) : null}
 
           {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
             <div className="flex flex-wrap gap-2 pt-1">

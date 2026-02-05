@@ -15,6 +15,7 @@ export type ArticleMeta = {
   source?: string;
   excerpt?: string;
   series?: { name?: string; title?: string; slug?: string; order?: number | string };
+  impact?: { text?: string; example?: string };
 };
 
 export type ArticleItem = {

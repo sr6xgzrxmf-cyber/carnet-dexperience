@@ -11,6 +11,7 @@ type SeriesItem = {
 type Payload = {
   featuredSeriesList: string[];
   featuredSeriesSummaries?: Record<string, string>;
+  featuredSeriesTeasers?: Record<string, { benefit?: string; forWhom?: string }>;
   availableSeries: SeriesItem[];
 };
 
@@ -27,6 +28,7 @@ export default function AdminRetrospectivesPage() {
   const [list, setList] = useState<string[]>([]);
   const [available, setAvailable] = useState<SeriesItem[]>([]);
   const [summaries, setSummaries] = useState<Record<string, string>>({});
+  const [teasers, setTeasers] = useState<Record<string, { benefit?: string; forWhom?: string }>>({});
   const [saving, setSaving] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -48,6 +50,11 @@ export default function AdminRetrospectivesPage() {
         setSummaries(
           data?.featuredSeriesSummaries && typeof data.featuredSeriesSummaries === "object"
             ? data.featuredSeriesSummaries
+            : {}
+        );
+        setTeasers(
+          data?.featuredSeriesTeasers && typeof data.featuredSeriesTeasers === "object"
+            ? data.featuredSeriesTeasers
             : {}
         );
       } finally {
@@ -91,6 +98,7 @@ export default function AdminRetrospectivesPage() {
         body: JSON.stringify({
           featuredSeriesList: list,
           featuredSeriesSummaries: summaries,
+          featuredSeriesTeasers: teasers,
         }),
       });
       const data = await r.json();
@@ -100,6 +108,11 @@ export default function AdminRetrospectivesPage() {
         data?.featuredSeriesSummaries && typeof data.featuredSeriesSummaries === "object"
           ? data.featuredSeriesSummaries
           : summaries
+      );
+      setTeasers(
+        data?.featuredSeriesTeasers && typeof data.featuredSeriesTeasers === "object"
+          ? data.featuredSeriesTeasers
+          : teasers
       );
       setMsg("✅ Sauvegardé");
     } catch (e: unknown) {
@@ -173,6 +186,38 @@ export default function AdminRetrospectivesPage() {
                     fontSize: 12,
                   }}
                 />
+                <input
+                  value={teasers[slug]?.benefit ?? ""}
+                  onChange={(e) =>
+                    setTeasers((prev) => ({
+                      ...prev,
+                      [slug]: { ...(prev[slug] ?? {}), benefit: e.target.value },
+                    }))
+                  }
+                  placeholder="Micro‑teaser : ce que la série permet de travailler"
+                  style={{
+                    padding: "8px 10px",
+                    borderRadius: 10,
+                    border: "1px solid rgba(0,0,0,0.18)",
+                    fontSize: 12,
+                  }}
+                />
+                <input
+                  value={teasers[slug]?.forWhom ?? ""}
+                  onChange={(e) =>
+                    setTeasers((prev) => ({
+                      ...prev,
+                      [slug]: { ...(prev[slug] ?? {}), forWhom: e.target.value },
+                    }))
+                  }
+                  placeholder="Micro‑teaser : pour qui c’est utile"
+                  style={{
+                    padding: "8px 10px",
+                    borderRadius: 10,
+                    border: "1px solid rgba(0,0,0,0.18)",
+                    fontSize: 12,
+                  }}
+                />
               </div>
 
               <div style={{ display: "flex", gap: 8 }}>
@@ -220,6 +265,12 @@ export default function AdminRetrospectivesPage() {
                       setList((prev) => [...prev, s.slug]);
                       if (!summaries[s.slug] && s.description) {
                         setSummaries((prev) => ({ ...prev, [s.slug]: s.description ?? "" }));
+                      }
+                      if (!teasers[s.slug] && s.description) {
+                        setTeasers((prev) => ({
+                          ...prev,
+                          [s.slug]: { benefit: s.description ?? "" },
+                        }));
                       }
                     }}
                     style={miniBtn()}

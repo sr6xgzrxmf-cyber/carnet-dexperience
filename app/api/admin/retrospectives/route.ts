@@ -12,6 +12,7 @@ const IS_LOCAL =
 type Body = {
   featuredSeriesList: string[];
   featuredSeriesSummaries?: Record<string, string>;
+  featuredSeriesTeasers?: Record<string, { benefit?: string; forWhom?: string }>;
 };
 
 function readJson(): Body {
@@ -26,6 +27,11 @@ function readJson(): Body {
       parsed?.featuredSeriesSummaries &&
       typeof parsed.featuredSeriesSummaries === "object"
         ? parsed.featuredSeriesSummaries
+        : {},
+    featuredSeriesTeasers:
+      parsed?.featuredSeriesTeasers &&
+      typeof parsed.featuredSeriesTeasers === "object"
+        ? parsed.featuredSeriesTeasers
         : {},
   };
 }
@@ -57,13 +63,22 @@ export async function PATCH(req: Request) {
     typeof body.featuredSeriesSummaries === "object"
       ? body.featuredSeriesSummaries
       : {};
+  const teasers =
+    body?.featuredSeriesTeasers &&
+    typeof body.featuredSeriesTeasers === "object"
+      ? body.featuredSeriesTeasers
+      : {};
 
   const clean = Array.from(new Set(list.map((s) => s.trim()).filter(Boolean)));
 
   fs.writeFileSync(
     FILE_PATH,
     JSON.stringify(
-      { featuredSeriesList: clean, featuredSeriesSummaries: summaries },
+      {
+        featuredSeriesList: clean,
+        featuredSeriesSummaries: summaries,
+        featuredSeriesTeasers: teasers,
+      },
       null,
       2
     ) + "\n",
@@ -74,5 +89,6 @@ export async function PATCH(req: Request) {
     ok: true,
     featuredSeriesList: clean,
     featuredSeriesSummaries: summaries,
+    featuredSeriesTeasers: teasers,
   });
 }

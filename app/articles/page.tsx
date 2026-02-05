@@ -2,7 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles, type ArticleItem } from "@/lib/articles";
-import { featuredSeriesList, featuredSeriesSummaries } from "@/content/editorial";
+import {
+  featuredSeriesList,
+  featuredSeriesSummaries,
+  featuredSeriesTeasers,
+} from "@/content/editorial";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import type { Metadata } from "next";
 import ArticlesFilters from "./_components/ArticlesFilters";
@@ -218,6 +222,8 @@ export default async function ArticlesHubPage(props: {
     title: string;
     description?: string;
     summary?: string;
+    teaserBenefit?: string;
+    teaserForWhom?: string;
     items: ArticleMeta[];
     start?: ArticleMeta;
     covers: string[];
@@ -228,6 +234,9 @@ export default async function ArticlesHubPage(props: {
 
   const seriesCards: SeriesCard[] = featuredSeriesList.map((slug) => {
     const meta = seriesBySlug.get(slug) ?? { slug, title: slug, description: "" };
+    const teaser = featuredSeriesTeasers?.[slug];
+    const teaserBenefit = teaser?.benefit?.trim();
+    const teaserForWhom = teaser?.forWhom?.trim();
     const items = published
       .filter((a) => a.series?.slug === slug)
       .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
@@ -244,11 +253,14 @@ export default async function ArticlesHubPage(props: {
       title: meta.title,
       description: meta.description,
       summary: featuredSeriesSummaries?.[slug]?.trim() || undefined,
+      teaserBenefit,
+      teaserForWhom,
       items,
       start,
       covers,
     };
   });
+
 
   /* ---------- Filtres & résultats ---------- */
   const tagCount = new Map<string, number>();
@@ -296,9 +308,80 @@ export default async function ArticlesHubPage(props: {
       </header>
 
       {/* ======================
-          RÉTROSPECTIVES
+          ORIENTATION
       ====================== */}
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+              Comment lire cette page
+            </h2>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Les articles peuvent être abordés de plusieurs manières, selon ce que tu cherches à comprendre ou à travailler.
+              Cette page propose plusieurs portes d’entrée, complémentaires.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <a
+            href="#retrospectives"
+            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+          >
+            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Les rétrospectives
+            </div>
+            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+              Des séries longues, pensées comme des récits structurés. Elles permettent de suivre une réflexion dans le temps : un parcours, un travail de posture, une évolution professionnelle.
+            </p>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              À privilégier si tu veux comprendre une logique de fond plutôt que lire un article isolé.
+            </p>
+          </a>
+
+          <a
+            href="#filtres"
+            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+          >
+            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Explorer par thème
+            </div>
+            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+              Si tu arrives avec une question précise — posture, décision, relation client, transmission — tu peux parcourir les articles par thématique.
+            </p>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Utile quand tu sais ce que tu cherches, sans vouloir suivre toute une série.
+            </p>
+          </a>
+
+          <Link
+            href="/articles/archives"
+            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+          >
+            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Parcourir les archives
+            </div>
+            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+              Les articles sont aussi ancrés dans le temps. Explorer les archives permet de voir comment certaines questions apparaissent, se déplacent et se précisent au fil des expériences.
+            </p>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Intéressant si tu t’interroges sur un cheminement plutôt qu’un résultat immédiat.
+            </p>
+          </Link>
+        </div>
+
+        <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
+          Si tu ne sais pas par où commencer, une rétrospective est souvent le meilleur point d’entrée.
+        </p>
+      </section>
+
+      {/* ======================
+          RÉTROSPECTIVES
+      ====================== */}
+      <section
+        id="retrospectives"
+        className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+      >
         <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
           Rétrospectives
         </h2>
@@ -345,10 +428,11 @@ export default async function ArticlesHubPage(props: {
                     {s.title}
                   </h3>
 
-                  {(s.summary || s.description) ? (
-                    <p className="mt-3 text-[15px] leading-6 text-neutral-700 dark:text-neutral-300">
-                      {s.summary ?? s.description}
-                    </p>
+                  {(s.teaserBenefit || s.teaserForWhom || s.summary || s.description) ? (
+                    <div className="mt-3 space-y-1 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
+                      <p>{s.teaserBenefit ?? s.summary ?? s.description}</p>
+                      {s.teaserForWhom ? <p>{s.teaserForWhom}</p> : null}
+                    </div>
                   ) : null}
 
                   <div className="mt-5 flex flex-wrap items-center gap-3">
@@ -410,7 +494,10 @@ export default async function ArticlesHubPage(props: {
       {/* ======================
           FILTRES
       ====================== */}
-      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+      <section
+        id="filtres"
+        className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+      >
         <div className="flex items-end justify-between gap-4">
           <div>
             <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
