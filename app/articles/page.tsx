@@ -303,7 +303,7 @@ export default async function ArticlesHubPage(props: {
       <header className="mb-10">
         <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
         <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-          Entrer par une rétrospective, ou explorer par thèmes.
+          Une page pour lire à ton rythme, selon ce que tu cherches.
         </p>
       </header>
 
