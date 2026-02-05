@@ -47,7 +47,7 @@ function writeArticle(filePath: string, content: string) {
   fs.writeFileSync(filePath, content, "utf8");
 }
 
-function toNumberOrNull(v: any): number | null {
+function toNumberOrNull(v: unknown): number | null {
   if (v === null || v === undefined || v === "") return null;
   const n = Number(v);
   return Number.isFinite(n) ? n : null;
@@ -71,7 +71,8 @@ export async function PATCH(req: Request) {
   const dryRun = !!body.dryRun;
 
   const { filePath, parsed } = readArticle(slug);
-  const nextData: any = { ...(parsed.data ?? {}) };
+  type Frontmatter = Record<string, unknown> & { series?: Record<string, unknown> | null };
+  const nextData: Frontmatter = { ...(parsed.data ?? {}) } as Frontmatter;
 
   // Apply simple fields
   if (typeof body.patch.title === "string") nextData.title = body.patch.title;
@@ -102,8 +103,12 @@ export async function PATCH(req: Request) {
       const seriesName = sp.name != null ? String(sp.name) : undefined;
       const desiredOrder = toNumberOrNull(sp.order);
 
+      const existingSeries =
+        nextData.series && typeof nextData.series === "object"
+          ? (nextData.series as Record<string, unknown>)
+          : {};
       nextData.series = {
-        ...(nextData.series ?? {}),
+        ...existingSeries,
         slug: seriesSlug,
         ...(seriesName ? { name: seriesName } : {}),
         ...(desiredOrder != null ? { order: desiredOrder } : {}),
@@ -112,7 +117,7 @@ export async function PATCH(req: Request) {
       if (desiredOrder != null) {
         // Load all items in this series (excluding current)
         const files = listArticleFiles();
-        const siblings: Array<{ slug: string; filePath: string; data: any; order: number | null; content: string }> = [];
+        const siblings: Array<{ slug: string; filePath: string; data: Frontmatter; order: number | null; content: string }> = [];
 
         for (const f of files) {
           const s = f.replace(/\.md$/, "");
@@ -120,8 +125,11 @@ export async function PATCH(req: Request) {
           const fp = path.join(ARTICLES_DIR, f);
           const raw = fs.readFileSync(fp, "utf8");
           const p = matter(raw);
-          const d: any = p.data ?? {};
-          const ser: any = d.series ?? null;
+          const d: Frontmatter = (p.data ?? {}) as Frontmatter;
+          const ser =
+            d.series && typeof d.series === "object"
+              ? (d.series as Record<string, unknown>)
+              : null;
           const sibSeriesSlug = ser?.slug != null ? String(ser.slug) : null;
           if (sibSeriesSlug !== seriesSlug) continue;
 
@@ -138,7 +146,10 @@ export async function PATCH(req: Request) {
           const currentOrder = sib.order!;
           const newOrder = currentOrder + 1;
 
-          const sibSeries = { ...(sib.data.series ?? {}) };
+          const sibSeries =
+            sib.data.series && typeof sib.data.series === "object"
+              ? { ...(sib.data.series as Record<string, unknown>) }
+              : {};
           sibSeries.order = newOrder;
           sib.data.series = sibSeries;
 

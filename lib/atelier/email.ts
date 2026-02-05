@@ -11,7 +11,7 @@ function fromAddress() {
   return "Carnet d’expérience <atelier@carnetdexperience.fr>";
 }
 
-function formatRecap(data: Record<string, any>) {
+function formatRecap(data: Record<string, unknown>) {
   const lines: string[] = [];
 
   for (const step of STEPS) {
@@ -26,7 +26,7 @@ function formatRecap(data: Record<string, any>) {
   return lines.join("\n").trim();
 }
 
-function formatRecapHtml(data: Record<string, any>) {
+function formatRecapHtml(data: Record<string, unknown>) {
   const blocks = STEPS.map((step) => {
     const items = step.fields
       .map((field) => {
@@ -104,7 +104,7 @@ export async function sendStepEmail(args: { to: string; step: number; recap: str
 export async function sendFinalEmails(args: {
   userTo: string;
   adminTo: string;
-  data: Record<string, any>;
+  data: Record<string, unknown>;
 }) {
   const recapText = formatRecap(args.data ?? {});
   const recapHtml = formatRecapHtml(args.data ?? {});

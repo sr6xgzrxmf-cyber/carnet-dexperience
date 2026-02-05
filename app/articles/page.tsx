@@ -1,9 +1,9 @@
 // app/articles/page.tsx
 import Link from "next/link";
 import Image from "next/image";
-import { unstable_noStore as noStore } from "next/cache";
-import { getAllArticles } from "@/lib/articles";
-import { featuredSeriesList } from "@/content/editorial";
+import { getAllArticles, type ArticleItem } from "@/lib/articles";
+import { featuredSeriesList, featuredSeriesSummaries } from "@/content/editorial";
+import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import type { Metadata } from "next";
 import ArticlesFilters from "./_components/ArticlesFilters";
 
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Articles et retours d’expérience de Laurent Guyonnet sur l’innovation, la pédagogie et le travail de terrain.",
 };
 
+export const revalidate = 300;
 
 type SearchParams = {
   tag?: string | string[];
@@ -28,7 +29,7 @@ type ArticleMeta = {
   cover?: string | null;
   source?: string;
   tags?: string[];
-  series?: { name?: string; slug?: string; order?: number };
+  series?: { name?: string; title?: string; slug?: string; order?: number };
 };
 
 function asArray(v: unknown): string[] {
@@ -50,57 +51,54 @@ function normalizeCoverSrc(cover: unknown): string | null {
   return s.startsWith("/") ? s : `/${s}`;
 }
 
-function getItemMeta(item: any): ArticleMeta {
-  const m = item?.meta ?? item ?? {};
+function getItemMeta(item: ArticleItem): ArticleMeta {
+  const m = item?.meta ?? {};
+  const rawDate = m?.date;
+  const date =
+    typeof rawDate === "string"
+      ? rawDate
+      : rawDate instanceof Date
+        ? rawDate.toISOString().slice(0, 10)
+        : typeof rawDate === "number"
+          ? new Date(rawDate).toISOString().slice(0, 10)
+          : rawDate != null
+            ? String(rawDate)
+            : "";
+  const rawSeries =
+    m?.series && typeof m.series === "object"
+      ? (m.series as { name?: unknown; title?: unknown; slug?: unknown; order?: unknown })
+      : undefined;
+  const seriesOrder =
+    typeof rawSeries?.order === "number"
+      ? rawSeries.order
+      : typeof rawSeries?.order === "string"
+        ? Number(rawSeries.order)
+        : undefined;
+  const series =
+    rawSeries && typeof rawSeries.slug === "string"
+      ? {
+          slug: rawSeries.slug,
+          name: typeof rawSeries.name === "string" ? rawSeries.name : undefined,
+          title: typeof rawSeries.title === "string" ? rawSeries.title : undefined,
+          order: Number.isFinite(seriesOrder) ? seriesOrder : undefined,
+        }
+      : undefined;
+  const rawCover =
+    m?.cover ??
+    (m as { image?: unknown }).image ??
+    (m as { hero?: unknown }).hero;
+  const cover = typeof rawCover === "string" ? rawCover : null;
+
   return {
-    slug: item?.slug ?? m?.slug ?? "",
+    slug: item?.slug ?? "",
     title: m?.title ?? "",
-    date: m?.date ?? "",
+    date,
     excerpt: m?.excerpt ?? "",
-    cover: m?.cover ?? m?.image ?? m?.hero ?? null,
+    cover,
     source: m?.source ?? "Carnet d’expérience",
-    tags: Array.isArray(m?.tags) ? m.tags : [],
-    series: m?.series ?? undefined,
+    tags: Array.isArray(m?.tags) ? m.tags.map(String) : [],
+    series,
   };
-}
-
-/* ---------- Publication gating (date <= now) ---------- */
-function parseDateSafe(input?: string): Date | null {
-  if (!input) return null;
-
-  const s = String(input).trim();
-  if (!s) return null;
-
-  // Support "YYYY-MM-DD" (force UTC to avoid timezone surprises)
-  if (/^\d{4}-\d{2}-\d{2}$/.test(s)) {
-    return new Date(`${s}T00:00:00.000Z`);
-  }
-
-  const d = new Date(s);
-  return isNaN(d.getTime()) ? null : d;
-}
-
-function isPublished(date: string | undefined, nowMs: number): boolean {
-  const d = parseDateSafe(date);
-  if (!d) return true; // no date => visible
-  return d.getTime() <= nowMs;
-}
-
-function startOfDayUTC(d: Date) {
-  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
-}
-
-function daysUntil(date: string | undefined, now: Date): number | null {
-  const d = parseDateSafe(date);
-  if (!d) return null;
-
-  const todayUTC = startOfDayUTC(now);
-  const targetUTC = startOfDayUTC(d);
-
-  const diffDays = Math.round(
-    (targetUTC - todayUTC) / (24 * 60 * 60 * 1000)
-  );
-  return diffDays;
 }
 
 function parisTodayISO(now: Date = new Date()): string {
@@ -143,7 +141,7 @@ function daysUntilParis(date: string | null | undefined, now: Date): number | nu
 
 /* ---------- Mosaic (5 bandes horizontales) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
-  const c = covers.slice(0, 5);
+  const c = covers.slice(0, 3);
   const count = c.length;
 
   if (!count) {
@@ -187,7 +185,6 @@ function hrefFor(nextTags: string[], showAllTags: boolean) {
 export default async function ArticlesHubPage(props: {
   searchParams?: Promise<SearchParams> | SearchParams;
 }) {
-  noStore();
   const sp =
     props.searchParams instanceof Promise
       ? await props.searchParams
@@ -200,7 +197,6 @@ export default async function ArticlesHubPage(props: {
 
   // ⚠️ Fix “hydration-ish” : on fige now une fois (évite toute divergence)
   const now = new Date();
-  const nowMs = now.getTime();
 
   // ✅ Show future-dated items only in dev or Vercel preview deployments
   const allowFuture =
@@ -217,19 +213,41 @@ export default async function ArticlesHubPage(props: {
   const resultsBase = allowFuture ? all : published;
 
   /* ---------- Séries (Par où commencer) ---------- */
-  const seriesCards = featuredSeriesList.map((s) => {
+  type SeriesCard = {
+    slug: string;
+    title: string;
+    description?: string;
+    summary?: string;
+    items: ArticleMeta[];
+    start?: ArticleMeta;
+    covers: string[];
+  };
+
+  const seriesCatalog = getAllSeriesCatalog();
+  const seriesBySlug = new Map(seriesCatalog.map((s) => [s.slug, s]));
+
+  const seriesCards: SeriesCard[] = featuredSeriesList.map((slug) => {
+    const meta = seriesBySlug.get(slug) ?? { slug, title: slug, description: "" };
     const items = published
-      .filter((a) => a.series?.slug === s.slug)
+      .filter((a) => a.series?.slug === slug)
       .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
 
-    const start =
-      items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
+    const start = items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
 
-    const covers = items
+    const lastItems = items.slice(-3);
+    const covers = lastItems
       .map((a) => normalizeCoverSrc(a.cover))
       .filter(Boolean) as string[];
 
-    return { ...s, items, start, covers };
+    return {
+      slug: meta.slug,
+      title: meta.title,
+      description: meta.description,
+      summary: featuredSeriesSummaries?.[slug]?.trim() || undefined,
+      items,
+      start,
+      covers,
+    };
   });
 
   /* ---------- Filtres & résultats ---------- */
@@ -285,7 +303,7 @@ export default async function ArticlesHubPage(props: {
           Rétrospectives
         </h2>
 
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
           {seriesCards.map((s) => {
             const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
 
@@ -319,23 +337,25 @@ export default async function ArticlesHubPage(props: {
                 )}
 
                 <div className="p-6">
-                  <div className="text-xs text-neutral-600 dark:text-neutral-400">
+                  <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                     Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
                   </div>
 
-                  <h3 className="mt-2 text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+                  <h3 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
                     {s.title}
                   </h3>
 
-                  <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-                    {s.description}
-                  </p>
+                  {(s.summary || s.description) ? (
+                    <p className="mt-3 text-[15px] leading-6 text-neutral-700 dark:text-neutral-300">
+                      {s.summary ?? s.description}
+                    </p>
+                  ) : null}
 
                   <div className="mt-5 flex flex-wrap items-center gap-3">
                     {startHref ? (
                       <Link
                         href={startHref}
-                        className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/60"
+                        className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
                       >
                         Commencer
                       </Link>
@@ -345,29 +365,36 @@ export default async function ArticlesHubPage(props: {
                       </span>
                     )}
 
-                    <div className="text-xs text-neutral-500">
-                      Départ :{" "}
-                      <span className="text-neutral-700 dark:text-neutral-300">
-                        {s.start?.title ?? "—"}
-                      </span>
-                    </div>
+                    
                   </div>
 
                   {s.items.length ? (
-                    <ul className="mt-5 space-y-2 text-sm">
-                      {s.items.slice(0, 5).map((a) => (
-                        <li
-                          key={a.slug}
-                          className="text-neutral-700 dark:text-neutral-300"
+                    <div className="mt-5 border-t border-neutral-200/70 dark:border-neutral-800/70 pt-4">
+                      <ul className="space-y-2 text-[12.5px] text-neutral-600 dark:text-neutral-400">
+                        {s.items.slice(0, 3).map((a) => (
+                          <li
+                            key={a.slug}
+                            className="flex items-baseline gap-2"
+                          >
+                            <span className="w-6 shrink-0 text-neutral-400">
+                              {(a.series?.order ?? 0).toString().padStart(2, "0")}
+                            </span>
+                            <span className="text-neutral-700 dark:text-neutral-300">
+                              {a.title}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="mt-3 text-xs text-neutral-500">
+                        <Link
+                          href={`/articles/archives?series=${s.slug}`}
+                          className="hover:underline"
                         >
-                          <span className="text-neutral-500">
-                            {(a.series?.order ?? 0).toString().padStart(2, "0")}
-                          </span>
-                          <span className="text-neutral-500"> – </span>
-                          <span>{a.title}</span>
-                        </li>
-                      ))}
-                    </ul>
+                          Voir toute la série →
+                        </Link>
+                      </div>
+                    </div>
                   ) : (
                     <p className="mt-5 text-sm text-neutral-500">
                       Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).

@@ -8,7 +8,7 @@ function install() {
 
   const wrap = (method: "error" | "warn") => {
     const orig = console[method].bind(console);
-    console[method] = (...args: any[]) => {
+    console[method] = (...args: unknown[]) => {
       try {
         const text = args.map((a) => (typeof a === "string" ? a : "")).join(" ");
         const isKeyWarn =

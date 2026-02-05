@@ -40,7 +40,7 @@ function fileExistsPublic(publicPath: string) {
   return fs.existsSync(abs);
 }
 
-function normalizeDate(v: any): string | null {
+function normalizeDate(v: unknown): string | null {
   if (v == null) return null;
   const s = String(v).slice(0, 10);
   return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
@@ -96,23 +96,24 @@ export async function GET() {
   const items = files.map((filename) => {
     const slug = filename.replace(/\.md$/, "");
     const raw = fs.readFileSync(path.join(ARTICLES_DIR, filename), "utf8");
-    const { data, content } = matter(raw);
+    const { data: rawData, content } = matter(raw);
+    const data = (rawData ?? {}) as Record<string, unknown>;
 
     const series = (data.series ?? null) as Series | null;
 
-    const date = normalizeDate((data as any).date);
-    const title = String((data as any).title ?? slug);
+    const date = normalizeDate(data.date);
+    const title = String(data.title ?? slug);
 
-    const cover = (data as any).cover != null ? String((data as any).cover) : null;
+    const cover = data.cover != null ? String(data.cover) : null;
     const coverExpected = guessCover(slug);
     const coverOk = cover ? fileExistsPublic(cover) : false;
     const coverExpectedOk = fileExistsPublic(coverExpected);
 
-    const tags = Array.isArray((data as any).tags)
-      ? (data as any).tags.map((t: any) => String(t))
+    const tags = Array.isArray(data.tags)
+      ? data.tags.map((t) => String(t))
       : [];
 
-    const excerpt = (data as any).excerpt != null ? String((data as any).excerpt) : null;
+    const excerpt = data.excerpt != null ? String(data.excerpt) : null;
 
     const linked = extractLinkedFiles(content ?? "");
     const linkedChecks = linked.map((href) => ({

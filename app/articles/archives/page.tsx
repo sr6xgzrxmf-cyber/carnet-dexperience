@@ -1,6 +1,6 @@
 // app/articles/archives/page.tsx
 import Link from "next/link";
-import { getAllArticles } from "@/lib/articles";
+import { getAllArticles, type ArticleItem } from "@/lib/articles";
 import { seriesColorClass } from "@/lib/series-ui";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 
@@ -13,15 +13,45 @@ type ArticleMeta = {
   series?: { name?: string; slug?: string; order?: number };
 };
 
-function getItemMeta(item: any): ArticleMeta {
-  const m = item?.meta ?? item ?? {};
+function getItemMeta(item: ArticleItem): ArticleMeta {
+  const m = item?.meta ?? {};
+  const rawDate = m?.date;
+  const date =
+    typeof rawDate === "string"
+      ? rawDate
+      : rawDate instanceof Date
+        ? rawDate.toISOString().slice(0, 10)
+        : typeof rawDate === "number"
+          ? new Date(rawDate).toISOString().slice(0, 10)
+          : rawDate != null
+            ? String(rawDate)
+            : "";
+  const rawSeries =
+    m?.series && typeof m.series === "object"
+      ? (m.series as { name?: unknown; slug?: unknown; order?: unknown })
+      : undefined;
+  const seriesOrder =
+    typeof rawSeries?.order === "number"
+      ? rawSeries.order
+      : typeof rawSeries?.order === "string"
+        ? Number(rawSeries.order)
+        : undefined;
+  const series =
+    rawSeries && typeof rawSeries.slug === "string"
+      ? {
+          slug: rawSeries.slug,
+          name: typeof rawSeries.name === "string" ? rawSeries.name : undefined,
+          order: Number.isFinite(seriesOrder) ? seriesOrder : undefined,
+        }
+      : undefined;
+
   return {
-    slug: item?.slug ?? m?.slug ?? "",
+    slug: item?.slug ?? "",
     title: m?.title ?? "",
-    date: m?.date ?? "",
+    date,
     excerpt: m?.excerpt ?? "",
     source: m?.source ?? "Carnet d'expérience",
-    series: m?.series ?? undefined,
+    series,
   };
 }
 

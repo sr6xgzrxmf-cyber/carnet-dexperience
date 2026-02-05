@@ -3,7 +3,6 @@ import path from "path";
 import yaml from "js-yaml";
 
 const argv = process.argv.slice(2);
-const DRY_RUN = argv.includes("--dry-run");
 const APPLY = argv.includes("--apply");
 
 // Default: dry-run if nothing provided

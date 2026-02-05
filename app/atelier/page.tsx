@@ -7,6 +7,8 @@ import {
   markdownToHtml,
   isPublishedDate,
   toTimestamp,
+  type ArticleItem,
+  type ArticleMeta,
 } from "@/lib/articles";
 
 export const metadata: Metadata = {
@@ -25,39 +27,39 @@ function anchorFromSlug(slug: string) {
   return `s-${slug}`;
 }
 
-function getSeries(meta: unknown): any {
-  return (meta as any)?.series ?? null;
+function getSeries(meta: ArticleMeta | undefined) {
+  return meta?.series ?? null;
 }
 
-function getSeriesSlug(meta: unknown): string | null {
+function getSeriesSlug(meta: ArticleMeta | undefined): string | null {
   const s = getSeries(meta);
   return typeof s?.slug === "string" ? s.slug : null;
 }
 
-function getSeriesOrder(meta: unknown): any {
+function getSeriesOrder(meta: ArticleMeta | undefined): number | string | null {
   return getSeries(meta)?.order ?? null;
 }
 
 
 /* ---------- Interludes (order décimal) ---------- */
-function toNumber(v: any): number {
+function toNumber(v: unknown): number {
   if (typeof v === "number") return v;
   if (typeof v === "string") return Number(v);
   return NaN;
 }
 
-function isInterlude(order: any) {
+function isInterlude(order: unknown) {
   const n = toNumber(order);
   return Number.isFinite(n) && !Number.isInteger(n);
 }
 
-function orderLabel(order: any) {
+function orderLabel(order: unknown) {
   const n = toNumber(order);
   if (!Number.isFinite(n)) return "";
   return Number.isInteger(n) ? String(n).padStart(2, "0") : "↳";
 }
 
-function orderValue(order: any) {
+function orderValue(order: unknown) {
   const n = toNumber(order);
   return Number.isFinite(n) ? n : 9999;
 }
@@ -67,7 +69,7 @@ function startOfDayUTC(d: Date) {
   return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
 }
 
-function daysUntil(date: any): number | null {
+function daysUntil(date: unknown): number | null {
   const ts = toTimestamp(date);
   if (!ts) return null;
 
@@ -75,42 +77,6 @@ function daysUntil(date: any): number | null {
   const targetUTC = startOfDayUTC(new Date(ts));
 
   return Math.round((targetUTC - todayUTC) / (24 * 60 * 60 * 1000));
-}
-
-/* (Optionnel) si tu veux encore insérer un bloc "outil" sans passer par un interlude-article */
-function ToolBox() {
-  return (
-    <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-      <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-        Outil — La fiche de clarification
-      </div>
-
-      <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-        Une fiche courte pour passer du flou à une prochaine action : faits,
-        tension, décision, puis message à envoyer. Zéro blabla, que du praticable.
-      </p>
-
-      <div className="mt-5 flex flex-wrap items-center gap-3">
-        <Link
-          href="/downloads/fiche-atelier-de-posture.pdf"
-          className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/50"
-        >
-          Télécharger le PDF
-        </Link>
-
-        <Link
-          href="/atelier/fiche"
-          className="text-sm text-neutral-700 underline underline-offset-4 dark:text-neutral-300"
-        >
-          Répondre en ligne (et recevoir ton récap)
-        </Link>
-
-        <span className="text-xs text-neutral-500">
-          Discret, utile, sans inscription forcée.
-        </span>
-      </div>
-    </section>
-  );
 }
 
 export default async function AtelierPage() {
@@ -128,7 +94,7 @@ export default async function AtelierPage() {
     );
 
   const rendered = await Promise.all(
-    series.map(async (it) => ({
+    series.map(async (it: ArticleItem) => ({
       slug: it.slug,
       meta: it.meta,
       anchor: anchorFromSlug(it.slug),

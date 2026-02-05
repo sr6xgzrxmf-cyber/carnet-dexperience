@@ -35,43 +35,20 @@ function isLocalHost() {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
 
-function parisTodayISO(now: Date = new Date()): string {
-  // YYYY-MM-DD en Europe/Paris
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Paris",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
-}
+type SeriesPatch = {
+  slug: string;
+  name?: string | null;
+  order?: number | null;
+};
 
-function normalizeISODate(input?: string | null): string | null {
-  if (!input) return null;
-  const s = String(input).trim();
-  if (!s) return null;
-  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
-}
-
-function isPublishedParis(date: string | null | undefined, now: Date): boolean {
-  const d = normalizeISODate(date);
-  if (!d) return true; // pas de date => visible
-  return d <= parisTodayISO(now);
-}
-
-function daysUntilParis(date: string | null | undefined, now: Date): number | null {
-  const d = normalizeISODate(date);
-  if (!d) return null;
-
-  const today = parisTodayISO(now);
-
-  // Diff en jours sur base YYYY-MM-DD -> Date UTC "neutre" (uniquement pour diff jours, pas pour publication)
-  const toUTC = (iso: string) => {
-    const [y, m, dd] = iso.split("-").map(Number);
-    return Date.UTC(y, m - 1, dd);
-  };
-
-  return Math.round((toUTC(d) - toUTC(today)) / (24 * 60 * 60 * 1000));
-}
+type ArticlePatch = {
+  title: string;
+  date: string | null;
+  excerpt: string | null;
+  cover: string | null;
+  tags: string[] | null;
+  series: SeriesPatch | null;
+};
 
 function Modal({
   open,
@@ -241,7 +218,7 @@ export default function CalendrierArticlesPage() {
       .map((s) => s.trim())
       .filter(Boolean);
 
-    const patch: any = {
+    const patch: ArticlePatch = {
       title: fTitle.trim(),
       date: fDate.trim() ? fDate.trim() : null,
       excerpt: fExcerpt.trim() ? fExcerpt.trim() : null,
@@ -473,7 +450,14 @@ export default function CalendrierArticlesPage() {
           <div style={{ display: "grid", gap: 10, gridTemplateColumns: "1fr 1fr" }}>
             <div style={{ display: "grid", gap: 6 }}>
               <label style={{ fontWeight: 600 }}>Série</label>
-              <select value={fSeriesSlug} onChange={(e) => setFSeriesSlug(e.target.value as any)} style={{ padding: 10, borderRadius: 10, border: "1px solid rgba(0,0,0,0.18)" }}>
+              <select
+                value={fSeriesSlug}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setFSeriesSlug(value === "NONE" ? "NONE" : value);
+                }}
+                style={{ padding: 10, borderRadius: 10, border: "1px solid rgba(0,0,0,0.18)" }}
+              >
                 <option value="NONE">Hors série</option>
                 {legend.series.map((s) => (
                   <option key={s.slug} value={s.slug}>

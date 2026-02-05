@@ -29,6 +29,7 @@ export type SeriesCatalogItem = {
   title: string;
   color: SeriesColor;
   status?: "active" | "paused" | "archived";
+  description?: string;
 };
 
 const seriesDirectory = path.join(process.cwd(), "content", "series");
@@ -81,6 +82,7 @@ export function getAllSeriesCatalog(): SeriesCatalogItem[] {
       title: yaml?.title ?? slug, // Fallback au slug si pas de YAML
       color: SERIES_COLORS.includes(color) ? color : "slate",
       status: yaml?.status ?? "active",
+      description: yaml?.description,
     });
   }
 

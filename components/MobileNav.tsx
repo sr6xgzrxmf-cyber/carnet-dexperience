@@ -16,6 +16,7 @@ export default function MobileNav({ items }: { items: Item[] }) {
 
   // évite les soucis SSR/hydration : on ne portal qu'après montage
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 

@@ -66,6 +66,7 @@ export default function BadgePage() {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return;
       const parsed = JSON.parse(raw) as Partial<BadgeState>;
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setState((prev) => ({
         utm_source: parsed.utm_source ?? prev.utm_source,
         utm_medium: parsed.utm_medium ?? prev.utm_medium,

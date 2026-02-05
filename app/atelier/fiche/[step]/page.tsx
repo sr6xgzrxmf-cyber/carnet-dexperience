@@ -61,7 +61,7 @@ export default async function StepPage({
 
           return (
             <label
-              key={f.name ?? f.id ?? idx}
+              key={f.name || String(idx)}
               className="block text-sm text-neutral-700 dark:text-neutral-300"
             >
               {f.label}

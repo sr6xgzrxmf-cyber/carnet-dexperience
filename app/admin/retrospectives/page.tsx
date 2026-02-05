@@ -2,7 +2,17 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-type Payload = { featuredSeriesList: string[] };
+type SeriesItem = {
+  slug: string;
+  title: string;
+  description?: string;
+};
+
+type Payload = {
+  featuredSeriesList: string[];
+  featuredSeriesSummaries?: Record<string, string>;
+  availableSeries: SeriesItem[];
+};
 
 function isLocalHost() {
   if (typeof window === "undefined") return true;
@@ -15,6 +25,8 @@ function isLocalHost() {
 export default function AdminRetrospectivesPage() {
   const [loading, setLoading] = useState(true);
   const [list, setList] = useState<string[]>([]);
+  const [available, setAvailable] = useState<SeriesItem[]>([]);
+  const [summaries, setSummaries] = useState<Record<string, string>>({});
   const [saving, setSaving] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
@@ -32,6 +44,12 @@ export default function AdminRetrospectivesPage() {
         }
         const data = (await r.json()) as Payload;
         setList(Array.isArray(data?.featuredSeriesList) ? data.featuredSeriesList : []);
+        setAvailable(Array.isArray(data?.availableSeries) ? data.availableSeries : []);
+        setSummaries(
+          data?.featuredSeriesSummaries && typeof data.featuredSeriesSummaries === "object"
+            ? data.featuredSeriesSummaries
+            : {}
+        );
       } finally {
         setLoading(false);
       }
@@ -70,18 +88,29 @@ export default function AdminRetrospectivesPage() {
       const r = await fetch("/api/admin/retrospectives", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ featuredSeriesList: list }),
+        body: JSON.stringify({
+          featuredSeriesList: list,
+          featuredSeriesSummaries: summaries,
+        }),
       });
       const data = await r.json();
       if (!r.ok) throw new Error(data?.error || "Erreur sauvegarde");
       setList(data.featuredSeriesList ?? list);
+      setSummaries(
+        data?.featuredSeriesSummaries && typeof data.featuredSeriesSummaries === "object"
+          ? data.featuredSeriesSummaries
+          : summaries
+      );
       setMsg("✅ Sauvegardé");
-    } catch (e: any) {
-      setMsg(`❌ ${e?.message || "Erreur"}`);
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : "Erreur";
+      setMsg(`❌ ${msg}`);
     } finally {
       setSaving(false);
     }
   }
+
+  const availableHidden = available.filter((s) => !list.includes(s.slug));
 
   return (
     <main style={{ padding: 24, maxWidth: 900, margin: "0 auto", fontFamily: "system-ui" }}>
@@ -126,9 +155,24 @@ export default function AdminRetrospectivesPage() {
                 border: "1px solid rgba(0,0,0,0.12)",
               }}
             >
-              <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-                <span style={{ opacity: 0.55, width: 24, textAlign: "right" }}>{i + 1}</span>
-                <code style={{ fontWeight: 700 }}>{slug}</code>
+              <div style={{ display: "grid", gap: 6 }}>
+                <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+                  <span style={{ opacity: 0.55, width: 24, textAlign: "right" }}>{i + 1}</span>
+                  <code style={{ fontWeight: 700 }}>{slug}</code>
+                </div>
+                <input
+                  value={summaries[slug] ?? ""}
+                  onChange={(e) =>
+                    setSummaries((prev) => ({ ...prev, [slug]: e.target.value }))
+                  }
+                  placeholder="Résumé court (affiché sur /articles)"
+                  style={{
+                    padding: "8px 10px",
+                    borderRadius: 10,
+                    border: "1px solid rgba(0,0,0,0.18)",
+                    fontSize: 12,
+                  }}
+                />
               </div>
 
               <div style={{ display: "flex", gap: 8 }}>
@@ -138,6 +182,54 @@ export default function AdminRetrospectivesPage() {
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {!loading && (
+        <div style={{ marginTop: 24 }}>
+          <div style={{ fontWeight: 800, marginBottom: 8 }}>
+            Disponibles (non visibles) — {availableHidden.length}
+          </div>
+          {availableHidden.length === 0 ? (
+            <div style={{ opacity: 0.7 }}>Aucune série disponible hors de la sélection.</div>
+          ) : (
+            <div style={{ display: "grid", gap: 8 }}>
+              {availableHidden.map((s) => (
+                <div
+                  key={s.slug}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr auto",
+                    alignItems: "center",
+                    gap: 10,
+                    padding: 12,
+                    borderRadius: 12,
+                    border: "1px solid rgba(0,0,0,0.12)",
+                    background: "rgba(0,0,0,0.02)",
+                  }}
+                >
+                  <div style={{ display: "grid", gap: 4 }}>
+                    <code style={{ fontWeight: 700 }}>{s.slug}</code>
+                    <div style={{ fontSize: 13, opacity: 0.8 }}>{s.title}</div>
+                    {s.description ? (
+                      <div style={{ fontSize: 12, opacity: 0.7 }}>{s.description}</div>
+                    ) : null}
+                  </div>
+                  <button
+                    onClick={() => {
+                      setList((prev) => [...prev, s.slug]);
+                      if (!summaries[s.slug] && s.description) {
+                        setSummaries((prev) => ({ ...prev, [s.slug]: s.description ?? "" }));
+                      }
+                    }}
+                    style={miniBtn()}
+                  >
+                    Ajouter
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </main>

@@ -9,11 +9,12 @@ const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
 export type ArticleMeta = {
   title: string;
-  date?: any; // peut être string OU Date selon le YAML parser
+  date?: string | number | Date | { date?: unknown; value?: unknown };
   tags?: string[];
   cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
   excerpt?: string;
+  series?: { name?: string; title?: string; slug?: string; order?: number | string };
 };
 
 export type ArticleItem = {
@@ -30,7 +31,7 @@ export type ArticleItem = {
  * NOTE : ce timestamp sert surtout au tri. La publication est gérée par isPublishedDate()
  *        en Europe/Paris (Option C / cas 1).
  */
-export function toTimestamp(input: any): number {
+export function toTimestamp(input: unknown): number {
   if (!input) return 0;
 
   if (input instanceof Date) {
@@ -49,8 +50,9 @@ export function toTimestamp(input: any): number {
   }
 
   if (typeof input === "object") {
-    if (typeof input.date === "string") return toTimestamp(input.date);
-    if (typeof input.value === "string") return toTimestamp(input.value);
+    const obj = input as { date?: unknown; value?: unknown };
+    if (typeof obj.date === "string") return toTimestamp(obj.date);
+    if (typeof obj.value === "string") return toTimestamp(obj.value);
   }
 
   return 0;
@@ -72,7 +74,7 @@ function parisTodayISO(now: Date = new Date()): string {
   }).format(now);
 }
 
-function toParisISODate(input: any): string | null {
+function toParisISODate(input: unknown): string | null {
   if (!input) return null;
 
   if (input instanceof Date) {
@@ -98,8 +100,9 @@ function toParisISODate(input: any): string | null {
   }
 
   if (typeof input === "object") {
-    if (typeof input.date === "string") return toParisISODate(input.date);
-    if (typeof input.value === "string") return toParisISODate(input.value);
+    const obj = input as { date?: unknown; value?: unknown };
+    if (typeof obj.date === "string") return toParisISODate(obj.date);
+    if (typeof obj.value === "string") return toParisISODate(obj.value);
   }
 
   return null;
@@ -110,7 +113,7 @@ function toParisISODate(input: any): string | null {
  * - pas de date => publié
  * - date (YYYY-MM-DD) <= aujourd’hui Europe/Paris => publié
  */
-export function isPublishedDate(input: any, now: Date = new Date()): boolean {
+export function isPublishedDate(input: unknown, now: Date = new Date()): boolean {
   const d = toParisISODate(input);
   if (!d) return true;
   return d <= parisTodayISO(now);

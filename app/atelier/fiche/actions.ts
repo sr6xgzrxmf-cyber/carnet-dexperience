@@ -2,6 +2,7 @@
 
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import { STEPS, TOTAL_STEPS } from "@/lib/atelier/steps";
 import { generateCode6, hashCode } from "@/lib/atelier/code";
@@ -91,11 +92,13 @@ export async function submitStep(step: number, formData: FormData) {
   }
 
   const nextStep = Math.min(step + 1, TOTAL_STEPS);
+  const prevData = (sub.data ?? {}) as Prisma.JsonObject;
+  const nextData: Prisma.InputJsonValue = { ...prevData, ...patch };
 
   const updated = await prisma.submission.update({
     where: { id },
     data: {
-      data: { ...(sub.data as any), ...patch },
+      data: nextData,
       currentStep: nextStep,
     },
   });
@@ -108,7 +111,7 @@ export async function submitStep(step: number, formData: FormData) {
     await sendFinalEmails({
       userTo: updated.email,
       adminTo,
-      data: (updated.data ?? {}) as any,
+      data: (updated.data ?? {}) as Record<string, unknown>,
     });
 
     redirect("/atelier/fiche/fin");

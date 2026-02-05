@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ContactButton from "@/components/ContactButton";
 
 export default function HomePage() {
@@ -10,7 +11,7 @@ export default function HomePage() {
           {/* TEXTE ET BOUTONS */}
           <div className="space-y-5 text-center md:text-left">
             <h1 className="text-4xl font-semibold tracking-tight">
-              Carnet d'expérience
+              Carnet d’expérience
             </h1>
 
             <div className="max-w-xl space-y-3 mx-auto md:mx-0">
@@ -58,10 +59,13 @@ export default function HomePage() {
           <div className="flex justify-center md:justify-end md:-mt-24">
             <div className="w-full max-w-[210px]">
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
-                <img
+                <Image
                   src="/images/laurent-portrait.png"
                   alt="Laurent Guyonnet"
-                  className="h-full w-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 210px"
+                  className="object-cover object-top"
+                  priority
                 />
               </div>
               <p className="mt-2 text-center text-[11px] text-neutral-500"></p>
@@ -77,15 +81,15 @@ export default function HomePage() {
             <h2 className="text-xl font-semibold">Bienvenue</h2>
 
             <p className="text-neutral-800 dark:text-neutral-200">
-              <strong>Carnet d'expérience</strong> est un espace personnel et professionnel
-              tenu par <strong>Laurent Guyonnet</strong>. Il prolonge mon CV en donnant accès à ce qui n'y tient
+              <strong>Carnet d’expérience</strong> est un espace personnel et professionnel
+              tenu par <strong>Laurent Guyonnet</strong>. Il prolonge mon CV en donnant accès à ce qui n’y tient
               pas&nbsp;: le contexte, les décisions, les méthodes, les doutes et
               les apprentissages qui accompagnent toute trajectoire réelle.
             </p>
 
             <p className="text-neutral-800 dark:text-neutral-200">
-              J'y documente mon parcours, mes expériences et mes réflexions sur la
-              formation, le management, l'adoption des outils et la manière dont
+              J’y documente mon parcours, mes expériences et mes réflexions sur la
+              formation, le management, l’adoption des outils et la manière dont
               les organisations fonctionnent — ou dysfonctionnent — au quotidien.
             </p>
 
@@ -107,13 +111,13 @@ export default function HomePage() {
             <h2 className="text-xl font-semibold">Un fil rouge</h2>
             <p className="text-neutral-800 dark:text-neutral-200">
               Depuis plus de quinze ans, mon travail consiste à transformer des
-              intentions en réalité. Qu'il s'agisse de lancer un produit, de
-              former des équipes, de déployer une méthode ou d'accompagner des
+              intentions en réalité. Qu’il s’agisse de lancer un produit, de
+              former des équipes, de déployer une méthode ou d’accompagner des
               personnes, la question reste la même&nbsp;: comment faire passer une
               vision du papier au terrain&nbsp;?
             </p>
             <p className="text-neutral-800 dark:text-neutral-200">
-              Ce carnet est né de ce besoin de garder une trace de ce que j'ai vu,
+              Ce carnet est né de ce besoin de garder une trace de ce que j’ai vu,
               compris et expérimenté en chemin.
             </p>
           </div>
@@ -132,7 +136,7 @@ export default function HomePage() {
                   Des articles
                 </strong>{" "}
                 — issus du terrain, de la formation, du management et de
-                l'expérience client.
+                l’expérience client.
               </li>
               <li>
                 <strong className="text-neutral-900 dark:text-neutral-100">
@@ -148,11 +152,11 @@ export default function HomePage() {
                 <strong className="text-neutral-900 dark:text-neutral-100">
                   Une méthode de travail
                 </strong>{" "}
-                — fondée sur l'exigence, la simplicité et la mesure de l'impact.
+                — fondée sur l’exigence, la simplicité et la mesure de l’impact.
               </li>
             </ul>
             <p className="text-neutral-800 dark:text-neutral-200">
-              Rien n'est ici théorique. Tout est ancré dans des situations vécues,
+              Rien n’est ici théorique. Tout est ancré dans des situations vécues,
               des collectifs réels et des décisions prises dans des contextes
               concrets.
             </p>
@@ -181,7 +185,7 @@ export default function HomePage() {
           <div className="space-y-3 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30">
             <h2 className="text-xl font-semibold">Et après</h2>
             <p className="text-neutral-800 dark:text-neutral-200">
-              Vous pouvez lire mon parcours, parcourir les articles, découvrir l’accompagnement, ou m'écrire
+              Vous pouvez lire mon parcours, parcourir les articles, découvrir l’accompagnement, ou m’écrire
               si vous souhaitez échanger, questionner ou travailler ensemble.
             </p>
 
@@ -217,7 +221,7 @@ export default function HomePage() {
           </div>
 
           <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
-            <p>© {new Date().getFullYear()} Carnet d'expérience — Tous droits réservés.</p>
+            <p>© {new Date().getFullYear()} Carnet d’expérience — Tous droits réservés.</p>
           </footer>
         </div>
       </section>

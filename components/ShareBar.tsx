@@ -13,14 +13,10 @@ export default function ShareBar({ title, className }: ShareBarProps) {
   const [canNativeShare, setCanNativeShare] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     setCanNativeShare(typeof navigator !== "undefined" && "share" in navigator);
   }, []);
-
-  const url = useMemo(() => {
-    if (!mounted) return "";
-    return window.location.href;
-  }, [mounted]);
 
   async function copyLink() {
     const link = window.location.href;
@@ -44,7 +40,11 @@ export default function ShareBar({ title, className }: ShareBarProps) {
   async function nativeShare() {
     if (!canNativeShare) return;
     try {
-      await (navigator as any).share({ title, url: window.location.href });
+      const nav = navigator as Navigator & {
+        share?: (data: ShareData) => Promise<void>;
+      };
+      if (!nav.share) return;
+      await nav.share({ title, url: window.location.href });
     } catch {
       // user cancelled → no-op
     }

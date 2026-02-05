@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllParcours } from "@/lib/parcours";
 
 
@@ -46,12 +47,14 @@ export default function ParcoursPage() {
         {/* Colonne A — Logo */}
         <div className="relative flex justify-center">
           {item.meta.logo ? (
-<img
-  src={item.meta.logo}
-  alt={item.meta.company ?? "Logo"}
-  className="absolute top-[0.9em] h-16 w-16 -translate-y-1/2 object-contain opacity-80 dark:opacity-70"
-  loading="lazy"
-/>
+            <Image
+              src={item.meta.logo}
+              alt={item.meta.company ?? "Logo"}
+              width={64}
+              height={64}
+              className="absolute top-[0.9em] h-16 w-16 -translate-y-1/2 object-contain opacity-80 dark:opacity-70"
+              unoptimized
+            />
           ) : (
             <div className="h-16 w-16" />
           )}

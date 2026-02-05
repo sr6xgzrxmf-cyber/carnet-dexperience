@@ -29,15 +29,19 @@ export function getAllArticlesMetaForSeries(): ArticleMetaForSeries[] {
   for (const file of files) {
     const fullPath = path.join(articlesDirectory, file);
     const raw = fs.readFileSync(fullPath, "utf8");
-    const { data } = matter(raw);
+    const { data: rawData } = matter(raw);
+    const data = (rawData ?? {}) as Record<string, unknown>;
 
     const slug = file.replace(/\.md$/, "");
     const title = typeof data.title === "string" ? data.title : slug;
 
-    const seriesData = data.series as any;
+    const seriesData =
+      data.series && typeof data.series === "object"
+        ? (data.series as Record<string, unknown>)
+        : null;
     let series: ArticleSeries | undefined;
 
-    if (seriesData && typeof seriesData === "object") {
+    if (seriesData) {
       const s = typeof seriesData.slug === "string" ? seriesData.slug : undefined;
       const o = safeNumber(seriesData.order);
       if (s && o !== undefined) series = { slug: s, order: o };

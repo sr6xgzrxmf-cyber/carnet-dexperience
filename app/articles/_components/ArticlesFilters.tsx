@@ -25,6 +25,7 @@ export default function ArticlesFilters({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const searchParamsString = searchParams.toString();
 
   // ✅ Restore scroll after URL/searchParams changes (Safari/prod-proof)
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function ArticlesFilters({
     requestAnimationFrame(() => {
       window.scrollTo({ top: y, left: 0, behavior: "auto" });
     });
-  }, [pathname, searchParams.toString()]);
+  }, [pathname, searchParamsString]);
 
   function go(nextTags: string[], nextShowAll: boolean) {
     // ✅ Save current scroll position BEFORE navigation

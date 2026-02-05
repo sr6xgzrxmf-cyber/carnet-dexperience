@@ -1,4 +1,4 @@
-export function toTimestamp(input: any): number {
+export function toTimestamp(input: unknown): number {
   if (!input) return 0;
 
   if (input instanceof Date) {
@@ -26,12 +26,23 @@ export function toTimestamp(input: any): number {
   }
 
   if (typeof input === "object") {
-    if (typeof input.date === "string") return toTimestamp(input.date);
-    if (typeof input.value === "string") return toTimestamp(input.value);
+    const obj = input as {
+      date?: unknown;
+      value?: unknown;
+      year?: unknown;
+      y?: unknown;
+      month?: unknown;
+      mo?: unknown;
+      m?: unknown;
+      day?: unknown;
+      d?: unknown;
+    };
+    if (typeof obj.date === "string") return toTimestamp(obj.date);
+    if (typeof obj.value === "string") return toTimestamp(obj.value);
 
-    const y = input.year ?? input.y;
-    const mo = input.month ?? input.mo ?? input.m;
-    const d = input.day ?? input.d;
+    const y = obj.year ?? obj.y;
+    const mo = obj.month ?? obj.mo ?? obj.m;
+    const d = obj.day ?? obj.d;
 
     if (Number.isFinite(y) && Number.isFinite(mo) && Number.isFinite(d)) {
       return Date.UTC(Number(y), Number(mo) - 1, Number(d));
@@ -41,7 +52,7 @@ export function toTimestamp(input: any): number {
   return 0;
 }
 
-export function sortByDateDesc<T extends { date?: any }>(items: T[]): T[] {
+export function sortByDateDesc<T extends { date?: unknown }>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     return toTimestamp(b.date) - toTimestamp(a.date);
   });

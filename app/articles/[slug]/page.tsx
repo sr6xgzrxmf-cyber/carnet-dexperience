@@ -7,6 +7,7 @@ import {
   getArticleBySlug,
   isPublishedDate,
   markdownToHtml,
+  type ArticleItem,
 } from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
@@ -17,7 +18,7 @@ export const revalidate = 300;
 export async function generateStaticParams() {
   // ✅ Only pre-render published articles
   const all = await getAllArticles({ includeFuture: true });
-  return (all ?? []).map((it: any) => ({ slug: it.slug }));
+  return (all ?? []).map((it) => ({ slug: it.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
@@ -30,20 +31,33 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-function formatDate(date?: string) {
-  return date ?? "";
+function formatDate(
+  date?: string | number | Date | { date?: unknown; value?: unknown }
+) {
+  if (!date) return "";
+  if (typeof date === "string") return date;
+  if (typeof date === "number") return new Date(date).toISOString().slice(0, 10);
+  if (date instanceof Date) return date.toISOString().slice(0, 10);
+  if (typeof date === "object") {
+    const obj = date as { date?: unknown; value?: unknown };
+    if (typeof obj.date === "string") return obj.date;
+    if (typeof obj.value === "string") return obj.value;
+  }
+  return "";
 }
 
-function getMeta(item: any) {
-  return item?.meta ?? item ?? {};
-}
-
-function getSeriesInfo(item: any): { slug?: string; title?: string; order?: number } {
-  const m = getMeta(item);
-  const s = m?.series;
+function getSeriesInfo(item: ArticleItem): { slug?: string; title?: string; order?: number } {
+  const s = item?.meta?.series as
+    | { slug?: unknown; title?: unknown; name?: unknown; order?: unknown }
+    | undefined;
   return {
     slug: typeof s?.slug === "string" ? s.slug : undefined,
-    title: typeof s?.title === "string" ? s.title : undefined,
+    title:
+      typeof s?.title === "string"
+        ? s.title
+        : typeof s?.name === "string"
+          ? s.name
+          : undefined,
     order:
       typeof s?.order === "number"
         ? s.order
@@ -53,14 +67,14 @@ function getSeriesInfo(item: any): { slug?: string; title?: string; order?: numb
   };
 }
 
-function asDateValue(d: any): number {
+function asDateValue(d: unknown): number {
   if (typeof d !== "string") return 0;
   const t = Date.parse(d);
   return Number.isFinite(t) ? t : 0;
 }
 
-function getSlug(item: any): string {
-  return item?.slug ?? getMeta(item)?.slug ?? "";
+function getSlug(item: ArticleItem): string {
+  return item?.slug ?? "";
 }
 
 export default async function ArticleDetailPage({
@@ -71,7 +85,7 @@ export default async function ArticleDetailPage({
   const { slug } = await params;
 
   const item = getArticleBySlug(slug, { includeFuture: true });
-if (!item) return notFound();
+  if (!item) return notFound();
   const isFuture = !isPublishedDate(item.meta?.date, new Date());
 
   const contentHtml = await markdownToHtml(item.content);
@@ -112,22 +126,22 @@ if (!item) return notFound();
   const all = await getAllArticles({ includeFuture: true });
   const allItems = all ?? [];
 
-  const current = allItems.find((x: any) => getSlug(x) === slug) ?? item;
+  const current = allItems.find((x) => getSlug(x) === slug) ?? item;
   const currentSeries = getSeriesInfo(current);
 
-  let prev: any = null;
-  let next: any = null;
+  let prev: ArticleItem | null = null;
+  let next: ArticleItem | null = null;
 
   // A) Série
   if (currentSeries.slug && Number.isFinite(currentSeries.order)) {
     const seriesItems = allItems
-      .filter((x: any) => getSeriesInfo(x).slug === currentSeries.slug)
-      .filter((x: any) => Number.isFinite(getSeriesInfo(x).order))
+      .filter((x) => getSeriesInfo(x).slug === currentSeries.slug)
+      .filter((x) => Number.isFinite(getSeriesInfo(x).order))
       .sort(
-        (a: any, b: any) => getSeriesInfo(a).order! - getSeriesInfo(b).order!
+        (a, b) => getSeriesInfo(a).order! - getSeriesInfo(b).order!
       );
 
-    const idx = seriesItems.findIndex((x: any) => getSlug(x) === slug);
+    const idx = seriesItems.findIndex((x) => getSlug(x) === slug);
     prev = idx > 0 ? seriesItems[idx - 1] : null;
     next = idx >= 0 && idx < seriesItems.length - 1 ? seriesItems[idx + 1] : null;
   }
@@ -135,10 +149,11 @@ if (!item) return notFound();
   // B) Fallback chrono si pas de série exploitable
   if (!prev && !next) {
     const sorted = [...allItems].sort(
-      (a: any, b: any) =>
-        asDateValue(getMeta(b)?.date) - asDateValue(getMeta(a)?.date)
+      (a, b) =>
+        asDateValue(a.meta?.date) -
+        asDateValue(b.meta?.date)
     );
-    const idx = sorted.findIndex((x: any) => getSlug(x) === slug);
+    const idx = sorted.findIndex((x) => getSlug(x) === slug);
     prev = idx > 0 ? sorted[idx - 1] : null;
     next = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
   }

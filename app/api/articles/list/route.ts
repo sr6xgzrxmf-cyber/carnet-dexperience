@@ -6,10 +6,6 @@ import matter from "gray-matter";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
-const IS_LOCAL =
-  process.env.NODE_ENV !== "production" &&
-  !process.env.VERCEL;
-
 function isLocalRequest(req: NextRequest) {
   const host =
     (req.headers.get("x-forwarded-host") ||
@@ -43,7 +39,8 @@ export async function GET(req: NextRequest) {
   const items = files.map((filename) => {
     const slug = filename.replace(/\.md$/, "");
     const raw = fs.readFileSync(path.join(ARTICLES_DIR, filename), "utf8");
-    const { data } = matter(raw);
+    const { data: rawData } = matter(raw);
+    const data = (rawData ?? {}) as Record<string, unknown>;
 
     const series = (data.series ?? null) as Series | null;
 
@@ -53,7 +50,7 @@ export async function GET(req: NextRequest) {
       date: data.date ? String(data.date).slice(0, 10) : null,
       excerpt: data.excerpt ? String(data.excerpt) : null,
       cover: data.cover ? String(data.cover) : null,
-      tags: Array.isArray(data.tags) ? data.tags.map((t: any) => String(t)) : [],
+      tags: Array.isArray(data.tags) ? data.tags.map((t) => String(t)) : [],
       seriesName: series?.name ? String(series.name) : null,
       seriesSlug: series?.slug ? String(series.slug) : null,
       seriesOrder:
