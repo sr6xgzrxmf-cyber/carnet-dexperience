@@ -9,6 +9,7 @@ const items: Item[] = [
   { href: "/admin", label: "Accueil" },
   { href: "/admin/controle", label: "Contrôle éditorial" },
   { href: "/admin/series", label: "Séries" },
+  { href: "/admin/retrospectives", label: "Rétrospectives" },
   { href: "/admin/calendrier", label: "Calendrier" },
 ];
 

@@ -4,7 +4,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import DevKeyWarningTrace from "@/components/dev/DevKeyWarningTrace";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -154,9 +153,7 @@ export default function RootLayout({
 
         <SpeedInsights />
 
-      
-        {process.env.NODE_ENV !== "production" ? <DevKeyWarningTrace /> : null}
-</body>
+      </body>
     </html>
   );
 }
