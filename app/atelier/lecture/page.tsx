@@ -145,7 +145,9 @@ export default async function AtelierLecturePage() {
                   <li
                     key={it.slug}
                     className={[
-                      inter ? "pl-5 opacity-90" : "",
+                      inter
+                        ? "rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 px-3 py-2"
+                        : "",
                       isFuture ? "text-red-700 dark:text-red-400" : "",
                     ].join(" ")}
                   >
@@ -159,6 +161,11 @@ export default async function AtelierLecturePage() {
                       </span>{" "}
                       {it.meta?.title ?? it.slug}
                     </a>
+                    {inter ? (
+                      <span className="ml-2 inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-2 py-0.5 text-[11px] text-neutral-700 dark:text-neutral-300">
+                        Interlude
+                      </span>
+                    ) : null}
                   </li>
                 );
               })}
