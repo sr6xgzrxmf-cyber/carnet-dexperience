@@ -26,7 +26,7 @@ export default function ParcoursPage() {
         <p className="text-neutral-700 dark:text-neutral-300">
           Une timeline chronologique&nbsp;: expériences, rôles, contextes,
           apprentissages. <br />
-          Cliquez sur le titre du métier pour découvrir cette expérience en détail.
+          Clique sur un métier pour découvrir ce que j’ai fait dans cette expérience.
         </p>
       </header>
 
@@ -35,24 +35,24 @@ export default function ParcoursPage() {
   {/* Ligne globale, alignée au centre de la colonne "points" */}
   <div
     aria-hidden
-    className="absolute left-[100px] top-0 bottom-0 w-px bg-neutral-200 dark:bg-neutral-800"
+    className="absolute left-[100px] top-0 bottom-0 hidden w-px bg-neutral-200 dark:bg-neutral-800 md:block"
   />
 
-  <ol className="space-y-8 list-none">
+  <ol className="space-y-6 md:space-y-12 list-none">
     {items.map((item) => (
       <li
         key={item.slug}
-        className="grid grid-cols-[72px_24px_1fr] items-start gap-x-4"
+        className="group md:grid md:grid-cols-[72px_24px_1fr] md:items-start md:gap-x-4"
       >
         {/* Colonne A — Logo */}
-        <div className="relative flex justify-center">
+        <div className="relative hidden justify-center md:flex">
           {item.meta.logo ? (
             <Image
               src={item.meta.logo}
               alt={item.meta.company ?? "Logo"}
               width={64}
               height={64}
-              className="absolute top-[0.9em] h-16 w-16 -translate-y-1/2 object-contain opacity-80 dark:opacity-70"
+              className="absolute top-[0.9em] h-16 w-16 -translate-y-1/2 object-contain opacity-80 grayscale transition-transform duration-200 group-hover:grayscale-0 group-hover:scale-110 dark:opacity-70"
               unoptimized
             />
           ) : (
@@ -61,19 +61,46 @@ export default function ParcoursPage() {
         </div>
 
         {/* Colonne B — Point (plus de ligne locale) */}
-        <div className="relative flex justify-center">
+        <div className="relative hidden justify-center md:flex">
           <span className="mt-[0.9em] h-3 w-3 rounded-full border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950" />
         </div>
 
         {/* Colonne C — Contenu */}
-        <div className="space-y-2">
+        <Link
+          href={`/parcours/${item.slug}`}
+          className="group block rounded-2xl border border-neutral-200 bg-white/60 p-4 transition hover:border-neutral-300 hover:bg-white dark:border-neutral-800 dark:bg-neutral-950/30 dark:hover:bg-neutral-950/40 md:border-transparent md:bg-white/50 md:-m-4"
+        >
+          <div className="mb-1 flex items-center justify-between gap-3">
+            <span className="text-[11px] uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Expérience
+            </span>
+            <span className="text-[11px] text-neutral-500 dark:text-neutral-400">
+              Ouvrir →
+            </span>
+          </div>
+
+          {item.meta.logo ? (
+            <div className="mb-3 flex items-center gap-3 md:hidden">
+              <Image
+                src={item.meta.logo}
+                alt={item.meta.company ?? "Logo"}
+                width={44}
+                height={44}
+                className="h-11 w-11 object-contain opacity-85 grayscale transition-transform duration-200 group-hover:grayscale-0 group-hover:scale-110"
+                unoptimized
+              />
+              {item.meta.company ? (
+                <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                  {item.meta.company}
+                </span>
+              ) : null}
+            </div>
+          ) : null}
+
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <Link
-              href={`/parcours/${item.slug}`}
-              className="text-lg font-semibold hover:underline"
-            >
+            <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 group-hover:underline">
               {item.meta.title}
-            </Link>
+            </span>
 
             {item.meta.company || item.meta.location ? (
               <span className="text-sm italic text-neutral-600 dark:text-neutral-400">
@@ -88,19 +115,19 @@ export default function ParcoursPage() {
           </div>
 
           {item.meta.role ? (
-            <div className="text-sm text-neutral-600 dark:text-neutral-400">
+            <div className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
               {item.meta.role}
             </div>
           ) : null}
 
           {Array.isArray(item.meta.highlights) && item.meta.highlights.length > 0 ? (
-            <ul className="list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
               {item.meta.highlights.slice(0, 3).map((h) => (
                 <li key={h}>{h}</li>
               ))}
             </ul>
           ) : null}
-        </div>
+        </Link>
       </li>
     ))}
   </ol>
