@@ -1,18 +1,20 @@
 ---
-title: "Créer des cadres légers qui tiennent dans le réel"
-date: "2026-04-16"
-excerpt: "Un cadre n’a pas besoin d’être lourd pour être efficace. Il doit être lisible, ajustable et relié au terrain pour tenir dans la durée."
-cover: "/images/articles/creer-des-cadres-legers-qui-tiennent.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Créer des cadres légers qui tiennent dans le réel
+date: '2026-04-16'
+excerpt: >-
+  Un cadre n’a pas besoin d’être lourd pour être efficace. Il doit être lisible,
+  ajustable et relié au terrain pour tenir dans la durée.
+cover: /images/articles/creer-des-cadres-legers-qui-tiennent.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "organisation"
-  - "posture-professionnelle"
-  - "leadership"
+  - management
+  - organisation
+  - posture-professionnelle
+  - leadership
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 36
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 25
 ---
 ### Le mythe du cadre parfait
 

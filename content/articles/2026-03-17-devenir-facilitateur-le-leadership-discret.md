@@ -1,18 +1,21 @@
 ---
-title: "Devenir facilitateur : le leadership discret"
-date: "2026-03-17"
-excerpt: "Même sans titre officiel, il est possible d’occuper une posture centrale. Le rôle de facilitateur crée les conditions pour que le collectif avance — sans s’imposer."
-cover: "/images/articles/devenir-facilitateur-le-leadership-discret.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Devenir facilitateur : le leadership discret'
+date: '2026-03-17'
+excerpt: >-
+  Même sans titre officiel, il est possible d’occuper une posture centrale. Le
+  rôle de facilitateur crée les conditions pour que le collectif avance — sans
+  s’imposer.
+cover: /images/articles/devenir-facilitateur-le-leadership-discret.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "posture-professionnelle"
-  - "leadership"
-  - "organisation"
+  - management
+  - posture-professionnelle
+  - leadership
+  - organisation
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 27
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 17
 ---
 ### Quand le titre ne suffit plus à définir l’utilité
 

@@ -1,17 +1,19 @@
 ---
-title: "Quand ne pas écrire : choisir le bon canal"
-date: "2026-04-28"
-excerpt: "Quand la tension monte, écrire trop vite abîme souvent la relation. Parler d’abord, puis tracer par écrit, permet de désamorcer sans perdre le cadre."
-cover: "/images/articles/quand-ne-pas-ecrire-choisir-le-bon-canal.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Quand ne pas écrire : choisir le bon canal'
+date: '2026-04-28'
+excerpt: >-
+  Quand la tension monte, écrire trop vite abîme souvent la relation. Parler
+  d’abord, puis tracer par écrit, permet de désamorcer sans perdre le cadre.
+cover: /images/articles/quand-ne-pas-ecrire-choisir-le-bon-canal.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "communication"
-  - "posture-professionnelle"
-  - "management"
+  - communication
+  - posture-professionnelle
+  - management
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 39
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 27
 ---
 ### Le mail qu’on écrit trop vite
 

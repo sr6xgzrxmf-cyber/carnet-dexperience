@@ -1,16 +1,19 @@
 ---
-title: "Transformer un parcours en profil lisible"
-date: "2026-01-27"
-excerpt: "Karim n’est plus perdu. Il a nommé ses axes. Mais quand il parle de lui, quelque chose déraille encore. Trop long, trop flou, trop juste. Ce jour-là, il comprend que se rendre lisible n’est pas se vendre, mais respecter l’autre."
-cover: "/images/articles/transformer-un-parcours-en-profil-lisible.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Transformer un parcours en profil lisible
+date: '2026-01-27'
+excerpt: >-
+  Karim n’est plus perdu. Il a nommé ses axes. Mais quand il parle de lui,
+  quelque chose déraille encore. Trop long, trop flou, trop juste. Ce jour-là,
+  il comprend que se rendre lisible n’est pas se vendre, mais respecter l’autre.
+cover: /images/articles/transformer-un-parcours-en-profil-lisible.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "formation"
+  - management
+  - formation
 series:
-  slug: "atelier-de-posture"
-  order: 9
-  name: "Atelier de posture"
+  slug: atelier-de-posture
+  order: 5
+  name: Atelier de posture
 ---
 Après le document de développement, Karim va mieux. Il sait sur quoi il veut travailler. Il a nommé ses axes. Il a des preuves. Il a même commencé à prioriser. Intérieurement, quelque chose s’est posé. Mais dès qu’il doit en parler à quelqu’un d’autre, la tension revient.
 

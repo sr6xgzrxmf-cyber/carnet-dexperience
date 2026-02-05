@@ -1,17 +1,20 @@
 ---
-title: "Du chaos au clair : comment remonter une photo stratégique"
-date: "2026-02-24"
-excerpt: "Tout garder en trace est une force. Tout montrer est une erreur. Savoir remonter une photo claire en une minute est une compétence décisive face à une direction saturée."
-cover: "/images/articles/remonter-une-photo-strategique.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Du chaos au clair : comment remonter une photo stratégique'
+date: '2026-02-24'
+excerpt: >-
+  Tout garder en trace est une force. Tout montrer est une erreur. Savoir
+  remonter une photo claire en une minute est une compétence décisive face à une
+  direction saturée.
+cover: /images/articles/remonter-une-photo-strategique.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "pilotage"
-  - "posture-professionnelle"
+  - management
+  - pilotage
+  - posture-professionnelle
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 19
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 11
 ---
 ### Quand l’activité déborde, la lisibilité disparaît
 

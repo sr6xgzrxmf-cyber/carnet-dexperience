@@ -1,17 +1,19 @@
 ---
-title: "Dire non sans se justifier quand la charge explose"
-date: "2026-03-10"
-excerpt: "Sous pression, dire non devient vital. Pas pour s’opposer, mais pour protéger ce qui compte vraiment — sans s’expliquer à l’infini."
-cover: "/images/articles/dire-non-sans-se-justifier.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Dire non sans se justifier quand la charge explose
+date: '2026-03-10'
+excerpt: >-
+  Sous pression, dire non devient vital. Pas pour s’opposer, mais pour protéger
+  ce qui compte vraiment — sans s’expliquer à l’infini.
+cover: /images/articles/dire-non-sans-se-justifier.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "posture-professionnelle"
-  - "communication"
+  - management
+  - posture-professionnelle
+  - communication
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 25
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 15
 ---
 ### Quand dire oui devient dangereux
 

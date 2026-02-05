@@ -1,18 +1,21 @@
 ---
-title: "Le « comment tu ferais ? » : l’astuce qui transforme une idée en décision"
-date: "2026-02-10"
-excerpt: "Une question simple, souvent sous-estimée, qui permet d’obtenir l’alignement d’un manager sans perdre son leadership : demander « comment tu ferais ? » au bon moment."
-cover: "/images/articles/le-comment-tu-ferais.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Le « comment tu ferais ? » : l’astuce qui transforme une idée en décision'
+date: '2026-02-10'
+excerpt: >-
+  Une question simple, souvent sous-estimée, qui permet d’obtenir l’alignement
+  d’un manager sans perdre son leadership : demander « comment tu ferais ? » au
+  bon moment.
+cover: /images/articles/le-comment-tu-ferais.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "posture-professionnelle"
-  - "communication"
-  - "leadership"
+  - management
+  - posture-professionnelle
+  - communication
+  - leadership
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 14
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 7
 ---
 ### Une idée juste, mais seul face à la décision
 

@@ -1,16 +1,19 @@
 ---
-title: "La fiche de développement"
-date: "2026-01-20"
-excerpt: "Un outil court, concret : clarifier ton parcours, tes forces, ce que tu veux pour la suite, et tes 3 prochaines actions. PDF discret, version en ligne, et récap envoyé par mail."
-cover: "/images/articles/la-fiche-de-developpement.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: La fiche de développement
+date: '2026-01-20'
+excerpt: >-
+  Un outil court, concret : clarifier ton parcours, tes forces, ce que tu veux
+  pour la suite, et tes 3 prochaines actions. PDF discret, version en ligne, et
+  récap envoyé par mail.
+cover: /images/articles/la-fiche-de-developpement.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 series:
-  slug: "atelier-de-posture"
-  order: 3
-  name: "Atelier de posture"
+  slug: atelier-de-posture
+  order: 3.5
+  name: Atelier de posture
 tags:
-  - "posture-professionnelle"
-  - "communication"
+  - posture-professionnelle
+  - communication
 ---
 Entre deux épisodes, je te propose un outil. Pas un « bonus ». Un raccourci. Quand une situation devient floue, on cherche souvent une phrase qui calme. En réalité, ce qui stabilise, ce n’est pas une formule. C’est une clarification. Revenir au réel : ce que tu as fait, ce que tu sais faire, ce que tu veux, et ce que tu fais ensuite.
 

@@ -1,17 +1,19 @@
 ---
-title: "Fiche outil : le prototype 30 jours"
-date: "2026-04-23"
-excerpt: "Un cadre simple pour tester une idée pendant 30 jours, produire de la preuve, et décider sans s’enliser dans le débat."
-cover: "/images/articles/fiche-outil-prototype-30-jours.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Fiche outil : le prototype 30 jours'
+date: '2026-04-23'
+excerpt: >-
+  Un cadre simple pour tester une idée pendant 30 jours, produire de la preuve,
+  et décider sans s’enliser dans le débat.
+cover: /images/articles/fiche-outil-prototype-30-jours.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "prise-de-decision"
-  - "organisation"
+  - management
+  - prise-de-decision
+  - organisation
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 38
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 26.5
 ---
 ### À quoi sert cette fiche
 

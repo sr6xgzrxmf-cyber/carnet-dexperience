@@ -1,18 +1,20 @@
 ---
-title: "Prioriser quand tout semble important"
-date: "2026-02-13"
-excerpt: "Dire oui à une bonne idée peut parfois être une erreur. Savoir reconnaître une proposition sans la absorber est une compétence clé du management mature."
-cover: "/images/articles/prioriser-sans-se-fermer.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Prioriser quand tout semble important
+date: '2026-02-13'
+excerpt: >-
+  Dire oui à une bonne idée peut parfois être une erreur. Savoir reconnaître une
+  proposition sans la absorber est une compétence clé du management mature.
+cover: /images/articles/prioriser-sans-se-fermer.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "posture-professionnelle"
-  - "leadership"
-  - "organisation"
+  - management
+  - posture-professionnelle
+  - leadership
+  - organisation
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 15
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 8
 ---
 ### Le piège des « bonnes idées »
 

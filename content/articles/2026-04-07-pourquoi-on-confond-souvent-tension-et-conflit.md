@@ -1,17 +1,20 @@
 ---
-title: "Pourquoi on confond souvent tension et conflit"
-date: "2026-04-07"
-excerpt: "Toute tension n’est pas un conflit. Mal les distinguer conduit soit à dramatiser, soit à laisser pourrir des situations qui mériteraient d’être régulées."
-cover: "/images/articles/pourquoi-on-confond-souvent-tension-et-conflit.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Pourquoi on confond souvent tension et conflit
+date: '2026-04-07'
+excerpt: >-
+  Toute tension n’est pas un conflit. Mal les distinguer conduit soit à
+  dramatiser, soit à laisser pourrir des situations qui mériteraient d’être
+  régulées.
+cover: /images/articles/pourquoi-on-confond-souvent-tension-et-conflit.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "communication"
-  - "posture-professionnelle"
+  - management
+  - communication
+  - posture-professionnelle
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 33
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 22
 ---
 ### Quand tout inconfort devient un problème
 

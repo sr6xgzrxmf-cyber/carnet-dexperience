@@ -1,17 +1,20 @@
 ---
-title: "Recollectiviser sans conflit : trois mécanismes simples"
-date: "2026-03-31"
-excerpt: "Quand la charge devient invisible, tout repose sur quelques-uns. Trois mécanismes simples suffisent souvent à rendre le travail collectif à nouveau partageable."
-cover: "/images/articles/recollectiviser-sans-conflit.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Recollectiviser sans conflit : trois mécanismes simples'
+date: '2026-03-31'
+excerpt: >-
+  Quand la charge devient invisible, tout repose sur quelques-uns. Trois
+  mécanismes simples suffisent souvent à rendre le travail collectif à nouveau
+  partageable.
+cover: /images/articles/recollectiviser-sans-conflit.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "organisation"
-  - "posture-professionnelle"
+  - management
+  - organisation
+  - posture-professionnelle
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 31
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 20
 ---
 ### Quand le travail devient un fardeau individuel
 

@@ -1,17 +1,19 @@
 ---
-title: "Survivre au rush : la routine minimale"
-date: "2026-03-06"
-excerpt: "Quand tout s’accélère, ce ne sont pas les grandes méthodes qui tiennent, mais une routine minimale : priorités claires, actions visibles et temps protégé."
-cover: "/images/articles/survivre-au-rush-la-routine-minimale.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Survivre au rush : la routine minimale'
+date: '2026-03-06'
+excerpt: >-
+  Quand tout s’accélère, ce ne sont pas les grandes méthodes qui tiennent, mais
+  une routine minimale : priorités claires, actions visibles et temps protégé.
+cover: /images/articles/survivre-au-rush-la-routine-minimale.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "organisation"
-  - "posture-professionnelle"
+  - management
+  - organisation
+  - posture-professionnelle
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 24
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 14
 ---
 ### Quand le chaos devient la norme
 

@@ -1,17 +1,20 @@
 ---
-title: "Quand la qualité dépend d’un autre pôle : sécuriser sans subir"
-date: "2026-05-05"
-excerpt: "Quand ton travail dépend d’un autre pôle, la qualité devient fragile. Sécuriser sans subir suppose de déplacer le sujet de la relation vers le système."
-cover: "/images/articles/quand-la-qualite-depend-d-un-autre-pole.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: 'Quand la qualité dépend d’un autre pôle : sécuriser sans subir'
+date: '2026-05-05'
+excerpt: >-
+  Quand ton travail dépend d’un autre pôle, la qualité devient fragile.
+  Sécuriser sans subir suppose de déplacer le sujet de la relation vers le
+  système.
+cover: /images/articles/quand-la-qualite-depend-d-un-autre-pole.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "organisation"
-  - "management"
-  - "posture-professionnelle"
+  - organisation
+  - management
+  - posture-professionnelle
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 41
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 29
 ---
 ### La dépendance invisible
 

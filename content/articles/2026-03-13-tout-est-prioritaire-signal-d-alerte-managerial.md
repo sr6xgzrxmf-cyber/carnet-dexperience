@@ -1,18 +1,20 @@
 ---
-title: "Pourquoi « tout est prioritaire » est un signal d’alerte managérial"
-date: "2026-03-13"
-excerpt: "Quand tout devient prioritaire, ce n’est pas un signe d’engagement. C’est souvent le symptôme d’un défaut de pilotage et d’arbitrage."
-cover: "/images/articles/tout-est-prioritaire-signal-d-alerte-managerial.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Pourquoi « tout est prioritaire » est un signal d’alerte managérial
+date: '2026-03-13'
+excerpt: >-
+  Quand tout devient prioritaire, ce n’est pas un signe d’engagement. C’est
+  souvent le symptôme d’un défaut de pilotage et d’arbitrage.
+cover: /images/articles/tout-est-prioritaire-signal-d-alerte-managerial.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "pilotage"
-  - "leadership"
-  - "organisation"
+  - management
+  - pilotage
+  - leadership
+  - organisation
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 26
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 16
 ---
 ### Une phrase banale, un signal fort
 

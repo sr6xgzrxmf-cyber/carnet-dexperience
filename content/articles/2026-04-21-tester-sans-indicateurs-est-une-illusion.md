@@ -1,17 +1,19 @@
 ---
-title: "Tester sans indicateurs est une illusion"
-date: "2026-04-21"
-excerpt: "Un test sans indicateurs ne produit pas de décision. Il fabrique un récit. Pour qu’un prototype serve vraiment, il doit être mesurable."
-cover: "/images/articles/tester-sans-indicateurs-est-une-illusion.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
+title: Tester sans indicateurs est une illusion
+date: '2026-04-21'
+excerpt: >-
+  Un test sans indicateurs ne produit pas de décision. Il fabrique un récit.
+  Pour qu’un prototype serve vraiment, il doit être mesurable.
+cover: /images/articles/tester-sans-indicateurs-est-une-illusion.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
-  - "management"
-  - "prise-de-decision"
-  - "pilotage"
+  - management
+  - prise-de-decision
+  - pilotage
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 37
+  name: Atelier de posture
+  slug: atelier-de-posture
+  order: 26
 ---
 ### Tester n’est pas décider
 

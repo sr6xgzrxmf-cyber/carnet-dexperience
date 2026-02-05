@@ -1,14 +1,16 @@
 ---
-title: "Nommer ses axes : le moment où un parcours sort du flou"
-date: "2026-01-22"
-excerpt: "Ce jour-là, Karim n’a pas trouvé son avenir. Mais il a cessé de dire qu’il était perdu. En nommant ses axes de développement, il a transformé un trop-plein d’expériences en un plan tenable, lisible et actionnable."
-cover: "/images/articles/nommer-ses-axes-sortir-du-flou.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
-tags: []
+title: 'Nommer ses axes : le moment où un parcours sort du flou'
+date: '2026-01-22'
+excerpt: >-
+  Ce jour-là, Karim n’a pas trouvé son avenir. Mais il a cessé de dire qu’il
+  était perdu. En nommant ses axes de développement, il a transformé un
+  trop-plein d’expériences en un plan tenable, lisible et actionnable.
+cover: /images/articles/nommer-ses-axes-sortir-du-flou.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 series:
-  slug: "atelier-de-posture"
-  order: 6
-  name: "Atelier de posture"
+  slug: atelier-de-posture
+  order: 4
+  name: Atelier de posture
 ---
 Quand Karim s’assoit devant le document, il ne dit pas qu’il n’a rien à dire. Il dit l’inverse. Il dit qu’il y a trop de choses. Trop d’expériences, trop de situations, trop de “j’ai fait ci”, “j’ai tenu ça”, “j’ai géré comme j’ai pu”. Il ne se sent pas incompétent. Il se sent dispersé. Et surtout, il a cette phrase que j’entends souvent chez des profils solides :  
 — *Je sais faire plein de choses, mais je ne sais pas par où commencer.*
