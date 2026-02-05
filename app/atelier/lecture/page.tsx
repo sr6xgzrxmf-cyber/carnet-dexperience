@@ -186,13 +186,18 @@ export default async function AtelierLecturePage() {
                 className={[
                   "scroll-mt-24",
                   inter
-                    ? "rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+                    ? "rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8 shadow-sm"
                     : "",
                 ].join(" ")}
               >
                 {/* Header article */}
                 <header className="space-y-4">
                   <div className="text-sm text-neutral-700 dark:text-neutral-300">
+                    {inter ? (
+                      <div className="text-[11px] uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                        Interlude
+                      </div>
+                    ) : null}
                     <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
                       {/* Localhost: badge À paraître + J-x. Sinon: date normale */}
                       {isFuture ? (
