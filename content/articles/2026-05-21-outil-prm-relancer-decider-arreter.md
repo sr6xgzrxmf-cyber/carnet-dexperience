@@ -9,9 +9,9 @@ tags:
   - "organisation"
   - "pilotage"
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 46
+  name: "Relancer, décider, arrêter"
+  slug: "relancer-decider-arreter"
+  order: 3
 ---
 ## À quoi sert PRM
 

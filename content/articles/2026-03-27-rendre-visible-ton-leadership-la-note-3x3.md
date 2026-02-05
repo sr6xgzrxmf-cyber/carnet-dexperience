@@ -9,10 +9,6 @@ tags:
   - "posture-professionnelle"
   - "management"
   - "communication"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 30
 ---
 ### Le problème du leadership discret
 

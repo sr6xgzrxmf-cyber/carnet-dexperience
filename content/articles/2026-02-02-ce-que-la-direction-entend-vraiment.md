@@ -9,10 +9,6 @@ tags:
   - "leadership"
   - "communication"
   - "organisation"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 11
 ---
 Il y a une incompréhension récurrente dans les organisations. Le terrain a le sentiment de s’exprimer clairement. La direction a le sentiment d’entendre surtout des plaintes, des alertes floues ou des remontées sans proposition. Les deux ont souvent raison. Et pourtant, ils ne se parlent pas vraiment.
 

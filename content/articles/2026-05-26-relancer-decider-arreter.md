@@ -10,9 +10,9 @@ tags:
   - "organisation"
   - "management"
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 47
+  name: "Relancer, décider, arrêter"
+  slug: "relancer-decider-arreter"
+  order: 4
 ---
 ### Relancer n’est pas une fin en soi
 

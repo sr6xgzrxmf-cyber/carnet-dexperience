@@ -9,10 +9,6 @@ tags:
   - "management-de-proximite"
   - "leadership"
   - "organisation"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 7
 ---
 Il y a une promesse implicite, presque jamais formulée, mais profondément ancrée dans les organisations : *le meilleur fera grandir les autres*.  
 Alors on promeut. On confie une équipe. On officialise un nouveau rôle. Et on espère que tout suivra.

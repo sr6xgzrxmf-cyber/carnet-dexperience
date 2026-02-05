@@ -9,10 +9,6 @@ tags:
   - "management"
   - "posture-professionnelle"
   - "prise-de-decision"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 2
 ---
 Il y a un réflexe très humain, très valorisé en entreprise aussi : répondre vite. Rassurer. Trancher. Solutionner. Montrer qu’on maîtrise. Et parfois, ça marche. Mais sur le terrain, ce réflexe a un coût caché : il ferme trop tôt ce qui avait besoin d’être clarifié, il prend une responsabilité qui n’a pas été explicitée, et il transforme une parole en verdict.
 

@@ -8,10 +8,6 @@ tags:
   - "management"
   - "leadership"
   - "terrain"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 16
 ---
 Ce jour-là, il ne s’agissait pas de « manager ».  
 Il s’agissait de déménager.

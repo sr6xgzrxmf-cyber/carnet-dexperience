@@ -125,19 +125,42 @@ export function isPublishedDate(input: unknown, now: Date = new Date()): boolean
 ========================= */
 
 type Cache = {
-  fileCount: number;
+  fingerprint: string;
   items: ArticleItem[];
   bySlug: Map<string, ArticleItem>;
 };
 
 let cache: Cache | null = null;
 
-function readAllFromDisk(): ArticleItem[] {
-  const fileNames = fs
+function getFileNames(): string[] {
+  return fs
     .readdirSync(articlesDirectory)
-    .filter((f) => f.endsWith(".md"));
+    .filter((f) => f.endsWith(".md"))
+    .sort((a, b) => a.localeCompare(b, "fr"));
+}
 
-  const items = fileNames.map((fileName) => {
+function computeFingerprint(fileNames: string[]): string {
+  // En dev, on veut invalider le cache dès qu'un fichier markdown change
+  // (mtime/size). On construit un fingerprint stable.
+  const parts: string[] = [];
+
+  for (const fileName of fileNames) {
+    const fullPath = path.join(articlesDirectory, fileName);
+    try {
+      const st = fs.statSync(fullPath);
+      parts.push(`${fileName}:${st.size}:${st.mtimeMs}`);
+    } catch {
+      parts.push(`${fileName}:?`);
+    }
+  }
+
+  return parts.join("|");
+}
+
+function readAllFromDisk(fileNames: string[]): ArticleItem[] {
+  const safeNames = fileNames.length ? fileNames : getFileNames();
+
+  const items = safeNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, "");
     const fullPath = path.join(articlesDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -150,19 +173,16 @@ function readAllFromDisk(): ArticleItem[] {
 }
 
 function getCache(): Cache {
-  const fileNames = fs
-    .readdirSync(articlesDirectory)
-    .filter((f) => f.endsWith(".md"));
+  const fileNames = getFileNames();
+  const fingerprint = computeFingerprint(fileNames);
 
-  const fileCount = fileNames.length;
+  if (cache && cache.fingerprint === fingerprint) return cache;
 
-  if (cache && cache.fileCount === fileCount) return cache;
-
-  const items = readAllFromDisk();
+  const items = readAllFromDisk(fileNames);
   const bySlug = new Map<string, ArticleItem>();
   for (const it of items) bySlug.set(it.slug, it);
 
-  cache = { fileCount, items, bySlug };
+  cache = { fingerprint, items, bySlug };
   return cache;
 }
 

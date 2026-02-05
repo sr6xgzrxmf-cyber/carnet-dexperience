@@ -9,10 +9,6 @@ tags:
   - "organisation"
   - "developpement-des-competences"
   - "leadership"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 12
 ---
 Dans beaucoup d’entreprises, l’organisation officielle raconte une histoire rassurante. Des postes clairement définis, des périmètres établis, des lignes hiérarchiques lisibles. Sur le papier, tout est structuré. Sur le terrain, c’est une autre réalité qui se joue.
 

@@ -10,9 +10,9 @@ tags:
   - "organisation"
   - "pilotage"
 series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 45
+  name: "Relancer, décider, arrêter"
+  slug: "relancer-decider-arreter"
+  order: 2
 ---
 ### Le mythe du manque d’engagement
 

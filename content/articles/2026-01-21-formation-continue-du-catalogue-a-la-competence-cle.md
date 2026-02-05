@@ -8,10 +8,6 @@ tags:
   - "formation"
   - "management"
   - "apprentissage"
-series:
-  name: "Atelier de posture"
-  slug: "atelier-de-posture"
-  order: 5
 ---
 ## La formation n’a jamais été aussi abondante — et aussi peu décisive
 
