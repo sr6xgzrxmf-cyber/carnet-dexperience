@@ -116,7 +116,7 @@ Refuser certaines informations, différer une réponse, renvoyer vers le documen
 Pour formaliser ce cadre, une **charte d’usage** est mise à disposition. Elle explicite les règles, les limites et les intentions de l’accompagnement asynchrone via WhatsApp.  
 Ce document est destiné aux personnes accompagnées, mais aussi aux managers et aux organisations qui souhaitent comprendre et sécuriser ce type de dispositif.
 
-*(Lien de téléchargement à venir)*
+Télécharger la charte : [PDF](/downloads/charte-usage-whatsapp.pdf)
 
 ---
 
