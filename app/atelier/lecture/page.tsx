@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   description: "Lecture continue des épisodes de la série Atelier de posture.",
 };
 
+// Revalide la page pour intégrer les nouveaux articles en production
+export const revalidate = 300;
+
 function normalizeCoverSrc(cover: unknown): string | null {
   if (typeof cover !== "string" || !cover.trim()) return null;
   const s = cover.trim();
