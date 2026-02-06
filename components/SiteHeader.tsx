@@ -27,7 +27,7 @@ export default function SiteHeader() {
   ];
 
   return (
-    <header className="border-b border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/70 backdrop-blur sticky top-0 z-40">
+    <header className="border-b border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/70 backdrop-blur sticky top-0 z-40 print:hidden">
       <div className="site-container pt-4 pb-3">
         <div className="flex items-center gap-4">
           {/* gauche : burger (mobile) + nav (desktop) */}
