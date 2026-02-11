@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "title": "Local",
+      "provider": "openai",
+      "model": "llama3.1",
+      "apiBase": "http://192.168.0.84:11434/v1",
+      "apiKey": "dummy"
+    }
+  ]
+}
