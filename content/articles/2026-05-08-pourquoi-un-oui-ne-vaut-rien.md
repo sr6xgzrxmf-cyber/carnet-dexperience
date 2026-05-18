@@ -4,7 +4,7 @@ date: '2026-05-08'
 excerpt: >-
   Un ‘oui’ ne crée pas d’engagement. Il crée seulement une opportunité
   d’interprétation. Et mon enthousiasme a rempli les blancs trop vite.
-cover: /images/articles/2026-05-12-pourquoi-un-oui-ne-vaut-rien.jpg
+cover: /images/articles/pourquoi-un-oui-ne-vaut-rien.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - relation
