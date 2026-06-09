@@ -198,19 +198,33 @@ function ArticlePreviewCard({
   return (
     <Link
       href={`/articles/${article.slug}`}
-      className="group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+      className="group relative overflow-hidden rounded-2xl bg-white dark:bg-neutral-950/20 ring-1 ring-neutral-200 dark:ring-neutral-800"
     >
       {coverSrc ? (
-        <div className="relative h-56 w-full overflow-hidden">
+        <div
+          className="relative h-56 w-full overflow-hidden rounded-t-2xl"
+          style={{
+            transform: "translateZ(0)",
+            WebkitBackfaceVisibility: "hidden",
+            backfaceVisibility: "hidden",
+            clipPath: "inset(0 round 1rem)",
+            WebkitClipPath: "inset(0 round 1rem)",
+          }}
+        >
           <Image
             src={coverSrc}
             alt={article.title}
             fill
-            className="object-cover opacity-90 transition group-hover:opacity-100"
+            className="absolute inset-0 h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
+            style={{
+              transform: "translateZ(0)",
+              WebkitBackfaceVisibility: "hidden",
+              backfaceVisibility: "hidden",
+            }}
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+          <div className="absolute inset-0 rounded-t-2xl bg-transparent" />
         </div>
       ) : (
         <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
