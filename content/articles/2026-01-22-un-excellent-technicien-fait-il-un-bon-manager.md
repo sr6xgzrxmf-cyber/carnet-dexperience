@@ -1,8 +1,8 @@
 ---
 title: "Un excellent technicien fait-il un bon manager ?"
-date: "2026-01-26"
+date: "2026-01-22"
 excerpt: "Promouvoir les meilleurs techniciens managers est une évidence… en apparence. Sur le terrain, cette décision révèle une confusion fréquente entre expertise, posture et leadership. Et si la vraie question était ailleurs ?"
-cover: "/images/articles/excellent-technicien-manager.jpg"
+cover: "/images/articles/2026-01-22-un-excellent-technicien-fait-il-un-bon-manager.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"
@@ -10,6 +10,7 @@ tags:
   - "leadership"
   - "organisation"
 ---
+
 Il y a une promesse implicite, presque jamais formulée, mais profondément ancrée dans les organisations : *le meilleur fera grandir les autres*.  
 Alors on promeut. On confie une équipe. On officialise un nouveau rôle. Et on espère que tout suivra.
 

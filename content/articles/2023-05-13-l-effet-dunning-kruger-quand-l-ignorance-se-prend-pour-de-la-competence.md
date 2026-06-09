@@ -1,8 +1,8 @@
 ---
 title: "L’effet Dunning-Kruger : quand l’ignorance se prend pour de la compétence"
 date: "2023-05-13"
-excerpt: "Pourquoi les personnes les moins compétentes se sentent souvent les plus sûres d’elles — et comment ce biais influence nos décisions."
-cover: "/images/articles/dunning-kruger.jpg"
+excerpt: "Le problème n’est pas seulement de ne pas savoir. Le problème commence quand on ne sait pas encore assez pour mesurer l’étendue de ce qu’on ignore, et qu’on agit pourtant avec assurance."
+cover: "/images/articles/2023-05-13-l-effet-dunning-kruger-quand-l-ignorance-se-prend-pour-de-la-competence.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "apprentissage"
@@ -12,47 +12,91 @@ series:
   slug: "former-des-adultes"
   order: 3
 ---
-David Dunning et Justin Kruger sont deux psychologues sociaux américains qui ont travaillé ensemble pour étudier les biais cognitifs liés à l’attribution causale et à la prise de décision.
 
-L’attribution causale est un concept de psychologie sociale qui désigne la manière dont nous expliquons les événements et les comportements — les nôtres comme ceux des autres. Nous cherchons en permanence à donner une cause à ce que nous observons. Si quelqu’un échoue à un examen, par exemple, il peut l’expliquer par un manque de travail, par la difficulté du sujet ou par des circonstances extérieures.
+### « C’est bon, j’ai compris. »
 
-La prise de décision, elle, correspond au processus par lequel nous choisissons entre différentes options. Elle est influencée par les émotions, les croyances, les normes sociales, l’expérience, et de nombreux biais cognitifs. Nous aimons croire que nos choix sont rationnels, mais ils sont souvent façonnés par des perceptions erronées.
+La phrase arrive parfois très tôt. Quelqu’un a vu deux exemples, compris le principe général, ou reconnu un vocabulaire familier. Immédiatement, le sujet lui paraît simple. Le problème, c’est qu’à ce moment-là, il n’a souvent pas encore rencontré la complexité réelle de ce qu’il croit maîtriser.
 
-En 1999, Dunning et Kruger publient une étude devenue célèbre : l’effet Dunning-Kruger. Elle met en évidence un phénomène paradoxal : les personnes les moins compétentes dans un domaine sont souvent celles qui surestiment le plus leur niveau, tandis que les personnes réellement compétentes ont tendance à sous-évaluer leurs capacités.
+C’est précisément ce que l’on appelle l’effet Dunning-Kruger.
 
-Avant d’y revenir, un mot sur leurs parcours.  
-David Dunning est né en 1955 et a obtenu son doctorat en psychologie sociale à Stanford en 1986. Justin Kruger, né en 1970, a soutenu sa thèse à l’Université de l’Illinois à Urbana-Champaign en 1998. Leur collaboration démarre dans les années 1990 autour de l’étude des biais cognitifs liés à l’évaluation de soi et à la compréhension des autres.
+Le nom est devenu célèbre, parfois trop. On s’en sert facilement pour moquer les autres. C’est dommage, parce que l’intérêt réel du concept est ailleurs : il nous aide à comprendre pourquoi les débuts d’apprentissage produisent parfois une confiance trompeuse.
 
-## Comprendre l’effet Dunning-Kruger
+## Le cœur du phénomène
 
-L’effet Dunning-Kruger décrit un mécanisme simple mais puissant : lorsque nous savons très peu de choses sur un sujet, nous sommes incapables d’évaluer correctement notre propre incompétence. Nous ne savons pas ce que nous ne savons pas.
+En 1999, les psychologues David Dunning et Justin Kruger décrivent un mécanisme simple et redoutable : dans certains domaines, les personnes les moins compétentes ne sont pas seulement moins performantes. Elles ont aussi moins d’outils pour évaluer correctement leur propre niveau.
 
-À l’inverse, plus notre expertise augmente, plus nous prenons conscience de la complexité du sujet — et donc de nos propres limites.
+Autrement dit, elles ne se trompent pas seulement sur le sujet.
+Elles se trompent aussi sur leur capacité à se situer.
 
-On représente souvent ce phénomène en trois grandes phases.
+Ce décalage n’a rien de mystérieux. Pour reconnaître la qualité d’un raisonnement, d’un geste technique, d’une décision ou d’une analyse, il faut déjà posséder un minimum des critères qui permettent d’en juger.
 
-- **La montagne de la stupidité**  
-  Au début de l’apprentissage, la confiance explose. Le sujet paraît simple, maîtrisable, évident. L’illusion de compétence est maximale.
+Or, quand on débute, ces critères manquent justement.
 
-- **La vallée de l’humilité**  
-  En approfondissant, on découvre l’ampleur de ce que l’on ignore. La confiance chute. On réalise que le sujet est bien plus vaste et complexe qu’on ne l’imaginait.
+## Ce n’est pas de l’arrogance pure
 
-- **Le plateau de la connaissance**  
-  Avec le temps, l’expérience et le travail, la compétence réelle augmente. La confiance remonte, mais cette fois de façon plus juste, mieux alignée avec la réalité.
+On réduit souvent l’effet Dunning-Kruger à une formule un peu cruelle : “les ignorants se croient experts”. C’est plus intéressant que ça.
 
-## Un exemple très concret
+Ce biais ne vient pas toujours d’un ego surdimensionné. Il vient souvent d’une lecture incomplète de la difficulté réelle.
 
-Imaginons une personne qui pense pouvoir réparer sa voiture sans formation ni expérience en mécanique. Elle regarde quelques vidéos, comprend quelques principes, et se sent rapidement capable d’intervenir. En réalité, elle ignore la majorité des mécanismes en jeu et risque d’endommager le véhicule — ou de se mettre en danger.
+Quand un sujet paraît simple au départ, ce n’est pas forcément parce que la personne veut frimer. C’est parfois parce qu’elle n’a pas encore rencontré :
 
-Elle n’est pas seulement incompétente : elle est aussi incapable de percevoir à quel point elle l’est.
+- les exceptions,
+- les cas limites,
+- les conséquences invisibles,
+- les arbitrages,
+- ou les erreurs que seuls les plus avancés savent repérer.
 
-## Pourquoi ce biais est si dangereux
+Au début, tout paraît propre, linéaire, maîtrisable. C’est après, en entrant dans le détail, que la complexité apparaît.
 
-L’effet Dunning-Kruger ne produit pas seulement des erreurs techniques. Il empêche l’apprentissage.
+## La courbe que vivent beaucoup d’apprenants
 
-Quand une personne croit déjà savoir, elle ne cherche plus à comprendre. Elle n’écoute pas les retours. Elle rejette la contradiction. Elle devient imperméable à la progression.
+Dans de nombreux apprentissages, on retrouve trois moments assez classiques.
 
-À l’inverse, la conscience de ses limites est un puissant moteur de développement. Elle ouvre à la curiosité, à la remise en question, à l’humilité — et donc à la compétence réelle.
+D’abord, un premier pic de confiance :
 
-Dunning et Kruger ont mis en lumière un principe fondamental :  
-la lucidité sur ce que nous ne savons pas est l’un des meilleurs indicateurs de l’intelligence pratique.
+- “ce n’est pas si compliqué”,
+- “je vois le principe”,
+- “je pourrais presque l’expliquer”.
+
+Puis vient le moment inverse. La personne commence à pratiquer, à se confronter aux erreurs, aux questions qu’elle n’avait pas prévues, aux nuances qu’elle n’avait pas vues. La confiance baisse. Parfois brutalement.
+
+Enfin, avec le travail, l’expérience et des retours fiables, une confiance plus juste peut revenir. Moins spectaculaire. Mais beaucoup plus solide.
+
+Cette trajectoire n’est pas une humiliation. C’est souvent une bonne nouvelle. Elle signifie que l’on commence enfin à voir le sujet tel qu’il est.
+
+## Pourquoi ce biais est un vrai sujet en formation
+
+L’effet Dunning-Kruger n’est pas qu’une curiosité psychologique. Il a des conséquences très concrètes.
+
+Dans une salle, il peut produire :
+
+- des prises de parole très assurées mais peu fiables,
+- une faible écoute des retours,
+- une difficulté à accepter la correction,
+- ou au contraire un découragement brutal au moment où la complexité devient visible.
+
+Le paradoxe est le suivant : le moment où quelqu’un se sent le plus sûr de lui n’est pas toujours celui où il est le plus compétent. Et le moment où quelqu’un commence à douter n’est pas toujours un recul. C’est parfois le début d’un apprentissage plus sérieux.
+
+## Ce que cela change pour celui qui forme
+
+Former ne consiste donc pas seulement à transmettre un contenu. Il faut aussi aider les personnes à se situer plus justement dans leur propre apprentissage.
+
+Cela suppose plusieurs choses :
+
+- montrer la complexité sans écraser,
+- rendre visibles les critères de qualité,
+- faire pratiquer assez tôt,
+- organiser des retours précis,
+- et surtout normaliser la baisse de confiance quand la compréhension devient plus profonde.
+
+Le danger n’est pas que quelqu’un découvre qu’il ne sait pas tout. Le danger, c’est qu’il vive cette découverte comme un échec personnel au lieu de la comprendre comme une étape normale.
+
+## L’humilité utile
+
+Le grand intérêt de cet effet n’est pas de classer les gens entre “lucides” et “aveugles”. C’est de rappeler une chose plus utile : la compétence réelle s’accompagne souvent d’une meilleure perception de ses limites.
+
+Quelqu’un qui progresse sérieusement ne devient pas seulement plus capable. Il devient aussi plus précis sur ce qu’il sait, ce qu’il ne sait pas encore, et là où il aurait besoin d’aide.
+
+Cette lucidité-là n’est pas une faiblesse. C’est un marqueur de maturité.
+
+Question ouverte : dans tes apprentissages récents, à quel moment as-tu commencé à comprendre non pas que tu savais peu… mais à quel point le sujet était plus vaste que tu ne l’imaginais ?

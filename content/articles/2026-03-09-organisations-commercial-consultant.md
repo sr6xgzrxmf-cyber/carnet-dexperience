@@ -1,22 +1,19 @@
 ---
-title: Ce que les organisations n’ont pas encore compris du commercial-consultant
-date: '2026-03-09'
-excerpt: >-
-  Les échecs de la vente consultative ne sont pas d’abord individuels. Ils sont
-  structurels. Tant que les organisations n’aligneront pas leur pilotage, leurs
-  indicateurs et leurs modes de management, le commercial-consultant restera
-  coincé dans une posture d’exécutant.
-cover: /images/articles/2026-02-08-organisations-commercial-consultant.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Ce que les organisations n’ont pas encore compris du commercial-consultant"
+date: "2026-03-09"
+excerpt: "Les échecs de la vente consultative ne sont pas d’abord individuels. Ils sont structurels. Tant que les organisations n’aligneront pas leur pilotage, leurs indicateurs et leurs modes de management, le commercial-consultant restera coincé dans une posture d’exécutant."
+cover: "/images/articles/2026-03-09-organisations-commercial-consultant.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - gouvernance
-  - management
-  - formation
-  - posture commerciale
-  - transformation
+  - "vente"
+  - "gouvernance"
+  - "management"
+  - "formation"
+  - "posture commerciale"
+  - "transformation"
 series:
-  slug: Vendre n’est plus convaincre
+  name: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 6
 ---
 

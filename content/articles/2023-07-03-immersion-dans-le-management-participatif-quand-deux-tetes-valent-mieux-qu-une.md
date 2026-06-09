@@ -2,7 +2,7 @@
 title: "Immersion dans le management participatif : quand deux têtes valent mieux qu’une"
 date: "2023-07-03"
 excerpt: "Comprendre, pratiquer et évaluer le management participatif pour renforcer l’engagement et la performance collective."
-cover: "/images/articles/management-participatif.jpg"
+cover: "/images/articles/2023-07-03-immersion-dans-le-management-participatif-quand-deux-tetes-valent-mieux-qu-une.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 17
 ---
+
 Bienvenue dans notre exploration des styles de management !  
 Après le monde autoritaire, nous entrons dans l’univers du **management participatif** : un monde où chaque voix compte, où chaque idée a du poids. Ici, on dirige en partageant et on gagne en donnant. 🚀
 

@@ -1,21 +1,19 @@
 ---
-title: 'Pourquoi la crédibilité ne vient plus du savoir, mais du discernement'
-date: '2026-02-24'
-excerpt: >-
-  À l’ère de l’IA, la connaissance n’est plus un avantage compétitif. La
-  crédibilité du commercial-consultant se construit désormais dans sa capacité à
-  hiérarchiser, contextualiser et assumer des renoncements.
-cover: /images/articles/2026-02-07-credibilite-discernement.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi la crédibilité ne vient plus du savoir, mais du discernement"
+date: "2026-02-24"
+excerpt: "À l’ère de l’IA, la connaissance n’est plus un avantage compétitif. La crédibilité du commercial-consultant se construit désormais dans sa capacité à hiérarchiser, contextualiser et assumer des renoncements."
+cover: "/images/articles/2026-02-24-credibilite-discernement.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - conseil
-  - credibilite
-  - posture commerciale
-  - intelligence artificielle
-  - management
+  - "vente"
+  - "conseil"
+  - "credibilite"
+  - "posture commerciale"
+  - "intelligence artificielle"
+  - "management"
 series:
-  slug: Vendre n’est plus convaincre
+  name: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 4
 ---
 

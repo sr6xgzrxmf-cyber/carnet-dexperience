@@ -2,7 +2,7 @@
 title: "Huit techniques clés pour surmonter la résistance au changement en formation"
 date: "2023-09-18"
 excerpt: "Un aide-mémoire pratique pour comprendre, anticiper et dépasser les résistances humaines face aux nouvelles méthodes de formation."
-cover: "/images/articles/resistance-changement-techniques.jpg"
+cover: "/images/articles/2023-09-18-huit-techniques-cles-pour-surmonter-la-resistance-au-changement-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 43
 ---
+
 Au fil des sept derniers articles, nous avons exploré les nombreuses causes de résistance au changement en formation : peur de l’inconnu, routines, manque de confiance, surcharge de travail ou résistance organisationnelle. Derrière ces mécanismes se dessinent pourtant des leviers communs.  
 Voici un **aide-mémoire en huit techniques** pour transformer la résistance en engagement.
 

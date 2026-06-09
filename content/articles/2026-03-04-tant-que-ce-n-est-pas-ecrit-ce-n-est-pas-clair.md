@@ -2,7 +2,7 @@
 title: "Tant que ce n’est pas écrit, ce n’est pas clair"
 date: "2026-03-04"
 excerpt: "La loi de Kidlin est simple : formuler clairement un problème en résout déjà une grande partie. Écrire n’est pas documenter, c’est décider."
-cover: "/images/articles/tant-que-ce-n-est-pas-ecrit-ce-n-est-pas-clair.jpg"
+cover: "/images/articles/2026-03-04-tant-que-ce-n-est-pas-ecrit-ce-n-est-pas-clair.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "prise-de-decision"
@@ -13,6 +13,7 @@ series:
   slug: "lois-utiles"
   order: 3
 ---
+
 ### Le flou comme faux problème
 
 Karim a l’impression d’être bloqué. Il tourne autour d’une décision sans parvenir à trancher. Les options s’enchaînent mentalement, les arguments se contredisent, et chaque tentative de réflexion ajoute une couche de confusion.

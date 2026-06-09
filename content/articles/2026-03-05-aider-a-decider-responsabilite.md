@@ -1,20 +1,18 @@
 ---
-title: Aider à décider est un acte de responsabilité
-date: '2026-03-05'
-excerpt: >-
-  Aider quelqu’un à décider n’est jamais neutre. Même sans autorité formelle,
-  influencer une décision engage une responsabilité éthique, personnelle et
-  professionnelle qui dépasse largement le simple résultat.
-cover: /images/articles/2026-02-09-aider-a-decider-responsabilite.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Aider à décider est un acte de responsabilité"
+date: "2026-03-05"
+excerpt: "Aider quelqu’un à décider n’est jamais neutre. Même sans autorité formelle, influencer une décision engage une responsabilité éthique, personnelle et professionnelle qui dépasse largement le simple résultat."
+cover: "/images/articles/2026-03-05-aider-a-decider-responsabilite.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - posture professionnelle
-  - responsabilite
-  - leadership
-  - ethique
-  - influence
+  - "posture professionnelle"
+  - "responsabilite"
+  - "leadership"
+  - "ethique"
+  - "influence"
 series:
-  slug: Vendre n’est plus convaincre
+  name: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 5
 ---
 

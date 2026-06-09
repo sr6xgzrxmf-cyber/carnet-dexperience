@@ -60,59 +60,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        
-        
-        <script
-          id="key-warning-trace"
-          dangerouslySetInnerHTML={{
-            __html: `
-(function () {
-  var origError = console.error;
-  var origWarn = console.warn;
-
-  function dump(method, args) {
-    try {
-      console.group("🔎 key warning (" + method + ")");
-      try { console.log("raw args:", args); } catch(e) {}
-      for (var i = 0; i < args.length; i++) {
-        if (typeof args[i] === "string") {
-          console.log("arg[" + i + "]:\n" + args[i]);
-        }
-      }
-      console.trace("js trace");
-      console.groupEnd();
-    } catch (e) {}
-  }
-
-  function wrap(name, orig) {
-    return function () {
-      try {
-        var first = String(arguments[0] || "");
-        if (first.indexOf('Each child in a list should have a unique "key" prop') !== -1 ||
-            first.indexOf("warning-keys") !== -1) {
-          dump(name, arguments);
-        }
-      } catch (e) {}
-      return orig.apply(console, arguments);
-    };
-  }
-
-  console.error = wrap("error", origError);
-  console.warn  = wrap("warn", origWarn);
-})();
-`,
-          }}
-        />
-{/* JSON-LD sitewide : WebSite + Person */}
-        <Script
-          id="jsonld-site"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
-        />
-      </head>
-
       <body
         className={[
           geistSans.variable,
@@ -123,40 +70,21 @@ export default function RootLayout({
           "antialiased",
         ].join(" ")}
       >
-
         <Script
-  id="key-warning-trace"
-  strategy="beforeInteractive"
-  dangerouslySetInnerHTML={{
-    __html: `
-(function () {
-  var orig = console.error;
-  console.error = function () {
-    try {
-      var msg = String(arguments[0] || "");
-      if (msg.indexOf('Each child in a list should have a unique "key" prop') !== -1) {
-        console.group("🔎 key warning (beforeInteractive)");
-        console.log("message:", arguments[0]);
-        if (typeof arguments[1] === "string") console.log("component stack:\\n" + arguments[1]);
-        console.trace("trace");
-        console.groupEnd();
-      }
-    } catch (e) {}
-    return orig.apply(console, arguments);
-  };
-})();
-`,
-  }}
-/>
+          id="jsonld-site"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
+
         <SiteHeader />
 
         <main className="site-container py-10 sm:py-14">{children}</main>
 
         <SpeedInsights />
 
-      
         {process.env.NODE_ENV !== "production" ? <DevKeyWarningTrace /> : null}
-</body>
+      </body>
     </html>
   );
 }

@@ -2,7 +2,7 @@
 title: "De l’apprentissage à l’adaptation : une réflexion sur les méthodologies agiles et Scrum"
 date: "2023-09-10"
 excerpt: "Une réflexion personnelle sur l’agilité, Scrum et l’adaptation des méthodes au monde réel de l’entreprise et de la formation."
-cover: "/images/articles/reflexion-apprentissage-agile-scrum.jpg"
+cover: "/images/articles/2023-09-10-de-l-apprentissage-a-l-adaptation-une-reflexion-sur-les-methodologies-agiles-et-scrum.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 39
 ---
+
 Je suis de ceux qui aiment continuellement apprendre et s’adapter, surtout dans un environnement professionnel en constante évolution. Avant de plonger dans le monde des méthodes Agiles et de Scrum, j’en avais souvent entendu parler à travers mes amis développeurs. Mais ce n’est qu’en suivant une formation que j’ai réellement compris à quel point ces principes faisaient écho à ma propre manière de travailler.
 
 Ce qui m’a frappé dès le début, ce sont les similitudes entre Scrum et certaines méthodes que j’utilisais déjà intuitivement dans mon quotidien professionnel. Comme si l’agilité mettait enfin des mots sur une philosophie que je pratiquais sans la nommer.

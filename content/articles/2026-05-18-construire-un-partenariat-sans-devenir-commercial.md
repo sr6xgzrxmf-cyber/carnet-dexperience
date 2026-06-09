@@ -1,12 +1,12 @@
 ---
 title: Construire un partenariat sans devenir commercial
-date: '2026-05-15'
+date: "2026-05-18"
 excerpt: >-
   À force d’apprendre à convaincre, un projet peut finir par parler une langue
   qui n’est plus la sienne. Le vrai enjeu n’était pas de séduire davantage, mais
   de rester intelligible sans me déformer.
 cover: >-
-  /images/articles/2026-06-02-construire-un-partenariat-sans-devenir-commercial.jpg
+  /images/articles/2026-05-18-construire-un-partenariat-sans-devenir-commercial.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - partenariat
@@ -95,3 +95,5 @@ Et cette différence se joue dans le silence qui suit une proposition honnête. 
 Le rôle d’un partenariat n’est pas de rendre un projet acceptable à tout prix.
 
 C’est de trouver l’endroit où il peut rester reconnaissable.
+
+Question ouverte : jusqu’où peux-tu adapter un projet sans commencer à le déformer ?

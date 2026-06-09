@@ -1,21 +1,20 @@
 ---
-title: Le mail bilan qui obtient une réponse utile
-date: '2026-02-27'
-excerpt: >-
-  Un bon bilan ne sert pas à se justifier, mais à montrer une trajectoire. Une
-  structure simple suffit à transformer une critique en levier de progrès.
-cover: /images/articles/le-mail-bilan-qui-obtient-une-reponse-utile.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Le mail bilan qui obtient une réponse utile"
+date: "2026-02-27"
+excerpt: "Un bon bilan ne sert pas à se justifier, mais à montrer une trajectoire. Une structure simple suffit à transformer une critique en levier de progrès."
+cover: "/images/articles/2026-02-27-le-mail-bilan-qui-obtient-une-reponse-utile.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - communication
-  - posture-professionnelle
-  - organisation
+  - "management"
+  - "communication"
+  - "posture-professionnelle"
+  - "organisation"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
   order: 12
 ---
+
 ### Pourquoi tant de mails bilan tombent à plat
 
 Karim rédige son mail. Il a travaillé. Il a corrigé. Il a fait des efforts visibles. Pourtant, la réponse est brève, vague, ou inexistante. Parfois un simple « merci » ; parfois rien. La frustration est réelle : *j’ai fait ce qu’on m’a demandé, pourquoi ça ne produit rien ?*

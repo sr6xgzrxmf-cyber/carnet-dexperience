@@ -2,7 +2,7 @@
 title: "Relancer, décider, arrêter"
 date: "2026-05-26"
 excerpt: "Relancer n’est pas insister. Décider n’est pas forcer. Arrêter n’est pas renoncer. Trois gestes simples pour reprendre la maîtrise."
-cover: "/images/articles/relancer-decider-arreter.jpg"
+cover: "/images/articles/2026-05-26-relancer-decider-arreter.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "posture-professionnelle"
@@ -14,6 +14,7 @@ series:
   slug: "relancer-decider-arreter"
   order: 4
 ---
+
 ### Relancer n’est pas une fin en soi
 
 Dans beaucoup d’organisations, relancer est devenu un réflexe. On relance parce que rien ne se passe. On relance pour se rassurer. On relance pour avoir l’impression d’agir.

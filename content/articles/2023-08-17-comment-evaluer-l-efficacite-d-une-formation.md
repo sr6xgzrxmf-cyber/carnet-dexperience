@@ -2,7 +2,7 @@
 title: "Comment évaluer l’efficacité d’une formation"
 date: "2023-08-17"
 excerpt: "Mesurer l’impact réel d’une formation pour améliorer la performance et l’apprentissage."
-cover: "/images/articles/evaluer-efficacite-formation.jpg"
+cover: "/images/articles/2023-08-17-comment-evaluer-l-efficacite-d-une-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -12,6 +12,7 @@ series:
   slug: "former-des-adultes"
   order: 33
 ---
+
 Évaluer l’efficacité d’une formation : pourquoi, quand et comment ?
 
 L’un des défis majeurs de la formation en entreprise consiste à démontrer sa valeur réelle. Comment savoir si une formation a véritablement amélioré les compétences, la performance et l’engagement des collaborateurs ? La réponse tient dans une évaluation rigoureuse, pensée dès la conception du dispositif.

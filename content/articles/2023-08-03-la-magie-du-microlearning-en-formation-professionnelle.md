@@ -2,7 +2,7 @@
 title: "La magie du microlearning en formation professionnelle"
 date: "2023-08-03"
 excerpt: "Comment de courtes séquences d’apprentissage peuvent produire de grands effets sur la mémorisation et l’engagement."
-cover: "/images/articles/microlearning-magie.jpg"
+cover: "/images/articles/2023-08-03-la-magie-du-microlearning-en-formation-professionnelle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -14,6 +14,7 @@ series:
   slug: "former-des-adultes"
   order: 29
 ---
+
 La magie du microlearning : pourquoi diviser pour mieux régner ?
 
 À l’ère de l’information rapide et des distractions omniprésentes, les méthodes traditionnelles de formation peuvent souvent sembler lourdes et inefficaces. Le microlearning apporte une réponse simple et puissante : découper le savoir en petites unités faciles à absorber. Cette approche transforme profondément la manière dont nous apprenons et retenons l’information.

@@ -1,20 +1,19 @@
 ---
-title: Pourquoi une fiche de poste protège tout le monde
-date: '2026-04-02'
-excerpt: >-
-  Le flou des rôles coûte cher : tensions, abus, fatigue. Une fiche de poste
-  claire n’est pas un carcan, mais une protection partagée.
-cover: /images/articles/pourquoi-une-fiche-de-poste-protege-tout-le-monde.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi une fiche de poste protège tout le monde"
+date: "2026-04-02"
+excerpt: "Le flou des rôles coûte cher : tensions, abus, fatigue. Une fiche de poste claire n’est pas un carcan, mais une protection partagée."
+cover: "/images/articles/2026-04-02-pourquoi-une-fiche-de-poste-protege-tout-le-monde.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - organisation
-  - posture-professionnelle
+  - "management"
+  - "organisation"
+  - "posture-professionnelle"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
   order: 21
 ---
+
 ### Quand le flou devient un terrain de friction
 
 Karim n’a pas de problème avec le travail. Il en a avec les *glissements*. Des demandes qui arrivent “parce que tu sais faire”. Des missions qui s’ajoutent “temporairement”. Des urgences qui deviennent la norme sans jamais être nommées comme telles.

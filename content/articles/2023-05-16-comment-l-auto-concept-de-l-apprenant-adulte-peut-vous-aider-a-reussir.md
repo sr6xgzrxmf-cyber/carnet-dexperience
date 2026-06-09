@@ -1,8 +1,8 @@
 ---
 title: "Comment l’auto-concept de l’apprenant adulte peut vous aider à réussir"
 date: "2023-05-16"
-excerpt: "Pourquoi les adultes apprennent mieux quand ils savent qui ils sont, ce qu’ils veulent, et pourquoi ils apprennent — et comment transformer cette conscience en moteur de progression."
-cover: "/images/articles/auto-concept-apprenant.jpg"
+excerpt: "L’auto-concept change tout en formation d’adultes : on n’apprend pas seulement avec sa mémoire, mais avec l’image que l’on a de soi, de ses capacités et de la place que l’on accepte encore d’occuper."
+cover: "/images/articles/2023-05-16-comment-l-auto-concept-de-l-apprenant-adulte-peut-vous-aider-a-reussir.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"
@@ -13,140 +13,137 @@ series:
   slug: "former-des-adultes"
   order: 6
 ---
-## L’auto-concept, ou la boussole invisible de l’adulte qui apprend
 
-Le réveil sonne à 5 h 30. Dehors, la pluie martèle les vitres et l’air sent l’humidité et le café de la veille oublié sur le bureau.
+### « Je ne suis pas fait pour ça. »
 
-**Marc**, 42 ans, ouvrier du bâtiment, se redresse péniblement. Ses articulations craquent après une journée de dix heures sur un chantier boueux. Il attrape son téléphone : *« Leçon 3 — Les bases du mandarin »* s’affiche sur l’écran.
+Quand un adulte reprend une formation, il n’arrive pas seulement avec un niveau. Il arrive avec une histoire qu’il se raconte sur lui-même.
 
-« Pourquoi je fais ça ? » murmure-t-il en frottant ses yeux gonflés de fatigue.
+Cette histoire peut l’aider :
 
-La réponse est accrochée au mur, au-dessus de son lit : une photo de lui, plus jeune, souriant devant un temple à Pékin. Un voyage d’il y a quinze ans.  
-*« Parce que je veux y retourner. Et cette fois, je veux parler leur langue. »*
+- “je suis quelqu’un qui apprend vite”,
+- “j’ai toujours su me débrouiller”,
+- “je peux progresser si je comprends le sens”.
 
-C’est cela, **l’auto-concept de l’apprenant adulte** : savoir **pourquoi** on apprend et comment cet apprentissage s’inscrit dans sa vie.  
-Pas pour une note. Pas pour un diplôme. Mais pour un **désir**, une **réparation**, une **réinvention**.
+Mais elle peut aussi le bloquer :
 
----
+- “je suis nul en langues”,
+- “je ne suis pas scolaire”,
+- “je ne suis pas à l’aise avec le numérique”,
+- “à mon âge, ce n’est plus pour moi”.
 
-## On n’apprend pas pour apprendre. On apprend pour agir.
+C’est là qu’entre en jeu l’auto-concept.
 
-Les adultes n’ont pas le luxe de s’asseoir en classe « parce qu’il le faut ».  
-Ils apprennent parce qu’ils **en ont besoin**.
+## L’auto-concept, ce n’est pas seulement la motivation
 
-**Scène.**
+On réduit souvent ce sujet à une question de volonté ou d’objectif. En réalité, c’est plus profond.
 
-Lisa, 38 ans, ingénieure et mère de deux enfants, s’assoit à son bureau à 22 h, après avoir couché les petits. Son ordinateur affiche un cours de mandarin en ligne. Une voix métallique répète : *« Nǐ hǎo. »*
+L’auto-concept, chez l’adulte qui apprend, touche à la manière dont il se perçoit :
 
-Elle répète, maladroite.  
-« Nì… hao ? »
+- comme personne capable ou non,
+- comme professionnel légitime ou non,
+- comme débutant acceptable ou non,
+- comme quelqu’un qui peut encore changer ou non.
 
-Elle soupire et regarde l’heure.  
-Minuit approche.
+Autrement dit, un adulte n’apprend pas seulement avec sa mémoire. Il apprend aussi avec l’image qu’il a de lui-même.
 
-Pourquoi s’inflige-t-elle ça ?
+Et cette image influence énormément sa façon d’entrer dans l’effort, de supporter l’erreur, de demander de l’aide, de persévérer, ou d’abandonner.
 
-Elle ouvre son carnet. En haut de la page :  
-*« Objectif : pouvoir parler dix minutes avec M. Wang, client à Shanghai, sans traducteur d’ici six mois. »*
+## Pourquoi c’est si important chez les adultes
 
-Elle relit la phrase.  
-Puis recommence : *« Nǐ hǎo. »*  
-Cette fois, c’est un peu mieux.
+Un enfant peut apprendre sans que son identité soit totalement engagée dans chaque difficulté. Pour un adulte, c’est rarement aussi simple.
 
-L’auto-concept transforme l’effort abstrait en **action orientée**.
+Quand il échoue, il ne se dit pas toujours :
 
----
+- “je n’ai pas encore compris”.
 
-## Nos expériences sont notre capital caché
+Il peut se dire :
 
-Les adultes arrivent toujours avec un bagage. Des succès. Des échecs. Des cicatrices.
+- “ce n’est pas pour moi”,
+- “je ne suis pas à la hauteur”,
+- “je vais me ridiculiser”,
+- “je vais confirmer ce que je crains déjà”.
 
-L’auto-concept, c’est apprendre à **s’appuyer dessus**.
+L’apprentissage n’est alors plus seulement cognitif. Il devient identitaire.
 
-**Scène.**
+C’est pour cela que certaines personnes très compétentes dans leur travail peuvent se sentir immédiatement fragilisées dès qu’elles redeviennent débutantes dans un autre domaine.
 
-Jean, 50 ans, ancien marin, suit une formation en gestion de projet.  
-Le formateur parle de *« planification des risques »*.
+## L’adulte apprend mieux quand il voit un lien entre lui et ce qu’il apprend
 
-Jean lève la main.
+Si l’on prend l’auto-concept au sérieux, on comprend vite qu’un adulte n’entre pas durablement dans un apprentissage abstrait.
 
-« En 1998, on a perdu un équipier. On avait sous-estimé une tempête. Depuis, je vérifie trois fois les prévisions. »
+Il a besoin de sentir :
 
-Le formateur sourit. « Donc vous savez déjà ce qu’est un risque critique. Appliquons-ça maintenant à un projet informatique. »
+- pourquoi cela compte pour lui,
+- comment cela s’inscrit dans sa vie,
+- ce que cela peut lui permettre de redevenir, de réparer ou de construire.
 
-Jean se redresse.  
-Pour la première fois, il se sent légitime.
+Sans cela, l’effort reste extérieur.
+Avec cela, il commence à faire sens.
 
-L’auto-concept transforme le vécu en **ressource**.
+Ce sens peut prendre des formes très différentes :
 
----
+- progresser dans son métier,
+- retrouver de la maîtrise,
+- gagner en autonomie,
+- préparer un changement,
+- ou simplement se prouver qu’un récit ancien sur soi n’est pas définitif.
 
-## Sans preuves de progrès, l’adulte décroche
+## Le rôle du formateur change alors complètement
 
-Les adultes ont horreur de perdre leur temps.
+Si l’on sait qu’un adulte apprend aussi depuis l’image qu’il a de lui-même, on ne forme plus de la même manière.
 
-Marc enregistre sa voix en mandarin chaque semaine.  
-Au début, c’est douloureux.
+Il devient essentiel de :
 
-« Je sonne comme un robot. »
+- relier le contenu à des usages concrets,
+- valoriser l’expérience déjà présente,
+- rendre les progrès visibles,
+- réduire le coût symbolique de l’erreur,
+- et aider la personne à se situer autrement que par le manque.
 
-Un mois plus tard, il compare.
+Un bon dispositif ne cherche pas seulement à faire comprendre. Il cherche aussi à déplacer légèrement la perception de soi :
 
-« Putain… c’est mieux. »
+non pas vers une confiance artificielle,
+mais vers une forme de légitimité retrouvée.
 
-Il envoie l’audio à un ami chinois.  
-La réponse arrive : *« Pas mal pour un Français. »*
+## L’expérience passée peut être un frein… ou une ressource
 
-Marc sourit malgré la pluie qui recommence à tomber.
+Beaucoup d’adultes pensent qu’ils repartent de zéro. C’est rarement vrai.
 
-L’auto-concept se nourrit de **micro-victoires visibles**.
+Ils ne savent peut-être pas encore faire la tâche exacte demandée. Mais ils arrivent avec des compétences transférables :
 
----
+- organiser,
+- observer,
+- résoudre,
+- écouter,
+- anticiper,
+- tenir sous contrainte,
+- apprendre de leurs erreurs.
 
-## Savoir ce qu’on ne sait pas est une force
+Le travail consiste souvent à faire apparaître ces continuités.
 
-Lisa bloque sur les tons du mandarin.  
-Plutôt que d’abandonner, elle écrit à son professeur.
+Quelqu’un qui se sentait incompétent peut soudain se redresser quand il comprend que son passé contient déjà des appuis. À partir de là, l’apprentissage cesse d’être une humiliation. Il devient une extension possible de ce qu’il est déjà.
 
-« Je n’entends pas la différence entre le deuxième et le troisième ton. »
+## Sans preuve de progression, l’auto-concept se referme
 
-Il lui envoie une vidéo personnalisée.
+Un adulte a besoin de sentir que quelque chose bouge.
 
-*« Mā (maman). Mǎ (cheval). Écoutez bien. »*
+Pas forcément de manière spectaculaire. Mais de manière visible.
 
-Dix minutes par jour.  
-Une semaine plus tard, elle distingue les deux.
+Une correction mieux intégrée.
+Une tâche réalisée seul.
+Une prise de parole moins défensive.
+Un langage plus précis.
+Une erreur mieux comprise.
 
-L’auto-concept, c’est **l’humilité stratégique** : reconnaître ses failles pour mieux les travailler.
+Ces micro-preuves sont cruciales. Elles permettent de réécrire progressivement le récit intérieur :
 
----
+- “je n’y arrive pas” devient “je progresse”,
+- “je ne suis pas fait pour ça” devient “je ne savais pas encore comment m’y prendre”.
 
-## L’auto-concept, en pratique
+## Apprendre, parfois, c’est changer de récit sur soi
 
-Pose-toi trois questions simples :
+L’auto-concept n’est pas figé. C’est une construction vivante. Il peut se durcir à force d’échecs mal lus. Mais il peut aussi s’ouvrir si l’expérience d’apprentissage est assez juste, assez soutenante et assez concrète.
 
-1. **Pourquoi j’apprends ?** (un vrai désir, pas une obligation)
-2. **Qu’est-ce que je sais déjà faire ?**
-3. **Comment je mesure mes progrès ?**
+Au fond, un adulte réussit rarement seulement parce qu’il a reçu le bon contenu. Il réussit aussi parce qu’à un moment, il a accepté de ne plus se raconter la même limite.
 
-Écris-les.  
-Regarde-les.  
-Réajuste-les.
-
----
-
-## Conclusion — Apprendre, c’est se raconter une nouvelle histoire
-
-L’auto-concept est une boussole.  
-Sans elle, on se perd.  
-Avec elle, même la tempête n’arrête pas la marche.
-
-**Dernière scène.**
-
-Marc est assis dans un café à Pékin. Il commande un thé en mandarin.
-
-Le serveur sourit. *« Ta prononciation est bonne. »*
-
-Marc rit, les yeux brillants.
-
-« Je suis revenu. »
+Question ouverte : dans ce que tu apprends en ce moment, quel récit sur toi continue peut-être à te freiner plus que la difficulté réelle ?

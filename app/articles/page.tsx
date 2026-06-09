@@ -14,7 +14,7 @@ import ArticlesFilters from "./_components/ArticlesFilters";
 export const metadata: Metadata = {
   title: "Articles",
   description:
-    "Articles et retours d’expérience de Laurent Guyonnet sur l’innovation, la pédagogie et le travail de terrain.",
+    "Articles récents, séries et archives de Laurent Guyonnet sur le travail réel, la décision, la transmission et le terrain.",
 };
 
 export const revalidate = 300;
@@ -186,6 +186,61 @@ function hrefFor(nextTags: string[], showAllTags: boolean) {
   return `/articles${params.toString() ? `?${params.toString()}` : ""}`;
 }
 
+function ArticlePreviewCard({
+  article,
+  futureLabel = false,
+}: {
+  article: ArticleMeta;
+  futureLabel?: boolean;
+}) {
+  const coverSrc = normalizeCoverSrc(article.cover);
+
+  return (
+    <Link
+      href={`/articles/${article.slug}`}
+      className="group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+    >
+      {coverSrc ? (
+        <div className="relative h-56 w-full overflow-hidden">
+          <Image
+            src={coverSrc}
+            alt={article.title}
+            fill
+            className="object-cover opacity-90 transition group-hover:opacity-100"
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+        </div>
+      ) : (
+        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+      )}
+
+      <div className="p-6">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+          {futureLabel ? (
+            <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
+              À paraître
+            </span>
+          ) : article.date ? (
+            <span>{article.date}</span>
+          ) : null}
+        </div>
+
+        <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
+          {article.title}
+        </h3>
+
+        {article.excerpt ? (
+          <p className="mt-2 text-sm italic text-neutral-700 dark:text-neutral-300 line-clamp-3">
+            {article.excerpt}
+          </p>
+        ) : null}
+      </div>
+    </Link>
+  );
+}
+
 export default async function ArticlesHubPage(props: {
   searchParams?: Promise<SearchParams> | SearchParams;
 }) {
@@ -261,6 +316,10 @@ export default async function ArticlesHubPage(props: {
     };
   });
 
+  const recentArticles = published.slice(0, 6);
+  const latestArticle = recentArticles[0] ?? null;
+  const postureSeries = seriesCards.find((series) => series.slug === "atelier-de-posture");
+  const recentWorkSeries = seriesCards.find((series) => series.slug === "faire-exister-un-projet");
 
   /* ---------- Filtres & résultats ---------- */
   const tagCount = new Map<string, number>();
@@ -297,94 +356,139 @@ export default async function ArticlesHubPage(props: {
   const tagsToShow = showAllTags ? sortedTags : sortedTags.slice(0, 12);
 
   return (
-    // ✅ IMPORTANT : on met space-y-14 sur le wrapper racine
-    // au lieu d’un <div> “intermédiaire” (source fréquente de mismatch en dev)
     <section className="space-y-14">
-      <header className="mb-10">
+      <header className="max-w-3xl">
+        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+          Articles, séries et archives
+        </p>
         <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
-        <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-          Une page pour lire à ton rythme, selon ce que tu cherches.
+        <p className="mt-3 text-[15px] leading-7 text-neutral-700 dark:text-neutral-300">
+          Le plus utile pour comprendre ce que je fais aujourd&apos;hui se trouve dans les
+          textes récents. Les articles plus anciens restent accessibles parce qu&apos;ils
+          montrent un travail construit dans la durée, que je réécris progressivement sans
+          l&apos;effacer.
         </p>
       </header>
 
-      {/* ======================
-          ORIENTATION
-      ====================== */}
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-              Comment lire cette page
+            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              Commencer ici
+            </div>
+            <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              Trois portes d&apos;entrée selon ce que tu veux comprendre
             </h2>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Les articles peuvent être abordés de plusieurs manières, selon ce que tu cherches à comprendre ou à travailler.
-              Cette page propose plusieurs portes d’entrée, complémentaires.
+              Si tu arrives ici comme recruteur, partenaire, client potentiel ou simple
+              lecteur curieux, inutile de tout lire dans l&apos;ordre.
             </p>
           </div>
         </div>
 
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
-          <a
-            href="#retrospectives"
+          <Link
+            href={
+              recentWorkSeries?.start?.slug
+                ? `/articles/${recentWorkSeries.start.slug}`
+                : latestArticle
+                  ? `/articles/${latestArticle.slug}`
+                  : "/articles"
+            }
             className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
           >
             <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Les rétrospectives
+              Le travail récent
             </div>
             <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-              Des séries longues, pensées comme des récits structurés. Elles permettent de suivre une réflexion dans le temps : un parcours, un travail de posture, une évolution professionnelle.
+              Les derniers textes sont les plus proches de ma pratique actuelle :
+              clarification, cadrage, décision, transmission.
             </p>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              À privilégier si tu veux comprendre une logique de fond plutôt que lire un article isolé.
+              À privilégier si tu veux voir ce que je produis aujourd&apos;hui, sans passer
+              d&apos;abord par l&apos;historique complet.
             </p>
-          </a>
+          </Link>
 
-          <a
-            href="#filtres"
+          <Link
+            href={
+              postureSeries?.start?.slug
+                ? `/articles/${postureSeries.start.slug}`
+                : "/articles"
+            }
             className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
           >
             <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Explorer par thème
+              La logique de fond
             </div>
             <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-              Si tu arrives avec une question précise — posture, décision, relation client, transmission — tu peux parcourir les articles par thématique.
+              Les séries permettent de suivre une mécanique dans le temps : une posture, un
+              cadre, une progression, une manière de décider.
             </p>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Utile quand tu sais ce que tu cherches, sans vouloir suivre toute une série.
+              À lire si tu veux comprendre une méthode, pas seulement un article isolé.
             </p>
-          </a>
+          </Link>
 
           <Link
             href="/articles/archives"
             className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
           >
             <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Parcourir les archives
+              Le temps long
             </div>
             <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-              Les articles sont aussi ancrés dans le temps. Explorer les archives permet de voir comment certaines questions apparaissent, se déplacent et se précisent au fil des expériences.
+              Les archives gardent visibles les textes plus anciens, les premières versions,
+              les bifurcations et les changements de ton.
             </p>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Intéressant si tu t’interroges sur un cheminement plutôt qu’un résultat immédiat.
+              Utile si tu veux voir que ce site ne s&apos;est pas construit en quelques mois.
             </p>
           </Link>
         </div>
-
-        <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
-          Si tu ne sais pas par où commencer, une rétrospective est souvent le meilleur point d’entrée.
-        </p>
       </section>
 
-      {/* ======================
-          RÉTROSPECTIVES
-      ====================== */}
+      {recentArticles.length > 0 ? (
+        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                Travail récent
+              </div>
+              <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                Les textes que je mettrais en premier devant un recruteur ou un partenaire
+              </h2>
+              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+                Ils sont plus nets, plus incarnés et plus proches de ce que je fais
+                réellement aujourd&apos;hui.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {recentArticles.map((article) => (
+              <ArticlePreviewCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section
         id="retrospectives"
         className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
       >
-        <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-          Rétrospectives
-        </h2>
+        <div className="max-w-2xl">
+          <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            Séries à suivre
+          </div>
+          <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            Pour entrer dans une logique de fond, pas seulement dans un article
+          </h2>
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Ces séries servent de points d&apos;entrée éditoriaux. Elles permettent de
+            comprendre une ligne de travail, une mécanique ou une bifurcation importante.
+          </p>
+        </div>
 
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
           {seriesCards.map((s) => {
@@ -504,7 +608,7 @@ export default async function ArticlesHubPage(props: {
               Filtres
             </h2>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Filtrer les articles par thèmes.
+              Si tu arrives avec une question précise, tu peux entrer par thème.
             </p>
           </div>
 
@@ -549,9 +653,14 @@ export default async function ArticlesHubPage(props: {
       ====================== */}
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
         <div className="flex items-end justify-between gap-4">
-          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-            Résultats
-          </h2>
+          <div>
+            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+              Tout le catalogue
+            </h2>
+            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+              Du plus récent au plus ancien, avec le temps long conservé volontairement.
+            </p>
+          </div>
 
           <div className="text-xs text-neutral-500">
             {results.length} article{results.length > 1 ? "s" : ""}
@@ -564,90 +673,34 @@ export default async function ArticlesHubPage(props: {
           </p>
         ) : (
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {results.map((a) => {
-              const coverSrc = normalizeCoverSrc(a.cover);
-              const futureLabel = !isPublishedParis(a.date ?? null, now);
+            {results.map((article) => {
+              const futureLabel = !isPublishedParis(article.date ?? null, now);
 
               return (
-                <Link
-                  key={a.slug}
-                  href={`/articles/${a.slug}`}
-                  className="group relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
-                >
-                  {coverSrc ? (
-                    <div className="relative h-56 w-full overflow-hidden">
-                      <Image
-                        src={coverSrc}
-                        alt={a.title}
-                        fill
-                        className="object-cover opacity-90 transition group-hover:opacity-100"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                        unoptimized
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+                <div key={article.slug} className="space-y-2">
+                  <ArticlePreviewCard article={article} futureLabel={futureLabel} />
+                  {futureLabel ? (
+                    <div className="px-1 text-xs text-neutral-500 dark:text-neutral-400">
+                      {(() => {
+                        const d = daysUntilParis(article.date ?? null, now);
+                        if (typeof d === "number" && d > 0) return `J-${d}`;
+                        return article.date ?? "";
+                      })()}
                     </div>
-                  ) : (
-                    <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
-                  )}
-
-                  <div className="p-6">
-                    <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
-                      {futureLabel ? (
-                        <>
-                          <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
-                            À paraître
-                          </span>
-                          {(() => {
-                            const d = daysUntilParis(a.date ?? null, now);
-                            if (typeof d === "number" && d > 0) {
-                              return (
-                                <span className="text-neutral-400 dark:text-neutral-500">
-                                  J-{d}
-                                </span>
-                              );
-                            }
-                            return a.date ? (
-                              <span className="text-neutral-400 dark:text-neutral-500">
-                                {a.date}
-                              </span>
-                            ) : null;
-                          })()}
-                        </>
-                      ) : (
-                        <span>{a.date}</span>
-                      )}
-                      {/*
-                        <span className="text-neutral-400">—</span>
-                        <span>{a.source}</span>
-                      */}
-                    </div>
-
-                    <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
-                      {a.title}
-                    </h3>
-
-                    {a.excerpt ? (
-                      <p className="mt-2 text-sm italic text-neutral-700 dark:text-neutral-300 line-clamp-3">
-                        {a.excerpt}
-                      </p>
-                    ) : null}
-                  </div>
-                </Link>
+                  ) : null}
+                </div>
               );
             })}
           </div>
         )}
       </section>
 
-      {/* ======================
-          ARCHIVES COMPLÈTES
-      ====================== */}
       <section className="flex justify-center pt-4">
         <Link
           href="/articles/archives"
           className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
         >
-          Parcourir toutes les archives →
+          Explorer le temps long →
         </Link>
       </section>
     </section>

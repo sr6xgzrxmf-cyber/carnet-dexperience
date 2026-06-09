@@ -1,8 +1,8 @@
 ---
 title: "Pédagogie et andragogie : deux manières très différentes d’apprendre"
 date: "2023-05-11"
-excerpt: "Pourquoi on ne forme pas un adulte comme on enseigne à un enfant — et ce que ça change concrètement dans les dispositifs de formation."
-cover: "/images/articles/pedagogie-andragogie.jpg"
+excerpt: "La différence entre pédagogie et andragogie ne tient pas à un mot savant. Elle se voit dans une salle, dès qu’un adulte demande à quoi cela va lui servir et refuse d’apprendre comme s’il repartait de zéro."
+cover: "/images/articles/2023-05-11-pedagogie-et-andragogie-deux-manieres-tres-differentes-d-apprendre.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -14,83 +14,115 @@ series:
   slug: "former-des-adultes"
   order: 2
 ---
-On parle souvent de « formation » comme d’un bloc homogène. Pourtant, enseigner à un enfant et accompagner un adulte dans ses apprentissages relèvent de logiques profondément différentes.
 
-C’est précisément ce que distinguent deux notions clés : **la pédagogie** et **l’andragogie**.
+### « Oui, mais concrètement, à quoi ça va me servir ? »
 
-## Deux logiques d’apprentissage
+La question tombe souvent très tôt. Parfois après cinq minutes. Parfois avant même que la séance ait réellement commencé. Dans une salle d’adultes, elle n’est ni déplacée ni insolente. Elle est structurante.
 
-La **pédagogie** est historiquement l’art d’enseigner aux enfants et aux adolescents. Elle repose sur une idée simple :  
-l’apprenant ne sait pas encore ce qu’il doit apprendre.  
-Le rôle de l’enseignant est donc de transmettre un savoir structuré, selon une progression définie à l’avance.
+C’est souvent là qu’on voit la différence entre pédagogie et andragogie.
 
-L’élève reçoit, mémorise, restitue.
+La pédagogie peut se permettre d’avancer à partir d’un programme. L’andragogie, beaucoup moins. Dès qu’on travaille avec des adultes, il faut composer avec autre chose : leur temps, leur expérience, leur fatigue, leur utilité perçue, leur dignité, leurs habitudes déjà construites.
 
-L’**andragogie**, elle, s’adresse aux adultes. Et le point de départ est radicalement différent :  
-un adulte arrive toujours avec une histoire, des compétences, des échecs, des représentations et des attentes.
+Autrement dit, on ne forme pas un adulte comme on enseigne à un enfant.
 
-Il n’est pas un réceptacle vide.  
-Il est un **acteur de son propre apprentissage**.
+## La pédagogie part d’un savoir à transmettre
 
-## Qui décide de ce qu’il faut apprendre ?
+Dans un cadre pédagogique classique, le point de départ est assez clair : l’apprenant n’a pas encore les bases, ou pas encore le niveau attendu. L’enseignant structure donc une progression. Il choisit l’ordre, les contenus, les exercices, les évaluations. L’élève suit un chemin pensé pour lui.
 
-C’est là que la fracture est la plus visible.
+Cette logique est légitime. Elle correspond à un moment du développement où l’on construit des repères fondamentaux, parfois avant même d’avoir la maturité ou le recul pour en comprendre pleinement l’utilité immédiate.
 
-En pédagogie, le cadre est externe :  
-le programme, l’enseignant, l’institution décident du contenu.
+Le cadre est donc plus externe :
 
-En andragogie, le moteur est interne :  
-l’adulte apprend parce qu’il a un problème à résoudre, une compétence à acquérir, une situation à débloquer.
+- le contenu vient d’un programme,
+- le rythme est largement fixé d’avance,
+- et l’autorité pédagogique porte une grande partie de la structure.
 
-On n’apprend pas « pour apprendre ».  
-On apprend pour **mieux faire, mieux comprendre, mieux agir**.
+## L’andragogie part d’une personne déjà construite
 
-## Savoir ou savoir faire
+Avec un adulte, le paysage change complètement.
 
-Autre différence fondamentale :  
-la pédagogie vise d’abord l’acquisition de connaissances.  
-L’andragogie vise l’**utilité** de ces connaissances.
+Il arrive avec :
 
-Un adulte ne demande pas :  
-« Est-ce que c’est intéressant ? »  
-mais :  
-« À quoi ça me sert ? »
+- un métier,
+- des routines,
+- des croyances,
+- des succès,
+- des maladresses,
+- et une identité déjà engagée dans la façon dont il apprend.
 
-C’est pourquoi les dispositifs efficaces pour adultes reposent sur :
-- des mises en situation
-- des cas réels
-- des échanges entre pairs
-- des expérimentations
+On ne travaille donc plus avec quelqu’un qui “attend qu’on lui dise quoi savoir”. On travaille avec quelqu’un qui compare en permanence ce qu’on lui propose avec ce qu’il vit déjà.
 
-On ne vient pas consommer du savoir.  
-On vient transformer sa pratique.
+Un adulte écoute rarement un contenu de manière neutre. Il se demande :
 
-## Le rôle du formateur change
+- est-ce que cela me concerne ?
+- est-ce que cela m’aide ?
+- est-ce que cela respecte ce que je sais déjà ?
+- est-ce que cela vaut vraiment le temps que j’y consacre ?
 
-Dans un cadre pédagogique, l’enseignant est une **source**.  
-Dans un cadre andragogique, le formateur devient un **facilitateur**.
+Cette différence change tout.
 
-Son travail n’est plus de tout savoir, mais de :
-- faire émerger les questions
-- structurer les échanges
-- guider la réflexion
-- aider chacun à relier le contenu à sa propre réalité
+## Le vrai déplacement : de la transmission à l’appropriation
 
-Il ne remplit pas des têtes.  
-Il aide des adultes à **faire des liens**.
+La pédagogie peut viser d’abord la compréhension d’un contenu.
 
-## Deux approches, une même finalité
+L’andragogie, elle, doit viser son appropriation.
 
-Pédagogie et andragogie ne s’opposent pas.  
-Elles répondent à des **moments différents du développement humain**.
+Ce n’est pas seulement une différence de méthode. C’est une différence de finalité. Un adulte n’entre pas en formation pour “avoir vu” un sujet. Il entre pour mieux agir, mieux décider, mieux comprendre une situation, corriger une pratique ou débloquer un problème.
 
-L’une construit les bases.  
-L’autre permet d’évoluer, de se reconvertir, de s’adapter, de progresser dans un monde qui change.
+Il apprend moins pour accumuler que pour transformer.
 
-Comprendre cette différence est essentiel pour concevoir :
-- des formations utiles
-- des parcours crédibles
-- des dispositifs réellement transformants
+C’est pour cela que les dispositifs les plus efficaces avec des adultes reposent souvent sur :
 
-Former des adultes comme des enfants produit de la résistance.  
-Accompagner des adultes comme des adultes produit du changement.
+- des cas réels,
+- des mises en situation,
+- des échanges entre pairs,
+- des essais,
+- des retours,
+- et des liens explicites avec le terrain.
+
+La connaissance n’y disparaît pas. Elle change de statut. Elle devient un appui pour l’action, pas une fin en soi.
+
+## Le rôle du formateur devient plus exigeant
+
+On dit souvent qu’en andragogie, le formateur est un facilitateur. C’est vrai, à condition de ne pas entendre ce mot comme une version affadie du métier.
+
+Faciliter, ici, ne veut pas dire s’effacer.
+
+Cela veut dire :
+
+- lire une salle,
+- comprendre ce qui fait résistance,
+- relier le contenu au réel du groupe,
+- accueillir l’expérience sans la sanctuariser,
+- et aider chacun à produire du sens à partir de ce qu’il vit déjà.
+
+Le formateur ne “remplit” pas des adultes. Il travaille avec quelque chose qui existe déjà, parfois de manière très solide, parfois de manière très défensive.
+
+Et c’est précisément ce qui rend l’exercice plus complexe qu’une simple transmission descendante.
+
+## Là où les malentendus commencent
+
+Beaucoup de formations échouent parce qu’elles sont conçues comme si tous les publics apprenaient de la même façon.
+
+On prend un contenu juste.
+On le met dans un support propre.
+On déroule.
+
+Puis on s’étonne que les adultes décrochent, contestent, résistent, ou ne réutilisent presque rien.
+
+En réalité, ils n’ont pas forcément rejeté le fond. Ils ont parfois simplement senti qu’on leur demandait d’apprendre dans un cadre qui ne correspondait ni à leur position d’adulte, ni à leur manière d’entrer dans un sujet.
+
+Former des adultes comme des élèves produit souvent de la politesse en salle… et très peu de transformation ensuite.
+
+## Deux logiques, deux responsabilités
+
+Il ne s’agit pas d’opposer pédagogie et andragogie comme si l’une était noble et l’autre dépassée. Les deux ont leur cohérence.
+
+Mais elles demandent des responsabilités différentes :
+
+- en pédagogie, il faut tenir une progression,
+- en andragogie, il faut tenir une pertinence.
+
+Et cette pertinence ne se décrète pas. Elle se construit dans la relation entre le sujet, le vécu des personnes et ce qu’elles pourront réellement en faire.
+
+Question ouverte : dans les formations que tu vois aujourd’hui, qu’est-ce qui est encore pensé comme un cours… et qu’est-ce qui est vraiment conçu pour des adultes déjà en train de travailler ?

@@ -2,7 +2,7 @@
 title: "Projection de compétence vs écoute active"
 date: "2023-10-09"
 excerpt: "Deux postures opposées en vente : projeter son expertise ou écouter réellement son client. Un guide pour vendre mieux, plus juste et plus durable."
-cover: "/images/articles/projection-competence-ecoute-active.jpg"
+cover: "/images/articles/2023-10-09-projection-de-competence-vs-ecoute-active.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"
@@ -14,6 +14,7 @@ series:
   slug: "former-des-adultes"
   order: 44
 ---
+
 La qualité d’une vente ne repose pas uniquement sur la maîtrise du produit, mais sur la façon dont le vendeur entre en relation avec son client. Deux attitudes s’opposent souvent dans ce moment décisif : la **projection de compétence** et **l’écoute active**. Comprendre leur différence permet de transformer radicalement l’efficacité commerciale.
 
 ## La projection de compétence

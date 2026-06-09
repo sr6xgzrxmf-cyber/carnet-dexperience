@@ -1,8 +1,8 @@
 ---
 title: "L’apprentissage chez l’adulte : un voyage entre tâches, problèmes et éclats de rire"
 date: "2023-05-19"
-excerpt: "Comment les adultes peuvent apprendre efficacement en combinant résolution de problèmes, humour et méthodes non conventionnelles."
-cover: "/images/articles/apprentissage-adulte-bibliotheque.jpg"
+excerpt: "Chez l’adulte, on apprend mieux à partir d’un problème à résoudre que d’un contenu à admirer. Le rire, lui, aide parfois à faire baisser la pression pour que le travail commence."
+cover: "/images/articles/2023-05-19-l-apprentissage-chez-l-adulte-un-voyage-entre-taches-problemes-et-eclats-de-rire.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"
@@ -14,46 +14,72 @@ series:
   slug: "former-des-adultes"
   order: 9
 ---
-Nous le savons tous : les adultes sont des êtres à part. Ils ont des responsabilités, des priorités, et surtout une approche différente de l’apprentissage. Plus question de jouer à la marelle ou de faire des châteaux de sable. Désormais, l’apprenant adulte est orienté vers les tâches et la résolution de problèmes. Mais rassurez-vous, chers adultes, il est tout à fait possible de mêler humour et apprentissage pour rendre l’expérience plus agréable et inspirante.
 
-## Trouver le juste équilibre entre travail et détente
+### Le moment où la salle se met à rire
 
-L’apprentissage chez l’adulte peut vite devenir un vrai casse-tête — tiens, encore un problème à résoudre. Pourtant, en établissant un équilibre entre le sérieux et l’amusement, il est possible de rendre l’expérience beaucoup plus agréable. N’hésitez pas à inclure des moments de détente dans votre programme d’apprentissage, à l’image d’une pause-café bien méritée après avoir résolu un problème complexe. Le rire est un excellent allié pour la mémorisation et le bien-être.
+Un exercice vient de rater. La consigne n’a pas été comprise comme prévu, deux participants partent dans une autre direction, un troisième relève l’absurdité de la situation et la salle éclate de rire.
 
-## Utiliser l’humour pour mieux apprendre
+Vu de l’extérieur, on pourrait croire à une séquence qui déraille. En réalité, c’est souvent à cet instant que quelque chose devient intéressant. La pression baisse. Les défenses tombent un peu. Le groupe accepte plus facilement de regarder ce qui n’a pas marché.
 
-Les adultes ont tendance à être plus réceptifs à un apprentissage qui fait appel à leurs émotions. Intégrer de l’humour dans le processus d’apprentissage permet non seulement de créer une atmosphère détendue et positive, mais aussi de faciliter la mémorisation des informations. N’oublions pas que rire est un excellent moyen d’évacuer le stress et de se concentrer sur l’essentiel.
+Chez l’adulte, on n’apprend pas seulement avec des contenus. On apprend beaucoup avec des situations qui résistent.
 
-## Oser les méthodes d’apprentissage non conventionnelles
+## L’adulte écoute pour agir
 
-Qui a dit que l’apprentissage devait toujours être formel et académique ? En tant qu’adultes, nous avons la liberté d’explorer différentes méthodes d’apprentissage et de trouver celles qui nous conviennent le mieux. Que diriez-vous d’apprendre une nouvelle langue en regardant des comédies, ou de résoudre des problèmes mathématiques en inventant des histoires farfelues ? Laissez libre cours à votre imagination et n’hésitez pas à sortir des sentiers battus.
+Un enfant peut apprendre longtemps par anticipation. Un adulte, beaucoup moins. Il supporte mal qu’on lui demande d’accumuler des notions dont il ne voit ni l’usage ni le contexte.
 
-## Apprendre à rire de ses erreurs
+Cela ne veut pas dire qu’il rejette la théorie. Cela veut dire qu’il la juge très vite à partir d’une question simple : qu’est-ce que ça va m’aider à faire, à comprendre ou à éviter ?
 
-L’erreur est humaine, et cela vaut aussi pour l’apprentissage chez l’adulte. Plutôt que de se morfondre après un échec, pourquoi ne pas en rire et en tirer des leçons ? Adopter une attitude positive face à l’échec permet de dédramatiser la situation et d’avancer plus sereinement vers de nouvelles réussites.
+Quand tu formes des adultes, tu travailles donc presque toujours avec cette tension :
 
-## Un exemple concret
+- ils veulent comprendre ;
+- mais ils veulent surtout savoir quoi en faire.
 
-Imaginons que vous souhaitiez améliorer vos compétences en gestion de projet. Au lieu de vous plonger immédiatement dans des livres académiques et des formations formelles, vous décidez d’adopter une approche plus ludique et détendue.
+Une notion abstraite peut intéresser. Un problème concret, lui, mobilise.
 
-Voici quelques idées pour rendre votre apprentissage à la fois drôle et inspirant :
+## Un problème vaut souvent mieux qu’un chapitre
 
-- **Utiliser des analogies humoristiques**  
-  Pour comprendre les différentes étapes de la gestion de projet, imaginez que vous organisez une fête surprise pour un ami. La planification, la coordination des équipes et le respect des délais deviennent soudainement plus concrets — et plus amusants.
+L’apprentissage adulte devient plus dense quand il part d’un cas, d’un incident, d’un arbitrage, d’un blocage réel. Pas parce que le réel serait plus vivant par principe, mais parce qu’il oblige à choisir, hiérarchiser, interpréter.
 
-- **Regarder des vidéos amusantes liées à la gestion de projet**  
-  Il existe de nombreuses vidéos qui abordent ces concepts de manière humoristique : parodies de situations de travail, sketchs comiques, détournements… Apprendre en riant aide à mieux retenir.
+Tu peux faire un exposé complet sur la communication d’équipe. Ou tu peux partir d’un échange raté entre un manager et un collaborateur, puis demander : qu’est-ce qui s’est joué ici ? Qu’est-ce qui a été dit ? Qu’est-ce qui a été évité ? Qu’est-ce qu’on aurait pu formuler autrement ?
 
-- **Rejoindre un groupe d’étude avec un sens de l’humour partagé**  
-  Créez ou rejoignez un groupe d’apprentissage où l’on peut discuter des concepts tout en partageant anecdotes et blagues. Cette atmosphère détendue facilite la compréhension et l’engagement.
+Dans le deuxième cas, le groupe se met à penser. Pas seulement à écouter.
 
-- **Créer des jeux pour tester vos connaissances**  
-  Transformez votre apprentissage en jeu grâce à des quiz amusants, des défis ou des énigmes basées sur les concepts étudiés. En mobilisant votre créativité et votre humour, vous rendrez l’expérience plus mémorable.
+## Le rire n’est pas une animation, c’est un signal
 
-En adoptant ces méthodes, vous transformerez votre apprentissage de la gestion de projet en une expérience à la fois drôle et inspirante, renforçant votre motivation et votre engagement.
+Le rire a mauvaise réputation dans certains cadres de formation. On craint qu’il disperse, qu’il abaisse le niveau, qu’il détourne du sérieux. C’est souvent l’inverse.
 
-## Pour conclure
+Bien utilisé, il signale plusieurs choses utiles :
 
-L’apprentissage chez l’adulte est certes orienté vers les tâches et la résolution de problèmes, mais cela ne signifie pas qu’il doit être ennuyeux ou austère. En intégrant de l’humour et de la légèreté dans le processus d’apprentissage, les adultes peuvent transformer leur parcours en une aventure à la fois inspirante et divertissante.
+- une tension qui se relâche ;
+- une erreur qu’on peut regarder sans humiliation ;
+- un groupe qui commence à se sentir suffisamment en sécurité pour penser ensemble.
 
-N’oublions pas que rire stimule notre cerveau, évacue le stress et renforce la motivation. Alors, chers apprenants adultes, prenez du recul, riez de vos erreurs et explorez des méthodes d’apprentissage non conventionnelles pour rendre votre parcours aussi enrichissant que joyeux.
+Le rire ne remplace évidemment pas le travail. Mais il aide parfois à rendre le travail supportable. Il ouvre une brèche dans la crispation.
+
+On retient mieux ce qu’on a réellement traversé que ce qu’on a seulement entendu.
+
+## Ce que les méthodes non conventionnelles ont de vrai
+
+On parle beaucoup de méthodes alternatives, ludiques ou décalées. Le sujet n’est pas de rendre la formation originale pour elle-même. Le sujet est de produire de l’engagement cognitif.
+
+Une analogie bien trouvée, une mise en situation imparfaite mais juste, une reformulation imagée, un détour par un exemple inattendu : tout cela peut aider, à condition que ce ne soit pas un habillage vide.
+
+Le vrai critère n’est pas de savoir si c’est amusant. Le vrai critère est : est-ce que ça aide à mieux voir le problème, à mieux l’explorer, à mieux mémoriser ce qui compte ?
+
+## L’erreur comme matière, pas comme accident
+
+Beaucoup d’adultes arrivent en formation avec une relation tendue à l’erreur. Ils veulent bien apprendre, mais ils veulent éviter de paraître maladroits. Plus leur position professionnelle est exposée, plus cette tension peut être forte.
+
+Le rôle du formateur consiste alors à déplacer le statut de l’erreur. Non pas l’excuser systématiquement, ni la dramatiser, mais la traiter comme une information utile.
+
+Quand une erreur devient analysable, elle redevient formatrice. Quand elle reste seulement embarrassante, elle fige.
+
+## Ce qu’une bonne séquence doit provoquer
+
+Une bonne séquence pour adultes ne devrait pas seulement transmettre une idée. Elle devrait produire un mouvement : un problème mieux vu, une hypothèse reformulée, une pratique testée, un réflexe remis en cause.
+
+Le contenu compte, bien sûr. Mais le contenu seul ne suffit pas. Il faut une prise. Une tâche. Une décision. Un point de friction. Quelque chose qui oblige à sortir du simple acquiescement.
+
+C’est souvent comme ça que l’apprentissage devient mémorable : quand une idée s’accroche à un problème traversé ensemble, parfois avec sérieux, parfois avec un éclat de rire au bon moment.
+
+Dans tes formations, est-ce que les adultes ont surtout des choses à écouter, ou de vrais problèmes à travailler ?

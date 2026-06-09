@@ -2,7 +2,7 @@
 title: "Le pire scénario est rarement celui qui arrive"
 date: "2026-02-25"
 excerpt: "Nous surestimons presque toujours le pire. La loi de Gilbert rappelle une chose simple : l’action, même minuscule, dissout plus de peur que n’importe quelle réflexion."
-cover: "/images/articles/le-pire-scenario-est-rarement-celui-qui-arrive.jpg"
+cover: "/images/articles/2026-02-25-le-pire-scenario-est-rarement-celui-qui-arrive.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "prise-de-decision"
@@ -13,6 +13,7 @@ series:
   slug: "lois-utiles"
   order: 2
 ---
+
 ### Quand l’esprit s’emballe avant même d’agir
 
 Karim connaît bien ce moment. Avant un appel important, une décision délicate ou une prise de parole attendue, son esprit s’emballe. Il imagine les objections, les silences gênants, les conséquences négatives. Tout semble risqué. Tout paraît fragile.

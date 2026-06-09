@@ -2,7 +2,7 @@
 title: "Écrire pour être utile, pas pour être brillant"
 date: "2026-01-28"
 excerpt: "Quand un site devient un média, l’écriture cesse d’être décorative. Trouver sa voix éditoriale, c’est renoncer au brillant pour parler à celles et ceux qui travaillent vraiment."
-cover: "/images/articles/ecrire-pour-etre-utile.jpg"
+cover: "/images/articles/2026-01-28-ecrire-pour-etre-utile-pas-pour-etre-brillant.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "terrain"
@@ -12,6 +12,7 @@ series:
   slug: "construire-carnet-experience"
   order: 4
 ---
+
 ## Le faux confort du site qui fonctionne
 
 Un site qui s’affiche, qui charge vite, qui ne plante pas, donne une illusion de réussite. On coche des cases : un framework moderne, un hébergement propre, quelques pages bien rangées. Techniquement, tout va bien. Stratégiquement, rien n’est encore posé.

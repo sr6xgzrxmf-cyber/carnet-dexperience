@@ -2,15 +2,16 @@
 title: "Pourquoi je ne me reconnais plus dans un CV"
 date: "2026-01-14"
 excerpt: "Ce texte ouvre une série d’articles consacrés à la conception de ce site — ses choix, ses détours, ses renoncements et ce qu’ils disent d’un parcours professionnel."
-cover: "/images/articles/flou-en-message.jpg"
+cover: "/images/articles/2026-01-14-pourquoi-je-ne-me-reconnais-plus-dans-un-cv.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
+tags:
+  - "leadership"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
   order: 0
-tags:
-  - "leadership"
 ---
+
 ## Ce que je refuse, d’abord
 
 Je n’ai plus rien à prouver, seulement quelque chose à offrir.  

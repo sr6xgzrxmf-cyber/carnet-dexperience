@@ -2,14 +2,14 @@
 title: "Effet miroir (côté lecteur)"
 date: "2026-02-11"
 excerpt: "Ce qui touche vraiment un lecteur professionnel n’est pas la réussite affichée, mais la reconnaissance silencieuse de ce qu’il vit déjà. Quand un média devient un miroir, il commence à travailler tout seul."
-cover: "/images/articles/effet-miroir-cote-lecteur.jpg"
+cover: "/images/articles/2026-02-11-effet-miroir-cote-lecteur.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
-tags: []
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
   order: 6
 ---
+
 Il y a des moments où un média professionnel cesse d’être une idée pour devenir une mise à l’épreuve.
 
 Pour moi, cela s’est joué à Tech&Fest, à Grenoble.

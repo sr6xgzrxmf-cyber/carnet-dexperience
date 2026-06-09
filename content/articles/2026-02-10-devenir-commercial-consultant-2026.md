@@ -1,21 +1,19 @@
 ---
-title: Devenir un commercial-consultant en 2026
-date: '2026-02-10'
-excerpt: >-
-  En 2026, vendre ne consiste plus à convaincre mais à éclairer. Le commercial
-  performant n’est plus un pitcher, c’est un consultant capable de
-  diagnostiquer, de structurer un problème et d’aider à décider.
-cover: /images/articles/2026-02-04-devenir-commercial-consultant-2026.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Devenir un commercial-consultant en 2026"
+date: "2026-02-10"
+excerpt: "En 2026, vendre ne consiste plus à convaincre mais à éclairer. Le commercial performant n’est plus un pitcher, c’est un consultant capable de diagnostiquer, de structurer un problème et d’aider à décider."
+cover: "/images/articles/2026-02-10-devenir-commercial-consultant-2026.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - conseil
-  - posture commerciale
-  - transformation
-  - management
-  - formation
+  - "vente"
+  - "conseil"
+  - "posture commerciale"
+  - "transformation"
+  - "management"
+  - "formation"
 series:
-  slug: Vendre n’est plus convaincre
+  name: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 2
 ---
 

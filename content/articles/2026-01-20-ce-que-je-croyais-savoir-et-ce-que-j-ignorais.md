@@ -2,16 +2,17 @@
 title: "Ce que je croyais savoir (et ce que j’ignorais)"
 date: "2026-01-20"
 slug: "ce-que-je-croyais-savoir-et-ce-que-j-ignorais"
-cover: "/images/articles/2026-01-20-savoir-ignorer.jpg"
+excerpt: "Entre illusion de maîtrise et découverte des angles morts, revenir au code m’a obligé à déconstruire une expertise supposée pour retrouver une posture d’apprentissage lucide."
+cover: "/images/articles/2026-01-20-ce-que-je-croyais-savoir-et-ce-que-j-ignorais.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
+tags:
+  - "apprentissage"
 series:
   name: "Construire Carnet d’expérience"
   slug: "construire-carnet-experience"
   order: 2
-tags:
-  - "apprentissage"
-excerpt: "Entre illusion de maîtrise et découverte des angles morts, revenir au code m’a obligé à déconstruire une expertise supposée pour retrouver une posture d’apprentissage lucide."
 ---
+
 Je pensais connaître Internet. Ou plus exactement : **je pensais en avoir gardé l’essentiel.**
 
 Après tout, j’avais appris le HTML très jeune. J’avais compris la logique des pages, des liens, des structures. J’avais manipulé des bases de données, utilisé des CMS, animé des sites, accompagné des enfants et des adultes dans la découverte du code. Le langage ne m’était pas étranger. La pensée informatique encore moins. Elle m’avait accompagné longtemps, parfois en filigrane, parfois très concrètement.

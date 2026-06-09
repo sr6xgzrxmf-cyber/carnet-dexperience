@@ -12,6 +12,7 @@ import {
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
 import type { Metadata } from "next";
+import { formatTagLabel } from "@/lib/editorial-labels";
 
 export const revalidate = 300;
 
@@ -231,12 +232,14 @@ export default async function ArticleDetailPage({
           {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
             <div className="flex flex-wrap gap-2 pt-1">
               {item.meta.tags.map((t: string) => (
-                <span
+                <Link
                   key={t}
+                  href={`/articles?tag=${encodeURIComponent(t)}`}
+                  aria-label={`Voir les articles sur ${formatTagLabel(t)}`}
                   className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-xs text-neutral-700 dark:text-neutral-300 bg-white/50 dark:bg-neutral-950/30"
                 >
-                  {t}
-                </span>
+                  {formatTagLabel(t)}
+                </Link>
               ))}
             </div>
           ) : null}

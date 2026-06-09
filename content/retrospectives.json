@@ -1,13 +1,26 @@
 {
   "featuredSeriesList": [
-    "construire-carnet-experience",
     "atelier-de-posture",
-    "Vendre n’est plus convaincre"
+    "faire-exister-un-projet",
+    "construire-carnet-experience"
   ],
   "featuredSeriesSummaries": {
-    "construire-carnet-experience": "Une rétrospective intime sur la construction de ce site — non comme un portfolio, mais comme un espace de mise en cohérence. Ici, je raconte les doutes, les bifurcations, les renoncements et les choix qui transforment une trajectoire professionnelle en récit lisible. Non pas pour donner des leçons, mais pour comprendre ce qui fait sens, quand un CV ne suffit plus.",
     "atelier-de-posture": "Une série née du travail d’accompagnement mené sur la durée avec des profils en évolution. Ici, on s’intéresse à ce qui ne s’affiche pas sur un CV : la posture. Comment répondre sans se justifier, décider sans chercher à convaincre, se rendre lisible sans se suradapter. À partir de situations réelles, cette série explore les réglages intérieurs qui permettent de tenir sa place plus justement — dans le travail, dans les échanges, et dans les moments où tout se joue.",
-    "Vendre n’est plus convaincre": "Une réflexion courte mais tranchée sur la vente contemporaine. Ici, vendre ne consiste plus à persuader, mais à créer les conditions d’une décision juste. Cette rétrospective interroge le rôle du commercial-consultant aujourd’hui : moins d’arguments, plus de clarté, de cadre et de responsabilité partagée."
+    "faire-exister-un-projet": "Une série ancrée dans une situation réelle : faire avancer un projet encore instable, chercher des partenaires, traduire une vision sans la trahir, lire les signaux faibles et décider sans cadre complet. C’est une bonne porte d’entrée si tu veux voir comment je travaille quand rien n’est complètement prêt, mais que tout doit déjà devenir lisible.",
+    "construire-carnet-experience": "Une rétrospective sur la construction de ce site comme outil de cohérence professionnelle. J’y raconte les détours, les arbitrages et les renoncements qui permettent de transformer un parcours dispersé en récit lisible, sans le lisser."
   },
-  "featuredSeriesTeasers": {}
+  "featuredSeriesTeasers": {
+    "atelier-de-posture": {
+      "benefit": "Pour comprendre comment je travaille sur les situations floues, chargées ou difficiles à tenir.",
+      "forWhom": "À lire si tu veux voir la mécanique de clarification derrière mes articles les plus forts."
+    },
+    "faire-exister-un-projet": {
+      "benefit": "Pour voir un travail récent sur l’incertitude, la structuration, le partenariat et la traduction d’un projet vivant.",
+      "forWhom": "Un bon point d’entrée si tu me découvres aujourd’hui comme recruteur, partenaire ou client potentiel."
+    },
+    "construire-carnet-experience": {
+      "benefit": "Pour comprendre pourquoi ce site existe et ce qu’il cherche à rendre visible au-delà d’un CV.",
+      "forWhom": "À lire si tu veux relier le fond éditorial à la trajectoire professionnelle."
+    }
+  }
 }

@@ -1,8 +1,8 @@
 ---
 title: "5 principes de l’andragogie pour une formation centrée sur l’apprenant"
 date: "2023-05-14"
-excerpt: "Comment Malcolm Knowles a révolutionné la formation des adultes en plaçant l’expérience, l’autonomie et l’utilité concrète au cœur de l’apprentissage."
-cover: "/images/articles/malcolm-knowles.jpg"
+excerpt: "L’andragogie devient concrète quand on regarde ce qui se passe vraiment dans une salle : des adultes pressés, lucides, parfois fatigués, qui restent seulement si l’apprentissage leur rend du pouvoir."
+cover: "/images/articles/2023-05-14-5-principes-de-l-andragogie-pour-une-formation-centree-sur-l-apprenant.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"
@@ -14,139 +14,113 @@ series:
   slug: "former-des-adultes"
   order: 4
 ---
-# 5 principes de l’andragogie pour une formation centrée sur l’apprenant
-**Ou comment Malcolm Knowles a révolutionné l’art d’apprendre… en écoutant les adultes**
 
-**Laurent Guyonnet**
-*Creative Pro chez Apple Retail France EURL*
-*14 mai 2023*
+### 9 h 08, et la moitié du groupe n’écoute déjà plus
 
----
+Les manteaux sont encore sur les dossiers des chaises. Certains ont gardé leur téléphone en main. Une participante demande tout de suite à quelle heure cela se termine. Un autre veut savoir si ce qui va être vu “sert vraiment dans le poste”. Personne n’est impoli. Mais tout le monde vérifie la même chose : est-ce que ce temps mérite d’être pris ?
 
-## Introduction : Le professeur qui a osé dire *« Les adultes ne sont pas des enfants »*
+C’est souvent à cet endroit très concret que l’andragogie commence.
 
-Imaginez une salle de classe des années 1960, remplie d’adultes en costume-cravate ou en robe stricte, assis sur des chaises en bois inconfortables. Dehors, la pluie frappe les vitres, et l’air sent le café froid et la craie. Au tableau, un professeur d’anglais, Malcolm Knowles, observe ses élèves. Ce ne sont pas des adolescents, mais des adultes : des infirmières, des ouvriers, des cadres. Leurs regards sont las, leurs stylos grattent mollement le papier. *« Pourquoi sommes-nous ici ? »* semble dire leur posture.
+On la résume parfois à un mot savant ou à une référence académique, souvent associée à Malcolm Knowles. En réalité, l’idée est plus simple et plus radicale : un adulte n’apprend pas bien quand on le traite comme un élève à remplir. Il apprend mieux quand il comprend ce qu’il vient chercher, ce qu’il peut mobiliser, et ce qu’il va pouvoir faire différemment ensuite.
 
-Knowles, lui, se pose une question radicale : *« Et si on enseignait aux adultes comme on enseigne aux enfants, mais que ça ne marchait tout simplement pas ? »*
+Voici les cinq principes qui, sur le terrain, changent vraiment la qualité d’une formation d’adultes.
 
-Ce jour-là, sous la lumière blafarde des néons, l’**andragogie** est née.
+## 1. Un adulte veut savoir pourquoi il est là
 
----
+Le premier besoin n’est pas pédagogique. Il est relationnel et pratique.
 
-## Qui était Malcolm Knowles ?
+Un adulte veut savoir :
 
-Ancien professeur d’anglais, Knowles a passé sa carrière à écouter les adultes. Pas ceux qui réussissaient brillamment, mais ceux qui bâillaient en formation, ceux qui abandonnaient en cours de route, ceux qui disaient *« À quoi bon ? »* en rangeant leurs affaires. Il a compris une chose : **les adultes n’apprennent pas comme les enfants**. Ils ont des motivations différentes, des expériences à revendre, et une horreur viscérale de perdre leur temps.
+- pourquoi ce sujet compte,
+- à quel problème il répond,
+- et ce que cela va changer dans le réel de son travail.
 
-Dans les années 1960, il publie *« The Modern Practice of Adult Education: Andragogy versus Pedagogy »*, un livre qui va secouer le monde de la formation. Son idée ? **Les adultes ne veulent pas qu’on leur enseigne. Ils veulent qu’on les aide à apprendre.**
+Quand cette réponse n’arrive pas vite, l’attention décroche. Pas par paresse. Par lucidité.
 
----
+On peut expliquer un modèle, une méthode ou un concept. Mais si le groupe ne voit pas en quoi cela va l’aider à mieux gérer une situation concrète, la formation reste extérieure. Elle est peut-être intéressante. Elle n’est pas encore utile.
 
-## Les 5 principes de l’andragogie : ou comment ne plus ennuyer les adultes
+## 2. Un adulte n’arrive jamais les mains vides
 
-### 1. **L’auto-concept de l’apprenant adulte**
-*« Pourquoi je dois apprendre ça ? »*
+Il vient avec des habitudes, des raccourcis, des réussites, des erreurs, des réflexes forgés par le métier. C’est une force, mais aussi une contrainte : il n’écoute jamais “à partir de zéro”.
 
-**Le principe** :
-Les adultes ont besoin de comprendre **l’utilité immédiate** de ce qu’on leur enseigne. Pas de théorie floue, pas de *« ça vous servira plus tard »*. Ils veulent savoir : *« En quoi est-ce que ça va changer ma vie demain ? »*
+Cela change tout.
 
-**Scène réaliste** :
-*Un atelier de formation en gestion du temps, 8h30, un lundi pluvieux. Les participants, des managers épuisés, fixent l’horloge en sirotant un café amer. Le formateur, un jeune homme enthousiaste, lance : «* Aujourd’hui, nous allons parler de la matrice Eisenhower ! *»*
-*Un grognement collectif. *« Encore une théorie, »* murmure Claire, 45 ans, les cernes creusées par les nuits blanches. *« Moi, ce que je veux, c’est savoir comment faire tenir 48h de boulot dans 24h. »*
-*Le formateur, inspiré par Knowles, change de stratégie : «* Claire, et si on commençait par vos trois tâches les plus stressantes de la semaine ? On va les classer ensemble. *»*
-*Elle sort son carnet, couvert de post-it froissés. En 10 minutes, ils ont identifié ce qu’elle peut déléguer, supprimer, ou reporter. *« Ah. Donc la matrice Eisenhower, c’est juste un moyen de me dire ‘arrête de tout faire toi-même’ ? »* *« Exactement, »* sourit le formateur. *« Et maintenant, on va voir comment l’appliquer à votre équipe. »*
-*Claire hoche la tête, enfin intéressée.*
+Former des adultes ne consiste donc pas seulement à apporter un contenu. Cela consiste à entrer en dialogue avec quelque chose qui existe déjà.
 
-**Pourquoi ça marche** :
-- **Lien direct avec leur réalité** : On part de leurs problèmes, pas d’un cours théorique.
-- **Respect de leur intelligence** : On ne leur dit pas *« écoutez, c’est bon pour vous »*, on leur montre *« voici comment ça résout VOTRE problème »*.
+Ignorer cette expérience produit un effet très simple : la personne se sent soit infantilisée, soit jugée, soit inutilement contredite. À l’inverse, partir de ce qu’elle fait déjà permet de déplacer la formation du terrain de la leçon vers celui de l’ajustement.
 
----
+On n’est plus en train de dire : “voilà la bonne manière”.
+On est en train de dire : “voilà comment ton expérience peut devenir plus précise, plus sûre ou plus efficace”.
 
-### 2. **L’expérience de l’apprenant adulte**
-*« J’ai déjà vécu ça. Utilisez-le. »*
+## 3. Un adulte apprend mieux à partir d’un problème qu’à partir d’un programme
 
-**Le principe** :
-Les adultes arrivent en formation avec un bagage : des succès, des échecs, des cicatrices. Ignorer ce bagage, c’est comme essayer de construire une maison sans fondations.
+Beaucoup de formations sont encore construites comme des successions de thèmes. Le problème, c’est que les adultes, eux, vivent des situations.
 
-**Scène réaliste** :
-*Un chantier sous la pluie. Une formation sécurité pour des ouvriers du BTP. Le formateur, un ancien de la profession, leur demande : «* Qui ici a déjà glissé sur une plaque de métal mouillée ? *»*
-*Trois mains se lèvent. «* Racontez-nous, »* dit-il.
-*Jean, 52 ans, montre une cicatrice sur son avant-bras : «* C’était en 1998. J’ai atterri sur des gravats. Deux mois d’arrêt. *»*
-*Le formateur hoche la tête : «* Donc vous savez déjà pourquoi on porte des chaussures antidérapantes. Maintenant, parlons des harnais. Qui en a déjà utilisé un qui s’est bloqué ? *»*
-*Les histoires fusent. La formation devient un échange, pas un cours.*
+Ils se demandent rarement :
 
-**Pourquoi ça marche** :
-- **Valorisation de leur savoir** : Leurs expériences deviennent la base de l’apprentissage.
-- **Création de liens** : Ils se rendent compte qu’ils ne sont pas seuls à avoir merdé… ou réussi.
+- “quelles sont les cinq parties du cours ?”
 
----
+Ils se demandent plutôt :
 
-### 3. **La motivation de l’apprenant adulte**
-*« Donnez-moi une raison de me lever tôt pour ça. »*
+- “comment je gère ça demain ?”
+- “qu’est-ce que je fais quand le client réagit comme ça ?”
+- “comment je rattrape cette erreur ?”
+- “à quoi je reconnais que je suis en train de mal cadrer ?”
 
-**Le principe** :
-Les adultes ne sont pas motivés par des notes ou des diplômes. Ils le sont par des **objectifs clairs, personnels et atteignables**. *« Apprendre l’anglais »* ne suffit pas. *« Pouvoir négocier avec un client américain d’ici trois mois »* oui.
+L’orientation vers le problème change la pédagogie. Elle oblige à partir du réel, à faire travailler des cas, à montrer des arbitrages, à donner des repères actionnables. À ce moment-là, la théorie retrouve sa vraie place : non pas occuper l’espace, mais éclairer l’action.
 
-**Scène réaliste** :
-*Une formation en informatique pour des employés administratifs. La salle est tiède, l’après-midi est long. Le formateur demande : «* Pourquoi êtes-vous là ? *»*
-*Silence. Puis Marie, 38 ans, lève la main : «* Moi, c’est parce que mon boss m’a dit que si je ne maîtrisais pas Excel, je restais bloquée à mon poste. *»*
-**« Et toi, Ahmed ? *»*
-**« Je veux monter ma boîte. Il me faut un tableau de bord pour suivre mes ventes. *»*
-*Le formateur écrit leurs objectifs au tableau. «* Bon. On va commencer par les formules qui vous feront gagner deux heures par semaine. Marie, Ahmed, vous me dites si ça répond à vos besoins. *»*
+## 4. Un adulte reste quand il peut agir
 
-**Pourquoi ça marche** :
-- **Personnalisation** : Chaque participant voit le lien entre l’effort et son propre bénéfice.
-- **Urgence** : *« D’ici la fin de la journée, vous saurez faire X »* est plus motivant que *« On va étudier Excel »*.
+On retient mal ce qu’on subit passivement. On retient beaucoup mieux ce que l’on manipule, teste, reformule, tente et corrige.
 
----
+Cela ne veut pas dire transformer chaque formation en animation permanente. Cela veut dire créer de la mise en mouvement.
 
-### 4. **L’orientation vers la tâche et la résolution de problèmes**
-*« Montrez-moi comment faire, pas comment ça marche. »*
+Selon le contexte, cela peut prendre des formes très simples :
 
-**Le principe** :
-Les adultes veulent **agir**, pas réfléchir. Ils préfèrent *« Comment réparer cette fuite ? »* à *« Théorie de la plomberie depuis 1920 »*.
+- une reformulation en binôme,
+- une démonstration suivie d’un essai,
+- un cas réel à résoudre,
+- une simulation,
+- un avant/après,
+- un retour sur erreur,
+- ou une production concrète en séance.
 
-**Scène réaliste** :
-*Un atelier de premiers secours. Le formateur ne perd pas de temps avec des schémas anatomiques. «* Aujourd’hui, vous allez sauver une vie. Voici un mannequin. Il s’appelle Bob. Bob s’étouffe. Que faites-vous ? *»*
-*Les participants se regardent, mal à l’aise. «* Allez, Sophie, à toi. *»*
-*Sophie, 32 ans, hésite. «* Je… je lui tape dans le dos ? *»*
-**« Essayez. *»*
-*Elle tape trop doucement. «* Plus fort ! *»* crie le formateur. «* Imaginez que c’est votre enfant ! *»*
-*Sophie frappe. Le « corps étranger » (un morceau de plastique) jaillit. La salle applaudit. «* Voila. Vous venez de sauver Bob. Maintenant, on recommence avec un vrai étouffement. *»*
+Le point clé n’est pas l’activité pour l’activité. Le point clé est de permettre au participant de sentir qu’il ne fait pas que recevoir un contenu : il commence déjà à le transformer en compétence.
 
-**Pourquoi ça marche** :
-- **Apprentissage par l’action** : On retient 90% de ce qu’on fait, 10% de ce qu’on entend.
-- **Confiance immédiate** : *« Je sais faire ça maintenant »* > *« J’ai écouté un cours »*.
+## 5. Un adulte apprend mieux quand sa dignité reste intacte
 
----
+C’est peut-être le principe le moins formulé, et pourtant l’un des plus décisifs.
 
-### 5. **La participation active de l’apprenant adulte**
-*« Ne me faites pas la leçon. Faites-moi réfléchir. »*
+Un adulte peut accepter :
 
-**Le principe** :
-Les adultes détestent être passifs. Ils veulent **débattre, tester, critiquer, créer**.
+- la difficulté,
+- l’effort,
+- la remise en question,
+- l’inconfort,
+- et même l’erreur.
 
-**Scène réaliste** :
-*Une formation en vente. Le formateur divise le groupe en deux : «* Vous êtes les vendeurs. Vous, les clients difficiles. Votre objectif : conclure une vente… ou obtenir une réduction de 20%. Go. *»*
-*Chaos. Rires. «* Mais c’est du vol ! *»* crie un « client ». «* Non, c’est de la négociation, »* rétorque un « vendeur », suant à grosses gouttes.*
-*À la fin, ils débriefent : «* Qu’est-ce qui a marché ? Qu’est-ce qui a foiré ? *»*
-**« Moi, j’ai câlé parce que j’ai parlé trop vite, »* avoue Thomas. «* Et toi, tu as gagné parce que tu as écouté sa demande, »* ajoute le formateur. «* Demain, on inverse les rôles. *»*
+Ce qu’il supporte beaucoup moins, c’est de se sentir rabaissé, exposé sans nécessité, ou remis dans une position d’impuissance.
 
-**Pourquoi ça marche** :
-- **Apprentissage par l’erreur** : On retient mieux ce qu’on a raté (et corrigé) que ce qu’on a entendu.
-- **Collaboration** : *« On est tous dans le même bateau »* > *« Le prof sait tout »*.
+C’est pour cela que la qualité d’une formation dépend aussi du cadre :
 
----
+- comment on corrige,
+- comment on distribue la parole,
+- comment on accueille une erreur,
+- comment on évite les humiliations minuscules,
+- comment on aide quelqu’un à redevenir débutant sans le faire régresser symboliquement.
 
-## Conclusion : L’andragogie, ou l’art de ne pas prendre les adultes pour des enfants
+Une formation d’adultes réussie ne produit pas seulement de la compréhension. Elle produit aussi une sensation rare : celle d’avoir été respecté pendant qu’on apprenait.
 
-Malcolm Knowles a compris une chose simple : **les adultes veulent être traités en partenaires, pas en élèves**. Ils veulent qu’on leur fasse confiance, qu’on utilise ce qu’ils savent déjà, et qu’on leur donne des outils **concrets** pour améliorer leur vie.
+## Ce que Malcolm Knowles avait vu avant beaucoup d’autres
 
-Alors, si vous formez des adultes :
-- **Partez de leurs problèmes**, pas de votre programme.
-- **Utilisez leurs expériences**, ne les ignorez pas.
-- **Donnez-leur des objectifs clairs**, pas des promesses floues.
-- **Faites-les agir**, ne les faites pas écouter.
-- **Impliquez-les**, ne leur faites pas la leçon.
+La force de Knowles n’est pas seulement d’avoir théorisé une différence entre pédagogie et andragogie. C’est d’avoir pris les adultes au sérieux.
 
-Et surtout, **souvenez-vous** : la meilleure formation est celle où, à la fin, les participants se disent *« Je n’ai pas vu le temps passer »*… et *« Demain, je fais différemment. »*
+Pas comme des “grands enfants”.
+Pas comme des récepteurs à convaincre.
+Pas comme des apprenants abstraits.
+
+Mais comme des personnes qui viennent avec du vécu, des contraintes, de l’orgueil parfois, de la fatigue souvent, et une exigence très saine : ne pas perdre leur temps.
+
+Au fond, former des adultes revient peut-être à cela : ne jamais oublier qu’ils apprennent avec leur intelligence, leur métier, leur histoire… et leur dignité.
+
+Question ouverte : dans tes formations, qu’est-ce qui tient encore du programme… et qu’est-ce qui part vraiment de la réalité de ceux qui sont dans la salle ?

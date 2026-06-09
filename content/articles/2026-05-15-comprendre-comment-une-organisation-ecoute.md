@@ -1,10 +1,10 @@
 ---
 title: Comprendre comment une organisation écoute
-date: '2026-05-13'
+date: "2026-05-15"
 excerpt: >-
   Je croyais chercher le bon contact. En réalité, j’apprenais surtout à lire
   comment chaque structure filtre, traduit et protège son attention.
-cover: /images/articles/2026-05-26-comprendre-comment-une-organisation-ecoute.jpg
+cover: /images/articles/2026-05-15-comprendre-comment-une-organisation-ecoute.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - organisation
@@ -116,3 +116,5 @@ Aujourd’hui, je ne cherche plus seulement le bon contact.
 Je cherche des endroits où le projet n’aura pas besoin de se déformer pour être entendu.
 
 Et ce n’est jamais totalement acquis.
+
+Question ouverte : quand une organisation ne répond pas comme prévu, est-ce que tu cherches un meilleur pitch… ou une meilleure porte d’entrée ?

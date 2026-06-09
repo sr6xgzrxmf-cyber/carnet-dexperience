@@ -1,8 +1,8 @@
 ---
 title: "L’apprenant adulte, ou l’art de devenir maître de sa formation"
 date: "2023-05-18"
-excerpt: "Pourquoi l’autonomie, l’humour et la participation transforment l’apprentissage des adultes en aventure vivante et motivante."
-cover: "/images/articles/apprenant-adulte-super-heros.jpg"
+excerpt: "Un adulte s’engage vraiment dans une formation quand il comprend ce qu’il vient chercher, ce qu’il va pouvoir tester, et la part qu’on lui laisse pour s’approprier le travail."
+cover: "/images/articles/2023-05-18-l-apprenant-adulte-ou-l-art-de-devenir-maitre-de-sa-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"
@@ -13,34 +13,78 @@ series:
   slug: "former-des-adultes"
   order: 8
 ---
-On dit souvent que l’on n’a pas fini d’apprendre tant que l’on vit. Mais qui, parmi nous, ne s’est jamais retrouvé dans une formation professionnelle en s’imaginant plutôt sur une plage ensoleillée, un cocktail à la main ? L’apprentissage, ce n’est pas toujours une partie de plaisir, surtout quand on est adulte et qu’on a mille autres choses à penser : le travail, les factures, la famille, la fatigue. Pourtant, il est crucial pour notre développement professionnel et personnel. Alors comment transformer cet apprentissage en une expérience inspirante, drôle et motivante ? La réponse réside dans la participation active de l’apprenant adulte.
 
-## L’apprenant adulte : un super-héros en devenir
+### « Concrètement, on repart avec quoi ? »
 
-L’apprenant adulte n’est pas un simple mortel. Il est un super-héros aux pouvoirs insoupçonnés : l’autonomie, la motivation et l’expérience. Doté d’un costume aux couleurs chatoyantes et d’une cape flottant au vent, il est prêt à affronter les défis de la formation. Mais attention, même un super-héros a besoin de s’entraîner pour développer ses compétences. Un manager qui découvre un nouvel outil, une vendeuse qui se forme au digital, un technicien qui apprend une nouvelle méthode… tous portent, sans le savoir, cette cape invisible de l’apprenant adulte.
+La question arrive parfois avant même le premier exercice. Elle n’est ni brutale ni impatiente. Elle est lucide. Un adulte veut savoir à quoi sert le temps qu’il est en train de donner.
 
-Alors, comment faire évoluer ces super-pouvoirs ?
+C’est souvent là que se joue la suite. Si la formation répond par un programme, elle rassure à moitié. Si elle répond par une transformation concrète, elle commence à engager.
 
-## Le pouvoir de l’autonomie : devenir maître de sa formation
+L’apprenant adulte ne cherche pas seulement à suivre un parcours. Il cherche à comprendre ce qu’il va pouvoir en faire.
 
-L’apprenant adulte possède un avantage inestimable sur les plus jeunes : l’autonomie. Contrairement à l’image du petit écolier attendant patiemment que le professeur lui donne la réponse, l’adulte a le pouvoir de prendre en main son apprentissage. Cela passe par la définition de ses objectifs, le choix des formations pertinentes et l’organisation de son temps de travail.
+## L’autonomie n’est pas un bonus
 
-Un commercial qui décide de se former à la négociation, un formateur qui explore de nouvelles pédagogies, un salarié qui suit des modules le soir après le travail : chacun compose sa propre recette. Le cocktail de la réussite ? Un zeste de motivation, une pincée de curiosité et une bonne dose de persévérance.
+On présente souvent l’autonomie de l’adulte comme une qualité personnelle, presque morale. En réalité, c’est surtout une donnée pédagogique.
 
-## Le rire, meilleur allié de l’apprentissage
+Un adulte arrive avec ses contraintes, ses priorités, son rapport au temps, ses critères d’utilité. Il fait rapidement le tri entre ce qui lui paraît transférable et ce qui lui semble décoratif. Si le cadre reste flou, il décroche. Pas forcément physiquement. Mais intérieurement.
 
-On dit que le rire est le propre de l’homme, et il est aussi l’allié de l’apprenant adulte. S’autoriser à rire de ses erreurs, à partager des moments de détente avec les autres apprenants et à voir l’apprentissage comme une expérience ludique permet de créer une ambiance propice à la réussite. Un quiz raté, une prise de parole maladroite, un exercice qui tourne au fou rire : tout cela fait partie du chemin.
+À l’inverse, quand il comprend clairement :
 
-Car oui, l’apprentissage peut être amusant et inspirant si l’on s’en donne les moyens.
+- pourquoi il est là ;
+- ce qu’il va apprendre à mieux faire ;
+- ce qu’on attend de lui ;
+- ce qu’il pourra tester ensuite ;
 
-## Partager pour mieux apprendre
+il devient beaucoup plus disponible.
 
-Si l’apprenant adulte est encouragé à participer activement à sa formation, il ne doit pas pour autant se couper du monde. Au contraire, échanger avec les autres apprenants, confronter ses idées et partager ses expériences sont autant d’éléments qui enrichissent l’apprentissage. Un groupe de formation devient alors une sorte d’équipe de super-héros : chacun a ses forces, ses faiblesses, ses histoires, et c’est leur mise en commun qui crée la progression.
+L’autonomie ne veut pas dire qu’il veut faire seul. Elle veut dire qu’il a besoin de pouvoir situer sa place dans le travail.
 
-L’entraide et la coopération sont des valeurs fondamentales pour faire grandir ensemble, comme une grande famille d’apprenants adultes solidaires.
+## Devenir maître de sa formation ne veut pas dire tout piloter
 
-## En conclusion
+Il y a un malentendu fréquent autour de l’apprentissage adulte. On imagine parfois que respecter l’autonomie consiste à laisser chacun naviguer comme il veut. En pratique, cela produit souvent l’effet inverse : plus personne ne sait où regarder.
 
-En somme, l’apprenant adulte a le pouvoir de transformer son apprentissage en une expérience inspirante, drôle et enrichissante. En prenant son destin en main, en cultivant son autonomie, en riant de ses erreurs et en partageant avec les autres, il devient maître de sa formation.
+Un adulte a besoin de liberté, oui. Mais à l’intérieur d’un cadre lisible.
 
-Alors, chers adultes, chers super-héros de l’apprentissage, n’ayez pas peur de participer activement à votre propre formation. Levez-vous, enfilez votre cape et sautez dans l’aventure de l’apprentissage avec enthousiasme et détermination. Car, comme le dit le célèbre adage : « On n’arrête pas de jouer parce qu’on vieillit, on vieillit parce qu’on arrête de jouer. » Alors jouez, apprenez et grandissez ensemble pour faire de votre parcours professionnel une aventure inspirante et pleine d’humour.
+Il faut donc tenir les deux en même temps :
+
+- un cap clair ;
+- une marge d’appropriation réelle.
+
+Le formateur qui cadre trop étroitement infantilise. Celui qui laisse tout ouvert abandonne. Le bon point d’équilibre se situe souvent dans une structure simple, exigeante, mais respirable.
+
+## Participer, ce n’est pas parler pour parler
+
+On surestime parfois la participation visible. Faire parler le groupe ne suffit pas à rendre les apprenants acteurs. Un adulte peut intervenir beaucoup et très peu apprendre. Il peut aussi parler peu et travailler énormément, à condition que le cadre l’y aide.
+
+La vraie participation se voit ailleurs :
+
+- dans la manière dont quelqu’un reformule un problème ;
+- dans la qualité d’une question posée au bon moment ;
+- dans un essai plus juste pendant une mise en situation ;
+- dans un déplacement de regard sur une situation connue.
+
+Autrement dit, participer, ce n’est pas occuper l’espace. C’est se mettre réellement au travail.
+
+## Ce que le formateur doit accepter de lâcher
+
+Former des adultes demande aussi un déplacement du côté du formateur. Tu ne peux pas vouloir tout maîtriser : le rythme exact de chacun, la façon dont il reliera le contenu à son contexte, les résistances qu’il faudra traverser.
+
+Tu peux en revanche rendre certaines choses possibles :
+
+- poser un contrat de départ clair ;
+- nommer les objectifs sans emphase ;
+- prévoir des situations d’application crédibles ;
+- laisser de la place aux questions qui déplacent le déroulé ;
+- aider chacun à repartir avec une traduction concrète.
+
+Le rôle du formateur n’est pas de remplir. Il est d’équiper.
+
+## Ce que change vraiment une bonne formation
+
+Quand un adulte devient maître de sa formation, ce n’est pas parce qu’il s’est motivé. C’est parce qu’il a trouvé un espace où il peut relier ce qu’il vit, ce qu’il comprend et ce qu’il va tenter ensuite.
+
+À ce moment-là, la formation cesse d’être un passage obligé. Elle devient un point d’appui.
+
+Et c’est souvent à ça qu’on reconnaît une séquence juste : les participants ne repartent pas seulement avec des notes. Ils repartent avec une manière plus nette de regarder leur propre pratique.
+
+Dans tes dispositifs, est-ce que l’apprenant adulte est seulement invité à suivre, ou est-ce qu’il a réellement de quoi s’approprier le travail ?

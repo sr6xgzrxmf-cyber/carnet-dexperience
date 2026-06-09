@@ -1,6 +1,6 @@
 // app/articles/archives/page.tsx
 import Link from "next/link";
-import { getAllArticles, type ArticleItem } from "@/lib/articles";
+import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
 import { seriesColorClass } from "@/lib/series-ui";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 
@@ -55,12 +55,6 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
   };
 }
 
-function isPublished(date?: string): boolean {
-  if (!date) return true;
-  const d = new Date(`${date}T00:00:00.000Z`);
-  return d.getTime() <= Date.now();
-}
-
 export default async function ArticlesArchivesPage(props: {
   searchParams?: Promise<{ series?: string }>;
 }) {
@@ -105,12 +99,22 @@ export default async function ArticlesArchivesPage(props: {
           <div>
             <h1 className="text-3xl font-semibold tracking-tight">Archives</h1>
             <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-              Liste complète, classée par date (du plus récent au plus ancien).
+              Tous les articles, du plus récent au plus ancien. Les textes plus anciens
+              restent ici volontairement : ils montrent le temps long du travail, les
+              premières versions et les changements de ligne.
             </p>
           </div>
           <div className="text-sm text-neutral-600 dark:text-neutral-400 shrink-0">
             {items.length} article{items.length !== 1 ? "s" : ""}
           </div>
+        </div>
+        <div className="mt-4">
+          <Link
+            href="/articles"
+            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          >
+            ← Revenir à la page Articles
+          </Link>
         </div>
       </header>
 
@@ -151,7 +155,7 @@ export default async function ArticlesArchivesPage(props: {
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
         <ul className="space-y-5">
           {items.map((a) => {
-            const published = isPublished(a.date);
+            const published = isPublishedDate(a.date, new Date());
             return (
               <li key={a.slug} className="text-sm">
                 <Link href={`/articles/${a.slug}`} className="block hover:underline">

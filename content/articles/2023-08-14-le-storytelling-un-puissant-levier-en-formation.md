@@ -2,7 +2,7 @@
 title: "Le storytelling : un puissant levier en formation"
 date: "2023-08-14"
 excerpt: "Pourquoi raconter des histoires aide les apprenants à mieux comprendre, retenir et s’approprier les savoirs."
-cover: "/images/articles/storytelling-formation.jpg"
+cover: "/images/articles/2023-08-14-le-storytelling-un-puissant-levier-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 32
 ---
+
 La place du storytelling dans la formation : comment le narratif peut stimuler l’apprentissage
 
 En plein cœur de l’ère digitale, la formation doit sans cesse se réinventer pour répondre aux attentes des apprenants. Parmi les leviers les plus puissants figure le storytelling. Bien plus qu’un simple outil de communication, la narration transforme la manière dont l’information est perçue, comprise et mémorisée.

@@ -2,7 +2,7 @@
 title: "Pourquoi résiste-t-on au changement en formation ?"
 date: "2023-08-28"
 excerpt: "Comprendre les mécanismes psychologiques et organisationnels qui freinent l’adoption du changement en formation."
-cover: "/images/articles/changement-organisationnel-formation.jpg"
+cover: "/images/articles/2023-08-28-pourquoi-resiste-t-on-au-changement-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -12,6 +12,7 @@ series:
   slug: "former-des-adultes"
   order: 36
 ---
+
 Dans le monde de l’entreprise, le changement est la seule constante. Des technologies émergentes aux mutations des marchés, les organisations doivent sans cesse s’adapter pour rester compétitives. La formation joue un rôle central dans cette adaptation, en permettant aux collaborateurs d’acquérir de nouvelles compétences et de s’ajuster aux nouvelles réalités. Pourtant, tout changement, y compris dans le domaine de la formation, rencontre presque toujours une forme de résistance.
 
 Le phénomène de la résistance au changement

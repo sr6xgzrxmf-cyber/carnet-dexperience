@@ -1,21 +1,20 @@
 ---
-title: 'Arrêter de débattre : tester 30 jours, décider ensuite'
-date: '2026-04-14'
-excerpt: >-
-  Quand les discussions tournent en rond, le prototype est une sortie élégante.
-  Tester sur un mois permet d’avancer sans forcer, ni imposer.
-cover: /images/articles/arreter-de-debattre-tester-30-jours.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Arrêter de débattre : tester 30 jours, décider ensuite"
+date: "2026-04-14"
+excerpt: "Quand les discussions tournent en rond, le prototype est une sortie élégante. Tester sur un mois permet d’avancer sans forcer, ni imposer."
+cover: "/images/articles/2026-04-14-arreter-de-debattre-tester-30-jours.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - prise-de-decision
-  - posture-professionnelle
-  - organisation
+  - "management"
+  - "prise-de-decision"
+  - "posture-professionnelle"
+  - "organisation"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
   order: 24
 ---
+
 ### Quand le débat remplace l’action
 
 Karim connaît bien ces situations. Une idée circule. Elle semble pertinente. Mais elle déclenche immédiatement des discussions sans fin : risques, exceptions, contraintes, “oui mais”. Les réunions s’enchaînent. Rien ne bouge.

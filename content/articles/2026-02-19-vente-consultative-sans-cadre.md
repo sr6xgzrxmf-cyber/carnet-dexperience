@@ -1,20 +1,18 @@
 ---
-title: Pourquoi la vente consultative échoue sans cadre et sans méthode
-date: '2026-02-19'
-excerpt: >-
-  Former à l’écoute ne suffit pas. Sans cadre partagé et sans méthode explicite,
-  la vente consultative produit surtout du flou, des rendez-vous agréables… et
-  peu de décisions.
-cover: /images/articles/2026-02-06-vente-consultative-sans-cadre.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Pourquoi la vente consultative échoue sans cadre et sans méthode"
+date: "2026-02-19"
+excerpt: "Former à l’écoute ne suffit pas. Sans cadre partagé et sans méthode explicite, la vente consultative produit surtout du flou, des rendez-vous agréables… et peu de décisions."
+cover: "/images/articles/2026-02-19-vente-consultative-sans-cadre.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - conseil
-  - posture commerciale
-  - management
-  - formation
+  - "vente"
+  - "conseil"
+  - "posture commerciale"
+  - "management"
+  - "formation"
 series:
-  slug: Vendre n’est plus convaincre
+  name: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 3
 ---
 

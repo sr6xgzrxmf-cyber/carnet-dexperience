@@ -1,22 +1,20 @@
 ---
-title: Le mail bilan en 5 Temps
-date: '2026-02-27'
-excerpt: >-
-  Un bon bilan ne sert pas à se justifier, mais à montrer une trajectoire. Une
-  trame simple en cinq temps permet de transformer une critique en levier de
-  progrès.
-cover: /images/articles/mail-bilan-5-temps.jpg
-source: Laurent Guyonnet — Carnet d’expérience
+title: "Le mail bilan en 5 Temps"
+date: "2026-02-27"
+excerpt: "Un bon bilan ne sert pas à se justifier, mais à montrer une trajectoire. Une trame simple en cinq temps permet de transformer une critique en levier de progrès."
+cover: "/images/articles/2026-02-27-mail-bilan-5-temps.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - management
-  - posture-professionnelle
-  - communication
-  - feedback
+  - "management"
+  - "posture-professionnelle"
+  - "communication"
+  - "feedback"
 series:
-  name: Atelier de posture
-  slug: atelier-de-posture
+  name: "Atelier de posture"
+  slug: "atelier-de-posture"
   order: 12.5
 ---
+
 ### Le bilan comme moment à risque
 
 Le mail de bilan est souvent vécu comme un exercice inconfortable. Karim le sait : bilan de semaine, de mois, ou retour après un recadrage, tout peut vite ressembler à une tentative de justification. Trop long, trop défensif, trop détaillé — et le message se dilue. Le manager lit en diagonale, répond vaguement, ou pas du tout.

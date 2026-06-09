@@ -2,7 +2,7 @@
 title: "Répondre sans conclure"
 date: "2026-01-19"
 excerpt: "Quand une demande est floue, chargée ou piégeuse, répondre trop vite ferme la situation. Un triptyque simple — constater, penser, proposer — permet de rester présent sans répondre à la place de l’autre."
-cover: "/images/articles/repondre-sans-conclure.jpg"
+cover: "/images/articles/2026-01-19-repondre-sans-conclure.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "communication"
@@ -10,6 +10,7 @@ tags:
   - "posture-professionnelle"
   - "prise-de-decision"
 ---
+
 Il y a un réflexe très humain, très valorisé en entreprise aussi : répondre vite. Rassurer. Trancher. Solutionner. Montrer qu’on maîtrise. Et parfois, ça marche. Mais sur le terrain, ce réflexe a un coût caché : il ferme trop tôt ce qui avait besoin d’être clarifié, il prend une responsabilité qui n’a pas été explicitée, et il transforme une parole en verdict.
 
 J’ai appris à ralentir non pas pour être prudent, mais pour être juste. Pas “juste” au sens moral. Juste au sens opérationnel : répondre à la bonne chose, au bon niveau, au bon moment. Pour ça, j’utilise un triptyque simple — constater, penser, proposer — non pas comme une méthode universelle, mais comme une discipline de réponse.

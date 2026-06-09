@@ -2,7 +2,7 @@
 title: "Sortir du confort pour traverser le changement"
 date: "2023-09-04"
 excerpt: "Pourquoi la routine rassure mais freine, et comment accompagner les équipes à quitter leur zone de confort pour réussir la transformation."
-cover: "/images/articles/confort-routine-changement.jpg"
+cover: "/images/articles/2023-09-04-sortir-du-confort-pour-traverser-le-changement.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -12,6 +12,7 @@ series:
   slug: "former-des-adultes"
   order: 38
 ---
+
 Dans le troisième volet de notre série sur la résistance au changement en formation, nous abordons un obstacle majeur : le confort de la routine. Les routines offrent un sentiment de sécurité et de stabilité. Elles sont familières et prévisibles. Mais cette même familiarité peut freiner l’innovation et la croissance.
 
 Pourquoi la routine est-elle un obstacle ?

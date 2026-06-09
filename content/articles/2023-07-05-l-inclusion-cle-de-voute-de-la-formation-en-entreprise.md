@@ -2,7 +2,7 @@
 title: "L’inclusion : clé de voûte de la formation en entreprise"
 date: "2023-07-05"
 excerpt: "Pourquoi une formation inclusive est un levier stratégique pour la performance, la cohésion et l’innovation."
-cover: "/images/articles/inclusion-formation.jpg"
+cover: "/images/articles/2023-07-05-l-inclusion-cle-de-voute-de-la-formation-en-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -12,6 +12,7 @@ series:
   slug: "former-des-adultes"
   order: 18
 ---
+
 Dans un monde en constante évolution, les entreprises doivent s’adapter et innover pour rester compétitives. L’un des piliers de cette adaptabilité est la **formation continue**. Mais pour qu’elle soit réellement efficace, elle doit être **inclusive** et répondre aux besoins de tous les collaborateurs.
 
 ---

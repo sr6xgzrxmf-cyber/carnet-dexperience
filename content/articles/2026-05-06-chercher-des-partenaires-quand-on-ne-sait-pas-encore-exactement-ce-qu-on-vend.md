@@ -1,11 +1,11 @@
 ---
 title: Chercher des partenaires quand on ne sait pas encore exactement ce qu’on vend
-date: '2026-05-06'
+date: "2026-05-06"
 excerpt: >-
   On pense souvent que le problème, c’est de trouver des partenaires. En
   réalité, le vrai enjeu est souvent ailleurs : comprendre ce qu’on est en train
   de leur proposer.
-cover: /images/articles/chercher-partenaires-incertitude.jpg
+cover: /images/articles/2026-05-06-chercher-des-partenaires-quand-on-ne-sait-pas-encore-exactement-ce-qu-on-vend.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - partenariat
@@ -74,5 +74,4 @@ Simplifier, c’est réduire. Traduire, c’est préserver la densité en change
 Avec le recul, je réalise que cette première démarche m’a appris une chose simple, mais rare : quand on sort de son territoire habituel, on ne change pas de projet. On change de langue.
 Et la clarté n’est pas un packaging. C’est un pont.
 
-Alors quand un projet semble difficile à “vendre”, la question n’est souvent pas : “Comment on le simplifie ?”
-Mais : “Comment on le rend lisible sans le trahir ?”
+Question ouverte : quand un projet semble difficile à faire entendre, est-ce que tu essaies de le simplifier… ou de le traduire sans le trahir ?

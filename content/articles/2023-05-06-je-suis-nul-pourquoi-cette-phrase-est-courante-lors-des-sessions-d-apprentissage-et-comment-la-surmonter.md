@@ -1,127 +1,94 @@
 ---
 title: "« Je suis nul » — Pourquoi cette phrase est courante lors des sessions d'apprentissage et comment la surmonter ?"
 date: "2023-05-06"
+excerpt: "Pourquoi cette phrase revient si souvent en apprentissage, et comment la désamorcer côté apprenant comme côté formateur."
+cover: "/images/articles/2023-05-06-je-suis-nul-pourquoi-cette-phrase-est-courante-lors-des-sessions-d-apprentissage-et-comment-la-surmonter.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "pedagogie"
   - "apprentissage"
-cover: "/images/articles/je-suis-nul.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
-excerpt: "Pourquoi cette phrase revient si souvent en apprentissage, et comment la désamorcer côté apprenant comme côté formateur."
 series:
   name: "Former des adultes"
   slug: "former-des-adultes"
   order: 0
 ---
-# Pourquoi disons-nous si souvent *« Je suis nul »* ?
-## Et comment transformer ce doute en moteur d’apprentissage ?
 
-Que ce soit en formation professionnelle, en éducation formelle ou en autodidacte, il arrive un moment où presque tout le monde murmure ou s’exclame : *« Je suis nul. »* Cette phrase, souvent prononcée avec un mélange de frustration et de découragement, cache bien plus qu’un simple manque de confiance. Elle révèle des mécanismes psychologiques profonds, des peurs, et parfois même des stratégies d’évitement.
+### « Je suis nul. »
 
-Mais pourquoi les apprenants se dénigrent-ils ainsi ? Et surtout, comment dépasser ce sentiment pour en faire une force ? Plongeons dans les raisons derrière cette phrase, et explorons des pistes concrètes pour la surmonter.
+La phrase sort rarement fort. Elle arrive plutôt à mi-voix, entre une tentative ratée et un regard jeté sur l’écran du voisin. Dans une salle de formation, on la reconnaît tout de suite. Elle n’annonce pas seulement une difficulté. Elle annonce un moment de retrait.
 
----
+J’ai entendu cette phrase dans des contextes très différents : un atelier Excel, une prise de parole, une démonstration produit, un exercice d’écriture, un geste technique répété trop vite devant les autres. À chaque fois, le contenu change. Le mécanisme, lui, reste presque le même.
 
-## 1. La peur de l’échec : quand se dévaloriser devient une armure
-*« Si je me dis que je suis nul, au moins, je ne serai pas déçu. »*
+Quand un adulte dit « je suis nul », il ne parle pas seulement de compétence. Il parle d’exposition.
 
-**Pourquoi ?**
-Certains apprenants préfèrent se saboter verbalement plutôt que de risquer l’échec. En s’autoproclamant *« nuls »*, ils créent une barrière protectrice : *« Je l’avais bien dit ! »* devient une excuse toute prête. Cette attitude évite de confronter la peur de ne pas être à la hauteur, mais elle paralyse aussi toute progression.
+## Ce que cette phrase protège
 
-**Exemple concret :**
-Imaginez un stagiaire en cuisine qui, face à une recette complexe, déclare d’emblée : *« Je vais tout rater, je suis nul en pâtisserie. »* En réalité, il craint de mal faire et d’être jugé. Résultat : il ne tente même pas la recette, et se prive de l’opportunité d’apprendre.
+Un adulte n’entre jamais en formation comme une page blanche. Il arrive avec un métier, une expérience, une identité professionnelle, parfois une réputation à tenir devant ses collègues. Il peut être très compétent dans son quotidien et se sentir brutalement maladroit dès qu’il redevient débutant.
 
-**Comment agir ?**
-- **Normaliser l’erreur** : Rappeler que chaque expert a débuté un jour. *« Les erreurs sont des étapes, pas des échecs. »*
-- **Décortiquer la tâche** : Diviser l’objectif en étapes minuscules pour rendre l’échec moins intimidant.
+Dire « je suis nul » peut alors servir à plusieurs choses à la fois :
 
----
+- se protéger avant d’échouer publiquement,
+- reprendre la main sur une gêne déjà ressentie,
+- éviter une nouvelle tentative trop coûteuse pour l’image de soi,
+- ou signaler que la situation est en train de devenir trop menaçante.
 
-## 2. La comparaison aux autres : le piège du *« eux, ils y arrivent »*
-*« Lui, il comprend tout du premier coup. Moi, je dois tout répéter dix fois. »*
+Autrement dit, cette phrase est souvent moins un diagnostic qu’un bouclier.
 
-**Pourquoi ?**
-Les réseaux sociaux, les salles de classe ou les open spaces regorgent de *« modèles de réussite »* apparents. L’apprenant se mesure à ces idéaux, oublie que chacun avance à son rythme, et en conclut hâtivement qu’il est *« en retard »* ou *« incompétent »*.
+## Ce n’est pas toujours un problème de niveau
 
-**Exemple concret :**
-Dans un atelier d’écriture, une participante compare son texte balbutiant à celui d’un voisin plus expérimenté. Elle oublie que ce dernier écrit depuis dix ans, et se qualifie de *« nulle »*, alors qu’elle est simplement en phase d’exploration.
+Le réflexe le plus fréquent consiste à croire que la personne manque de bases. Parfois c’est vrai. Mais souvent, le problème est ailleurs.
 
-**Comment agir ?**
-- **Mettre en lumière les parcours** : Montrer que la maîtrise prend du temps. *« Même les experts ont commencé quelque part. »*
-- **Encourager l’auto-évaluation** : *« Qu’as-tu appris aujourd’hui, par rapport à hier ? »* plutôt que *« Pourquoi tu n’y arrives pas comme untel ? »*
+Il peut venir :
 
----
+- d’une consigne trop vague,
+- d’un rythme trop rapide,
+- d’un exercice trop exposant trop tôt,
+- d’une comparaison implicite avec les autres,
+- ou d’un lien insuffisant entre l’apprentissage et le réel du métier.
 
-## 3. La prise de conscience brutale : *« Je ne savais pas que je ne savais pas »*
-*« Je croyais maîtriser ce logiciel… jusqu’à ce que la formatrice montre la bonne méthode. »*
+Un participant peut très bien comprendre en tête-à-tête et se sentir soudain « nul » dès qu’il doit faire la même chose devant douze personnes. Ce qui bloque n’est alors pas le savoir. C’est le coût relationnel de l’erreur.
 
-**Pourquoi ?**
-Découvrir qu’on a appris *« de travers »* ou qu’on ignorait des bases peut être humiliant. L’apprenant se sent soudain *« exposé »*, et la phrase *« Je suis nul »* devient un réflexe pour masquer sa gêne.
+## Le moment où la formation bascule
 
-**Exemple concret :**
-Un employé utilise Excel depuis des années avec des méthodes laborieuses. Lors d’une formation, il découvre les tableaux croisés dynamiques et se sent soudain *« incompétent »*, alors qu’il a simplement besoin d’ajuster ses connaissances.
+Dans ces situations, la réponse du formateur compte énormément.
 
-**Comment agir ?**
-- **Recadrer l’apprentissage** : *« Tu as trouvé une solution qui fonctionnait pour toi. Maintenant, on va l’optimiser. »*
-- **Célébrer la curiosité** : *« Poser des questions, c’est le signe qu’on progresse. »*
+Dire trop vite « mais non, ce n’est pas vrai » soulage rarement. Parce que cela contredit l’émotion sans traiter ce qui la produit. À l’inverse, laisser la personne s’enfoncer dans la comparaison ou l’auto-dévalorisation abîme tout le groupe : la peur devient contagieuse.
 
----
+Ce qui aide, en général, est plus simple et plus exigeant :
 
-## 4. Le manque d’envie : quand *« je suis nul »* cache un *« je ne veux pas »*
-*« De toute façon, ça ne me sert à rien. »*
+- réduire la taille de la tâche,
+- remettre de la précision dans la consigne,
+- normaliser la phase d’essai,
+- redonner un point d’appui concret,
+- et surtout restaurer de la dignité.
 
-**Pourquoi ?**
-Parfois, la dévalorisation est une stratégie pour éviter l’effort. Dire *« Je suis nul »* permet de justifier un désengagement, surtout si la matière semble ennuyeuse ou lointaine.
+Parfois, une phrase suffit :
 
-**Exemple concret :**
-Un salarié en formation obligatoire sur la RGPD soupire : *« Je ne comprendrai jamais, je suis nul en informatique. »* En réalité, il n’a pas saisi l’utilité concrète de cette formation pour son quotidien.
+> « Là, tu n’es pas nul. Tu es en train d’essayer quelque chose qui n’est pas encore stabilisé. Ce n’est pas la même chose. »
 
-**Comment agir ?**
-- **Lier à des enjeux personnels** : *« Si tu maîtrises ces règles, tu pourras mieux protéger les données de tes clients… et éviter des amendes à ton entreprise. »*
-- **Rendre ludique** : Utiliser des jeux de rôle, des quiz interactifs, ou des défis pour réveiller l’intérêt.
+Cette nuance change beaucoup. Elle sort la personne du jugement global pour la remettre dans une dynamique de progression.
 
----
+## Ce que les adultes supportent mal
 
-## Le rôle du formateur : cinq clés pour désamorcer le *« je suis nul »*
-1. **Écouter sans minimiser** :
-   *« Qu’est-ce qui te fait dire ça ? »* plutôt que *« Non, tu n’es pas nul ! »*. Comprendre la racine du doute permet d’agir précisément.
+On parle souvent de motivation, de pédagogie active, de confiance en soi. On parle moins de ce que les adultes supportent réellement mal : être remis en position d’élève impuissant.
 
-2. **Transformer les erreurs en étapes** :
-   *« Cette erreur t’a appris que… »* plutôt que *« Ce n’est pas grave. »*. Valoriser le processus, pas seulement le résultat.
+Un adulte accepte très bien l’effort, la complexité, la répétition, et même la difficulté. Ce qu’il supporte beaucoup moins, c’est de se sentir infantilisable, interchangeable, ou exposé sans nécessité.
 
-3. **Créer un climat de sécurité** :
-   - Autoriser les questions *« bêtes »*.
-   - Partager ses propres échecs : *« Moi aussi, j’ai bloqué sur ce concept au début. »*
+C’est pour cela que certaines formations échouent malgré un contenu juste. Elles demandent aux gens d’apprendre sans tenir compte de ce qu’ils ont à perdre symboliquement pendant qu’ils apprennent.
 
-4. **Varier les approches** :
-   - Alterner théorie et pratique.
-   - Utiliser des métaphores ou des exemples du quotidien pour ancrer les concepts.
+## Ce que cette phrase nous apprend sur la formation
 
-5. **Rendre visible la progression** :
-   - Tenir un *« journal d’apprentissage »* où l’apprenant note ses avancées.
-   - Organiser des bilans réguliers : *« Regarde tout ce que tu sais faire maintenant, par rapport au premier jour ! »*
+Quand « je suis nul » revient souvent dans une même salle, il faut se poser une question inconfortable : que dit cette phrase de la personne, et que dit-elle du cadre qu’on lui propose ?
 
----
+Parce que la répétition de cette formule révèle parfois moins une faiblesse individuelle qu’un problème de design pédagogique :
 
-## Pour l’apprenant : cinq actions pour sortir de la spirale
-1. **Identifier le vrai problème** :
-   *« Suis-je vraiment nul, ou est-ce que je manque de pratique/confiance/ressources ? »*
+- un cadre trop scolaire,
+- un niveau d’abstraction mal calibré,
+- une sécurité psychologique insuffisante,
+- ou un apprentissage qui arrive sans ancrage dans le travail réel.
 
-2. **Définir des micro-objectifs** :
-   *« Aujourd’hui, je vais comprendre un seul concept. »* plutôt que *« Je dois tout savoir. »*
+Former des adultes, ce n’est pas seulement transmettre un contenu. C’est construire des conditions dans lesquelles quelqu’un peut redevenir débutant sans se sentir diminué.
 
-3. **Chercher des ressources adaptées** :
-   - Privilégier les formats qui correspondent à son style (vidéos, schémas, podcasts…).
-   - Tester des outils comme les *flashcards* ou les *mind maps* pour réviser.
+Et c’est là que tout se joue.
 
-4. **Demander de l’aide sans honte** :
-   *« Pouvez-vous m’expliquer ça autrement ? »* est une question de courage, pas de faiblesse.
-
-5. **Cultiver la bienveillance envers soi-même** :
-   *« J’apprends, donc je fais des erreurs. C’est normal. »* Remplacer *« Je suis nul »* par *« Je suis en train d’apprendre. »*
-
----
-
-## En conclusion : et si *« je suis nul »* était le début de quelque chose ?
-Cette phrase, aussi douloureuse soit-elle, est souvent le signe qu’on est sur le point de progresser. Elle révèle un besoin : besoin de soutien, de clarté, ou simplement de temps. En l’accueillant sans jugement et en la transformant en levier, apprenants et formateurs peuvent en faire une étape vers la confiance et la compétence.
-
-**Et vous, quelle est la dernière fois où vous avez pensé *« je suis nul »*… et qu’avez-vous appris depuis ?**
+Question ouverte : la prochaine fois qu’un participant dira « je suis nul », qu’est-ce que tu entendras vraiment : un manque de compétence, ou une tentative de se protéger ?

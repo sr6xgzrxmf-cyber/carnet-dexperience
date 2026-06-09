@@ -1,8 +1,8 @@
 ---
 title: "L’andragogie au prisme du genre : repenser la formation des adultes"
 date: "2023-05-15"
-excerpt: "Comment la dimension de genre transforme notre manière de comprendre, concevoir et vivre la formation des adultes, à travers les travaux d’Edmée Ollagnier."
-cover: "/images/articles/andragogie-genre-ollagnier.jpg"
+excerpt: "Le genre ne change pas seulement ce que l’on apprend. Il change souvent les conditions dans lesquelles on peut parler, être entendu, se rendre disponible et se sentir légitime pour apprendre."
+cover: "/images/articles/2023-05-15-l-andragogie-au-prisme-du-genre-repenser-la-formation-des-adultes.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "andragogie"
@@ -14,125 +14,106 @@ series:
   slug: "former-des-adultes"
   order: 5
 ---
-## Introduction : Une randonnée en montagne sous la pluie
 
-Imaginez une salle de formation un lundi matin à 8h30. Dehors, la pluie tambourine contre les vitres, et l’air sent le café brûlé et les vestes mouillées. À l’intérieur, une dizaine d’adultes — des hommes en costume froissé, des femmes aux cheveux encore humides — fixent un tableau blanc où s’affiche *« Andragogie et Genre »*. Certains bâillent, d’autres tripotent leur téléphone. Personne ne parle.
+### « Je n’ai pas le temps de parler, il faut que je file. »
 
-C’est alors que la formatrice, une femme d’une cinquantaine d’années aux lunettes cerclées d’acier, pose son sac et lance : *« Aujourd’hui, on ne va pas parler d’andragogie. On va parler de *vous*. »* Un silence. *« Qui ici a déjà senti qu’on ne l’écoutait pas en formation ? »*
+La phrase arrive à la pause, souvent discrètement. Quelqu’un quitte la salle plus vite que les autres. Une personne revient systématiquement en retard après les ateliers. Une autre ne prend jamais la parole tant qu’on ne la sollicite pas directement. Un homme monopolise l’échange sans même s’en rendre compte. Une femme formule une idée, qui n’est reprise qu’une fois reformulée par un collègue.
 
-Les mains se lèvent, timides. *« Moi, »* murmure Sophie, 38 ans, mère de deux enfants, les cernes creusées. *« Quand je parle de mes contraintes de temps, on me répond ‘c’est pareil pour tout le monde’. Sauf que non. »*
+On pourrait croire à des détails de groupe.
+En réalité, ils disent souvent quelque chose de plus structurel.
 
-*« Exactement, »* répond la formatrice en écrivant au tableau : **« Le genre n’est pas une case à cocher. C’est une lentille. »**
+C’est là que la question du genre devient précieuse en formation des adultes.
 
----
+## Le genre ne dit pas qui les personnes sont. Il dit aussi dans quelles conditions elles apprennent
 
-## Edmée Ollagnier : La chercheuse qui a osé poser la question du genre
+Parler du genre en andragogie ne consiste pas à enfermer les gens dans deux psychologies opposées. Ce serait trop simple, et souvent faux.
 
-### **Qui est-elle ?**
-Edmée Ollagnier (1943–2022) était **psychologue du travail et chercheuse en sciences de l’éducation**, spécialiste de l’andragogie. Son travail a marqué un tournant en **1999**, quand elle a commencé à intégrer la dimension du genre dans la recherche sur la formation des adultes — une première à l’époque.
+L’intérêt du sujet est ailleurs : regarder comment les rapports sociaux de genre influencent concrètement :
 
-#### **Parcours clé** (sources : Wikipédia, travaux universitaires) :
-- **1977–2006** : Enseignante en sciences de l’éducation à l’**Université de Genève**.
-- **1999** : Lance des recherches pionnières sur **les femmes et la formation des adultes**, soulignant que les programmes ignorent souvent leurs réalités (double journée, charge mentale, stéréotypes).
-- **2000–2007** : Dirige le réseau **Gender and Adult Education** (ESREA), réunissant des chercheurs internationaux pour étudier les inégalités genrées dans l’apprentissage.
-- **2014** : Publie *« Femmes et défis pour la formation des adultes »*, où elle propose de **repenser les dispositifs** pour inclure les expériences spécifiques des femmes (ex. : formations en horaires décalés, reconnaissance des compétences informelles).
+- le temps disponible,
+- la légitimité à prendre la parole,
+- la manière d’être lu ou corrigé,
+- la place accordée à l’expérience vécue,
+- et les contraintes invisibles apportées dans la salle.
 
-> *« La formation des adultes n’est pas neutre. Elle reproduit — ou combat — les inégalités sociales. »*
-> **— Edmée Ollagnier**
+Autrement dit, le genre n’est pas une rubrique à part. C’est une manière d’observer ce que la formation considère comme “normal”… et ceux qu’elle oublie sans le voir.
 
----
+## Ce qu’Edmée Ollagnier a apporté
 
-## Pourquoi le genre compte en andragogie ?
-### **1. Des motivations différentes… et souvent ignorées**
+Les travaux d’Edmée Ollagnier ont joué un rôle important ici. Elle a contribué à montrer que la formation des adultes n’était jamais neutre socialement, et qu’elle pouvait reproduire des hiérarchies déjà présentes dans le monde du travail et dans la vie quotidienne.
 
-**Scène réaliste** :
-*Un atelier de formation en management, 17h, après une journée de travail. Les hommes, majoritaires, discutent stratégie autour d’un café. Les femmes, assises en retrait, consultent leur téléphone — l’une vérifie l’heure de la garderie, une autre répond à un message de son conjoint : «* Tu rentres à quelle heure ? *»*
+Ce déplacement est essentiel.
 
-Le formateur, un homme d’une cinquantaine d’années, présente un cas pratique : *« Comment négocier une augmentation ? »* Les hommes lèvent la main, proposent des tactiques agressives. Les femmes restent silencieuses.
+On ne regarde plus seulement :
 
-*« Et vous, mesdames ? »* demande enfin le formateur.
-*« Moi, je négocie déjà tous les jours, »* répond Amina, 42 ans. *« Pas pour mon salaire, mais pour avoir une heure de calme le soir. »*
+- le contenu de la formation,
+- la méthode,
+- les objectifs.
 
-**Ce que Ollagnier a révélé** :
-- **Les hommes** : Motivés par la **compétition** et la **réalisation de buts** (ex. : une promotion, un diplôme).
-- **Les femmes** : Souvent motivées par le **lien social** et la **résolution de problèmes concrets** (ex. : mieux gérer le temps pour concilier travail et famille).
-- **Le piège** : Les formations standardisées privilégient les motivations masculines (ex. : jeux de rôle compétitifs), ce qui décourage les femmes.
+On regarde aussi :
 
-**Solution proposée par Ollagnier** :
-- **Varier les approches** : Alterner débats collaboratifs (pour les femmes) et défis individuels (pour les hommes).
-- **Reconnaître les compétences informelles** : *« Savoir organiser un anniversaire d’enfant, c’est déjà de la gestion de projet, »* soulignait-elle.
+- qui peut réellement être disponible,
+- qui se sent autorisé à parler,
+- qui porte déjà une charge en dehors de la salle,
+- et qui doit fournir un effort supplémentaire pour être simplement entendu.
 
----
+## L’illusion du même dispositif pour tous
 
-### **2. L’équilibre impossible : Travail, famille, formation**
+Beaucoup de formations sont pensées comme si l’égalité de traitement garantissait automatiquement l’équité. Même horaire, même exercice, même exigence, même cadre pour tout le monde.
 
-**Scène réaliste** :
-*Marine, 35 ans, arrive en retard à une formation sur les « nouvelles technologies ». Elle s’excuse, essoufflée : «* Désolée, la crèche a fermé plus tôt… *»*
-Le formateur, agacé, répond : *« On commence à l’heure ici. »* Marine rougit, serre son sac contre elle.
+Le problème, c’est que des personnes différentes n’entrent pas dans la salle avec les mêmes marges.
 
-**Les données d’Ollagnier** :
-- Les femmes consacrent **2 à 3 fois plus de temps** que les hommes aux tâches domestiques (source : études ESREA).
-- Résultat : Elles abandonnent **plus souvent** les formations longues, faute de temps.
-- **Leur besoin** : Des dispositifs **flexibles** (cours en ligne, horaires décalés) et une **reconnaissance de leur charge mentale**.
+Certaines arrivent déjà chargées :
 
-**Exemple concret** :
-À Genève, Ollagnier a testé des **« ateliers du samedi matin »** avec garde d’enfants intégrée. Résultat : **80% de participation féminine**, contre 30% en formation classique.
+- par le travail domestique,
+- par des responsabilités familiales,
+- par une position minorée dans leur environnement professionnel,
+- ou par des habitudes d’interruption et de sous-légitimation intégrées depuis longtemps.
 
----
+Le même dispositif peut donc produire des effets très différents.
 
-### **3. Stéréotypes et dynamiques de groupe : Quand la salle de classe devient un champ de bataille**
+Une séance en fin de journée, par exemple, n’a pas le même coût pour tout le monde. Une prise de parole compétitive n’est pas reçue de la même façon selon l’histoire de chacun avec l’autorité, la contradiction ou l’exposition publique.
 
-**Scène réaliste** :
-*Un exercice de prise de parole. Les hommes interrompent systématiquement les femmes. *« Laisse-moi finir, »* coupe Marc, 50 ans, à sa collègue Léa. Celle-ci se tait, les mains crispées sur ses notes.*
+## La parole n’est jamais distribuée naturellement
 
-**Ce qu’Ollagnier a observé** :
-- **Effet « double bind »** : Les femmes sont perçues comme *« trop émotives »* si elles s’expriment avec passion, *« pas assez engagées »* si elles restent discrètes.
-- **Solutions testées** :
-  - **Règles de prise de parole** : *« Chacun a 2 minutes sans interruption. »*
-  - **Groupes non-mixtes** pour certaines séances, afin de libérer la parole.
+L’un des endroits où le genre devient très visible, c’est la dynamique de parole.
 
-**Citation clé** :
-*« Une formation qui ne questionne pas les rapports de pouvoir reproduit les inégalités. »*
-**— Edmée Ollagnier, 2001**
+Qui coupe ?
+Qui reformule ?
+Qui s’excuse avant de parler ?
+Qui parle longtemps sans être recadré ?
+Qui est lu comme “assertif”, et qui est lu comme “agressif” pour un niveau d’intensité comparable ?
 
----
+Ces mécanismes sont parfois minuscules, mais ils façonnent l’expérience d’apprentissage.
 
-## Comment appliquer ces idées aujourd’hui ?
-### **1. Adapter les contenus et les méthodes**
-- **Pour les femmes** :
-  - **Cas pratiques ancrés dans le quotidien** : *« Comment négocier un aménagement du temps de travail ? »* plutôt que *« Comment devenir manager ? »*
-  - **Pédagogie collaborative** : Travaux de groupe, partage d’expériences.
-- **Pour les hommes** :
-  - **Déconstruire les stéréotypes** : *« Un bon leader écoute, ne domine pas. »*
-  - **Exercices de vulnérabilité** : *« Parlez d’un échec qui vous a appris quelque chose. »*
+Une formation qui ne regarde jamais cela risque de croire que le groupe “fonctionne”, alors qu’une partie des participants apprend dans des conditions relationnelles dégradées.
 
-### **2. Créer des espaces inclusifs**
-- **Horaires flexibles** : Formations en soirée ou le week-end, avec garde d’enfants.
-- **Reconnaissance des compétences informelles** : *« Tenir un budget familial, c’est de la gestion. »*
-- **Langage neutre** : Éviter *« les chefs »* pour *« les responsables »*.
+## Ce que cela change pour celui qui forme
 
-### **3. Former les formateurs**
-- **Sensibilisation aux biais inconscients** : *« Pourquoi interrompez-vous plus souvent les femmes ? »*
-- **Outils concrets** :
-  - Chronométrer le temps de parole.
-  - Alterner les méthodes (débats, jeux de rôle, projets collectifs).
+Prendre le genre au sérieux en andragogie ne veut pas dire surpolitiser chaque séance. Cela veut dire devenir plus précis sur les conditions d’accès réel à l’apprentissage.
 
----
+Concrètement, cela peut demander :
 
-## Conclusion : L’andragogie, un miroir de la société
+- de penser les horaires autrement,
+- de varier les formats de participation,
+- de poser des règles de parole explicites,
+- de reconnaître les expériences invisibilisées,
+- d’éviter les cas ou exemples qui supposent une norme unique,
+- et de créer un cadre où tout le monde n’a pas à lutter de la même façon pour exister.
 
-Edmée Ollagnier nous a appris une chose : **la formation des adultes n’est pas neutre**. Elle reflète — et parfois renforce — les inégalités de genre.
+Ce travail relève moins de la morale que du design pédagogique.
 
-**Scène finale** :
-*La salle de formation, 18h. La pluie a cessé. Sophie, qui avait parlé de ses contraintes en début de journée, sourit en rangeant ses affaires. *« Pour la première fois, »* dit-elle à sa voisine, *« j’ai l’impression qu’on m’a entendue. »*
+## Une formation peut reproduire le monde… ou le corriger un peu
 
-*« C’est ça, l’andragogie, »* répond la formatrice. *« Pas une science exacte. Une écoute. »*
+Une salle de formation n’est jamais en dehors du social. Les rapports de pouvoir, les habitudes de langage, les hiérarchies symboliques, les charges invisibles entrent avec les gens.
 
----
+La question est donc simple :
 
-### **Pour aller plus loin**
-- **Livre** : *« Femmes et défis pour la formation des adultes »* (Edmée Ollagnier, 2014).
-- **Réseau ESREA** : [Gender and Adult Education](https://www.esrea.org) (recherches internationales sur genre et éducation).
-- **Outils** :
-  - **Diagnostic de genre** pour évaluer une formation (grille proposée par Ollagnier).
-  - **Checklist** : *« Ai-je prévu des horaires compatibles avec la vie familiale ? »*
+la formation va-t-elle faire comme si tout cela n’existait pas, ou va-t-elle ajuster son cadre pour que l’apprentissage soit un peu plus juste ?
+
+C’est là, à mes yeux, que l’apport d’Edmée Ollagnier reste précieux. Il ne consiste pas à ajouter un thème. Il consiste à déplacer le regard.
+
+Former des adultes, ce n’est pas seulement transmettre un contenu à un groupe abstrait.
+C’est travailler avec des personnes situées, dans des rapports réels, avec des disponibilités inégales et des légitimités parfois fragiles.
+
+Question ouverte : dans les formations que tu observes, qu’est-ce qui est présenté comme “normal” alors que ce cadre avantage déjà certains participants plus que d’autres ?

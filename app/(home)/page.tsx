@@ -1,228 +1,342 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactButton from "@/components/ContactButton";
+import { getAllArticles, type ArticleItem } from "@/lib/articles";
 
-export default function HomePage() {
+type HomeArticle = {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  cover: string | null;
+};
+
+function normalizeCoverSrc(cover: unknown): string | null {
+  if (typeof cover !== "string" || !cover.trim()) return null;
+  const value = cover.trim();
+  if (/^https?:\/\//i.test(value)) return value;
+  return value.startsWith("/") ? value : `/${value}`;
+}
+
+function toHomeArticle(item: ArticleItem): HomeArticle {
+  const date =
+    typeof item.meta.date === "string"
+      ? item.meta.date
+      : item.meta.date instanceof Date
+        ? item.meta.date.toISOString().slice(0, 10)
+        : typeof item.meta.date === "number"
+          ? new Date(item.meta.date).toISOString().slice(0, 10)
+          : "";
+
+  return {
+    slug: item.slug,
+    title: item.meta.title ?? item.slug,
+    date,
+    excerpt: item.meta.excerpt ?? "",
+    cover: normalizeCoverSrc(item.meta.cover),
+  };
+}
+
+export default async function HomePage() {
+  const allArticles = getAllArticles({ includeFuture: false }).map(toHomeArticle);
+  const articleBySlug = new Map(allArticles.map((article) => [article.slug, article] as const));
+
+  const curatedArticleSlugs = [
+    "2026-05-18-construire-un-partenariat-sans-devenir-commercial",
+    "2026-04-30-ameliorer-un-process-sans-conflit",
+    "2026-05-26-relancer-decider-arreter",
+  ];
+
+  const recentArticles = curatedArticleSlugs
+    .map((slug) => articleBySlug.get(slug))
+    .filter((article): article is HomeArticle => Boolean(article));
+
+  const recruiterEntryHref = "/parcours";
+  const practiceEntryHref =
+    "/articles/2026-01-17-pourquoi-raconter-une-progression-plutot-que-donner-des-conseils";
+  const archivesEntryHref = "/articles/archives";
+
   return (
-    <section className="w-full pt-10 sm:pt-14">
-      {/* HERO */}
-      <div className="mx-auto w-full max-w-3xl">
-        <header className="grid grid-cols-1 md:grid-cols-[1fr_210px] gap-10 md:gap-8 items-start md:items-start">
-          {/* TEXTE ET BOUTONS */}
-          <div className="space-y-5 text-center md:text-left">
-            <h1 className="text-4xl font-semibold tracking-tight">
-              Carnet d’expérience
-            </h1>
+    <section className="space-y-16 pt-10 sm:pt-14">
+      <div className="mx-auto max-w-5xl">
+        <header className="grid gap-10 md:grid-cols-[minmax(0,1fr)_260px] md:gap-12">
+          <div className="space-y-6 text-center md:text-left">
+            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500 dark:text-neutral-400">
+              Parcours, travail récent, terrain
+            </p>
 
-            <div className="max-w-xl space-y-3 mx-auto md:mx-0">
-              <p className="text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
-                Exigence, simplicité&nbsp;: une méthode orientée action et résultats.
+            <div className="space-y-4">
+              <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+                Carnet d’expérience
+              </h1>
+
+              <p className="max-w-2xl text-lg leading-8 text-neutral-700 dark:text-neutral-300">
+                J’aide à clarifier, transmettre et rendre adoptables des sujets complexes,
+                entre stratégie et terrain.
               </p>
 
-              <p className="text-xl font-medium leading-snug text-neutral-900 dark:text-neutral-100">
-                Je fais le lien entre stratégie&nbsp;et&nbsp;terrain.
+              <p className="max-w-2xl text-base leading-7 text-neutral-600 dark:text-neutral-400">
+                Si tu arrives ici pour comprendre mon profil aujourd’hui, commence par le
+                parcours, puis par les textes récents. Les articles plus anciens restent
+                visibles parce qu’ils montrent le temps long du travail, pas seulement sa
+                version la plus récente.
               </p>
             </div>
 
-            <div className="mt-4 w-full max-w-xl mx-auto md:mx-0">
-              <div className="grid grid-cols-2 gap-2 md:flex md:flex-wrap md:justify-start">
-                <Link
-                  href="/parcours"
-                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Voir le parcours
-                </Link>
+            <div className="flex flex-wrap justify-center gap-3 md:justify-start">
+              <Link
+                href="/parcours"
+                className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+              >
+                Voir le parcours
+              </Link>
 
-                <Link
-                  href="/articles"
-                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Lire les articles
-                </Link>
+              <Link
+                href="/articles"
+                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+              >
+                Commencer par les articles
+              </Link>
 
-<Link
-  href="/atelier"
-  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
->
-  Accompagnement
-</Link>
+              <Link
+                href="/situations-d-intervention"
+                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+              >
+                Situations d’intervention
+              </Link>
 
-                <ContactButton
-                  label="Me contacter"
-                  className="block w-full sm:w-auto rounded-xl border border-neutral-300 dark:border-neutral-700 px-3 py-2 text-xs md:text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                />
-              </div>
+              <ContactButton
+                label="Me contacter"
+                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+              />
             </div>
           </div>
 
-          {/* PHOTO */}
-          <div className="flex justify-center md:justify-end md:-mt-24">
-            <div className="w-full max-w-[210px]">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
+          <div className="flex justify-center md:justify-end">
+            <div className="w-full max-w-[260px]">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
                   src="/images/laurent-portrait.png"
                   alt="Laurent Guyonnet"
                   fill
-                  sizes="(max-width: 768px) 50vw, 210px"
+                  sizes="(max-width: 768px) 60vw, 260px"
                   className="object-cover object-top"
                   priority
                 />
               </div>
-              <p className="mt-2 text-center text-[11px] text-neutral-500"></p>
             </div>
           </div>
         </header>
       </div>
 
-      {/* CONTENU */}
-      <section className="mt-12 text-[14px] leading-[1.55] text-neutral-900 dark:text-neutral-100">
-        <div className="mx-auto space-y-8 max-w-3xl">
-          <div className="space-y-3">
-            <h2 className="text-xl font-semibold">Bienvenue</h2>
+      <section className="mx-auto grid max-w-5xl gap-4 md:grid-cols-3">
+        <Link
+          href={recruiterEntryHref}
+          className="group rounded-3xl border border-neutral-200 bg-white/80 p-6 transition hover:border-neutral-300 hover:bg-white dark:border-neutral-800 dark:bg-neutral-950/20 dark:hover:border-neutral-700"
+        >
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Pour recruteurs
+          </p>
+          <h2 className="mt-3 text-xl font-semibold tracking-tight">
+            Voir d’abord le profil, puis le travail récent
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Le parcours donne la trajectoire. Les articles récents montrent la manière de
+            penser, de cadrer et de rendre les choses lisibles aujourd’hui.
+          </p>
+          <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
+            Voir le parcours →
+          </p>
+        </Link>
 
-            <p className="text-neutral-800 dark:text-neutral-200">
-              <strong>Carnet d’expérience</strong> est un espace personnel et professionnel
-              tenu par <strong>Laurent Guyonnet</strong>. Il prolonge mon CV en donnant accès à ce qui n’y tient
-              pas&nbsp;: le contexte, les décisions, les méthodes, les doutes et
-              les apprentissages qui accompagnent toute trajectoire réelle.
+        <Link
+          href={practiceEntryHref}
+          className="group rounded-3xl border border-neutral-200 bg-white/80 p-6 transition hover:border-neutral-300 hover:bg-white dark:border-neutral-800 dark:bg-neutral-950/20 dark:hover:border-neutral-700"
+        >
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Pour comprendre la pratique
+          </p>
+          <h2 className="mt-3 text-xl font-semibold tracking-tight">
+            Les textes les plus récents sont les plus représentatifs
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Ils sont plus nets, plus incarnés et plus proches de ce que je fais vraiment :
+            clarifier, décider, transmettre, structurer.
+          </p>
+          <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
+            Comprendre la logique →
+          </p>
+        </Link>
+
+        <Link
+          href={archivesEntryHref}
+          className="group rounded-3xl border border-neutral-200 bg-white/80 p-6 transition hover:border-neutral-300 hover:bg-white dark:border-neutral-800 dark:bg-neutral-950/20 dark:hover:border-neutral-700"
+        >
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Pour remonter le temps
+          </p>
+          <h2 className="mt-3 text-xl font-semibold tracking-tight">
+            Les articles 2023 restent utiles
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Je ne les efface pas. Ils montrent que ce travail éditorial ne date pas de
+            quelques mois. Je les reprends progressivement, sans masquer leur histoire.
+          </p>
+          <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
+            Explorer les archives →
+          </p>
+        </Link>
+      </section>
+
+      <section className="mx-auto max-w-5xl rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20">
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+              Commencer ici
             </p>
-
-            <p className="text-neutral-800 dark:text-neutral-200">
-              J’y documente mon parcours, mes expériences et mes réflexions sur la
-              formation, le management, l’adoption des outils et la manière dont
-              les organisations fonctionnent — ou dysfonctionnent — au quotidien.
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+              Les textes les plus proches de ma pratique actuelle
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+              Pas trois variantes du même sujet : trois angles différents pour comprendre
+              comment je structure une relation, clarifie un process et reprends la
+              maîtrise d’une situation.
             </p>
+          </div>
 
-            <p className="text-neutral-800 dark:text-neutral-200">
-              J’interviens quand il faut clarifier, transmettre ou faire adopter des usages complexes — sans simplifier à l’excès.
-            </p>
+          <Link
+            href="/articles"
+            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          >
+            Voir tous les articles →
+          </Link>
+        </div>
 
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Ici, tu trouves un accompagnement guidé&nbsp;: une série à lire dans l’ordre + une fiche en ligne pour structurer ta demande et recevoir un récap complet.
-              {" "}
-              <Link href="/atelier" className="underline underline-offset-4">
-                Découvrir l’accompagnement
+        {recentArticles.length > 0 ? (
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {recentArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/articles/${article.slug}`}
+                className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950/20"
+              >
+                {article.cover ? (
+                  <div className="relative h-52 w-full overflow-hidden">
+                    <Image
+                      src={article.cover}
+                      alt={article.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+                  </div>
+                ) : (
+                  <div className="h-52 w-full bg-neutral-100 dark:bg-neutral-900/40" />
+                )}
+
+                <div className="p-6">
+                  {article.date ? (
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400">
+                      {article.date}
+                    </p>
+                  ) : null}
+
+                  <h3 className="mt-2 text-lg font-semibold tracking-tight">
+                    {article.title}
+                  </h3>
+
+                  {article.excerpt ? (
+                    <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+                      {article.excerpt}
+                    </p>
+                  ) : null}
+                </div>
               </Link>
-              .
+            ))}
+          </div>
+        ) : null}
+      </section>
+
+      <section className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+        <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20">
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Fil rouge
+          </p>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+            Un site pour rendre visible le travail réel
+          </h2>
+
+          <div className="mt-4 space-y-4 text-sm leading-7 text-neutral-700 dark:text-neutral-300">
+            <p>
+              Ce carnet prolonge le CV là où il devient trop court : le contexte, les
+              décisions, les contraintes, les méthodes et les apprentissages qui
+              accompagnent une trajectoire professionnelle réelle.
+            </p>
+            <p>
+              Depuis plus de quinze ans, mon travail consiste à faire passer une vision du
+              papier au terrain. Qu’il s’agisse de former, déployer, transmettre ou
+              accompagner, la même question revient : comment produire de la clarté sans
+              simplifier à l’excès ?
+            </p>
+            <p>
+              Ici, je documente ce que j’ai vu, compris et ajusté en chemin. Pas pour
+              livrer des recettes, mais pour montrer une manière de travailler.
             </p>
           </div>
+        </div>
 
-          <div className="space-y-3">
-            <h2 className="text-xl font-semibold">Un fil rouge</h2>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Depuis plus de quinze ans, mon travail consiste à transformer des
-              intentions en réalité. Qu’il s’agisse de lancer un produit, de
-              former des équipes, de déployer une méthode ou d’accompagner des
-              personnes, la question reste la même&nbsp;: comment faire passer une
-              vision du papier au terrain&nbsp;?
-            </p>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Ce carnet est né de ce besoin de garder une trace de ce que j’ai vu,
-              compris et expérimenté en chemin.
-            </p>
+        <div className="space-y-6">
+          <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
+          <h2 className="text-lg font-semibold tracking-tight">
+            Les articles 2023 restent en ligne
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Ils montrent que ce travail s’est construit dans la durée. Ils sont moins
+            centraux aujourd’hui, mais ils gardent leur valeur comme trace, comme
+            progression et comme matière à réécriture.
+          </p>
+
+            <Link
+              href="/articles/archives"
+              className="mt-4 inline-flex text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+            >
+              Explorer les archives →
+            </Link>
           </div>
 
-          <div className="space-y-3">
-            <h2 className="text-xl font-semibold">Ce que vous trouverez ici</h2>
-            <ul className="list-disc space-y-1 pl-5 text-neutral-800 dark:text-neutral-200">
-              <li>
-                <strong className="text-neutral-900 dark:text-neutral-100">
-                  Un parcours
-                </strong>{" "}
-                — raconté, pas résumé.
-              </li>
-              <li>
-                <strong className="text-neutral-900 dark:text-neutral-100">
-                  Des articles
-                </strong>{" "}
-                — issus du terrain, de la formation, du management et de
-                l’expérience client.
-              </li>
-              <li>
-                <strong className="text-neutral-900 dark:text-neutral-100">
-                  Un accompagnement guidé
-                </strong>{" "}
-                — une série + une fiche en ligne (récap complet envoyé à la fin).{" "}
-                <Link href="/atelier" className="underline underline-offset-4">
-                  Voir l’accompagnement
-                </Link>
-                .
-              </li>
-              <li>
-                <strong className="text-neutral-900 dark:text-neutral-100">
-                  Une méthode de travail
-                </strong>{" "}
-                — fondée sur l’exigence, la simplicité et la mesure de l’impact.
-              </li>
-            </ul>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Rien n’est ici théorique. Tout est ancré dans des situations vécues,
-              des collectifs réels et des décisions prises dans des contextes
-              concrets.
-            </p>
-          </div>
+          <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
+          <h2 className="text-lg font-semibold tracking-tight">
+            Et après
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Tu peux lire le parcours, parcourir les situations d’intervention,
+            découvrir l’accompagnement ou m’écrire si tu veux échanger plus
+            directement.
+          </p>
 
-          <div className="space-y-3">
-            <h2 className="text-xl font-semibold">Pourquoi lire ce carnet</h2>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Si vous travaillez dans une organisation, si vous formez, managez,
-              déployez ou accompagnez, vous reconnaîtrez sans doute beaucoup de
-              choses ici.
-            </p>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Ce carnet ne donne pas de recettes. Il partage des cadres, des
-              observations et des manières de faire qui aident à mieux comprendre
-              ce qui se joue entre la stratégie et le terrain.
-            </p>
-
-            <p className="mt-8 text-right text-xs text-neutral-500 dark:text-neutral-500">
-              <Link href="/situations-d-intervention" className="hover:underline">
-                → Voir les situations dans lesquelles j’interviens
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/parcours"
+                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+              >
+                Parcours
               </Link>
-            </p>
-          </div>
 
-          <div className="space-y-3 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30">
-            <h2 className="text-xl font-semibold">Et après</h2>
-            <p className="text-neutral-800 dark:text-neutral-200">
-              Vous pouvez lire mon parcours, parcourir les articles, découvrir l’accompagnement, ou m’écrire
-              si vous souhaitez échanger, questionner ou travailler ensemble.
-            </p>
+              <Link
+                href="/atelier"
+                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+              >
+                Accompagnement
+              </Link>
 
-            <div className="pt-2 w-full max-w-xl">
-              <div className="grid grid-cols-2 gap-3 md:flex md:flex-nowrap">
-                <Link
-                  href="/parcours"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Parcours
-                </Link>
-
-                <Link
-                  href="/articles"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Articles
-                </Link>
-
-                <Link
-                  href="/atelier"
-                  className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium text-center whitespace-nowrap hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
-                >
-                  Accompagnement
-                </Link>
-
-                <ContactButton
-                  label="Contact"
-                  className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 border-0 whitespace-nowrap"
-                />
-              </div>
+              <ContactButton
+                label="Contact"
+                className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+              />
             </div>
           </div>
-
-          <footer className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-8 text-sm text-neutral-600 dark:text-neutral-400">
-            <p>© {new Date().getFullYear()} Carnet d’expérience — Tous droits réservés.</p>
-          </footer>
         </div>
       </section>
     </section>

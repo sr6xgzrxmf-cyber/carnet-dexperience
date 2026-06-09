@@ -5,14 +5,14 @@ excerpt: "Le principal ennemi de la vente en 2026 n’est plus le refus, mais l�
 cover: "/images/articles/2026-02-05-faire-decider-pas-convaincre.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
-  - vente
-  - decision
-  - posture commerciale
-  - management
-  - conseil
+  - "vente"
+  - "decision"
+  - "posture commerciale"
+  - "management"
+  - "conseil"
 series:
   name: "Vendre n’est plus convaincre"
-  slug: "Vendre n’est plus convaincre"
+  slug: "vendre-n-est-plus-convaincre"
   order: 1
 ---
 

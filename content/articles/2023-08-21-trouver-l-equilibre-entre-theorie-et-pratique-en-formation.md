@@ -2,7 +2,7 @@
 title: "Trouver l’équilibre entre théorie et pratique en formation"
 date: "2023-08-21"
 excerpt: "Comment combiner savoirs et mise en pratique pour maximiser l’efficacité pédagogique."
-cover: "/images/articles/equilibre-theorie-pratique.jpg"
+cover: "/images/articles/2023-08-21-trouver-l-equilibre-entre-theorie-et-pratique-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -14,6 +14,7 @@ series:
   slug: "former-des-adultes"
   order: 34
 ---
+
 L’équilibre entre la théorie et la pratique en formation professionnelle : comment y parvenir ?
 
 Pour qu’une formation professionnelle soit réellement efficace, elle doit combiner deux dimensions indissociables : la théorie et la pratique. Trouver le juste milieu entre ces deux piliers est pourtant l’un des défis majeurs de la pédagogie.

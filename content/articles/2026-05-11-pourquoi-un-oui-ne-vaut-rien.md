@@ -1,10 +1,10 @@
 ---
 title: Pourquoi un “oui” ne vaut rien
-date: '2026-05-08'
+date: "2026-05-11"
 excerpt: >-
   Un ‘oui’ ne crée pas d’engagement. Il crée seulement une opportunité
   d’interprétation. Et mon enthousiasme a rempli les blancs trop vite.
-cover: /images/articles/pourquoi-un-oui-ne-vaut-rien.jpg
+cover: /images/articles/2026-05-11-pourquoi-un-oui-ne-vaut-rien.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - relation
@@ -80,3 +80,5 @@ Il commence quand quelque chose devient suffisamment important pour déplacer du
 Les mots créent des possibilités.
 
 Seul le déplacement trace une trajectoire.
+
+Question ouverte : quand quelqu’un te dit oui, qu’est-ce qui a réellement bougé dans le réel ?

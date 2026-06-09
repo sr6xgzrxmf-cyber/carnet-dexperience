@@ -1,8 +1,8 @@
 ---
 title: "Quand le vendeur devient son propre critique : gérer la culpabilité liée aux prix élevés"
 date: "2023-10-16"
-excerpt: "Quand le vendeur doute du prix avant même que le client ne le fasse, toute la relation de vente est fragilisée. Comprendre, recadrer et transformer cette culpabilité."
-cover: "/images/articles/culpabilite-prix-eleves.jpg"
+excerpt: "Le problème ne commence pas quand le client trouve un produit cher. Il commence souvent avant, quand le vendeur lui-même n’assume déjà plus le prix qu’il annonce."
+cover: "/images/articles/2023-10-16-quand-le-vendeur-devient-son-propre-critique-gerer-la-culpabilite-liee-aux-prix-eleves.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "retail"
@@ -11,95 +11,99 @@ series:
   slug: "vendre-et-servir-en-retail"
   order: 1
 ---
-Dans la vente, la confiance est un actif invisible.  
-Quand le vendeur commence à douter du produit ou du prix qu’il propose, c’est toute la relation commerciale qui se fragilise.
 
-Et ce doute n’est pas rare.
+### « Je te le montre, mais je te préviens, c’est un peu cher. »
 
-## Le dilemme du vendeur
+La phrase part souvent toute seule. Le client n’a encore rien contesté, mais le vendeur, lui, a déjà commencé à ouvrir une brèche. Avant même que l’objection prix n’arrive, il a pris les devants. Comme s’il devait s’excuser d’avance pour protéger la relation.
 
-Jean est un vendeur expérimenté.  
-Il aime ses clients, connaît ses produits, mais pense secrètement que certains accessoires sont trop chers.  
-Il sait qu’ils existent moins cher ailleurs.  
-Résultat : il vend en s’excusant intérieurement.
+C’est un moment intéressant, parce qu’il révèle un problème plus profond qu’une simple hésitation commerciale.
 
-Cette culpabilité parasite sa posture.
+Quand un vendeur n’assume plus le prix qu’il annonce, toute sa posture change.
 
-## Les conséquences invisibles
+## Le client entend le doute avant l’argument
 
-Quand le vendeur doute, le client le ressent.
+En retail, les clients repèrent très vite les micro-signaux :
 
-– Le discours devient hésitant  
-– La valeur est mal expliquée  
-– La marque paraît moins crédible  
-– La vente devient défensive  
+- une voix qui baisse au moment d’annoncer le prix,
+- un regard qui se détourne,
+- une justification qui arrive trop tôt,
+- ou une formulation qui cherche déjà à minimiser.
 
-Et surtout :  
-> Le vendeur devient le premier à discréditer son propre produit.
+À partir de là, la discussion ne porte plus seulement sur la valeur du produit. Elle porte sur la crédibilité de la personne qui le recommande.
 
-## Le vrai sujet : la valeur perçue
+Le vendeur devient alors le premier critique de ce qu’il vend. Et c’est presque impossible de construire une recommandation solide depuis cet endroit.
 
-Le prix ne vit jamais seul.  
-Il est toujours comparé à une valeur globale.
+## Ce malaise n’est pas toujours irrationnel
 
-Or, un magasin ne vend pas uniquement un objet.  
-Il vend une **expérience complète**.
+Il faut être honnête : si un vendeur ressent de la gêne, ce n’est pas forcément parce qu’il manque de maturité ou de confiance.
 
-### Le conseil humain  
-Un client ne vient pas en boutique pour payer plus cher.  
-Il vient pour être rassuré, guidé, compris.
+Parfois, ce malaise signale :
 
-### L’expérience d’achat  
-Démonstrations, tests, ateliers, accompagnement :  
-tout ce que le e-commerce ne peut pas offrir.
+- qu’il comprend mal la logique de prix,
+- qu’il ne perçoit pas clairement la valeur ajoutée,
+- qu’il compare seulement l’objet brut avec une version moins chère ailleurs,
+- ou qu’il n’ose pas encore assumer la différence entre prix et coût.
 
-### L’exclusivité  
-Certains produits, certaines éditions, certains services n’existent que là.
+Et parfois, plus simplement, cela révèle une vraie question éthique : est-ce que ce produit est réellement juste pour ce client-là ?
 
-### La relation  
-Un vendeur qui connaît ses clients, leur usage, leur contexte.
+Cette nuance est importante. Le but n’est pas de dresser les vendeurs à défendre n’importe quel prix. Le but est de les aider à distinguer deux choses :
 
-### La confiance et le SAV  
-Un visage, une adresse, une responsabilité.
+- la gêne qui vient d’un manque de lecture,
+- et l’inconfort qui vient d’un vrai problème de cohérence.
 
-Le prix n’est jamais seulement le prix du produit.  
-C’est le prix de **tout ce qui l’entoure**.
+## Ce que le client paie vraiment
 
-## Comment aider les vendeurs à sortir de la culpabilité
+Quand un produit est vendu en magasin, le client n’achète pas seulement un objet.
 
-### 1. La formation produit  
-Un vendeur qui comprend ce qu’il vend peut le défendre.
+Il achète aussi, selon les contextes :
 
-Ateliers réguliers, démonstrations, différenciation concurrentielle.
+- du conseil,
+- de la compatibilité,
+- du temps gagné,
+- de la prise en main,
+- un interlocuteur identifiable,
+- un service après-vente,
+- une responsabilité humaine si quelque chose se passe mal.
 
-### 2. La transparence des prix  
-Comprendre ce qui compose un prix :  
-qualité, R&D, logistique, service, garantie.
+Le problème, c’est que beaucoup de vendeurs savent cela de manière diffuse, sans réussir à le formuler clairement. Ils sentent qu’il y a “plus” que le produit, mais ils ne savent pas encore transformer ce supplément de service en langage simple et assumé.
 
-Ce qu’on comprend, on peut l’expliquer.
+## Là où la culpabilité devient coûteuse
 
-### 3. L’alignement des incentives  
-Un vendeur qui bénéficie de la valeur qu’il crée assume mieux son rôle.
+Un vendeur qui culpabilise devant le prix a tendance à faire quatre choses :
 
-Commissions, bonus, reconnaissance.
+- écourter la recommandation,
+- surjustifier trop tôt,
+- laisser le client repartir sans vraie projection d’usage,
+- ou proposer moins bien que ce qu’il pense réellement pertinent.
 
-### 4. Le droit de parler  
-Les doutes doivent pouvoir être exprimés.  
-Pas étouffés.
+Au fond, il ne protège pas la relation. Il la fragilise.
 
-Un vendeur qui ose dire « je trouve ça cher »  
-est un vendeur qui peut apprendre à expliquer pourquoi ça ne l’est pas.
+Parce qu’un client accepte très bien un prix élevé quand la valeur est lisible, reliée à son usage, et portée par quelqu’un qui parle avec justesse. Ce qu’il accepte beaucoup moins, c’est l’impression qu’on lui vend quelque chose que le vendeur lui-même ne croit qu’à moitié.
 
-## Transformer la culpabilité en fierté
+## Ce que le management devrait entendre là-dedans
 
-Un bon vendeur ne vend pas cher.  
-Il vend **juste**.
+Quand une équipe a du mal à assumer certains prix, il ne faut pas traiter cela uniquement comme un problème de confiance individuelle.
 
-Il vend une solution, une expérience, un accompagnement.  
-Quand il comprend cela, il n’a plus besoin de s’excuser.
+Il faut se demander :
 
-Il peut regarder son client dans les yeux et dire :  
-« Oui, c’est ce prix-là. Et voilà pourquoi ça vaut ce prix. »
+- est-ce que la valeur a réellement été clarifiée ?
+- est-ce que l’équipe sait comparer autrement que par le prix nu ?
+- est-ce qu’elle a le droit d’exprimer ses doutes ?
+- est-ce qu’on lui a appris à recommander juste, et pas seulement à vendre plus ?
 
-Et ça change tout.
+Si la réponse est non, alors la culpabilité n’est pas un défaut de vendeur. C’est un symptôme de cadrage insuffisant.
 
+## Assumer un prix sans devenir dogmatique
+
+Bien vendre un produit cher ne consiste pas à réciter une défense automatique du prix. Cela consiste à pouvoir dire, avec calme :
+
+- pour qui ce produit a du sens,
+- dans quel usage il est pertinent,
+- ce qu’il apporte réellement,
+- et aussi, parfois, pour qui il n’est pas le bon choix.
+
+C’est ce discernement-là qui transforme la gêne en crédibilité.
+
+Le vendeur ne devient pas fier parce qu’il “réussit à faire passer” un prix élevé. Il devient plus juste parce qu’il sait relier ce prix à une valeur réelle, située, compréhensible.
+
+Question ouverte : quand un prix te met mal à l’aise, qu’est-ce qu’il révèle vraiment : un manque de confiance… ou un manque de clarté sur la valeur que tu proposes ?

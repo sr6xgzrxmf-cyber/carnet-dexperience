@@ -2,7 +2,7 @@
 title: "Apprendre à bâtir un média, pas un site"
 date: "2026-01-23"
 excerpt: "Passer de la logique du site bricolé à celle d’un média durable implique un changement d’échelle : apprendre, structurer, et penser l’ensemble comme un système éditorial vivant."
-cover: "/images/articles/2026-01-23-batir-un-media-pas-un-site.jpg"
+cover: "/images/articles/2026-01-23-apprendre-a-batir-un-media-pas-un-site.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "apprentissage"
@@ -11,6 +11,7 @@ series:
   slug: "construire-carnet-experience"
   order: 3
 ---
+
 ## Le faux confort du site qui fonctionne
 
 Un site qui s’affiche, qui charge vite, qui ne plante pas, donne une illusion de réussite. On coche des cases : un framework moderne, un hébergement propre, quelques pages bien rangées. Techniquement, tout va bien. Stratégiquement, rien n’est encore posé.

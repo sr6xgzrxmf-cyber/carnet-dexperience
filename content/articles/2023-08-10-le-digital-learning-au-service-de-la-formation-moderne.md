@@ -2,7 +2,7 @@
 title: "Le digital learning au service de la formation moderne"
 date: "2023-08-10"
 excerpt: "Comment les outils numériques transforment l’expérience d’apprentissage et la montée en compétences."
-cover: "/images/articles/digital-learning.jpg"
+cover: "/images/articles/2023-08-10-le-digital-learning-au-service-de-la-formation-moderne.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 31
 ---
+
 L’impact du digital learning sur la formation en entreprise
 
 À l’ère du numérique, la formation en entreprise a connu une transformation profonde. Les cours en ligne, les MOOCs, les plateformes LMS et l’apprentissage mobile sont devenus des piliers incontournables du développement des compétences. Le digital learning ne se contente plus de compléter la formation traditionnelle : il en redéfinit les règles.

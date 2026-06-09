@@ -2,16 +2,17 @@
 title: "Pourquoi raconter une progression plutôt que donner des conseils"
 date: "2026-01-17"
 excerpt: "J’ai longtemps accompagné des trajectoires en interne. Aujourd’hui, je choisis de montrer le travail réel : ce qui se joue, ce qu’on écrit, ce qu’on change, et ce que ça coûte quand on laisse le flou décider à notre place."
-cover: "/images/articles/2026-01-17-episode-0-pourquoi-raconter-une-progression-plutot-que-donner-des-conseils.jpg"
+cover: "/images/articles/2026-01-17-pourquoi-raconter-une-progression-plutot-que-donner-des-conseils.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
+tags:
+  - "posture-professionnelle"
+  - "communication"
 series:
   name: "Atelier de posture"
   slug: "atelier-de-posture"
   order: 1
-tags:
-  - "posture-professionnelle"
-  - "communication"
 ---
+
 Je pourrais donner des conseils. Des phrases “qui marchent”. Des techniques. Des recettes de mail. Des listes de “bonnes pratiques”. Ce serait facile, et parfois même utile. Mais ce serait incomplet. Parce que, dans la vraie vie, les situations qui coincent ne sont pas des exercices. Elles sont floues. Chargées. Ambiguës. Et c’est précisément ce flou — plus que le problème lui-même — qui abîme les gens, les équipes, et la qualité du travail.
 
 Ce que j’ai vu, année après année, ce n’est pas un manque de compétence. C’est un manque de lisibilité. Un rôle qui déborde sans être nommé. Une attente implicite qui se transforme en reproche. Une tension qui s’installe parce que personne n’a osé poser une limite claire. Un professionnel qui “tient” tellement qu’il finit par porter à la place de cadrer. Une organisation qui croit gagner du temps en laissant l’implicite faire le travail — et qui le paye ensuite en rattrapage, en fatigue, en crispation.

@@ -2,7 +2,7 @@
 title: "Épouser le style de management autoritaire et révéler l’essence d’une formation efficace"
 date: "2023-06-29"
 excerpt: "Comprendre, expérimenter et évaluer le management autoritaire pour mieux l’utiliser en formation."
-cover: "/images/articles/management-autoritaire.jpg"
+cover: "/images/articles/2023-06-29-epouser-le-style-de-management-autoritaire-et-reveler-l-essence-d-une-formation-efficace.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "management"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 16
 ---
+
 Bienvenue dans notre série explorant différents styles de management ! 📢  
 Notre premier arrêt nous plonge dans le monde du **management autoritaire**, où l’on apprend à prendre des décisions fermes, à instaurer la discipline et à diriger d’une main de fer. 💪  
 Préparez-vous à découvrir les avantages et les limites de ce style, ainsi que la manière de l’apprivoiser dans vos dispositifs de formation. 🚀

@@ -1,12 +1,12 @@
 ---
 title: Le moment où j’ai compris que mon discours ne fonctionnait pas
-date: '2026-05-11'
+date: "2026-05-13"
 excerpt: >-
   Un discours qui ne prend pas n’est pas un échec. C’est un signal d’alerte. Et
   le vrai travail commence quand on a le courage de descendre de son propre
   plateau.
 cover: >-
-  /images/articles/2026-05-19-le-moment-ou-jai-compris-que-mon-discours-ne-fonctionnait-pas.jpg
+  /images/articles/2026-05-13-le-moment-ou-jai-compris-que-mon-discours-ne-fonctionnait-pas.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - discours
@@ -69,3 +69,5 @@ Et c’est souvent à cet endroit précis que le projet commence réellement à 
 Pas quand mon discours devient convaincant.
 
 Quand l’autre trouve enfin une place pour y entrer.
+
+Question ouverte : quand ton discours ne prend pas, est-ce que tu cherches encore à mieux parler… ou à mieux comprendre depuis quoi l’autre écoute ?

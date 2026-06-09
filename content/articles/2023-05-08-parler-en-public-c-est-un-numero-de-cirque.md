@@ -2,75 +2,106 @@
 title: "Parler en public, c’est un numéro de cirque"
 date: "2023-05-08"
 type: "article"
+excerpt: "Parler devant un groupe ressemble souvent à un numéro de cirque : le corps entre en scène avant les idées, et la vraie compétence consiste à rester présent quand tout vacille."
+cover: "/images/articles/2023-05-08-parler-en-public-c-est-un-numero-de-cirque.jpg"
+source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
   - "pedagogie"
-cover: "/images/articles/clown-prise-de-parole.jpg"
-source: "Laurent Guyonnet — Carnet d’expérience"
-excerpt: "Un atelier de prise de parole sous la pluie, un formateur-clown, et une transformation : oser, rater, recommencer."
 series:
   name: "Former des adultes"
   slug: "former-des-adultes"
   order: 1
 ---
-La pluie tambourinait contre les vitres de la salle de formation, un rythme monotone qui collait à l’humeur des participants. Une dizaine d’adultes, venus de secteurs aussi variés que la finance, la santé ou le commerce, s’étaient assis en cercle, les épaules légèrement voûtées, les doigts serrant des tasses de café tiède. Certains fixaient leurs chaussures, d’autres feuilletaient nerveusement des notes froissées. L’air sentait le café brûlé et le désinfectant bon marché. Personne ne parlait. Personne n’osait.
 
-C’est alors que la porte s’ouvrit à la volée, laissant entrer une bourrasque d’air humide et un homme vêtu d’un pantalon à carreaux trop large, d’une veste en velours élimée, et d’un nez rouge qui tranchait avec la grisaille ambiante. « Bienvenue sous le chapiteau, mesdames et messieurs ! » lança-t-il en faisant claquer une paire de chaussures surdimensionnées. « Aujourd’hui, on ne va pas apprendre à parler en public. On va apprendre à survivre à la scène. »
+### « Je vais être ridicule. »
 
-Un silence. Puis un rire étouffé, vite réprimé. L’animateur-clown — un ancien artiste de cirque reconverti en formateur — les dévisagea un à un, un sourire en coin. « Allez, debout ! On commence par un échauffement. Parce que si vous croyez que parler devant un public, c’est juste aligner des mots, vous vous trompez. C’est un sport de combat. »
+La phrase est prononcée juste avant de se lever. Elle ne parle pas de contenu. Elle parle de corps, de regard des autres, de voix qui risque de trembler. Dans un atelier de prise de parole, c’est souvent là que tout commence vraiment.
 
----
+Une participante tient ses notes comme si elles pouvaient la protéger. Un autre plaisante trop pour masquer sa peur. Un troisième répète qu’il “n’est pas fait pour ça”. En quelques secondes, on comprend une chose : parler en public n’est jamais seulement une affaire d’idées. C’est une affaire d’exposition.
 
-## L’échauffement : un plongeon dans l’absurde
+C’est pour cela que j’ai souvent pensé que la prise de parole ressemblait plus à un numéro de cirque qu’à une démonstration académique.
 
-« Tout le monde debout, en cercle ! » ordonna-t-il en tapant dans ses mains. « On va faire du yoga du rire. Oui, vous avez bien entendu. »
+## Pourquoi le cirque est une bonne image
 
-Les regards se croisèrent, sceptiques. « Mais… c’est sérieux ? » murmura une femme en costume, les sourcils froncés. « Écoutez, » répondit le formateur en enfilant un chapeau melon troué, « si vous ne savez pas rire de vous-mêmes, le public s’en chargera. Alors, on y va : inspirez profondément… et laissez sortir un “ha” ! »
+Au cirque, on ne regarde pas seulement quelqu’un faire un geste. On regarde quelqu’un tenir sous le regard de tous.
 
-Un « ha » timide s’échappa du groupe. Puis un autre. Puis un éclat de rire nerveux, contagieux. En cinq minutes, la salle se transforma : les épaules se détendirent, les visages s’illuminèrent. Même l’homme en cravate, qui semblait avoir avalé un tuteur, se tenait maintenant les côtes, les yeux brillants. « Vous voyez ? » dit le clown en essuyant une larme imaginaire. « Vous êtes déjà meilleurs qu’il y a dix minutes. »
+La prise de parole fonctionne pareil.
 
-La pluie, dehors, s’était calmée. Mais dans la salle, quelque chose avait changé : l’air était plus léger, comme après un orage.
+Le problème n’est pas simplement de savoir quoi dire. Le problème est de rester présent pendant que :
 
----
+- le corps s’emballe,
+- la mémoire se brouille,
+- le silence dure une seconde de trop,
+- une phrase sort moins bien que prévu,
+- et le regard du groupe devient soudain très visible.
 
-## Les exercices : un numéro de jonglage verbal
+Autrement dit, l’orateur ne doit pas seulement transmettre un message. Il doit tenir son équilibre en public.
 
-« Maintenant, on passe aux choses sérieuses, » annonça le formateur en sortant un sac rempli de balles en mousse. « Vous allez apprendre à parler en faisant autre chose. Parce que dans la vraie vie, votre cerveau ne s’arrête pas de penser quand vous ouvrez la bouche. »
+## Le vrai stress n’est pas technique
 
-Il divisa le groupe en binômes et distribua les balles. « Récitez ce texte, » dit-il en tendant une feuille, « tout en vous lançant la balle. Si vous la faites tomber, vous recommencez. »
+Beaucoup de formations abordent encore la prise de parole comme un problème de structure : une introduction, trois arguments, une conclusion, une respiration, un regard, une gestuelle.
 
-Les premiers essais furent catastrophiques. Les balles volaient dans tous les sens, les textes étaient bâclés, les rires fusaient. « C’est impossible ! » s’exclama un participant, les joues rouges. « Bien sûr que c’est possible, » rétorqua le clown. « Mais il faut accepter de rater. Regardez-moi. » Il se mit à jongler avec trois balles tout en déclamant un monologue shakespearien, avant de laisser tout tomber avec un « Merde. » théâtral. « Vous voyez ? Même les pros ratent. La différence, c’est qu’ils recommencent. »
+Tout cela compte, bien sûr. Mais ce n’est pas ce qui bloque en premier.
 
-Petit à petit, les balles restèrent en l’air plus longtemps. Les textes furent mieux articulés. Et surtout, les participants réalisèrent une chose : ils s’amusaient.
+Ce qui bloque, la plupart du temps, c’est autre chose :
 
----
+- la peur de perdre la face,
+- l’impression d’être jugé en temps réel,
+- la sensation que la moindre hésitation devient énorme,
+- ou la croyance qu’il faudrait être fluide immédiatement.
 
-## L’improvisation : le trapèze sans filet
+Chez les adultes, cette peur est souvent plus forte qu’on ne l’imagine. Parce qu’ils ne craignent pas seulement de “mal parler”. Ils craignent de paraître moins solides qu’ils ne le sont dans leur vrai métier.
 
-« Maintenant, le clou du spectacle, » annonça le formateur en désignant une chaise au centre de la salle. « L’improvisation. Un volontaire ? »
+## Ce qu’un bon atelier doit réellement entraîner
 
-Un silence. Puis une main se leva, tremblante : celle de Claire, une comptable habituellement discrète. « Je… je veux bien essayer, » murmura-t-elle.
+Si l’on prend au sérieux cette dimension-là, l’objectif change.
 
-« Parfait ! » Le clown lui tendit un chapeau de magicien. « Ton thème : “Un entretien d’embauche sous la pluie”. Tu as trois minutes. À toi de jouer. »
+Il ne s’agit plus seulement d’apprendre à produire une belle parole. Il s’agit d’apprendre à récupérer quand quelque chose décroche.
 
-Claire monta sur la chaise, les genoux flageolants. « Euh… bonjour, je suis venue pour le poste de… » Elle s’interrompit, cherchant ses mots. « Attends, » dit le formateur, « imagine que tu es trempée, que tes chaussures coulent, et que ton CV est en bouillie. »
+Une bonne formation à la prise de parole devrait donc faire travailler au moins quatre choses :
 
-Claire ferma les yeux. Puis, soudain, elle se mit à parler. « Désolée pour l’état de mes documents, » dit-elle en essorant imaginairement sa veste, « mais j’ai marché une heure sous la pluie pour être à l’heure. Et si ça ne vous dérange pas, je vais enlever mes chaussures… elles font floc floc. »
+- entrer en scène sans vouloir être parfait,
+- supporter un blanc sans paniquer,
+- reprendre le fil après une erreur,
+- et transformer son attention au public.
 
-La salle explosa de rire. Claire, surprise, sourit. « Continuez ! » l’encouragea le clown. Et elle continua, inventant une scène absurde où l’employeur lui tendait une serviette et où elles finissaient par discuter en chaussettes, sous un parapluie imaginaire.
+Le basculement se produit souvent quand le participant comprend que l’audience n’attend pas une performance lisse. Elle attend surtout quelqu’un de présent, lisible, suffisamment stable pour continuer même si tout n’est pas parfait.
 
-Quand elle descendit de la chaise, les applaudissements furent nourris. « Tu vois ? » lui dit le formateur. « Tu n’as pas besoin d’être parfaite. Juste présente. »
+## On apprend en petit avant d’apprendre en grand
 
----
+Le problème de beaucoup d’exercices, c’est qu’ils exposent trop fort, trop vite. On demande à quelqu’un de “faire un pitch” devant tout le groupe alors qu’il n’a pas encore trouvé sa respiration, son appui, ou même sa première phrase.
 
-## Conclusion : la piste aux étoiles
+Sur ce sujet, la progressivité change tout.
 
-À la fin de l’atelier, les participants étaient méconnaissables. Leurs visages, autrefois fermés, rayonnaient. Ils avaient ri, transpiré, échoué, et surtout, osé. « On se reverra la semaine prochaine ? » demanda le clown en distribuant des bonbons. « Parce que la prochaine fois, on travaille avec des œufs. »
+On peut commencer beaucoup plus simplement :
 
-Un grognement amusé parcourut le groupe. « Des œufs ? » « Oui. Pour apprendre à gérer le stress. Si vous cassez un œuf en parlant, vous nettoyez. »
+- parler trente secondes à une seule personne,
+- refaire la même chose debout,
+- reprendre sans notes,
+- recommencer après une interruption,
+- ou raconter une anecdote concrète plutôt qu’un discours abstrait.
 
-En sortant, sous un ciel enfin dégagé, les participants échangèrent des sourires complices. La pluie avait cessé. Et pour la première fois depuis longtemps, ils avaient l’impression d’avoir appris quelque chose sans même s’en rendre compte.
+Cette montée progressive ressemble à un entraînement. Et c’est bien ce que c’est. La prise de parole n’est pas un talent magique. C’est une compétence de récupération, de présence et de répétition.
 
-« Alors, » demanda le clown en refermant la porte, « toujours peur de parler en public ? »
+## Le public n’est pas ton ennemi
 
-Un « Non ! » unanime lui répondit.
+Il y a aussi une croyance tenace : celle d’un public hostile, prêt à repérer la moindre faille. En réalité, ce fantasme est souvent beaucoup plus violent dans la tête de l’orateur que dans la salle.
+
+La plupart des gens veulent comprendre. Ils veulent suivre. Ils veulent que quelqu’un les aide à entrer dans un sujet. Ils ne demandent pas une perfection scénique. Ils demandent une relation tenable.
+
+C’est pour cela qu’un intervenant vivant, légèrement imparfait mais habité, marque souvent plus qu’un discours impeccable et mort.
+
+## Ce qu’il reste quand la technique a fait son travail
+
+À la fin, la prise de parole ne consiste pas à effacer le trac. Elle consiste à ne plus lui obéir entièrement.
+
+Le trac peut rester.
+La voix peut bouger un peu.
+Une phrase peut sortir moins bien.
+
+Mais si la personne tient, reprend, continue, alors quelque chose se transforme : elle ne cherche plus à paraître sans faille. Elle commence à parler depuis un endroit plus vrai.
+
+Et c’est souvent là que l’on écoute vraiment.
+
+Question ouverte : quand tu prends la parole, qu’est-ce que tu essaies le plus de protéger : ton message, ou ton image ?

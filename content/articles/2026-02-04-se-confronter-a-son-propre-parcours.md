@@ -2,7 +2,7 @@
 title: "Se confronter à son propre parcours"
 date: "2026-02-04"
 excerpt: "Relire son parcours n’est pas un exercice de valorisation, mais de lucidité. Publier le vrai suppose d’assumer ses zones grises, ses décisions discutables et ce qu’elles ont réellement produit."
-cover: "/images/articles/se-confronter-a-son-propre-parcours.jpg"
+cover: "/images/articles/2026-02-04-se-confronter-a-son-propre-parcours.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "posture-professionnelle"
@@ -11,6 +11,7 @@ series:
   slug: "construire-carnet-experience"
   order: 5
 ---
+
 Arrive toujours un moment, quand on tient un média professionnel un peu sérieusement, où la question n’est plus technique, ni même éditoriale.  
 Ce moment où l’on comprend que l’on ne peut plus parler *des autres*, *du terrain*, *des organisations*, sans se confronter à ce que l’on a soi-même fait, accepté, évité ou raté.
 

@@ -2,7 +2,7 @@
 title: "Construire une culture de l’apprentissage dans l’entreprise"
 date: "2023-08-07"
 excerpt: "Pourquoi et comment installer une culture d’apprentissage continu au cœur des organisations."
-cover: "/images/articles/culture-apprentissage.jpg"
+cover: "/images/articles/2023-08-07-construire-une-culture-de-l-apprentissage-dans-l-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -13,6 +13,7 @@ series:
   slug: "former-des-adultes"
   order: 30
 ---
+
 Création d’une culture d’apprentissage en entreprise : plus qu’un luxe, une nécessité
 
 Dans le monde des affaires d’aujourd’hui, rapide et en constante évolution, rester à jour sur les tendances, les technologies et les pratiques n’est plus un avantage concurrentiel, c’est une condition de survie. Les organisations qui investissent dans une véritable culture d’apprentissage deviennent plus adaptables, plus résilientes et mieux armées pour saisir les opportunités.
