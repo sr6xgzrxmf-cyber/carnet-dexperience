@@ -40,6 +40,7 @@ export type ImageReviewSummary = {
   sharedArticleImageGroups: number;
   safeAliasFiles: number;
   sharedArticleFiles: number;
+  safeDeletableFiles: number;
 };
 
 export type ImageReviewData = {
@@ -249,6 +250,10 @@ export function getImageReviewData(): ImageReviewData {
       sharedArticleImageGroups: sharedArticleImageGroups.length,
       safeAliasFiles: safeAliasGroups.reduce((total, group) => total + group.duplicateCount, 0),
       sharedArticleFiles: sharedArticleImageGroups.reduce((total, group) => total + group.duplicateCount, 0),
+      safeDeletableFiles: safeAliasGroups.reduce(
+        (total, group) => total + group.orphanCanonicals.length + group.legacyAliases.length,
+        0
+      ),
     },
     safeAliasGroups,
     sharedArticleImageGroups,

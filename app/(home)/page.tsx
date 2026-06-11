@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactButton from "@/components/ContactButton";
+import {
+  featuredSeriesList,
+  featuredSeriesSummaries,
+  featuredSeriesTeasers,
+  featuredWorkArticles,
+} from "@/content/editorial";
 import { getAllArticles, type ArticleItem } from "@/lib/articles";
+import { getAllSeriesCatalog } from "@/lib/series-catalog";
 
 type HomeArticle = {
   slug: string;
@@ -9,6 +16,26 @@ type HomeArticle = {
   date: string;
   excerpt: string;
   cover: string | null;
+  series?: {
+    slug?: string;
+    order?: number;
+  };
+};
+
+type FeaturedHomeArticle = {
+  article: HomeArticle;
+  label: string;
+};
+
+type HomeSeries = {
+  slug: string;
+  title: string;
+  articleCount: number;
+  startHref: string | null;
+  startTitle?: string;
+  teaserBenefit?: string;
+  teaserForWhom?: string;
+  summary?: string;
 };
 
 function normalizeCoverSrc(cover: unknown): string | null {
@@ -28,32 +55,158 @@ function toHomeArticle(item: ArticleItem): HomeArticle {
           ? new Date(item.meta.date).toISOString().slice(0, 10)
           : "";
 
+  const rawSeries =
+    item.meta.series && typeof item.meta.series === "object"
+      ? (item.meta.series as { slug?: unknown; order?: unknown })
+      : undefined;
+  const seriesOrder =
+    typeof rawSeries?.order === "number"
+      ? rawSeries.order
+      : typeof rawSeries?.order === "string"
+        ? Number(rawSeries.order)
+        : undefined;
+
   return {
     slug: item.slug,
     title: item.meta.title ?? item.slug,
     date,
     excerpt: item.meta.excerpt ?? "",
     cover: normalizeCoverSrc(item.meta.cover),
+    series:
+      rawSeries && typeof rawSeries.slug === "string"
+        ? {
+            slug: rawSeries.slug,
+            order: Number.isFinite(seriesOrder) ? seriesOrder : undefined,
+          }
+        : undefined,
   };
+}
+
+function FeaturedArticleCard({
+  article,
+  label,
+}: FeaturedHomeArticle) {
+  return (
+    <Link
+      href={`/articles/${article.slug}`}
+      className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950/20"
+    >
+      {article.cover ? (
+        <div className="relative h-52 w-full overflow-hidden">
+          <Image
+            src={article.cover}
+            alt={article.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover transition duration-300 group-hover:scale-[1.02]"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
+        </div>
+      ) : (
+        <div className="h-52 w-full bg-neutral-100 dark:bg-neutral-900/40" />
+      )}
+
+      <div className="p-6">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+          <span className="inline-flex items-center rounded-full border border-neutral-200 px-2 py-0.5 font-medium text-neutral-700 dark:border-neutral-700 dark:text-neutral-300">
+            {label}
+          </span>
+          {article.date ? <span>{article.date}</span> : null}
+        </div>
+
+        <h3 className="mt-2 text-lg font-semibold tracking-tight">{article.title}</h3>
+
+        {article.excerpt ? (
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            {article.excerpt}
+          </p>
+        ) : null}
+
+        <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
+          Lire l’article →
+        </p>
+      </div>
+    </Link>
+  );
+}
+
+function FeaturedSeriesCard({ series }: { series: HomeSeries }) {
+  return (
+    <div className="rounded-2xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
+      <div className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+        Série • {series.articleCount} article{series.articleCount > 1 ? "s" : ""}
+      </div>
+
+      <h3 className="mt-3 text-xl font-semibold tracking-tight">{series.title}</h3>
+
+      <div className="mt-3 space-y-2 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+        <p>{series.teaserBenefit ?? series.summary}</p>
+        {series.teaserForWhom ? <p>{series.teaserForWhom}</p> : null}
+      </div>
+
+      {series.startTitle ? (
+        <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
+          Commencer par : {series.startTitle}
+        </p>
+      ) : null}
+
+      <div className="mt-5">
+        {series.startHref ? (
+          <Link
+            href={series.startHref}
+            className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+          >
+            Commencer
+          </Link>
+        ) : (
+          <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 bg-white/60 px-4 py-2 text-sm text-neutral-500 dark:border-neutral-800 dark:bg-neutral-950/30 dark:text-neutral-400">
+            Bientôt
+          </span>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default async function HomePage() {
   const allArticles = getAllArticles({ includeFuture: false }).map(toHomeArticle);
   const articleBySlug = new Map(allArticles.map((article) => [article.slug, article] as const));
+  const seriesCatalog = getAllSeriesCatalog();
+  const seriesBySlug = new Map(seriesCatalog.map((series) => [series.slug, series] as const));
 
-  const curatedArticleSlugs = [
-    "2026-05-18-construire-un-partenariat-sans-devenir-commercial",
-    "2026-04-30-ameliorer-un-process-sans-conflit",
-    "2026-05-26-relancer-decider-arreter",
-  ];
+  const featuredArticles = featuredWorkArticles
+    .slice(0, 3)
+    .map(({ slug, label }) => {
+      const article = articleBySlug.get(slug);
+      if (!article) return null;
+      return { article, label };
+    })
+    .filter((entry): entry is FeaturedHomeArticle => Boolean(entry?.article));
 
-  const recentArticles = curatedArticleSlugs
-    .map((slug) => articleBySlug.get(slug))
-    .filter((article): article is HomeArticle => Boolean(article));
+  const featuredSeries = featuredSeriesList
+    .map((slug) => {
+      const meta = seriesBySlug.get(slug) ?? { slug, title: slug, description: "" };
+      const teaser = featuredSeriesTeasers?.[slug];
+      const items = allArticles
+        .filter((article) => article.series?.slug === slug)
+        .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
+      const start = items.find((article) => (article.series?.order ?? 9999) === 0) ?? items[0];
+
+      return {
+        slug,
+        title: meta.title,
+        articleCount: items.length,
+        startHref: start ? `/articles/${start.slug}` : null,
+        startTitle: start?.title,
+        teaserBenefit: teaser?.benefit?.trim(),
+        teaserForWhom: teaser?.forWhom?.trim(),
+        summary: featuredSeriesSummaries?.[slug]?.trim() || meta.description,
+      };
+    });
 
   const recruiterEntryHref = "/parcours";
-  const practiceEntryHref =
-    "/articles/2026-01-17-pourquoi-raconter-une-progression-plutot-que-donner-des-conseils";
+  const practiceEntryHref = "#commencer-ici";
   const archivesEntryHref = "/articles/archives";
 
   return (
@@ -77,9 +230,9 @@ export default async function HomePage() {
 
               <p className="max-w-2xl text-base leading-7 text-neutral-600 dark:text-neutral-400">
                 Si tu arrives ici pour comprendre mon profil aujourd’hui, commence par le
-                parcours, puis par les textes récents. Les articles plus anciens restent
-                visibles parce qu’ils montrent le temps long du travail, pas seulement sa
-                version la plus récente.
+                parcours, puis par une sélection courte d’articles. Les textes plus anciens
+                restent visibles parce qu’ils montrent le temps long du travail, pas
+                seulement sa version la plus récente.
               </p>
             </div>
 
@@ -92,7 +245,7 @@ export default async function HomePage() {
               </Link>
 
               <Link
-                href="/articles"
+                href={practiceEntryHref}
                 className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
               >
                 Commencer par les articles
@@ -138,11 +291,11 @@ export default async function HomePage() {
             Pour recruteurs
           </p>
           <h2 className="mt-3 text-xl font-semibold tracking-tight">
-            Voir d’abord le profil, puis le travail récent
+            Voir d’abord le parcours, puis les textes repères
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Le parcours donne la trajectoire. Les articles récents montrent la manière de
-            penser, de cadrer et de rendre les choses lisibles aujourd’hui.
+            Le parcours donne la trajectoire. La sélection d’articles montre ensuite la
+            manière de cadrer, de décider et de rendre les choses lisibles aujourd’hui.
           </p>
           <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
             Voir le parcours →
@@ -157,14 +310,14 @@ export default async function HomePage() {
             Pour comprendre la pratique
           </p>
           <h2 className="mt-3 text-xl font-semibold tracking-tight">
-            Les textes les plus récents sont les plus représentatifs
+            Trois textes choisis, pas trois variantes du même sujet
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Ils sont plus nets, plus incarnés et plus proches de ce que je fais vraiment :
-            clarifier, décider, transmettre, structurer.
+            Trois entrées différentes pour voir comment je travaille une posture, un
+            process et une relation de partenariat.
           </p>
           <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
-            Comprendre la logique →
+            Voir la sélection →
           </p>
         </Link>
 
@@ -176,11 +329,11 @@ export default async function HomePage() {
             Pour remonter le temps
           </p>
           <h2 className="mt-3 text-xl font-semibold tracking-tight">
-            Les articles 2023 restent utiles
+            Les archives montrent le temps long du travail
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Je ne les efface pas. Ils montrent que ce travail éditorial ne date pas de
-            quelques mois. Je les reprends progressivement, sans masquer leur histoire.
+            Les textes 2023 ne sont pas là par nostalgie. Ils documentent les premières
+            formulations, les reprises et la progression éditoriale sur plusieurs années.
           </p>
           <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
             Explorer les archives →
@@ -188,19 +341,21 @@ export default async function HomePage() {
         </Link>
       </section>
 
-      <section className="mx-auto max-w-5xl rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20">
+      <section
+        id="commencer-ici"
+        className="mx-auto max-w-5xl rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20"
+      >
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
               Commencer ici
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Les textes les plus proches de ma pratique actuelle
+              Trois textes repères pour entrer dans la pratique actuelle
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600 dark:text-neutral-400">
-              Pas trois variantes du même sujet : trois angles différents pour comprendre
-              comment je structure une relation, clarifie un process et reprends la
-              maîtrise d’une situation.
+              Trois angles différents pour comprendre comment je clarifie une posture,
+              stabilise un process et fais avancer une relation sans la tordre.
             </p>
           </div>
 
@@ -212,130 +367,101 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        {recentArticles.length > 0 ? (
+        {featuredArticles.length > 0 ? (
           <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {recentArticles.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/articles/${article.slug}`}
-                className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950/20"
-              >
-                {article.cover ? (
-                  <div className="relative h-52 w-full overflow-hidden">
-                    <Image
-                      src={article.cover}
-                      alt={article.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover transition duration-300 group-hover:scale-[1.02]"
-                      unoptimized
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent" />
-                  </div>
-                ) : (
-                  <div className="h-52 w-full bg-neutral-100 dark:bg-neutral-900/40" />
-                )}
-
-                <div className="p-6">
-                  {article.date ? (
-                    <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                      {article.date}
-                    </p>
-                  ) : null}
-
-                  <h3 className="mt-2 text-lg font-semibold tracking-tight">
-                    {article.title}
-                  </h3>
-
-                  {article.excerpt ? (
-                    <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-                      {article.excerpt}
-                    </p>
-                  ) : null}
-                </div>
-              </Link>
+            {featuredArticles.map(({ article, label }) => (
+              <FeaturedArticleCard key={article.slug} article={article} label={label} />
             ))}
           </div>
         ) : null}
       </section>
 
-      <section className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
-        <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20">
-          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-            Fil rouge
-          </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-            Un site pour rendre visible le travail réel
-          </h2>
-
-          <div className="mt-4 space-y-4 text-sm leading-7 text-neutral-700 dark:text-neutral-300">
-            <p>
-              Ce carnet prolonge le CV là où il devient trop court : le contexte, les
-              décisions, les contraintes, les méthodes et les apprentissages qui
-              accompagnent une trajectoire professionnelle réelle.
+      <section
+        id="series-cles"
+        className="mx-auto max-w-5xl rounded-3xl border border-neutral-200 bg-white/80 p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-950/20"
+      >
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+              Lire en série
             </p>
-            <p>
-              Depuis plus de quinze ans, mon travail consiste à faire passer une vision du
-              papier au terrain. Qu’il s’agisse de former, déployer, transmettre ou
-              accompagner, la même question revient : comment produire de la clarté sans
-              simplifier à l’excès ?
-            </p>
-            <p>
-              Ici, je documente ce que j’ai vu, compris et ajusté en chemin. Pas pour
-              livrer des recettes, mais pour montrer une manière de travailler.
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+              Trois fils rouges pour aller plus loin que les articles isolés
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+              Si tu veux voir une mécanique de travail dans la durée, entre par une série :
+              posture, projet en train de se structurer, ou construction de ce carnet comme
+              outil professionnel.
             </p>
           </div>
+
+          <Link
+            href="/articles#retrospectives"
+            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          >
+            Voir toutes les séries →
+          </Link>
         </div>
 
-        <div className="space-y-6">
-          <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
-          <h2 className="text-lg font-semibold tracking-tight">
-            Les articles 2023 restent en ligne
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {featuredSeries.map((series) => (
+            <FeaturedSeriesCard key={series.slug} series={series} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+        <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Temps long
+          </p>
+          <h2 className="mt-2 text-lg font-semibold tracking-tight">
+            Les archives restent utiles
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Ils montrent que ce travail s’est construit dans la durée. Ils sont moins
-            centraux aujourd’hui, mais ils gardent leur valeur comme trace, comme
-            progression et comme matière à réécriture.
+            Elles gardent visibles les premières formulations, les angles abandonnés, les
+            essais et les réécritures. C’est une archive de travail, pas un placard.
           </p>
+
+          <Link
+            href="/articles/archives"
+            className="mt-4 inline-flex text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          >
+            Explorer les archives →
+          </Link>
+        </div>
+
+        <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
+          <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
+            Et après
+          </p>
+          <h2 className="mt-2 text-lg font-semibold tracking-tight">
+            Continuer la visite
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+            Tu peux ensuite lire le parcours, parcourir les situations d’intervention,
+            découvrir l’accompagnement ou m’écrire si tu veux échanger plus directement.
+          </p>
+
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href="/parcours"
+              className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
+            >
+              Parcours
+            </Link>
 
             <Link
-              href="/articles/archives"
-              className="mt-4 inline-flex text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+              href="/atelier"
+              className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
             >
-              Explorer les archives →
+              Accompagnement
             </Link>
-          </div>
 
-          <div className="rounded-3xl border border-neutral-200 bg-white/80 p-6 dark:border-neutral-800 dark:bg-neutral-950/20">
-          <h2 className="text-lg font-semibold tracking-tight">
-            Et après
-          </h2>
-          <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Tu peux lire le parcours, parcourir les situations d’intervention,
-            découvrir l’accompagnement ou m’écrire si tu veux échanger plus
-            directement.
-          </p>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              <Link
-                href="/parcours"
-                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
-              >
-                Parcours
-              </Link>
-
-              <Link
-                href="/atelier"
-                className="rounded-xl border border-neutral-300 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-900/60"
-              >
-                Accompagnement
-              </Link>
-
-              <ContactButton
-                label="Contact"
-                className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
-              />
-            </div>
+            <ContactButton
+              label="Contact"
+              className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+            />
           </div>
         </div>
       </section>

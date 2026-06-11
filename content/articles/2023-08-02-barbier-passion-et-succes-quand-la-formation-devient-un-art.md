@@ -1,7 +1,7 @@
 ---
 title: "Barbier, passion et succès : quand la formation devient un art"
 date: "2023-08-02"
-excerpt: "Comment la passion du métier et la formation continue transforment l’artisanat en réussite durable."
+excerpt: "Derrière une conversation chez le barbier se cache une question très sérieuse : pourquoi appelle-t-on si souvent réussite le fait de quitter ce que l’on fait le mieux pour aller manager autre chose ?"
 cover: "/images/articles/2023-08-02-barbier-passion-et-succes-quand-la-formation-devient-un-art.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -13,26 +13,96 @@ series:
   order: 28
 ---
 
-Des ciseaux à la sagesse : comment mon barbier a transformé ma vision de la passion et du succès au travail
+### « On me parle souvent de progression. Mais si progresser voulait dire m’éloigner de ce que je fais le mieux ? »
 
-Il y a quelques jours, alors que je m’installais sur le fauteuil de mon barbier pour une simple coupe de cheveux, je ne m’attendais pas à ce que cette visite se transforme en une réflexion profonde sur la passion et la réussite professionnelle.
+La phrase n’était pas formulée exactement comme ça, mais c’est ce qu’elle disait.
 
-Mon barbier est un artisan passionné. Il a choisi de se spécialiser dans la coiffure masculine, non par défaut, mais par goût. Il aime cet univers, ses codes, ses gestes précis, la relation avec ses clients. Même s’il n’existe pas de grands concours ou de trophées pour valoriser ce type de spécialisation, il continue avec exigence et fierté, car il y trouve un véritable accomplissement personnel.
+J’étais chez mon barbier. Une coupe, une conversation ordinaire, puis ce glissement assez fréquent où le travail finit par parler de lui-même. Il m’expliquait qu’on lui avait déjà parlé d’évolution, de responsabilités, de management. Sur le papier, cela ressemblait à une montée logique. Dans sa bouche, cela sonnait autrement.
 
-De fil en aiguille, une question est apparue : faut-il absolument être passionné par son travail pour être heureux ? Beaucoup pensent que la passion est indispensable au bonheur professionnel. D’autres estiment qu’on peut trouver du sens, de la satisfaction et de la stabilité sans être animé par une flamme permanente. La réalité, comme souvent, est plus nuancée.
+Manager, pour lui, ne signifiait pas grandir. Cela signifiait surtout passer moins de temps à faire ce qu’il aime, moins de temps à perfectionner son geste, moins de temps au contact direct des clients.
 
-Mon barbier incarne cette nuance. Il est engagé, rigoureux, investi. Il travaille beaucoup, y compris en dehors du salon pour gérer son activité. Mais il reconnaît aussi que tout, dans son métier, ne le passionne pas. Certaines tâches sont simplement nécessaires. Ce qui compte pour lui, c’est l’équilibre entre ce qu’il aime vraiment et ce qui permet à son activité de fonctionner.
+Et la question est restée.
 
-La discussion a pris une tournure plus révélatrice lorsqu’il m’a parlé de son évolution possible. On lui a proposé de devenir manager. Sur le papier, c’est une promotion. En réalité, cela voudrait dire moins de ciseaux, moins de clients, moins de ce qu’il aime, et plus de gestion, d’administratif et de contraintes. Pour lui, ce n’est pas une évidence.
+## Ce que ce moment met à nu
 
-Cela pose une question essentielle : pourquoi la réussite professionnelle est-elle si souvent associée au management ? Pourquoi, lorsqu’on est excellent dans son métier, la seule voie de reconnaissance serait-elle de devenir chef plutôt que de devenir maître dans son art ?
+Dans beaucoup d’organisations, la réussite professionnelle est encore racontée comme une trajectoire unique :
 
-Dans le cas de mon barbier, devenir manager signifierait s’éloigner de ce qui donne du sens à son travail. Il serait peut-être bien plus logique de valoriser son expertise, sa clientèle fidèle, sa qualité de geste, plutôt que de le pousser vers une fonction qui ne correspond ni à ses compétences ni à ses aspirations profondes.
+- on commence par faire ;
+- on devient très bon ;
+- puis on “passe au-dessus” ;
+- et l’on considère cela comme une progression naturelle.
 
-Nous avons sans doute besoin de repenser nos modèles de carrière. La progression ne devrait pas être une ligne verticale unique, mais un éventail de trajectoires possibles. Certains veulent diriger des équipes, d’autres veulent devenir des experts reconnus, d’autres encore veulent transmettre, créer, approfondir.
+Ce modèle pose un problème simple : il confond reconnaissance et éloignement du métier.
 
-Le succès n’est pas universel. Il est personnel. Pour certains, il signifie responsabilité et pouvoir. Pour d’autres, il signifie maîtrise, liberté, sens et plaisir dans le travail bien fait.
+On valorise la capacité à encadrer avant même de se demander si la personne veut réellement piloter d’autres personnes, ou si elle souhaite plutôt approfondir une expertise, transmettre un savoir-faire, affiner un geste.
 
-Dans un monde professionnel qui se transforme, créer des parcours qui respectent les talents, les passions et les aspirations de chacun est devenu un enjeu majeur. Valoriser la passion sans l’enfermer dans un modèle unique, c’est peut-être l’une des clés d’un travail plus humain et plus durable.
+## Le succès n’a pas une seule forme
 
-Et vous, quelle est votre définition du succès ? Qu’est-ce qui vous donne vraiment envie de vous lever le matin ?
+Mon barbier ne refusait pas l’effort, ni la responsabilité. Il refusait autre chose : l’idée selon laquelle le seul avenir désirable serait de quitter peu à peu ce qui donne de la valeur à son travail.
+
+Cette distinction me semble importante.
+
+Beaucoup de professionnels ne manquent pas d’ambition. Ils manquent surtout d’espaces où leur ambition peut prendre une autre forme que la hiérarchie.
+
+Ils voudraient parfois :
+
+- devenir des experts plus reconnus ;
+- mieux transmettre à des plus jeunes ;
+- développer une clientèle ou une méthode ;
+- gagner en maîtrise plutôt qu’en statut.
+
+Mais ces trajectoires restent moins visibles, donc moins légitimes.
+
+## Ce que la formation devrait soutenir
+
+Quand on parle de développement professionnel, on pense encore trop souvent “accès au management”.
+
+Or la formation peut servir à autre chose :
+
+- approfondir une technique ;
+- renforcer une posture d’expert ;
+- structurer une transmission ;
+- rendre un métier plus durable ;
+- ouvrir des voies d’évolution qui ne passent pas forcément par le fait d’encadrer.
+
+Autrement dit, former ne devrait pas seulement préparer les futurs chefs. Former devrait aussi permettre à certains de devenir meilleurs dans ce qu’ils veulent continuer à faire.
+
+## Le piège des promotions silencieusement incohérentes
+
+On connaît bien cette scène dans les organisations : une personne excellente dans son métier est promue parce qu’elle est excellente dans son métier.
+
+Puis on lui demande soudain :
+
+- de gérer des plannings ;
+- de suivre des indicateurs ;
+- de recadrer des collègues ;
+- d’absorber des irritants de système ;
+- de faire moins de terrain et plus d’administratif.
+
+Parfois cela fonctionne. Parfois c’est une erreur proprement fabriquée.
+
+Ce n’est pas seulement un mauvais choix individuel. C’est souvent une faiblesse du système de reconnaissance.
+
+## Ce que cette conversation m’a rappelé
+
+Le succès professionnel devient vite un mot creux si l’on n’accepte pas qu’il désigne des choses différentes selon les personnes.
+
+Pour certains, progresser veut dire prendre plus de pouvoir.
+Pour d’autres, cela veut dire gagner en liberté, en maîtrise, en réputation, en finesse de geste ou en qualité de relation.
+
+Ce n’est pas moins ambitieux. C’est simplement une autre grammaire de la réussite.
+
+## Ce qu’il faudrait sans doute construire davantage
+
+Si l’on veut parler sérieusement de compétences et d’évolution, il faudrait sans doute créer plus clairement plusieurs voies visibles :
+
+- la voie du management ;
+- la voie de l’expertise ;
+- la voie de la transmission ;
+- la voie du développement d’activité.
+
+Tant qu’une seule de ces voies est racontée comme la vraie progression, beaucoup de talents seront orientés vers des rôles qui ne correspondent ni à leur énergie ni à leur valeur ajoutée.
+
+Ce jour-là, chez le barbier, la discussion ne parlait pas seulement de coiffure. Elle parlait de ce que nos organisations savent reconnaître, et de ce qu’elles poussent parfois à quitter trop vite.
+
+Quand tu observes une “évolution de carrière”, vois-tu une progression réelle… ou simplement un déplacement vers le seul modèle de réussite que l’organisation sait encore raconter ?

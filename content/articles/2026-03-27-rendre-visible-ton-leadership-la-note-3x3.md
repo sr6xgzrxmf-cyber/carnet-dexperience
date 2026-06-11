@@ -1,7 +1,7 @@
 ---
 title: "Rendre visible ton leadership : la note 3×3"
 date: "2026-03-27"
-excerpt: "Quand ton rôle est transversal, il doit devenir lisible. La note 3×3 transforme un leadership discret en lecture claire et partageable."
+excerpt: "Quand ton rôle est discret, ta contribution peut rester sous le radar. La note 3×3 permet de rendre visible un leadership de clarification sans tomber dans la démonstration ou l’autojustification."
 cover: "/images/articles/2026-03-27-rendre-visible-ton-leadership-la-note-3x3.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -11,45 +11,119 @@ tags:
   - "communication"
 ---
 
-### Le problème du leadership discret
+### « Oui, mais concrètement, tu fais quoi ? »
 
-Faciliter, clarifier, fluidifier… Ces actions sont utiles, mais difficiles à résumer. Elles se diluent dans le quotidien. Résultat : le leadership existe, mais il n’est pas lisible.
+La question arrive souvent quand on exerce un leadership peu spectaculaire.
 
-La note 3×3 est née de ce constat.
+Tu facilites, tu relies, tu fais redescendre des tensions, tu clarifies des zones floues, tu aides des équipes à sortir d’une impasse sans forcément apparaître au premier plan. Tout cela existe. Tout cela reste difficile à raconter.
 
-### Le principe de la note 3×3
+C’est exactement pour cela que la note 3×3 m’intéresse.
 
-Un format volontairement simple, tenable en quelques minutes, structuré en trois blocs :
+## Le problème du leadership discret
 
-**Constats**  
-Ce que tu observes objectivement dans le système.
+Un leadership discret produit souvent des effets visibles sans produire immédiatement une image claire de lui-même.
 
-**Idées / actions**  
-Ce que tu proposes ou mets en place pour améliorer la situation.
+On voit :
 
-**Bénéfices**  
-Ce que cela permet : décisions plus rapides, tensions réduites, clarté retrouvée.
+- qu’une réunion a mieux tenu ;
+- qu’un sujet s’est débloqué ;
+- qu’un malentendu a été évité ;
+- qu’un arbitrage est devenu possible.
 
-Trois lignes par bloc. Pas plus.
+Mais on ne sait pas toujours :
 
-### Pourquoi ça fonctionne
+- ce qui a été observé ;
+- ce qui a été fait ;
+- ce que cela a rendu possible.
 
-La note 3×3 ne raconte pas une performance. Elle raconte une **lecture** et une **contribution**. Elle rend visible un rôle sans l’exagérer.
+Résultat : la contribution existe, mais elle reste diffuse.
 
-Elle est lisible par :
-- un manager,
-- un pair,
-- une direction.
+## À quoi sert vraiment la note 3×3
 
-### Exemple concret
+Elle ne sert pas à embellir ton action.
+Elle ne sert pas non plus à te mettre en scène.
 
-Constats : priorités floues entre deux équipes, tensions récurrentes.  
-Idées : clarification des attentes + point de synchronisation hebdomadaire.  
-Bénéfices : décisions plus rapides, moins de frictions, charge mieux répartie.
+Elle sert à rendre lisible une contribution transversale avec un niveau de simplicité suffisamment fort pour que quelqu’un d’extérieur au détail comprenne :
 
-### Un outil de reconnaissance indirecte
+- ce que tu as vu ;
+- ce que tu as proposé ;
+- ce que cela a changé.
 
-Cette note ne demande pas de validation. Elle expose une contribution. Et c’est précisément ce qui crée la reconnaissance.
+## Le format
 
-La vraie question à se poser est donc celle-ci :  
-**si ton leadership devait être compris en une page, qu’est-ce qu’on y lirait aujourd’hui ?**
+Trois blocs. Trois lignes maximum par bloc.
+
+### 1. Constats
+
+Qu’est-ce que tu observes objectivement dans le système ?
+
+### 2. Actions / idées
+
+Qu’est-ce que tu proposes, ajustes ou mets en place ?
+
+### 3. Effets / bénéfices
+
+Qu’est-ce que cela rend plus clair, plus fluide, plus tenable ou plus rapide ?
+
+Le format est volontairement court. Sa force vient justement de la contrainte.
+
+## Une scène très concrète
+
+Par exemple :
+
+### Constats
+
+- Les priorités de deux équipes se contredisent chaque semaine.
+- Les décisions se décalent faute d’espace de synchronisation.
+- La tension monte sans point explicite pour la traiter.
+
+### Actions
+
+- Mise en place d’un point court commun le lundi.
+- Clarification des critères de priorité.
+- Reformulation des zones d’arbitrage à remonter.
+
+### Effets
+
+- Décisions plus rapides.
+- Moins de frictions latentes.
+- Charge mieux répartie.
+
+En quelques lignes, le rôle devient soudain plus lisible.
+
+## Pourquoi ce format fonctionne
+
+Il évite deux dérives opposées :
+
+- la sous-visibilité du rôle ;
+- la justification excessive.
+
+La note 3×3 n’essaie pas de prouver que tu es indispensable. Elle montre simplement qu’il existe une lecture, une action et un effet.
+
+C’est souvent suffisant pour faire apparaître un leadership qui, autrement, serait perçu comme une simple présence utile mais floue.
+
+## À qui elle sert
+
+Elle est utile :
+
+- pour toi, parce qu’elle t’oblige à clarifier ta propre contribution ;
+- pour un manager, parce qu’elle rend ton rôle plus facilement reconnaissable ;
+- pour une direction, parce qu’elle transforme une utilité diffuse en lecture partageable.
+
+Elle crée donc de la reconnaissance indirecte, sans surenchère.
+
+## Ce qu’elle ne doit pas devenir
+
+Il faut éviter d’en faire :
+
+- un tableau d’auto-promotion ;
+- un reporting décoratif ;
+- une collection de petites victoires décontextualisées.
+
+Si la note perd son ancrage dans des situations réelles, elle redevient un objet de communication interne parmi d’autres.
+
+Sa valeur tient au lien direct entre observation, intervention et effet.
+
+## La vraie question
+
+Si ton leadership devait être compris par quelqu’un qui ne voit pas tes gestes au quotidien, saurais-tu le rendre lisible sans l’enjoliver, sans l’écraser, et sans le laisser se dissoudre dans l’invisible ?

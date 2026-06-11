@@ -1,5 +1,5 @@
 ---
-title: "Créatif Pro — Pilotage opérationnel & performance"
+title: "Pilotage opérationnel & performance"
 company: "Apple Retail"
 location: "Lille"
 role: "Orchestration magasin, KPI et expérience client"

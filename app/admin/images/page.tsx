@@ -1,3 +1,4 @@
+import CleanupSafeAliasesButton from "./_components/CleanupSafeAliasesButton";
 import ImageGroupCard from "./_components/ImageGroupCard";
 import { getImageReviewData } from "@/lib/image-review";
 
@@ -66,6 +67,28 @@ export default function AdminImagesPage() {
           value={String(summary.duplicateGroups)}
           desc="Total des groupes de fichiers identiques détectés par hash."
         />
+      </section>
+
+      <section className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-950/20">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+          <div className="max-w-3xl">
+            <h2 className="text-xl font-semibold tracking-tight">Nettoyage technique</h2>
+            <p className="mt-2 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
+              Maintenant qu’il n’y a plus d’image partagée entre plusieurs articles, tu peux
+              supprimer les vieux alias techniques. Ce bouton ne touche ni aux covers utilisées
+              par les articles, ni aux variantes déposées manuellement comme{" "}
+              <code className="rounded bg-neutral-100 px-1.5 py-0.5 text-xs dark:bg-neutral-900">
+                ... 2.jpg
+              </code>
+              .
+            </p>
+          </div>
+
+          <CleanupSafeAliasesButton
+            deletableFiles={summary.safeDeletableFiles}
+            disabled={summary.sharedArticleImageGroups > 0}
+          />
+        </div>
       </section>
 
       <section className="space-y-4">

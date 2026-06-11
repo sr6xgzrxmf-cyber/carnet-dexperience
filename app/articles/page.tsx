@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllArticles, type ArticleItem } from "@/lib/articles";
 import {
+  featuredWorkArticles,
   featuredSeriesList,
   featuredSeriesSummaries,
   featuredSeriesTeasers,
@@ -189,9 +190,11 @@ function hrefFor(nextTags: string[], showAllTags: boolean) {
 function ArticlePreviewCard({
   article,
   futureLabel = false,
+  eyebrow,
 }: {
   article: ArticleMeta;
   futureLabel?: boolean;
+  eyebrow?: string;
 }) {
   const coverSrc = normalizeCoverSrc(article.cover);
 
@@ -232,6 +235,11 @@ function ArticlePreviewCard({
 
       <div className="p-6">
         <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+          {eyebrow ? (
+            <span className="inline-flex items-center rounded-full border border-neutral-200 px-2 py-0.5 font-medium text-neutral-700 dark:border-neutral-700 dark:text-neutral-300">
+              {eyebrow}
+            </span>
+          ) : null}
           {futureLabel ? (
             <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
               À paraître
@@ -330,10 +338,18 @@ export default async function ArticlesHubPage(props: {
     };
   });
 
-  const recentArticles = published.slice(0, 6);
-  const latestArticle = recentArticles[0] ?? null;
+  const articleBySlug = new Map(published.map((article) => [article.slug, article] as const));
+  const recentArticles = featuredWorkArticles
+    .map(({ slug, label }) => {
+      const article = articleBySlug.get(slug);
+      if (!article) return null;
+      return { article, label };
+    })
+    .filter(
+      (entry): entry is { article: ArticleMeta; label: string } => Boolean(entry?.article)
+    );
+  const latestArticle = recentArticles[0]?.article ?? null;
   const postureSeries = seriesCards.find((series) => series.slug === "atelier-de-posture");
-  const recentWorkSeries = seriesCards.find((series) => series.slug === "faire-exister-un-projet");
 
   /* ---------- Filtres & résultats ---------- */
   const tagCount = new Map<string, number>();
@@ -402,34 +418,24 @@ export default async function ArticlesHubPage(props: {
 
         <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
           <Link
-            href={
-              recentWorkSeries?.start?.slug
-                ? `/articles/${recentWorkSeries.start.slug}`
-                : latestArticle
-                  ? `/articles/${latestArticle.slug}`
-                  : "/articles"
-            }
+            href={latestArticle ? `/articles/${latestArticle.slug}` : "#travail-recent"}
             className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
           >
             <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
               Le travail récent
             </div>
             <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
-              Les derniers textes sont les plus proches de ma pratique actuelle :
-              clarification, cadrage, décision, transmission.
+              Une sélection courte, volontairement diverse, pour voir comment je travaille
+              aujourd&apos;hui sur la posture, le cadrage, la relation et la décision.
             </p>
             <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              À privilégier si tu veux voir ce que je produis aujourd&apos;hui, sans passer
-              d&apos;abord par l&apos;historique complet.
+              À privilégier si tu veux aller droit au plus représentatif, sans dérouler tout
+              l&apos;historique.
             </p>
           </Link>
 
           <Link
-            href={
-              postureSeries?.start?.slug
-                ? `/articles/${postureSeries.start.slug}`
-                : "/articles"
-            }
+            href={postureSeries?.start?.slug ? `/articles/${postureSeries.start.slug}` : "#retrospectives"}
             className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
           >
             <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
@@ -463,25 +469,29 @@ export default async function ArticlesHubPage(props: {
       </section>
 
       {recentArticles.length > 0 ? (
-        <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
+        <section
+          id="travail-recent"
+          className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+        >
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Travail récent
               </div>
               <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-                Les textes que je mettrais en premier devant un recruteur ou un partenaire
+                Six textes repères pour comprendre ce que je fais aujourd&apos;hui
               </h2>
               <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-                Ils sont plus nets, plus incarnés et plus proches de ce que je fais
-                réellement aujourd&apos;hui.
+                Pas les six plus récents : six entrées volontairement différentes pour voir
+                la posture, le process, la décision, le collectif, la relation et le travail
+                de clarification.
               </p>
             </div>
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {recentArticles.map((article) => (
-              <ArticlePreviewCard key={article.slug} article={article} />
+            {recentArticles.map(({ article, label }) => (
+              <ArticlePreviewCard key={article.slug} article={article} eyebrow={label} />
             ))}
           </div>
         </section>

@@ -1,7 +1,7 @@
 ---
 title: "Les choix que j’ai faits (et ceux que j’ai refusés)"
 date: "2026-02-23"
-excerpt: "Construire un média, c’est d’abord faire des choix. Et surtout en refuser d’autres. Public, open, écrit : ce cadre n’est pas neutre. Il filtre pour rester aligné."
+excerpt: "Construire un média ne consiste pas seulement à ajouter des briques. Cela consiste aussi à refuser des formats, des réflexes de visibilité et des usages qui auraient peut-être fait croître plus vite l’ensemble, mais au prix d’un déplacement de sens."
 cover: "/images/articles/2026-02-23-les-choix-que-j-ai-faits-et-ceux-que-j-ai-refuses.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 series:
@@ -10,64 +10,120 @@ series:
   order: 10
 ---
 
-Un média professionnel ne se définit pas seulement par ce qu’il publie.  
-Il se définit surtout par ce qu’il **choisit de ne pas faire**.
+### Ce que j’aurais pu faire
 
-À mesure que *Carnet d’expérience* s’est structuré, une évidence s’est imposée : sans cadre clair, tout devient possible — et donc tout devient flou. Poser ce cadre n’a rien d’un exercice théorique. C’est un acte stratégique.
+J’aurais pu fermer une partie du site.
+J’aurais pu mettre davantage d’appels à action.
+J’aurais pu pousser plus fort l’inscription, la capture, la conversion.
+J’aurais pu écrire plus court, plus vite, plus “efficace”.
 
-## Pourquoi public
+Beaucoup de ces choix auraient sans doute eu leur logique. Ils auraient peut-être même amélioré certains indicateurs.
 
-Rendre ce travail public n’allait pas de soi.  
-Publier expose. Simplifie parfois à l’excès. Fige des pensées encore en mouvement.
+Mais à un moment, j’ai compris qu’un média ne se définit pas seulement par ce qu’il construit. Il se définit aussi par ce qu’il refuse d’ajouter.
 
-Mais le choix du public répond à une intention précise : **assumer une responsabilité**. Écrire en sachant que d’autres liront oblige à plus de rigueur, plus de justesse, plus de retenue aussi.
+## Le faux luxe du “tout est possible”
 
-Le public n’est pas un levier de visibilité.  
-C’est un garde-fou.
+Quand on construit un espace éditorial à partir de presque rien, tout semble ouvert :
 
-## Pourquoi open
+- tous les formats ;
+- tous les usages ;
+- tous les angles ;
+- toutes les stratégies de croissance.
 
-Open ne signifie pas naïf.  
-Cela signifie accessible, lisible, sans barrière artificielle.
+Cette ouverture est grisante au début. Elle devient vite floue si rien n’est refusé.
 
-Le choix de l’ouverture refuse l’idée que la valeur se situe uniquement derrière un mur ou dans un tunnel de conversion. Ici, le contenu n’est pas un appât. Il est le cœur du travail.
+Car sans refus explicites :
 
-Ce choix implique une conséquence simple : si quelqu’un vient, il peut lire, comprendre, repartir — ou rester. Sans pression.
+- le projet s’étale ;
+- le ton se disperse ;
+- l’intention se brouille ;
+- l’ensemble devient plus optimisé que lisible.
 
-## Pourquoi écrit
+## Pourquoi j’ai choisi le public
 
-L’écrit impose une lenteur particulière.  
-Il ne permet ni l’improvisation permanente, ni l’ambiguïté confortable de l’oral.
+Rendre ce travail public n’allait pas de soi.
 
-Écrire oblige à trancher. À nommer. À assumer ce qui est dit — et ce qui ne l’est pas. C’est précisément cette contrainte qui rend l’écrit structurant.
+Publier expose. Cela oblige à tenir une ligne. Cela enlève aussi certaines protections confortables du brouillon privé, éternellement améliorable, jamais vraiment assumé.
 
-Le choix de l’écrit est un choix de **clarté durable**, pas d’impact immédiat.
+Mais le public m’a imposé quelque chose de précieux :
 
-## Ce que je refuse
+- plus de rigueur ;
+- plus de retenue ;
+- plus de responsabilité dans ce qui est formulé.
 
-Je refuse de produire du contenu pour remplir un agenda.  
-Je refuse de simplifier à l’excès pour plaire.  
-Je refuse de transformer une réflexion de fond en argument marketing.
+Je n’ai pas choisi le public pour être visible. Je l’ai choisi parce qu’il m’oblige à être plus juste.
 
-Je refuse aussi certaines demandes, certaines missions, certaines collaborations, lorsque le cadre proposé contredit ce qui est tenu ici. Non par rigidité, mais par cohérence.
+## Pourquoi j’ai choisi l’open
 
-Renoncer n’est pas une perte.  
-C’est un alignement.
+Je voulais un espace lisible sans tunnel inutile.
 
-## Le filtrage comme acte stratégique
+Pas un appât. Pas un sas d’entrée. Pas un endroit où le contenu serait principalement au service d’un mécanisme de récupération.
 
-Ce cadre agit comme un filtre naturel.  
-Il ne cherche pas à attirer tout le monde. Il permet à chacun de se situer.
+Ce choix a une conséquence simple : tout le monde peut entrer, lire, repartir, revenir, sans négociation implicite.
 
-Certains liront et passeront leur chemin.  
-D’autres resteront silencieux.  
-Quelques-uns engageront la conversation.
+Ce n’est pas naïf. C’est un type de relation différent.
 
-Ce tri n’est pas un effet secondaire.  
-Il est **le cœur de la stratégie**.
+## Pourquoi j’ai choisi l’écrit
 
-À ce stade, la question n’est plus de savoir si ce média peut toucher plus large.
+L’écrit ralentit. C’est précisément ce qui m’intéresse.
 
-Mais une autre, plus décisive :
+Il oblige à :
 
-**qu’est-ce que je suis prêt à refuser pour rester fidèle à ce que je construis ici ?**
+- nommer ;
+- hiérarchiser ;
+- couper ;
+- assumer ce qui reste ;
+- laisser une trace relisible.
+
+Là où l’oral peut sauver par la nuance immédiate, l’écrit force à une autre exigence : faire tenir la pensée sans la présence de celui qui la commente.
+
+Ce n’est pas toujours confortable. C’est très structurant.
+
+## Ce que j’ai refusé plus clairement
+
+J’ai refusé plusieurs réflexes pourtant très installés :
+
+- publier pour remplir ;
+- simplifier à l’excès pour séduire vite ;
+- écrire des textes qui ne servent qu’à ramener vers autre chose ;
+- multiplier les couches de discours sur ce qui n’est pas encore assez travaillé ;
+- transformer une réflexion en machine d’acquisition.
+
+Je ne pense pas que ces choix soient mauvais en soi. Je pense simplement qu’ils auraient déplacé le centre de gravité du projet.
+
+## Le rôle du refus
+
+Refuser n’est pas ici une posture morale.
+
+C’est une manière de garder l’espace habitable.
+
+Chaque refus :
+
+- protège une cohérence ;
+- clarifie la promesse implicite ;
+- évite une extension trop rapide ;
+- rappelle ce qui compte vraiment.
+
+Dans un projet éditorial, le non n’est pas un frein. C’est souvent une architecture.
+
+## Ce que cela filtre
+
+En pratique, ce cadre trie déjà beaucoup de choses.
+
+Certaines personnes lisent et s’en vont.
+D’autres comprennent immédiatement qu’elles n’entrent pas dans ce type de rythme.
+D’autres encore restent précisément parce que le lieu n’essaie pas de les capturer.
+
+Ce filtrage n’est pas un dommage collatéral. Il fait partie du projet.
+
+## La vraie question
+
+Construire un média, ce n’est pas seulement demander :
+
+qu’est-ce que je veux montrer ?
+
+C’est aussi demander :
+
+qu’est-ce que je dois refuser pour que ce que je montre reste fidèle à ce que je suis en train de bâtir ?
+
+Dans ce que tu construis toi-même, quels “oui” faciles commencent peut-être à coûter plus cher que les “non” clairs que tu n’as pas encore formulés ?

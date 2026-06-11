@@ -1,7 +1,7 @@
 ---
 title: "Comment faire reconnaître un rôle transversal sans passer par l’organigramme"
 date: "2026-03-24"
-excerpt: "La reconnaissance d’un rôle ne vient pas d’un titre, mais de sa clarté, de sa constance et de ses effets visibles."
+excerpt: "Un rôle transversal devient crédible quand les autres comprennent ce qu’il rend possible. La reconnaissance ne vient pas d’abord du titre : elle vient de l’utilité rendue lisible, répétée et tenue dans le temps."
 cover: "/images/articles/2026-03-24-faire-reconnaitre-un-role-transversal-sans-organigramme.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -15,36 +15,115 @@ series:
   order: 19
 ---
 
-### Attendre un titre est souvent une impasse
+### « Au fait, toi, tu interviens sur quoi exactement ? »
 
-Beaucoup espèrent qu’un rôle sera reconnu une fois “officialisé”. En pratique, l’organigramme vient presque toujours **après** la reconnaissance réelle, jamais avant.
+La question peut paraître anodine. Elle dit pourtant quelque chose de très précis : ton rôle est peut-être utile, mais il n’est pas encore assez lisible.
 
-Karim l’a compris : ce n’est pas le titre qui crée la légitimité, mais l’utilité rendue lisible.
+C’est un problème fréquent dès qu’on travaille entre plusieurs lignes :
 
-### Nommer ce que tu fais déjà
+- on clarifie ;
+- on relie ;
+- on débloque ;
+- on reformule ;
+- on fluidifie.
 
-Premier pas : mettre des mots simples sur ton rôle. Pas une fonction floue, mais une phrase claire.  
-« Mon rôle, c’est de clarifier les attentes et de fluidifier les échanges. »
+Tout cela sert. Tout cela se voit mal.
 
-Cette formulation change tout. Elle permet aux autres de comprendre quand — et pourquoi — te solliciter.
+## Le piège de l’attente hiérarchique
 
-### Répéter, sans s’imposer
+Beaucoup de personnes espèrent qu’un rôle transversal sera reconnu le jour où il sera officiellement inscrit quelque part :
 
-Un rôle transversal se construit par répétition. Même type d’intervention, mêmes situations, mêmes effets. Pas besoin de se mettre en avant. La cohérence suffit.
+- un titre ;
+- une fiche ;
+- une case ;
+- une ligne dans l’organigramme.
 
-Ce n’est pas l’intensité qui crée la reconnaissance, mais la régularité.
+En réalité, cela se passe souvent dans l’autre sens.
 
-### Rendre les effets visibles
+L’organigramme vient après, lorsqu’un système a déjà commencé à reconnaître qu’une fonction existe de fait.
 
-Ce qui n’est pas visible n’existe pas dans un système. Karim apprend à faire apparaître les effets de son rôle : décisions débloquées, tensions évitées, temps gagné.
+Autrement dit, attendre le titre pour rendre le rôle visible est souvent une impasse.
 
-Pas pour se glorifier, mais pour rendre le travail lisible.
+## Ce que les autres doivent pouvoir comprendre
 
-### Poser des limites claires
+Pour qu’un rôle transversal soit reconnu, il faut que les autres puissent répondre simplement à trois questions :
 
-Un rôle reconnu sans limites devient un rôle envahissant. Dire ce que tu facilites est aussi important que dire ce que tu ne fais pas.
+- quand est-ce qu’on te sollicite ?
+- sur quoi aides-tu exactement ?
+- qu’est-ce qui fonctionne mieux quand tu interviens ?
 
-La reconnaissance passe aussi par cette clarté.
+Tant que ces réponses restent vagues, le rôle semble flou, même s’il est très actif.
 
-La vraie question à se poser est donc :  
-**qu’est-ce que les autres font mieux, plus sereinement, grâce à ton rôle — et le savent-ils ?**
+## Une phrase claire vaut parfois plus qu’une fonction large
+
+Le premier geste utile est souvent de nommer ton rôle avec des mots très simples.
+
+Par exemple :
+
+- « J’aide à clarifier les attentes entre plusieurs acteurs. »
+- « Mon rôle est de remettre du cadre là où ça se disperse. »
+- « J’interviens quand il faut rendre une décision plus partageable. »
+
+Cette phrase n’a rien d’un slogan. Elle agit comme un repère d’usage.
+
+Elle dit aux autres :
+
+- pourquoi tu es là ;
+- à quel moment tu es utile ;
+- où s’arrêtent aussi tes interventions.
+
+## La reconnaissance vient de la répétition
+
+Un rôle transversal n’est pas reconnu parce qu’il se présente une fois très bien.
+
+Il est reconnu parce qu’il produit, de manière répétée, des effets similaires :
+
+- une situation devient plus lisible ;
+- une tension redescend ;
+- une coordination tient mieux ;
+- une décision sort du flou ;
+- une équipe gagne du temps sans se sentir dépossédée.
+
+Ce n’est pas l’intensité qui crée la reconnaissance. C’est la régularité de l’utilité.
+
+## Rendre visibles les effets sans se survendre
+
+Le point délicat, c’est qu’un rôle transversal ne peut pas rester entièrement invisible dans un système et espérer être reconnu.
+
+Il faut donc apprendre à faire apparaître les effets sans tomber dans l’autopromotion.
+
+Par exemple :
+
+- résumer ce qui a été débloqué ;
+- nommer le problème initial ;
+- expliciter la logique d’intervention ;
+- faire exister le bénéfice collectif produit.
+
+Ce n’est pas “se vendre”. C’est documenter une contribution.
+
+## La frontière à tenir
+
+Un rôle mal délimité finit souvent par devenir :
+
+- un rôle de sauvetage ;
+- un rôle de compensation ;
+- un rôle auquel on demande tout ce qui n’a pas trouvé de propriétaire clair.
+
+La reconnaissance passe donc aussi par la limite :
+
+- ce que tu fais ;
+- ce que tu ne fais pas ;
+- ce que tu aides à traiter ;
+- ce que tu refuses de porter seul.
+
+Sans cette clarté, la visibilité tourne vite à l’envahissement.
+
+## Ce qu’un système reconnaît vraiment
+
+Un système ne reconnaît pas seulement un titre. Il reconnaît ce qu’il comprend, ce qu’il voit revenir, et ce dont il perçoit la valeur.
+
+Faire reconnaître un rôle transversal, c’est donc moins réclamer une place que rendre une fonction suffisamment lisible pour qu’elle ne puisse plus être pensée comme accidentelle.
+
+## La vraie question
+
+Si ton rôle n’était pas décrit par ton intitulé mais par ce que les autres font mieux grâce à toi, qu’est-ce qu’ils seraient réellement capables de dire aujourd’hui ?

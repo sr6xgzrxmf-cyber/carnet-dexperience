@@ -1,7 +1,7 @@
 ---
 title: "La surcharge de travail : surmonter la résistance au changement en formation"
 date: "2023-09-11"
-excerpt: "Quand la charge mentale et opérationnelle explose, la formation devient un frein au lieu d’un levier. Comment dépasser ce paradoxe et rendre l’apprentissage compatible avec le réel."
+excerpt: "Quand une équipe est déjà en train de survivre, la formation ressemble vite à une pression de plus. Pour qu’elle redevienne un levier, il faut la réarticuler au travail au lieu de l’y ajouter."
 cover: "/images/articles/2023-09-11-la-surcharge-de-travail-surmonter-la-resistance-au-changement-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -13,46 +13,112 @@ series:
   order: 40
 ---
 
-La surcharge de travail est l’une des causes les plus fréquentes de résistance à la formation en entreprise. Lorsque les collaborateurs se sentent déjà sous pression, la formation est souvent perçue non pas comme une aide, mais comme une contrainte supplémentaire. Apprendre devient alors une charge de plus, plutôt qu’un levier de soulagement ou de progrès.
+### « Franchement, je n’ai pas le temps. »
 
-Ce paradoxe est dangereux : plus une équipe est débordée, plus elle aurait besoin de développer de nouvelles compétences, et moins elle se sent capable de le faire.
+Quand cette phrase surgit à propos d’une formation, elle est souvent interprétée comme un manque d’engagement.
 
-## Pourquoi la surcharge bloque l’apprentissage
+Très souvent, ce n’est pas ça.
 
-Lorsque la charge mentale et opérationnelle est trop élevée, le cerveau bascule en mode survie. Les priorités deviennent immédiates, les urgences prennent le dessus, et toute activité qui ne produit pas un résultat visible à court terme est repoussée. La formation, qui demande du temps, de l’attention et un effort cognitif, est alors vécue comme une menace pour l’équilibre déjà fragile du quotidien.
+C’est juste une phrase exacte.
 
-Si cette réalité n’est pas prise en compte, même les meilleurs programmes de formation risquent l’échec.
+La personne ne dit pas qu’elle refuse d’apprendre par principe. Elle dit qu’elle ne voit pas où faire tenir cet apprentissage dans une journée déjà saturée, dans une équipe déjà tendue, dans un rythme déjà trop haut.
 
-## Stratégies pour réduire la résistance liée à la charge de travail
+Et si l’on ne prend pas cette phrase au sérieux, la formation devient vite un irritant de plus.
 
-### Intégrer la formation dans le temps de travail
+## Pourquoi la surcharge bloque autant
 
-La formation ne doit jamais être vécue comme une activité « en plus ». Elle doit être reconnue comme une partie intégrante du travail. Planifier des créneaux dédiés, protégés et valorisés est une condition essentielle pour lever la résistance.
+Une personne débordée raisonne à très court terme.
 
-### Fractionner l’apprentissage
+Elle cherche :
 
-Le microlearning est particulièrement puissant dans ce contexte. Apprendre en modules courts, ciblés et actionnables permet de progresser sans provoquer de rupture dans le rythme de travail. Quelques minutes bien utilisées valent mieux qu’une journée bloquée impossible à absorber.
+- à tenir la journée ;
+- à traiter l’urgence suivante ;
+- à éviter le retard ;
+- à limiter la casse.
 
-### Ajuster temporairement la charge
+Dans cet état, apprendre coûte.
 
-Lorsqu’une formation est stratégique, il est parfois nécessaire d’alléger ponctuellement la charge opérationnelle. Former quelqu’un sans lui donner l’espace pour intégrer ce qu’il apprend revient à gaspiller l’investissement.
+Non pas parce que la personne serait fermée, mais parce que toute activité qui ne produit pas d’effet immédiat visible peut être vécue comme une menace supplémentaire sur un équilibre déjà fragile.
 
-## Techniques pour rendre l’apprentissage compatible avec le quotidien
+La formation devient alors paradoxale : plus elle serait utile, moins elle paraît absorbable.
 
-### Apprentissage en ligne et asynchrone
+## Le malentendu classique
 
-Le digital learning permet aux collaborateurs de choisir le moment le plus pertinent pour eux. Cette flexibilité réduit fortement la sensation de surcharge.
+Beaucoup d’organisations disent que le développement des compétences est stratégique, puis organisent la formation comme si elle devait se glisser entre deux urgences.
 
-### Formation intégrée au travail réel
+On demande aux personnes :
 
-La formation sur le tas transforme le poste de travail en terrain d’apprentissage. Les nouvelles compétences sont acquises directement dans l’action, ce qui limite la rupture entre formation et production.
+- de se former ;
+- de maintenir la production ;
+- de rester disponibles ;
+- de ne pas ralentir ;
+- de montrer rapidement un retour visible.
 
-### Soutien managérial actif
+Autrement dit, on présente la formation comme un levier tout en l’installant comme une charge annexe.
 
-Le rôle du manager est décisif. Lorsqu’il protège le temps de formation, ajuste les priorités et valorise les efforts d’apprentissage, il envoie un message clair : apprendre fait partie du travail, pas de ce qui vient s’y ajouter.
+C’est souvent là que naît la résistance.
 
-## Conclusion
+## Ce qu’il faut regarder en premier
 
-La surcharge de travail n’est pas une fatalité. Elle devient un frein à la formation uniquement lorsque l’apprentissage est mal intégré dans l’organisation du travail. En adaptant les formats, les rythmes et le soutien managérial, il est possible de transformer la formation en un allié du quotidien plutôt qu’en une pression supplémentaire.
+Avant de chercher des formats plus “attractifs”, il faut poser une question simple :
 
-Quand apprendre devient plus simple que résister, le changement peut enfin s’installer durablement.
+qu’est-ce qu’on retire, qu’est-ce qu’on allège, qu’est-ce qu’on protège pour rendre cet apprentissage possible ?
+
+Si la réponse est “rien”, alors il ne faut pas s’étonner que le dispositif soit mal reçu, même s’il est bon.
+
+La question de la charge est une question d’organisation, pas seulement de pédagogie.
+
+## Ce qui aide réellement
+
+Plusieurs leviers sont utiles, mais seulement s’ils s’attaquent au vrai problème.
+
+### Intégrer l’apprentissage au travail
+
+Quand c’est possible, apprendre dans l’action, à partir de cas réels, réduit fortement la sensation de rupture.
+
+### Fractionner intelligemment
+
+Des formats plus courts peuvent aider, à condition qu’ils soient vraiment utiles et reliés à un besoin précis.
+
+### Protéger du temps
+
+Sans temps dédié, même modeste, l’apprentissage reste soumis au bon vouloir de l’urgence.
+
+### Ajuster la charge
+
+Si une formation est réellement prioritaire, alors une partie du reste doit l’être un peu moins. Sinon, la priorité n’est qu’un mot.
+
+## Le rôle du manager est central
+
+Le manager envoie ici un signal décisif.
+
+Quand il dit :
+
+- « tu te formes, mais sans que rien ne bouge autour »,
+
+le message implicite est limpide : apprendre est secondaire.
+
+Quand il protège un créneau, reprend ensuite ce qui a été vu, aide à faire de la place, relie l’apprentissage à la réalité du poste, il change complètement le statut de la formation.
+
+Elle n’est plus une parenthèse. Elle devient une partie assumée du travail.
+
+## Ce qu’un formateur doit comprendre
+
+Former une équipe sous tension, ce n’est pas seulement adapter le contenu. C’est aussi lire le niveau de disponibilité réelle.
+
+Il faut se demander :
+
+- quelle énergie reste-t-il pour apprendre ?
+- quel format sera absorbable sans être insignifiant ?
+- qu’est-ce qui doit être fait en synchrone, et qu’est-ce qui peut être repris autrement ?
+- comment faire en sorte que la formation aide vraiment à desserrer quelque chose ?
+
+Sans cette lecture, même un très bon contenu peut tomber au mauvais endroit.
+
+## Le point de bascule utile
+
+La résistance liée à la surcharge commence à diminuer quand les personnes perçoivent que la formation ne vient pas s’ajouter aveuglément au travail, mais qu’elle peut l’alléger, le clarifier ou le rendre plus tenable.
+
+À ce moment-là, apprendre ne ressemble plus à une dépense. Cela redevient un investissement crédible.
+
+Dans les organisations que tu observes, la formation est-elle pensée comme une partie du travail… ou comme quelque chose qu’il faudrait réussir à caser malgré lui ?

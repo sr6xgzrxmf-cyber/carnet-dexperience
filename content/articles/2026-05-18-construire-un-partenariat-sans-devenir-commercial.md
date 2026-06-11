@@ -5,8 +5,7 @@ excerpt: >-
   À force d’apprendre à convaincre, un projet peut finir par parler une langue
   qui n’est plus la sienne. Le vrai enjeu n’était pas de séduire davantage, mais
   de rester intelligible sans me déformer.
-cover: >-
-  /images/articles/2026-05-18-construire-un-partenariat-sans-devenir-commercial.jpg
+cover: "/images/articles/2026-05-18-construire-un-partenariat-sans-devenir-commercial.jpg"
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - partenariat

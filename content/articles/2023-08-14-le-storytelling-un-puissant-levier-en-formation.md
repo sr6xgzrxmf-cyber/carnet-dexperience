@@ -1,7 +1,7 @@
 ---
 title: "Le storytelling : un puissant levier en formation"
 date: "2023-08-14"
-excerpt: "Pourquoi raconter des histoires aide les apprenants à mieux comprendre, retenir et s’approprier les savoirs."
+excerpt: "Le storytelling en formation ne sert pas à rendre un contenu plus joli. Il sert à rendre une idée habitable, mémorable et discutable à partir d’une situation que l’on peut réellement se représenter."
 cover: "/images/articles/2023-08-14-le-storytelling-un-puissant-levier-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -14,30 +14,104 @@ series:
   order: 32
 ---
 
-La place du storytelling dans la formation : comment le narratif peut stimuler l’apprentissage
+### « Au bout de dix minutes, la salle décroche. Puis quelqu’un raconte une scène, et tout revient. »
 
-En plein cœur de l’ère digitale, la formation doit sans cesse se réinventer pour répondre aux attentes des apprenants. Parmi les leviers les plus puissants figure le storytelling. Bien plus qu’un simple outil de communication, la narration transforme la manière dont l’information est perçue, comprise et mémorisée.
+On connaît bien ce basculement.
 
-Le pouvoir du storytelling
+Jusqu’ici, les concepts circulaient correctement. Puis l’attention s’érode. Les mots deviennent plus généraux, plus propres, plus abstraits. Et soudain une personne raconte une situation vécue : une phrase entendue, un client, un blocage, une erreur, une décision. D’un coup, la salle se raccroche.
 
-Nous sommes naturellement sensibles aux histoires. Elles captent notre attention, suscitent des émotions et structurent notre compréhension du monde. Lorsqu’une information est intégrée dans un récit, elle devient plus facile à retenir, car elle s’ancre dans une trame logique et émotionnelle. Le storytelling crée des liens mentaux forts entre les idées, ce qui facilite l’assimilation de concepts complexes.
+Ce moment dit beaucoup de la force du storytelling en formation.
 
-Intégrer le storytelling dans la formation
+## Pourquoi le récit agit si fort
 
-Scénarisation  
-Une formation peut être conçue comme une véritable histoire, avec un contexte, des personnages, des défis et une résolution. Plutôt que d’énumérer des étapes, on peut suivre un personnage confronté à un problème et observer comment il le résout.
+Une histoire donne une forme à ce qui, sinon, resterait théorique.
 
-Métaphores et analogies  
-Les métaphores permettent de relier un concept nouveau à une expérience familière. Cette passerelle cognitive aide l’apprenant à mieux comprendre et à mémoriser des notions abstraites ou techniques.
+Elle apporte :
 
-Cas pratiques  
-Les études de cas sont une forme de narration appliquée. Elles racontent une situation réelle, ses enjeux et ses choix, ce qui permet aux apprenants de se projeter et de comprendre comment utiliser leurs connaissances dans un contexte concret.
+- un contexte ;
+- des personnages ;
+- une tension ;
+- une conséquence ;
+- parfois un choix difficile.
 
-Récits personnels  
-Inviter les apprenants à partager leurs propres expériences enrichit la formation. Ces récits favorisent l’échange, la réflexion et la construction collective du sens.
+Grâce à cela, l’idée devient plus facile à comprendre, à mémoriser et surtout à discuter.
 
-Conclusion
+On ne parle plus seulement d’un principe. On parle d’une situation.
 
-Le storytelling est un puissant levier pédagogique. Il transforme l’apprentissage en une expérience engageante, mémorable et signifiante. En donnant une dimension humaine et émotionnelle aux contenus, le narratif facilite la compréhension, renforce la mémorisation et stimule l’implication des apprenants.
+## Ce que le storytelling n’est pas
 
-Former par le récit, c’est faire de l’apprentissage non seulement un acte intellectuel, mais aussi une aventure vécue.
+Le storytelling n’est pas une couche émotionnelle ajoutée à un contenu faible.
+Ce n’est pas non plus l’art de divertir la salle pour faire passer le temps.
+
+Utilisé comme simple habillage, il fatigue vite.
+
+Un récit n’a de valeur pédagogique que s’il éclaire réellement quelque chose :
+
+- une logique ;
+- un mécanisme ;
+- une erreur fréquente ;
+- un arbitrage ;
+- une manière d’agir.
+
+Sinon, on se souvient peut-être de l’histoire. Pas de ce qu’elle devait permettre de comprendre.
+
+## Ce qu’il permet en formation
+
+Quand il est bien utilisé, le storytelling fait au moins trois choses utiles.
+
+D’abord, il crée de l’attention.
+Ensuite, il facilite la projection : chacun peut comparer avec une situation proche de la sienne.
+Enfin, il ouvre la discussion, parce qu’un récit appelle naturellement plusieurs lectures.
+
+C’est particulièrement utile pour travailler des sujets complexes, relationnels ou sensibles, là où un exposé purement conceptuel laisse trop de distance.
+
+## Ce qu’un formateur devrait travailler
+
+Le plus important n’est pas de “raconter mieux”. Le plus important est de choisir la bonne scène.
+
+Une scène utile en formation est souvent :
+
+- brève ;
+- précise ;
+- située ;
+- tendue juste ce qu’il faut ;
+- reliée clairement à l’apprentissage visé.
+
+Le rôle du formateur consiste ensuite à faire le pont :
+
+- qu’est-ce que cette histoire montre vraiment ?
+- où est le point de bascule ?
+- qu’est-ce qui aurait pu être fait autrement ?
+- qu’est-ce que cela change pour nous ?
+
+Sans ce travail de liaison, le récit reste agréable mais sous-exploité.
+
+## Les erreurs les plus fréquentes
+
+On rate souvent le storytelling de trois façons.
+
+La première : raconter une anecdote trop longue, dont on ne sait plus ce qu’elle vient prouver.
+
+La deuxième : choisir une histoire trop parfaite, trop lisse, qui ne laisse aucune prise au débat.
+
+La troisième : utiliser le récit à la place du travail d’analyse.
+
+Or une bonne histoire n’achève pas la réflexion. Elle la rend possible.
+
+## Ce qu’il change dans l’apprentissage
+
+Le storytelling ne remplace pas les méthodes, les modèles ou les outils. Il leur donne un point d’ancrage humain.
+
+Il aide à retenir parce qu’il fait sentir.
+Il aide à comprendre parce qu’il relie.
+Il aide à agir parce qu’il rend le concept moins abstrait.
+
+Dans des dispositifs de formation, cette qualité vaut beaucoup.
+
+## Le vrai enjeu
+
+Former, ce n’est pas seulement transmettre des contenus exacts. C’est aussi rendre certaines idées suffisamment concrètes pour qu’elles puissent être reprises dans la tête puis dans le travail.
+
+Le storytelling devient alors autre chose qu’un levier de communication. Il devient un levier de transfert.
+
+Quand tu racontes une situation en formation, est-ce que tu aides réellement les personnes à penser et agir autrement… ou est-ce que tu ajoutes simplement une belle histoire à un contenu qui reste trop loin du réel ?

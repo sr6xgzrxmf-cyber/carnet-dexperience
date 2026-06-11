@@ -1,87 +1,121 @@
 ---
 title: "Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux"
 date: "2026-01-10"
-excerpt: "En 2026, les entreprises qui communiquent juste ne parlent pas plus, elles parlent au bon moment. Une routine simple basée sur les journées internationales permet d’aligner sens, visibilité et stratégie."
+excerpt: "Un calendrier éditorial n’a d’intérêt que s’il aide à choisir, pas à remplir. Les temps forts internationaux peuvent servir de repères utiles, à condition de filtrer sévèrement ce qui mérite vraiment d’être pris en charge."
 cover: "/images/articles/2026-01-10-une-routine-simple-pour-piloter-la-communication-d-une-entreprise-avec-les-temps-forts-internationaux.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 ---
 
-# Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux
+### « On devrait dire quelque chose pour cette journée-là, non ? »
 
-## Quand la communication cesse d’être réactive  
-Dans beaucoup d’entreprises, la communication reste encore largement réactive. On publie quand il y a une actualité interne, quand un concurrent fait du bruit ou quand un événement arrive trop vite. Résultat : des messages dispersés, un calendrier chaotique et une impression permanente de courir après le temps. En 2026, cette approche n’est plus tenable. Les marques qui émergent sont celles qui savent **anticiper**, pas celles qui improvisent.
+La question arrive souvent trop tard.
 
-## Le calendrier comme boussole stratégique  
-Les journées internationales — droits humains, environnement, éducation, diversité, paix, santé — forment un rythme mondial que suivent les médias, les institutions et une partie du public. Elles ne sont pas des opportunités opportunistes, mais des **repères collectifs**. En les intégrant dans son calendrier, une entreprise peut aligner ses prises de parole avec des sujets déjà présents dans l’esprit des gens.
+On découvre une date dans le flux, on improvise un visuel, on rédige un message correct, puis l’on publie quelque chose d’oubliable. Pas faux, pas choquant, mais peu relié à l’activité réelle de l’entreprise.
 
-Un simple fichier de calendrier comme celui des journées internationales de l’ONU devient alors un outil stratégique : il structure l’année, met en évidence les grands thèmes et permet de planifier bien en amont.
+Le problème n’est pas l’existence des temps forts internationaux. Le problème est la manière dont on les traite : comme des occasions de parler, plutôt que comme des tests de cohérence éditoriale.
 
-## Passer de l’inspiration au système  
-La clé n’est pas de réagir à chaque date, mais d’en faire un filtre. En début de mois, une équipe peut regarder les journées à venir et se poser une seule question : « Lesquelles font sens pour nous ? » Ce tri évite la communication opportuniste et favorise la cohérence. On ne parle que de ce qui résonne vraiment avec l’activité, les valeurs et les clients.
+## Ce qu’un calendrier peut réellement apporter
 
-Cette simple routine transforme la communication en processus maîtrisé plutôt qu’en suite d’urgences.
+Un bon calendrier de communication ne sert pas à remplir les cases.
 
-## Créer de la profondeur, pas du bruit  
-Lorsqu’une entreprise sait à l’avance quels temps forts elle va utiliser, elle peut préparer des contenus plus riches : témoignages, études, événements, formations, prises de position. Elle ne se contente plus de poster un message le jour J, elle construit une narration autour d’un thème. Cette profondeur crée de la crédibilité et distingue une marque de celles qui se contentent de suivre les tendances.
+Il sert à :
 
-## Aligner marketing, RH et communication  
-L’un des grands bénéfices de cette approche est l’alignement interne. Les journées internationales peuvent servir autant au marketing qu’aux ressources humaines, à la communication interne ou à la marque employeur. Une même date peut nourrir plusieurs types d’actions : campagne, atelier, prise de parole managériale, engagement social.
+- anticiper ;
+- relier les prises de parole à des thèmes déjà présents dans l’espace public ;
+- éviter le pilotage à l’urgence ;
+- donner du temps pour produire des contenus moins superficiels ;
+- aider à arbitrer.
 
-Le calendrier devient alors un **outil transversal** qui relie les équipes autour de temps forts communs.
+Les journées internationales peuvent être utiles dans cette logique, parce qu’elles offrent des jalons récurrents et lisibles.
 
-## Une routine qui libère du temps  
-Contrairement aux idées reçues, planifier ne rigidifie pas la communication, elle la libère. Quand les grands jalons sont connus, les équipes peuvent se concentrer sur la qualité des messages plutôt que sur la course aux idées. La créativité s’exprime dans un cadre clair.
+## Le piège le plus fréquent
 
-En 2026, cette discipline devient un avantage concurrentiel : elle permet d’être présent, pertinent et cohérent sans épuiser les équipes.
+Le piège consiste à vouloir exister sur trop de dates.
 
----
+Une entreprise regarde le calendrier et se dit :
 
-### Et toi, dans ta structure, la communication est-elle encore une succession d’urgences… ou déjà un système qui travaille pour toi ?
+- on pourrait parler de ça ;
+- puis de ça ;
+- puis de ça aussi.
 
+Très vite, la communication s’étire. Les messages deviennent opportunistes, interchangeables, vaguement vertueux. On suit le rythme du calendrier sans plus savoir ce qu’on vient vraiment dire.
 
----
+Le bon usage est exactement inverse : se servir du calendrier pour choisir plus sévèrement.
 
-## Passer à l’action : intégrer le calendrier des journées internationales
+## La question qui compte
 
-Les journées internationales utilisées dans cette routine sont disponibles sous forme de calendrier prêt à importer, basé sur la liste officielle de l’ONU.
+Pour chaque date, la vraie question n’est pas :
 
-👉 **Lien du calendrier (.ics)**  
-https://github.com/civilianEU/un-international-days/raw/master/un-international-days.ics
+faut-il publier ?
 
-Ce fichier contient toutes les journées internationales (droite des femmes, paix, environnement, éducation, inclusion, etc.) et se met à jour automatiquement.
+La vraie question est :
 
-### Comment l’ajouter à ton propre calendrier
+avons-nous quelque chose de légitime, utile ou cohérent à apporter sur ce sujet ?
 
-#### *Sur Apple Calendar (macOS / iPhone)*
-1. Ouvre **Calendrier**
-2. Menu **Fichier → Nouvel abonnement à un calendrier**
-3. Colle l’URL du fichier `.ics`
-4. Clique sur **S’abonner**
-5. Choisis une couleur dédiée (ex. vert ou bleu)
-6. Laisse l’option **Actualiser automatiquement**
+Si la réponse est non, ne pas publier est souvent une meilleure décision que produire un contenu de présence.
 
- 
-#### *Sur Google Calendar*
-1. Ouvre Google Calendar
-2. Clique sur **+** à côté de “Autres agendas”
-3. Choisis **À partir de l’URL**
-4. Colle l’URL du fichier `.ics`
-5. Valide
+Le calendrier devient alors un filtre, pas une injonction.
 
-### Astuce : créer un système d’alerte intelligent
+## Une routine simple qui tient
 
-Pour transformer ce calendrier en véritable outil de pilotage éditorial :
+Une routine légère suffit souvent.
 
-1. Clique sur n’importe quelle journée internationale dans ton calendrier
-2. Choisis **Modifier toutes les occurrences**
-3. Ajoute :
-   – une alerte **15 jours avant à 9:00**  
-   – une alerte **le jour même à 9:00**
+### En début de mois
 
-Ainsi, chaque date devient un rappel automatique pour :
-– préparer un contenu  
-– lancer une action  
-– programmer une communication  
-– ou décider consciemment de ne pas publier  
+On regarde les temps forts à venir.
 
-Tu passes d’un calendrier passif à un véritable **assistant stratégique**.
+### On trie
+
+On élimine tout ce qui n’a pas de lien réel avec :
+
+- l’activité ;
+- les engagements assumés ;
+- les sujets déjà portés ;
+- les preuves que l’entreprise peut montrer.
+
+### On choisit peu
+
+Mieux vaut deux prises de parole fortes que huit messages génériques.
+
+### On prépare en amont
+
+Si une date compte, on ne la traite pas le matin même. On prévoit :
+
+- le bon angle ;
+- le bon format ;
+- la personne légitime pour porter le message ;
+- la preuve concrète qui évitera le discours vide.
+
+## Pourquoi cela soulage les équipes
+
+Cette routine ne sert pas seulement la qualité éditoriale. Elle protège aussi l’énergie.
+
+Quand les choix sont faits en amont :
+
+- on improvise moins ;
+- on produit mieux ;
+- on évite les contenus de dernière minute ;
+- on laisse plus de place à l’actualité réellement importante.
+
+La planification ne rigidifie pas forcément la communication. Elle peut au contraire lui redonner de la marge.
+
+## Le vrai niveau d’exigence
+
+Une entreprise n’a pas besoin de parler sur tous les sujets mondiaux pour sembler attentive au monde.
+
+Elle a besoin de parler juste là où :
+
+- elle a une cohérence ;
+- elle a une action ;
+- elle a une responsabilité ;
+- elle a quelque chose à rendre visible sans surjouer.
+
+Le reste peut très bien rester silencieux.
+
+## L’outil n’est qu’un support
+
+Oui, un calendrier partagé ou un fichier `.ics` peut aider. Oui, des alertes peuvent fluidifier la préparation. Mais l’outil ne remplace jamais le travail de discernement.
+
+Le cœur du système reste la qualité de la sélection.
+
+Dans ta communication, les temps forts servent-ils à nourrir une parole plus cohérente… ou t’entraînent-ils encore trop souvent à publier simplement parce qu’une date existe ?

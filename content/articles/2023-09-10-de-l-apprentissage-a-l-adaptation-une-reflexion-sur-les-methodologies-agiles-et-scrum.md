@@ -1,7 +1,7 @@
 ---
 title: "De l’apprentissage à l’adaptation : une réflexion sur les méthodologies agiles et Scrum"
 date: "2023-09-10"
-excerpt: "Une réflexion personnelle sur l’agilité, Scrum et l’adaptation des méthodes au monde réel de l’entreprise et de la formation."
+excerpt: "L’intérêt de l’agilité ne réside pas dans la fidélité au rituel. Il réside dans la capacité à apprendre plus vite du réel, à corriger sans s’épuiser, et à garder l’esprit de la méthode même quand la forme doit bouger."
 cover: "/images/articles/2023-09-10-de-l-apprentissage-a-l-adaptation-une-reflexion-sur-les-methodologies-agiles-et-scrum.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -14,56 +14,114 @@ series:
   order: 39
 ---
 
-Je suis de ceux qui aiment continuellement apprendre et s’adapter, surtout dans un environnement professionnel en constante évolution. Avant de plonger dans le monde des méthodes Agiles et de Scrum, j’en avais souvent entendu parler à travers mes amis développeurs. Mais ce n’est qu’en suivant une formation que j’ai réellement compris à quel point ces principes faisaient écho à ma propre manière de travailler.
+### « Ce n’est pas agile si on change tout tous les deux jours. »
 
-Ce qui m’a frappé dès le début, ce sont les similitudes entre Scrum et certaines méthodes que j’utilisais déjà intuitivement dans mon quotidien professionnel. Comme si l’agilité mettait enfin des mots sur une philosophie que je pratiquais sans la nommer.
+La phrase peut paraître paradoxale. Elle est pourtant essentielle.
 
-## Agilité pure et agilité pragmatique
+On associe souvent l’agilité à la flexibilité permanente, à la capacité de tout remettre en question, à l’adaptation continue. Mais sur le terrain, une équipe qui change sans cesse de priorité, de méthode ou de rythme n’est pas forcément agile. Elle peut aussi être simplement mal pilotée.
 
-Le Manifeste Agile, rédigé en 2001, repose sur quatre valeurs fondamentales :
+C’est en découvrant plus sérieusement Scrum et les méthodologies agiles que cette nuance m’a frappé.
 
-- Les individus et les interactions plutôt que les processus et les outils  
-- Un logiciel fonctionnel plutôt qu’une documentation exhaustive  
-- La collaboration avec le client plutôt que la négociation contractuelle  
-- L’adaptation au changement plutôt que le suivi d’un plan  
+## Ce que l’agilité apporte de précieux
 
-Ces valeurs sont soutenues par douze principes, parmi lesquels la satisfaction du client, la flexibilité, la livraison fréquente, la communication directe, la simplicité et l’auto-organisation des équipes.
+L’agilité n’est pas d’abord une collection de rituels. C’est une discipline de lecture du réel.
 
-Dans la pratique, pourtant, peu d’organisations appliquent ces règles de manière pure. Elles les adaptent, les mélangent, les transforment pour les faire correspondre à leur culture, à leurs contraintes et à leurs réalités terrain. C’est là que naît une forme d’agilité pragmatique, bien plus vivante et utile que le dogme.
+Elle repose sur quelques idées très robustes :
 
-## Quand l’agilité rencontre la réalité
+- avancer par séquences lisibles ;
+- rendre les priorités explicites ;
+- tester plutôt que supposer ;
+- revoir vite ce qui ne fonctionne pas ;
+- apprendre en marchant sans perdre le cap.
 
-Dans certaines entreprises, Scrum est combiné à des approches plus traditionnelles : on planifie de manière prédictive, mais on développe de façon itérative. Ailleurs, les cérémonies Scrum sont allégées, remplacées par des rituels plus informels mais tout aussi efficaces pour favoriser la communication.
+Ce que j’y retrouve, c’est moins une recette qu’une manière de travailler : ne pas attendre que tout soit parfait pour agir, mais ne pas agir non plus sans créer des boucles de retour.
 
-Dans les grandes structures, des frameworks comme SAFe ou LeSS permettent de déployer l’agilité à grande échelle, sans perdre de vue ses fondements : collaboration, adaptation et valeur client.
+## Ce qu’on dénature facilement
 
-Ce qui importe n’est donc pas la fidélité à un cadre, mais la capacité à conserver l’esprit agile : apprendre vite, ajuster, améliorer continuellement.
+L’agile est devenu un mot très chargé.
 
-## Quand Scrum rencontre d’autres approches
+Dans certaines organisations, il sert à dire :
 
-Scrum gagne aussi en puissance lorsqu’il est combiné à d’autres méthodologies :
+- qu’il faut aller vite ;
+- qu’il faut accepter l’incertitude ;
+- qu’il faut être adaptable ;
+- qu’il faut arrêter de trop planifier.
 
-- **Avec Kanban**, pour visualiser le flux et identifier les goulots d’étranglement  
-- **Avec le Design Thinking**, pour renforcer la dimension centrée utilisateur  
-- **Avec le Lean**, pour éliminer les gaspillages et maximiser la valeur  
+Tout cela peut être vrai. Mais sorti de son cadre, le mot finit parfois par justifier :
 
-Ces alliances rendent l’approche encore plus flexible et adaptée aux contextes variés des projets et des équipes.
+- une priorisation instable ;
+- des interruptions permanentes ;
+- des changements de direction mal arbitrés ;
+- une fatigue structurelle recouverte d’un vernis moderne.
 
-## L’agilité appliquée à la formation
+Autrement dit, on garde le vocabulaire de l’agilité tout en perdant sa rigueur.
 
-En tant que formateur, j’ai rapidement vu à quel point l’agilité pouvait transformer la manière de concevoir un programme de formation. Plutôt qu’un plan figé, une approche agile permet de fonctionner par itérations : identifier les besoins, proposer des modules, recueillir les retours, ajuster, puis recommencer.
+## Scrum n’est utile que si l’on comprend ce qu’il cherche à produire
 
-Un projet de formation peut ainsi être structuré en sprints :
-- un temps de cadrage pour définir les priorités,
-- des cycles de formation courts,
-- des revues et rétrospectives pour améliorer continuellement l’expérience.
+Les rituels Scrum ne valent pas pour eux-mêmes.
 
-Cette logique garantit que la formation reste alignée avec les besoins réels de l’organisation et des apprenants, tout en maximisant la valeur livrée à chaque étape.
+Ils servent normalement à :
 
-## Les outils ne font pas l’artisan
+- clarifier ce qui sera tenté sur une période courte ;
+- rendre visible l’avancement ;
+- faire émerger les blocages ;
+- relire ce qui a été appris ;
+- améliorer la façon de travailler, pas seulement le résultat final.
 
-Les certifications, les frameworks et les outils sont précieux. Mais ils ne remplacent jamais l’intelligence humaine, la compréhension du contexte et la capacité d’adaptation. L’agilité n’est pas une recette universelle : c’est un état d’esprit.
+Si ces effets n’existent pas, la méthode peut être respectée à la lettre et rester malgré tout peu utile.
 
-Ce qui fait la différence, ce n’est pas Scrum, Kanban ou SAFe, mais la façon dont nous les utilisons pour mieux collaborer, mieux apprendre et mieux servir les personnes pour lesquelles nous travaillons.
+Le sujet n’est donc pas : applique-t-on Scrum correctement ?
 
-Et c’est sans doute là que se trouve la vraie puissance de l’agilité : dans sa capacité à évoluer avec nous.
+Le sujet est plutôt : apprenons-nous réellement plus vite du travail en cours ?
+
+## Pourquoi cette logique me parle aussi en formation
+
+Dans la conception pédagogique, je retrouve la même nécessité.
+
+Un programme trop figé ignore souvent ce que les participants montrent en avançant :
+
+- ce qu’ils comprennent plus lentement que prévu ;
+- ce qu’ils font déjà bien ;
+- ce qui résiste davantage ;
+- ce qui mérite d’être approfondi ou simplifié.
+
+Penser la formation avec un esprit agile, ce n’est pas transformer chaque parcours en laboratoire instable. C’est accepter de concevoir, tester, relire, corriger, puis rejouer.
+
+Autrement dit, la méthode sert moins à faire moderne qu’à rester au contact de ce que le réel demande.
+
+## L’erreur la plus courante : choisir entre pureté et bricolage
+
+On oppose parfois deux camps :
+
+- ceux qui veulent appliquer la méthode “comme il faut” ;
+- ceux qui l’adaptent librement au terrain.
+
+Cette opposition m’intéresse peu si elle reste théorique.
+
+Une méthode totalement déformée finit par perdre son intérêt.
+Une méthode appliquée sans intelligence du contexte finit par rigidifier ce qu’elle devait aider.
+
+La bonne question n’est pas de savoir s’il faut être pur ou pragmatique. La bonne question est de savoir ce qu’on adapte sans perdre le cœur de la méthode.
+
+## Ce qu’il faut garder
+
+Peu importe l’habillage exact, si l’on veut rester fidèle à l’esprit agile, il faut au moins préserver :
+
+- un cap lisible ;
+- un rythme de révision ;
+- une remontée honnête des obstacles ;
+- une capacité à arbitrer ;
+- une boucle d’apprentissage réelle.
+
+Sans cela, l’adaptation devient du flottement.
+
+## Le vrai intérêt
+
+Ce qui me semble le plus fort dans l’agilité, ce n’est pas la promesse de rapidité. C’est la promesse d’une correction plus lucide.
+
+On avance.
+On regarde ce que cela produit.
+On ajuste.
+Et l’on améliore non seulement ce que l’on fait, mais aussi la manière dont on le fait.
+
+Dans ton travail, quand tu parles d’agilité, cherches-tu à adopter une méthode… ou cherches-tu vraiment à apprendre plus vite de ce que le réel te renvoie ?

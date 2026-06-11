@@ -1,5 +1,5 @@
 ---
-title: "Créatif — Éducation & pédagogie terrain"
+title: "Éducation & pédagogie terrain"
 company: "Apple Retail"
 location: "Montpellier"
 role: "Pédagogie, projets éducatifs et adoption des usages"

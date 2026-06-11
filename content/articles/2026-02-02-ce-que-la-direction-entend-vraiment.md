@@ -1,7 +1,7 @@
 ---
 title: "Ce que la direction entend vraiment"
 date: "2026-02-02"
-excerpt: "Entre ce que le terrain dit et ce que la direction entend, il y a souvent un décalage. Non pas par mauvaise volonté, mais par différence de rôle, de temporalité et de responsabilité. Comprendre ce décalage est une condition essentielle du leadership du quotidien."
+excerpt: "Entre ce que le terrain dit et ce que la direction entend, il y a souvent un écart de traduction. Ce n’est pas seulement un problème d’écoute, c’est un problème de format décisionnel."
 cover: "/images/articles/2026-02-02-ce-que-la-direction-entend-vraiment.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -11,94 +11,118 @@ tags:
   - "organisation"
 ---
 
-Il y a une incompréhension récurrente dans les organisations. Le terrain a le sentiment de s’exprimer clairement. La direction a le sentiment d’entendre surtout des plaintes, des alertes floues ou des remontées sans proposition. Les deux ont souvent raison. Et pourtant, ils ne se parlent pas vraiment.
+### « On est à bout. »
 
-Ce décalage ne vient pas d’un manque d’écoute.  
-Il vient d’un **écart de rôle**.
+La phrase est vraie. Elle peut aussi être presque inutilisable en comité de direction.
 
-### La direction n’écoute pas comme le terrain parle
+Je l’ai vue prononcée de bonne foi, avec lassitude, parfois avec courage. Côté terrain, elle condense des heures supplémentaires, des priorités contradictoires, une fatigue accumulée, des arbitrages repoussés. Côté direction, elle arrive souvent comme un signal intense mais peu traitable.
 
-Quand une direction écoute, elle n’écoute pas une histoire. Elle n’écoute pas un ressenti. Elle n’écoute même pas un problème “en soi”. Elle écoute autre chose.
+Non pas parce que personne ne s’en soucie. Mais parce qu’entre l’expérience vécue et la décision possible, il manque souvent une étape de traduction.
 
-Elle écoute :
-- ce qui nécessite un arbitrage,
-- ce qui engage des ressources,
-- ce qui crée un risque,
-- ce qui appelle une décision.
+## La direction n’écoute pas au même niveau
 
-Ce n’est ni du mépris, ni de la distance émotionnelle. C’est une **contrainte structurelle**. La direction est responsable d’un cadre global. Elle ne peut pas entrer dans chaque situation par le vécu individuel. Elle doit transformer le réel en décisions possibles.
+Le terrain parle depuis :
 
-### Ce que le terrain pense dire… et ce qui est entendu
+- la pression ;
+- les irritants quotidiens ;
+- les frottements très concrets ;
+- l’expérience directe.
 
-Quand le terrain dit :
-> « On est débordés, on n’y arrive plus, on fait comme on peut. »
+La direction, elle, écoute depuis :
+
+- l’arbitrage ;
+- la ressource ;
+- le risque ;
+- la cohérence d’ensemble.
+
+Les deux positions ne sont pas symétriques. Elles ne filtrent pas le réel de la même façon.
+
+Quand le terrain raconte une difficulté, la direction cherche spontanément :
+
+- qu’est-ce qui doit être décidé ?
+- à quel niveau ?
+- avec quel impact ?
+- selon quelles options ?
+
+Tant que cette matière n’apparaît pas, elle entend parfois une alerte sans prise.
+
+## Une scène très fréquente
+
+Le terrain dit :
+
+« On nous demande trop de choses à la fois. »
 
 La direction entend souvent :
-> « Il y a une difficulté, mais je ne sais pas sur quoi agir. »
 
-Quand le terrain dit :
-> « Ce n’est pas normal qu’on nous demande ça. »
+« Il y a un inconfort, mais je ne vois pas encore quel arbitrage exact est attendu. »
+
+Le terrain dit :
+
+« Ce n’est plus tenable. »
 
 La direction entend :
-> « Il y a une résistance, mais aucun cadre alternatif proposé. »
 
-Le problème n’est pas la légitimité de la parole.  
-Le problème est **son format**.
+« Il y a un problème de capacité ou de priorité, mais je n’ai pas encore de lecture suffisamment décidable. »
 
-### La direction n’arbitre pas sur des ressentis
+Le problème n’est donc pas forcément l’écoute. Le problème est parfois le format de la parole.
 
-Même lorsqu’elle est attentive, une direction ne peut pas arbitrer sur un ressenti seul. Elle a besoin de repères clairs :
-- des faits observables,
-- une temporalité,
-- des options possibles,
-- des conséquences assumées.
+## Pourquoi les ressentis ne suffisent pas
 
-Sans cela, elle temporise. Elle renvoie à plus tard. Elle demande “d’attendre encore un peu”. Ce n’est pas toujours de la lâcheté. C’est souvent une **absence de cadre décisionnel**.
+Un ressenti a une valeur réelle. Il signale quelque chose.
 
-### Ce que la direction attend, souvent sans le dire
+Mais dans un système de décision, il ne suffit pas à lui seul à produire un arbitrage. Il faut le relier à :
 
-La direction attend rarement une solution parfaite. Elle attend :
-- une lecture claire de la situation,
-- une proposition tenable,
+- des faits observables ;
+- une temporalité ;
+- une conséquence ;
+- une proposition ou au moins une alternative.
+
+Sinon, la direction temporise, demande d’attendre, ou renvoie le sujet ailleurs. Ce mouvement est parfois vécu comme du déni. Il relève souvent d’un manque de structure de la demande.
+
+## Ce que la direction attend souvent sans le formuler
+
+Elle n’attend pas forcément une solution parfaite.
+
+Elle attend plus souvent :
+
+- une lecture claire ;
+- un point de bascule ;
+- des options tenables ;
 - une demande d’arbitrage explicite.
 
-Autrement dit : quelqu’un qui transforme une difficulté en **question de pilotage**.
+Par exemple :
 
-Quand un manager de terrain dit :
-> « Voici ce qui se passe. Voici ce que je propose. Voilà ce que cela implique. Est-ce que tu valides ou est-ce que tu préfères une autre option ? »
+« Depuis trois semaines, l’équipe absorbe deux priorités incompatibles. Nous perdons en qualité à tel endroit. Je vois deux options : réduire ce reporting ou décaler tel chantier. J’ai besoin que tu arbitres. »
 
-Il ne se plaint pas.  
-Il **exerce un leadership**.
+Là, le terrain ne se plaint pas moins. Il parle autrement.
 
-### Pourquoi la direction fait confiance à ce type de discours
+## Ce que cela demande au management intermédiaire
 
-Ce type de formulation rassure. Non pas parce qu’il est confortable, mais parce qu’il est **responsable**. Il montre que :
-- le réel est compris,
-- les limites sont identifiées,
-- le risque est assumé,
-- le besoin d’arbitrage est clair.
+C’est souvent ici que se joue une part du leadership réel.
 
-La direction ne délègue pas sa responsabilité. Elle la partage temporairement, dans un cadre maîtrisé.
+Le manager intermédiaire ou le rôle transverse utile n’est pas celui qui remonte simplement la fatigue. C’est celui qui transforme cette fatigue en question de pilotage :
 
-### Le leadership du quotidien se joue ici
+- qu’est-ce qu’on observe ?
+- où est le point de rupture ?
+- qu’est-ce qui relève d’une régulation locale ?
+- qu’est-ce qui doit être arbitré plus haut ?
 
-Le leadership ne commence pas quand on a un titre. Il commence quand on **parle la langue de la décision** sans renier le terrain.
+Ce travail est ingrat parce qu’il oblige à garder le lien avec le terrain tout en parlant une langue plus décidable.
 
-Cela ne signifie pas devenir froid, ni stratégique au sens politique. Cela signifie accepter que, pour être entendu, le réel doit être **traduit**.
+## Ce qui change quand la traduction existe
 
-Ce travail de traduction est exigeant. Il demande du recul. Il demande parfois d’avaler sa frustration. Mais il est profondément structurant.
+Quand ce type de formulation s’installe, on voit apparaître :
 
-### Ce que cela change durablement
+- des arbitrages plus rapides ;
+- moins de frustration liée au sentiment de ne pas être entendu ;
+- des désaccords plus nets ;
+- une relation plus adulte entre remontée terrain et décision.
 
-Quand ce type de dialogue s’installe, les effets sont visibles :
-- moins de non-dits,
-- des arbitrages plus rapides,
-- des désaccords plus clairs,
-- une relation plus adulte entre terrain et direction.
+Le terrain cesse d’espérer qu’on devine.
+La direction cesse d’attendre qu’on simplifie seule ce qu’elle ne peut pas traiter.
 
-Le terrain cesse d’attendre d’être compris.  
-La direction cesse de deviner.
+## La vraie question
 
-### Une question pour conclure
+Parler à la direction ne consiste pas à renoncer au réel du terrain. Cela consiste à le rendre saisissable dans un cadre où l’on ne décide pas à partir d’une intensité, mais à partir d’une lecture.
 
-La prochaine fois que vous vous adresserez à la direction, lui parlerez-vous de ce que vous ressentez… ou de l’arbitrage que vous l’invitez à rendre ?
+La prochaine fois qu’un sujet important remontera, parleras-tu de ce qui est vécu… ou sauras-tu déjà le traduire en arbitrage que quelqu’un peut réellement rendre ?

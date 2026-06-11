@@ -1,5 +1,5 @@
 ---
-title: "Créatif Pro — Architecture d’adoption & transmission"
+title: "Architecture d’adoption & transmission"
 company: "Apple Retail"
 location: "Lyon"
 role: "Formation, innovation et adoption des usages"

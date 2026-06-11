@@ -5,8 +5,7 @@ excerpt: >-
   Un discours qui ne prend pas n’est pas un échec. C’est un signal d’alerte. Et
   le vrai travail commence quand on a le courage de descendre de son propre
   plateau.
-cover: >-
-  /images/articles/2026-05-13-le-moment-ou-jai-compris-que-mon-discours-ne-fonctionnait-pas.jpg
+cover: "/images/articles/2026-05-13-le-moment-ou-jai-compris-que-mon-discours-ne-fonctionnait-pas.jpg"
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - discours

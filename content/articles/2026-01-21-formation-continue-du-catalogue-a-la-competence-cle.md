@@ -1,7 +1,7 @@
 ---
 title: "Formation continue : du catalogue à la compétence clé"
 date: "2026-01-21"
-excerpt: "La formation ne manque pas d’offres. Elle manque de résultats. Passer d’une logique événementielle à un développement de compétences actionnables impose de repenser le rôle de la formation dans la performance réelle."
+excerpt: "Une organisation peut multiplier les offres sans faire réellement progresser les équipes. Le vrai basculement commence quand on cesse de raisonner en modules à suivre pour raisonner en capacités à faire apparaître."
 cover: "/images/articles/2026-01-21-formation-continue-du-catalogue-a-la-competence-cle.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -10,44 +10,142 @@ tags:
   - "apprentissage"
 ---
 
-## La formation n’a jamais été aussi abondante — et aussi peu décisive
+### « On a tout ce qu’il faut dans le catalogue. Pourtant rien ne bouge vraiment. »
 
-Catalogues interminables, plateformes LMS bien remplies, calendriers de sessions bouclés un an à l’avance. Sur le papier, les organisations forment. Beaucoup. Régulièrement. Pourtant, sur le terrain, les écarts persistent : mêmes erreurs, mêmes blocages, mêmes écarts de performance entre équipes.
+Cette phrase résume beaucoup de dispositifs de formation continue.
 
-Le problème n’est pas l’accès à la formation. Il est dans sa **finalité réelle**. Trop souvent, former reste un acte administratif ou symbolique : cocher une ligne, occuper un temps, répondre à une obligation. L’événement a lieu, mais la compétence, elle, ne s’installe pas.
+Les offres existent. Les plateformes sont remplies. Les sessions sont planifiées. Les collaborateurs peuvent se former sur une quantité impressionnante de sujets. Et malgré cela, sur le terrain, les mêmes écarts persistent :
 
-## La limite de la formation événementielle
+- mêmes hésitations ;
+- mêmes malentendus ;
+- mêmes difficultés à appliquer ;
+- mêmes différences de niveau entre équipes.
 
-Une formation ponctuelle peut inspirer. Elle peut ouvrir des perspectives. Mais elle transforme rarement les pratiques à elle seule. Une compétence ne naît pas d’une journée en salle, elle se construit par répétition, ajustement, confrontation au réel.
+Le problème n’est donc pas toujours le manque de formation. Il est souvent dans la manière dont on définit ce que former veut dire.
 
-Sur le terrain, on observe un décalage clair : les collaborateurs savent expliquer ce qu’ils ont appris, mais peinent à l’appliquer quand la pression monte, quand le contexte change, quand les indicateurs business entrent en jeu. La formation a transmis un savoir, pas encore une capacité opérationnelle.
+## Le catalogue rassure, mais il ne prouve rien
 
-C’est ici que la tension apparaît : **former plus ne suffit plus**. Il faut former autrement.
+Un catalogue a une vertu : il donne une impression de couverture.
 
-## Passer d’une logique de contenu à une logique de compétences
+On peut montrer qu’il existe :
 
-Changer de paradigme implique de déplacer le regard. Ne plus partir du catalogue, mais de la compétence cible. Ne plus se demander « quelle formation proposer ? », mais « quelle capacité doit émerger sur le terrain ? ».
+- des parcours ;
+- des modules ;
+- des thèmes ;
+- des sessions régulières ;
+- des statistiques de complétion.
 
-Une approche *skills-first* replace la formation dans un continuum : observation des pratiques, identification des micro-compétences manquantes, expérimentation guidée, feedback, consolidation. La formation devient un moyen parmi d’autres, pas un but en soi.
+Mais un catalogue dit très peu de choses sur la compétence réellement produite.
 
-Cette logique permet aussi de sortir du standardisé. Deux personnes peuvent suivre le même parcours global tout en travaillant des micro-skills différents, selon leur rôle, leur maturité, leurs enjeux immédiats.
+Il montre une offre.
+Il ne montre pas encore une transformation.
 
-## Le rôle clé du coaching et de la personnalisation
+## L’écart classique
 
-C’est souvent le chaînon manquant. Sans accompagnement, la compétence reste théorique. Le coaching — individuel ou collectif — agit comme un accélérateur : il aide à traduire l’intention en action, à lever les résistances, à ajuster finement les pratiques.
+On voit souvent des personnes capables d’expliquer ce qu’elles ont appris, mais beaucoup moins capables de l’utiliser proprement dans une situation tendue, ambiguë ou imparfaite.
 
-Combinée à des parcours personnalisés et, demain, prédictifs, cette approche permet d’anticiper les besoins avant qu’ils ne deviennent critiques. On ne forme plus en réaction à un problème visible, mais en amont, là où la compétence fait encore la différence.
+Autrement dit :
 
-## Aligner micro-skills et indicateurs business
+- le contenu est passé ;
+- la compétence n’est pas encore installée.
 
-Une compétence n’a de valeur que si elle produit un effet mesurable. Construire une roadmap de formation par micro-skills, alignée avec les KPIs business, change radicalement la perception de la formation dans l’organisation.
+C’est ici que la logique “formation continue” montre ses limites lorsqu’elle reste événementielle.
 
-On ne parle plus d’heures suivies, mais d’impacts observables : amélioration de la qualité, réduction des frictions, montée en autonomie, meilleure prise de décision. La formation cesse d’être un centre de coût flou pour devenir un levier stratégique lisible.
+Une journée, un module ou une session peuvent ouvrir quelque chose. Ils suffisent rarement à faire émerger une capacité stable si rien d’autre ne vient ensuite.
 
-## Repenser la formation comme un système vivant
+## Déplacer la question
 
-Développer des compétences n’est pas un projet à date fixe. C’est un système vivant, qui évolue avec les métiers, les marchés et les équipes. Cela demande de l’humilité, de l’itération, et une proximité constante avec le terrain.
+Le basculement commence quand on arrête de demander :
 
-La vraie question n’est donc pas de savoir si vos équipes sont formées, mais autre chose, plus engageant :
+« Quelle formation devons-nous proposer ? »
 
-**quelles compétences concrètes votre organisation développe-t-elle aujourd’hui — et lesquelles risque-t-elle de ne pas maîtriser demain ?**
+et qu’on commence à demander :
+
+« Qu’est-ce que les personnes doivent être capables de faire un peu mieux, un peu plus juste, un peu plus vite, dans le réel ? »
+
+Cette question change tout.
+
+On ne part plus d’un stock de contenus.
+On part d’une compétence cible.
+
+## Ce que cela change dans la conception
+
+Si l’on raisonne en compétence plutôt qu’en catalogue, le travail devient plus exigeant.
+
+Il faut identifier :
+
+- le geste réel attendu ;
+- les situations où il manque ;
+- les micro-écarts qui empêchent de bien faire ;
+- les conditions nécessaires à son appropriation.
+
+La formation redevient alors un moyen parmi d’autres :
+
+- entraînement ;
+- mise en situation ;
+- feedback ;
+- accompagnement ;
+- reprise managériale ;
+- réactivation.
+
+Le module n’est plus le centre du système. La capacité l’est.
+
+## L’importance du chaînon souvent absent
+
+Ce qui manque le plus souvent, ce n’est pas le contenu. C’est le passage.
+
+Le passage entre :
+
+- avoir compris ;
+- essayer ;
+- ajuster ;
+- refaire ;
+- stabiliser.
+
+C’est précisément pour cela que l’accompagnement, le coaching de proximité ou le suivi managérial comptent autant.
+
+Sans eux, la formation reste parfois élégante mais peu transformatrice.
+
+## Ce qu’il faut mesurer autrement
+
+Tant qu’on mesure surtout :
+
+- des heures suivies ;
+- des taux de complétion ;
+- des niveaux de satisfaction ;
+
+on continuera à survaloriser l’offre et à sous-lire l’effet.
+
+Une logique de compétence impose d’observer autre chose :
+
+- le geste est-il mieux tenu ?
+- la décision est-elle plus claire ?
+- l’autonomie progresse-t-elle ?
+- les erreurs diminuent-elles ?
+- un manager voit-il une différence exploitable dans le travail ?
+
+À partir de là, la formation cesse d’être un stock à administrer. Elle redevient une fonction de performance.
+
+## Le rôle du manager
+
+Ce déplacement ne peut pas être porté par la seule fonction formation.
+
+Le manager est celui qui voit si la compétence apparaît ou non dans le quotidien. C’est lui qui peut :
+
+- relire un essai ;
+- ajuster une pratique ;
+- reformuler une attente ;
+- protéger un temps d’entraînement ;
+- rattacher l’apprentissage à une situation réelle.
+
+Sans ce relais, beaucoup de parcours restent suspendus entre intention et usage.
+
+## Le vrai basculement
+
+Passer du catalogue à la compétence clé, ce n’est pas supprimer les offres ni mépriser les contenus. C’est simplement remettre la question du terrain au centre.
+
+Qu’est-ce que cela change, concrètement, dans la manière dont les personnes travaillent ?
+
+Tant qu’une organisation n’est pas capable de répondre à cette question, elle forme peut-être beaucoup. Elle développe encore trop peu.
+
+Dans ton propre système, la formation continue sert-elle surtout à offrir des modules… ou à faire réellement apparaître des capacités qui manquaient jusque-là ?

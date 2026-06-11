@@ -1,7 +1,7 @@
 ---
 title: "Sortir du confort pour traverser le changement"
 date: "2023-09-04"
-excerpt: "Pourquoi la routine rassure mais freine, et comment accompagner les équipes à quitter leur zone de confort pour réussir la transformation."
+excerpt: "La routine n’est pas seulement un frein. C’est souvent une compétence devenue invisible. Pour faire bouger les pratiques, il faut d’abord comprendre ce que cette routine protège et ce qu’elle rend possible."
 cover: "/images/articles/2023-09-04-sortir-du-confort-pour-traverser-le-changement.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -13,34 +13,111 @@ series:
   order: 38
 ---
 
-Dans le troisième volet de notre série sur la résistance au changement en formation, nous abordons un obstacle majeur : le confort de la routine. Les routines offrent un sentiment de sécurité et de stabilité. Elles sont familières et prévisibles. Mais cette même familiarité peut freiner l’innovation et la croissance.
+### « Ce n’est peut-être pas parfait, mais au moins ça marche. »
 
-Pourquoi la routine est-elle un obstacle ?
+Cette phrase mérite mieux qu’un haussement d’épaules.
 
-La routine peut devenir un frein au changement pour plusieurs raisons. D’abord, elle donne un sentiment de contrôle sur l’environnement de travail. Les habitudes bien établies minimisent les erreurs et réduisent l’incertitude. Ensuite, elles favorisent l’efficacité, car les collaborateurs n’ont plus besoin de réfléchir à chaque étape de leur travail. Mais ce confort peut aussi enfermer dans des pratiques figées.
+Elle ne dit pas seulement l’attachement au confort. Elle dit souvent quelque chose de plus respectable : une pratique a été construite, testée, ajustée, rendue fiable. Elle permet de tenir le travail. Ce que l’on appelle “routine” est parfois simplement une forme de compétence stabilisée.
 
-Stratégies pour surmonter le confort de la routine
+C’est pour cela qu’il faut être prudent quand on parle de sortir de sa zone de confort.
 
-Introduire le changement graduellement  
-Plutôt que de bouleverser brutalement les habitudes existantes, il est souvent plus efficace d’introduire des ajustements progressifs qui laissent le temps de s’adapter.
+## La routine protège quelque chose
 
-Former et accompagner  
-Un accompagnement régulier et une formation adaptée permettent aux équipes de gagner en confiance face aux nouvelles méthodes et de réduire la résistance liée à l’inconnu.
+Dans beaucoup d’équipes, la routine n’est pas l’ennemie de l’intelligence. Elle protège :
 
-Créer des routines de changement  
-Mettre en place des rituels d’apprentissage, de partage et d’expérimentation aide à intégrer l’innovation dans le quotidien et à sortir du pilotage automatique.
+- du temps ;
+- de l’énergie ;
+- de la charge mentale ;
+- un niveau de qualité acceptable ;
+- un sentiment de maîtrise.
 
-Techniques efficaces pour gérer le confort de la routine
+Demander à quelqu’un de quitter cette routine, ce n’est donc pas seulement lui proposer d’apprendre. C’est aussi lui demander de renoncer, au moins provisoirement, à une manière de tenir le réel.
 
-Le microlearning  
-Des apports courts et ciblés s’intègrent plus facilement dans les habitudes existantes et réduisent la charge perçue du changement.
+Si l’on oublie cela, on traite mal la résistance.
 
-La gamification  
-Les jeux, défis et mécaniques ludiques transforment l’apprentissage en expérience engageante et cassent la monotonie.
+## Pourquoi le confort devient tout de même un frein
 
-L’apprentissage social  
-Favoriser les échanges entre pairs stimule la curiosité, brise l’isolement des routines individuelles et ouvre de nouvelles perspectives.
+Une routine utile peut aussi devenir un plafond.
 
-Conclusion
+Quand elle n’est plus interrogée, elle finit par :
 
-Le confort de la routine est un obstacle fréquent au changement en formation, mais il n’est pas une fatalité. En combinant progression, accompagnement et méthodes innovantes, il est possible de transformer les habitudes en leviers d’apprentissage et de créer une dynamique durable de transformation.
+- empêcher de voir de meilleures options ;
+- rendre certains signaux faibles invisibles ;
+- rigidifier les pratiques ;
+- faire confondre familiarité et pertinence ;
+- créer un rejet automatique de ce qui ne ressemble pas à l’existant.
+
+Le problème n’est donc pas la routine en elle-même. Le problème est le moment où elle cesse d’être un appui pour devenir une clôture.
+
+## Ce qu’il ne faut pas faire
+
+On accompagne mal le changement quand on méprise les habitudes existantes.
+
+Dire implicitement ou explicitement :
+
+- « votre façon de faire est dépassée » ;
+- « il suffit d’oser » ;
+- « sortez de votre zone de confort » ;
+
+revient souvent à sous-estimer le travail déjà contenu dans ces pratiques.
+
+Le résultat est prévisible : les personnes se défendent, non par fermeture d’esprit, mais parce qu’elles sentent qu’on dévalue ce qui les a fait tenir jusque-là.
+
+## Ce qu’il vaut mieux travailler
+
+Pour faire évoluer une routine, il faut commencer par la lire.
+
+Quelques questions sont souvent plus utiles que de grands discours sur l’innovation :
+
+- qu’est-ce que cette habitude permet d’éviter ?
+- qu’est-ce qu’elle sécurise ?
+- à quel coût fonctionne-t-elle encore ?
+- dans quels cas montre-t-elle ses limites ?
+- qu’est-ce qu’on pourrait déplacer sans tout casser ?
+
+Ces questions changent la qualité de l’accompagnement. On ne vient plus casser un confort. On vient travailler une transition.
+
+## Le changement tient mieux quand il devient praticable
+
+On quitte rarement une routine par adhésion théorique. On la quitte parce qu’une autre manière de faire devient assez concrète, assez sûre et assez utile pour être essayée.
+
+Cela suppose souvent :
+
+- un test limité ;
+- un pas suffisamment petit ;
+- une reprise rapide ;
+- un droit à l’ajustement ;
+- un bénéfice perceptible.
+
+Le changement devient alors moins abstrait. Il cesse d’être un saut identitaire pour devenir une expérience de travail.
+
+## Le rôle du formateur
+
+Le formateur a ici une fonction très spécifique : il aide à faire apparaître le point de bascule entre habitude utile et habitude devenue limitante.
+
+Il peut :
+
+- rendre visibles les automatismes ;
+- créer des mises en situation qui montrent ce qui ne tient plus ;
+- proposer une alternative testable ;
+- aider à relire ce qui se passe quand on essaie autrement.
+
+Son rôle n’est pas de glorifier la nouveauté. Son rôle est de rendre le déplacement praticable.
+
+## Ce qu’il faut observer
+
+Le confort commence à céder quand on voit apparaître de petits signes :
+
+- moins de réflexes défensifs ;
+- plus de curiosité ;
+- des essais concrets ;
+- des reformulations plus fines des problèmes ;
+- des équipes qui ne défendent plus seulement l’existant, mais comparent réellement plusieurs options.
+
+Ce sont ces signaux qui montrent qu’un passage devient possible.
+
+## La vraie question
+
+Sortir du confort ne devrait jamais être une injonction morale. C’est un travail de déplacement.
+
+Avant de demander à une équipe de changer, te demandes-tu vraiment ce que ses routines lui permettent encore de tenir… ou regardes-tu seulement ce qu’elles empêchent ?

@@ -1,7 +1,7 @@
 ---
 title: "Le digital learning au service de la formation moderne"
 date: "2023-08-10"
-excerpt: "Comment les outils numériques transforment l’expérience d’apprentissage et la montée en compétences."
+excerpt: "Le digital learning ne devient pas utile parce qu’il est numérique. Il le devient quand il rend l’apprentissage plus accessible, plus suivi et mieux articulé au travail réel."
 cover: "/images/articles/2023-08-10-le-digital-learning-au-service-de-la-formation-moderne.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -14,34 +14,97 @@ series:
   order: 31
 ---
 
-L’impact du digital learning sur la formation en entreprise
+### « Le LMS est plein. Pourtant personne n’y retourne. »
 
-À l’ère du numérique, la formation en entreprise a connu une transformation profonde. Les cours en ligne, les MOOCs, les plateformes LMS et l’apprentissage mobile sont devenus des piliers incontournables du développement des compétences. Le digital learning ne se contente plus de compléter la formation traditionnelle : il en redéfinit les règles.
+Cette scène est devenue classique.
 
-Le passage à une formation à la demande
+Les contenus existent. Les accès ont été créés. Les statistiques de connexion sont correctes au lancement. Et pourtant, quelques semaines plus tard, beaucoup de plateformes de formation ressemblent à des bibliothèques peu visitées : bien rangées, bien remplies, mais faiblement habitées.
 
-Le digital learning permet aux collaborateurs d’apprendre quand ils en ont besoin, à leur rythme et en fonction de leurs objectifs. Les plateformes LMS donnent accès à des catalogues de formation disponibles en continu, ce qui rend l’apprentissage plus flexible, plus personnalisé et plus aligné avec la réalité du travail.
+Le digital learning commence précisément là où cette contradiction devient visible.
 
-Augmentation de l’engagement et de la rétention
+## Le numérique ne crée pas la valeur à lui seul
 
-Les formats numériques permettent de multiplier les approches pédagogiques : vidéos, podcasts, quiz, forums, simulations. Cette variété stimule l’attention, favorise l’interaction et améliore la mémorisation. Plus un apprenant est actif dans son parcours, plus il retient et applique ce qu’il apprend.
+On parle souvent du digital learning comme d’une évolution évidente de la formation. C’est vrai sur un point : le numérique a ouvert des possibilités massives d’accès, de diffusion, de personnalisation et de suivi.
 
-Accessibilité et mise à l’échelle
+Mais aucune de ces possibilités ne vaut automatiquement usage.
 
-Grâce aux MOOCs et aux plateformes en ligne, la formation peut être déployée à grande échelle sans contrainte géographique. Une entreprise peut former des milliers de collaborateurs répartis dans le monde entier avec la même qualité de contenu, sans multiplier les coûts logistiques.
+Une ressource en ligne reste inutile si :
 
-L’apprentissage mobile, toujours à portée de main
+- elle n’arrive pas au bon moment ;
+- elle demande trop d’effort pour trop peu d’effet ;
+- elle n’est reliée à aucun enjeu concret ;
+- elle n’est jamais reprise par le management ;
+- elle s’ajoute au travail sans l’aider.
 
-Le mobile learning transforme chaque moment libre en opportunité d’apprentissage. Sur un smartphone ou une tablette, un collaborateur peut réviser un concept, suivre un module ou compléter un quiz entre deux réunions ou dans les transports. L’apprentissage devient fluide, continu et intégré au quotidien.
+Le digital learning n’est pas d’abord une affaire de technologie. C’est une affaire de conception.
 
-Mesure et pilotage des résultats
+## Ce qu’il fait vraiment gagner quand il est bien pensé
 
-Les outils digitaux offrent une visibilité inédite sur l’efficacité des formations. Les données issues des plateformes LMS permettent de suivre les progrès, d’identifier les points de blocage et d’ajuster les parcours. La formation devient pilotable, mesurable et améliorable en continu.
+Bien construit, il offre plusieurs avantages très réels :
 
-Conclusion
+- l’accès souple, au bon moment ;
+- la possibilité de revenir sur un contenu ;
+- des parcours différenciés selon les besoins ;
+- une mise à l’échelle plus simple ;
+- une meilleure lisibilité des usages.
 
-Le digital learning a fait passer la formation en entreprise dans une nouvelle ère. Plus accessible, plus engageante et plus mesurable, elle devient un véritable levier de performance et d’adaptation. Dans un monde professionnel en mutation permanente, il ne s’agit plus d’un choix technologique, mais d’un avantage stratégique.
+Dans des organisations multi-sites, mouvantes, avec des temporalités variées, c’est un atout considérable.
 
-Pour aller plus loin
+Mais cet atout n’apparaît que si le contenu est pensé comme un point d’appui, pas comme un stock.
 
-L’entreprise Cards Microlearning, fondée par Matthieu Thomas, illustre concrètement cette transformation. En s’appuyant sur le microlearning, elle propose des formations courtes, accessibles et efficaces, parfaitement adaptées aux rythmes de travail modernes.
+## Le piège classique : numériser sans éditorialiser
+
+Beaucoup de dispositifs échouent parce qu’ils transposent en ligne des contenus qui n’étaient déjà pas très solides hors ligne.
+
+On met des PDF sur une plateforme.
+On ajoute quelques vidéos.
+On produit des quiz de vérification.
+Et l’on espère que la seule accessibilité numérique suffira à créer de l’engagement.
+
+En réalité, le numérique rend simplement plus visible la faiblesse éditoriale quand elle existe déjà.
+
+## Ce qu’une approche sérieuse doit travailler
+
+Si l’on veut que le digital learning serve vraiment la formation, il faut travailler plusieurs dimensions en même temps :
+
+- la clarté du besoin ;
+- le bon format pour le bon usage ;
+- le niveau d’effort demandé ;
+- l’articulation entre autonomie et accompagnement ;
+- la manière dont le dispositif sera repris dans le travail.
+
+Le numérique devient utile quand il réduit une friction. Il devient décoratif quand il ajoute une couche.
+
+## Le rôle du formateur change, mais ne disparaît pas
+
+Contrairement à une idée tenace, digitaliser ne supprime pas le besoin de pédagogie humaine. Cela le déplace.
+
+Le formateur devient davantage architecte de parcours, concepteur d’expériences, lecteur des usages, et parfois curateur de contenus.
+
+Il doit se demander :
+
+- ce qui doit être vu seul ;
+- ce qui doit être discuté ;
+- ce qui doit être pratiqué ;
+- ce qui doit être suivi dans le temps ;
+- ce qui mérite une présence synchrone plutôt qu’un accès libre.
+
+Cette articulation vaut bien plus qu’une opposition stérile entre présentiel et distanciel.
+
+## Comment juger si le dispositif tient
+
+Une démarche de digital learning crédible se repère moins au volume de contenus publiés qu’à quelques signes simples :
+
+- les personnes reviennent réellement vers les ressources ;
+- les managers les mobilisent dans des situations précises ;
+- les parcours sont complétés parce qu’ils sont utiles, pas parce qu’ils sont obligatoires ;
+- les données de suivi servent à améliorer le dispositif ;
+- le numérique facilite une action ou une décision concrète.
+
+Là, le digital devient un levier. Pas avant.
+
+## La vraie ligne de partage
+
+Le sujet n’est donc pas de savoir si la formation doit devenir digitale. Cette bascule a déjà eu lieu.
+
+La vraie question est plus exigeante : le numérique aide-t-il ici à apprendre mieux, plus vite, plus justement… ou sert-il surtout à rendre plus moderne une offre qui n’a pas encore trouvé son utilité ?

@@ -1,7 +1,7 @@
 ---
 title: "Prendre le temps de prendre du recul"
 date: "2026-02-26"
-excerpt: "Avec le temps, l’urgence cesse d’être un moteur. Prendre du recul n’est pas un luxe, mais une compétence acquise : celle qui permet de durer sans s’épuiser."
+excerpt: "Le recul n’est pas une pause décorative. C’est une compétence qui apparaît quand on a suffisamment payé le prix de la vitesse pour comprendre que tout ce qui va vite n’avance pas réellement."
 cover: "/images/articles/2026-02-26-prendre-le-temps-de-prendre-du-recul.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -12,62 +12,103 @@ series:
   order: 11
 ---
 
-Il y a un moment, dans un parcours professionnel, où l’on comprend que la vitesse n’est plus un avantage.  
-Pas parce qu’on serait devenu plus lent, mais parce qu’on a appris ce que l’urgence coûte — et ce qu’elle abîme.
+### « Je te réponds dans l’heure. »
 
-Ce moment ne fait pas de bruit. Il ne ressemble pas à une révélation. Il s’installe progressivement, au fil des projets, des responsabilités, des cycles qui se répètent.
+Pendant longtemps, cette phrase ressemblait pour moi à une qualité.
 
-## Sortir de l’urgence comme réflexe
+Elle disait la réactivité, la fiabilité, la capacité à tenir plusieurs sujets en même temps. Elle donnait aussi une certaine image de soi : quelqu’un de présent, de rapide, de professionnel.
 
-Pendant longtemps, j’ai confondu réactivité et efficacité.  
-Répondre vite. Enchaîner. Produire. Corriger en marchant. Avancer malgré la fatigue.
+Puis, sans rupture spectaculaire, j’ai commencé à voir autre chose.
 
-Ce mode fonctionne. Un temps.  
-Puis il commence à produire autre chose : de la dispersion, des décisions prises trop tôt, une impression de mouvement permanent sans véritable progression.
+Je répondais vite, oui. Mais je décidais parfois trop tôt. Je bouclais des choses qui demandaient encore un peu d’air. Je traitais l’urgence comme un signe de sérieux alors qu’elle devenait parfois simplement mon mode de fonctionnement par défaut.
 
-Prendre du recul n’a pas été un choix intellectuel.  
-Ça a été une **nécessité physiologique et mentale**.
+## Le coût caché de la vitesse
 
-## Le recul n’est pas une pause, c’est un déplacement
+La vitesse produit des bénéfices évidents :
 
-Prendre du recul ne signifie pas s’arrêter.  
-Cela signifie déplacer le regard : sortir de l’immédiat pour retrouver une vue d’ensemble.
+- on soulage vite l’attente ;
+- on garde la main ;
+- on montre qu’on suit ;
+- on évite certains engorgements.
 
-Ce déplacement m’a obligé à ralentir volontairement. À ne pas répondre tout de suite. À laisser certaines questions ouvertes plus longtemps que ce qui était confortable.
+Mais elle a aussi un coût plus discret :
 
-Ce temps n’est pas perdu.  
-Il permet d’éviter des décisions que l’on aurait ensuite passé des mois à réparer.
+- des décisions prises avant maturation ;
+- des sujets mal hiérarchisés ;
+- une fatigue de fond qui finit par contaminer la qualité du regard ;
+- une confusion entre mouvement et progression.
 
-## Apprendre à tenir un rythme soutenable
+Ce coût ne se voit pas toujours tout de suite. Il s’accumule.
 
-Avec le recul vient une autre compétence : le sens du rythme.  
-Non pas le rythme imposé par l’extérieur, mais celui que l’on peut tenir sans se renier.
+## Le recul arrive rarement comme une révélation
 
-Tenir un rythme soutenable, c’est accepter que tout ne soit pas fait aujourd’hui. C’est choisir ce qui mérite de l’énergie maintenant — et ce qui peut attendre sans conséquences graves.
+Je ne crois pas beaucoup aux grandes prises de conscience théâtrales sur ce sujet.
 
-Ce tri-là est l’un des marqueurs les plus clairs de la maturité professionnelle.
+Le recul, pour moi, s’est installé plus modestement :
 
-## La maturité ne brille pas, elle dure
+- en voyant revenir les mêmes problèmes pourtant “traités” vite ;
+- en sentant la dispersion gagner malgré l’activité ;
+- en comprenant que certaines réponses auraient été meilleures vingt-quatre heures plus tard ;
+- en découvrant que ralentir un peu pouvait parfois éviter des semaines de réparation.
 
-La maturité ne se voit pas toujours.  
-Elle ne produit pas nécessairement des résultats spectaculaires à court terme. Elle produit autre chose : de la continuité, de la cohérence, de la solidité.
+Le recul n’a pas ressemblé à un luxe. Il a ressemblé à une correction de trajectoire.
 
-Avec le temps, j’ai cessé de chercher à briller par l’intensité.  
-J’ai préféré durer par la justesse.
+## Ce que prendre du recul veut réellement dire
 
-Ce choix a modifié ma manière de travailler, mais aussi mon rapport aux projets, aux attentes, aux délais. Il m’a appris à accepter que certaines choses prennent le temps qu’elles doivent prendre.
+Prendre du recul ne veut pas dire se retirer du réel.
 
-## Prendre du recul comme acte professionnel
+Cela veut dire :
 
-Prendre le temps de prendre du recul n’est pas un privilège.  
-C’est un acte professionnel à part entière.
+- changer de focale ;
+- relire avant d’agir ;
+- accepter qu’une question reste ouverte un peu plus longtemps ;
+- regarder le système au lieu de seulement traiter son bruit.
 
-Il demande du courage : celui de ne pas céder à l’urgence permanente, celui d’assumer des tempos différents, celui de dire parfois *pas maintenant*.
+Le recul n’est donc pas une parenthèse. C’est un déplacement du regard.
 
-Ce recul n’éloigne pas du réel.  
-Il permet d’y revenir avec plus de discernement.
+## Le rythme comme compétence
 
-La question n’est donc plus : *comment aller plus vite ?*  
-Mais une autre, plus exigeante :
+Avec le temps, j’ai compris qu’une partie de la maturité professionnelle se jouait dans la gestion du rythme.
 
-**quel rythme suis-je réellement capable de tenir sans me perdre en chemin ?**
+Pas seulement le rythme imposé par l’extérieur. Le rythme que tu acceptes toi-même comme soutenable, digne et tenable.
+
+Cela suppose de savoir :
+
+- ce qui mérite une réponse immédiate ;
+- ce qui mérite une réflexion ;
+- ce qui peut attendre ;
+- ce qui ne devrait même pas entrer dans le circuit.
+
+Ce tri change énormément la qualité du travail. Il change aussi le rapport à soi dans le travail.
+
+## Le recul comme acte professionnel
+
+Dans beaucoup d’environnements, prendre du recul est encore perçu comme une forme de lenteur, voire de confort.
+
+Je crois presque l’inverse.
+
+Prendre du recul demande souvent plus de courage que réagir :
+
+- il faut résister à la pression de la réponse immédiate ;
+- assumer un tempo parfois moins spectaculaire ;
+- dire “je reviens vers toi” quand tout pousse à répondre tout de suite ;
+- supporter le léger inconfort du non-réglé provisoire.
+
+Mais c’est souvent là que se protège la qualité d’une décision.
+
+## Ce que cela a changé pour moi
+
+Le plus important n’est pas que je sois devenu plus lent. Je ne crois pas que ce soit le bon mot.
+
+Je dirais plutôt que je suis devenu plus sélectif sur ce qui mérite ma vitesse.
+
+Certaines choses gagnent à être prises immédiatement.
+D’autres gagnent beaucoup à être laissées hors de la première impulsion.
+
+Ce discernement-là m’a paru plus précieux, avec le temps, que la simple capacité à aller vite.
+
+## La vraie question
+
+On demande souvent comment gagner du temps. On demande moins souvent à partir de quel moment la vitesse commence à coûter plus qu’elle ne rapporte.
+
+Dans ton propre rythme de travail, qu’est-ce qui mérite encore ta réactivité… et qu’est-ce qui aurait surtout besoin de ton recul ?

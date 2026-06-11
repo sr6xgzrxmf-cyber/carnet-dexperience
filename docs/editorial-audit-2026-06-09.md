@@ -13,20 +13,20 @@ Legende courte :
 - Nombre total d articles : 131
 - 2023 : 48
 - 2026 : 83
-- Solide : 56
-- Archive utile / reecriture ambitieuse : 27
+- Solide : 101
+- Archive utile / reecriture ambitieuse : 0
 - Tres solide : 17
-- Bonne base a densifier : 13
+- Bonne base a densifier : 0
 - Solide comme capsule : 10
-- Reecriture ambitieuse : 4
+- Reecriture ambitieuse : 0
 - Solide comme fiche : 3
-- Solide mais a incarner : 1
+- Solide mais a incarner : 0
 
 ## Constats clefs
 
 - Le site est aujourd hui tire vers le haut par `atelier-de-posture`, `faire-exister-un-projet`, `construire-carnet-experience` et une partie de `Vendre n est plus convaincre`.
 - Les articles 2023 montrent la duree du travail, mais beaucoup parlent encore en mode generique / SEO / pedagogique. Ils sont utiles comme traces, pas comme vitrine principale.
-- Les vingt articles 2023 reecrits dans cette passe sont maintenant suffisamment alignes pour rester visibles sans fragiliser le niveau global du site.
+- Le bloc 2023 a maintenant ete remis a niveau. Les textes restants les plus faibles ont ete reecrits, et les quatre outliers 2026 les plus generiques ont egalement ete repris.
 - Tes meilleurs textes sont ceux qui partent d une situation precise, d une micro-scene, d une phrase exacte ou d un cout reel.
 - Les articles les plus faibles ne sont pas forcement faux. Ils sont surtout trop abstraits, trop lisses ou trop demonstratifs.
 
@@ -63,22 +63,7 @@ Legende courte :
 
 ## Priorites de reecriture
 
-- 2023-06-29 - Épouser le style de management autoritaire et révéler l’essence d’une formation efficace (Archive utile / reecriture ambitieuse)
-- 2023-07-03 - Immersion dans le management participatif : quand deux têtes valent mieux qu’une (Archive utile / reecriture ambitieuse)
-- 2023-07-05 - L’inclusion : clé de voûte de la formation en entreprise (Archive utile / reecriture ambitieuse)
-- 2023-07-06 - Plongez dans le courant du management laissez-faire : une invitation à l’autonomie et à l’innovation (Archive utile / reecriture ambitieuse)
-- 2023-07-10 - Formation et accompagnement : catalyser le potentiel du management participatif (Archive utile / reecriture ambitieuse)
-- 2023-07-17 - Le formateur à la conquête du management par objectifs (Archive utile / reecriture ambitieuse)
-- 2023-07-17 - Management serviteur : comment le formateur peut soutenir ce leader altruiste (Archive utile / reecriture ambitieuse)
-- 2023-07-17 - Management transactionnel : comment le formateur optimise la performance par les règles et les objectifs (Archive utile / reecriture ambitieuse)
-- 2023-07-20 - Management par coaching : accompagner pour faire grandir (Archive utile / reecriture ambitieuse)
-- 2023-07-27 - Management par projets : piloter des équipes comme des expéditions (Archive utile / reecriture ambitieuse)
-- 2023-07-31 - Zigzaguer à travers les défis avec le management agile (Archive utile / reecriture ambitieuse)
-- 2023-08-02 - Barbier, passion et succès : quand la formation devient un art (Archive utile / reecriture ambitieuse)
-- 2023-08-03 - La magie du microlearning en formation professionnelle (Archive utile / reecriture ambitieuse)
-- 2023-08-07 - Construire une culture de l’apprentissage dans l’entreprise (Archive utile / reecriture ambitieuse)
-- 2023-08-10 - Le digital learning au service de la formation moderne (Archive utile / reecriture ambitieuse)
-- 2023-08-14 - Le storytelling : un puissant levier en formation (Archive utile / reecriture ambitieuse)
+- Aucune reecriture ou densification immediate necessaire. Les prochains gains relevent surtout de retouches legeres sur quelques capsules, fiches ou articles deja solides.
 
 ## Tableau complet
 
@@ -108,20 +93,20 @@ Legende courte :
 | 2026-03-13 | Pourquoi « tout est prioritaire » est un signal d’alerte managérial | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
 | 2026-03-17 | Devenir facilitateur : le leadership discret | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
 | 2026-03-20 | Pourquoi certains rôles invisibles sont indispensables au système | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-03-24 | Comment faire reconnaître un rôle transversal sans passer par l’organigramme | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2026-03-24 | Comment faire reconnaître un rôle transversal sans passer par l’organigramme | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question “toi, tu interviens sur quoi exactement ?” donne enfin un point de bascule concret. |
 | 2026-03-31 | Recollectiviser sans conflit : trois mécanismes simples | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
 | 2026-04-02 | Pourquoi une fiche de poste protège tout le monde | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-04-07 | Pourquoi on confond souvent tension et conflit | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
-| 2026-04-09 | Quand le cadre est posé… mais pas respecté | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
+| 2026-04-07 | Pourquoi on confond souvent tension et conflit | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La scene de reunion qui crispe sans encore basculer en conflit rend la nuance plus operatoire. |
+| 2026-04-09 | Quand le cadre est posé… mais pas respecté | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le texte lit mieux le non-respect comme signal de conception que comme simple faute. |
 | 2026-04-14 | Arrêter de débattre : tester 30 jours, décider ensuite | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-04-16 | Créer des cadres légers qui tiennent dans le réel | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
+| 2026-04-16 | Créer des cadres légers qui tiennent dans le réel | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’opposition entre le document lourd et les trois regles tenables donne une vraie prise. |
 | 2026-04-21 | Tester sans indicateurs est une illusion | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-04-23 | Fiche outil : le prototype 30 jours | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Montrer 1 usage reel : un tableau ouvert, un prospect classe, une decision fermee. |
 | 2026-04-28 | Quand ne pas écrire : choisir le bon canal | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-04-30 | Améliorer un process sans conflit : audit léger et check-list | Tres solide | Garder visible. Retouche legere possible seulement pour renforcer 1 scene ou 1 detail sensoriel. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
 | 2026-05-05 | Quand la qualité dépend d’un autre pôle : sécuriser sans subir | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-05-07 | Relancer sans harceler : la séquence PRM | Solide comme capsule | Format court utile. Peut rester tel quel, ou gagner en impact avec une mini anecdote d’ouverture. | Montrer 1 usage reel : un tableau ouvert, un prospect classe, une decision fermee. |
-| 2026-05-12 | Quand arrêter de relancer est la meilleure décision | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2026-05-12 | Quand arrêter de relancer est la meilleure décision | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le tableau plein de conversations mortes ancre bien le sujet de fermeture de boucle. |
 
 ### construire-carnet-experience
 
@@ -136,17 +121,17 @@ Legende courte :
 | 2026-02-11 | Effet miroir (côté lecteur) | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-02-13 | Quand ça casse | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-02-18 | De la fatigue à la méthode | Tres solide | Garder visible. Retouche legere possible seulement pour renforcer 1 scene ou 1 detail sensoriel. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-02-20 | Nourrir un système vivant | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-02-23 | Les choix que j’ai faits (et ceux que j’ai refusés) | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-02-26 | Prendre le temps de prendre du recul | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-03-02 | À qui ce carnet parle (et à qui il ne parlera jamais) | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2026-02-20 | Nourrir un système vivant | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le deplacement du “publier” vers “nourrir” structure mieux la maturation du media. |
+| 2026-02-23 | Les choix que j’ai faits (et ceux que j’ai refusés) | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La liste des “j’aurais pu” donne un vrai avant et apres de positionnement. |
+| 2026-02-26 | Prendre le temps de prendre du recul | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’ouverture sur la reponse dans l’heure rend plus concret le cout de la vitesse. |
+| 2026-03-02 | À qui ce carnet parle (et à qui il ne parlera jamais) | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question sur l’adresse du carnet rend la selection de lecteur plus nette. |
 
 ### durableetengage
 
 | Date | Article | Etat | Action conseillee | Piste de scene / anecdote |
 |---|---|---|---|---|
-| 2026-01-05 | Marketing durable et engagé : concilier performance commerciale et responsabilité en point de vente | Reecriture ambitieuse | Ne pas mettre en avant pour l’instant. Reprendre depuis une situation vecue, ou basculer en archive assumee. | Partir d’une interaction comptoir : une question de client, une reponse ratee, puis la reformulation juste. |
-| 2026-01-07 | Marketing durable et engagé : construire une marque personnelle crédible à l’ère de la transparence | Reecriture ambitieuse | Ne pas mettre en avant pour l’instant. Reprendre depuis une situation vecue, ou basculer en archive assumee. | Trouver un cas vecu recent. Sans scene concrete, le texte reste trop generique. |
+| 2026-01-05 | Marketing durable et engagé : concilier performance commerciale et responsabilité en point de vente | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question du client au comptoir donne enfin un vrai point d’appui terrain. |
+| 2026-01-07 | Marketing durable et engagé : construire une marque personnelle crédible à l’ère de la transparence | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’angle sur la trace coherente plutot que la simple visibilite est plus juste. |
 
 ### faire-exister-un-projet
 
@@ -181,50 +166,50 @@ Legende courte :
 | 2023-06-19 | Super-pouvoirs de formation : comment garder l’attention comme un super-héros | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir du moment precis ou la salle decroche, puis lire les signes faibles. |
 | 2023-06-22 | Rendre la formation en entreprise ludique : pourquoi pas la gamification ? | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir de la phrase : « on n’est pas a l’ecole primaire », puis montrer la vraie fonction du jeu. |
 | 2023-06-26 | Épouser le style de management : l’essence d’une formation efficace | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir de deux organisations ou la meme formation produit deux effets differents. |
-| 2023-06-29 | Épouser le style de management autoritaire et révéler l’essence d’une formation efficace | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-03 | Immersion dans le management participatif : quand deux têtes valent mieux qu’une | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-07-05 | L’inclusion : clé de voûte de la formation en entreprise | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-06 | Plongez dans le courant du management laissez-faire : une invitation à l’autonomie et à l’innovation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2023-06-29 | Épouser le style de management autoritaire et révéler l’essence d’une formation efficace | Solide | Article deja utile. Priorite faible : clarifier encore 1 detail de contexte si tu veux le densifier. | La phrase d’ouverture pose deja bien le besoin de clarte sous contrainte. |
+| 2023-07-03 | Immersion dans le management participatif : quand deux têtes valent mieux qu’une | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le point fort est l’arbitrage entre parole ouverte et responsabilite reelle. |
+| 2023-07-05 | L’inclusion : clé de voûte de la formation en entreprise | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’ouverture par les signes faibles de retrait reste la meilleure porte d’entrée. |
+| 2023-07-06 | Plongez dans le courant du management laissez-faire : une invitation à l’autonomie et à l’innovation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La bascule autonomie ou abandon est maintenant bien lisible. |
 | 2023-07-07 | Les six qualités incontournables d’un bon formateur | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-10 | Formation et accompagnement : catalyser le potentiel du management participatif | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-17 | Le formateur à la conquête du management par objectifs | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-17 | Management serviteur : comment le formateur peut soutenir ce leader altruiste | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-17 | Management transactionnel : comment le formateur optimise la performance par les règles et les objectifs | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-07-20 | Management par coaching : accompagner pour faire grandir | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-07-27 | Management par projets : piloter des équipes comme des expéditions | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-07-31 | Zigzaguer à travers les défis avec le management agile | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-08-02 | Barbier, passion et succès : quand la formation devient un art | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-03 | La magie du microlearning en formation professionnelle | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-07 | Construire une culture de l’apprentissage dans l’entreprise | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-08-10 | Le digital learning au service de la formation moderne | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-14 | Le storytelling : un puissant levier en formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-17 | Comment évaluer l’efficacité d’une formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-21 | Trouver l’équilibre entre théorie et pratique en formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-24 | L’apprentissage social et collaboratif en entreprise | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Trouver un cas vecu recent. Sans scene concrete, le texte reste trop generique. |
-| 2023-08-28 | Pourquoi résiste-t-on au changement en formation ? | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-08-31 | Surmonter la peur de l’inconnu : transformer l’incertitude en moteur d’apprentissage | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-09-04 | Sortir du confort pour traverser le changement | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-09-10 | De l’apprentissage à l’adaptation : une réflexion sur les méthodologies agiles et Scrum | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2023-09-11 | La surcharge de travail : surmonter la résistance au changement en formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-09-14 | La résistance au changement organisationnel en formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-09-17 | Cinéphile et formateur : ce que La Guerre des Boutons m’a appris sur le clivage générationnel | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-09-18 | Huit techniques clés pour surmonter la résistance au changement en formation | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
+| 2023-07-10 | Formation et accompagnement : catalyser le potentiel du management participatif | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le texte tient mieux depuis qu’il distingue participation et dilution des responsabilites. |
+| 2023-07-17 | Le formateur à la conquête du management par objectifs | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’ouverture sur l’exigence de preuve donne enfin une vraie colonne vertebrale. |
+| 2023-07-17 | Management serviteur : comment le formateur peut soutenir ce leader altruiste | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La tension entre soutien et sauvetage est maintenant bien posee. |
+| 2023-07-17 | Management transactionnel : comment le formateur optimise la performance par les règles et les objectifs | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le contrat managérial est plus lisible que la simple opposition recompense ou sanction. |
+| 2023-07-20 | Management par coaching : accompagner pour faire grandir | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La difference entre questionner, accompagner et ne pas trancher est bien rendue. |
+| 2023-07-27 | Management par projets : piloter des équipes comme des expéditions | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question de l’arbitrage en cas de derive structure bien le propos. |
+| 2023-07-31 | Zigzaguer à travers les défis avec le management agile | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le texte distingue enfin adaptation utile et instabilite mal tenue. |
+| 2023-08-02 | Barbier, passion et succès : quand la formation devient un art | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La conversation chez le barbier donne une bonne entree pour parler de la fausse promotion. |
+| 2023-08-03 | La magie du microlearning en formation professionnelle | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le besoin de “cinq minutes utiles” donne un ancrage concret au sujet. |
+| 2023-08-07 | Construire une culture de l’apprentissage dans l’entreprise | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La phrase “on n’a pas le temps” porte bien la tension systemique. |
+| 2023-08-10 | Le digital learning au service de la formation moderne | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’ouverture sur le LMS plein mais peu habite fonctionne bien. |
+| 2023-08-14 | Le storytelling : un puissant levier en formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le basculement de la salle quand une scene precise apparait est une bonne entree. |
+| 2023-08-17 | Comment évaluer l’efficacité d’une formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le “c’etait tres bien” d’ouverture pose bien la difference entre satisfaction et impact. |
+| 2023-08-21 | Trouver l’équilibre entre théorie et pratique en formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question du lundi matin donne un bon point d’appui de transfert. |
+| 2023-08-24 | L’apprentissage social et collaboratif en entreprise | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le “attends, je vais te montrer” ancre enfin le sujet dans le travail reel. |
+| 2023-08-28 | Pourquoi résiste-t-on au changement en formation ? | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La resistance comme protection, et non simple fermeture, structure bien le texte. |
+| 2023-08-31 | Surmonter la peur de l’inconnu : transformer l’incertitude en moteur d’apprentissage | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le texte distingue bien la peur de la nouveaute et la peur d’etre expose. |
+| 2023-09-04 | Sortir du confort pour traverser le changement | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’idee de la routine comme competence stabilisee rend le sujet plus juste. |
+| 2023-09-10 | De l’apprentissage à l’adaptation : une réflexion sur les méthodologies agiles et Scrum | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le texte sort du dogme pour revenir au rythme de correction du reel. |
+| 2023-09-11 | La surcharge de travail : surmonter la résistance au changement en formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La phrase “je n’ai pas le temps” est enfin prise comme un signal reel et non moral. |
+| 2023-09-14 | La résistance au changement organisationnel en formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La formation comme visage visible du changement est une bonne colonne vertebrale. |
+| 2023-09-17 | Cinéphile et formateur : ce que La Guerre des Boutons m’a appris sur le clivage générationnel | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le parallele entre outil moderne et sentiment de deplacement generationnel fonctionne bien. |
+| 2023-09-18 | Huit techniques clés pour surmonter la résistance au changement en formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le format capstone tient mieux maintenant qu’il relie les leviers a un vrai cout du passage. |
 | 2023-10-09 | Projection de compétence vs écoute active | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 
 ### hors-serie
 
 | Date | Article | Etat | Action conseillee | Piste de scene / anecdote |
 |---|---|---|---|---|
-| 2026-01-02 | Contenu génératif vs contenu humain : comment combiner les deux pour gagner en 2026 | Reecriture ambitieuse | Ne pas mettre en avant pour l’instant. Reprendre depuis une situation vecue, ou basculer en archive assumee. | Trouver un cas vecu recent. Sans scene concrete, le texte reste trop generique. |
-| 2026-01-10 | Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux | Reecriture ambitieuse | Ne pas mettre en avant pour l’instant. Reprendre depuis une situation vecue, ou basculer en archive assumee. | Trouver un cas vecu recent. Sans scene concrete, le texte reste trop generique. |
+| 2026-01-02 | Contenu génératif vs contenu humain : comment combiner les deux pour gagner en 2026 | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La ligne de partage entre production rapide et jugement editorial est enfin claire. |
+| 2026-01-10 | Une routine simple pour piloter la communication d’une entreprise avec les temps forts internationaux | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’usage du calendrier comme filtre editorial est plus fort que l’ancien ton “mode d’emploi”. |
 | 2026-01-15 | La promotion par le vide : quand accepter devient un risque silencieux | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-01-19 | Répondre sans conclure | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-01-21 | Formation continue : du catalogue à la compétence clé | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
+| 2026-01-19 | Répondre sans conclure | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le “tu ferais quoi, toi ?” donne un tres bon ancrage au triptyque. |
+| 2026-01-21 | Formation continue : du catalogue à la compétence clé | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le contraste entre abondance d’offre et absence de transformation est mieux tenu. |
 | 2026-01-26 | Un excellent technicien fait-il un bon manager ? | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-02-02 | Ce que la direction entend vraiment | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2026-02-02 | Ce que la direction entend vraiment | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | L’ecart entre “on est a bout” et la matiere arbitrable est plus lisible. |
 | 2026-02-05 | Talent marketplaces internes : quand l’organisation bascule enfin vers les compétences | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2026-02-16 | Déménager, une équipe sans en être le manager | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-03-27 | Rendre visible ton leadership : la note 3×3 | Bonne base a densifier | Bon angle. Ajouter un avant/apres, une scene, ou un exemple terrain pour passer du principe a la preuve. | Prendre une reunion concrete ou un point equipe ou les mots ne designent pas la meme chose. |
+| 2026-03-27 | Rendre visible ton leadership : la note 3×3 | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Le format 3×3 devient plus convaincant depuis qu’il part du leadership discret. |
 
 ### lois-utiles
 
@@ -252,7 +237,7 @@ Legende courte :
 | 2026-02-10 | Devenir un commercial-consultant en 2026 | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir d’une interaction comptoir : une question de client, une reponse ratee, puis la reformulation juste. |
 | 2026-02-19 | Pourquoi la vente consultative échoue sans cadre et sans méthode | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir d’une interaction comptoir : une question de client, une reponse ratee, puis la reformulation juste. |
 | 2026-02-24 | Pourquoi la crédibilité ne vient plus du savoir, mais du discernement | Tres solide | Garder visible. Retouche legere possible seulement pour renforcer 1 scene ou 1 detail sensoriel. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
-| 2026-03-05 | Aider à décider est un acte de responsabilité | Solide mais a incarner | Bonne these. Ajouter un rendez-vous, une phrase de client ou un moment de decision pour lui donner plus de chair. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
+| 2026-03-05 | Aider à décider est un acte de responsabilité | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | La question “si vous etiez a ma place” donne enfin un visage a la responsabilite d’influence. |
 | 2026-03-09 | Ce que les organisations n’ont pas encore compris du commercial-consultant | Tres solide | Garder visible. Retouche legere possible seulement pour renforcer 1 scene ou 1 detail sensoriel. | Partir d’une interaction comptoir : une question de client, une reponse ratee, puis la reformulation juste. |
 
 ### vendre-et-servir-en-retail

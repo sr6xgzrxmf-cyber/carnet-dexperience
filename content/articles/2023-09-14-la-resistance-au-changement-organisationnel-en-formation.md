@@ -1,8 +1,8 @@
 ---
 title: "La résistance au changement organisationnel en formation"
 date: "2023-09-14"
-excerpt: "Quand le changement touche l’organisation elle-même, la formation devient un terrain de tension. Comprendre, accompagner et transformer cette résistance est un enjeu clé de performance collective."
-cover: "/images/articles/2023-09-14-la-resistance-au-changement-organisationnel-en-formation-1.jpg"
+excerpt: "Quand la formation accompagne une transformation plus large, elle hérite de toutes les peurs qui l’entourent. La résistance ne porte alors pas seulement sur un dispositif, mais sur ce qu’il annonce, déplace ou remet en cause."
+cover: "/images/articles/2023-09-14-la-resistance-au-changement-organisationnel-en-formation.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - "formation"
@@ -14,50 +14,109 @@ series:
   order: 41
 ---
 
-Le changement organisationnel peut susciter une résistance dans tous les domaines d’une entreprise, y compris la formation. Lorsqu’une organisation modifie ses méthodes pédagogiques, ses outils ou ses processus, ce n’est pas seulement une question technique — c’est une transformation de repères, de rôles et parfois d’identité professionnelle.
+### « À partir du mois prochain, on passe tous sur le nouveau dispositif. »
 
-Cette résistance est rarement un refus pur et simple. Elle est souvent l’expression d’une inquiétude plus profonde : peur de l’inconnu, perte de contrôle, crainte de ne plus être compétent dans un nouveau système.
+Sur le papier, cela ressemble à une annonce simple.
 
-## Pourquoi le changement organisationnel bloque la formation
+Dans une équipe, la phrase produit souvent autre chose :
 
-La formation touche directement à la manière dont les collaborateurs travaillent, apprennent et sont évalués. Lorsqu’un changement est imposé sans explication ou sans espace de dialogue, il peut être perçu comme une remise en cause du savoir existant et de la légitimité professionnelle.
+- qu’est-ce qui ne va plus dans l’ancien système ?
+- est-ce qu’on va encore savoir faire ?
+- qui a décidé ?
+- qu’est-ce qu’on va perdre au passage ?
 
-Sans accompagnement, la formation devient alors le symbole du changement subi plutôt que du progrès partagé.
+À cet instant, la résistance qui apparaît n’est pas seulement une résistance à la formation. C’est une résistance à ce que la formation représente dans la transformation en cours.
 
-## Stratégies pour réduire la résistance
+## La formation devient souvent le visage visible du changement
 
-### Comprendre les préoccupations
+Lorsqu’une organisation change ses outils, ses processus, ses rôles ou ses standards, la formation arrive souvent au premier plan.
 
-La première étape consiste à écouter. Enquêtes, entretiens, groupes de discussion permettent de révéler ce qui inquiète réellement les équipes. Tant que ces peurs restent implicites, elles se transformeront en inertie ou en sabotage passif.
+C’est elle qui :
 
-### Communiquer avec clarté
+- introduit la nouvelle logique ;
+- rend visibles les nouvelles attentes ;
+- expose les écarts de compétence ;
+- matérialise la bascule.
 
-Le pourquoi du changement est plus important que le comment. Expliquer la vision, les enjeux, les bénéfices pour l’organisation et pour les individus permet de redonner du sens à l’effort demandé.
+Elle devient donc, malgré elle parfois, le lieu où se concentrent les tensions.
 
-### Impliquer les collaborateurs
+On dit que l’on résiste à la formation, alors que l’on résiste souvent à une perte de repères plus vaste.
 
-Lorsque les équipes participent à la conception ou à l’adaptation des nouveaux dispositifs de formation, elles ne subissent plus le changement : elles le co-construisent. Cela transforme radicalement leur posture.
+## Ce que les personnes essaient de protéger
 
-### Offrir un vrai soutien
+Dans un changement organisationnel, les équipes peuvent chercher à protéger :
 
-Le changement nécessite des ressources : formation, temps, accompagnement, feedback. Sans cela, même la meilleure stratégie restera théorique.
+- leur manière de travailler ;
+- leur expertise historique ;
+- une autonomie acquise ;
+- une place dans le système ;
+- la lisibilité de ce qu’on attend d’elles.
 
-## Techniques pour accompagner le changement
+Si le changement est mal expliqué, la formation peut être perçue comme l’outil qui officialise cette perte.
 
-### Apprentissage interactif
+Le problème n’est donc pas seulement pédagogique. Il est politique, symbolique et pratique à la fois.
 
-Jeux de rôle, études de cas, ateliers collaboratifs permettent d’expérimenter le changement dans un cadre sécurisé. L’engagement émotionnel facilite l’appropriation.
+## Pourquoi certaines résistances deviennent dures
 
-### Mentorat et coaching
+La résistance se renforce particulièrement quand plusieurs ingrédients sont réunis :
 
-Un accompagnement individualisé aide les collaborateurs à dépasser leurs blocages personnels et à retrouver de la confiance dans le nouveau contexte.
+- décision descendante sans espace de discussion ;
+- bénéfices flous ;
+- calendrier serré ;
+- charge déjà forte ;
+- manque de soutien de proximité ;
+- changements antérieurs mal digérés.
 
-### Déploiement progressif
+Dans ce contexte, même une très bonne formation peut arriver comme la dernière couche d’un changement déjà subi.
 
-Introduire le changement par étapes permet d’éviter le choc organisationnel. Chaque petite victoire réduit la peur et renforce l’adhésion.
+## Ce qu’il faut faire avant même de former
 
-## Conclusion
+Avant de concevoir le dispositif, il faut souvent faire un travail de lecture du terrain :
 
-La résistance au changement organisationnel en formation n’est pas un problème à éliminer, mais un signal à écouter. Elle indique où se situent les peurs, les fragilités et les zones de perte de repères.
+- qu’est-ce qui inquiète réellement ?
+- où se situent les pertes de repères ?
+- qu’est-ce que les équipes pensent devoir abandonner ?
+- quels acteurs seront jugés légitimes pour porter ce passage ?
+- où le changement sera-t-il interprété comme une critique implicite de l’existant ?
 
-Lorsqu’elle est comprise et accompagnée, elle devient un levier puissant de transformation. Et c’est précisément là que la formation prend tout son sens : non pas comme un outil imposé, mais comme un espace de passage vers un nouveau futur collectif.
+Sans ce travail, on conçoit trop vite une réponse pédagogique à un problème qui est aussi organisationnel.
+
+## Le rôle du formateur dans ce type de contexte
+
+Le formateur ne peut pas régler seul la transformation. Mais il peut éviter de l’aggraver.
+
+Il peut :
+
+- rendre explicite le sens du passage ;
+- créer des espaces où les questions réelles peuvent être posées ;
+- distinguer ce qui relève d’une nouvelle compétence et ce qui relève d’un problème de cadrage ;
+- travailler par étapes ;
+- aider à transformer une injonction générale en usages concrets.
+
+Son rôle est moins de “faire accepter” que de rendre le changement compréhensible et praticable.
+
+## Ce qu’il faut surveiller pendant le déploiement
+
+On sous-estime souvent l’importance des signaux faibles :
+
+- les personnes sont présentes mais peu engagées ;
+- elles reviennent vite à l’ancien système ;
+- les questions sont techniques alors que l’inquiétude est ailleurs ;
+- les managers relaient peu ;
+- les tensions remontent par d’autres canaux que la formation.
+
+Ces signes montrent souvent que la résistance ne porte pas sur le contenu, mais sur le cadre plus large.
+
+## Le vrai enjeu
+
+Dans un changement organisationnel, la formation ne doit pas être pensée comme un outil de persuasion. Elle doit être pensée comme un espace de passage.
+
+Un espace où l’on peut :
+
+- comprendre ce qui change ;
+- essayer ;
+- nommer ce qui se perd ;
+- voir ce qui se gagne ;
+- reprendre prise.
+
+Quand une organisation change, demandes-tu à la formation de faire adhérer… ou lui donnes-tu les moyens d’accompagner réellement ce que le système est en train de déplacer ?

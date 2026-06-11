@@ -1,7 +1,7 @@
 ---
 title: "L’inclusion : clé de voûte de la formation en entreprise"
 date: "2023-07-05"
-excerpt: "Pourquoi une formation inclusive est un levier stratégique pour la performance, la cohésion et l’innovation."
+excerpt: "Une formation inclusive ne consiste pas à cocher une intention généreuse. Elle consiste à rendre l’apprentissage réellement praticable pour des personnes qui n’ont ni les mêmes conditions, ni les mêmes codes, ni les mêmes facilités d’entrée."
 cover: "/images/articles/2023-07-05-l-inclusion-cle-de-voute-de-la-formation-en-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -13,80 +13,94 @@ series:
   order: 18
 ---
 
-Dans un monde en constante évolution, les entreprises doivent s’adapter et innover pour rester compétitives. L’un des piliers de cette adaptabilité est la **formation continue**. Mais pour qu’elle soit réellement efficace, elle doit être **inclusive** et répondre aux besoins de tous les collaborateurs.
+### Ce n’est pas le contenu qui bloque. C’est l’accès au contenu.
 
----
+La scène est plus fréquente qu’on ne le dit. Une formation est jugée pertinente, bien conçue, utile sur le papier. Et pourtant, une partie du groupe reste au bord : trop vite, trop implicite, trop dense, trop exposant, trop dépendant d’un format unique.
 
-## Définition de l’inclusion
+On conclut parfois un peu vite que certaines personnes “n’accrochent pas”. C’est souvent une erreur de lecture.
 
-Dans le contexte de la formation, l’inclusion consiste à créer un environnement où chaque individu est traité avec équité et respect, et où ses contributions sont reconnues. Cela implique d’adapter les méthodes pédagogiques aux **différents besoins, aptitudes et expériences** des apprenants.
+Le vrai sujet n’est pas toujours l’intérêt du contenu. C’est la possibilité concrète d’y entrer.
 
----
+## L’inclusion commence avant la salle
 
-## Les avantages de l’inclusion
+Une formation devient excluante bien avant le premier exercice.
 
-**Optimisation des talents**  
-Une formation inclusive permet de révéler et développer les compétences de chacun, quel que soit son profil.
+Elle peut l’être :
 
-**Cohésion d’équipe**  
-Les collaborateurs qui se sentent inclus sont plus engagés et collaborent plus efficacement.
+- par son horaire ;
+- par son vocabulaire ;
+- par son niveau d’implicite ;
+- par le format choisi ;
+- par les prérequis non nommés ;
+- par le type d’exposition qu’elle demande.
 
-**Innovation**  
-La diversité des points de vue nourrit la créativité et favorise l’émergence de solutions nouvelles.
+Autrement dit, l’inclusion n’est pas un supplément de sensibilité ajouté à la fin. C’est une question de conception.
 
----
+## Traiter tout le monde pareil n’est pas forcément juste
 
-## Mettre en œuvre une formation inclusive
+Beaucoup d’organisations restent bloquées sur une idée simple : être équitable, ce serait proposer la même chose à tout le monde.
 
-**Analyse des besoins**  
-Identifier les profils, compétences et contraintes des apprenants.
+En formation, cette logique atteint vite sa limite. Des apprenants peuvent partager un même objectif sans disposer des mêmes appuis pour y accéder.
 
-**Accessibilité**  
-Proposer des contenus en formats variés (texte, audio, vidéo, sous-titres, traductions).
+Certains ont besoin de plus de temps.
+D’autres d’un autre canal.
+D’autres encore d’une consigne plus explicite, d’un cadre plus progressif, d’une moindre mise en visibilité au départ.
 
-**Personnalisation**  
-Créer des parcours adaptés aux besoins individuels.
+L’inclusion n’abolit pas l’exigence. Elle travaille les conditions d’accès à cette exigence.
 
-**Feedback continu**  
-Recueillir et intégrer les retours pour améliorer en permanence les dispositifs.
+## Ce qu’une approche inclusive change vraiment
 
----
+Une formation plus inclusive ne devient pas forcément plus lourde. Elle devient souvent plus lisible.
 
-## Un enjeu stratégique
+Elle pense davantage :
 
-L’inclusion n’est pas seulement une question d’éthique : c’est un **levier de performance**. Elle permet d’améliorer l’engagement, la qualité du travail et la capacité d’innovation des équipes.
+- les étapes d’entrée dans le sujet ;
+- la diversité des formats ;
+- la progressivité des mises en pratique ;
+- la possibilité de comprendre sans être immédiatement mis en défaut ;
+- la qualité des consignes.
 
----
+Ces choix profitent rarement à une seule catégorie de personnes. Ils améliorent souvent la qualité pédagogique pour tout le monde.
 
-## Pour aller plus loin
+## Le danger de l’inclusion décorative
 
-Certaines entreprises montrent la voie :
+Comme beaucoup de sujets vertueux, l’inclusion peut aussi devenir un mot d’affichage.
 
-**Microsoft**  
-Avec *Microsoft Learn*, l’entreprise propose des parcours personnalisés, intégrant des critères d’accessibilité.
+On parle de diversité, d’accessibilité, d’ouverture. Puis on maintient des dispositifs :
 
-**Accenture**  
-Elle investit massivement dans la formation continue et propose de multiples formats d’apprentissage.
+- surchargés ;
+- centrés sur un seul mode d’apprentissage ;
+- peu attentifs aux écarts de langage ;
+- indifférents à la fatigue, au rythme ou aux contraintes réelles.
 
----
+Une formation n’est pas inclusive parce qu’elle le dit. Elle l’est parce qu’elle retire un certain nombre de frottements inutiles à l’apprentissage.
 
-## Bonnes pratiques
+## Ce qu’il faut regarder concrètement
 
-**Blended learning**  
-Mix entre présentiel et distanciel.
+Si tu veux évaluer la dimension inclusive d’un dispositif, quelques questions simples valent plus qu’un grand discours :
 
-**Microlearning**  
-Modules courts et ciblés.
+- qui entre facilement dans cette formation ?
+- qui reste en périphérie ?
+- à quel moment certaines personnes décrochent-elles ?
+- quels implicites faut-il déjà maîtriser pour suivre ?
+- qu’est-ce qui relève du niveau attendu, et qu’est-ce qui relève d’un obstacle de conception ?
 
-**Formation interactive**  
-Jeux de rôle, ateliers, simulations.
+Ces questions déplacent le regard. Elles évitent de faire peser sur les apprenants des difficultés qui appartiennent en réalité au dispositif.
 
-**Formation interculturelle**  
-Prise en compte des différences culturelles et sociales.
+## Inclusion ne veut pas dire dilution
 
----
+Il faut aussi poser cette limite. Rendre une formation plus inclusive ne consiste pas à abaisser systématiquement le niveau, à simplifier tout jusqu’à l’affadissement, ni à supprimer toute difficulté.
 
-## En conclusion
+Une bonne formation inclusive ne retire pas le travail. Elle retire les barrières inutiles autour du travail.
 
-La diversité des profils, des expériences et des styles d’apprentissage est une richesse. En la reconnaissant et en la valorisant, les entreprises créent des environnements de formation plus justes, plus efficaces et plus inspirants.
+Elle garde un cap, une exigence, une progression. Mais elle s’assure que l’accès à ce cap n’est pas réservé, sans le dire, à celles et ceux qui maîtrisent déjà les codes.
 
+## Ce que ça révèle d’une organisation
+
+La manière dont une entreprise conçoit ses formations dit beaucoup de sa culture réelle.
+
+Veut-elle seulement diffuser un message identique à tous ? Ou cherche-t-elle à créer les conditions pour que chacun puisse vraiment s’approprier une pratique ?
+
+La différence entre les deux est profonde. Elle sépare la communication interne habillée en formation d’un véritable travail de développement.
+
+Quand tu regardes un dispositif de formation, repères-tu surtout ce qu’il transmet… ou aussi ce qu’il rend possible, et pour qui ?

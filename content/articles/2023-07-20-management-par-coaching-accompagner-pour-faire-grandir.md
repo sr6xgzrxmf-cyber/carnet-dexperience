@@ -1,7 +1,7 @@
 ---
 title: "Management par coaching : accompagner pour faire grandir"
 date: "2023-07-20"
-excerpt: "Comment le management par coaching développe l’autonomie, la performance et l’épanouissement des équipes grâce à l’écoute et au feedback."
+excerpt: "Le management par coaching ne consiste pas à poser des questions à la place de décider. Il cherche à faire progresser l’autonomie sans abandonner l’exigence ni le cadre."
 cover: "/images/articles/2023-07-20-management-par-coaching-accompagner-pour-faire-grandir.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -14,32 +14,93 @@ series:
   order: 25
 ---
 
-Exploration du Management par Coaching : Accompagnement, Formation et Évaluation 🚀🎯
+### « Qu’est-ce que tu as déjà essayé ? »
 
-Qu’est-ce que le Management par Coaching ?
+La question paraît simple. Pourtant, elle marque une frontière.
 
-Le management par coaching est une forme de leadership où le manager agit comme un mentor. Son rôle est d’accompagner les membres de l’équipe dans le développement de leurs compétences et dans la réalisation de leur potentiel. Il crée un environnement collaboratif et stimulant, propice à l’autonomie, à l’apprentissage et à la progression continue.
+Un manager qui la pose ne se précipite pas immédiatement vers la solution. Il essaie d’abord de comprendre ce que la personne a vu, testé, compris, contourné. Il ne retire pas son rôle. Il change sa manière d’intervenir.
 
-Comment reconnaître un management par coaching ?
+C’est souvent comme cela que commence le management par coaching.
 
-Ce style se caractérise par des relations fondées sur la confiance, l’écoute active et le dialogue. Le manager pose des questions ouvertes, encourage la réflexion, aide à la résolution de problèmes et apporte des feedbacks constructifs. Il s’agit moins de diriger que d’aider chacun à trouver ses propres solutions.
+On le décrit volontiers comme une posture moderne, collaborative, centrée sur le développement. C’est vrai, mais c’est encore trop abstrait. Sur le terrain, son intérêt tient à quelque chose de plus net : il permet de faire grandir les personnes sans devoir tout résoudre à leur place.
 
-Qui l’emploie et dans quelles entreprises le trouve-t-on ?
+## Ce que ce style essaie de produire
 
-Le management par coaching est utilisé dans de nombreux secteurs, en particulier dans les organisations qui valorisent l’innovation, l’apprentissage continu et la collaboration. On le retrouve souvent dans les entreprises technologiques, les startups, les sociétés de conseil et toutes celles qui souhaitent faire évoluer leurs pratiques managériales.
+Le management par coaching vise généralement quatre effets :
 
-Quels exercices de formation ce type de manager apprécie-t-il ?
+- développer l’autonomie ;
+- améliorer la capacité de réflexion ;
+- renforcer la qualité des retours ;
+- transformer les difficultés en occasions d’apprentissage.
 
-Les managers-coach privilégient les exercices favorisant la réflexion et le développement personnel. Par exemple, un « Rallye des compétences » peut être organisé, où chaque membre travaille avec un coach sur une compétence spécifique. Une « Chasse au trésor de connaissances » permet également de stimuler l’apprentissage autonome et l’entraide au sein de l’équipe.
+Ce n’est pas un style utile partout, tout le temps. Il demande du temps, une certaine maturité, et un cadre suffisamment stable pour que l’on puisse penser, tester, revenir.
 
-Comment ce type de manager évalue-t-il les résultats de la formation ?
+Mais dans des environnements où les compétences doivent évoluer vite, il devient très puissant.
 
-L’évaluation se fait à travers plusieurs indicateurs : amélioration des performances individuelles, progression dans les objectifs de développement, ou encore niveau de satisfaction au travail. Des échanges réguliers permettent de mesurer comment les apprentissages sont mis en pratique au quotidien.
+## Ce qu’il ne faut pas confondre avec du coaching
 
-Quels sont les leviers pour renouveler l’expérience ?
+Le terme est tellement valorisé qu’il sert parfois à tout et n’importe quoi.
 
-La mise en valeur des progrès et des réussites est un levier essentiel. Organiser des moments de reconnaissance, où l’équipe partage ses avancées et ses succès, renforce l’engagement et donne envie de poursuivre la démarche de formation.
+Un manager n’est pas en posture de coaching simplement parce qu’il pose plus de questions.
+Il n’est pas non plus dans le coaching quand il évite de trancher, repousse les arbitrages ou transforme chaque difficulté en conversation sans fin.
 
-Conclusion
+Le management par coaching devient faible quand :
 
-Le management par coaching transforme profondément la dynamique d’équipe. En plaçant l’accompagnement et le développement au cœur du leadership, il crée un environnement où chacun peut grandir, apprendre et s’épanouir. C’est une approche qui, bien utilisée, permet à la fois la performance et le bien-être des équipes.
+- on ne sait plus ce qui relève du soutien ou de la décision ;
+- les questions remplacent le cadrage ;
+- les retours restent bienveillants mais peu utiles ;
+- la progression attendue n’est jamais formulée clairement.
+
+L’écoute seule ne suffit pas. Il faut aussi de l’exigence.
+
+## Ce qu’une formation devrait travailler
+
+Former à ce style ne consiste pas à apprendre une liste de questions ouvertes.
+
+Une formation utile devrait aider les managers à faire au moins cinq choses :
+
+- écouter un problème sans le capturer trop vite ;
+- reformuler pour clarifier ce qui est vraiment en jeu ;
+- poser une question qui fait avancer, pas seulement parler ;
+- transformer un retour vague en feedback exploitable ;
+- convenir d’un prochain pas observable.
+
+Autrement dit, il faut former à la qualité de l’accompagnement, pas à la gestuelle apparente du coach.
+
+## Le rôle du formateur dans ce type d’environnement
+
+Le formateur peut aider à rétablir une distinction souvent brouillée : accompagner n’est pas déléguer à l’aveugle, et faire grandir n’est pas laisser la personne seule face au problème.
+
+Il peut aussi rendre visible ce que beaucoup de managers font déjà intuitivement, sans le structurer :
+
+- quand faut-il aider à penser ?
+- quand faut-il aider à décider ?
+- quand faut-il décider soi-même ?
+- comment rendre un progrès visible dans le temps ?
+
+Cette clarification change énormément la qualité du style.
+
+## Ce qu’il faut regarder pour savoir si ça fonctionne
+
+Une formation sur le management par coaching devient crédible quand elle se voit dans les échanges du quotidien :
+
+- les collaborateurs arrivent avec des problèmes mieux formulés ;
+- les managers donnent des retours plus précis ;
+- les points de blocage sont travaillés plus tôt ;
+- les personnes prennent davantage d’initiatives sans attendre une réponse sur tout ;
+- les progrès sont relus au lieu d’être simplement supposés.
+
+Ce sont souvent de petits déplacements. Mais ce sont eux qui installent une culture de progression.
+
+## Le vrai enjeu
+
+Le management par coaching n’est pas seulement une manière plus élégante de parler aux équipes. C’est une manière de produire de la croissance dans le travail réel.
+
+Il devient particulièrement utile quand une organisation veut développer les personnes sans tomber dans deux pièges opposés :
+
+- tout contrôler ;
+- tout laisser faire.
+
+Entre ces deux extrêmes, il y a une posture plus fine : faire penser, faire essayer, faire relire, puis recadrer si nécessaire.
+
+Dans les situations que tu observes, les managers cherchent-ils réellement à faire grandir les personnes… ou se contentent-ils de parler d’autonomie sans créer les conditions pour qu’elle apparaisse ?
