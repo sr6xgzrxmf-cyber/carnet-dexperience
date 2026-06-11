@@ -1,7 +1,7 @@
 ---
 title: "La création de votre propre université interne : une formule savoureuse pour la formation en entreprise"
 date: "2023-06-15"
-excerpt: "Pourquoi et comment créer un site de formation interne structuré, engageant et efficace pour développer les compétences de vos équipes."
+excerpt: "Une université interne utile ne consiste pas à stocker du savoir dans un coin du réseau. Elle sert à rendre une pratique plus lisible, plus transmissible et plus tenable dans le temps."
 cover: "/images/articles/2023-06-15-la-creation-de-votre-propre-universite-interne-une-formule-savoureuse-pour-la-formation-en-entreprise.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -13,42 +13,103 @@ series:
   order: 11
 ---
 
-Chers collègues, entrepreneurs et passionnés de l’apprentissage continu,
+### « On a déjà tout quelque part. »
 
-Avez-vous déjà songé à créer votre propre université interne ? Non, je ne vous propose pas de vous lancer dans la construction de bâtiments sur un campus gigantesque avec des fontaines en marbre et des statues de grands penseurs. Je parle plutôt de la conception d’un site internet de formation dédié à votre entreprise. Une idée qui peut sembler complexe, mais qui, en réalité, est plus digeste qu’un croissant chaud un dimanche matin.
+La phrase revient souvent quand une organisation parle de transmettre ses savoirs. Les documents existent. Les procédures aussi. Les équipes savent globalement où chercher. Et pourtant, quand une nouvelle personne arrive, quand une pratique doit être partagée, ou quand un geste métier doit monter en qualité, tout redevient plus artisanal qu’on ne le croyait.
 
-Avant de nous aventurer dans le royaume du « comment », permettez-moi de faire une distinction importante. Un site de formation interne n’est pas un wiki. Certes, les deux peuvent stocker une mine d’informations, mais ils ne sont pas interchangeables.
+Le problème n’est pas toujours le manque de contenu. Le problème, c’est l’absence de parcours.
 
-Pensez à un wiki comme un immense buffet où tous les plats sont mélangés. Vous pouvez prendre ce que vous voulez, mais il n’y a pas de menu, pas de progression logique. C’est un outil formidable pour chercher des informations spécifiques, mais il ne fournit pas de parcours d’apprentissage structuré.
+Une université interne devient utile à partir du moment où elle ne se contente plus d’archiver. Elle commence à organiser, hiérarchiser et transmettre.
 
-Un site de formation, c’est plutôt comme un restaurant gastronomique où chaque plat est soigneusement choisi et présenté dans un ordre précis pour créer une expérience culinaire inoubliable. Il offre des parcours d’apprentissage structurés, des objectifs de formation clairs et des évaluations pour mesurer les progrès.
+## Un wiki n’est pas une université interne
 
-Maintenant que nous avons mis les choses au clair, comment créer ce restaurant de formation en ligne délectable ? Voici quelques ingrédients clés :
+Beaucoup d’entreprises confondent encore trois choses :
 
-## 1. Identifier les besoins de formation
+- un espace documentaire ;
+- une base de connaissances ;
+- un dispositif de formation.
 
-Comme tout bon chef, vous devez connaître les goûts de vos convives. Quelles sont les compétences et les connaissances nécessaires dans votre entreprise ? Quels sont les domaines où votre équipe a besoin de se renforcer ?
+Les trois ont leur utilité. Mais ils ne répondent pas au même besoin.
 
-## 2. Créer du contenu engageant
+Une base documentaire aide à retrouver une information. Une université interne aide quelqu’un à progresser dans une pratique. Elle ne répond donc pas seulement à la question : “où est la ressource ?” Elle répond à une autre question, plus exigeante : “dans quel ordre faut-il comprendre, tester et relier les choses pour devenir plus juste dans le travail ?”
 
-Le contenu est le plat principal de votre site de formation. Utilisez des formats variés — vidéos, quiz, infographies, simulations — pour rendre l’apprentissage interactif et amusant.
+Cette différence change tout.
 
-## 3. Structurer le parcours d’apprentissage
+## Le vrai sujet : rendre un métier transmissible
 
-Organisez le contenu de manière logique et progressive. Créez des modules et des cours qui mènent les apprenants à travers un parcours bien défini, comme un menu dégustation soigneusement conçu.
+Quand une entreprise veut créer une université interne, elle pense parfois qu’elle veut “former davantage”. En réalité, elle veut souvent résoudre autre chose :
 
-## 4. Suivi et évaluation
+- des savoir-faire qui restent implicites ;
+- des pratiques qui dépendent trop des personnes ;
+- des écarts de niveau trop importants ;
+- une intégration trop lente ;
+- une qualité qui varie selon les équipes.
 
-Proposez des moyens d’évaluer les acquis et de suivre les progrès. C’est comme demander aux clients s’ils ont apprécié le repas et ce qu’ils pensent de chaque plat.
+Autrement dit, l’université interne n’est pas d’abord un projet de contenu. C’est un projet de lisibilité du travail.
 
-## 5. Rendre le site facile à utiliser
+Tant qu’on ne formule pas cela clairement, on construit facilement un bel espace rempli de ressources… que presque personne n’utilise vraiment pour progresser.
 
-Votre site doit être aussi facile à naviguer qu’un menu de restaurant bien conçu. Un design intuitif et une navigation simple encourageront les utilisateurs à explorer et à apprendre.
+## Commencer par les situations, pas par les modules
 
-Créer un site de formation interne peut sembler être une tâche ardue, mais c’est une recette qui vaut la peine d’être essayée. C’est une manière d’investir dans le développement de vos équipes, d’améliorer la performance de l’entreprise et de créer une culture d’apprentissage et d’amélioration continue.
+L’erreur classique consiste à imaginer tout de suite des rubriques, des chapitres, des formats, des vidéos, des quiz. C’est séduisant, mais prématuré.
 
-Une université interne bien conçue peut être un moyen précieux de partager les connaissances et les meilleures pratiques, de maintenir les compétences à jour et de préparer vos employés à relever les défis futurs. Et bien que cela puisse nécessiter un investissement initial en temps et en ressources, les bénéfices à long terme pour votre équipe et votre entreprise sont inestimables.
+Le bon point de départ est plus terre à terre :
 
-Pour finir sur une note amusante, envisagez votre entreprise comme une brigade dans une cuisine étoilée. Chaque membre a un rôle spécifique, mais tous ont besoin de comprendre les techniques culinaires, les standards de qualité et la vision du chef pour réussir à créer une expérience exceptionnelle pour les clients. C’est exactement ce que peut offrir une université interne : une formation cohérente et de qualité pour que chaque membre de l’équipe puisse exceller dans son rôle, tout en comprenant la vision globale de l’entreprise.
+- quelles sont les situations clés du métier ?
+- quels gestes ou raisonnements doivent être sécurisés en priorité ?
+- où se produisent les erreurs les plus coûteuses ?
+- qu’est-ce qu’un nouvel arrivant doit comprendre vite pour ne pas subir ?
 
-Alors, qu’attendez-vous pour enfiler votre tablier de chef et commencer à concocter votre propre université interne ? Bonne cuisine et bon apprentissage à tous ! N’hésitez pas à partager vos pensées, vos idées et vos expériences dans les commentaires. Ensemble, nous pouvons nous aider à apprendre et à grandir.
+Quand tu pars de ces questions, l’architecture devient plus juste. Le contenu n’est plus organisé par thèmes théoriques, mais par besoins réels d’appropriation.
+
+## Une université interne vaut par sa structure
+
+Un bon dispositif ne dit pas seulement “voici des ressources”. Il guide la lecture et la progression.
+
+Il aide à distinguer :
+
+- ce qu’il faut connaître ;
+- ce qu’il faut comprendre ;
+- ce qu’il faut pratiquer ;
+- ce qu’il faut revoir avec un pair ou un manager.
+
+Cette structure évite deux écueils opposés : l’empilement documentaire d’un côté, la formation trop descendante de l’autre.
+
+Une université interne bien pensée donne assez de cadre pour avancer, mais pas au point d’écraser la réalité des équipes.
+
+## Le contenu le plus précieux est souvent déjà là
+
+Ce qu’une organisation transmet le mieux n’est pas toujours ce qu’elle écrit le plus. Ce sont souvent :
+
+- une manière de traiter un cas délicat ;
+- une séquence de décision ;
+- une reformulation utile face à un client ;
+- un enchaînement d’actions qui évite un problème récurrent.
+
+Ce contenu-là existe déjà dans les équipes. Il est simplement dispersé, oral, inégalement formulé.
+
+Construire une université interne, c’est souvent faire remonter cette intelligence pratique, puis lui donner une forme transmissible.
+
+## Le risque à éviter : fabriquer une vitrine
+
+Certaines universités internes sont très belles et très peu utiles. Elles rassurent ceux qui les ont lancées, mais changent peu le travail quotidien.
+
+On les reconnaît vite :
+
+- beaucoup de contenu général ;
+- peu de lien avec les situations du terrain ;
+- des parcours trop longs ou trop abstraits ;
+- peu de reprises managériales ;
+- aucun critère clair pour savoir si la pratique a vraiment progressé.
+
+Une université interne ne devrait pas être jugée d’abord sur son volume, mais sur sa capacité à faire gagner en clarté, en autonomie et en qualité.
+
+## Ce que le projet change en profondeur
+
+Quand elle est bien conçue, une université interne fait plus que former. Elle aligne un langage, rend visibles les attendus, sécurise l’intégration, et évite qu’une partie du savoir de l’entreprise reste prisonnière des personnes les plus expérimentées.
+
+Elle n’a pas besoin d’être gigantesque pour être utile. Elle a besoin d’être juste, progressive et reliée au réel du travail.
+
+C’est souvent à ça qu’on reconnaît les meilleurs dispositifs : ils ne donnent pas seulement accès à des contenus. Ils rendent un métier plus transmissible.
+
+Dans ton organisation, si tu voulais créer une université interne demain, partirais-tu d’un catalogue de ressources… ou des situations où la transmission casse déjà aujourd’hui ?

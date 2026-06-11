@@ -8,6 +8,7 @@ type Item = { href: string; label: string };
 const items: Item[] = [
   { href: "/admin", label: "Accueil" },
   { href: "/admin/controle", label: "Contrôle éditorial" },
+  { href: "/admin/images", label: "Images" },
   { href: "/admin/series", label: "Séries" },
   { href: "/admin/retrospectives", label: "Rétrospectives" },
   { href: "/admin/calendrier", label: "Calendrier" },

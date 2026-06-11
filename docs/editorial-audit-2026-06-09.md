@@ -13,8 +13,8 @@ Legende courte :
 - Nombre total d articles : 131
 - 2023 : 48
 - 2026 : 83
-- Solide : 51
-- Archive utile / reecriture ambitieuse : 32
+- Solide : 56
+- Archive utile / reecriture ambitieuse : 27
 - Tres solide : 17
 - Bonne base a densifier : 13
 - Solide comme capsule : 10
@@ -26,7 +26,7 @@ Legende courte :
 
 - Le site est aujourd hui tire vers le haut par `atelier-de-posture`, `faire-exister-un-projet`, `construire-carnet-experience` et une partie de `Vendre n est plus convaincre`.
 - Les articles 2023 montrent la duree du travail, mais beaucoup parlent encore en mode generique / SEO / pedagogique. Ils sont utiles comme traces, pas comme vitrine principale.
-- Les quinze articles 2023 reecrits dans cette passe sont maintenant suffisamment alignes pour rester visibles sans fragiliser le niveau global du site.
+- Les vingt articles 2023 reecrits dans cette passe sont maintenant suffisamment alignes pour rester visibles sans fragiliser le niveau global du site.
 - Tes meilleurs textes sont ceux qui partent d une situation precise, d une micro-scene, d une phrase exacte ou d un cout reel.
 - Les articles les plus faibles ne sont pas forcement faux. Ils sont surtout trop abstraits, trop lisses ou trop demonstratifs.
 
@@ -63,11 +63,6 @@ Legende courte :
 
 ## Priorites de reecriture
 
-- 2023-06-15 - La création de votre propre université interne : une formule savoureuse pour la formation en entreprise (Archive utile / reecriture ambitieuse)
-- 2023-06-19 - Quand l’équipe se transforme en brigade : création collaborative d’un site de formation interne (Archive utile / reecriture ambitieuse)
-- 2023-06-19 - Super-pouvoirs de formation : comment garder l’attention comme un super-héros (Archive utile / reecriture ambitieuse)
-- 2023-06-22 - Rendre la formation en entreprise ludique : pourquoi pas la gamification ? (Archive utile / reecriture ambitieuse)
-- 2023-06-26 - Épouser le style de management : l’essence d’une formation efficace (Archive utile / reecriture ambitieuse)
 - 2023-06-29 - Épouser le style de management autoritaire et révéler l’essence d’une formation efficace (Archive utile / reecriture ambitieuse)
 - 2023-07-03 - Immersion dans le management participatif : quand deux têtes valent mieux qu’une (Archive utile / reecriture ambitieuse)
 - 2023-07-05 - L’inclusion : clé de voûte de la formation en entreprise (Archive utile / reecriture ambitieuse)
@@ -181,11 +176,11 @@ Legende courte :
 | 2023-05-18 | L’apprenant adulte, ou l’art de devenir maître de sa formation | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Ouvrir sur la question du participant : « concretement, on repart avec quoi ? ». |
 | 2023-05-19 | L’apprentissage chez l’adulte : un voyage entre tâches, problèmes et éclats de rire | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir d’un exercice qui rate et fait rire la salle, puis montrer ce que cela ouvre. |
 | 2023-05-22 | Concevoir votre première formation : une aventure palpitante | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir d’une demande client trop vague puis montrer le travail de cadrage reel. |
-| 2023-06-15 | La création de votre propre université interne : une formule savoureuse pour la formation en entreprise | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-06-19 | Quand l’équipe se transforme en brigade : création collaborative d’un site de formation interne | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-06-19 | Super-pouvoirs de formation : comment garder l’attention comme un super-héros | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-06-22 | Rendre la formation en entreprise ludique : pourquoi pas la gamification ? | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
-| 2023-06-26 | Épouser le style de management : l’essence d’une formation efficace | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
+| 2023-06-15 | La création de votre propre université interne : une formule savoureuse pour la formation en entreprise | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir d’un moment ou l’entreprise croit “tout avoir quelque part” alors que rien n’est vraiment transmissible. |
+| 2023-06-19 | Quand l’équipe se transforme en brigade : création collaborative d’un site de formation interne | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Ouvrir sur le reflexe de tout confier a une seule personne, puis montrer ce que l’equipe seule sait vraiment. |
+| 2023-06-19 | Super-pouvoirs de formation : comment garder l’attention comme un super-héros | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir du moment precis ou la salle decroche, puis lire les signes faibles. |
+| 2023-06-22 | Rendre la formation en entreprise ludique : pourquoi pas la gamification ? | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir de la phrase : « on n’est pas a l’ecole primaire », puis montrer la vraie fonction du jeu. |
+| 2023-06-26 | Épouser le style de management : l’essence d’une formation efficace | Solide | Article deja utile. Priorite faible : clarifier une image, une phrase d’ouverture ou une chute. | Partir de deux organisations ou la meme formation produit deux effets differents. |
 | 2023-06-29 | Épouser le style de management autoritaire et révéler l’essence d’une formation efficace | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |
 | 2023-07-03 | Immersion dans le management participatif : quand deux têtes valent mieux qu’une | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Chercher 1 moment exact : une phrase, un mail, un geste, un silence, un arbitrage. |
 | 2023-07-05 | L’inclusion : clé de voûte de la formation en entreprise | Archive utile / reecriture ambitieuse | Conserver comme trace 2023. Reecrire plus tard si tu veux les remettre au premier plan. | Ouvrir dans une salle de formation : une phrase dite a voix basse, un exercice qui bloque, un regard, un declic. |

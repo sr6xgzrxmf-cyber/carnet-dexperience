@@ -1,7 +1,7 @@
 ---
 title: "Quand l’équipe se transforme en brigade : création collaborative d’un site de formation interne"
 date: "2023-06-19"
-excerpt: "Pourquoi impliquer toute l’équipe dans la création d’un site de formation interne renforce à la fois la qualité du contenu et la culture d’apprentissage."
+excerpt: "Une université interne devient plus juste quand elle n’est pas conçue par une seule personne, mais nourrie par celles et ceux qui connaissent vraiment le travail à transmettre."
 cover: "/images/articles/2023-06-19-quand-l-equipe-se-transforme-en-brigade-creation-collaborative-d-un-site-de-formation-interne.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -12,54 +12,91 @@ series:
   order: 12
 ---
 
-Salutations, amateurs d’apprentissage collaboratif et de cuisines collectives,
+### Le réflexe le plus tentant : tout faire seul
 
-Avez-vous déjà vu une brigade de cuisine en action ? C’est une véritable symphonie de collaboration, chaque membre apportant son talent unique à la recette. Cette même idée peut être utilisée pour créer un site de formation interne — et je vous promets que c’est moins salissant que de faire une meringue à la main.
+Quand une organisation décide de créer un site ou une université interne de formation, elle confie souvent le sujet à une ou deux personnes. C’est logique : il faut avancer, cadrer, produire, donner une forme au projet. Le problème, c’est que ce modèle atteint vite sa limite.
 
-Dans notre dernier article, nous avons parlé de la création d’un site de formation interne, ou, pour rester dans notre métaphore culinaire, de la transformation de votre entreprise en un restaurant de formation haut de gamme. Aujourd’hui, je veux souligner l’importance de la participation de toute l’équipe dans ce processus.
+Une personne peut très bien structurer un dispositif. Elle ne peut pas, seule, porter toute la richesse du travail réel.
 
-Imaginez que vous êtes un chef étoilé, mais que vous n’avez jamais cuisiné de canard laqué. Vous avez un livre de recettes, mais il est beaucoup plus judicieux de demander à quelqu’un qui a déjà préparé ce plat. En formation, c’est la même chose : il faut impliquer celles et ceux qui maîtrisent réellement les sujets.
+Dès qu’il s’agit de transmettre des gestes, des nuances de posture, des arbitrages métier ou des cas complexes, il faut aller chercher plus large.
 
-Voici comment faire participer toute votre équipe à la confection de ce banquet de connaissances :
+## Le contenu le plus utile est rarement centralisé
 
-## 1. Recueillir les idées
+Dans beaucoup d’équipes, les savoirs les plus précieux circulent encore de manière informelle. Ils se transmettent dans une correction rapide, une phrase glissée entre deux rendez-vous, une relecture, une démonstration, un “fais attention ici”.
 
-Chaque membre de votre équipe a des compétences, des connaissances et des perspectives uniques. Organisez une tempête de cerveaux pour recueillir leurs idées sur les sujets de formation. Ne soyez pas surpris si vous obtenez une liste plus longue qu’un menu de restaurant parisien.
+Le paradoxe, c’est que ce contenu existe déjà, mais il reste peu visible. Il dépend des personnes présentes, du temps disponible, de la qualité du tutorat spontané.
 
-## 2. Déterminer les experts
+Construire un site de formation interne à plusieurs permet justement de capter cette matière avant qu’elle ne se perde ou qu’elle reste réservée à quelques-uns.
 
-Identifiez qui, dans votre équipe, possède une expertise spécifique. Ces personnes peuvent aider à créer du contenu ou à agir comme mentors. C’est comme demander à votre sommelier de choisir le vin.
+## Ce qu’on gagne à impliquer l’équipe
 
-## 3. Collaborer dans la création du contenu
+Faire contribuer les équipes n’a pas seulement un intérêt pratique. Cela change aussi la qualité de ce qui est produit.
 
-Encouragez chacun à contribuer : partager des expériences, créer des vidéos, écrire des guides ou jouer dans des scénarios de formation. C’est comme cuisiner ensemble pour un grand repas de famille.
+On gagne :
 
-## 4. Feedback et améliorations
+- des exemples plus crédibles ;
+- des formulations plus proches du terrain ;
+- des cas d’usage réellement rencontrés ;
+- une meilleure hiérarchisation de ce qui compte ;
+- une appropriation plus forte du dispositif.
 
-Une fois le site en place, encouragez les retours et les suggestions. C’est l’équivalent de goûter le plat avant de le servir pour ajuster l’assaisonnement.
+Autrement dit, le projet cesse d’être “le site de formation imaginé par quelqu’un”. Il devient progressivement un outil de travail partagé.
 
-La création collaborative d’un site de formation interne garantit un contenu plus pertinent et favorise une culture de partage et d’apprentissage. Comme en cuisine, on obtient un meilleur résultat quand on prépare ensemble.
+## Tous les experts ne savent pas transmettre
 
----
+Il faut quand même éviter une autre illusion : demander aux experts suffit rarement à produire du bon contenu.
 
-## Pour aller plus loin : l’importance d’un projet d’équipe autour de la formation
+Quelqu’un peut être excellent dans son métier et très peu outillé pour l’expliquer. Ou bien expliquer trop vite. Ou bien oublier tout ce qui lui semble évident. Ou bien produire un contenu trop dense, trop technique, trop peu progressif.
 
-Un projet d’équipe autour de la formation est bien plus qu’un simple outil de montée en compétences. C’est un puissant levier de cohésion, de reconnaissance et de culture commune.
+C’est pour ça qu’un projet collaboratif a besoin d’un vrai travail d’édition :
 
-### Renforcer la cohésion d’équipe
+- faire préciser ;
+- faire découper ;
+- faire simplifier ;
+- relier une idée à une situation ;
+- transformer une expertise en contenu transmissible.
 
-Travailler ensemble sur un projet de formation crée un sentiment d’appartenance et de camaraderie. On apprend, on échange et on résout des problèmes ensemble, comme lorsqu’on prépare un grand dîner.
+La collaboration n’enlève pas le besoin de cadrage. Elle le rend encore plus important.
 
-### Valoriser chaque membre
+## Le bon rôle du pilote
 
-Chacun apporte ses talents et ses connaissances. En les impliquant, on met en lumière ces compétences et on enrichit la formation d’une diversité de points de vue.
+Dans ce type de projet, le pilote ne devrait pas être la personne qui “sait tout”. Il devrait être celle qui aide à faire sortir les bons savoirs, à les organiser, à leur donner une cohérence.
 
-### Cultiver une culture d’apprentissage continu
+Son travail consiste souvent à tenir quatre fils en même temps :
 
-Un projet collectif montre que l’entreprise valorise le développement et l’apprentissage. Comme un menu qui évolue, les compétences se renouvellent et l’engagement se maintient.
+- ce qui mérite vraiment d’être transmis ;
+- la forme la plus juste pour le transmettre ;
+- l’ordre dans lequel cela devient apprenable ;
+- le niveau d’exigence compatible avec le quotidien des équipes.
 
----
+Ce n’est pas un rôle d’auteur unique. C’est un rôle de composition.
 
-En conclusion, un projet d’équipe autour de la formation est une recette gagnante pour la réussite collective. Alors, enfilez vos tabliers, réunissez votre brigade et commencez à cuisiner votre propre expérience de formation. Et souvenez-vous : une pincée d’humour et beaucoup de plaisir font toujours partie des meilleurs ingrédients.
+## Une contribution n’est utile que si elle reste exploitable
 
-À vos marques, prêts, cuisinez !
+L’autre piège des projets collaboratifs, c’est l’accumulation brute. Quand chacun envoie ses idées, ses documents, ses méthodes, ses notes, on produit vite une masse impressionnante mais difficile à utiliser.
+
+La question n’est donc pas seulement “comment faire participer tout le monde ?”. La vraie question est : comment faire en sorte que cette participation produise quelque chose de plus lisible, et non de plus confus ?
+
+Cela suppose quelques choix simples :
+
+- des formats limités ;
+- un niveau de détail maîtrisé ;
+- des critères communs ;
+- un principe d’édition clair ;
+- des allers-retours réguliers avec le terrain.
+
+## La collaboration crée aussi de la culture
+
+Quand une équipe participe à la construction d’un dispositif de formation, elle ne produit pas seulement du contenu. Elle clarifie aussi ce qu’elle considère comme important, ce qu’elle veut transmettre, ce qu’elle juge acceptable ou non dans la pratique.
+
+Le projet devient alors un travail de culture autant qu’un travail de formation.
+
+Il aide à rendre explicite une partie de l’identité professionnelle collective. Et c’est souvent là sa valeur la plus durable.
+
+## Ce qu’il faut viser
+
+Une bonne université interne n’a pas besoin que tout le monde écrive tout. Elle a besoin que les bonnes personnes contribuent au bon endroit, avec un cadre assez solide pour transformer leurs savoirs en ressources réellement utilisables.
+
+Quand cela fonctionne, le résultat est plus qu’un site. C’est une mémoire de travail rendue partageable.
+
+Dans tes projets de transmission, est-ce que tu demandes surtout aux équipes de valider un dispositif déjà pensé, ou est-ce que tu leur donnes vraiment une place dans ce qui mérite d’être transmis ?

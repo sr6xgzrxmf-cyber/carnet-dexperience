@@ -53,6 +53,11 @@ export default function AdminHomePage() {
           href="/admin/series"
         />
         <Card
+          title="Images"
+          desc="Repère les collisions entre articles et les alias techniques avant nettoyage."
+          href="/admin/images"
+        />
+        <Card
           title="Calendrier"
           desc="Vue de production / planification (ta page existante)."
           href="/admin/calendrier"
