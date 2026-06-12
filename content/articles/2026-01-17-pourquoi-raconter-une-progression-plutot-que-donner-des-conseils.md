@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi raconter une progression plutôt que donner des conseils"
 date: "2026-01-17"
-excerpt: "J’ai longtemps accompagné des trajectoires en interne. Aujourd’hui, je choisis de montrer le travail réel : ce qui se joue, ce qu’on écrit, ce qu’on change, et ce que ça coûte quand on laisse le flou décider à notre place."
+excerpt: "Je ne veux pas livrer des conseils hors sol. Je préfère montrer le travail réel : ce qu’on écrit, ce qu’on ajuste et ce que le flou coûte quand personne ne cadre la situation."
 cover: "/images/articles/2026-01-17-pourquoi-raconter-une-progression-plutot-que-donner-des-conseils.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:

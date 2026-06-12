@@ -1,8 +1,15 @@
 // app/articles/archives/page.tsx
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
 import { seriesColorClass } from "@/lib/series-ui";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
+
+export const metadata: Metadata = {
+  title: "Archives des articles",
+  description:
+    "Tous les articles, du plus récent au plus ancien, pour conserver le temps long du travail et les premières versions.",
+};
 
 type ArticleMeta = {
   slug: string;

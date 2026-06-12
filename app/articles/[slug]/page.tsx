@@ -22,12 +22,21 @@ export async function generateStaticParams() {
   return (all ?? []).map((it) => ({ slug: it.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const item = getArticleBySlug(params.slug, { includeFuture: true });
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }> | { slug: string };
+}): Promise<Metadata> {
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const item = getArticleBySlug(resolvedParams.slug, { includeFuture: true });
   if (!item) return {};
   const published = isPublishedDate(item.meta?.date, new Date());
   return {
-    title: item.meta?.title ?? params.slug,
+    title: item.meta?.title ?? resolvedParams.slug,
+    description:
+      typeof item.meta?.excerpt === "string" && item.meta.excerpt.trim()
+        ? item.meta.excerpt.trim()
+        : undefined,
     robots: published ? { index: true, follow: true } : { index: false, follow: false },
   };
 }

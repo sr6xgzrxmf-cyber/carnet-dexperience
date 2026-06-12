@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import {
   getAllParcours,
   getParcoursBySlug,
@@ -10,6 +11,30 @@ export function generateStaticParams() {
   return getAllParcours()
     .filter((it) => it.meta.type !== "formation")
     .map((it) => ({ slug: it.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }> | { slug: string };
+}): Promise<Metadata> {
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const item = getParcoursBySlug(resolvedParams.slug);
+  if (!item) return {};
+
+  const description = [
+    item.meta.role,
+    item.meta.company,
+    item.meta.location,
+    formatRange(item.meta.start, item.meta.end),
+  ]
+    .filter(Boolean)
+    .join(" — ");
+
+  return {
+    title: item.meta.title ?? resolvedParams.slug,
+    description: description || "Détail d’une expérience du parcours de Laurent Guyonnet.",
+  };
 }
 
 function formatRange(start?: string, end?: string) {

@@ -6,6 +6,8 @@ import SiteHeader from "@/components/SiteHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DevKeyWarningTrace from "@/components/dev/DevKeyWarningTrace";
 
+const siteUrl = "https://www.carnetdexperience.fr";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,9 +19,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Carnet d’expérience",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Carnet d’expérience — Laurent Guyonnet",
+    template: "%s — Carnet d’expérience",
+  },
   description:
-    "Carnet d’expérience — parcours, articles, méthodes et retours de terrain.",
+    "Laurent Guyonnet. Parcours, articles et situations de terrain pour clarifier, transmettre et rendre adoptables des sujets complexes.",
   verification: {
     google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw",
   },
@@ -29,9 +35,6 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
-
-const siteUrl = "https://www.carnetdexperience.fr";
-
 const siteJsonLd = {
   "@context": "https://schema.org",
   "@graph": [

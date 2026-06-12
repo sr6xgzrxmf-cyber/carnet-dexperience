@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { getAllParcours } from "@/lib/parcours";
 
-
-export const metadata = {
-  title: "Parcours",
+export const metadata: Metadata = {
+  title: "Parcours professionnel",
   description:
-    "Timeline chronologique des expériences de Laurent Guyonnet : rôles, contextes et apprentissages.",
+    "Le parcours donne la trajectoire : rôles, contextes et apprentissages. Les articles montrent ensuite la manière de travailler.",
 };
 
 function formatRange(start?: string, end?: string) {
@@ -24,9 +24,10 @@ export default function ParcoursPage() {
       <header className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight">Parcours</h1>
         <p className="text-neutral-700 dark:text-neutral-300">
-          Une timeline chronologique&nbsp;: expériences, rôles, contextes,
-          apprentissages. <br />
-          Clique sur un métier pour découvrir ce que j’ai fait dans cette expérience.
+          Le parcours donne la trajectoire&nbsp;: environnements, rôles, contextes,
+          apprentissages. Les articles montrent ensuite la manière de travailler&nbsp;:
+          clarifier une situation, transmettre un cadre, rendre un sujet complexe
+          praticable sur le terrain.
         </p>
       </header>
 

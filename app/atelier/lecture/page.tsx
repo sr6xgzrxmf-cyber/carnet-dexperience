@@ -12,8 +12,9 @@ import {
 } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Mon accompagnement — lecture continue",
-  description: "Lecture continue des épisodes de la série Atelier de posture.",
+  title: "Accompagnement",
+  description:
+    "Une lecture continue de la série Atelier de posture pour comprendre ma manière d’accompagner : clarifier, cadrer, transmettre.",
 };
 
 // Revalide la page pour intégrer les nouveaux articles en production

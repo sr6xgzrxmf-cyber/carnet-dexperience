@@ -2,9 +2,8 @@
 title: Chercher des partenaires quand on ne sait pas encore exactement ce qu’on vend
 date: "2026-05-06"
 excerpt: >-
-  On pense souvent que le problème, c’est de trouver des partenaires. En
-  réalité, le vrai enjeu est souvent ailleurs : comprendre ce qu’on est en train
-  de leur proposer.
+  Avant de chercher des partenaires, il faut clarifier ce qu’on propose, ce
+  qu’on demande et ce qu’on est réellement en train de faire exister.
 cover: /images/articles/2026-05-06-chercher-des-partenaires-quand-on-ne-sait-pas-encore-exactement-ce-qu-on-vend.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:

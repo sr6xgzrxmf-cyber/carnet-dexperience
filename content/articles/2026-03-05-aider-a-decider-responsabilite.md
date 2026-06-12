@@ -1,7 +1,7 @@
 ---
 title: "Aider à décider est un acte de responsabilité"
 date: "2026-03-05"
-excerpt: "Quand quelqu’un te demande ton regard pour trancher, tu n’apportes pas seulement une idée. Tu engages une part de responsabilité dans la manière dont la décision sera comprise, assumée et vécue."
+excerpt: "Aider à décider, ce n’est pas donner un avis de plus. C’est assumer une part de responsabilité dans le cadre, la clarté et les effets réels de la décision."
 cover: "/images/articles/2026-03-05-aider-a-decider-responsabilite.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:

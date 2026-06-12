@@ -1,8 +1,15 @@
 // app/situations-d-intervention/page.tsx
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { markdownToHtml } from "@/lib/parcours";
 import fs from "fs";
 import path from "path";
+
+export const metadata: Metadata = {
+  title: "Situations d’intervention",
+  description:
+    "Contextes dans lesquels j’interviens pour clarifier une situation, transmettre un cadre et rendre des usages complexes adoptables.",
+};
 
 function stripFrontMatter(md: string) {
   // enlève un bloc YAML en tête: --- ... ---
@@ -31,8 +38,9 @@ export default async function SituationsInterventionPage() {
             Situations d’intervention
           </h1>
           <p className="text-neutral-700 dark:text-neutral-300">
-            Contextes dans lesquels j’interviens pour clarifier, transmettre ou
-            faire adopter des usages complexes.
+            Contextes dans lesquels j’interviens pour clarifier une situation,
+            transmettre un cadre et rendre des usages complexes adoptables sans les
+            simplifier à l’excès.
           </p>
         </header>
 

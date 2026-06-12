@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi je ne me reconnais plus dans un CV"
 date: "2026-01-14"
-excerpt: "Ce texte ouvre une série d’articles consacrés à la conception de ce site — ses choix, ses détours, ses renoncements et ce qu’ils disent d’un parcours professionnel."
+excerpt: "Un CV aligne des postes. Ce site cherche autre chose : rendre visible une trajectoire, des choix et une manière de travailler sans lisser ce que l’expérience a vraiment produit."
 cover: "/images/articles/2026-01-14-pourquoi-je-ne-me-reconnais-plus-dans-un-cv.jpg"
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:

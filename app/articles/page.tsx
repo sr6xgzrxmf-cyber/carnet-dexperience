@@ -13,9 +13,9 @@ import type { Metadata } from "next";
 import ArticlesFilters from "./_components/ArticlesFilters";
 
 export const metadata: Metadata = {
-  title: "Articles",
+  title: "Articles et séries",
   description:
-    "Articles récents, séries et archives de Laurent Guyonnet sur le travail réel, la décision, la transmission et le terrain.",
+    "Textes, séries et archives pour comprendre comment je clarifie une situation, transmets un cadre et rends des sujets complexes adoptables.",
 };
 
 export const revalidate = 300;
@@ -393,10 +393,10 @@ export default async function ArticlesHubPage(props: {
         </p>
         <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
         <p className="mt-3 text-[15px] leading-7 text-neutral-700 dark:text-neutral-300">
-          Le plus utile pour comprendre ce que je fais aujourd&apos;hui se trouve dans les
-          textes récents. Les articles plus anciens restent accessibles parce qu&apos;ils
-          montrent un travail construit dans la durée, que je réécris progressivement sans
-          l&apos;effacer.
+          Ici, j&apos;écris depuis le travail réel : des situations à clarifier, des décisions
+          à rendre lisibles, des cadres à transmettre et des sujets complexes à rendre
+          adoptables. Si tu veux comprendre ma pratique actuelle, commence par les textes
+          repères.
         </p>
       </header>
 

@@ -294,8 +294,9 @@ export default async function HomePage() {
             Voir d’abord le parcours, puis les textes repères
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
-            Le parcours donne la trajectoire. La sélection d’articles montre ensuite la
-            manière de cadrer, de décider et de rendre les choses lisibles aujourd’hui.
+            Le parcours donne la trajectoire. La sélection d’articles montre ensuite
+            comment je clarifie une situation, transmets un cadre et rends un sujet
+            complexe praticable sur le terrain.
           </p>
           <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
             Voir le parcours →
@@ -314,7 +315,8 @@ export default async function HomePage() {
           </h2>
           <p className="mt-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
             Trois entrées différentes pour voir comment je travaille une posture, un
-            process et une relation de partenariat.
+            process et une relation de partenariat, sans changer de promesse ni de
+            posture.
           </p>
           <p className="mt-5 text-sm text-neutral-600 transition group-hover:translate-x-0.5 dark:text-neutral-400">
             Voir la sélection →
@@ -355,7 +357,8 @@ export default async function HomePage() {
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600 dark:text-neutral-400">
               Trois angles différents pour comprendre comment je clarifie une posture,
-              stabilise un process et fais avancer une relation sans la tordre.
+              stabilise un process et rends une relation de travail plus lisible et plus
+              tenable.
             </p>
           </div>
 

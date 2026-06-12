@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Carnet d’expérience — Laurent Guyonnet",
-    template: "%s — Laurent Guyonnet",
-  },
   description:
-    "Laurent Guyonnet. Innovation, pédagogie et déploiement terrain. Carnet d’expérience : parcours, articles et retours de terrain.",
+    "Laurent Guyonnet. Parcours, articles et situations de terrain pour clarifier, transmettre et rendre adoptables des sujets complexes.",
 };
 
 export default function HomeLayout({

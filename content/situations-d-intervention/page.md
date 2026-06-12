@@ -8,7 +8,7 @@ Il arrive un moment où tout semble être en place : la vision, l’intention, l
 Je n’interviens pas pour ajouter une couche ou expliquer davantage. J’interviens quand une équipe voit clairement où elle va, mais n’arrive plus à transformer cette clarté en action durable.
 
 > Mon terrain : le passage entre intention et réalité.  
-> Clarifier. Transmettre. Faire adopter — sans simplifier à l’excès.
+> Clarifier. Transmettre. Rendre adoptables des sujets complexes — sans simplifier à l’excès.
 
 ---
 
@@ -28,4 +28,3 @@ Ce sont rarement des urgences. Mais ce sont souvent des **moments charnières**.
 Je n’apporte pas de recettes. Je crée les conditions pour que ce qui est déjà là puisse enfin **prendre forme**.
 
 > **Si l’une de ces situations résonne pour vous, un échange suffit parfois à clarifier.**  *[Me contacter](/contact)*
-
