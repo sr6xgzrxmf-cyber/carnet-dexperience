@@ -45,22 +45,9 @@ export default function MobileNav({ items }: { items: Item[] }) {
         aria-label="Ouvrir le menu"
         aria-expanded={open}
         onClick={() => setOpen(true)}
-        className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/40 hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+        className="inline-flex h-10 items-center justify-center rounded-full border border-neutral-300 bg-white/40 px-4 text-sm text-neutral-900 hover:bg-white/70 dark:border-neutral-700 dark:bg-neutral-950/40 dark:text-neutral-100 dark:hover:bg-neutral-900/60"
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M4 7h16M4 12h16M4 17h16"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
+        Menu
       </button>
 
       {mounted && open

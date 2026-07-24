@@ -7,9 +7,6 @@ import MobileNav from "@/components/MobileNav";
 export default function SiteHeader() {
   const pathname = usePathname();
 
-  // ⛔️ Pas de header sur la home
-  if (pathname === "/") return null;
-
   const isParcours = pathname === "/parcours" || pathname.startsWith("/parcours/");
   const isArticles = pathname === "/articles" || pathname.startsWith("/articles/");
   const isAccompagnement = pathname === "/atelier" || pathname.startsWith("/atelier/");
@@ -22,25 +19,26 @@ export default function SiteHeader() {
     { href: "/", label: "Accueil", active: false },
     { href: "/parcours", label: "Parcours", active: isParcours },
     { href: "/articles", label: "Articles", active: isArticles },
-    { href: "/atelier", label: "Accompagnement", active: isAccompagnement },
+    { href: "/atelier", label: "Comment je peux aider", active: isAccompagnement },
     { href: "/contact", label: "Contact", active: isContact },
   ];
 
   return (
-    <header className="border-b border-neutral-200/70 dark:border-neutral-800 bg-white/80 dark:bg-neutral-950/70 backdrop-blur sticky top-0 z-40 print:hidden">
-      <div className="site-container pt-4 pb-3">
-        <div className="flex items-center gap-4">
-          {/* gauche : burger (mobile) + nav (desktop) */}
-          <div className="flex items-center gap-3">
-            <div className="md:hidden">
-              <MobileNav items={items} />
-            </div>
+    <header className="sticky top-0 z-40 border-b border-neutral-200/70 bg-[#f5f3ee]/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90 print:hidden">
+      <div className="site-container flex min-h-[72px] items-center gap-6">
+        <Link
+          href="/"
+          className="font-[var(--font-lora)] text-xl font-semibold tracking-[-0.03em] text-neutral-900 dark:text-neutral-100"
+        >
+          Carnet d’expérience
+        </Link>
 
-            <nav className="hidden md:flex items-center gap-x-6 text-sm whitespace-nowrap">
-              <Link href="/" className={linkClass}>
-                Accueil
-              </Link>
-
+        <nav className="ml-auto hidden items-center gap-x-7 whitespace-nowrap text-sm md:flex">
+              {pathname === "/" ? (
+                <span className={activeClass} aria-current="page">Accueil</span>
+              ) : (
+                <Link href="/" className={linkClass}>Accueil</Link>
+              )}
               {isParcours ? (
                 <span className={activeClass} aria-current="page">
                   Parcours
@@ -63,11 +61,11 @@ export default function SiteHeader() {
 
               {isAccompagnement ? (
                 <span className={activeClass} aria-current="page">
-                  Accompagnement
+                  Comment je peux aider
                 </span>
               ) : (
                 <Link href="/atelier" className={linkClass}>
-                  Accompagnement
+                  Comment je peux aider
                 </Link>
               )}
 
@@ -80,18 +78,10 @@ export default function SiteHeader() {
                   Contact
                 </Link>
               )}
-            </nav>
-          </div>
+        </nav>
 
-          {/* mobile : titre à droite */}
-<div className="md:hidden ml-auto text-right text-lg font-semibold whitespace-nowrap text-neutral-900 dark:text-neutral-100">
-  Carnet d’expérience
-</div>
-
-          {/* desktop : titre à droite */}
-          <div className="hidden md:block ml-auto text-lg font-semibold whitespace-nowrap text-neutral-900 dark:text-neutral-100">
-            Carnet d’expérience
-          </div>
+        <div className="ml-auto md:hidden">
+          <MobileNav items={items} />
         </div>
       </div>
     </header>
