@@ -250,6 +250,77 @@
   line-height: 1.2;
 }
 
+.phaseStack {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+}
+
+.phaseBand {
+  border-top: 1px solid rgba(120, 132, 119, 0.24);
+}
+
+.phaseBand:last-child {
+  border-bottom: 1px solid rgba(120, 132, 119, 0.24);
+}
+
+.phaseInner {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 66px 0;
+}
+
+.phaseHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  gap: clamp(42px, 8vw, 100px);
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.phaseIndex {
+  margin: 0 0 12px;
+  color: var(--sage);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.phaseTitle {
+  margin: 0;
+  font-family: var(--font-lora), Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 46px);
+  font-weight: 520;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.phaseCopy {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.phaseSage {
+  background: var(--sage-soft);
+}
+
+.phaseMist {
+  background: #eef0ed;
+}
+
+.phaseWarm {
+  background: #ebe7df;
+}
+
+.phaseBand .timelineCard {
+  border-color: rgba(120, 132, 119, 0.3);
+}
+
 .timeline {
   position: relative;
   margin: 0;
@@ -663,7 +734,8 @@
 
 @media (max-width: 800px) {
   .pageHeaderSplit,
-  .sectionHeader {
+  .sectionHeader,
+  .phaseHeader {
     grid-template-columns: 1fr;
     gap: 24px;
   }
@@ -683,6 +755,11 @@
 
   .timelineLogo {
     display: none;
+  }
+
+  .phaseInner {
+    width: calc(100% - 32px);
+    padding: 54px 0;
   }
 
   .archiveLink {
@@ -760,5 +837,13 @@
 
   .articleImage {
     background: #171a17;
+  }
+
+  .phaseMist {
+    background: #121612;
+  }
+
+  .phaseWarm {
+    background: #181611;
   }
 }
