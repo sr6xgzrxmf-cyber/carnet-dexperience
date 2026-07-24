@@ -4,10 +4,6 @@ import styles from "@/app/editorial-system.module.css";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description: "Informations légales relatives au site Carnet d’expérience.",
-  robots: {
-    index: false,
-    follow: true,
-  },
 };
 
 export default function MentionsLegalesPage() {
@@ -21,17 +17,17 @@ export default function MentionsLegalesPage() {
 
       <div className={styles.prose}>
         <div className={styles.impact}>
-          <strong>Version locale en préparation.</strong>
+          <strong>Nature du site</strong>
           <p>
-            L’adresse professionnelle, le statut juridique et les éventuelles
-            informations d’immatriculation doivent encore être confirmés avant
-            la publication de cette nouvelle version.
+            Carnet d’expérience est, à ce jour, un site personnel et éditorial
+            publié à titre non professionnel. Il ne permet ni achat, ni paiement,
+            ni conclusion automatique d’une prestation en ligne.
           </p>
         </div>
 
         <h2>Éditeur du site</h2>
         <p>
-          Carnet d’expérience est édité par Laurent Guyonnet.
+          Carnet d’expérience est édité à titre personnel par Laurent Guyonnet.
           <br />
           Courriel :{" "}
           <a href="mailto:laurent.guyonnet.pro@gmail.com">
@@ -39,6 +35,11 @@ export default function MentionsLegalesPage() {
           </a>
         </p>
         <p>Directeur de la publication : Laurent Guyonnet.</p>
+        <p>
+          Ces mentions seront actualisées si le site devient le support d’une
+          activité professionnelle immatriculée ou d’une offre contractuelle en
+          ligne.
+        </p>
 
         <h2>Hébergement</h2>
         <p>
