@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import styles from "@/app/editorial-system.module.css";
 
@@ -62,6 +63,7 @@ export default function ContactForm({
         type="text"
         name="_gotcha"
         className="hidden"
+        aria-hidden="true"
         tabIndex={-1}
         autoComplete="off"
       />
@@ -154,8 +156,9 @@ export default function ContactForm({
 
         {/* petite info */}
         <p className={styles.formNote}>
-          Votre message m’est transmis par email via Formspree. Il n’est utilisé
-          que pour vous répondre.
+          Votre message m’est transmis par email via Formspree et n’est utilisé
+          que pour vous répondre.{" "}
+          <Link href="/confidentialite">En savoir plus sur vos données.</Link>
         </p>
       </div>
     </form>

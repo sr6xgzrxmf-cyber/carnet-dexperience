@@ -42,6 +42,11 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid var(--sage);
+  outline-offset: 3px;
+}
+
 /* ==== Markdown tables must be left aligned & readable ==== */
 
 .prose table {

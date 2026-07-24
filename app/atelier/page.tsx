@@ -32,6 +32,29 @@ const deliverables = [
   },
 ];
 
+const formats = [
+  {
+    title: "Échange de cadrage",
+    text: "Poser le contexte, préciser ce qui est attendu et vérifier simplement si je suis la bonne personne pour vous aider.",
+    outcome: "Une prochaine étape claire",
+  },
+  {
+    title: "Diagnostic de situation",
+    text: "Écouter les personnes concernées, lire les supports utiles et distinguer les faits, les frictions et les décisions à prendre.",
+    outcome: "Une lecture partagée de la situation",
+  },
+  {
+    title: "Atelier de clarification",
+    text: "Travailler ensemble sur un rôle, une méthode ou un usage pour lui donner une forme compréhensible et transmissible.",
+    outcome: "Un cadre, une trame ou un support utilisable",
+  },
+  {
+    title: "Accompagnement à l’adoption",
+    text: "Observer ce qui se passe dans le travail réel, ajuster ce qui résiste et consolider progressivement les nouveaux repères.",
+    outcome: "Un usage qui tient sans alourdir le quotidien",
+  },
+];
+
 export default function AtelierPage() {
   return (
     <div className={styles.page}>
@@ -75,6 +98,33 @@ export default function AtelierPage() {
               <p>{situation}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className={`${styles.fullBleed} ${styles.formatSection}`}>
+        <div className={styles.fullBleedInner}>
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className={styles.eyebrow}>Les formats d’intervention</p>
+              <h2>Un cadre proportionné à ce que la situation demande.</h2>
+            </div>
+            <p>
+              Il n’y a pas de dispositif imposé. Le format, le rythme et le
+              nombre de séances sont définis après le premier échange, puis
+              formulés clairement avant de commencer.
+            </p>
+          </div>
+
+          <div className={styles.formatGrid}>
+            {formats.map((format, index) => (
+              <article key={format.title}>
+                <span className={styles.formatNumber}>0{index + 1}</span>
+                <h3>{format.title}</h3>
+                <p>{format.text}</p>
+                <strong>{format.outcome}</strong>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

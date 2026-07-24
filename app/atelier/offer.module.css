@@ -157,6 +157,52 @@
   line-height: 1.45;
 }
 
+.formatSection {
+  background: var(--paper-bright);
+}
+
+.formatGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.formatGrid article {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.formatNumber {
+  color: var(--sage);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 12px;
+}
+
+.formatGrid h3 {
+  margin: 48px 0 12px;
+  font-family: var(--font-lora), Georgia, serif;
+  font-size: 27px;
+  font-weight: 520;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+
+.formatGrid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.formatGrid strong {
+  margin-top: auto;
+  padding-top: 32px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
 .fullBleed {
   position: relative;
   left: 50%;
@@ -290,6 +336,7 @@
     gap: 40px;
   }
 
+  .formatGrid,
   .deliverableGrid {
     grid-template-columns: 1fr;
   }

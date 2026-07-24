@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DevKeyWarningTrace from "@/components/dev/DevKeyWarningTrace";
 import SiteFooter from "@/components/SiteFooter";
@@ -114,6 +115,7 @@ export default function RootLayout({
 
         <SiteFooter />
 
+        <Analytics />
         <SpeedInsights />
 
         {process.env.NODE_ENV !== "production" ? <DevKeyWarningTrace /> : null}

@@ -28,6 +28,14 @@ export default function SiteFooter() {
           <br />
           Tous droits réservés.
         </p>
+
+        <nav
+          aria-label="Informations légales"
+          className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-neutral-500 sm:col-span-3"
+        >
+          <Link href="/mentions-legales">Mentions légales</Link>
+          <Link href="/confidentialite">Confidentialité</Link>
+        </nav>
       </div>
     </footer>
   );

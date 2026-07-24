@@ -1,13 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function GiscusComments() {
-  const ref = useRef<HTMLDivElement>(null);
+  const embedRef = useRef<HTMLDivElement>(null);
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    if (!ref.current) return;
-    if (ref.current.hasChildNodes()) return;
+    if (!enabled || !embedRef.current) return;
+    if (embedRef.current.hasChildNodes()) return;
 
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
@@ -26,8 +27,27 @@ export default function GiscusComments() {
     script.setAttribute("data-theme", "preferred_color_scheme");
     script.setAttribute("data-lang", "fr");
 
-    ref.current.appendChild(script);
-  }, []);
+    embedRef.current.appendChild(script);
+  }, [enabled]);
 
-  return <div ref={ref} className="mt-16" />;
+  return (
+    <section className="mt-16" aria-label="Commentaires">
+      {!enabled ? (
+        <div className="border border-[var(--line)] bg-[var(--paper-bright)] p-6">
+          <p className="m-0 text-sm text-[var(--muted)]">
+            Les commentaires sont hébergés par Giscus et GitHub. Ils ne sont
+            chargés qu’à votre demande.
+          </p>
+          <button
+            type="button"
+            onClick={() => setEnabled(true)}
+            className="mt-4 inline-flex min-h-11 items-center rounded-full border border-[var(--line)] px-5 text-sm font-semibold"
+          >
+            Afficher les commentaires
+          </button>
+        </div>
+      ) : null}
+      <div ref={embedRef} aria-live="polite" />
+    </section>
+  );
 }
