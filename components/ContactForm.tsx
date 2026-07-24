@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import styles from "@/app/editorial.module.css";
 
 type ContactFormProps = {
   action: string; // Formspree endpoint
@@ -36,15 +37,15 @@ export default function ContactForm({
       if (res.ok) {
         form.reset();
         setStatus("success");
-        setMessage("Message envoyé. Merci !");
+        setMessage("Message envoyé. Merci, je vous répondrai rapidement.");
         return;
       }
 
       setStatus("error");
-      setMessage("Impossible d’envoyer le message. Réessaie dans un instant.");
+      setMessage("Impossible d’envoyer le message. Réessayez dans un instant.");
     } catch {
       setStatus("error");
-      setMessage("Erreur réseau. Vérifie ta connexion et réessaie.");
+      setMessage("Erreur réseau. Vérifiez votre connexion et réessayez.");
     }
   }
 
@@ -52,7 +53,7 @@ export default function ContactForm({
     <form
       onSubmit={onSubmit}
       className={[
-        "mt-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white/50 dark:bg-neutral-950/30",
+        styles.form,
         className ?? "",
       ].join(" ")}
     >
@@ -65,23 +66,22 @@ export default function ContactForm({
         autoComplete="off"
       />
 
-      <div className="grid grid-cols-1 gap-4">
-        <div className="grid grid-cols-1 gap-2">
-          <label className="text-sm font-medium" htmlFor="name">
+      <div className={styles.formGrid}>
+        <div className={styles.field}>
+          <label htmlFor="name">
             Nom
           </label>
           <input
             id="name"
             name="name"
             autoComplete="name"
-            className="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-3 text-sm outline-none focus:border-neutral-400 dark:focus:border-neutral-600"
-            placeholder="Ton nom"
+            placeholder="Votre nom"
             required
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-2">
-          <label className="text-sm font-medium" htmlFor="email">
+        <div className={styles.field}>
+          <label htmlFor="email">
             Email
           </label>
           <input
@@ -89,52 +89,49 @@ export default function ContactForm({
             name="email"
             type="email"
             autoComplete="email"
-            className="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-3 text-sm outline-none focus:border-neutral-400 dark:focus:border-neutral-600"
-            placeholder="tonmail@exemple.com"
+            placeholder="votreadresse@exemple.com"
             required
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-2">
-          <label className="text-sm font-medium" htmlFor="subject">
+        <div className={styles.field}>
+          <label htmlFor="subject">
             Sujet
           </label>
           <input
             id="subject"
             name="subject"
-            className="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-3 text-sm outline-none focus:border-neutral-400 dark:focus:border-neutral-600"
-            placeholder="De quoi s’agit-il ?"
+            placeholder="Quelle situation souhaitez-vous clarifier ?"
             required
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-2">
-          <label className="text-sm font-medium" htmlFor="message">
+        <div className={styles.field}>
+          <label htmlFor="message">
             Message
           </label>
           <textarea
             id="message"
             name="message"
             rows={6}
-            className="w-full rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/40 px-4 py-3 text-sm outline-none focus:border-neutral-400 dark:focus:border-neutral-600"
-            placeholder="Écris-moi ici…"
+            placeholder="Le contexte, ce qui résiste et ce que vous aimeriez rendre plus clair…"
             required
           />
         </div>
 
-        <div className="flex flex-wrap items-center gap-3 pt-2">
+        <div className={styles.formActions}>
           <button
             type="submit"
             disabled={status === "sending"}
-            className="rounded-xl bg-neutral-900 dark:bg-neutral-100 px-4 py-2 text-sm font-medium text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200 disabled:opacity-60"
+            className={`${styles.button} ${styles.buttonPrimary}`}
           >
-            {status === "sending" ? "Envoi…" : "Envoyer"}
+            {status === "sending" ? "Envoi…" : "Envoyer le message"}
           </button>
 
           {showEmailButton ? (
             <a
               href="mailto:laurent.guyonnet.pro@gmail.com"
-              className="rounded-xl border border-neutral-300 dark:border-neutral-700 px-4 py-2 text-sm font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900/60"
+              className={`${styles.button} ${styles.buttonSecondary}`}
             >
               Écrire par email
             </a>
@@ -156,9 +153,9 @@ export default function ContactForm({
         </div>
 
         {/* petite info */}
-        <p className="text-xs text-neutral-600 dark:text-neutral-400">
-          En envoyant ce formulaire, tu acceptes que je reçoive ton message par
-          email (via Formspree).
+        <p className={styles.formNote}>
+          Votre message m’est transmis par email via Formspree. Il n’est utilisé
+          que pour vous répondre.
         </p>
       </div>
     </form>

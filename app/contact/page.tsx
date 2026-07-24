@@ -1,30 +1,57 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import styles from "@/app/editorial.module.css";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbddjpnq";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Un échange pour clarifier une situation, une transition ou un besoin d’accompagnement.",
+    "Un premier échange pour clarifier une situation, une transition ou un besoin d’accompagnement.",
 };
+
+const usefulDetails = [
+  "Le contexte en quelques lignes",
+  "Ce qui résiste ou reste flou aujourd’hui",
+  "Ce que vous aimeriez rendre plus clair ou plus praticable",
+];
 
 export default function ContactPage() {
   return (
-    <section className="text-[14px] leading-[1.55]">
-      <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
-        <p className="text-neutral-700 dark:text-neutral-300">
-          Si quelque chose résonne ici, on peut en parler. Une situation à clarifier,
-          un cadre à transmettre, une transition en cours ou un sujet encore flou :
-          un échange suffit parfois à débloquer l’essentiel.
-        </p>
+    <div className={styles.page}>
+      <header className={styles.pageHeader}>
+        <div className={styles.pageHeaderSplit}>
+          <div>
+            <p className={styles.eyebrow}>Un sujet à clarifier ?</p>
+            <h1 className={styles.title}>Parlons de votre situation</h1>
+          </div>
+          <p className={styles.headerNote}>
+            Il n’est pas nécessaire d’avoir déjà formulé une demande parfaite.
+            Décrivez simplement le contexte et le point qui résiste&nbsp;: un premier
+            échange permet souvent de remettre l’essentiel en ordre.
+          </p>
+        </div>
       </header>
 
-      <ContactForm
-        action={FORMSPREE_ENDPOINT}
-        showEmailButton={false}
-      />
-    </section>
+      <section className={styles.section}>
+        <div className={styles.grid2}>
+          <div className={styles.softSurface}>
+            <p className={styles.eyebrow}>Pour commencer</p>
+            <h2 className={styles.sectionTitle}>Quelques repères suffisent</h2>
+            <p className={styles.sectionCopy} style={{ marginTop: 20 }}>
+              Vous pouvez rester bref. Ce premier message sert à comprendre si je
+              suis la bonne personne et à préparer un échange utile.
+            </p>
+            <ul className={styles.timelineHighlights} style={{ marginTop: 28 }}>
+              {usefulDetails.map((detail) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+
+          <ContactForm action={FORMSPREE_ENDPOINT} showEmailButton={false} />
+        </div>
+      </section>
+    </div>
   );
 }

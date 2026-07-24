@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { formatTagLabel } from "@/lib/editorial-labels";
+import styles from "@/app/editorial.module.css";
 
 const SCROLL_KEY = "articles:scrollY";
 
@@ -64,10 +65,10 @@ export default function ArticlesFilters({
             key={tag}
             onClick={() => go(next, showAllTags)}
             className={[
-              "rounded-full border px-3 py-1 text-xs transition",
+              styles.tag,
               active
-                ? "border-neutral-900/15 dark:border-white/15 bg-neutral-900/5 dark:bg-white/10 text-neutral-900 dark:text-neutral-100"
-                : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-950/50",
+                ? "border-neutral-900 bg-neutral-900 text-white"
+                : "hover:border-neutral-500",
             ].join(" ")}
           >
             {formatTagLabel(tag)} <span className="text-neutral-500">({count})</span>

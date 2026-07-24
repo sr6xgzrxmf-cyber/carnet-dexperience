@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import styles from "@/app/editorial.module.css";
 
 type ShareBarProps = {
   title: string;
@@ -70,7 +71,7 @@ export default function ShareBar({ title, className }: ShareBarProps) {
       {mounted && canNativeShare ? (
         <button
           onClick={nativeShare}
-          className="rounded-full border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+          className={`${styles.button} ${styles.buttonSecondary}`}
         >
           Partager
         </button>
@@ -78,7 +79,7 @@ export default function ShareBar({ title, className }: ShareBarProps) {
 
       <button
         onClick={copyLink}
-        className="rounded-full border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+        className={`${styles.button} ${styles.buttonSecondary}`}
       >
         {copied ? "Lien copié ✓" : "Copier le lien"}
       </button>
@@ -87,7 +88,7 @@ export default function ShareBar({ title, className }: ShareBarProps) {
         href={linkedInUrl}
         target="_blank"
         rel="noreferrer"
-        className="rounded-full border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+        className={`${styles.button} ${styles.buttonSecondary}`}
       >
         LinkedIn
       </a>
@@ -96,7 +97,7 @@ export default function ShareBar({ title, className }: ShareBarProps) {
         href={xUrl}
         target="_blank"
         rel="noreferrer"
-        className="rounded-full border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm hover:border-neutral-400 dark:hover:border-neutral-600 transition"
+        className={`${styles.button} ${styles.buttonSecondary}`}
       >
         X
       </a>

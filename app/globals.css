@@ -3,6 +3,14 @@
 :root {
   --background: #f5f3ee;
   --foreground: #171717;
+  --paper: #f5f3ee;
+  --paper-bright: #fbfaf7;
+  --ink: #171817;
+  --muted: #5f625f;
+  --line: #d9d7d0;
+  --navy: #16243a;
+  --sage: #788477;
+  --sage-soft: #e4e8e1;
 }
 
 @theme inline {
@@ -17,6 +25,14 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --paper: #0a0a0a;
+    --paper-bright: #121412;
+    --ink: #ededed;
+    --muted: #a6aaa6;
+    --line: #303430;
+    --navy: #1d2d46;
+    --sage: #a3afa1;
+    --sage-soft: #171d18;
   }
 }
 

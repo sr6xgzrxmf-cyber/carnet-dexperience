@@ -11,6 +11,7 @@ import {
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import type { Metadata } from "next";
 import ArticlesFilters from "./_components/ArticlesFilters";
+import styles from "@/app/editorial.module.css";
 
 export const metadata: Metadata = {
   title: "Articles et séries",
@@ -150,11 +151,11 @@ function Mosaic({ covers }: { covers: string[] }) {
   const count = c.length;
 
   if (!count) {
-    return <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />;
+    return <div className={styles.articleImage} />;
   }
 
   return (
-    <div className="relative h-56 w-full overflow-hidden">
+    <div className={styles.articleImage}>
       <div
         className="grid h-full w-full gap-[2px] bg-black/30"
         style={{ gridTemplateColumns: `repeat(${count}, minmax(0, 1fr))` }}
@@ -201,11 +202,11 @@ function ArticlePreviewCard({
   return (
     <Link
       href={`/articles/${article.slug}`}
-      className="group relative overflow-hidden rounded-2xl bg-white dark:bg-neutral-950/20 ring-1 ring-neutral-200 dark:ring-neutral-800"
+      className={styles.articleCard}
     >
       {coverSrc ? (
         <div
-          className="relative h-56 w-full overflow-hidden rounded-t-2xl"
+          className={styles.articleImage}
           style={{
             transform: "translateZ(0)",
             WebkitBackfaceVisibility: "hidden",
@@ -218,7 +219,7 @@ function ArticlePreviewCard({
             src={coverSrc}
             alt={article.title}
             fill
-            className="absolute inset-0 h-full w-full object-cover opacity-90 transition group-hover:opacity-100"
+            className="absolute inset-0 h-full w-full"
             style={{
               transform: "translateZ(0)",
               WebkitBackfaceVisibility: "hidden",
@@ -227,34 +228,33 @@ function ArticlePreviewCard({
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
             unoptimized
           />
-          <div className="absolute inset-0 rounded-t-2xl bg-transparent" />
         </div>
       ) : (
-        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+        <div className={styles.articleImage} />
       )}
 
-      <div className="p-6">
-        <div className="flex flex-wrap items-center gap-2 text-xs text-neutral-600 dark:text-neutral-400">
+      <div className={styles.articleBody}>
+        <div className="flex flex-wrap items-center gap-2">
           {eyebrow ? (
-            <span className="inline-flex items-center rounded-full border border-neutral-200 px-2 py-0.5 font-medium text-neutral-700 dark:border-neutral-700 dark:text-neutral-300">
+            <span className={styles.cardEyebrow}>
               {eyebrow}
             </span>
           ) : null}
           {futureLabel ? (
-            <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400">
+            <span className={styles.tag}>
               À paraître
             </span>
           ) : article.date ? (
-            <span>{article.date}</span>
+            <span className={styles.meta}>{article.date}</span>
           ) : null}
         </div>
 
-        <h3 className="mt-2 text-base font-semibold text-neutral-900 dark:text-neutral-100">
+        <h3 className={styles.articleTitle}>
           {article.title}
         </h3>
 
         {article.excerpt ? (
-          <p className="mt-2 text-sm italic text-neutral-700 dark:text-neutral-300 line-clamp-3">
+          <p className={`${styles.articleExcerpt} line-clamp-3`}>
             {article.excerpt}
           </p>
         ) : null}
@@ -386,84 +386,73 @@ export default async function ArticlesHubPage(props: {
   const tagsToShow = showAllTags ? sortedTags : sortedTags.slice(0, 12);
 
   return (
-    <section className="space-y-14">
-      <header className="max-w-3xl">
-        <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 dark:text-neutral-400">
-          Articles, séries et archives
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight">Articles</h1>
-        <p className="mt-3 text-[15px] leading-7 text-neutral-700 dark:text-neutral-300">
-          Ici, j&apos;écris depuis le travail réel : des situations à clarifier, des décisions
-          à rendre lisibles, des cadres à transmettre et des sujets complexes à rendre
-          adoptables. Si tu veux comprendre ma pratique actuelle, commence par les textes
-          repères.
-        </p>
+    <div className={styles.page}>
+      <header className={styles.pageHeader}>
+        <div className={styles.pageHeaderSplit}>
+          <div>
+            <p className={styles.eyebrow}>Articles · séries · archives</p>
+            <h1 className={styles.title}>Le travail, documenté</h1>
+          </div>
+          <p className={styles.headerNote}>
+            Des situations réelles, des décisions rendues lisibles et des cadres
+            conçus pour être transmis. Commencez par les textes repères ou entrez
+            directement par une série.
+          </p>
+        </div>
       </header>
 
-      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section className={styles.section}>
+        <div className={styles.sectionHeader}>
           <div>
-            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Commencer ici
-            </div>
-            <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-              Trois portes d&apos;entrée selon ce que tu veux comprendre
+            <p className={styles.eyebrow}>Commencer ici</p>
+            <h2 className={styles.sectionTitle}>
+              Trois portes d&apos;entrée selon ce que vous cherchez
             </h2>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Si tu arrives ici comme recruteur, partenaire, client potentiel ou simple
-              lecteur curieux, inutile de tout lire dans l&apos;ordre.
-            </p>
           </div>
+          <p className={styles.sectionCopy}>
+            Recruteur, partenaire, client potentiel ou lecteur curieux&nbsp;: il
+            n’est pas nécessaire de tout lire dans l’ordre.
+          </p>
         </div>
 
-        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className={styles.grid3}>
           <Link
             href={latestArticle ? `/articles/${latestArticle.slug}` : "#travail-recent"}
-            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+            className={styles.card}
           >
-            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Le travail récent
-            </div>
-            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+            <p className={styles.cardEyebrow}>Le travail récent</p>
+            <h3 className={styles.cardTitle}>Voir la pratique actuelle</h3>
+            <p className={styles.cardCopy}>
               Une sélection courte, volontairement diverse, pour voir comment je travaille
               aujourd&apos;hui sur la posture, le cadrage, la relation et la décision.
             </p>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              À privilégier si tu veux aller droit au plus représentatif, sans dérouler tout
-              l&apos;historique.
-            </p>
+            <span className={styles.cardLink}>Lire les textes repères →</span>
           </Link>
 
           <Link
             href={postureSeries?.start?.slug ? `/articles/${postureSeries.start.slug}` : "#retrospectives"}
-            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+            className={styles.card}
           >
-            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              La logique de fond
-            </div>
-            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+            <p className={styles.cardEyebrow}>La logique de fond</p>
+            <h3 className={styles.cardTitle}>Suivre une méthode</h3>
+            <p className={styles.cardCopy}>
               Les séries permettent de suivre une mécanique dans le temps : une posture, un
               cadre, une progression, une manière de décider.
             </p>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              À lire si tu veux comprendre une méthode, pas seulement un article isolé.
-            </p>
+            <span className={styles.cardLink}>Commencer une série →</span>
           </Link>
 
           <Link
             href="/articles/archives"
-            className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/20 p-4 hover:border-neutral-300 dark:hover:border-neutral-700 transition"
+            className={styles.card}
           >
-            <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              Le temps long
-            </div>
-            <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">
+            <p className={styles.cardEyebrow}>Le temps long</p>
+            <h3 className={styles.cardTitle}>Explorer les archives</h3>
+            <p className={styles.cardCopy}>
               Les archives gardent visibles les textes plus anciens, les premières versions,
               les bifurcations et les changements de ton.
             </p>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Utile si tu veux voir que ce site ne s&apos;est pas construit en quelques mois.
-            </p>
+            <span className={styles.cardLink}>Remonter le fil →</span>
           </Link>
         </div>
       </section>
@@ -471,25 +460,23 @@ export default async function ArticlesHubPage(props: {
       {recentArticles.length > 0 ? (
         <section
           id="travail-recent"
-          className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+          className={styles.section}
         >
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className={styles.sectionHeader}>
             <div>
-              <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                Travail récent
-              </div>
-              <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              <p className={styles.eyebrow}>Travail récent</p>
+              <h2 className={styles.sectionTitle}>
                 Six textes repères pour comprendre ce que je fais aujourd&apos;hui
               </h2>
-              <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-                Pas les six plus récents : six entrées volontairement différentes pour voir
-                la posture, le process, la décision, le collectif, la relation et le travail
-                de clarification.
-              </p>
             </div>
+            <p className={styles.sectionCopy}>
+              Six entrées volontairement différentes pour voir la posture, le
+              processus, la décision, le collectif, la relation et le travail de
+              clarification.
+            </p>
           </div>
 
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className={styles.grid3}>
             {recentArticles.map(({ article, label }) => (
               <ArticlePreviewCard key={article.slug} article={article} eyebrow={label} />
             ))}
@@ -499,29 +486,29 @@ export default async function ArticlesHubPage(props: {
 
       <section
         id="retrospectives"
-        className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+        className={styles.section}
       >
-        <div className="max-w-2xl">
-          <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-            Séries à suivre
+        <div className={styles.sectionHeader}>
+          <div>
+            <p className={styles.eyebrow}>Séries à suivre</p>
+            <h2 className={styles.sectionTitle}>
+              Pour entrer dans une logique de fond, pas seulement dans un article
+            </h2>
           </div>
-          <h2 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
-            Pour entrer dans une logique de fond, pas seulement dans un article
-          </h2>
-          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+          <p className={styles.sectionCopy}>
             Ces séries servent de points d&apos;entrée éditoriaux. Elles permettent de
             comprendre une ligne de travail, une mécanique ou une bifurcation importante.
           </p>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className={styles.grid3}>
           {seriesCards.map((s) => {
             const startHref = s.start?.slug ? `/articles/${s.start.slug}` : null;
 
             return (
               <div
                 key={s.slug}
-                className="group overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/20"
+                className={styles.articleCard}
               >
                 {startHref ? (
                   <Link
@@ -533,7 +520,7 @@ export default async function ArticlesHubPage(props: {
                       {s.covers.length ? (
                         <Mosaic covers={s.covers} />
                       ) : (
-                        <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+                        <div className={styles.articleImage} />
                       )}
                     </div>
                   </Link>
@@ -542,22 +529,22 @@ export default async function ArticlesHubPage(props: {
                     {s.covers.length ? (
                       <Mosaic covers={s.covers} />
                     ) : (
-                      <div className="h-56 w-full bg-neutral-900/10 dark:bg-neutral-900/30" />
+                      <div className={styles.articleImage} />
                     )}
                   </div>
                 )}
 
-                <div className="p-6">
-                  <div className="text-xs uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+                <div className={styles.articleBody}>
+                  <div className={styles.cardEyebrow}>
                     Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
                   </div>
 
-                  <h3 className="mt-2 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                  <h3 className={styles.articleTitle}>
                     {s.title}
                   </h3>
 
                   {(s.teaserBenefit || s.teaserForWhom || s.summary || s.description) ? (
-                    <div className="mt-3 space-y-1 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
+                    <div className={styles.articleExcerpt}>
                       <p>{s.teaserBenefit ?? s.summary ?? s.description}</p>
                       {s.teaserForWhom ? <p>{s.teaserForWhom}</p> : null}
                     </div>
@@ -567,7 +554,7 @@ export default async function ArticlesHubPage(props: {
                     {startHref ? (
                       <Link
                         href={startHref}
-                        className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+                        className={`${styles.button} ${styles.buttonPrimary}`}
                       >
                         Commencer
                       </Link>
@@ -624,15 +611,16 @@ export default async function ArticlesHubPage(props: {
       ====================== */}
       <section
         id="filtres"
-        className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
+        className={`${styles.section} ${styles.softSurface}`}
       >
-        <div className="flex items-end justify-between gap-4">
+        <div className={styles.catalogHeader}>
           <div>
-            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
-              Filtres
+            <p className={styles.eyebrow}>Recherche thématique</p>
+            <h2 className={styles.sectionTitle}>
+              Entrer par un sujet
             </h2>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-              Si tu arrives avec une question précise, tu peux entrer par thème.
+            <p className={styles.sectionCopy} style={{ marginTop: 12 }}>
+              Si vous arrivez avec une question précise, choisissez un ou plusieurs thèmes.
             </p>
           </div>
 
@@ -661,7 +649,7 @@ export default async function ArticlesHubPage(props: {
               <Link
                 scroll={false}
                 href={hrefFor([], showAllTags)}
-                className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-900 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-950/50"
+                className={`${styles.button} ${styles.buttonSecondary}`}
               >
                 Réinitialiser
               </Link>
@@ -675,18 +663,19 @@ export default async function ArticlesHubPage(props: {
       {/* ======================
           RÉSULTATS
       ====================== */}
-      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-        <div className="flex items-end justify-between gap-4">
+      <section className={styles.section}>
+        <div className={styles.catalogHeader}>
           <div>
-            <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+            <p className={styles.eyebrow}>Le catalogue</p>
+            <h2 className={styles.sectionTitle}>
               Tout le catalogue
             </h2>
-            <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            <p className={styles.sectionCopy} style={{ marginTop: 12 }}>
               Du plus récent au plus ancien, avec le temps long conservé volontairement.
             </p>
           </div>
 
-          <div className="text-xs text-neutral-500">
+          <div className={styles.count}>
             {results.length} article{results.length > 1 ? "s" : ""}
           </div>
         </div>
@@ -696,7 +685,7 @@ export default async function ArticlesHubPage(props: {
             Aucun article trouvé.
           </p>
         ) : (
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className={styles.grid3}>
             {results.map((article) => {
               const futureLabel = !isPublishedParis(article.date ?? null, now);
 
@@ -722,11 +711,11 @@ export default async function ArticlesHubPage(props: {
       <section className="flex justify-center pt-4">
         <Link
           href="/articles/archives"
-          className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
+          className={styles.textLink}
         >
           Explorer le temps long →
         </Link>
       </section>
-    </section>
+    </div>
   );
 }

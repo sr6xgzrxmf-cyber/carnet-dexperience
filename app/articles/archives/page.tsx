@@ -1,14 +1,13 @@
-// app/articles/archives/page.tsx
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
-import { seriesColorClass } from "@/lib/series-ui";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
+import styles from "@/app/editorial.module.css";
 
 export const metadata: Metadata = {
   title: "Archives des articles",
   description:
-    "Tous les articles, du plus récent au plus ancien, pour conserver le temps long du travail et les premières versions.",
+    "Tous les articles, du plus récent au plus ancien, pour conserver le temps long du travail et ses premières versions.",
 };
 
 type ArticleMeta = {
@@ -21,8 +20,8 @@ type ArticleMeta = {
 };
 
 function getItemMeta(item: ArticleItem): ArticleMeta {
-  const m = item?.meta ?? {};
-  const rawDate = m?.date;
+  const meta = item?.meta ?? {};
+  const rawDate = meta?.date;
   const date =
     typeof rawDate === "string"
       ? rawDate
@@ -34,8 +33,8 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
             ? String(rawDate)
             : "";
   const rawSeries =
-    m?.series && typeof m.series === "object"
-      ? (m.series as { name?: unknown; slug?: unknown; order?: unknown })
+    meta?.series && typeof meta.series === "object"
+      ? (meta.series as { name?: unknown; slug?: unknown; order?: unknown })
       : undefined;
   const seriesOrder =
     typeof rawSeries?.order === "number"
@@ -54,10 +53,10 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
 
   return {
     slug: item?.slug ?? "",
-    title: m?.title ?? "",
+    title: meta?.title ?? "",
     date,
-    excerpt: m?.excerpt ?? "",
-    source: m?.source ?? "Carnet d'expérience",
+    excerpt: meta?.excerpt ?? "",
+    source: meta?.source ?? "Carnet d’expérience",
     series,
   };
 }
@@ -69,142 +68,104 @@ export default async function ArticlesArchivesPage(props: {
   const selectedSeries = searchParams?.series ?? null;
 
   const raw = await getAllArticles();
-  let items = (raw ?? [])
-    .map(getItemMeta)
-    .filter((a) => a.slug)
-    .sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
-
-  if (selectedSeries) {
-    items = items.filter((a) => a.series?.slug === selectedSeries);
-  }
-
-  // Récupère les séries uniques
-  const allItems = (raw ?? [])
-    .map(getItemMeta)
-    .filter((a) => a.slug);
-
-  // Couleurs depuis le catalogue (source de vérité)
-  const catalog = getAllSeriesCatalog();
-  const colorBySlug = new Map(catalog.map((s) => [s.slug, s.color] as const));
-
-  // Slugs de séries réellement présentes dans les articles
-  const usedSeriesSlugs = new Set(
-    allItems
-      .map((a) => a.series?.slug)
-      .filter((v): v is string => typeof v === "string" && v.length > 0)
+  const allItems = (raw ?? []).map(getItemMeta).filter((article) => article.slug);
+  let items = [...allItems].sort((a, b) =>
+    (b.date ?? "").localeCompare(a.date ?? "")
   );
 
-  // Séries d’archives = catalogue ∩ séries utilisées
-  const uniqueSeries = catalog
-    .filter((s) => usedSeriesSlugs.has(s.slug))
+  if (selectedSeries) {
+    items = items.filter((article) => article.series?.slug === selectedSeries);
+  }
+
+  const usedSeriesSlugs = new Set(
+    allItems
+      .map((article) => article.series?.slug)
+      .filter((value): value is string => typeof value === "string" && value.length > 0)
+  );
+
+  const uniqueSeries = getAllSeriesCatalog()
+    .filter((series) => usedSeriesSlugs.has(series.slug))
     .sort((a, b) => a.title.localeCompare(b.title, "fr"));
 
   return (
-    <section>
-      <header className="mb-10">
-        <div className="flex items-end justify-between gap-4">
+    <div className={styles.page}>
+      <header className={styles.pageHeader}>
+        <Link href="/articles" className={styles.backLink}>
+          <span aria-hidden>←</span>
+          <span>Retour aux articles</span>
+        </Link>
+        <div className={styles.pageHeaderSplit} style={{ marginTop: 34 }}>
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight">Archives</h1>
-            <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-              Tous les articles, du plus récent au plus ancien. Les textes plus anciens
-              restent ici volontairement : ils montrent le temps long du travail, les
-              premières versions et les changements de ligne.
-            </p>
+            <p className={styles.eyebrow}>Le temps long</p>
+            <h1 className={styles.title}>Archives</h1>
           </div>
-          <div className="text-sm text-neutral-600 dark:text-neutral-400 shrink-0">
-            {items.length} article{items.length !== 1 ? "s" : ""}
-          </div>
-        </div>
-        <div className="mt-4">
-          <Link
-            href="/articles"
-            className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-          >
-            ← Revenir à la page Articles
-          </Link>
+          <p className={styles.headerNote}>
+            Les textes anciens restent visibles volontairement. Ils montrent les
+            premières versions, les bifurcations et l’évolution d’une ligne de
+            travail qui ne s’est pas construite en quelques mois.
+          </p>
         </div>
       </header>
 
-      {/* Filtres par série */}
-      {uniqueSeries.length > 0 && (
-        <div className="mb-6 flex flex-wrap gap-2">
-          <Link
-            href="/articles/archives"
-            className={`rounded-full px-3 py-1 text-xs font-medium transition ${
-              selectedSeries === null
-                ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-                : "border border-neutral-300 text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-900/30"
-            }`}
-          >
-            Toutes les séries
-          </Link>
-          {uniqueSeries.map((s) => (
-            <Link
-              key={s.slug}
-              href={`/articles/archives?series=${s.slug}`}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition flex items-center gap-1.5 ${
-                selectedSeries === s.slug
-                  ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-                  : "border border-neutral-300 text-neutral-600 hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-900/30"
-              }`}
-            >
-              {s.slug && (
-                <span
-                  className={`h-2 w-2 rounded-full ${seriesColorClass(s.color ?? "slate")}`}
-                />
-              )}
-              {s.title}
-            </Link>
-          ))}
+      <section className={styles.section}>
+        <div className={styles.catalogHeader}>
+          <div>
+            <p className={styles.eyebrow}>Filtrer par série</p>
+            <div className={styles.tags}>
+              <Link
+                href="/articles/archives"
+                className={`${styles.tag} ${
+                  selectedSeries === null ? "border-neutral-900 bg-neutral-900 text-white" : ""
+                }`}
+              >
+                Toutes les séries
+              </Link>
+              {uniqueSeries.map((series) => (
+                <Link
+                  key={series.slug}
+                  href={`/articles/archives?series=${series.slug}`}
+                  className={`${styles.tag} ${
+                    selectedSeries === series.slug
+                      ? "border-neutral-900 bg-neutral-900 text-white"
+                      : ""
+                  }`}
+                >
+                  {series.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className={styles.count}>
+            {items.length} article{items.length !== 1 ? "s" : ""}
+          </div>
         </div>
-      )}
 
-      <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8">
-        <ul className="space-y-5">
-          {items.map((a) => {
-            const published = isPublishedDate(a.date, new Date());
+        <ul className={styles.archiveList}>
+          {items.map((article) => {
+            const published = isPublishedDate(article.date, new Date());
             return (
-              <li key={a.slug} className="text-sm">
-                <Link href={`/articles/${a.slug}`} className="block hover:underline">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex items-start gap-3 min-w-0">
-                      {a.series?.slug && (
-                        <div
-                          className={`h-2 w-2 rounded-full shrink-0 mt-2 ${seriesColorClass(
-                            colorBySlug.get(a.series.slug) ?? "slate"
-                          )}`}
-                        />
-                      )}
-                      <div className="text-neutral-900 dark:text-neutral-100 min-w-0">
-                        <span className="text-neutral-500">{a.date}</span>
-                        <span className="text-neutral-500"> – </span>
-                        <span className="font-medium">{a.title}</span>
-                        {!published && (
-                          <span className="ml-2 inline-block rounded-full bg-amber-100/50 px-2 py-0.5 text-xs font-medium text-amber-900 dark:bg-amber-900/30 dark:text-amber-200">
-                            À paraître
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    {a.series?.name && (
-                      <div className="text-neutral-600 dark:text-neutral-400 shrink-0 text-right text-xs">
-                        {a.series.name}
-                        {a.series.order !== undefined && ` #${a.series.order + 1}`}
-                      </div>
-                    )}
-                  </div>
-
-                  {a.excerpt ? (
-                    <div className="mt-1 italic text-neutral-600 dark:text-neutral-400">
-                      {a.excerpt}
-                    </div>
-                  ) : null}
+              <li key={article.slug} className={styles.archiveItem}>
+                <Link
+                  href={`/articles/${article.slug}`}
+                  className={styles.archiveLink}
+                >
+                  <span className={styles.archiveDate}>{article.date}</span>
+                  <span className={styles.archiveTitle}>
+                    {article.title}
+                    {!published ? <small className={styles.tag}>À paraître</small> : null}
+                  </span>
+                  <span className={styles.archiveSeries}>
+                    {article.series?.name ?? ""}
+                    {article.series?.order !== undefined
+                      ? ` · ${article.series.order + 1}`
+                      : ""}
+                  </span>
                 </Link>
               </li>
             );
           })}
         </ul>
       </section>
-    </section>
+    </div>
   );
 }

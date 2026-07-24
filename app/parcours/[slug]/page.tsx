@@ -6,11 +6,12 @@ import {
   getParcoursBySlug,
   markdownToHtml,
 } from "@/lib/parcours";
+import styles from "@/app/editorial.module.css";
 
 export function generateStaticParams() {
   return getAllParcours()
-    .filter((it) => it.meta.type !== "formation")
-    .map((it) => ({ slug: it.slug }));
+    .filter((item) => item.meta.type !== "formation")
+    .map((item) => ({ slug: item.slug }));
 }
 
 export async function generateMetadata({
@@ -50,109 +51,54 @@ export default async function ParcoursDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
   const item = getParcoursBySlug(slug);
   if (!item) return notFound();
 
   const contentHtml = await markdownToHtml(item.content);
 
   return (
-    <section>
-      <div className="mx-auto max-w-3xl">
-<header className="space-y-3">
-  <Link
-    href="/parcours"
-    className="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
-  >
-    <span aria-hidden className="text-base leading-none">←</span>
-    <span>Retour </span>
-  </Link>
+    <article className={`${styles.page} ${styles.reading}`}>
+      <header className={styles.readingHeader}>
+        <Link href="/parcours" className={styles.backLink}>
+          <span aria-hidden>←</span>
+          <span>Retour au parcours</span>
+        </Link>
 
-  <h1 className="text-3xl font-semibold tracking-tight">
-    {item.meta.title}
-  </h1>
+        <p className={styles.eyebrow} style={{ marginTop: 34 }}>
+          {formatRange(item.meta.start, item.meta.end)}
+        </p>
+        <h1 className={styles.titleCompact}>{item.meta.title}</h1>
 
-          <div className="text-sm text-neutral-700 dark:text-neutral-300">
-            <div>
-              {formatRange(item.meta.start, item.meta.end)}
-              {item.meta.company ? ` • ${item.meta.company}` : ""}
-              {item.meta.location ? ` — ${item.meta.location}` : ""}
-            </div>
+        <div className={styles.readingMeta}>
+          {item.meta.company ? <strong>{item.meta.company}</strong> : null}
+          {item.meta.location ? ` — ${item.meta.location}` : ""}
+          {item.meta.role ? <p>{item.meta.role}</p> : null}
+        </div>
 
-            {item.meta.role ? (
-              <div className="mt-1 text-neutral-600 dark:text-neutral-400">
-                {item.meta.role}
-              </div>
-            ) : null}
+        {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
+          <div className={styles.tags}>
+            {item.meta.tags.map((tag) => (
+              <span key={tag} className={styles.tag}>
+                {tag}
+              </span>
+            ))}
           </div>
+        ) : null}
+      </header>
 
-          {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
-            <div className="flex flex-wrap gap-2 pt-2">
-              {item.meta.tags.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-xs text-neutral-700 dark:text-neutral-300 bg-white/50 dark:bg-neutral-950/30"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          ) : null}
-        </header>
+      <div
+        className={styles.prose}
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
 
-        {/* Contenu markdown → HTML */}
-        <article
-          className="
-            mt-10 max-w-none
-            text-neutral-900 dark:text-neutral-100
-
-            [&_p]:m-0
-            [&_p]:leading-7
-            [&_p+_p]:mt-3
-
-            [&_h2+_p]:mt-4
-
-            [&_h2]:mt-10
-            [&_h2]:mb-2
-            [&_h2]:text-xl
-            [&_h2]:font-semibold
-            [&_h2]:tracking-tight
-            [&_h2]:border-b
-            [&_h2]:border-neutral-200
-            dark:[&_h2]:border-neutral-800
-            [&_h2]:pb-2
-
-            [&_h3]:mt-8
-            [&_h3]:mb-2
-            [&_h3]:text-lg
-            [&_h3]:font-semibold
-            [&_h3]:tracking-tight
-
-            [&_ul]:my-2
-            [&_ul]:list-disc
-            [&_ul]:pl-5
-
-            [&_li]:my-0
-            [&_li]:leading-6
-
-            [&_li>p]:m-0
-            [&_li>p]:leading-6
-
-            [&_p+_ul]:mt-2
-            [&_ul+_p]:mt-2
-
-
-            [&_ol]:my-2
-            [&_ol]:pl-5
-            [&_ol>li]:my-0
-            [&_ol>li>p]:m-0
-
-
-            [&_hr]:hidden
-          "
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
-        />
-      </div>
-    </section>
+      <footer className={styles.readingNav}>
+        <Link href="/parcours" className={styles.textLink}>
+          ← Revenir à la trajectoire
+        </Link>
+        <Link href="/contact" className={`${styles.button} ${styles.buttonPrimary}`}>
+          Échanger sur un besoin <span aria-hidden>→</span>
+        </Link>
+      </footer>
+    </article>
   );
 }

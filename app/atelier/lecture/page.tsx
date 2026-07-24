@@ -1,4 +1,3 @@
-// app/atelier/lecture/page.tsx
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -10,21 +9,21 @@ import {
   type ArticleItem,
   type ArticleMeta,
 } from "@/lib/articles";
+import styles from "@/app/editorial.module.css";
 
 export const metadata: Metadata = {
-  title: "Accompagnement",
+  title: "Atelier de posture — lecture continue",
   description:
-    "Une lecture continue de la série Atelier de posture pour comprendre ma manière d’accompagner : clarifier, cadrer, transmettre.",
+    "La série Atelier de posture en lecture continue : clarifier, cadrer et transmettre dans les situations de travail.",
 };
 
-// Revalide la page pour intégrer les nouveaux articles en production
 export const revalidate = 300;
 
 function normalizeCoverSrc(cover: unknown): string | null {
   if (typeof cover !== "string" || !cover.trim()) return null;
-  const s = cover.trim();
-  if (/^https?:\/\//i.test(s)) return s;
-  return s.startsWith("/") ? s : `/${s}`;
+  const source = cover.trim();
+  if (/^https?:\/\//i.test(source)) return source;
+  return source.startsWith("/") ? source : `/${source}`;
 }
 
 function anchorFromSlug(slug: string) {
@@ -36,329 +35,192 @@ function getSeries(meta: ArticleMeta | undefined) {
 }
 
 function getSeriesSlug(meta: ArticleMeta | undefined): string | null {
-  const s = getSeries(meta);
-  return typeof s?.slug === "string" ? s.slug : null;
+  const series = getSeries(meta);
+  return typeof series?.slug === "string" ? series.slug : null;
 }
 
 function getSeriesOrder(meta: ArticleMeta | undefined): number | string | null {
   return getSeries(meta)?.order ?? null;
 }
 
-/* ---------- Interludes (order décimal) ---------- */
-function toNumber(v: unknown): number {
-  if (typeof v === "number") return v;
-  if (typeof v === "string") return Number(v);
-  return NaN;
+function toNumber(value: unknown): number {
+  if (typeof value === "number") return value;
+  if (typeof value === "string") return Number(value);
+  return Number.NaN;
 }
 
 function isInterlude(order: unknown) {
-  const n = toNumber(order);
-  return Number.isFinite(n) && !Number.isInteger(n);
+  const value = toNumber(order);
+  return Number.isFinite(value) && !Number.isInteger(value);
 }
 
 function orderLabel(order: unknown) {
-  const n = toNumber(order);
-  if (!Number.isFinite(n)) return "";
-  return Number.isInteger(n) ? String(n).padStart(2, "0") : "↳";
+  const value = toNumber(order);
+  if (!Number.isFinite(value)) return "";
+  return Number.isInteger(value) ? String(value).padStart(2, "0") : "↳";
 }
 
 function orderValue(order: unknown) {
-  const n = toNumber(order);
-  return Number.isFinite(n) ? n : 9999;
+  const value = toNumber(order);
+  return Number.isFinite(value) ? value : 9999;
 }
 
-/* ---------- J-x (UTC, robuste) ---------- */
-function startOfDayUTC(d: Date) {
-  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+function startOfDayUTC(date: Date) {
+  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
 }
 
 function daysUntil(date: unknown): number | null {
-  const ts = toTimestamp(date);
-  if (!ts) return null;
-
-  const todayUTC = startOfDayUTC(new Date());
-  const targetUTC = startOfDayUTC(new Date(ts));
-
-  return Math.round((targetUTC - todayUTC) / (24 * 60 * 60 * 1000));
+  const timestamp = toTimestamp(date);
+  if (!timestamp) return null;
+  return Math.round(
+    (startOfDayUTC(new Date(timestamp)) - startOfDayUTC(new Date())) /
+      (24 * 60 * 60 * 1000)
+  );
 }
 
 export default async function AtelierLecturePage() {
-  // En dev: on inclut les futurs pour prévisualiser "À paraître"
-  // En prod: on n'inclut pas les futurs
   const includeFuture = process.env.NODE_ENV !== "production";
-
   const raw = await getAllArticles({ includeFuture });
-
   const series = (raw ?? [])
-    .filter((it) => getSeriesSlug(it?.meta) === "atelier-de-posture")
+    .filter((item) => getSeriesSlug(item?.meta) === "atelier-de-posture")
     .sort(
       (a, b) =>
         orderValue(getSeriesOrder(a?.meta)) - orderValue(getSeriesOrder(b?.meta))
     );
 
   const rendered = await Promise.all(
-    series.map(async (it: ArticleItem) => ({
-      slug: it.slug,
-      meta: it.meta,
-      anchor: anchorFromSlug(it.slug),
-      coverSrc: normalizeCoverSrc(it.meta?.cover),
-      html: await markdownToHtml(it.content ?? ""),
+    series.map(async (item: ArticleItem) => ({
+      slug: item.slug,
+      meta: item.meta,
+      anchor: anchorFromSlug(item.slug),
+      coverSrc: normalizeCoverSrc(item.meta?.cover),
+      html: await markdownToHtml(item.content ?? ""),
     }))
   );
 
   return (
-    <section>
-      <div className="mx-auto max-w-3xl" id="top">
-        {/* Header page */}
-        <header className="mb-10 space-y-4">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 transition"
-            aria-label="Retour à l’accueil"
-          >
-            <span aria-hidden className="text-base leading-none">
-              ←
-            </span>
-            <span>Retour</span>
-          </Link>
-
-          <h1 className="text-3xl font-semibold tracking-tight">
-            Mon accompagnement
-          </h1>
-
-          <p className="text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-            Lecture continue des épisodes de la série <strong>Atelier de posture</strong>.
-          </p>
-
-          {/* Sommaire */}
-          <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-5">
-            <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-              Sommaire
-            </div>
-
-            <ul className="mt-3 space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
-              {rendered.map((it) => {
-                const inter = isInterlude(getSeriesOrder(it.meta));
-                const isFuture = includeFuture && !isPublishedDate(it.meta?.date);
-
-                const baseLink =
-                  "underline underline-offset-4 decoration-neutral-300 dark:decoration-neutral-700 hover:decoration-neutral-500 dark:hover:decoration-neutral-500";
-                const futureLink = "decoration-red-300 dark:decoration-red-500/50";
-
-                return (
-                  <li
-                    key={it.slug}
-                    className={[
-                      inter ? "pl-5 opacity-90" : "",
-                      isFuture ? "text-red-700 dark:text-red-400" : "",
-                    ].join(" ")}
-                  >
-                    <a
-                      className={[baseLink, isFuture ? futureLink : ""].join(" ")}
-                      href={`#${it.anchor}`}
-                    >
-                      {orderLabel(getSeriesOrder(it.meta))}{" "}
-                      <span className="text-neutral-500 dark:text-neutral-500">
-                        —
-                      </span>{" "}
-                      {it.meta?.title ?? it.slug}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
+    <div className={styles.page} id="top">
+      <header className={styles.pageHeader}>
+        <Link href="/atelier" className={styles.backLink}>
+          <span aria-hidden>←</span>
+          <span>Retour à l’accompagnement</span>
+        </Link>
+        <div className={styles.pageHeaderSplit} style={{ marginTop: 34 }}>
+          <div>
+            <p className={styles.eyebrow}>Série · lecture continue</p>
+            <h1 className={styles.title}>Atelier de posture</h1>
           </div>
-        </header>
+          <p className={styles.headerNote}>
+            Une série à lire comme un cheminement&nbsp;: chaque épisode part d’une
+            situation de travail et précise une manière de clarifier, cadrer ou
+            transmettre sans prendre la place de l’autre.
+          </p>
+        </div>
+      </header>
 
-        {/* Articles enchaînés */}
-        <div className="space-y-14">
-          {rendered.map((it) => {
-            const inter = isInterlude(getSeriesOrder(it.meta));
-            const isFuture = includeFuture && !isPublishedDate(it.meta?.date);
+      <section className={styles.section}>
+        <div className={styles.softSurface}>
+          <p className={styles.eyebrow}>Sommaire</p>
+          <ol className={styles.archiveList}>
+            {rendered.map((item) => {
+              const future = includeFuture && !isPublishedDate(item.meta?.date);
+              return (
+                <li key={item.slug} className={styles.archiveItem}>
+                  <a href={`#${item.anchor}`} className={styles.archiveLink}>
+                    <span className={styles.archiveDate}>
+                      {orderLabel(getSeriesOrder(item.meta))}
+                    </span>
+                    <span className={styles.archiveTitle}>
+                      {item.meta?.title ?? item.slug}
+                    </span>
+                    <span className={styles.archiveSeries}>
+                      {future ? "À paraître" : String(item.meta?.date ?? "")}
+                    </span>
+                  </a>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
+      </section>
 
-            return (
-              <article
-                key={it.slug}
-                id={it.anchor}
-                className={[
-                  "scroll-mt-24",
-                  inter
-                    ? "rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6 sm:p-8"
-                    : "",
-                ].join(" ")}
-              >
-                {/* Header article */}
-                <header className="space-y-4">
-                  <div className="text-sm text-neutral-700 dark:text-neutral-300">
-                    {inter ? (
-                      <div className="text-[11px] uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                        Interlude
-                      </div>
-                    ) : null}
-                    <div className="flex flex-wrap gap-x-3 gap-y-1 items-center">
-                      {/* Localhost: badge À paraître + J-x. Sinon: date normale */}
-                      {isFuture ? (
-                        <>
-                          <span className="inline-flex items-center rounded-full border border-red-200 dark:border-red-400/40 bg-red-50 dark:bg-red-500/10 px-2 py-0.5 font-medium text-red-700 dark:text-red-400 text-[11px]">
-                            À paraître
-                          </span>
-                          {(() => {
-                            const d = daysUntil(it.meta?.date);
-                            return typeof d === "number" && d > 0 ? (
-                              <span className="text-neutral-400 dark:text-neutral-500 text-[12px]">
-                                J-{d}
-                              </span>
-                            ) : null;
-                          })()}
-                        </>
-                      ) : it.meta?.date ? (
-                        <span>{String(it.meta.date)}</span>
-                      ) : null}
+      <div className={styles.reading}>
+        {rendered.map((item) => {
+          const interlude = isInterlude(getSeriesOrder(item.meta));
+          const future = includeFuture && !isPublishedDate(item.meta?.date);
+          const remainingDays = future ? daysUntil(item.meta?.date) : null;
 
-                      <span className="text-neutral-600 dark:text-neutral-400">
-                        •
-                      </span>
-
-                      <Link
-                        href={`/articles/${it.slug}`}
-                        className="text-neutral-600 dark:text-neutral-400 hover:underline"
-                      >
-                        Voir la page de l’article
-                      </Link>
-
-                      {inter ? (
-                        <>
-                          <span className="text-neutral-600 dark:text-neutral-400">
-                            •
-                          </span>
-                          <span className="inline-flex items-center rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-2 py-0.5 text-[11px] text-neutral-700 dark:text-neutral-300">
-                            Interlude
-                          </span>
-                        </>
-                      ) : null}
-                    </div>
-
-                    {it.meta?.excerpt ? (
-                      <p className="mt-3 text-[14px] leading-6 text-neutral-700 dark:text-neutral-300">
-                        {it.meta.excerpt}
-                      </p>
-                    ) : null}
-                  </div>
-
-                  <h2
-                    className={
-                      inter
-                        ? "text-2xl font-semibold tracking-tight"
-                        : "text-3xl font-semibold tracking-tight"
-                    }
-                  >
-                    {it.meta?.title ?? it.slug}
-                  </h2>
-
-                  {Array.isArray(it.meta?.tags) && it.meta.tags.length > 0 ? (
-                    <div className="flex flex-wrap gap-2 pt-1">
-                      {it.meta.tags.map((t: string) => (
-                        <span
-                          key={`${it.slug}-${t}`}
-                          className="rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1 text-xs text-neutral-700 dark:text-neutral-300 bg-white/50 dark:bg-neutral-950/30"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
-                </header>
-
-                {/* Cover : pas d'image si interlude */}
-                {it.coverSrc && !inter ? (
-                  <div className="mt-10 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-neutral-950/30">
-                    <div className="relative aspect-[16/9] w-full">
-                      <Image
-                        src={it.coverSrc}
-                        alt={it.meta?.title ?? ""}
-                        fill
-                        priority={orderValue(getSeriesOrder(it.meta)) === 0}
-                        sizes="(max-width: 768px) 100vw, 768px"
-                        className="object-cover"
-                        unoptimized
-                      />
-                    </div>
-                  </div>
+          return (
+            <article
+              key={item.slug}
+              id={item.anchor}
+              className={interlude ? styles.softSurface : ""}
+              style={{
+                scrollMarginTop: 96,
+                marginBottom: 84,
+                paddingTop: interlude ? undefined : 36,
+                borderTop: interlude ? undefined : "1px solid var(--line)",
+              }}
+            >
+              <header>
+                <p className={styles.eyebrow}>
+                  {interlude ? "Interlude" : orderLabel(getSeriesOrder(item.meta))}
+                  {future
+                    ? ` · À paraître${
+                        typeof remainingDays === "number" && remainingDays > 0
+                          ? ` · J-${remainingDays}`
+                          : ""
+                      }`
+                    : item.meta?.date
+                      ? ` · ${String(item.meta.date)}`
+                      : ""}
+                </p>
+                <h2 className={styles.titleCompact}>{item.meta?.title ?? item.slug}</h2>
+                {item.meta?.excerpt ? (
+                  <p className={styles.lead}>{item.meta.excerpt}</p>
                 ) : null}
 
-                {/* Content */}
-                <div
-                  className="
-                    mt-10 max-w-none
-                    text-[14px] leading-7
-                    text-neutral-900 dark:text-neutral-100
+                {Array.isArray(item.meta?.tags) && item.meta.tags.length > 0 ? (
+                  <div className={styles.tags}>
+                    {item.meta.tags.map((tag: string) => (
+                      <span key={`${item.slug}-${tag}`} className={styles.tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </header>
 
-                    [&_p]:m-0
-                    [&_p]:leading-7
-                    [&_p+_p]:mt-3
-
-                    [&_h2]:mt-10
-                    [&_h2]:mb-2
-                    [&_h2]:text-xl
-                    [&_h2]:font-semibold
-                    [&_h2]:tracking-tight
-
-                    [&_h3]:mt-8
-                    [&_h3]:mb-2
-                    [&_h3]:text-lg
-                    [&_h3]:font-semibold
-                    [&_h3]:tracking-tight
-
-                    [&_ul]:my-0
-                    [&_ul]:list-disc
-                    [&_ul]:pl-5
-                    [&_li]:my-1
-
-                    [&_ol]:my-0
-                    [&_ol]:list-decimal
-                    [&_ol]:pl-5
-
-                    [&_p+_ul]:mt-3
-                    [&_p+_ol]:mt-3
-                    [&_ul+_p]:mt-3
-                    [&_ol+_p]:mt-3
-
-                    [&_blockquote]:my-6
-                    [&_blockquote]:border-l-2
-                    [&_blockquote]:border-neutral-200
-                    dark:[&_blockquote]:border-neutral-800
-                    [&_blockquote]:pl-4
-                    [&_blockquote]:text-neutral-700
-                    dark:[&_blockquote]:text-neutral-300
-
-                    [&_hr]:my-10
-                    [&_hr]:border-neutral-200
-                    dark:[&_hr]:border-neutral-800
-
-                    [&_a]:underline
-                    [&_a]:underline-offset-4
-                    [&_a]:decoration-neutral-300
-                    dark:[&_a]:decoration-neutral-700
-                    hover:[&_a]:decoration-neutral-500
-                    dark:hover:[&_a]:decoration-neutral-500
-                  "
-                  dangerouslySetInnerHTML={{ __html: it.html }}
-                />
-
-                {/* séparateur fin d’article */}
-                <div className="mt-14 border-t border-neutral-200 dark:border-neutral-800 pt-6">
-                  <a
-                    className="text-sm text-neutral-600 dark:text-neutral-400 hover:underline"
-                    href="#top"
-                  >
-                    Remonter ↑
-                  </a>
+              {item.coverSrc && !interlude ? (
+                <div className={styles.cover}>
+                  <Image
+                    src={item.coverSrc}
+                    alt={item.meta?.title ?? ""}
+                    fill
+                    priority={orderValue(getSeriesOrder(item.meta)) === 0}
+                    sizes="(max-width: 768px) 100vw, 780px"
+                    unoptimized
+                  />
                 </div>
-              </article>
-            );
-          })}
-        </div>
+              ) : null}
+
+              <div
+                className={styles.prose}
+                dangerouslySetInnerHTML={{ __html: item.html }}
+              />
+
+              <footer className={styles.readingNav}>
+                <Link href={`/articles/${item.slug}`} className={styles.textLink}>
+                  Ouvrir l’article
+                </Link>
+                <a href="#top" className={styles.textLink}>
+                  Remonter ↑
+                </a>
+              </footer>
+            </article>
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 }

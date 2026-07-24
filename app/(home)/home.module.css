@@ -88,7 +88,7 @@
 
 .buttonPrimary {
   background: var(--ink);
-  color: white;
+  color: var(--paper);
 }
 
 .buttonPrimary:hover {
@@ -536,5 +536,36 @@
   .button,
   .situationCard {
     transition-duration: 0.01ms;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --paper: #0a0a0a;
+    --paper-bright: #121412;
+    --ink: #ededed;
+    --muted: #a6aaa6;
+    --line: #303430;
+    --navy: #1d2d46;
+    --sage: #a3afa1;
+    --sage-soft: #171d18;
+  }
+
+  .portraitWrap::before {
+    background: #1b201d;
+  }
+
+  .portraitCaption {
+    border-color: var(--line);
+    background: rgba(18, 20, 18, 0.94);
+  }
+
+  .signalGrid p {
+    color: var(--muted);
+  }
+
+  .situationCard,
+  .evidenceCard {
+    background: var(--paper-bright);
   }
 }

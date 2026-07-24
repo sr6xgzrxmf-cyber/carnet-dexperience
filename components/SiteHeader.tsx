@@ -9,7 +9,10 @@ export default function SiteHeader() {
 
   const isParcours = pathname === "/parcours" || pathname.startsWith("/parcours/");
   const isArticles = pathname === "/articles" || pathname.startsWith("/articles/");
-  const isAccompagnement = pathname === "/atelier" || pathname.startsWith("/atelier/");
+  const isAccompagnement =
+    pathname === "/atelier" ||
+    pathname.startsWith("/atelier/") ||
+    pathname === "/situations-d-intervention";
   const isContact = pathname === "/contact" || pathname.startsWith("/contact/");
 
   const activeClass = "font-semibold text-neutral-900/70 dark:text-neutral-100/80";
