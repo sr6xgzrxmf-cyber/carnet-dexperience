@@ -171,6 +171,12 @@
   font-size: 12px;
 }
 
+@media (min-width: 901px) {
+  .portraitWrap {
+    margin-bottom: 84px;
+  }
+}
+
 .signalBand {
   position: relative;
   left: 50%;
