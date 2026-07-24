@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mbddjpnq";
 

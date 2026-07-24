@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
   title: "Archives des articles",

@@ -6,7 +6,7 @@ import {
   getParcoursBySlug,
   markdownToHtml,
 } from "@/lib/parcours";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export function generateStaticParams() {
   return getAllParcours()

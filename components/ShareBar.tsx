@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 type ShareBarProps = {
   title: string;

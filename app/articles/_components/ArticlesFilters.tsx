@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { formatTagLabel } from "@/lib/editorial-labels";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 const SCROLL_KEY = "articles:scrollY";
 

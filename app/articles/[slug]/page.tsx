@@ -13,7 +13,7 @@ import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
 import type { Metadata } from "next";
 import { formatTagLabel } from "@/lib/editorial-labels";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
 

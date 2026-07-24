@@ -11,7 +11,7 @@ import {
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import type { Metadata } from "next";
 import ArticlesFilters from "./_components/ArticlesFilters";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
   title: "Articles et séries",

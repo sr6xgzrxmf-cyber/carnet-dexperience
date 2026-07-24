@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { markdownToHtml } from "@/lib/parcours";
 import fs from "fs";
 import path from "path";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
   title: "Situations d’intervention",

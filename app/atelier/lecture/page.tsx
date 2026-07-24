@@ -9,7 +9,7 @@ import {
   type ArticleItem,
   type ArticleMeta,
 } from "@/lib/articles";
-import styles from "@/app/editorial.module.css";
+import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
   title: "Atelier de posture — lecture continue",
