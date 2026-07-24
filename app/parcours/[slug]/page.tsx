@@ -87,7 +87,7 @@ export default async function ParcoursDetailPage({
       </header>
 
       <div
-        className={styles.prose}
+        className={`${styles.prose} ${styles.compactProse}`}
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 

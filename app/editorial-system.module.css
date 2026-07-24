@@ -495,6 +495,43 @@
   margin: 0.35em 0;
 }
 
+.compactProse ul {
+  display: grid;
+  gap: 0.22em;
+  margin: 0.7em 0 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.compactProse ul li {
+  position: relative;
+  margin: 0;
+  padding-left: 1.2em;
+  line-height: 1.5;
+}
+
+.compactProse ul li::before {
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+  content: "—";
+}
+
+.compactProse ol {
+  margin: 0.7em 0 1em;
+  padding-left: 1.4em;
+}
+
+.compactProse ol li {
+  margin: 0.12em 0;
+  padding-left: 0.15em;
+  line-height: 1.5;
+}
+
+.compactProse ol li::marker {
+  color: var(--sage);
+}
+
 .prose blockquote {
   margin: 2em 0;
   padding: 22px 24px;
