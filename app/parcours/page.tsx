@@ -66,8 +66,6 @@ export default function ParcoursPage() {
                 ) : null}
               </div>
 
-              <span className={styles.timelineMarker} aria-hidden />
-
               <Link href={`/parcours/${item.slug}`} className={styles.timelineCard}>
                 <div className={styles.timelineTopline}>
                   <h3 className={styles.timelineTitle}>{item.meta.title}</h3>

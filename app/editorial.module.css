@@ -256,21 +256,11 @@
   list-style: none;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  bottom: 22px;
-  left: 104px;
-  width: 1px;
-  background: var(--line);
-}
-
 .timelineItem {
   position: relative;
   display: grid;
-  grid-template-columns: 82px 28px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 28px;
   align-items: start;
 }
 
@@ -292,17 +282,6 @@
   filter: grayscale(0);
   opacity: 1;
   transform: scale(1.04);
-}
-
-.timelineMarker {
-  position: relative;
-  z-index: 1;
-  width: 11px;
-  height: 11px;
-  margin: 50px auto 0;
-  border: 1px solid var(--sage);
-  border-radius: 50%;
-  background: var(--paper);
 }
 
 .timelineCard {
@@ -696,21 +675,13 @@
     grid-template-columns: 1fr;
   }
 
-  .timeline::before {
-    left: 5px;
-  }
-
   .timelineItem {
-    grid-template-columns: 12px minmax(0, 1fr);
-    gap: 18px;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .timelineLogo {
     display: none;
-  }
-
-  .timelineMarker {
-    margin-top: 39px;
   }
 
   .archiveLink {
