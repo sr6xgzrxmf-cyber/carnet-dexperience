@@ -112,7 +112,7 @@
 
 .portraitWrap {
   position: relative;
-  min-height: 555px;
+  min-height: 500px;
   align-self: end;
   display: flex;
   align-items: end;
@@ -123,17 +123,17 @@
 .portraitWrap::before {
   content: "";
   position: absolute;
-  inset: 70px 12px 42px;
+  inset: 86px 28px 48px;
   border-radius: 50% 50% 38% 38%;
   background: #e3e6e4;
 }
 
 .portraitRule {
   position: absolute;
-  top: 38px;
-  right: 6px;
-  width: 104px;
-  height: 104px;
+  top: 52px;
+  right: 12px;
+  width: 92px;
+  height: 92px;
   border-top: 1px solid var(--sage);
   border-right: 1px solid var(--sage);
 }
@@ -142,7 +142,7 @@
   position: relative;
   z-index: 1;
   width: auto;
-  height: 535px;
+  height: 475px;
   max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 24px 32px rgba(22, 36, 58, 0.12));
@@ -151,9 +151,9 @@
 .portraitCaption {
   position: absolute;
   z-index: 2;
-  right: -24px;
-  bottom: 30px;
-  min-width: 252px;
+  right: -8px;
+  bottom: 26px;
+  min-width: 238px;
   margin: 0;
   padding: 15px 18px;
   display: grid;
@@ -407,7 +407,7 @@
   }
 
   .portraitWrap {
-    width: min(520px, 100%);
+    width: min(480px, 100%);
     min-height: 480px;
     margin: 0 auto;
   }
@@ -459,15 +459,15 @@
   }
 
   .portraitWrap {
-    min-height: 390px;
+    min-height: 360px;
   }
 
   .portrait {
-    height: 390px;
+    height: 360px;
   }
 
   .portraitWrap::before {
-    inset: 46px 4px 24px;
+    inset: 48px 14px 24px;
   }
 
   .portraitRule {
