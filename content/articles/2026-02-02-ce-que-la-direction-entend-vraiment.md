@@ -11,7 +11,7 @@ tags:
   - "organisation"
 ---
 
-### « On est à bout. »
+## « On est à bout. »
 
 La phrase est vraie. Elle peut aussi être presque inutilisable en comité de direction.
 

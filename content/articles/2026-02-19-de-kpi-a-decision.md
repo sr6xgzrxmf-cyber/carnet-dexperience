@@ -15,13 +15,13 @@ series:
   order: 10
 ---
 
-### Les chiffres ne parlent pas, contrairement à ce qu’on croit
+## Les chiffres ne parlent pas, contrairement à ce qu’on croit
 
 Dans beaucoup d’organisations, les chiffres sont omniprésents. Tableaux de bord, KPI, reportings hebdomadaires, bilans mensuels. Karim maîtrise ses données, ses taux, ses volumes. Pourtant, lors des échanges avec son manager ou ses partenaires, il sent un décalage : il rapporte bien, mais il ne pilote pas encore.
 
 La raison est simple : un chiffre brut n’a aucun intérêt en soi. Il décrit un état, pas une direction. Ce n’est pas le chiffre qui déclenche la décision, c’est l’interprétation qu’on en fait.
 
-### Rapporter n’est pas piloter
+## Rapporter n’est pas piloter
 
 Dire « le taux est en baisse de 8 % » est un constat. Utile, mais incomplet. Celui qui s’arrête là reste dans une posture d’exécutant : il transmet une information et attend une réaction extérieure.
 
@@ -29,7 +29,7 @@ Piloter, c’est faire un pas de plus. C’est assumer une lecture. C’est dire
 
 C’est précisément ce passage que beaucoup évitent, par prudence ou par peur de se tromper. Pourtant, c’est là que la crédibilité se construit.
 
-### La chaîne simple en cinq étapes
+## La chaîne simple en cinq étapes
 
 Karim apprend à structurer systématiquement ses messages selon une chaîne claire, lisible, réutilisable.
 
@@ -42,7 +42,7 @@ Enfin, le suivi : quand et comment on vérifie l’effet de cette action.
 Formulé simplement, cela donne :  
 « Ce chiffre raconte X. J’en déduis Y. Donc je propose Z d’ici deux semaines, puis on mesure à nouveau. »
 
-### Assumer une lecture, même imparfaite
+## Assumer une lecture, même imparfaite
 
 Un indicateur peut toujours être interprété de plusieurs manières. Et c’est normal. Ce qui est attendu d’un professionnel en posture de pilotage, ce n’est pas la vérité absolue, mais une hypothèse argumentée.
 
@@ -50,7 +50,7 @@ Proposer trois lectures possibles, puis en privilégier une, montre de la maturi
 
 À ce moment-là, Karim n’apporte plus des chiffres. Il apporte une grille de décision.
 
-### Le chiffre devient un outil de dialogue
+## Le chiffre devient un outil de dialogue
 
 Lorsqu’un indicateur est relié à une lecture et à une action, il change de statut. Il ne sert plus à justifier le passé, mais à orienter l’avenir. Les échanges deviennent plus courts, plus concrets, plus utiles.
 

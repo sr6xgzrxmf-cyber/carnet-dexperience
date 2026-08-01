@@ -63,12 +63,12 @@ Pour rendre tout ça concret, je raconte une progression anonymisée. “Karim�
 
 Son intelligence relationnelle est une force. Et parfois, c’est aussi le piège : sous pression, aider peut se transformer en porter. Et le jour où tu portes, tu t’épuises, tu t’agaces, ou tu te mets en dette. Cette chronique raconte comment on règle ça sans perdre l’humain : garder la qualité relationnelle, tout en apprenant à cadrer, prioriser, dire non, et écrire des messages qui tiennent.
 
-## Ce que vous trouverez ici (et ce que vous ne trouverez pas)
+## Ce que tu trouveras ici (et ce que tu ne trouveras pas)
 
-Vous trouverez des épisodes et des outils. Des formulations. Des trames. Des questions. Des avant/après. Des choix assumés, et leurs conséquences. Vous ne trouverez pas d’histoires “spectaculaires”, ni de psychologie de comptoir, ni de posture héroïque. J’anonymise, je déplace certains détails non essentiels, et je laisse intact l’essentiel : la mécanique de terrain.
+Tu trouveras des épisodes et des outils. Des formulations. Des trames. Des questions. Des avant/après. Des choix assumés, et leurs conséquences. Tu ne trouveras pas d’histoires “spectaculaires”, ni de psychologie de comptoir, ni de posture héroïque. J’anonymise, je déplace certains détails non essentiels, et je laisse intact l’essentiel : la mécanique de terrain.
 
 Parce que c’est là que ça se joue : pas dans l’idée, mais dans la capacité à rester lisible quand la situation ne l’est plus.
 
 ## Une question pour commencer
 
-Dans ce que vous traversez en ce moment, qu’est-ce qui vous abîme le plus : le problème lui-même… ou le flou que vous laissez encore décider à votre place ?
+Dans ce que tu traverses en ce moment, qu’est-ce qui t’abîme le plus : le problème lui-même… ou le flou que tu laisses encore décider à ta place ?

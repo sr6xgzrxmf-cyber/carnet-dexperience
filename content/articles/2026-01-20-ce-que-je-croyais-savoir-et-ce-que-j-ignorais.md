@@ -21,7 +21,7 @@ Alors, quand j’ai décidé de créer ce carnet d’expériences, je croyais pa
 
 C’était une illusion confortable.
 
-### L’illusion de la maîtrise
+## L’illusion de la maîtrise
 
 Ce que je croyais savoir, en réalité, relevait davantage d’une intuition héritée que d’une compréhension actuelle. Je reconnaissais les mots, les concepts, les intentions. Je comprenais ce que je lisais. Je savais pourquoi on faisait les choses.
 

@@ -13,7 +13,7 @@ series:
   order: 3
 ---
 
-### « C’est bon, j’ai compris. »
+## « C’est bon, j’ai compris. »
 
 La phrase arrive parfois très tôt. Quelqu’un a vu deux exemples, compris le principe général, ou reconnu un vocabulaire familier. Immédiatement, le sujet lui paraît simple. Le problème, c’est qu’à ce moment-là, il n’a souvent pas encore rencontré la complexité réelle de ce qu’il croit maîtriser.
 
@@ -99,4 +99,4 @@ Quelqu’un qui progresse sérieusement ne devient pas seulement plus capable. I
 
 Cette lucidité-là n’est pas une faiblesse. C’est un marqueur de maturité.
 
-Question ouverte : dans tes apprentissages récents, à quel moment as-tu commencé à comprendre non pas que tu savais peu… mais à quel point le sujet était plus vaste que tu ne l’imaginais ?
+Dans tes apprentissages récents, à quel moment as-tu commencé à comprendre non pas que tu savais peu… mais à quel point le sujet était plus vaste que tu ne l’imaginais ?

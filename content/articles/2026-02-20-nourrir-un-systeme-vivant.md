@@ -10,7 +10,7 @@ series:
   order: 9
 ---
 
-### Le jour où produire n’a plus suffi
+## Le jour où produire n’a plus suffi
 
 Il y a un moment assez particulier dans la vie d’un média. Au début, tout est tourné vers la sortie : publier, lancer, structurer, tenir le rythme, remplir les espaces vides. Puis quelque chose se déplace.
 

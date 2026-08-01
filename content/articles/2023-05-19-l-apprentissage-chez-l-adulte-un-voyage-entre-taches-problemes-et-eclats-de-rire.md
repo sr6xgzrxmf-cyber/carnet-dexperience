@@ -15,7 +15,7 @@ series:
   order: 9
 ---
 
-### Le moment où la salle se met à rire
+## Le moment où la salle se met à rire
 
 Un exercice vient de rater. La consigne n’a pas été comprise comme prévu, deux participants partent dans une autre direction, un troisième relève l’absurdité de la situation et la salle éclate de rire.
 

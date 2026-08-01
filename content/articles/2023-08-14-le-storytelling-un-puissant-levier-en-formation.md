@@ -14,7 +14,7 @@ series:
   order: 32
 ---
 
-### « Au bout de dix minutes, la salle décroche. Puis quelqu’un raconte une scène, et tout revient. »
+## « Au bout de dix minutes, la salle décroche. Puis quelqu’un raconte une scène, et tout revient. »
 
 On connaît bien ce basculement.
 

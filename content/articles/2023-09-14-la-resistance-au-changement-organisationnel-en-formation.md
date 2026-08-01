@@ -14,7 +14,7 @@ series:
   order: 41
 ---
 
-### « À partir du mois prochain, on passe tous sur le nouveau dispositif. »
+## « À partir du mois prochain, on passe tous sur le nouveau dispositif. »
 
 Sur le papier, cela ressemble à une annonce simple.
 

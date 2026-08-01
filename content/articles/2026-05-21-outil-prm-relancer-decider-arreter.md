@@ -20,9 +20,9 @@ PRM est un **outil de décision**, pas une méthode de pression commerciale.
 Il permet de transformer un listing flou en **boucles fermées**, avec un cadre clair, assumé et mesurable.
 
 Il répond à trois besoins terrain :
-– relancer sans harceler,  
-– décider sans culpabiliser,  
-– arrêter sans se dévaloriser.
+- relancer sans harceler,
+- décider sans culpabiliser,
+- arrêter sans se dévaloriser.
 
 ---
 

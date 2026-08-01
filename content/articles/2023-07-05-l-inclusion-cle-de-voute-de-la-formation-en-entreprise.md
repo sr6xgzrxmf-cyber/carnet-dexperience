@@ -13,7 +13,7 @@ series:
   order: 18
 ---
 
-### Ce n’est pas le contenu qui bloque. C’est l’accès au contenu.
+## Ce n’est pas le contenu qui bloque. C’est l’accès au contenu.
 
 La scène est plus fréquente qu’on ne le dit. Une formation est jugée pertinente, bien conçue, utile sur le papier. Et pourtant, une partie du groupe reste au bord : trop vite, trop implicite, trop dense, trop exposant, trop dépendant d’un format unique.
 

@@ -11,7 +11,7 @@ tags:
   - "prise-de-decision"
 ---
 
-### « Tu ferais quoi, toi ? »
+## « Tu ferais quoi, toi ? »
 
 La question arrive souvent à un moment où l’autre n’a déjà plus envie de penser seul.
 

@@ -13,7 +13,7 @@ series:
   order: 0
 ---
 
-### « Je suis nul. »
+## « Je suis nul. »
 
 La phrase sort rarement fort. Elle arrive plutôt à mi-voix, entre une tentative ratée et un regard jeté sur l’écran du voisin. Dans une salle de formation, on la reconnaît tout de suite. Elle n’annonce pas seulement une difficulté. Elle annonce un moment de retrait.
 
@@ -91,4 +91,4 @@ Former des adultes, ce n’est pas seulement transmettre un contenu. C’est con
 
 Et c’est là que tout se joue.
 
-Question ouverte : la prochaine fois qu’un participant dira « je suis nul », qu’est-ce que tu entendras vraiment : un manque de compétence, ou une tentative de se protéger ?
+La prochaine fois qu’un participant dira « je suis nul », qu’est-ce que tu entendras vraiment : un manque de compétence, ou une tentative de se protéger ?

@@ -18,7 +18,7 @@ series:
   order: 1
 ---
 
-### “Concrètement, vous proposez quoi ?”
+## “Concrètement, vous proposez quoi ?”
 
 La question tombe après trois minutes. C’est le premier appel où je me suis explicitement engagé à trouver des partenaires financiers. Jamais de ma vie professionnelle je n’ai eu à faire ce type de démarche. D’habitude, je vends un produit, un service, un contrat. Tout est cadré, chiffré, prêt à signer.
 
@@ -73,4 +73,4 @@ Simplifier, c’est réduire. Traduire, c’est préserver la densité en change
 Avec le recul, je réalise que cette première démarche m’a appris une chose simple, mais rare : quand on sort de son territoire habituel, on ne change pas de projet. On change de langue.
 Et la clarté n’est pas un packaging. C’est un pont.
 
-Question ouverte : quand un projet semble difficile à faire entendre, est-ce que tu essaies de le simplifier… ou de le traduire sans le trahir ?
+Quand un projet semble difficile à faire entendre, est-ce que tu essaies de le simplifier… ou de le traduire sans le trahir ?

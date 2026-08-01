@@ -14,7 +14,7 @@ series:
   order: 22
 ---
 
-### « À la fin, je veux savoir ce qui aura bougé. »
+## « À la fin, je veux savoir ce qui aura bougé. »
 
 La phrase ne vient pas d’un obsédé du tableur. Elle vient souvent d’un manager qui a déjà vu passer trop de formations agréables, bien notées, puis presque impossibles à relier au travail réel.
 

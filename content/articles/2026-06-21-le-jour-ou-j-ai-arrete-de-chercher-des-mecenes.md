@@ -19,7 +19,7 @@ series:
   order: 8
 ---
 
-### “Au départ, je croyais chercher 25 000 €.”
+## “Au départ, je croyais chercher 25 000 €.”
 
 Le 6 juin 2026, l’Amphithéâtre 3000 est plein. Plus de 250 personnes sur scène, des chœurs qui s’entremêlent, des lumières roses et or, une émotion dense dans la salle. De l’extérieur, tout paraît simple : on chante, on applaudit, on célèbre.
 
@@ -72,4 +72,4 @@ L’argent est resté nécessaire. On ne produit pas un concert sans moyens. Mai
 
 Le concert du 6 juin n’était pas une clôture. C’était la manifestation visible d’une transformation plus silencieuse : passer de la quête de ressources à la construction d’un système vivant.
 
-Question ouverte : quand tu crois chercher des moyens pour faire avancer un projet, es-tu peut-être déjà en train de construire l’écosystème dont il a besoin ?
+Quand tu crois chercher des moyens pour faire avancer un projet, es-tu peut-être déjà en train de construire l’écosystème dont il a besoin ?

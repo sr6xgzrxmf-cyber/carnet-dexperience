@@ -12,7 +12,7 @@ series:
   order: 0
 ---
 
-### « Il est plus durable, d’accord. Mais concrètement, qu’est-ce que ça change pour moi ? »
+## « Il est plus durable, d’accord. Mais concrètement, qu’est-ce que ça change pour moi ? »
 
 La question d’un client au comptoir vaut souvent plus qu’une campagne entière.
 

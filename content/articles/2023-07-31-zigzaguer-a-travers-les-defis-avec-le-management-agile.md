@@ -14,7 +14,7 @@ series:
   order: 27
 ---
 
-### « On n’ajuste pas parce qu’on panique. On ajuste parce qu’on apprend. »
+## « On n’ajuste pas parce qu’on panique. On ajuste parce qu’on apprend. »
 
 Dans beaucoup d’équipes, cette nuance change tout.
 

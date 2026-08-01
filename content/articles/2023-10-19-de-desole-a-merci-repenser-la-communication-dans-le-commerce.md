@@ -13,7 +13,7 @@ series:
   order: 2
 ---
 
-### « Désolé pour l’attente. »
+## « Désolé pour l’attente. »
 
 La phrase sort toute seule. Elle est devenue un réflexe. En point de vente, on l’entend des dizaines de fois par jour : à la caisse, en reprise, en SAV, en retrait de commande, dans un échange tendu ou juste un peu lent.
 
@@ -111,4 +111,4 @@ Mais la fidélité se construit aussi dans des détails minuscules. Une phrase b
 
 Passer de « désolé » à « merci », quand c’est juste, n’est donc pas un artifice de langage. C’est une manière plus mature d’habiter la relation commerciale.
 
-Question ouverte : dans tes échanges quotidiens, quels mots pointent encore automatiquement vers le problème… alors qu’ils pourraient mieux reconnaître la personne en face ?
+Dans tes échanges quotidiens, quels mots pointent encore automatiquement vers le problème… alors qu’ils pourraient mieux reconnaître la personne en face ?

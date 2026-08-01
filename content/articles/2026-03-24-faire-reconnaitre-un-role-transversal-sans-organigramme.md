@@ -15,7 +15,7 @@ series:
   order: 19
 ---
 
-### « Au fait, toi, tu interviens sur quoi exactement ? »
+## « Au fait, toi, tu interviens sur quoi exactement ? »
 
 La question peut paraître anodine. Elle dit pourtant quelque chose de très précis : ton rôle est peut-être utile, mais il n’est pas encore assez lisible.
 

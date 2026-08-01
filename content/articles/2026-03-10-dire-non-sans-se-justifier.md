@@ -14,19 +14,19 @@ series:
   order: 15
 ---
 
-### Quand dire oui devient dangereux
+## Quand dire oui devient dangereux
 
 Dans les périodes de surcharge, Karim remarque un réflexe quasi automatique : dire oui pour tenir, pour aider, pour ne pas créer de tension. Chaque demande prise isolément est légitime. C’est leur accumulation qui devient toxique.
 
 Le problème n’est pas le volume de travail, mais l’absence de filtre. Dire oui à tout revient à dire non à ses priorités — sans jamais l’énoncer clairement.
 
-### Pourquoi on se justifie trop
+## Pourquoi on se justifie trop
 
 Dire non met mal à l’aise. Alors on explique. On contextualise. On se défend par avance. Et plus on se justifie, plus le refus semble fragile, négociable, temporaire.
 
 Cette sur-justification envoie un signal implicite : *ma priorité n’est pas vraiment une priorité*. Le cadre se fissure.
 
-### Dire non, ce n’est pas s’opposer
+## Dire non, ce n’est pas s’opposer
 
 Un non professionnel n’est ni sec ni agressif. Il est posé, factuel, aligné avec un cap clair. Karim apprend à répondre autrement :
 
@@ -34,13 +34,13 @@ Un non professionnel n’est ni sec ni agressif. Il est posé, factuel, aligné 
 
 Cette phrase ne ferme pas la discussion. Elle la structure.
 
-### Refuser sans compenser
+## Refuser sans compenser
 
 Le piège classique est la compensation : accepter implicitement de rattraper plus tard, le soir, le week-end, ou “quand ça ira mieux”. Ce mécanisme entretient la surcharge et rend le non fictif.
 
 Tenir une posture adulte implique d’assumer qu’un non est un non — sans dette cachée.
 
-### Un non clair protège tout le monde
+## Un non clair protège tout le monde
 
 Un refus posé permet à l’autre de décider : reporter, déléguer, reformuler, arbitrer. À l’inverse, un oui flou crée des attentes irréalistes et alimente les tensions futures.
 

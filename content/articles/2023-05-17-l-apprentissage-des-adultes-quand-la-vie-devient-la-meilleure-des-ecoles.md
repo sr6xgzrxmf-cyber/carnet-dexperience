@@ -14,7 +14,7 @@ series:
   order: 7
 ---
 
-### « Ça, je l’ai déjà vécu. »
+## « Ça, je l’ai déjà vécu. »
 
 La phrase surgit souvent plus tôt qu’on ne le croit. Parfois après dix minutes. Parfois dès le tour de table. Un participant reconnaît une situation, complète un exemple, contredit un modèle trop théorique ou raconte un épisode de terrain qui déplace immédiatement la discussion.
 

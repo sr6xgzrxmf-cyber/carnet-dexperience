@@ -13,7 +13,7 @@ series:
   order: 35
 ---
 
-### « Attends, je vais te montrer comment je fais. »
+## « Attends, je vais te montrer comment je fais. »
 
 Dans beaucoup d’entreprises, une grande partie de l’apprentissage commence comme ça.
 

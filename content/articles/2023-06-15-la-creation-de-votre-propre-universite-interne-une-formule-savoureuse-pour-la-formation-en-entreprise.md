@@ -13,7 +13,7 @@ series:
   order: 11
 ---
 
-### « On a déjà tout quelque part. »
+## « On a déjà tout quelque part. »
 
 La phrase revient souvent quand une organisation parle de transmettre ses savoirs. Les documents existent. Les procédures aussi. Les équipes savent globalement où chercher. Et pourtant, quand une nouvelle personne arrive, quand une pratique doit être partagée, ou quand un geste métier doit monter en qualité, tout redevient plus artisanal qu’on ne le croyait.
 

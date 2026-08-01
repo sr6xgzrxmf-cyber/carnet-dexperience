@@ -10,7 +10,7 @@ series:
   order: 10
 ---
 
-### Ce que j’aurais pu faire
+## Ce que j’aurais pu faire
 
 J’aurais pu fermer une partie du site.
 J’aurais pu mettre davantage d’appels à action.

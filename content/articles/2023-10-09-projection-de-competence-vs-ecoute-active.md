@@ -27,10 +27,10 @@ Dans l’automobile, un vendeur peut expliquer les avantages d’une transmissio
 ### Les risques
 
 Cette posture produit plusieurs effets négatifs :  
-– des recommandations mal alignées  
-– un sentiment de confusion chez le client  
-– une perte de personnalisation  
-– et, souvent, une perte de confiance.
+- des recommandations mal alignées
+- un sentiment de confusion chez le client
+- une perte de personnalisation
+- et, souvent, une perte de confiance.
 
 Un vendeur qui projette ses compétences parle beaucoup, questionne peu et utilise un langage qui éloigne au lieu de rapprocher.
 
@@ -43,10 +43,10 @@ Un vendeur de vêtements qui demande pour quelle occasion la tenue est recherch�
 ### Pourquoi elle est décisive
 
 L’écoute active permet :  
-– une personnalisation fine  
-– la création d’un climat de confiance  
-– une augmentation naturelle du taux de transformation  
-– une fidélisation plus forte.
+- une personnalisation fine
+- la création d’un climat de confiance
+- une augmentation naturelle du taux de transformation
+- une fidélisation plus forte.
 
 Elle repose sur des questions ouvertes, la reformulation, la validation et un langage clair.
 
@@ -65,11 +65,11 @@ Dans l’écoute, elle devient relationnelle.
 
 La clé est la prise de conscience. On peut la développer par :
 
-– des jeux de rôle  
-– des analyses d’interactions réelles  
-– des feedbacks entre pairs  
-– des formations centrées sur le questionnement client  
-– des quiz et mises en situation
+- des jeux de rôle
+- des analyses d’interactions réelles
+- des feedbacks entre pairs
+- des formations centrées sur le questionnement client
+- des quiz et mises en situation
 
 Identifier les moments où l’on parle trop vite, trop technique, trop tôt est déjà un premier pas.
 

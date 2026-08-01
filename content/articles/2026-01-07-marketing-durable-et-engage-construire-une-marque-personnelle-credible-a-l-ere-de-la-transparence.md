@@ -10,7 +10,7 @@ series:
   order: 1
 ---
 
-### « Est-ce que je montre vraiment qui je suis… ou seulement ce qui passe bien ? »
+## « Est-ce que je montre vraiment qui je suis… ou seulement ce qui passe bien ? »
 
 La question arrive souvent plus tard qu’on ne croit.
 

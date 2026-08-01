@@ -14,7 +14,7 @@ series:
   order: 1
 ---
 
-### « Je vais être ridicule. »
+## « Je vais être ridicule. »
 
 La phrase est prononcée juste avant de se lever. Elle ne parle pas de contenu. Elle parle de corps, de regard des autres, de voix qui risque de trembler. Dans un atelier de prise de parole, c’est souvent là que tout commence vraiment.
 
@@ -104,4 +104,4 @@ Mais si la personne tient, reprend, continue, alors quelque chose se transforme 
 
 Et c’est souvent là que l’on écoute vraiment.
 
-Question ouverte : quand tu prends la parole, qu’est-ce que tu essaies le plus de protéger : ton message, ou ton image ?
+Quand tu prends la parole, qu’est-ce que tu essaies le plus de protéger : ton message, ou ton image ?

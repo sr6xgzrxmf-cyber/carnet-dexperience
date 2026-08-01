@@ -15,13 +15,13 @@ series:
   order: 13
 ---
 
-### Le malaise du mail sans réponse
+## Le malaise du mail sans réponse
 
 Karim connaît bien cette situation. Il envoie un mail clair, poli, structuré — du moins le pense-t-il. Et pourtant, rien. Pas de réponse. Pas même un accusé de réception. Le doute s’installe : est-ce que le mail a été lu ? Faut-il relancer ? A-t-il été maladroit ?
 
 Beaucoup interprètent le silence comme un désintérêt, une surcharge, ou un manque de respect. En réalité, la cause est souvent plus simple — et plus inconfortable.
 
-### Un mail sans réponse n’appelle aucune décision
+## Un mail sans réponse n’appelle aucune décision
 
 La plupart des mails qui restent sans réponse ont un point commun : ils ne créent aucune nécessité d’agir. Ils informent, expliquent, racontent… mais ne déclenchent rien.
 
@@ -29,7 +29,7 @@ Un lecteur submergé fait alors un choix rationnel : il lit, comprend vaguement,
 
 Ce n’est pas le fond qui est en cause. C’est la posture implicite.
 
-### Informer n’est pas solliciter
+## Informer n’est pas solliciter
 
 Beaucoup de mails professionnels se situent dans un entre-deux flou. Ils ne sont ni purement informatifs, ni clairement décisionnels. Ils exposent une situation, parfois un effort, parfois une difficulté, et se terminent par une formule ouverte :  
 « N’hésite pas si besoin »,  
@@ -38,7 +38,7 @@ Beaucoup de mails professionnels se situent dans un entre-deux flou. Ils ne sont
 
 Ces phrases semblent ouvertes. En réalité, elles ferment l’action. Elles transfèrent la responsabilité de décider au lecteur, sans lui donner de raison immédiate de le faire.
 
-### Les mails qui appellent une réponse ont une structure invisible
+## Les mails qui appellent une réponse ont une structure invisible
 
 Un mail qui obtient une réponse utile contient presque toujours trois éléments, même s’ils ne sont pas formalisés ainsi.
 
@@ -48,7 +48,7 @@ Enfin, une **attente explicite** : validation, arbitrage, choix entre deux optio
 
 Sans ce triptyque, le mail peut être très bien écrit — et pourtant rester sans effet.
 
-### Créer une réponse, ce n’est pas relancer
+## Créer une réponse, ce n’est pas relancer
 
 Relancer un mail inefficace ne le rend pas plus actionnable. Cela ajoute juste de la pression. La vraie question à se poser avant d’envoyer un message est simple :  
 « Si je reçois ce mail, qu’est-ce que je suis censé faire ? »
@@ -60,7 +60,7 @@ Karim apprend alors à conclure autrement :
 « Est-ce que tu valides cette option pour la semaine prochaine ? »  
 « Si tu es d’accord, je mets en œuvre ce point d’ici vendredi. »
 
-### Le silence est souvent une information
+## Le silence est souvent une information
 
 Un mail sans réponse n’est pas toujours un échec. C’est parfois un signal. Soit le sujet n’est pas prioritaire, soit la demande n’est pas claire, soit la posture n’est pas encore celle d’un pilote.
 

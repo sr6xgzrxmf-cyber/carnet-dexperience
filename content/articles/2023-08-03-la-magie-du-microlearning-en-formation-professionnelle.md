@@ -15,7 +15,7 @@ series:
   order: 29
 ---
 
-### « J’ai cinq minutes, pas une heure. Dis-moi juste ce qu’il faut faire. »
+## « J’ai cinq minutes, pas une heure. Dis-moi juste ce qu’il faut faire. »
 
 Cette demande résume assez bien le contexte réel dans lequel beaucoup de personnes apprennent aujourd’hui.
 

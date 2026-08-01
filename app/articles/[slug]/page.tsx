@@ -17,6 +17,30 @@ import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
 
+const siteUrl = "https://www.carnetdexperience.fr";
+const siteName = "Carnet d’expérience";
+
+function truncateAtWord(value: string, maxLength: number): string {
+  const normalized = value.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLength) return normalized;
+
+  const shortened = normalized.slice(0, Math.max(1, maxLength - 1));
+  const boundary = shortened.lastIndexOf(" ");
+  const result = boundary > maxLength * 0.65 ? shortened.slice(0, boundary) : shortened;
+  return `${result.replace(/[\s,;:–—-]+$/u, "")}…`;
+}
+
+function getSeoDescription(item: ArticleItem): string | undefined {
+  const raw = item.meta?.seoDescription?.trim() || item.meta?.excerpt?.trim();
+  return raw ? truncateAtWord(raw, 155) : undefined;
+}
+
+function getSeoTitle(item: ArticleItem, fallback: string): string {
+  const raw = item.meta?.seoTitle?.trim() || item.meta?.title?.trim() || fallback;
+  const branded = `${raw} — ${siteName}`;
+  return branded.length <= 65 ? branded : truncateAtWord(raw, 65);
+}
+
 export async function generateStaticParams() {
   const all = await getAllArticles({ includeFuture: true });
   return (all ?? []).map((item) => ({ slug: item.slug }));
@@ -31,14 +55,43 @@ export async function generateMetadata({
   const item = getArticleBySlug(resolvedParams.slug, { includeFuture: true });
   if (!item) return {};
   const published = isPublishedDate(item.meta?.date, new Date());
+  const canonical = `${siteUrl}/articles/${resolvedParams.slug}`;
+  const description = getSeoDescription(item);
+  const title = getSeoTitle(item, resolvedParams.slug);
+  const cover = item.meta?.cover
+    ? new URL(item.meta.cover, siteUrl).toString()
+    : `${siteUrl}/og.png`;
+  const publishedTime = formatDate(item.meta?.date) || undefined;
+  const modifiedTime = formatDate(item.meta?.updated) || publishedTime;
 
   return {
-    title: item.meta?.title ?? resolvedParams.slug,
-    description:
-      typeof item.meta?.excerpt === "string" && item.meta.excerpt.trim()
-        ? item.meta.excerpt.trim()
-        : undefined,
+    title: { absolute: title },
+    description,
+    alternates: { canonical },
     robots: published ? { index: true, follow: true } : { index: false, follow: false },
+    openGraph: {
+      type: "article",
+      locale: "fr_FR",
+      siteName,
+      url: canonical,
+      title: item.meta?.title ?? title,
+      description,
+      publishedTime,
+      modifiedTime,
+      authors: ["Laurent Guyonnet"],
+      images: [
+        {
+          url: cover,
+          alt: item.meta?.title ?? siteName,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: item.meta?.title ?? title,
+      description,
+      images: [cover],
+    },
   };
 }
 
@@ -104,7 +157,6 @@ export default async function ArticleDetailPage({
 
   const isFuture = !isPublishedDate(item.meta?.date, new Date());
   const contentHtml = await markdownToHtml(item.content);
-  const siteUrl = "https://www.carnetdexperience.fr";
 
   function toAbsoluteUrl(url?: string) {
     if (!url) return undefined;
@@ -154,6 +206,38 @@ export default async function ArticleDetailPage({
     prev = index > 0 ? sorted[index - 1] : null;
     next = index >= 0 && index < sorted.length - 1 ? sorted[index + 1] : null;
   }
+
+  const currentTags = new Set(
+    (Array.isArray(current.meta?.tags) ? current.meta.tags : []).map((tag) =>
+      tag.trim().toLocaleLowerCase("fr-FR")
+    )
+  );
+  const currentDate = asDateValue(current.meta?.date);
+  const related = allItems
+    .filter((candidate) => getSlug(candidate) !== slug)
+    .filter((candidate) => isPublishedDate(candidate.meta?.date, new Date()))
+    .map((candidate) => {
+      const candidateSeries = getSeriesInfo(candidate);
+      const candidateTags = Array.isArray(candidate.meta?.tags) ? candidate.meta.tags : [];
+      const sharedTags = candidateTags.filter((tag) =>
+        currentTags.has(tag.trim().toLocaleLowerCase("fr-FR"))
+      ).length;
+      const sameSeries = Boolean(
+        currentSeries.slug && candidateSeries.slug === currentSeries.slug
+      );
+      const candidateDate = asDateValue(candidate.meta?.date);
+      const distance =
+        currentDate && candidateDate ? Math.abs(currentDate - candidateDate) : Number.MAX_SAFE_INTEGER;
+
+      return {
+        candidate,
+        score: (sameSeries ? 20 : 0) + sharedTags * 5,
+        distance,
+      };
+    })
+    .sort((a, b) => b.score - a.score || a.distance - b.distance)
+    .slice(0, 3)
+    .map(({ candidate }) => candidate);
 
   return (
     <article className={`${styles.page} ${styles.reading}`}>
@@ -229,6 +313,33 @@ export default async function ArticleDetailPage({
         className={styles.prose}
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      {related.length > 0 ? (
+        <aside className={styles.related} aria-labelledby="related-articles-title">
+          <p className={styles.eyebrow}>À lire ensuite</p>
+          <h2 id="related-articles-title" className={styles.relatedTitle}>
+            Prolonger cette réflexion
+          </h2>
+          <div className={styles.relatedList}>
+            {related.map((candidate) => {
+              const candidateSeries = getSeriesInfo(candidate);
+              return (
+                <Link
+                  key={getSlug(candidate)}
+                  href={`/articles/${getSlug(candidate)}`}
+                  className={styles.relatedLink}
+                >
+                  <span className={styles.relatedMeta}>
+                    {candidateSeries.title ?? formatDate(candidate.meta?.date)}
+                  </span>
+                  <strong>{candidate.meta?.title}</strong>
+                  <span aria-hidden>→</span>
+                </Link>
+              );
+            })}
+          </div>
+        </aside>
+      ) : null}
 
       <nav className={styles.readingNav} aria-label="Articles précédent et suivant">
         {prev ? (

@@ -21,11 +21,11 @@ Cette fiche sert à ça. Elle est courte, structurée, et elle t’oblige à tra
 Elle découpe le flou en cinq zones : ton parcours (en 5 lignes), tes expériences préférées (et pourquoi), tes forces reconnues par les autres, tes compétences clés (relation, vente, organisation, outils), puis ce que tu veux pour la suite (clientèle, environnement, missions, critères). Elle termine là où ça compte : tes axes de développement, puis ton plan d’action sur 6 mois.
 
 ## À quoi ça sert dans la vraie vie
-— Préparer un entretien ou un échange où tu dois être clair sans te sur-vendre  
-— Revenir à des faits concrets quand tout devient émotionnel ou confus  
-— Sortir d’une spirale « je fais beaucoup mais je n’avance pas »  
-— Prioriser : 3 actions, pas 20  
-— Mettre au propre une trajectoire avant de demander une opportunité
+- Préparer un entretien ou un échange où tu dois être clair sans te sur-vendre
+- Revenir à des faits concrets quand tout devient émotionnel ou confus
+- Sortir d’une spirale « je fais beaucoup mais je n’avance pas »
+- Prioriser : 3 actions, pas 20
+- Mettre au propre une trajectoire avant de demander une opportunité
 
 ## Deux formats, même logique
 Tu peux télécharger le PDF et le remplir à ta façon. Ou répondre en ligne : tu reçois ensuite un récapitulatif par mail, prêt à être repris ou retravaillé.

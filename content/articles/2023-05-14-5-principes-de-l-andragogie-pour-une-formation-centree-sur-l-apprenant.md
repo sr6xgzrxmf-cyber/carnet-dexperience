@@ -15,7 +15,7 @@ series:
   order: 4
 ---
 
-### 9 h 08, et la moitié du groupe n’écoute déjà plus
+## 9 h 08, et la moitié du groupe n’écoute déjà plus
 
 Les manteaux sont encore sur les dossiers des chaises. Certains ont gardé leur téléphone en main. Une participante demande tout de suite à quelle heure cela se termine. Un autre veut savoir si ce qui va être vu “sert vraiment dans le poste”. Personne n’est impoli. Mais tout le monde vérifie la même chose : est-ce que ce temps mérite d’être pris ?
 
@@ -123,4 +123,4 @@ Mais comme des personnes qui viennent avec du vécu, des contraintes, de l’org
 
 Au fond, former des adultes revient peut-être à cela : ne jamais oublier qu’ils apprennent avec leur intelligence, leur métier, leur histoire… et leur dignité.
 
-Question ouverte : dans tes formations, qu’est-ce qui tient encore du programme… et qu’est-ce qui part vraiment de la réalité de ceux qui sont dans la salle ?
+Dans tes formations, qu’est-ce qui tient encore du programme… et qu’est-ce qui part vraiment de la réalité de ceux qui sont dans la salle ?

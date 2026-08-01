@@ -10,7 +10,7 @@ tags:
   - "apprentissage"
 ---
 
-### « On a tout ce qu’il faut dans le catalogue. Pourtant rien ne bouge vraiment. »
+## « On a tout ce qu’il faut dans le catalogue. Pourtant rien ne bouge vraiment. »
 
 Cette phrase résume beaucoup de dispositifs de formation continue.
 

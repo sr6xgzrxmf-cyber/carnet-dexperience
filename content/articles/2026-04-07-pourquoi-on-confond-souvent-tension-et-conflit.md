@@ -14,7 +14,7 @@ series:
   order: 22
 ---
 
-### La phrase qui a crispé toute la salle
+## La phrase qui a crispé toute la salle
 
 Une réunion avance normalement. Puis quelqu’un coupe un peu sèchement :
 

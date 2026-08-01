@@ -14,7 +14,7 @@ series:
   order: 6
 ---
 
-### « Je ne suis pas fait pour ça. »
+## « Je ne suis pas fait pour ça. »
 
 Quand un adulte reprend une formation, il n’arrive pas seulement avec un niveau. Il arrive avec une histoire qu’il se raconte sur lui-même.
 
@@ -146,4 +146,4 @@ L’auto-concept n’est pas figé. C’est une construction vivante. Il peut se
 
 Au fond, un adulte réussit rarement seulement parce qu’il a reçu le bon contenu. Il réussit aussi parce qu’à un moment, il a accepté de ne plus se raconter la même limite.
 
-Question ouverte : dans ce que tu apprends en ce moment, quel récit sur toi continue peut-être à te freiner plus que la difficulté réelle ?
+Dans ce que tu apprends en ce moment, quel récit sur toi continue peut-être à te freiner plus que la difficulté réelle ?

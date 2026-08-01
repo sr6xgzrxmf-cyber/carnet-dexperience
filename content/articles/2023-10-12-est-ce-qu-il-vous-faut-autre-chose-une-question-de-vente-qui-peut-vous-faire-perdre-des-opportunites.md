@@ -13,7 +13,7 @@ series:
   order: 0
 ---
 
-### « Est-ce qu’il vous faut autre chose ? »
+## « Est-ce qu’il vous faut autre chose ? »
 
 La vente est presque terminée. Le client a choisi. Il tient déjà son sac ou regarde la caisse. Et c’est souvent à ce moment-là que sort cette phrase, comme un automatisme poli, appris très tôt :
 
@@ -67,10 +67,10 @@ Une bonne phrase de vente ne demande pas au client s’il veut partir. Elle prol
 
 Par exemple :
 
-- « Vu ce que tu m’as dit, il y a un point que je te montrerais bien avant que tu partes. »
+- « Vu ce que vous m’avez dit, il y a un point que je vous montrerais bien avant que vous partiez. »
 - « Avec ce choix-là, il y a souvent un complément utile pour éviter telle galère. »
-- « Si ton usage ressemble à ce que tu m’as décrit, je peux te montrer une option qui change vraiment l’expérience. »
-- « Avant de finaliser, je veux juste vérifier un point pour être sûr que tu repars avec quelque chose de vraiment cohérent. »
+- « Si votre usage ressemble à ce que vous m’avez décrit, je peux vous montrer une option qui change vraiment l’expérience. »
+- « Avant de finaliser, je veux juste vérifier un point pour m’assurer que vous repartez avec quelque chose de vraiment cohérent. »
 
 Dans ces formulations, le vendeur ne pousse pas. Il guide.
 
@@ -97,4 +97,4 @@ On sous-estime souvent l’effet des automatismes de langage. Pourtant, ce sont 
 
 Et quand on veut vendre en servant vraiment, les phrases de sortie sont rarement les plus utiles.
 
-Question ouverte : dans tes propres échanges, quelles phrases donnent encore au client la permission de partir… au lieu de lui ouvrir une recommandation juste ?
+Dans vos propres échanges, quelles phrases donnent encore au client la permission de partir… au lieu de lui ouvrir une recommandation juste ?

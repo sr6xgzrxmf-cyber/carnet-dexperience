@@ -13,7 +13,7 @@ series:
   order: 40
 ---
 
-### « Franchement, je n’ai pas le temps. »
+## « Franchement, je n’ai pas le temps. »
 
 Quand cette phrase surgit à propos d’une formation, elle est souvent interprétée comme un manque d’engagement.
 

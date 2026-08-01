@@ -13,7 +13,7 @@ series:
   order: 28
 ---
 
-### « On me parle souvent de progression. Mais si progresser voulait dire m’éloigner de ce que je fais le mieux ? »
+## « On me parle souvent de progression. Mais si progresser voulait dire m’éloigner de ce que je fais le mieux ? »
 
 La phrase n’était pas formulée exactement comme ça, mais c’est ce qu’elle disait.
 

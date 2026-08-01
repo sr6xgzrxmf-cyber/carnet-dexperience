@@ -14,7 +14,7 @@ series:
   order: 19
 ---
 
-### « Faites comme vous voulez. »
+## « Faites comme vous voulez. »
 
 Selon le contexte, la phrase peut faire du bien ou créer un léger vertige.
 

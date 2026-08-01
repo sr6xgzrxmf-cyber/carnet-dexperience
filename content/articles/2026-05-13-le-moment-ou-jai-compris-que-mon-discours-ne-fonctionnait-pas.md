@@ -19,7 +19,7 @@ series:
   order: 3
 ---
 
-### “Je passe à côté de quelque chose, non ?”
+## “Je passe à côté de quelque chose, non ?”
 
 La salle de réunion sent le café tiède et le papier neuf. En face de moi, un responsable de mécénat fait tourner son stylo sur un dossier épais. J’ai préparé un discours en trois actes. Tout est tracé : l’introduction sur l’inclusion, le cœur sur le parcours artistique, la fin sur la visibilité médiatique. Je commence.
 
@@ -69,4 +69,4 @@ Pas quand mon discours devient convaincant.
 
 Quand l’autre trouve enfin une place pour y entrer.
 
-Question ouverte : quand ton discours ne prend pas, est-ce que tu cherches encore à mieux parler… ou à mieux comprendre depuis quoi l’autre écoute ?
+Quand ton discours ne prend pas, est-ce que tu cherches encore à mieux parler… ou à mieux comprendre depuis quoi l’autre écoute ?

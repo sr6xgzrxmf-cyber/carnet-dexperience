@@ -12,7 +12,7 @@ series:
   order: 1
 ---
 
-### « Je te le montre, mais je te préviens, c’est un peu cher. »
+## « Je te le montre, mais je te préviens, c’est un peu cher. »
 
 La phrase part souvent toute seule. Le client n’a encore rien contesté, mais le vendeur, lui, a déjà commencé à ouvrir une brèche. Avant même que l’objection prix n’arrive, il a pris les devants. Comme s’il devait s’excuser d’avance pour protéger la relation.
 
@@ -106,4 +106,4 @@ C’est ce discernement-là qui transforme la gêne en crédibilité.
 
 Le vendeur ne devient pas fier parce qu’il “réussit à faire passer” un prix élevé. Il devient plus juste parce qu’il sait relier ce prix à une valeur réelle, située, compréhensible.
 
-Question ouverte : quand un prix te met mal à l’aise, qu’est-ce qu’il révèle vraiment : un manque de confiance… ou un manque de clarté sur la valeur que tu proposes ?
+Quand un prix te met mal à l’aise, qu’est-ce qu’il révèle vraiment : un manque de confiance… ou un manque de clarté sur la valeur que tu proposes ?

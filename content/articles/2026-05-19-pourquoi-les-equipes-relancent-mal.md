@@ -15,33 +15,33 @@ series:
   order: 2
 ---
 
-### Le mythe du manque d’engagement
+## Le mythe du manque d’engagement
 
 Beaucoup de managers pensent que si les équipes relancent mal, c’est par manque d’envie. En réalité, c’est souvent l’inverse : elles relancent trop, mal, et sans cadre.
 
-### L’absence de règle claire
+## L’absence de règle claire
 
 Quand rien n’est formalisé, chacun fait “à sa manière”. Certains harcèlent. D’autres abandonnent trop vite. Aucun comportement n’est piloté.
 
-### La relance devient émotionnelle
+## La relance devient émotionnelle
 
 Sans cadre, la relance devient personnelle :
-– peur de déranger,
-– peur d’insister,
-– peur d’échouer.
+- peur de déranger,
+- peur d’insister,
+- peur d’échouer.
 
 Ces peurs n’ont rien à faire dans un processus opérationnel.
 
-### Ce que le manager doit fournir
+## Ce que le manager doit fournir
 
 Un manager mature ne demande pas “plus de relances”. Il fournit :
-– un nombre maximal de tentatives,
-– une durée claire,
-– un droit explicite d’arrêter.
+- un nombre maximal de tentatives,
+- une durée claire,
+- un droit explicite d’arrêter.
 
 C’est ce cadre qui libère l’action.
 
-### Piloter, ce n’est pas pousser
+## Piloter, ce n’est pas pousser
 
 Quand les règles sont claires, les équipes relancent mieux, avec moins de stress et plus de constance. Le manager cesse de pousser. Il pilote.
 

@@ -59,7 +59,7 @@ Ce soir-là, la question s’est imposée simplement : comment se souvenir de to
 
 L’idée de Carnet d’expérience est née là. Pas pour montrer. Pas pour séduire. Pas pour être visible partout.
 
-$D’abord pour moi.$
+**D’abord pour moi.**
 
 Un espace où je peux déposer, structurer, relier. Où le savoir-faire ne prend jamais le pas sur le savoir-être, et où le faire savoir ne l’emporte pas sur le savoir paraître. Un espace choisi, sans publicité, sans injonction à publier, sans métrique flatteuse.
 

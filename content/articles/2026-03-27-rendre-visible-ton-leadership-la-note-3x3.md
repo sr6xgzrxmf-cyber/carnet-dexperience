@@ -11,7 +11,7 @@ tags:
   - "communication"
 ---
 
-### « Oui, mais concrètement, tu fais quoi ? »
+## « Oui, mais concrètement, tu fais quoi ? »
 
 La question arrive souvent quand on exerce un leadership peu spectaculaire.
 

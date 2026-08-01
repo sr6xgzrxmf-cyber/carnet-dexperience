@@ -15,13 +15,13 @@ series:
   order: 13.5
 ---
 
-### Le contexte : un bilan après recadrage
+## Le contexte : un bilan après recadrage
 
 Karim sort d’un échange tendu avec son manager. Plusieurs points ont été soulevés : manque de clarté, priorisation perfectible, communication parfois trop détaillée. On lui demande un bilan écrit, « pour faire le point ».
 
 C’est typiquement le moment où beaucoup basculent en posture défensive, sans même s’en rendre compte.
 
-### Le mail “avant” : bien intentionné, mais contre-productif
+## Le mail “avant” : bien intentionné, mais contre-productif
 
 Voici un mail très courant, sincère, mais inefficace.
 
@@ -39,7 +39,7 @@ Voici un mail très courant, sincère, mais inefficace.
 
 Ce mail est poli, honnête… et pourtant, il appelle rarement une réponse utile.
 
-### Pourquoi ce mail pose problème
+## Pourquoi ce mail pose problème
 
 Il mélange les niveaux.  
 Il parle beaucoup du ressenti, peu des faits.  
@@ -48,7 +48,7 @@ Il transfère la responsabilité de la suite au manager : « dis-moi ce que tu a
 
 Résultat : silence, réponse vague, ou recadrage bis.
 
-### Le mail “après” : même situation, posture différente
+## Le mail “après” : même situation, posture différente
 
 Voici le même bilan, réécrit avec la **trame en cinq temps**.
 
@@ -71,7 +71,7 @@ Voici le même bilan, réécrit avec la **trame en cinq temps**.
 >  
 > Bonne journée
 
-### Décorticage ligne par ligne
+## Décorticage ligne par ligne
 
 Le **point de départ** pose un diagnostic clair, sans se flageller.  
 Les **conseils reçus** montrent une écoute réelle, sans reformulation floue.  
@@ -81,7 +81,7 @@ La **suite proposée** ouvre un cadre de décision, sans quémander.
 
 Le manager n’a plus à deviner ce qui a été compris, fait ou attendu. Il peut répondre utilement.
 
-### Ce qui change vraiment
+## Ce qui change vraiment
 
 Ce mail ne cherche pas à rassurer. Il cherche à piloter la relation.  
 Il transforme une critique en progression lisible.  

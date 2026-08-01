@@ -15,32 +15,32 @@ series:
   order: 16
 ---
 
-### Une phrase banale, un signal fort
+## Une phrase banale, un signal fort
 
 « Tout est prioritaire. »  
 Karim l’entend souvent. Parfois il la prononce lui-même. Sur le moment, elle donne l’impression d’un engagement total. En réalité, elle masque un problème plus profond.
 
 Quand tout est prioritaire, plus rien ne l’est vraiment. Et surtout, plus personne ne sait arbitrer.
 
-### Ce que cette phrase révèle
+## Ce que cette phrase révèle
 
 Dans une organisation, la priorité n’est pas un adjectif. C’est un choix. Dire que tout est prioritaire revient à refuser ce choix — ou à le déléguer implicitement à ceux qui exécutent.
 
 Résultat : surcharge, tensions, fatigue, décisions implicites prises sous stress. Le système continue de tourner, mais il s’use.
 
-### L’absence d’arbitrage est une décision
+## L’absence d’arbitrage est une décision
 
 Ne pas prioriser, c’est déjà décider. C’est décider que chacun arbitrera seul, dans l’urgence, avec ses propres critères. Cette logique favorise les profils les plus disponibles, pas les plus pertinents.
 
 Sur le terrain, Karim constate que cette absence de cadre crée plus de conflits que les refus explicites.
 
-### Prioriser, c’est protéger l’énergie collective
+## Prioriser, c’est protéger l’énergie collective
 
 Un manager qui priorise ne réduit pas l’ambition. Il rend l’effort soutenable. Il clarifie ce qui compte maintenant, et accepte que le reste attende.
 
 Dire « ce sujet est important, mais pas prioritaire cette semaine » est un acte de leadership, pas un renoncement.
 
-### Le courage de dire ce qui attendra
+## Le courage de dire ce qui attendra
 
 Les équipes ne demandent pas que tout soit faisable. Elles demandent de savoir *quoi* faire en premier, et *quoi* laisser de côté sans culpabilité.
 

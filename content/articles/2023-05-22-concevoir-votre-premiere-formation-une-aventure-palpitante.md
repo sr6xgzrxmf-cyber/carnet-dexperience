@@ -14,7 +14,7 @@ series:
   order: 10
 ---
 
-### « Il nous faudrait une formation sur la posture client. »
+## « Il nous faudrait une formation sur la posture client. »
 
 La demande paraît claire. En réalité, elle ne l’est presque jamais.
 

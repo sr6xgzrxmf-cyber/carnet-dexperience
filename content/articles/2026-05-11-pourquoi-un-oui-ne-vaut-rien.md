@@ -17,7 +17,7 @@ series:
   slug: faire-exister-un-projet
   order: 2
 ---
-### “Clairement, il y a quelque chose à faire.”
+## “Clairement, il y a quelque chose à faire.”
 
 Quand la personne me dit : « Clairement, il y a quelque chose à faire. », je sens immédiatement mon corps changer. La tension qui montait depuis des dizaines de relayages, un standard qui tournait en boucle, s’effondre d’un coup. J’obtiens enfin ce contact. Et dans l’instant, mon cerveau projette déjà la suite : une réunion qui se profile, un partenariat qui s’esquisse, une visibilité qui se dessine. L’impression tenace que le projet venait enfin de basculer dans le concret.
 
@@ -81,4 +81,4 @@ Les mots créent des possibilités.
 
 Seul le déplacement trace une trajectoire.
 
-Question ouverte : quand quelqu’un te dit oui, qu’est-ce qui a réellement bougé dans le réel ?
+Quand quelqu’un te dit oui, qu’est-ce qui a réellement bougé dans le réel ?

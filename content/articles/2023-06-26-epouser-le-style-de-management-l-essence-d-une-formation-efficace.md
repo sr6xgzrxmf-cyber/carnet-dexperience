@@ -15,7 +15,7 @@ series:
   order: 15
 ---
 
-### Une même formation peut très bien réussir ici… et échouer ailleurs
+## Une même formation peut très bien réussir ici… et échouer ailleurs
 
 Le contenu n’a pas changé. Le formateur non plus. Les outils sont les mêmes. Et pourtant, dans une organisation, la formation prend. Dans l’autre, elle glisse à la surface.
 

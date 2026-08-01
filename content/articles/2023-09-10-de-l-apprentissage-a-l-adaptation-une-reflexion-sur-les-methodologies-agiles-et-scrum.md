@@ -14,7 +14,7 @@ series:
   order: 39
 ---
 
-### « Ce n’est pas agile si on change tout tous les deux jours. »
+## « Ce n’est pas agile si on change tout tous les deux jours. »
 
 La phrase peut paraître paradoxale. Elle est pourtant essentielle.
 

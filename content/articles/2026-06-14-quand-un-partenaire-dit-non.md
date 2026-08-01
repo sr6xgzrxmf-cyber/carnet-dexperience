@@ -19,7 +19,7 @@ series:
   order: 7
 ---
 
-### “Nous ne pourrons pas soutenir le projet cette année.”
+## “Nous ne pourrons pas soutenir le projet cette année.”
 
 Le message arrive un matin. Il est poli, professionnel et sans ambiguïté : le mécénat n’est pas possible pour le moment. Sur le coup, tout semble dit. En général, ce type de réponse signifie qu’on classe le contact, qu’on passe au suivant et qu’on concentre son énergie ailleurs.
 
@@ -76,4 +76,4 @@ Autrement dit, on cesse de traiter la relation comme une transaction binaire. On
 
 Ce refus m’a appris quelque chose de simple : dans une relation, le premier non ne dit pas toujours ce qui est impossible. Il dit parfois seulement ce qui n’est pas possible sous cette forme-là.
 
-Question ouverte : quand quelqu’un te dit non, est-ce que tu entends une fin… ou la forme précise de ce qui reste encore possible ?
+Quand quelqu’un te dit non, est-ce que tu entends une fin… ou la forme précise de ce qui reste encore possible ?

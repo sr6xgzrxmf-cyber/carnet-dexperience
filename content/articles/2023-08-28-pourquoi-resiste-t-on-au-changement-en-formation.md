@@ -13,7 +13,7 @@ series:
   order: 36
 ---
 
-### « On a toujours fait comme ça. »
+## « On a toujours fait comme ça. »
 
 La phrase est souvent moquée.
 

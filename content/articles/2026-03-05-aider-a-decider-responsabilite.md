@@ -16,7 +16,7 @@ series:
   order: 5
 ---
 
-### « Si vous étiez à ma place, vous feriez quoi ? »
+## « Si vous étiez à ma place, vous feriez quoi ? »
 
 La question paraît flatteuse.
 

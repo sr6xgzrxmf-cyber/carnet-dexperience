@@ -14,7 +14,7 @@ series:
   order: 26
 ---
 
-### Tester n’est pas décider
+## Tester n’est pas décider
 
 Karim a appris à proposer des tests. Un mois. Un périmètre clair. Une posture ouverte. Mais un piège apparaît rapidement : à la fin du test, chacun raconte *son* ressenti.
 
@@ -22,7 +22,7 @@ Certains trouvent que “ça va mieux”. D’autres que “ce n’est pas concl
 
 Tester sans indicateurs n’a pas supprimé l’incertitude. Il l’a maquillée.
 
-### Le vrai danger : confondre expérience et preuve
+## Le vrai danger : confondre expérience et preuve
 
 Une expérience produit des impressions. Une preuve produit une décision.  
 Sans indicateurs définis à l’avance, un test devient un récit subjectif, interprétable à l’infini.
@@ -34,13 +34,13 @@ Sur le terrain, cela se traduit par des phrases floues :
 
 Aucune de ces phrases ne permet de trancher.
 
-### Un indicateur n’est pas un KPI lourd
+## Un indicateur n’est pas un KPI lourd
 
 Beaucoup résistent aux indicateurs par peur de la complexité. Or un bon indicateur est souvent simple, presque trivial. Il ne cherche pas l’exhaustivité, mais la lisibilité.
 
 Un indicateur utile répond à une seule question : *est-ce que c’est mieux qu’avant, sur ce point précis ?*
 
-### Choisir peu, mais choisir avant
+## Choisir peu, mais choisir avant
 
 Karim ne définit jamais plus de deux ou trois indicateurs par test. Et surtout, il les choisit **avant** de lancer le prototype.
 
@@ -48,13 +48,13 @@ Temps gagné. Nombre de sollicitations. Taux de réouverture d’un sujet. Nivea
 
 Ce choix préalable empêche la réécriture a posteriori.
 
-### Mesurer, ce n’est pas surveiller
+## Mesurer, ce n’est pas surveiller
 
 Un indicateur n’est pas un outil de contrôle des personnes. C’est un outil de décision pour le collectif. Il sert à dire : on continue, on ajuste, ou on arrête.
 
 Sans cela, le test devient un compromis mou, où personne n’assume vraiment la décision finale.
 
-### Décider devient enfin possible
+## Décider devient enfin possible
 
 Quand les indicateurs sont clairs, la décision cesse d’être personnelle. Elle devient factuelle. Même imparfaite, elle est assumable.
 

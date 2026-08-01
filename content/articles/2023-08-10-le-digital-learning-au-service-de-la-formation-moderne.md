@@ -14,7 +14,7 @@ series:
   order: 31
 ---
 
-### « Le LMS est plein. Pourtant personne n’y retourne. »
+## « Le LMS est plein. Pourtant personne n’y retourne. »
 
 Cette scène est devenue classique.
 

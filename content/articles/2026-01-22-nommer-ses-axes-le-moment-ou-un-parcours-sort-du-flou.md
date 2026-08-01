@@ -15,7 +15,7 @@ Quand Karim s’assoit devant le document, il ne dit pas qu’il n’a rien à d
 
 Ce moment-là est décisif. Parce que ce n’est pas un problème de compétences. C’est un problème de forme. Tant que tout reste dans la tête, tout se vaut. Le critique, l’accessoire, l’essentiel. Et à force de tout vouloir garder, on finit par ne rien choisir.
 
-### Le flou n’est pas une absence de contenu, c’est une absence de hiérarchie
+## Le flou n’est pas une absence de contenu, c’est une absence de hiérarchie
 
 Je le vois ouvrir le document, puis le refermer. Il hésite. Il relit une question, puis une autre. Il voudrait répondre “bien”, mais il sent que ce n’est pas le sujet. Le sujet, ce n’est pas de bien répondre. Le sujet, c’est d’oser trier.
 
@@ -23,7 +23,7 @@ Chez Karim, comme chez beaucoup de managers, de formateurs, de responsables de r
 
 Le document de développement sert exactement à ça : **transformer un vécu dense en matière hiérarchisée**. Pas pour l’appauvrir. Pour le rendre utilisable.
 
-### Le premier tri est toujours inconfortable
+## Le premier tri est toujours inconfortable
 
 Quand Karim commence à écrire, il note tout. Les situations difficiles. Les réussites dont il est fier. Les moments où il s’est senti à sa place. Ceux où il s’est épuisé. Il écrit vite, presque trop. Puis, naturellement, il s’arrête.  
 — *Mais là, j’en fais quoi ?*  
@@ -35,7 +35,7 @@ Je ne lui parle pas encore d’axes. Je lui demande simplement :
 
 Et peu à peu, certaines lignes se rapprochent. Pas parce qu’elles se ressemblent, mais parce qu’elles racontent la même chose sous des formes différentes.
 
-### Nommer un axe, c’est accepter de se regarder sans se raconter d’histoire
+## Nommer un axe, c’est accepter de se regarder sans se raconter d’histoire
 
 Le moment le plus délicat, ce n’est pas l’écriture. C’est le moment où il faut nommer. Mettre un titre. Dire : *ça, c’est un axe de développement*. Pas une qualité abstraite. Pas une intention vague. Un axe, c’est une **progression observable**.
 
@@ -46,7 +46,7 @@ Un axe n’est pas ce qu’on rêve de devenir. C’est ce qu’on est déjà en
 
 C’est souvent là que le déclic se produit. L’axe ne crée rien. Il révèle.
 
-### Les preuves font tomber l’imposture
+## Les preuves font tomber l’imposture
 
 Très vite, une autre résistance apparaît. Nommer un axe, d’accord. Mais **le prouver**, c’est autre chose. Je lui demande :  
 — *Donne-moi deux situations précises qui montrent cet axe en action.*
@@ -57,7 +57,7 @@ C’est un moment important pour des profils exigeants comme Karim. Les preuves 
 
 À ce stade, l’axe cesse d’être une étiquette. Il devient un **point d’appui**.
 
-### Passer du constat au choix
+## Passer du constat au choix
 
 Quand trois axes émergent, Karim respire différemment. Pas parce que tout est réglé. Mais parce que quelque chose est désormais **choisissable**. Il n’est plus obligé de travailler sur tout en même temps. Il peut prioriser. Dire :  
 — *Si on devait commencer quelque part, ce serait celui-là.*
@@ -66,7 +66,7 @@ C’est un basculement que je vois souvent chez des décideurs ou des managers e
 
 Ce jour-là, Karim n’a pas résolu son avenir. Mais il a cessé de dire qu’il était perdu. Il sait sur quoi il peut avancer sans se trahir, et sur quoi il n’est pas prêt à se battre maintenant.
 
-### Ce que ce travail change vraiment
+## Ce que ce travail change vraiment
 
 Ce type de document n’est pas un outil de plus. C’est un **outil de décantation**. Il transforme un parcours subi en trajectoire lisible. Il permet de parler développement sans se disperser, repositionnement sans se renier, progression sans sur-promesse.
 
@@ -75,6 +75,6 @@ Pour les organisations, c’est précieux. Un collaborateur capable de nommer se
 Et pour celui qui fait le travail, c’est souvent la première fois depuis longtemps qu’il peut dire :  
 — *Voilà sur quoi je veux progresser. Voilà pourquoi. Et voilà comment.*
 
-### Une question pour continuer
+## Une question pour continuer
 
 Si vous deviez, aujourd’hui, nommer trois axes de développement à partir de ce que vous faites déjà — et non de ce que vous devriez être — qu’est-ce qui vous retiendrait le plus : le manque de preuves… ou la peur de choisir ?

@@ -14,7 +14,7 @@ series:
   order: 29
 ---
 
-### La dépendance invisible
+## La dépendance invisible
 
 Karim fait son travail sérieusement. Pourtant, les retours négatifs tombent. Pas toujours sur ce qu’il maîtrise directement, mais sur ce qui dépend d’un autre pôle : informations manquantes, délais non tenus, éléments incomplets.
 
@@ -22,7 +22,7 @@ Très vite, un sentiment s’installe : *je suis jugé sur des choses que je ne 
 
 C’est une situation fréquente — et dangereuse — si elle n’est pas traitée.
 
-### Le piège de la personnalisation
+## Le piège de la personnalisation
 
 Quand la qualité dépend d’un autre pôle, deux réflexes apparaissent.  
 Soit on se justifie sans cesse.  
@@ -30,13 +30,13 @@ Soit on accuse l’autre, explicitement ou non.
 
 Dans les deux cas, la relation se dégrade. Et surtout, le problème reste entier : le système continue de produire les mêmes frictions.
 
-### Sécuriser ne veut pas dire se protéger seul
+## Sécuriser ne veut pas dire se protéger seul
 
 Karim comprend qu’il ne peut pas “compenser” indéfiniment les manques d’un autre pôle. Mais il ne veut pas non plus entrer dans un rapport de force.
 
 Il change donc de posture : au lieu de défendre son périmètre, il cherche à **sécuriser l’interface** entre les deux pôles.
 
-### Rendre visible la dépendance
+## Rendre visible la dépendance
 
 Premier geste : rendre la dépendance explicite.  
 Pas sous forme de plainte, mais de constat.
@@ -45,22 +45,22 @@ Pas sous forme de plainte, mais de constat.
 
 Nommer l’interface change la discussion. On ne parle plus de personnes, mais de flux.
 
-### Déplacer la responsabilité vers le process
+## Déplacer la responsabilité vers le process
 
 Karim ne demande pas à l’autre pôle de “faire mieux”. Il propose un cadre commun :  
-– ce qui est attendu en entrée,  
-– à quel moment,  
-– avec quel niveau de complétude.
+- ce qui est attendu en entrée,
+- à quel moment,
+- avec quel niveau de complétude.
 
 Ce cadre peut prendre la forme d’une check-list partagée, d’un point de synchronisation, ou d’un jalon clair. Peu importe l’outil. Ce qui compte, c’est que la dépendance soit **outillée**.
 
-### Tester sans braquer
+## Tester sans braquer
 
 Comme souvent, Karim propose un test limité dans le temps. Deux ou trois semaines suffisent. On observe. On ajuste. On mesure les effets.
 
 Cette approche évite le rapport hiérarchique ou émotionnel. Elle transforme une dépendance subie en expérimentation collective.
 
-### Passer de la plainte à la maîtrise
+## Passer de la plainte à la maîtrise
 
 Sécuriser sans subir, ce n’est pas tout contrôler. C’est accepter la dépendance tout en la rendant lisible, discutable et améliorable.
 

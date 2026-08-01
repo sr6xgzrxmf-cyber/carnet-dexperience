@@ -15,13 +15,13 @@ series:
   order: 18
 ---
 
-### Ce qui fait tenir un système n’est pas toujours visible
+## Ce qui fait tenir un système n’est pas toujours visible
 
 Dans beaucoup d’organisations, on confond ce qui est **nommé** avec ce qui est **utile**. Les rôles visibles — managers, chefs de projet, responsables — structurent l’organigramme. Mais ils ne racontent pas toute l’histoire.
 
 Sur le terrain, d’autres rôles existent. Ils n’ont pas de titre clair, parfois même pas de reconnaissance explicite. Pourtant, sans eux, les frictions s’accumulent, les tensions montent, et le système se grippe.
 
-### Les rôles que personne n’a officiellement demandés
+## Les rôles que personne n’a officiellement demandés
 
 Karim observe toujours les mêmes figures revenir, quels que soient les contextes :  
 celui qui reformule quand tout le monde parle à côté,  
@@ -31,19 +31,19 @@ celle qui relie des équipes qui ne se parlent plus.
 
 Ces rôles n’apparaissent dans aucun organigramme. Et pourtant, ils sont indispensables.
 
-### Invisibles ne veut pas dire accessoires
+## Invisibles ne veut pas dire accessoires
 
 Si ces rôles restent invisibles, ce n’est pas parce qu’ils sont secondaires. C’est parce qu’ils ne produisent pas des livrables évidents. Leur impact est systémique : moins de frictions, plus de clarté, des décisions qui circulent mieux.
 
 Le paradoxe est cruel : plus ces rôles sont bien tenus, moins ils se voient. Le système fonctionne, donc personne ne questionne ce qui le rend possible.
 
-### Le coût de l’invisibilité
+## Le coût de l’invisibilité
 
 Quand ces rôles disparaissent — départ, épuisement, mise à l’écart — les symptômes apparaissent rapidement : réunions stériles, malentendus, tensions larvées, surcharge managériale.
 
 Le problème n’est pas l’absence de compétences. C’est l’absence de **lecture** du système.
 
-### Lire autrement la valeur
+## Lire autrement la valeur
 
 Reconnaître ces rôles, c’est accepter que la valeur ne se mesure pas uniquement en production directe. C’est comprendre que certaines fonctions existent pour **permettre** le travail des autres.
 

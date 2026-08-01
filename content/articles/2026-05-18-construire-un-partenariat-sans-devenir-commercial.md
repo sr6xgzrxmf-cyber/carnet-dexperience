@@ -19,7 +19,7 @@ series:
   order: 5
 ---
 
-### “Vous devriez peut-être le présenter autrement.”
+## “Vous devriez peut-être le présenter autrement.”
 
 La voix est calme. Bienveillante même. Nous sommes dans une salle de réunion vitrée, en fin d’après-midi. L’échange avance. Les questions sont pertinentes. Le projet intéresse. Et pourtant, quelque chose glisse.
 
@@ -95,4 +95,4 @@ Le rôle d’un partenariat n’est pas de rendre un projet acceptable à tout p
 
 C’est de trouver l’endroit où il peut rester reconnaissable.
 
-Question ouverte : jusqu’où peux-tu adapter un projet sans commencer à le déformer ?
+Jusqu’où peux-tu adapter un projet sans commencer à le déformer ?

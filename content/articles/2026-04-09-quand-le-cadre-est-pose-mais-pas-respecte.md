@@ -14,7 +14,7 @@ series:
   order: 23
 ---
 
-### « Pourtant, on en avait parlé. »
+## « Pourtant, on en avait parlé. »
 
 C’est souvent la première réaction.
 

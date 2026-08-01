@@ -14,7 +14,7 @@ series:
   order: 24
 ---
 
-### « La règle existe pour éviter de renégocier tout, tout le temps. »
+## « La règle existe pour éviter de renégocier tout, tout le temps. »
 
 On oublie souvent ce point.
 

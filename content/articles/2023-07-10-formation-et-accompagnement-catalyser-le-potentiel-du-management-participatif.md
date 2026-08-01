@@ -13,7 +13,7 @@ series:
   order: 21
 ---
 
-### Le participatif fait souvent illusion au départ
+## Le participatif fait souvent illusion au départ
 
 Une organisation décide de mieux écouter le terrain. Les managers sont invités à ouvrir davantage les espaces de discussion. Les équipes parlent plus. Les réunions changent de ton. Tout cela peut donner le sentiment qu’un basculement est en cours.
 

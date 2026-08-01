@@ -15,34 +15,34 @@ series:
   order: 4
 ---
 
-### Relancer n’est pas une fin en soi
+## Relancer n’est pas une fin en soi
 
 Dans beaucoup d’organisations, relancer est devenu un réflexe. On relance parce que rien ne se passe. On relance pour se rassurer. On relance pour avoir l’impression d’agir.
 
 Mais relancer sans cadre n’est pas de l’action. C’est de l’agitation.
 
-### Décider, le vrai point de bascule
+## Décider, le vrai point de bascule
 
 Ce qui fait la différence n’est pas le nombre de relances, mais la capacité à **trancher**.  
 Décider de continuer. Décider de différer. Décider d’arrêter.
 
 Sans décision, l’énergie se disperse.
 
-### Arrêter n’est pas un échec
+## Arrêter n’est pas un échec
 
 Arrêter une relance n’est ni une faiblesse ni un abandon.  
 C’est reconnaître que tout ne mérite pas la même attention, au même moment.
 
 Savoir arrêter est une compétence stratégique.
 
-### Une posture adulte face à l’incertitude
+## Une posture adulte face à l’incertitude
 
 Relancer, décider, arrêter : ces trois gestes dessinent une posture adulte.  
 On n’attend pas indéfiniment. On n’insiste pas sans fin. On agit, on observe, on tranche.
 
 C’est valable en vente, en management, en organisation personnelle.
 
-### Reprendre la maîtrise
+## Reprendre la maîtrise
 
 Ce cycle simple redonne quelque chose de précieux : la sensation de maîtrise.  
 Moins de fatigue mentale. Moins de frustration. Plus de clarté.

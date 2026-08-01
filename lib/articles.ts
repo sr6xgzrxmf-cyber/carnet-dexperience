@@ -10,10 +10,13 @@ const articlesDirectory = path.join(process.cwd(), "content", "articles");
 export type ArticleMeta = {
   title: string;
   date?: string | number | Date | { date?: unknown; value?: unknown };
+  updated?: string | number | Date | { date?: unknown; value?: unknown };
   tags?: string[];
   cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
   excerpt?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   series?: { name?: string; title?: string; slug?: string; order?: number | string };
   impact?: { text?: string; example?: string };
 };

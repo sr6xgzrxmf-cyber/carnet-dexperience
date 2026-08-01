@@ -14,7 +14,7 @@ series:
   order: 16
 ---
 
-### « Ici, on n’a pas le temps de débattre. »
+## « Ici, on n’a pas le temps de débattre. »
 
 La phrase tombe vite dans certaines organisations. Elle n’est pas toujours agressive. Elle peut même être prononcée calmement, comme un simple rappel du réel. Il faut livrer. Il faut sécuriser. Il faut éviter les écarts. Dans ce type d’environnement, la demande de clarté passe avant la recherche de participation.
 

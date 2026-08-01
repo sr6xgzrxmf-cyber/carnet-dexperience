@@ -14,16 +14,16 @@ series:
   order: 1
 ---
 
-### Objectif de la fiche
+## Objectif de la fiche
 
 Cette fiche permet de :
-– structurer les relances,
-– limiter le temps et l’énergie investis,
-– décider clairement à la fin du cycle.
+- structurer les relances,
+- limiter le temps et l’énergie investis,
+- décider clairement à la fin du cycle.
 
 ---
 
-### TABLEAU PRM — RELANCE STRUCTURÉE
+## TABLEAU PRM — RELANCE STRUCTURÉE
 
 | Prospect | Jour 1 | Jour 2 | Jour 3 | SMS envoyé | Réponse | Décision |
 |--------|--------|--------|--------|------------|----------|-----------|
@@ -31,7 +31,7 @@ Cette fiche permet de :
 
 ---
 
-### Règles d’usage
+## Règles d’usage
 
 - Maximum **3 jours consécutifs**
 - Maximum **3 tentatives par jour**
@@ -40,7 +40,7 @@ Cette fiche permet de :
 
 ---
 
-### Décisions possibles
+## Décisions possibles
 
 - ✔️ Relancer plus tard (date posée)
 - ✔️ Transformer (inscription / RDV)
@@ -48,7 +48,7 @@ Cette fiche permet de :
 
 ---
 
-### Principe clé
+## Principe clé
 
 Cette fiche n’est pas là pour “forcer” une réponse.  
 Elle est là pour **t’aider à décider**.

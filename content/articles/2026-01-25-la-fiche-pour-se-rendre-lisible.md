@@ -18,7 +18,7 @@ Tant que tout reste dans la tête, dans la parole, ou dans des notes éparses, l
 
 C’est exactement pour ça que cette fiche existe.
 
-### Une fiche, pas pour se raconter — mais pour tenir
+## Une fiche, pas pour se raconter — mais pour tenir
 
 Cette fiche n’a pas été conçue pour “bien se présenter”. Elle a été conçue pour **tenir**. Tenir dans le temps. Tenir sous pression. Tenir quand il faut expliquer vite, décider, prioriser.
 
@@ -28,7 +28,7 @@ Sept zones qui obligent à choisir, à condenser, à renoncer au superflu.
 Pas pour appauvrir un parcours.  
 Mais pour le rendre **lisible**.
 
-### Pourquoi l’écrire à la main change tout
+## Pourquoi l’écrire à la main change tout
 
 Je le précise volontairement : cette fiche est pensée pour être **remplie au stylo**. L’écriture manuscrite n’est pas un détail esthétique. C’est une contrainte utile.
 
@@ -40,7 +40,7 @@ Je le précise volontairement : cette fiche est pensée pour être **remplie au 
 
 Quand on n’a que quelques lignes, on ne peut pas tout dire. Et c’est précisément là que le travail commence. Ce que vous choisissez d’écrire, et surtout ce que vous laissez de côté, en dit souvent plus que de longues pages bien formulées.
 
-### Ce que cette fiche permet de faire concrètement
+## Ce que cette fiche permet de faire concrètement
 
 Utilisée correctement, cette fiche permet plusieurs choses très concrètes.
 
@@ -54,7 +54,7 @@ Elle permet aussi de préparer des situations très concrètes :
 
 Ce n’est pas un document à montrer tel quel à tout le monde. C’est un document **pour travailler juste**, avant de parler, avant d’écrire un CV, avant de pitcher.
 
-### À qui s’adresse vraiment ce travail
+## À qui s’adresse vraiment ce travail
 
 Cette fiche est particulièrement utile si vous vous reconnaissez dans l’une de ces situations :
 - vous avez de l’expérience, mais vous avez du mal à la résumer,
@@ -64,26 +64,26 @@ Cette fiche est particulièrement utile si vous vous reconnaissez dans l’une d
 
 Managers, formateurs, responsables de réseau, professionnels expérimentés : ce travail n’est pas une remise en cause. C’est un **outil de pilotage personnel**.
 
-### Comment l’utiliser sans se perdre
+## Comment l’utiliser sans se perdre
 
 Je recommande une chose simple : prenez ce document, imprimez-le, isolez-vous une heure. Pas plus. Répondez sans chercher à “bien faire”. Écrivez ce qui vient, puis relisez. Si un bloc déborde, ce n’est pas grave. C’est un signal. Si un bloc résiste, ce n’est pas un échec. C’est un point d’attention.
 
 Cette fiche n’est pas faite pour être parfaite. Elle est faite pour être **honnête et tenable**.
 
-### Ce qui change quand le travail est posé
+## Ce qui change quand le travail est posé
 
 Ce que j’observe, à chaque fois, c’est le même effet. Une forme de respiration. Moins de dispersion. Plus de stabilité. Les mots tiennent. Le discours s’apaise. Les échanges deviennent plus équilibrés.
 
 Ce n’est pas magique. C’est mécanique. Quand on sait ce qu’on veut dire, et ce qu’on ne veut plus dire, on reprend une forme d’autorité tranquille.
 
-### Une invitation
+## Une invitation
 
 Si vous sentez que votre parcours mérite mieux que des explications à rallonge ou des ajustements permanents, je vous invite à utiliser cette fiche. Prenez-la comme un espace de travail, pas comme un exercice à rendre.
 
 Posez-la sur une table. Prenez un stylo. Et voyez ce qui se passe.
 
 
-### Une invitation concrète
+## Une invitation concrète
 
 Si vous sentez que votre parcours mérite mieux que des explications à rallonge ou des ajustements permanents, cette fiche peut devenir un vrai point d’appui. Pas un exercice de développement personnel de plus, mais un **outil de travail**, simple, contraignant, tenable.
 
@@ -93,6 +93,6 @@ Vous pouvez la poser sur une table, prendre un stylo, et vous donner une heure. 
 
 Utilisez-la comme un espace de clarification. Revenez-y si nécessaire. Ce n’est pas un document à réussir, c’est un document à **habiter**.
 
-### Une question pour terminer
+## Une question pour terminer
 
 Si vous deviez aujourd’hui vous rendre lisible sans vous justifier, qu’est-ce qui aurait le plus de valeur pour vous : continuer à expliquer… ou enfin choisir ce qui mérite d’être transmis ?

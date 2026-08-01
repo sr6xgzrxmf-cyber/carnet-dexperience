@@ -20,7 +20,7 @@ Je le vois très vite. Quand il raconte son parcours, il parle longtemps. Il con
 
 Ce moment-là est rude. Parce que Karim n’est pas flou. Il est dense. Mais la densité, si elle n’est pas structurée, devient illisible.
 
-### Tout dire n’est pas être clair
+## Tout dire n’est pas être clair
 
 C’est une confusion très fréquente chez les profils expérimentés. Ils pensent que la sincérité passe par l’exhaustivité. Alors ils racontent tout. Les contextes. Les contraintes. Les raisons. Les exceptions. Ils veulent être justes. Mais à force de vouloir être justes, ils perdent l’autre.
 
@@ -29,7 +29,7 @@ Je lui dis quelque chose qui le déstabilise :
 
 Se rendre lisible n’est pas une trahison. C’est une forme de respect. Pour celui qui écoute. Pour l’échange. Pour la décision à venir.
 
-### Le problème n’est pas le parcours, c’est sa mise en forme
+## Le problème n’est pas le parcours, c’est sa mise en forme
 
 Karim a vingt ans de vécu. Ce n’est pas un handicap. C’est une matière première. Mais brute, elle ne sert à rien. Elle fatigue. Elle noie le message. Ce qu’il lui manque, ce n’est pas une meilleure histoire. C’est une **structure**.
 
@@ -37,7 +37,7 @@ C’est là que le bilan pro en blocs entre en jeu. Non pas comme une méthode s
 
 Dès qu’on pose ces blocs, quelque chose change. Le discours se resserre. Le souffle revient.
 
-### Passer du récit de vie au profil professionnel
+## Passer du récit de vie au profil professionnel
 
 Je lui propose un exercice simple, mais exigeant : résumer son parcours en cinq lignes. Pas cinq lignes par poste. Cinq lignes en tout. Il proteste intérieurement. Puis il essaie. Et il découvre quelque chose d’important : tout ne mérite pas le même poids.
 
@@ -45,7 +45,7 @@ Certaines expériences structurent. D’autres illustrent. D’autres encore peu
 
 Quand Karim commence à parler de ce fil rouge, son ton change. Il ne raconte plus. Il affirme.
 
-### Ce que j’aime, ce que j’apporte, comment je travaille
+## Ce que j’aime, ce que j’apporte, comment je travaille
 
 On avance bloc par bloc. Ce qu’il aime vraiment faire, pas ce qu’il sait faire “par devoir”. Ce dans quoi il est bon, pas ce pour quoi on l’a sollicité par défaut. Sa posture quand il est à sa place : comment il décide, comment il cadre, comment il tient la relation dans la durée.
 
@@ -53,7 +53,7 @@ On avance bloc par bloc. Ce qu’il aime vraiment faire, pas ce qu’il sait fai
 
 Ce n’est pas de la vente. C’est de la clarté opérationnelle.
 
-### Le pitch n’est pas une performance, c’est une prise de position
+## Le pitch n’est pas une performance, c’est une prise de position
 
 Quand on arrive au pitch, Karim est tendu. Il a en tête les injonctions classiques : être percutant, marquant, convaincant. Je lui enlève tout ça. Un pitch, ici, n’est pas un numéro. C’est une **phrase tenue**.
 
@@ -62,18 +62,18 @@ Trente secondes. Pas plus. Une phrase sur son fil rouge. Deux ou trois apports c
 
 La version deux minutes vient ensuite, naturellement. Elle ne rajoute pas. Elle illustre. Deux situations. Deux preuves. Et une direction claire.
 
-### Ce que ce travail change dans les échanges
+## Ce que ce travail change dans les échanges
 
 Très vite, les conversations de Karim changent. On ne lui demande plus de se justifier. On lui pose des questions. Des vraies. Sur ce qu’il apporte, sur le cadre qu’il cherche, sur la suite possible. Le rapport s’équilibre.
 
 Pour une organisation, c’est un signal fort. Quelqu’un capable de se présenter clairement, sans posture ni fuite, est quelqu’un avec qui on peut travailler. Quelqu’un qui comprend que la clarté n’est pas une faiblesse, mais un outil de pilotage.
 
-### Se rendre lisible, ce n’est pas se réduire
+## Se rendre lisible, ce n’est pas se réduire
 
 Je le redis souvent, parce que c’est une peur tenace : structurer son discours ne réduit pas un parcours riche. Ça lui donne une forme partageable. Ça permet aux autres de s’y projeter. De décider. D’engager.
 
 Karim n’a pas perdu sa complexité. Il a gagné une langue commune.
 
-### Une question pour aller plus loin
+## Une question pour aller plus loin
 
 Quand vous parlez de votre parcours aujourd’hui, est-ce que vous cherchez encore à être complet… ou êtes-vous prêt à être lisible ?

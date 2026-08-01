@@ -14,7 +14,7 @@ series:
   order: 14
 ---
 
-### « On n’est pas à l’école primaire. »
+## « On n’est pas à l’école primaire. »
 
 La remarque arrive vite dès qu’on évoque le jeu en formation. Elle dit souvent la même chose : si c’est ludique, ce sera forcément moins sérieux. Comme si le sérieux se mesurait au niveau d’ennui dans la salle.
 

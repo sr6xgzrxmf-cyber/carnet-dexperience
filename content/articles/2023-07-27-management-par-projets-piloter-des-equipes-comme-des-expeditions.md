@@ -15,7 +15,7 @@ series:
   order: 26
 ---
 
-### « Qui décide si ça dérape ? »
+## « Qui décide si ça dérape ? »
 
 La question arrive rarement au début d’un projet. Elle surgit plutôt quand les délais glissent, que chacun pense avoir compris sa part, et que le collectif découvre un peu tard qu’il n’avait pas la même lecture du cap.
 

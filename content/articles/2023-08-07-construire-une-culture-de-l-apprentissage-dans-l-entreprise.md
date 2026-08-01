@@ -14,7 +14,7 @@ series:
   order: 30
 ---
 
-### « On n’a pas le temps de se former. »
+## « On n’a pas le temps de se former. »
 
 Dans beaucoup d’entreprises, la phrase est prononcée comme une évidence.
 

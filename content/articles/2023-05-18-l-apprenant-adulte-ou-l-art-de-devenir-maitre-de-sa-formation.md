@@ -14,7 +14,7 @@ series:
   order: 8
 ---
 
-### « Concrètement, on repart avec quoi ? »
+## « Concrètement, on repart avec quoi ? »
 
 La question arrive parfois avant même le premier exercice. Elle n’est ni brutale ni impatiente. Elle est lucide. Un adulte veut savoir à quoi sert le temps qu’il est en train de donner.
 

@@ -15,7 +15,7 @@ series:
   order: 31
 ---
 
-### Le tableau plein de conversations mortes
+## Le tableau plein de conversations mortes
 
 À un moment, il faut regarder la liste en face.
 

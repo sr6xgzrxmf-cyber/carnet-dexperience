@@ -6,7 +6,7 @@ cover: "/images/articles/2026-01-02-contenu-generatif-vs-contenu-humain-comment-
 source: "Laurent Guyonnet — Carnet d’expérience"
 ---
 
-### « On peut en sortir vingt en une heure. »
+## « On peut en sortir vingt en une heure. »
 
 La phrase est impressionnante. Elle est aussi trompeuse.
 

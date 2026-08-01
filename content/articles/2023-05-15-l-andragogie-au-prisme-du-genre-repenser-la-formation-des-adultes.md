@@ -15,7 +15,7 @@ series:
   order: 5
 ---
 
-### « Je n’ai pas le temps de parler, il faut que je file. »
+## « Je n’ai pas le temps de parler, il faut que je file. »
 
 La phrase arrive à la pause, souvent discrètement. Quelqu’un quitte la salle plus vite que les autres. Une personne revient systématiquement en retard après les ateliers. Une autre ne prend jamais la parole tant qu’on ne la sollicite pas directement. Un homme monopolise l’échange sans même s’en rendre compte. Une femme formule une idée, qui n’est reprise qu’une fois reformulée par un collègue.
 
@@ -116,4 +116,4 @@ C’est là, à mes yeux, que l’apport d’Edmée Ollagnier reste précieux. I
 Former des adultes, ce n’est pas seulement transmettre un contenu à un groupe abstrait.
 C’est travailler avec des personnes situées, dans des rapports réels, avec des disponibilités inégales et des légitimités parfois fragiles.
 
-Question ouverte : dans les formations que tu observes, qu’est-ce qui est présenté comme “normal” alors que ce cadre avantage déjà certains participants plus que d’autres ?
+Dans les formations que tu observes, qu’est-ce qui est présenté comme “normal” alors que ce cadre avantage déjà certains participants plus que d’autres ?

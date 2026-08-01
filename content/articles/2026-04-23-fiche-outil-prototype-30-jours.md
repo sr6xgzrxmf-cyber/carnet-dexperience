@@ -14,7 +14,7 @@ series:
   order: 26.5
 ---
 
-### À quoi sert cette fiche
+## À quoi sert cette fiche
 
 Cette fiche n’est pas un document administratif. C’est un **outil de sortie du flou**. Elle permet de transformer une idée discutée en test mesurable, limité dans le temps, et réversible.
 
@@ -22,7 +22,7 @@ Elle est conçue pour tenir sur **une page**.
 
 ---
 
-### FICHE — PROTOTYPE 30 JOURS
+## FICHE — PROTOTYPE 30 JOURS
 
 **1. Idée à tester**  
 Quelle pratique, organisation ou règle voulons-nous tester ?
@@ -38,8 +38,8 @@ Date de fin (30 jours maximum) :
 Qu’est-ce qui change concrètement pendant le test ? Quelles sont les limites ?
 
 **5. Indicateurs choisis (2 ou 3 max)**  
-–  
-–  
+- ☐ ____________________
+- ☐ ____________________
 
 (Avant / après mesurable)
 
@@ -53,7 +53,7 @@ Point hebdomadaire ? Qui collecte les infos ?
 
 ---
 
-### Comment l’utiliser sur le terrain
+## Comment l’utiliser sur le terrain
 
 Karim ne présente jamais cette fiche comme une contrainte. Il la propose comme une sécurité collective : on teste sans se piéger, on décide sans s’affronter.
 
@@ -62,7 +62,7 @@ Elle est particulièrement efficace dans trois cas :
 - quand une équipe est divisée,
 - quand un manager hésite à trancher.
 
-### Un outil de maturité collective
+## Un outil de maturité collective
 
 Utiliser cette fiche, c’est accepter que tout ne soit pas parfait dès le départ. Mais c’est refuser de rester immobile. Elle crée un cadre d’expérimentation qui protège à la fois les personnes et le système.
 

@@ -13,7 +13,7 @@ series:
   order: 42
 ---
 
-### Devant un vieux film, une question très actuelle
+## Devant un vieux film, une question très actuelle
 
 En revoyant *La Guerre des Boutons*, je ne pensais pas tomber sur une réflexion utile pour la formation des adultes.
 

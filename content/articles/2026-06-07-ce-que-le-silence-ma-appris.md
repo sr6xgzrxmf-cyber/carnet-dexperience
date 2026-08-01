@@ -18,7 +18,7 @@ series:
   order: 6
 ---
 
-### “Je me permets de revenir vers vous.”
+## “Je me permets de revenir vers vous.”
 
 Le dossier est prêt. Le contact semble pertinent et l’échange précédent s’est bien passé. J’envoie le mail, je ferme ma session et je passe à autre chose.
 
@@ -77,4 +77,4 @@ En repensant à mes démarches, j’ai compris que le parallèle était exact. L
 
 Dans le fond, je croyais apprendre à gérer les réponses. J’apprenais à habiter les silences. Et avec le recul, je crois que cette faculté à poursuivre sans validation immédiate fait souvent la différence entre une idée qui s’effiloche et un projet qui finit par exister.
 
-Question ouverte : quand le silence s’installe, qu’est-ce que tu es vraiment en train d’écouter : le réel, ou ce que tu projettes dessus ?
+Quand le silence s’installe, qu’est-ce que tu es vraiment en train d’écouter : le réel, ou ce que tu projettes dessus ?

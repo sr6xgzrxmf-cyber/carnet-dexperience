@@ -15,19 +15,19 @@ series:
   order: 24
 ---
 
-### Quand le débat remplace l’action
+## Quand le débat remplace l’action
 
 Karim connaît bien ces situations. Une idée circule. Elle semble pertinente. Mais elle déclenche immédiatement des discussions sans fin : risques, exceptions, contraintes, “oui mais”. Les réunions s’enchaînent. Rien ne bouge.
 
 Le débat donne l’illusion de progresser. En réalité, il évite la décision.
 
-### Le vrai blocage : décider sans preuve
+## Le vrai blocage : décider sans preuve
 
 Dans beaucoup d’organisations, on attend une certitude avant d’agir. Or cette certitude n’existe presque jamais. Résultat : on diffère, on temporise, on renvoie à plus tard.
 
 La posture du prototype renverse la logique : **on agit pour produire de la preuve**, puis on décide.
 
-### Prototyper n’est pas imposer
+## Prototyper n’est pas imposer
 
 Proposer un test n’est pas forcer un changement. C’est offrir une sortie honorable au désaccord. Karim formule toujours sa proposition ainsi :
 
@@ -35,7 +35,7 @@ Proposer un test n’est pas forcer un changement. C’est offrir une sortie hon
 
 Cette phrase change tout. Elle désamorce la peur de l’irréversible.
 
-### La méthode en cinq étapes
+## La méthode en cinq étapes
 
 Le prototype tient dans un cadre clair et limité.
 
@@ -54,13 +54,13 @@ Avant / après. Pas des impressions, des faits.
 5) **Prévoir le bilan et la décision**  
 On décide à la fin : on garde, on ajuste, ou on arrête.
 
-### Un exemple très concret
+## Un exemple très concret
 
 Karim propose de modifier l’organisation d’un accueil public. Les avis sont partagés. Plutôt que de trancher, il propose un test sur un mois avec des règles simples et un point hebdomadaire.
 
 À la fin du test, les chiffres parlent : moins de tensions, moins d’appels inutiles, plus de fluidité. La décision devient évidente — et collective.
 
-### La posture proactive
+## La posture proactive
 
 Prototyper, c’est refuser la posture d’attente. C’est montrer qu’on peut avancer sans certitude absolue, mais avec méthode. Cette posture est souvent perçue comme rassurante, parce qu’elle est réversible et mesurable.
 

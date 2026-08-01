@@ -12,7 +12,7 @@ series:
   order: 12
 ---
 
-### Le réflexe le plus tentant : tout faire seul
+## Le réflexe le plus tentant : tout faire seul
 
 Quand une organisation décide de créer un site ou une université interne de formation, elle confie souvent le sujet à une ou deux personnes. C’est logique : il faut avancer, cadrer, produire, donner une forme au projet. Le problème, c’est que ce modèle atteint vite sa limite.
 

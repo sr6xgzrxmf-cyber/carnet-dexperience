@@ -13,7 +13,7 @@ series:
   order: 20
 ---
 
-### À 10 h 24, ton plan de séance est déjà mort
+## À 10 h 24, ton plan de séance est déjà mort
 
 Le vidéoprojecteur ne se connecte pas. Une participante monopolise la parole. Deux autres décrochent. Quelqu’un te dit que “ce n’est pas du tout ce qu’on lui avait vendu”. Le support est prêt, le contenu est solide, et pourtant la séance réelle commence seulement maintenant.
 
@@ -113,4 +113,4 @@ Il apprend en même temps que les autres apprennent.
 
 C’est pour cela qu’un bon formateur n’est pas seulement un expert. C’est quelqu’un qui tient une salle sans l’écraser, qui fait progresser sans humilier, et qui transforme un contenu en expérience de travail.
 
-Question ouverte : parmi ces six qualités, laquelle te paraît aujourd’hui la plus difficile à tenir dans une vraie salle ?
+Parmi ces six qualités, laquelle te paraît aujourd’hui la plus difficile à tenir dans une vraie salle ?

@@ -13,7 +13,7 @@ series:
   order: 38
 ---
 
-### « Ce n’est peut-être pas parfait, mais au moins ça marche. »
+## « Ce n’est peut-être pas parfait, mais au moins ça marche. »
 
 Cette phrase mérite mieux qu’un haussement d’épaules.
 

@@ -15,7 +15,7 @@ series:
   order: 2
 ---
 
-### « Oui, mais concrètement, à quoi ça va me servir ? »
+## « Oui, mais concrètement, à quoi ça va me servir ? »
 
 La question tombe souvent très tôt. Parfois après cinq minutes. Parfois avant même que la séance ait réellement commencé. Dans une salle d’adultes, elle n’est ni déplacée ni insolente. Elle est structurante.
 
@@ -125,4 +125,4 @@ Mais elles demandent des responsabilités différentes :
 
 Et cette pertinence ne se décrète pas. Elle se construit dans la relation entre le sujet, le vécu des personnes et ce qu’elles pourront réellement en faire.
 
-Question ouverte : dans les formations que tu vois aujourd’hui, qu’est-ce qui est encore pensé comme un cours… et qu’est-ce qui est vraiment conçu pour des adultes déjà en train de travailler ?
+Dans les formations que tu vois aujourd’hui, qu’est-ce qui est encore pensé comme un cours… et qu’est-ce qui est vraiment conçu pour des adultes déjà en train de travailler ?

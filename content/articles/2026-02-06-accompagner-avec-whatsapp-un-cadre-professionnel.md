@@ -20,7 +20,7 @@ Mais cette simplicité n’est possible qu’à une condition : **poser un cadre
 Sans cadre, l’outil crée de la confusion.  
 Avec un cadre, il devient un levier puissant.
 
-### WhatsApp n’est pas un espace informel
+## WhatsApp n’est pas un espace informel
 
 Utiliser WhatsApp ne signifie pas travailler “à la légère”. Ce n’est ni une conversation privée, ni un canal émotionnel, ni un bureau bis. C’est un **outil de travail asynchrone**, utilisé dans un cadre clairement posé dès le départ.
 
@@ -35,7 +35,7 @@ Les situations sont anonymisées. On travaille sur des **enjeux**, jamais sur de
 
 Ce cadre protège tout le monde : la personne accompagnée, l’organisation, et l’accompagnant.
 
-### WhatsApp comme outil de formulation, pas de réponse immédiate
+## WhatsApp comme outil de formulation, pas de réponse immédiate
 
 Le cœur de l’usage de WhatsApp n’est pas la réponse. C’est la **formulation**.
 
@@ -45,13 +45,13 @@ De notre côté, nous ne répondons pas immédiatement. Ce délai n’est ni une
 
 Le temps devient ici un **outil d’accompagnement** à part entière.
 
-### La sécurité du cadre, pas la dépendance
+## La sécurité du cadre, pas la dépendance
 
 Un point est fondamental : même sans réponse immédiate, la personne sait que la réponse viendra. Il ne s’agit pas d’une absence, mais d’une **présence cadrée**.
 
 Ce cadre est rassurant. Il crée une sécurité psychologique sans installer de dépendance. Ce n’est pas “je suis toujours disponible”. C’est “le cadre tient, tu n’es pas seul, et tu restes responsable”.
 
-### Le cadre est aussi inscrit dans l’outil
+## Le cadre est aussi inscrit dans l’outil
 
 Le cadre ne repose pas uniquement sur une intention ou une règle orale. Il est **intégré techniquement** dans l’outil.
 
@@ -69,7 +69,7 @@ Le cadre n’est plus à négocier. Il est **inscrit dans l’infrastructure**.
 
 ---
 
-### Encadré — Le cadre opérationnel de l’accompagnement
+## Encadré — Le cadre opérationnel de l’accompagnement
 
 - Numéro WhatsApp Business dédié  
 - Usage strictement professionnel  
@@ -82,7 +82,7 @@ Le cadre n’est plus à négocier. Il est **inscrit dans l’infrastructure**.
 
 ---
 
-### Un apprentissage invisible mais structurant
+## Un apprentissage invisible mais structurant
 
 Ce mode d’accompagnement forme bien plus qu’il n’assiste.
 
@@ -94,13 +94,13 @@ La personne apprend à :
 
 WhatsApp devient un **simulateur de posture professionnelle** : communication asynchrone, clarté, retenue, responsabilité. Des compétences centrales dans les organisations contemporaines, rarement travaillées explicitement.
 
-### Une trace, pas un contrôle
+## Une trace, pas un contrôle
 
 L’échange écrit laisse une trace. Non pour surveiller, mais pour relire, revenir, mesurer l’évolution. On voit comment une question se transforme, comment une posture s’affine, comment une situation se décante dans le temps.
 
 Cette mémoire n’est pas un dossier. C’est un **fil de progression**.
 
-### Un cadre qui protège aussi l’accompagnant
+## Un cadre qui protège aussi l’accompagnant
 
 Enfin, ce cadre protège également l’accompagnant. Il empêche toute confusion des rôles. Nous ne sommes ni managers bis, ni décideurs cachés, ni détenteurs d’informations sensibles.
 
@@ -108,7 +108,7 @@ Refuser certaines informations, différer une réponse, renvoyer vers le documen
 
 ---
 
-### Ressource à télécharger — Charte d’usage de WhatsApp en accompagnement professionnel
+## Ressource à télécharger — Charte d’usage de WhatsApp en accompagnement professionnel
 
 Pour formaliser ce cadre, une **charte d’usage** est mise à disposition. Elle explicite les règles, les limites et les intentions de l’accompagnement asynchrone via WhatsApp.  
 Ce document est destiné aux personnes accompagnées, mais aussi aux managers et aux organisations qui souhaitent comprendre et sécuriser ce type de dispositif.
@@ -117,6 +117,6 @@ Télécharger la charte : [PDF](/downloads/charte-usage-whatsapp.pdf)
 
 ---
 
-### Une question pour conclure
+## Une question pour conclure
 
 Dans vos pratiques professionnelles, avez-vous déjà inscrit aussi clairement le cadre de vos outils numériques… ou laissez-vous encore l’informel décider du rythme, des limites et des responsabilités ?

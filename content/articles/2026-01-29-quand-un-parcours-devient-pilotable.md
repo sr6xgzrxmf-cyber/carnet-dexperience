@@ -21,7 +21,7 @@ Quand un professionnel a fait le travail de clarification — axes, posture, cad
 
 Et pour une organisation, c’est un changement majeur.
 
-### Ce que l’organisation voit quand le travail n’est pas fait
+## Ce que l’organisation voit quand le travail n’est pas fait
 
 Du point de vue d’un manager, d’un RH ou d’un responsable de réseau, les signaux sont souvent les mêmes. Le collaborateur est investi, compétent, de bonne volonté… mais difficile à situer.
 
@@ -33,7 +33,7 @@ Les échanges deviennent flous :
 
 Ce n’est pas un problème d’intention. C’est un problème de lisibilité. Sans cadre clair, l’organisation hésite. Elle temporise. Elle évite de trancher. Et à force de prudence, elle finit par immobiliser.
 
-### Ce que change un parcours clarifié
+## Ce que change un parcours clarifié
 
 Quand quelqu’un arrive avec un travail posé — qu’il s’agisse d’un document, d’un pitch tenu, ou d’une fiche structurée — la nature de l’échange change immédiatement.
 
@@ -46,7 +46,7 @@ On parle de :
 
 Le collaborateur n’est plus en attente implicite. Il est en **proposition structurée**.
 
-### Lire un document, ce n’est pas juger — c’est comprendre
+## Lire un document, ce n’est pas juger — c’est comprendre
 
 Un document comme celui proposé dans l’atelier n’est pas un CV amélioré. Ce n’est pas un outil d’évaluation. C’est un **outil de lecture**.
 
@@ -58,7 +58,7 @@ Il permet à l’organisation de répondre à des questions simples, mais essent
 
 Ce type de lecture est infiniment plus riche qu’un entretien informel ou qu’une impression diffuse.
 
-### La fin des malentendus coûteux
+## La fin des malentendus coûteux
 
 Combien de situations de tension naissent d’un malentendu initial ? Un collaborateur pense qu’on attend de lui une évolution. Le manager pense qu’il “verra plus tard”. Personne ne dit clairement les choses, par peur de décevoir ou de s’engager trop tôt.
 
@@ -66,7 +66,7 @@ Quand un professionnel arrive avec des axes nommés et un cadre explicite, il en
 
 Et paradoxalement, cela apaise la relation.
 
-### Du potentiel flou à l’engagement possible
+## Du potentiel flou à l’engagement possible
 
 Une organisation n’engage pas sur du flou. Elle engage sur quelque chose qu’elle peut comprendre, suivre, ajuster. Un parcours clarifié permet exactement cela.
 
@@ -78,18 +78,18 @@ On peut alors dire :
 
 Ce ne sont pas des refus. Ce sont des décisions. Et une décision, même négative, vaut toujours mieux qu’une attente silencieuse.
 
-### Ce que cela change pour le manager
+## Ce que cela change pour le manager
 
 Pour un manager, accompagner quelqu’un qui a fait ce travail change profondément la posture. Il ne s’agit plus de “deviner” ou de “porter à la place”. Il s’agit de **co-piloter**.
 
 Le collaborateur devient acteur de son développement. Le manager devient garant du cadre. Les rôles sont clairs. La relation est plus adulte. Plus équilibrée.
 
-### Ce que cela change pour l’organisation
+## Ce que cela change pour l’organisation
 
 À l’échelle d’une équipe ou d’un réseau, ces clarifications ont un effet cumulatif. Les parcours deviennent lisibles. Les mobilités plus fluides. Les arbitrages plus justes. Les frustrations moins sourdes.
 
 Ce n’est pas une méthode de gestion des talents. C’est une **culture de la clarté**.
 
-### Une question pour conclure
+## Une question pour conclure
 
 Dans votre organisation, est-ce que les parcours sont encore surtout portés par des impressions et des intentions… ou avez-vous donné aux professionnels les outils pour se rendre lisibles, et donc réellement engageables ?

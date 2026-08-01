@@ -6,7 +6,7 @@ cover: "/images/articles/2026-01-10-une-routine-simple-pour-piloter-la-communica
 source: "Laurent Guyonnet — Carnet d’expérience"
 ---
 
-### « On devrait dire quelque chose pour cette journée-là, non ? »
+## « On devrait dire quelque chose pour cette journée-là, non ? »
 
 La question arrive souvent trop tard.
 

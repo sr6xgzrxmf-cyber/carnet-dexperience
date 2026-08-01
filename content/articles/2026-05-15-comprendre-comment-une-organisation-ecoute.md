@@ -18,7 +18,7 @@ series:
   order: 4
 ---
 
-### “Je vais vous transférer… mais je ne sais pas si c’est vraiment le bon service.”
+## “Je vais vous transférer… mais je ne sais pas si c’est vraiment le bon service.”
 
 La voix au bout du fil est polie. Rapide. Elle me donne une adresse mail générique, un formulaire en ligne, un délai de réponse “sous 5 à 7 jours ouvrés”. Je note tout. Je souris. Je raccroche en me disant que la prochaine fois, ce sera mieux.
 
@@ -117,4 +117,4 @@ Je cherche des endroits où le projet n’aura pas besoin de se déformer pour �
 
 Et ce n’est jamais totalement acquis.
 
-Question ouverte : quand une organisation ne répond pas comme prévu, est-ce que tu cherches un meilleur pitch… ou une meilleure porte d’entrée ?
+Quand une organisation ne répond pas comme prévu, est-ce que tu cherches un meilleur pitch… ou une meilleure porte d’entrée ?

@@ -14,7 +14,7 @@ series:
   order: 43
 ---
 
-### Quand la résistance n’est plus une surprise
+## Quand la résistance n’est plus une surprise
 
 Après avoir regardé la peur de l’inconnu, le poids des routines, la surcharge, le changement organisationnel ou les écarts générationnels, une chose devient plus claire : la résistance n’est pas un accident. C’est un phénomène normal dès qu’un apprentissage vient toucher à des repères déjà installés.
 

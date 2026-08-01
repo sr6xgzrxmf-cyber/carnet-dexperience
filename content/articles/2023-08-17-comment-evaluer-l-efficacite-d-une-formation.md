@@ -13,7 +13,7 @@ series:
   order: 33
 ---
 
-### « C’était très bien. »
+## « C’était très bien. »
 
 La phrase revient souvent à la fin d’une formation.
 

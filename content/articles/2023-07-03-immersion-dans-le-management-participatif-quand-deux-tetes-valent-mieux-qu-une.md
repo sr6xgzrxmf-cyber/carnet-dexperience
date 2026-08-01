@@ -14,7 +14,7 @@ series:
   order: 17
 ---
 
-### « Vous en pensez quoi ? »
+## « Vous en pensez quoi ? »
 
 La question semble participative. Elle ne l’est pas toujours.
 
