@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import TrackedLink from "@/components/TrackedLink";
 import styles from "./offer.module.css";
 
 export const metadata: Metadata = {
@@ -70,14 +70,64 @@ export default function AtelierPage() {
             transmettre et à tenir dans la durée.
           </p>
           <div className={styles.actions}>
-            <Link className={`${styles.button} ${styles.buttonPrimary}`} href="/contact">
+            <TrackedLink
+              className={`${styles.button} ${styles.buttonPrimary}`}
+              href="/contact"
+              eventName="offer_contact_clicked"
+              eventData={{ placement: "hero" }}
+            >
               Décrire votre situation <span aria-hidden>↗</span>
-            </Link>
-            <Link className={`${styles.button} ${styles.buttonSecondary}`} href="/atelier/lecture">
-              Lire la série Atelier de posture
-            </Link>
+            </TrackedLink>
+            <TrackedLink
+              className={`${styles.button} ${styles.buttonSecondary}`}
+              href="/atelier/etudes-de-cas"
+              eventName="case_studies_opened"
+              eventData={{ placement: "offer_hero" }}
+            >
+              Voir trois cas concrets
+            </TrackedLink>
           </div>
         </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionHeading}>
+          <div>
+            <p className={styles.eyebrow}>Dans le travail réel</p>
+            <h2>Des situations documentées, pas des promesses abstraites</h2>
+          </div>
+          <p>
+            Trois expériences montrent comment une intention devient un cadre,
+            puis une pratique utilisable par les personnes concernées.
+          </p>
+        </div>
+
+        <div className={styles.casePreviewGrid}>
+          <article>
+            <span>01</span>
+            <h3>Faire adopter une nouveauté</h3>
+            <p>Relier contenus d’apprentissage, ateliers équipes et observation des usages clients.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Rendre un process sensible au terrain</h3>
+            <p>Transformer les demandes clients en signal utilisable par les opérations.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Faire vivre un projet pédagogique</h3>
+            <p>Réunir enseignants, institution et usages réels autour d’une expérience observable.</p>
+          </article>
+        </div>
+
+        <TrackedLink
+          className={styles.casePreviewLink}
+          href="/atelier/etudes-de-cas"
+          eventName="case_studies_opened"
+          eventData={{ placement: "offer_body" }}
+        >
+          Lire les trois études de cas <span aria-hidden>→</span>
+        </TrackedLink>
       </section>
 
       <section className={styles.section}>
@@ -215,9 +265,14 @@ export default function AtelierPage() {
           vous aimeriez rendre possible. Nous verrons ensuite quel format est le
           plus juste.
         </p>
-        <Link className={`${styles.button} ${styles.buttonLight}`} href="/contact">
+        <TrackedLink
+          className={`${styles.button} ${styles.buttonLight}`}
+          href="/contact"
+          eventName="offer_contact_clicked"
+          eventData={{ placement: "closing" }}
+        >
           Écrire à Laurent <span aria-hidden>→</span>
-        </Link>
+        </TrackedLink>
       </section>
     </div>
   );

@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${SITE_URL}/atelier`, changeFrequency: "monthly", priority: 0.9 },
     {
+      url: `${SITE_URL}/atelier/etudes-de-cas`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/situations-d-intervention`,
       changeFrequency: "monthly",
       priority: 0.8,

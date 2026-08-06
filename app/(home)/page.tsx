@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
 
 const situations = [
@@ -57,12 +58,21 @@ export default function HomePage() {
             réalité reste fragile, implicite ou difficile à tenir dans la durée.
           </p>
           <div className={styles.heroActions}>
-            <Link className={`${styles.button} ${styles.buttonPrimary}`} href="/atelier">
+            <TrackedLink
+              className={`${styles.button} ${styles.buttonPrimary}`}
+              href="/atelier"
+              eventName="home_offer_clicked"
+              eventData={{ placement: "hero" }}
+            >
               Comment je peux aider <span aria-hidden>→</span>
-            </Link>
-            <Link className={`${styles.button} ${styles.buttonSecondary}`} href="/parcours">
+            </TrackedLink>
+            <TrackedLink
+              className={`${styles.button} ${styles.buttonSecondary}`}
+              href="/parcours"
+              eventName="home_parcours_clicked"
+            >
               Voir mon parcours <span aria-hidden>↗</span>
-            </Link>
+            </TrackedLink>
           </div>
         </div>
 
@@ -177,9 +187,14 @@ export default function HomePage() {
           Décrivez la situation, ce qui résiste aujourd’hui et ce que vous
           aimeriez rendre plus clair ou plus praticable.
         </p>
-        <Link className={`${styles.button} ${styles.buttonLight}`} href="/contact">
+        <TrackedLink
+          className={`${styles.button} ${styles.buttonLight}`}
+          href="/contact"
+          eventName="home_contact_clicked"
+          eventData={{ placement: "closing" }}
+        >
           Parler de votre situation <span aria-hidden>↗</span>
-        </Link>
+        </TrackedLink>
       </section>
     </div>
   );

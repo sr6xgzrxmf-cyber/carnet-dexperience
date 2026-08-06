@@ -9,8 +9,9 @@ import {
   featuredSeriesTeasers,
 } from "@/content/editorial";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
+import { ARTICLE_THEMES, getArticleThemes } from "@/lib/article-themes";
 import type { Metadata } from "next";
-import ArticlesFilters from "./_components/ArticlesFilters";
+import ArticlesCatalog from "./_components/ArticlesCatalog";
 import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
@@ -22,9 +23,8 @@ export const metadata: Metadata = {
 export const revalidate = 300;
 
 type SearchParams = {
-  tag?: string | string[];
-  tags?: string | string[];
-  showTags?: string; // "all"
+  q?: string | string[];
+  theme?: string | string[];
 };
 
 type ArticleMeta = {
@@ -35,18 +35,9 @@ type ArticleMeta = {
   cover?: string | null;
   source?: string;
   tags?: string[];
+  themes: string[];
   series?: { name?: string; title?: string; slug?: string; order?: number };
 };
-
-function asArray(v: unknown): string[] {
-  if (!v) return [];
-  if (Array.isArray(v)) return v.flatMap((x) => String(x).split(","));
-  return String(v).split(",");
-}
-
-function normalizeTag(t: string) {
-  return t.trim();
-}
 
 function normalizeCoverSrc(cover: unknown): string | null {
   if (typeof cover !== "string" || !cover.trim()) return null;
@@ -59,6 +50,7 @@ function normalizeCoverSrc(cover: unknown): string | null {
 
 function getItemMeta(item: ArticleItem): ArticleMeta {
   const m = item?.meta ?? {};
+  const tags = Array.isArray(m?.tags) ? m.tags.map(String) : [];
   const rawDate = m?.date;
   const date =
     typeof rawDate === "string"
@@ -102,9 +94,14 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
     excerpt: m?.excerpt ?? "",
     cover,
     source: m?.source ?? "Carnet d’expérience",
-    tags: Array.isArray(m?.tags) ? m.tags.map(String) : [],
+    tags,
+    themes: getArticleThemes(tags),
     series,
   };
+}
+
+function firstParam(value?: string | string[]): string {
+  return Array.isArray(value) ? value[0] ?? "" : value ?? "";
 }
 
 function parisTodayISO(now: Date = new Date()): string {
@@ -130,21 +127,6 @@ function isPublishedParis(date: string | null | undefined, now: Date): boolean {
   return d <= parisTodayISO(now);
 }
 
-function daysUntilParis(date: string | null | undefined, now: Date): number | null {
-  const d = normalizeISODate(date);
-  if (!d) return null;
-
-  const today = parisTodayISO(now);
-
-  // Diff en jours sur base YYYY-MM-DD -> Date UTC "neutre" (uniquement pour diff jours, pas pour publication)
-  const toUTC = (iso: string) => {
-    const [y, m, dd] = iso.split("-").map(Number);
-    return Date.UTC(y, m - 1, dd);
-  };
-
-  return Math.round((toUTC(d) - toUTC(today)) / (24 * 60 * 60 * 1000));
-}
-
 /* ---------- Mosaic (5 bandes horizontales) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 3);
@@ -168,7 +150,6 @@ function Mosaic({ covers }: { covers: string[] }) {
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 768px"
-              unoptimized
             />
           </div>
         ))}
@@ -179,13 +160,6 @@ function Mosaic({ covers }: { covers: string[] }) {
       <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]" />
     </div>
   );
-}
-
-function hrefFor(nextTags: string[], showAllTags: boolean) {
-  const params = new URLSearchParams();
-  nextTags.forEach((t) => params.append("tag", t));
-  if (showAllTags) params.set("showTags", "all");
-  return `/articles${params.toString() ? `?${params.toString()}` : ""}`;
 }
 
 function ArticlePreviewCard({
@@ -226,7 +200,6 @@ function ArticlePreviewCard({
               backfaceVisibility: "hidden",
             }}
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-            unoptimized
           />
         </div>
       ) : (
@@ -271,10 +244,8 @@ export default async function ArticlesHubPage(props: {
       ? await props.searchParams
       : props.searchParams;
 
-  const showAllTags = sp?.showTags === "all";
-  const selected = [...asArray(sp?.tag), ...asArray(sp?.tags)]
-    .map(normalizeTag)
-    .filter(Boolean);
+  const initialQuery = firstParam(sp?.q).trim();
+  const initialTheme = firstParam(sp?.theme).trim();
 
   // ⚠️ Fix “hydration-ish” : on fige now une fois (évite toute divergence)
   const now = new Date();
@@ -350,40 +321,60 @@ export default async function ArticlesHubPage(props: {
     );
   const latestArticle = recentArticles[0]?.article ?? null;
   const postureSeries = seriesCards.find((series) => series.slug === "atelier-de-posture");
-
-  /* ---------- Filtres & résultats ---------- */
-  const tagCount = new Map<string, number>();
-  for (const a of resultsBase) {
-    for (const t of a.tags ?? []) {
-      const k = normalizeTag(t);
-      if (!k) continue;
-      tagCount.set(k, (tagCount.get(k) ?? 0) + 1);
-    }
-  }
-
-  const results =
-    selected.length === 0
-      ? resultsBase
-      : resultsBase.filter((a) =>
-          selected.every((t) => (a.tags ?? []).includes(t))
-        );
-
-  const availableTagCount = new Map<string, number>();
-  for (const a of results) {
-    for (const t of a.tags ?? []) {
-      const k = normalizeTag(t);
-      if (!k) continue;
-      availableTagCount.set(k, (availableTagCount.get(k) ?? 0) + 1);
-    }
-  }
-
-  const sortedTags = Array.from(
-    (selected.length ? availableTagCount : tagCount).entries()
-  )
-    .sort((a, b) => b[1] - a[1])
-    .map(([tag, count]) => ({ tag, count }));
-
-  const tagsToShow = showAllTags ? sortedTags : sortedTags.slice(0, 12);
+  const readingPathSpecs = [
+    {
+      title: "Je manage une équipe",
+      description: "Prioriser, rendre les rôles lisibles et faire avancer un collectif sans ajouter de pression inutile.",
+      slugs: [
+        "2026-03-13-tout-est-prioritaire-signal-d-alerte-managerial",
+        "2026-02-16-demenager-une-equipe-sans-en-etre-le-manager",
+        "2026-03-17-devenir-facilitateur-le-leadership-discret",
+        "2026-03-31-recollectiviser-sans-conflit",
+      ],
+    },
+    {
+      title: "Je dois transmettre",
+      description: "Passer d’un savoir implicite à un cadre que d’autres peuvent comprendre, utiliser et faire vivre.",
+      slugs: [
+        "2026-02-17-hygiene-de-langage",
+        "2026-04-16-creer-des-cadres-legers-qui-tiennent",
+        "2026-03-04-tant-que-ce-n-est-pas-ecrit-ce-n-est-pas-clair",
+        "2026-04-02-pourquoi-une-fiche-de-poste-protege-tout-le-monde",
+      ],
+    },
+    {
+      title: "Je conduis un changement",
+      description: "Tester, observer les résistances et ajuster le dispositif jusqu’à ce qu’il devienne praticable.",
+      slugs: [
+        "2026-04-14-arreter-de-debattre-tester-30-jours",
+        "2026-04-30-ameliorer-un-process-sans-conflit",
+        "2026-04-09-quand-le-cadre-est-pose-mais-pas-respecte",
+        "2026-04-07-pourquoi-on-confond-souvent-tension-et-conflit",
+      ],
+    },
+  ];
+  const readingPaths = readingPathSpecs.map((path) => ({
+    ...path,
+    articles: path.slugs
+      .map((slug) => articleBySlug.get(slug))
+      .filter((article): article is ArticleMeta => Boolean(article)),
+  }));
+  const usedThemes = new Set(resultsBase.flatMap((article) => article.themes));
+  const catalogThemes = [
+    ...ARTICLE_THEMES.filter((theme) => usedThemes.has(theme)),
+    ...(usedThemes.has("Regards sur le travail") ? ["Regards sur le travail"] : []),
+  ];
+  const catalogArticles = resultsBase.map((article) => ({
+    slug: article.slug,
+    title: article.title,
+    date: article.date,
+    excerpt: article.excerpt,
+    cover: article.cover,
+    tags: article.tags ?? [],
+    themes: article.themes,
+    seriesTitle: article.series?.title ?? article.series?.name,
+    futureLabel: !isPublishedParis(article.date ?? null, now),
+  }));
 
   return (
     <div className={styles.page}>
@@ -454,6 +445,39 @@ export default async function ArticlesHubPage(props: {
             </p>
             <span className={styles.cardLink}>Remonter le fil →</span>
           </Link>
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.softSurface}`}>
+        <div className={styles.sectionHeader}>
+          <div>
+            <p className={styles.eyebrow}>Parcours guidés</p>
+            <h2 className={styles.sectionTitle}>Quatre textes pour avancer sur votre situation</h2>
+          </div>
+          <p className={styles.sectionCopy}>
+            Trois sélections courtes pour entrer directement par le besoin qui
+            vous amène, sans avoir à parcourir tout le catalogue.
+          </p>
+        </div>
+
+        <div className={styles.grid3}>
+          {readingPaths.map((path) => (
+            <article key={path.title} className={styles.card}>
+              <p className={styles.cardEyebrow}>Parcours de lecture</p>
+              <h3 className={styles.cardTitle}>{path.title}</h3>
+              <p className={styles.cardCopy}>{path.description}</p>
+              <ol className={styles.pathList}>
+                {path.articles.map((article, index) => (
+                  <li key={article.slug}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    <Link className={styles.pathLink} href={`/articles/${article.slug}`}>
+                      {article.title}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -606,106 +630,28 @@ export default async function ArticlesHubPage(props: {
         </div>
       </section>
 
-      {/* ======================
-          FILTRES
-      ====================== */}
       <section
         id="filtres"
-        className={`${styles.section} ${styles.softSurface}`}
+        className={styles.section}
       >
-        <div className={styles.catalogHeader}>
+        <div className={styles.sectionHeader}>
           <div>
-            <p className={styles.eyebrow}>Recherche thématique</p>
-            <h2 className={styles.sectionTitle}>
-              Entrer par un sujet
-            </h2>
-            <p className={styles.sectionCopy} style={{ marginTop: 12 }}>
-              Si vous arrivez avec une question précise, choisissez un ou plusieurs thèmes.
-            </p>
+            <p className={styles.eyebrow}>Recherche et catalogue</p>
+            <h2 className={styles.sectionTitle}>Trouver le texte utile maintenant</h2>
           </div>
-
-          <div className="flex items-center gap-4">
-            {sortedTags.length > 12 ? (
-              showAllTags ? (
-                <Link
-                  scroll={false}
-                  href={hrefFor(selected, false)}
-                  className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-                >
-                  Voir moins
-                </Link>
-              ) : (
-                <Link
-                  scroll={false}
-                  href={hrefFor(selected, true)}
-                  className="text-sm text-neutral-600 hover:underline dark:text-neutral-400"
-                >
-                  Voir plus ({sortedTags.length - 12})
-                </Link>
-              )
-            ) : null}
-
-            {selected.length > 0 && (
-              <Link
-                scroll={false}
-                href={hrefFor([], showAllTags)}
-                className={`${styles.button} ${styles.buttonSecondary}`}
-              >
-                Réinitialiser
-              </Link>
-            )}
-          </div>
-        </div>
-
-        <ArticlesFilters tagsToShow={tagsToShow} selected={selected} showAllTags={showAllTags} />
-      </section>
-
-      {/* ======================
-          RÉSULTATS
-      ====================== */}
-      <section className={styles.section}>
-        <div className={styles.catalogHeader}>
-          <div>
-            <p className={styles.eyebrow}>Le catalogue</p>
-            <h2 className={styles.sectionTitle}>
-              Tout le catalogue
-            </h2>
-            <p className={styles.sectionCopy} style={{ marginTop: 12 }}>
-              Du plus récent au plus ancien, avec le temps long conservé volontairement.
-            </p>
-          </div>
-
-          <div className={styles.count}>
-            {results.length} article{results.length > 1 ? "s" : ""}
-          </div>
-        </div>
-
-        {results.length === 0 ? (
-          <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
-            Aucun article trouvé.
+          <p className={styles.sectionCopy}>
+            Recherchez un mot libre ou choisissez l’un des neuf grands thèmes.
+            Les 55 anciennes étiquettes restent conservées dans les contenus,
+            mais ne compliquent plus la navigation.
           </p>
-        ) : (
-          <div className={styles.grid3}>
-            {results.map((article) => {
-              const futureLabel = !isPublishedParis(article.date ?? null, now);
+        </div>
 
-              return (
-                <div key={article.slug} className="space-y-2">
-                  <ArticlePreviewCard article={article} futureLabel={futureLabel} />
-                  {futureLabel ? (
-                    <div className="px-1 text-xs text-neutral-500 dark:text-neutral-400">
-                      {(() => {
-                        const d = daysUntilParis(article.date ?? null, now);
-                        if (typeof d === "number" && d > 0) return `J-${d}`;
-                        return article.date ?? "";
-                      })()}
-                    </div>
-                  ) : null}
-                </div>
-              );
-            })}
-          </div>
-        )}
+        <ArticlesCatalog
+          articles={catalogArticles}
+          themes={catalogThemes}
+          initialQuery={initialQuery}
+          initialTheme={initialTheme}
+        />
       </section>
 
       <section className="flex justify-center pt-4">

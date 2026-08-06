@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { track } from "@vercel/analytics";
 import styles from "@/app/editorial-system.module.css";
 
 type ContactFormProps = {
@@ -19,6 +20,13 @@ export default function ContactForm({
     "idle"
   );
   const [message, setMessage] = useState<string>("");
+  const hasStarted = useRef(false);
+
+  function onFirstInteraction() {
+    if (hasStarted.current) return;
+    hasStarted.current = true;
+    track("contact_form_started");
+  }
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -39,20 +47,24 @@ export default function ContactForm({
         form.reset();
         setStatus("success");
         setMessage("Message envoyé. Merci, je vous répondrai rapidement.");
+        track("contact_form_submitted");
         return;
       }
 
       setStatus("error");
       setMessage("Impossible d’envoyer le message. Réessayez dans un instant.");
+      track("contact_form_error", { type: "service" });
     } catch {
       setStatus("error");
       setMessage("Erreur réseau. Vérifiez votre connexion et réessayez.");
+      track("contact_form_error", { type: "network" });
     }
   }
 
   return (
     <form
       onSubmit={onSubmit}
+      onFocusCapture={onFirstInteraction}
       className={[
         styles.form,
         className ?? "",

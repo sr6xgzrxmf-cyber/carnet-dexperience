@@ -652,6 +652,7 @@
 }
 
 .cta {
+  margin-top: 64px;
   padding: clamp(34px, 6vw, 66px);
   color: #fff;
   background: var(--navy);
@@ -741,6 +742,130 @@
   align-items: end;
   justify-content: space-between;
   margin-bottom: 28px;
+}
+
+.catalogControls {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 32px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--line);
+  background: var(--sage-soft);
+}
+
+.searchForm {
+  display: grid;
+  gap: 10px;
+}
+
+.searchLabel,
+.filterLabel {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.searchRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.searchInput {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 15px;
+  border: 1px solid #c7c5be;
+  border-radius: 0;
+  outline: none;
+  background: var(--paper-bright);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.searchInput:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 3px rgba(120, 132, 119, 0.13);
+}
+
+.themeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.themeList button {
+  cursor: pointer;
+}
+
+.tagActive {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.pathList {
+  display: grid;
+  gap: 0;
+  margin: 24px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.pathList li {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.pathList li > span {
+  color: var(--sage);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+}
+
+.pathLink {
+  font-size: 13px;
+  font-weight: 620;
+  line-height: 1.45;
+}
+
+.pathLink:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--sage);
+  text-underline-offset: 4px;
+}
+
+.emptyState {
+  padding: 44px;
+  border: 1px solid var(--line);
+  text-align: center;
+  background: var(--paper-bright);
+}
+
+.emptyState h3 {
+  margin: 0;
+  font-family: var(--font-lora), Georgia, serif;
+  font-size: 25px;
+  font-weight: 520;
+}
+
+.emptyState p {
+  margin: 10px 0 18px;
+  color: var(--muted);
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
 }
 
 .count {
@@ -921,6 +1046,18 @@
 
   .card {
     padding: 22px;
+  }
+
+  .searchRow {
+    grid-template-columns: 1fr;
+  }
+
+  .searchRow .button {
+    width: 100%;
+  }
+
+  .catalogHeader {
+    align-items: flex-start;
   }
 
   .readingHeader {

@@ -11,8 +11,9 @@ import {
 } from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
 import ShareBar from "@/components/ShareBar";
+import TrackedLink from "@/components/TrackedLink";
 import type { Metadata } from "next";
-import { formatTagLabel } from "@/lib/editorial-labels";
+import { getArticleThemes } from "@/lib/article-themes";
 import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
@@ -184,6 +185,7 @@ export default async function ArticleDetailPage({
   const allItems = (await getAllArticles({ includeFuture: true })) ?? [];
   const current = allItems.find((candidate) => getSlug(candidate) === slug) ?? item;
   const currentSeries = getSeriesInfo(current);
+  const articleThemes = getArticleThemes(item.meta?.tags);
   let prev: ArticleItem | null = null;
   let next: ArticleItem | null = null;
 
@@ -281,16 +283,16 @@ export default async function ArticleDetailPage({
           </div>
         ) : null}
 
-        {Array.isArray(item.meta.tags) && item.meta.tags.length > 0 ? (
+        {articleThemes.length > 0 ? (
           <div className={styles.tags}>
-            {item.meta.tags.map((tag: string) => (
+            {articleThemes.map((theme) => (
               <Link
-                key={tag}
-                href={`/articles?tag=${encodeURIComponent(tag)}`}
-                aria-label={`Voir les articles sur ${formatTagLabel(tag)}`}
+                key={theme}
+                href={`/articles?theme=${encodeURIComponent(theme)}`}
+                aria-label={`Voir les articles sur ${theme}`}
                 className={styles.tag}
               >
-                {formatTagLabel(tag)}
+                {theme}
               </Link>
             ))}
           </div>
@@ -313,6 +315,23 @@ export default async function ArticleDetailPage({
         className={styles.prose}
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      <section className={styles.cta} aria-labelledby="article-offer-title">
+        <p className={styles.cardEyebrow}>Passer de la réflexion à la situation réelle</p>
+        <h2 id="article-offer-title">Ce sujet ressemble à quelque chose que vous vivez ?</h2>
+        <p>
+          Vous pouvez me décrire le contexte, ce qui résiste et ce qui devrait
+          devenir plus clair. Nous verrons simplement si mon approche peut être utile.
+        </p>
+        <TrackedLink
+          href="/atelier"
+          className={styles.button}
+          eventName="article_offer_clicked"
+          eventData={{ article: slug }}
+        >
+          Voir comment je peux aider <span aria-hidden>→</span>
+        </TrackedLink>
+      </section>
 
       {related.length > 0 ? (
         <aside className={styles.related} aria-labelledby="related-articles-title">
