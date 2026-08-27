@@ -14,6 +14,10 @@ tags:
   - retail
   - pilotage
   - priorisation
+series:
+  name: "Les triangles d’arbitrage"
+  slug: "triangles-arbitrage"
+  order: 1
 ---
 
 *Ce texte part de situations vécues en Apple Retail. Les périodes et scènes ont été recomposées pour préserver les personnes concernées.*

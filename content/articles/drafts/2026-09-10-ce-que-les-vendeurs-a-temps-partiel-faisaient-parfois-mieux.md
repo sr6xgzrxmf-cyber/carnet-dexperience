@@ -15,6 +15,10 @@ tags:
   - méthode
   - personnalisation
   - confiance
+series:
+  name: "Les triangles d’arbitrage"
+  slug: "triangles-arbitrage"
+  order: 2
 ---
 
 *Ce texte part de situations vécues en Apple Retail. Les scènes ont été recomposées pour préserver les personnes concernées.*

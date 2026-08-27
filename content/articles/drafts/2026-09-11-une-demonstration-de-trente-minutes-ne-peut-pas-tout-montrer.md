@@ -14,6 +14,10 @@ tags:
   - simplicité
   - démonstration
   - vision pro
+series:
+  name: "Les triangles d’arbitrage"
+  slug: "triangles-arbitrage"
+  order: 3
 ---
 
 *Ce texte part de situations vécues en Apple Retail. Les scènes ont été recomposées pour préserver les personnes concernées.*
