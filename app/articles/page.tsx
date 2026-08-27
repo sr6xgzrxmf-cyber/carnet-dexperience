@@ -364,6 +364,12 @@ export default async function ArticlesHubPage(props: {
     ...ARTICLE_THEMES.filter((theme) => usedThemes.has(theme)),
     ...(usedThemes.has("Regards sur le travail") ? ["Regards sur le travail"] : []),
   ];
+  const seriesLengths = new Map<string, number>();
+  for (const article of resultsBase) {
+    const slug = article.series?.slug;
+    if (slug) seriesLengths.set(slug, (seriesLengths.get(slug) ?? 0) + 1);
+  }
+
   const catalogArticles = resultsBase.map((article) => ({
     slug: article.slug,
     title: article.title,
@@ -373,6 +379,10 @@ export default async function ArticlesHubPage(props: {
     tags: article.tags ?? [],
     themes: article.themes,
     seriesTitle: article.series?.title ?? article.series?.name,
+    seriesOrder: article.series?.order,
+    seriesLength: article.series?.slug
+      ? seriesLengths.get(article.series.slug)
+      : undefined,
     futureLabel: !isPublishedParis(article.date ?? null, now),
   }));
 
@@ -600,7 +610,7 @@ export default async function ArticlesHubPage(props: {
                             className="flex items-baseline gap-2"
                           >
                             <span className="w-6 shrink-0 text-neutral-400">
-                              {(a.series?.order ?? 0).toString().padStart(2, "0")}
+                              {((a.series?.order ?? 0) + 1).toString().padStart(2, "0")}
                             </span>
                             <span className="text-neutral-700 dark:text-neutral-300">
                               {a.title}

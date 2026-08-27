@@ -172,7 +172,19 @@ function readAllFromDisk(fileNames: string[]): ArticleItem[] {
     return { slug, meta: data as ArticleMeta, content };
   });
 
-  return items.sort((a, b) => toTimestamp(b.meta.date) - toTimestamp(a.meta.date));
+  return items.sort((a, b) => {
+    const dateDifference = toTimestamp(b.meta.date) - toTimestamp(a.meta.date);
+    if (dateDifference !== 0) return dateDifference;
+
+    // Les épisodes publiés le même jour doivent rester dans leur ordre de lecture.
+    if (a.meta.series?.slug && a.meta.series.slug === b.meta.series?.slug) {
+      const aOrder = Number(a.meta.series.order ?? Number.MAX_SAFE_INTEGER);
+      const bOrder = Number(b.meta.series.order ?? Number.MAX_SAFE_INTEGER);
+      if (aOrder !== bOrder) return aOrder - bOrder;
+    }
+
+    return a.slug.localeCompare(b.slug, "fr");
+  });
 }
 
 function getCache(): Cache {

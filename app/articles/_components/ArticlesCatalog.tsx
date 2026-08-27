@@ -18,6 +18,8 @@ export type CatalogArticle = {
   tags: string[];
   themes: string[];
   seriesTitle?: string;
+  seriesOrder?: number;
+  seriesLength?: number;
   futureLabel?: boolean;
 };
 
@@ -208,7 +210,11 @@ export default function ArticlesCatalog({
 
                 <div className={styles.articleBody}>
                   <div className={styles.cardEyebrow}>
-                    {article.futureLabel ? "À paraître" : article.themes[0] ?? article.date}
+                    {article.futureLabel
+                      ? "À paraître"
+                      : article.seriesTitle && article.seriesOrder !== undefined
+                        ? `${article.seriesTitle} · ${article.seriesOrder + 1}/${article.seriesLength ?? "?"}`
+                        : article.themes[0] ?? article.date}
                   </div>
                   <h3 className={styles.articleTitle}>{article.title}</h3>
                   {article.excerpt ? (
