@@ -17,7 +17,7 @@ tags:
 series:
   name: "Les triangles d’arbitrage"
   slug: "triangles-arbitrage"
-  order: 3
+  order: 6
 ---
 
 *Ce texte part de situations vécues en Apple Retail. Les scènes ont été recomposées pour préserver les personnes concernées.*

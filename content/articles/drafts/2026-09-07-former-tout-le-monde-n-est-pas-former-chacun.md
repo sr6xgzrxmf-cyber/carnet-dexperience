@@ -13,6 +13,10 @@ tags:
   - transmission
   - retail
   - organisation
+series:
+  name: "Les triangles d’arbitrage"
+  slug: "triangles-arbitrage"
+  order: 2
 ---
 
 *Ce texte part de situations vécues en Apple Retail. Les scènes et contraintes ont été recomposées pour préserver les personnes et les périodes concernées.*

@@ -13,6 +13,10 @@ tags:
   - service client
   - retail
   - contraintes
+series:
+  name: "Les triangles d’arbitrage"
+  slug: "triangles-arbitrage"
+  order: 1
 ---
 
 *Ce texte revient sur une situation réelle vécue en Apple Retail. Les éléments permettant d’identifier le client ont été volontairement réduits.*

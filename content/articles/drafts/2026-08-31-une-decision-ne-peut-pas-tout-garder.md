@@ -77,9 +77,15 @@ Ces triangles sont donc des outils d’observation, pas des lois.
 
 Ils partent de scènes vécues en Apple Retail. Ils cherchent ensuite à formuler une question transférable : qu’est-ce qui devient fragile quand une organisation tente de tenir trois exigences sans en arbitrer aucune ?
 
-### Quatre décisions, quatre tensions
+### Sept décisions, sept tensions
 
-La série commence par quatre situations concrètes.
+La série commence par sept situations concrètes.
+
+Dans [« Le client qui voulait tout recevoir chez lui »](/articles/2026-09-01-le-client-qui-voulait-tout-recevoir-chez-lui), il faut construire une réponse utile sans prétendre réunir dans une seule opération une **solution complète**, une **disponibilité immédiate** et les mêmes **conditions de vente**.
+
+Dans [« Former tout le monde n’est pas former chacun »](/articles/2026-09-07-former-tout-le-monde-n-est-pas-former-chacun), une équipe doit choisir le bon équilibre entre **rapidité**, **profondeur** et **personnalisation**.
+
+Dans [« Quand le briefing du matin ne passe jamais la première conversation client »](/articles/2026-09-08-quand-le-briefing-du-matin-ne-passe-jamais-la-premiere-conversation-client), un manager cherche à faire tenir **contrôle**, **autonomie** et **réactivité** sans éloigner l’équipe du terrain.
 
 Dans [« L’été n’ajoute pas de ressources »](/articles/2026-09-09-l-ete-n-ajoute-pas-de-ressources), un manager doit aider son équipe à préserver l’essentiel quand le trafic reste élevé et que les congés réduisent les moyens disponibles. Le triangle est : **périmètre · ressources · calendrier**.
 
@@ -89,9 +95,9 @@ Dans [« Une démonstration de trente minutes ne peut pas tout montrer »](/arti
 
 Dans [« Une consigne peut être précise et rester inutilisable »](/articles/2026-09-14-une-consigne-peut-etre-precise-et-rester-inutilisable), un jeu de rôle rappelle qu’une instruction doit permettre de commencer : **précision · rapidité · adhésion**.
 
-Ces récits ne donnent pas quatre recettes.
+Ces récits ne donnent pas sept recettes.
 
-Ils rendent quatre décisions plus difficiles à esquiver.
+Ils rendent sept décisions plus difficiles à esquiver.
 
 ### L’arbitrage est une forme de respect
 
