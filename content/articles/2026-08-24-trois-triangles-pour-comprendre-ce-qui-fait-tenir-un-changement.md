@@ -1,11 +1,11 @@
 ---
 title: "Trois triangles pour comprendre ce qui fait tenir un changement"
-date: "2026-08-25"
+date: "2026-08-24"
 excerpt: >-
   Une décision, une formation ou un parcours peuvent sembler solides et rester
   sans effet. Trois triangles permettent de repérer la force manquante entre
   l’intention et la réalité : adoption, autonomie et positionnement.
-cover: /images/articles/2026-08-25-trois-triangles-pour-comprendre-ce-qui-fait-tenir-un-changement.jpg
+cover: /images/articles/2026-08-24-trois-triangles-pour-comprendre-ce-qui-fait-tenir-un-changement.jpg
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - transformation
@@ -91,7 +91,7 @@ Le récit pose une question simple : une décision prise par le dirigeant suffit
 
 **Comprendre + essayer + réutiliser = autonomie.**
 
-Dans [« Une formation réussie commence quand le formateur devient inutile »](/articles/2026-08-25-une-formation-reussie-commence-quand-le-formateur-devient-inutile), une enseignante découvre le Mac et les iPad introduits dans son établissement.
+Dans [« Une formation réussie commence quand le formateur devient inutile »](/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile), une enseignante découvre le Mac et les iPad introduits dans son établissement.
 
 Elle ne rejette pas seulement un nouvel outil. Elle a perdu la fluidité professionnelle qu’elle possédait sur PC, notamment avec Publisher. Des gestes devenus invisibles redeviennent laborieux. L’organisation parle d’innovation au moment où elle vit une déqualification provisoire.
 
@@ -105,7 +105,7 @@ Le récit pose alors une autre question : lorsqu’une personne revient demander
 
 **Identité + preuves + lisibilité = positionnement.**
 
-Dans [« Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire »](/articles/2026-08-25-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire), la question devient plus personnelle : comment rendre compréhensible un parcours de seize années sans le réduire ni demander aux autres d’en reconstruire eux-mêmes la cohérence ?
+Dans [« Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire »](/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire), la question devient plus personnelle : comment rendre compréhensible un parcours de seize années sans le réduire ni demander aux autres d’en reconstruire eux-mêmes la cohérence ?
 
 La scène centrale se déroule encore en magasin. Je suis en shadow avec un spécialiste qui accompagne un client dans le choix d’un iPhone. Il connaît parfaitement sa gamme. Pourtant, plus il craint de perdre le client, plus il ajoute de modèles, de caractéristiques et de possibilités.
 

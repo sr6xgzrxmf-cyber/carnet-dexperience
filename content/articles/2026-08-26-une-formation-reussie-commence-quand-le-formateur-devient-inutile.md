@@ -1,11 +1,11 @@
 ---
 title: "Une formation réussie commence quand le formateur devient inutile"
-date: "2026-08-25"
+date: "2026-08-26"
 excerpt: >-
   Revenir au même atelier ne signifie pas forcément que l’on n’a pas compris.
   Une enseignante très réticente au Mac m’a appris que l’autonomie se construit
   parfois en confrontant plusieurs explications jusqu’à créer sa propre cohérence.
-cover: /images/articles/2026-08-25-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
+cover: /images/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - formation

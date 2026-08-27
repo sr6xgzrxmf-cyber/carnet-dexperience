@@ -1,11 +1,11 @@
 ---
 title: "Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire"
-date: "2026-08-25"
+date: "2026-08-27"
 excerpt: >-
   Après seize années chez Apple, je pensais disposer de toutes les preuves
   nécessaires pour expliquer ma valeur. Elles étaient si nombreuses qu’elles
   finissaient pourtant par rendre mon projet illisible.
-cover: /images/articles/2026-08-25-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
+cover: /images/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - positionnement
