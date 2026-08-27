@@ -3,8 +3,8 @@ title: "Former tout le monde n’est pas former chacun"
 date: "2026-09-07"
 excerpt: >-
   En magasin, former une équipe signifie retirer temporairement des personnes du
-  terrain. Le vrai enjeu n’est pas de trouver le format idéal, mais de combiner
-  personnalisation, profondeur et passage à l’échelle.
+  terrain. Le vrai enjeu n’est pas de trouver le format idéal, mais d’arbitrer
+  entre rapidité, profondeur et personnalisation.
 cover: /images/articles/2026-09-07-former-tout-le-monde-n-est-pas-former-chacun.jpg
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
@@ -51,25 +51,25 @@ C’est pourquoi il ne suffit pas de décider qu’un sujet est important. Il fa
 
 Cette tension se lit à travers trois forces :
 
-**Personnalisation + profondeur + passage à l’échelle.**
+**Rapidité + profondeur + personnalisation.**
+
+La **rapidité** permet de rendre un apprentissage accessible au bon moment, sans retirer durablement les personnes du terrain. Elle répond à une contrainte réelle : un magasin ne peut pas attendre qu’une journée entière se libère pour traiter un sujet important.
 
 La **personnalisation** permet de partir de la personne : son expérience, ses hésitations, son rôle et les situations qu’elle rencontre réellement. Elle donne de la confiance parce qu’elle évite de parler à tout le monde de la même manière.
 
 La **profondeur** permet de ne pas s’arrêter à une démonstration. Elle crée du temps pour essayer, se tromper, revenir sur une difficulté et relier le nouveau geste à une situation vécue.
 
-Le **passage à l’échelle** permet de rendre un apprentissage accessible à une équipe entière, sans dépendre d’une seule personne capable de tout expliquer individuellement.
-
 Les trois sont souhaitables.
 
-Mais elles ne peuvent pas toutes être maximisées sans une véritable architecture.
+Mais elles ne peuvent pas toutes être maximisées dans le même format sans une véritable architecture.
 
 ### Ce que chaque choix laisse de côté
 
-Un grand temps collectif permet de toucher beaucoup de personnes. Il crée un langage commun et donne de l’énergie. Mais il ne peut pas répondre à toutes les questions individuelles.
+Un grand temps collectif permet de diffuser vite un sujet commun. Il crée un langage partagé et donne de l’énergie. Mais il ne peut pas répondre à toutes les questions individuelles ni installer à lui seul une pratique durable.
 
-Un accompagnement en face à face est souvent plus transformant. Il permet de voir le geste, de reformuler une difficulté et de s’adapter au rythme de la personne. Mais il devient vite coûteux dès qu’il faut le répéter pour toute une équipe.
+Un accompagnement en face à face est souvent plus profond et plus personnalisé. Il permet de voir le geste, de reformuler une difficulté et de s’adapter au rythme de la personne. Mais il est rarement rapide lorsqu’il faut le répéter pour toute une équipe.
 
-Un parcours autonome est plus facile à diffuser. Il respecte davantage les rythmes et permet de revenir sur un contenu. Mais il demande une intention forte, un support très clair et des occasions de pratiquer. Sans cela, il devient une ressource de plus que l’on consulte sans vraiment l’intégrer.
+Un parcours autonome est rapide à proposer et respecte davantage les rythmes. Mais il demande une intention forte, un support très clair et des occasions de pratiquer. Sans cela, il devient une ressource de plus que l’on consulte sans vraiment l’intégrer.
 
 Le problème commence lorsque l’on attend du même format qu’il produise les trois effets sans en accepter le coût.
 
