@@ -1,11 +1,11 @@
 ---
 title: "Le client qui voulait tout recevoir chez lui"
-date: "2026-08-31"
+date: "2026-09-01"
 excerpt: >-
   Un médecin voulait équiper son cabinet, être livré chez lui, payer en partie
   en espèces et repartir vite. La bonne réponse n’était pas de tout promettre,
   mais de rendre les contraintes visibles pour construire une solution utile.
-cover: /images/articles/2026-08-31-le-client-qui-voulait-tout-recevoir-chez-lui.jpg
+cover: /images/articles/2026-09-01-le-client-qui-voulait-tout-recevoir-chez-lui.jpg
 source: "Laurent Guyonnet — Carnet d’expérience"
 tags:
   - arbitrage
