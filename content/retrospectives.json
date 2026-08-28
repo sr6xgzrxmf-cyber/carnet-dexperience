@@ -1,14 +1,20 @@
 {
   "featuredSeriesList": [
-    "atelier-de-posture",
     "faire-exister-un-projet",
-    "triangles-equilibre"
+    "triangles-equilibre",
+    "construire-carnet-experience",
+    "relancer-decider-arreter",
+    "vendre-n-est-plus-convaincre",
+    "triangles-arbitrage"
   ],
   "featuredSeriesSummaries": {
     "atelier-de-posture": "Une série née du travail d’accompagnement mené sur la durée avec des profils en évolution. Ici, on s’intéresse à ce qui ne s’affiche pas sur un CV : la posture. Comment répondre sans se justifier, décider sans chercher à convaincre, se rendre lisible sans se suradapter. À partir de situations réelles, cette série explore les réglages intérieurs qui permettent de tenir sa place plus justement — dans le travail, dans les échanges, et dans les moments où tout se joue.",
     "faire-exister-un-projet": "Une série ancrée dans une situation réelle : faire avancer un projet encore instable, chercher des partenaires, traduire une vision sans la trahir, lire les signaux faibles et décider sans cadre complet. C’est une bonne porte d’entrée si tu veux voir comment je travaille quand rien n’est complètement prêt, mais que tout doit déjà devenir lisible.",
     "construire-carnet-experience": "Une rétrospective sur la construction de ce site comme outil de cohérence professionnelle. J’y raconte les détours, les arbitrages et les renoncements qui permettent de transformer un parcours dispersé en récit lisible, sans le lisser.",
-    "triangles-equilibre": "Quatre textes pour comprendre pourquoi une décision, une formation ou un projet peuvent sembler justes sans encore tenir dans la réalité. Cette série relie trois conditions concrètes : donner envie d’adopter, rendre autonome et devenir lisible."
+    "triangles-equilibre": "Quatre textes pour comprendre pourquoi une décision, une formation ou un projet peuvent sembler justes sans encore tenir dans la réalité. Cette série relie trois conditions concrètes : donner envie d’adopter, rendre autonome et devenir lisible.",
+    "former-des-adultes": "Principes, outils et situations pour concevoir, animer et améliorer l’apprentissage des adultes.",
+    "relancer-decider-arreter": "Une mini-série autour de la méthode PRM : relancer sans harceler, décider sans s’épuiser, arrêter clairement.",
+    "vendre-n-est-plus-convaincre": "Une série sur la bascule du commercial vers une posture de clarification, de diagnostic et d’aide à la décision."
   },
   "featuredSeriesTeasers": {
     "atelier-de-posture": {
@@ -26,6 +32,15 @@
     "triangles-equilibre": {
       "benefit": "Pour voir comment une intention devient un changement réellement adopté, transmissible et lisible.",
       "forWhom": "Une bonne entrée si vous travaillez sur une transformation, une formation ou un repositionnement professionnel."
+    },
+    "former-des-adultes": {
+      "benefit": "Principes, outils et situations pour concevoir, animer et améliorer l’apprentissage des adultes."
+    },
+    "relancer-decider-arreter": {
+      "benefit": "Une mini-série autour de la méthode PRM : relancer sans harceler, décider sans s’épuiser, arrêter clairement."
+    },
+    "vendre-n-est-plus-convaincre": {
+      "benefit": "Une série sur la bascule du commercial vers une posture de clarification, de diagnostic et d’aide à la décision."
     }
   }
 }
