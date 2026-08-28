@@ -43,7 +43,9 @@ function getSeoTitle(item: ArticleItem, fallback: string): string {
 }
 
 export async function generateStaticParams() {
-  const all = await getAllArticles({ includeFuture: true });
+  const includeFuture =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+  const all = await getAllArticles({ includeFuture });
   return (all ?? []).map((item) => ({ slug: item.slug }));
 }
 
@@ -157,6 +159,9 @@ export default async function ArticleDetailPage({
   if (!item) return notFound();
 
   const isFuture = !isPublishedDate(item.meta?.date, new Date());
+  const allowFuture =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+  if (isFuture && !allowFuture) return notFound();
   const contentHtml = await markdownToHtml(item.content);
 
   function toAbsoluteUrl(url?: string) {

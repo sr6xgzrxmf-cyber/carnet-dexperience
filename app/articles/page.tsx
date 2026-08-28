@@ -127,6 +127,16 @@ function isPublishedParis(date: string | null | undefined, now: Date): boolean {
   return d <= parisTodayISO(now);
 }
 
+function formatUpcomingDate(date?: string): string {
+  const iso = normalizeISODate(date);
+  if (!iso) return "prochainement";
+
+  return new Intl.DateTimeFormat("fr-FR", {
+    day: "numeric",
+    month: "long",
+  }).format(new Date(`${iso}T12:00:00`));
+}
+
 /* ---------- Mosaic (5 bandes horizontales) ---------- */
 function Mosaic({ covers }: { covers: string[] }) {
   const c = covers.slice(0, 3);
@@ -254,7 +264,9 @@ export default async function ArticlesHubPage(props: {
   const allowFuture =
     process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
 
-  const raw = await getAllArticles({ includeFuture: allowFuture });
+  // Les séries ont besoin de connaître leur premier article planifié pour
+  // annoncer proprement une publication à venir, même en production.
+  const raw = await getAllArticles({ includeFuture: true });
   const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
 
   // Published vs À paraître
@@ -275,6 +287,7 @@ export default async function ArticlesHubPage(props: {
     items: ArticleMeta[];
     start?: ArticleMeta;
     covers: string[];
+    upcomingDate?: string;
   };
 
   const seriesCatalog = getAllSeriesCatalog();
@@ -285,14 +298,18 @@ export default async function ArticlesHubPage(props: {
     const teaser = featuredSeriesTeasers?.[slug];
     const teaserBenefit = teaser?.benefit?.trim();
     const teaserForWhom = teaser?.forWhom?.trim();
-    const items = published
+    const allItems = all
       .filter((a) => a.series?.slug === slug)
       .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
 
-    const start = items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
+    const items = allItems.filter((a) => isPublishedParis(a.date ?? null, now));
 
-    const lastItems = items.slice(-3);
-    const covers = lastItems
+    const start = items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
+    const plannedStart =
+      allItems.find((a) => (a.series?.order ?? 9999) === 0) ?? allItems[0];
+
+    const coverItems = items.length ? items.slice(-3) : plannedStart ? [plannedStart] : [];
+    const covers = coverItems
       .map((a) => normalizeCoverSrc(a.cover))
       .filter(Boolean) as string[];
 
@@ -306,6 +323,7 @@ export default async function ArticlesHubPage(props: {
       items,
       start,
       covers,
+      upcomingDate: !items.length ? plannedStart?.date : undefined,
     };
   });
 
@@ -570,7 +588,9 @@ export default async function ArticlesHubPage(props: {
 
                 <div className={styles.articleBody}>
                   <div className={styles.cardEyebrow}>
-                    Série • {s.items.length} article{s.items.length > 1 ? "s" : ""}
+                    {s.items.length
+                      ? `Série • ${s.items.length} article${s.items.length > 1 ? "s" : ""}`
+                      : "Série • à paraître"}
                   </div>
 
                   <h3 className={styles.articleTitle}>
@@ -592,6 +612,10 @@ export default async function ArticlesHubPage(props: {
                       >
                         Commencer
                       </Link>
+                    ) : s.upcomingDate ? (
+                      <span className="inline-flex items-center justify-center rounded-xl border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-800">
+                        Première publication le {formatUpcomingDate(s.upcomingDate)}
+                      </span>
                     ) : (
                       <span className="inline-flex items-center justify-center rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/60 dark:bg-neutral-950/30 px-4 py-2 text-sm text-neutral-500 dark:text-neutral-400">
                         Commencer
@@ -628,10 +652,12 @@ export default async function ArticlesHubPage(props: {
                         </Link>
                       </div>
                     </div>
-                  ) : (
+                  ) : s.upcomingDate ? (
                     <p className="mt-5 text-sm text-neutral-500">
-                      Aucun article trouvé pour cette série (vérifie `series.slug` dans le YAML).
+                      La série commencera le {formatUpcomingDate(s.upcomingDate)}.
                     </p>
+                  ) : (
+                    <p className="mt-5 text-sm text-neutral-500">Cette série est en préparation.</p>
                   )}
                 </div>
               </div>
