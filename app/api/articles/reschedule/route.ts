@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { findLocalArticleFile } from "@/lib/local-article-files";
 
-const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 const IS_LOCAL =
   process.env.NODE_ENV !== "production" &&
@@ -36,9 +36,9 @@ export async function PATCH(req: Request) {
   const newDate = String(body.date).slice(0, 10);
 
   const oldSlug = body.slug;
-  const oldPath = path.join(ARTICLES_DIR, `${oldSlug}.md`);
+  const oldPath = findLocalArticleFile(oldSlug);
 
-  if (!fs.existsSync(oldPath)) {
+  if (!oldPath) {
     return NextResponse.json({ error: "File not found" }, { status: 404 });
   }
 
@@ -60,7 +60,7 @@ export async function PATCH(req: Request) {
 
     if (oldDatePart !== newDate) {
       newSlug = `${newDate}-${rest}`;
-      const newPath = path.join(ARTICLES_DIR, `${newSlug}.md`);
+      const newPath = path.join(path.dirname(oldPath), `${newSlug}.md`);
 
       if (fs.existsSync(newPath)) {
         return NextResponse.json(

@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
 import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
+import { findLocalArticleFile } from "@/lib/local-article-files";
 
-const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 const IS_LOCAL =
   process.env.NODE_ENV !== "production" &&
@@ -23,8 +22,8 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "Missing slug" }, { status: 400 });
   }
 
-  const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
-  if (!fs.existsSync(filePath)) {
+  const filePath = findLocalArticleFile(slug);
+  if (!filePath) {
     return NextResponse.json({ error: "File not found" }, { status: 404 });
   }
 

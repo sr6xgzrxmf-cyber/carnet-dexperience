@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { findLocalArticleFile, listLocalArticleFiles } from "@/lib/local-article-files";
 
-const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 const IS_LOCAL =
   process.env.NODE_ENV !== "production" &&
@@ -31,13 +31,12 @@ type UpdateBody = {
 };
 
 function listArticleFiles(): string[] {
-  return fs.existsSync(ARTICLES_DIR)
-    ? fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"))
-    : [];
+  return listLocalArticleFiles();
 }
 
 function readArticle(slug: string) {
-  const filePath = path.join(ARTICLES_DIR, `${slug}.md`);
+  const filePath = findLocalArticleFile(slug);
+  if (!filePath) throw new Error("Article not found");
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = matter(raw);
   return { filePath, raw, parsed };
@@ -119,10 +118,9 @@ export async function PATCH(req: Request) {
         const files = listArticleFiles();
         const siblings: Array<{ slug: string; filePath: string; data: Frontmatter; order: number | null; content: string }> = [];
 
-        for (const f of files) {
-          const s = f.replace(/\.md$/, "");
+        for (const fp of files) {
+          const s = path.basename(fp, ".md");
           if (s === slug) continue;
-          const fp = path.join(ARTICLES_DIR, f);
           const raw = fs.readFileSync(fp, "utf8");
           const p = matter(raw);
           const d: Frontmatter = (p.data ?? {}) as Frontmatter;

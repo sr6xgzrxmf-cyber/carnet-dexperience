@@ -3,8 +3,8 @@ import type { NextRequest } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { listLocalArticleFiles } from "@/lib/local-article-files";
 
-const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 
 function isLocalRequest(req: NextRequest) {
   const host =
@@ -32,13 +32,11 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const files = fs.existsSync(ARTICLES_DIR)
-    ? fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"))
-    : [];
+  const files = listLocalArticleFiles();
 
-  const items = files.map((filename) => {
-    const slug = filename.replace(/\.md$/, "");
-    const raw = fs.readFileSync(path.join(ARTICLES_DIR, filename), "utf8");
+  const items = files.map((filePath) => {
+    const slug = path.basename(filePath, ".md");
+    const raw = fs.readFileSync(filePath, "utf8");
     const { data: rawData } = matter(raw);
     const data = (rawData ?? {}) as Record<string, unknown>;
 
