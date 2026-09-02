@@ -16,17 +16,13 @@ series:
 
 ## Quand le flou devient un terrain de friction
 
-Karim n’a pas de problème avec le travail. Il en a avec les *glissements*. Des demandes qui arrivent “parce que tu sais faire”. Des missions qui s’ajoutent “temporairement”. Des urgences qui deviennent la norme sans jamais être nommées comme telles.
+Karim n’a pas de problème avec le travail. Il en a avec les *glissements* : des demandes qui arrivent « parce que tu sais faire », des missions qui s’ajoutent « temporairement », des urgences qui deviennent la norme sans jamais être nommées comme telles.
 
-À force, les tensions apparaissent. Non pas parce que les personnes sont de mauvaise volonté, mais parce que **personne ne sait exactement où s’arrête son rôle**.
+À force, les tensions apparaissent — non parce que les personnes sont de mauvaise volonté, mais parce que **personne ne sait exactement où s’arrête son rôle**.
 
 ## Le flou profite rarement au collectif
 
-Dans une organisation, le flou n’est jamais neutre. Il profite aux plus disponibles, aux plus consciencieux, ou aux plus silencieux. Ceux qui absorbent. Ceux qui compensent. Jusqu’à l’usure.
-
-À l’inverse, les conflits de périmètre, les ressentiments et les accusations implicites se multiplient : “ce n’était pas à moi”, “je pensais que c’était pris en charge”.
-
-Le problème n’est pas humain. Il est structurel.
+Dans une organisation, le flou n’est jamais neutre : il profite aux plus disponibles, aux plus consciencieux, aux plus silencieux — ceux qui absorbent, ceux qui compensent, jusqu’à l’usure. En parallèle, les conflits de périmètre et les accusations implicites se multiplient : « ce n’était pas à moi », « je pensais que c’était pris en charge ». Le problème n’est pas humain, il est structurel.
 
 ## Demander une fiche de poste n’est pas une attaque
 
@@ -57,13 +53,10 @@ Ce draft sert de base de discussion. Il montre une posture constructive et facil
 
 ## Valider pour stabiliser
 
-Une fiche de poste n’a de valeur que si elle est validée explicitement. Pas pour figer, mais pour créer un repère commun. Elle pourra évoluer. Mais elle existe.
-
-À partir de là, les arbitrages deviennent possibles. Les “glissements de mission” sont identifiables. Et la charge redevient discutable.
+Une fiche de poste n’a de valeur que si elle est validée explicitement — non pour figer, mais pour créer un repère commun. Elle pourra évoluer, mais elle existe. À partir de là, les arbitrages deviennent possibles, les « glissements de mission » sont identifiables, et la charge redevient discutable.
 
 ## Le cadre libère plus qu’il ne contraint
 
-Contrairement aux idées reçues, la formalisation n’étouffe pas l’engagement. Elle le rend soutenable. Elle protège les personnes comme le système.
+Contrairement aux idées reçues, la formalisation n’étouffe pas l’engagement, elle le rend soutenable — et elle protège les personnes comme le système.
 
-La vraie question à se poser est donc celle-ci :  
-**quels flous acceptes-tu encore aujourd’hui… et combien te coûtent-ils réellement ?**
+Quels flous acceptes-tu encore aujourd’hui, et combien te coûtent-ils réellement ?

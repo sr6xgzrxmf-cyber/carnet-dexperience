@@ -40,11 +40,7 @@ Le problème n’est donc pas son existence. Le problème est la manière dont i
 
 ## Là où il devient pauvre
 
-Ce style se dégrade quand toute la relation de management est réduite à l’échange :
-
-tu atteins, tu es récompensé ;
-tu rates, tu es corrigé ;
-tu sors du cadre, tu es sanctionné.
+Ce style se dégrade quand toute la relation de management est réduite à l’échange : tu atteins, tu es récompensé ; tu rates, tu es corrigé ; tu sors du cadre, tu es sanctionné.
 
 À ce moment-là, le système peut continuer à fonctionner à court terme, mais il finit souvent par produire :
 
@@ -97,12 +93,8 @@ Si rien de cela ne bouge, le discours sur la performance restera purement décla
 
 ## Le point de vigilance le plus important
 
-Le management transactionnel fonctionne bien quand il structure le travail.
-Il fonctionne mal quand il prétend suffire à créer de l’engagement.
-
-On peut obtenir l’exécution avec des règles.
-On n’obtient pas toujours la compréhension, l’adhésion ou la progression durable avec des règles seules.
+Le management transactionnel fonctionne bien quand il structure le travail ; il fonctionne mal quand il prétend suffire à créer de l’engagement. On obtient l’exécution avec des règles ; on n’obtient pas toujours la compréhension, l’adhésion ou la progression durable avec des règles seules.
 
 C’est là que le regard du formateur devient utile : il permet de voir si le cadre soutient vraiment le travail, ou s’il sert surtout à compenser une relation managériale trop pauvre.
 
-Dans les organisations que tu rencontres, les règles clarifient-elles le jeu… ou finissent-elles par remplacer toute autre forme de management ?
+Dans les organisations que tu rencontres, les règles clarifient-elles le jeu, ou finissent-elles par remplacer toute autre forme de management ?

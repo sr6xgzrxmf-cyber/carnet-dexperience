@@ -92,9 +92,7 @@ Si rien ne bouge sur ces points, on a probablement seulement ajouté des codes a
 
 ## Le piège le plus fréquent
 
-Le grand piège, c’est de croire que l’agilité dispense de choisir.
-
-En réalité, elle exige souvent plus de choix, plus souvent, plus clairement.
+Le grand piège, c’est de croire que l’agilité dispense de choisir. En réalité, elle exige souvent plus de choix, plus souvent, plus clairement.
 
 Il faut accepter de dire :
 
@@ -105,4 +103,4 @@ Il faut accepter de dire :
 
 Sans cela, l’équipe ne zigzague pas intelligemment. Elle encaisse juste davantage de variations.
 
-Dans les contextes que tu rencontres, l’agilité sert-elle à apprendre plus vite… ou sert-elle surtout à rendre supportable un manque chronique de priorisation ?
+Dans les contextes que tu rencontres, l’agilité sert-elle à apprendre plus vite, ou surtout à rendre supportable un manque chronique de priorisation ?

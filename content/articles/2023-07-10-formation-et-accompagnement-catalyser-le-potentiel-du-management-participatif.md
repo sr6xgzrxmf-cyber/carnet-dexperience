@@ -91,4 +91,4 @@ Mais ces effets ne viennent pas d’une simple ouverture relationnelle. Ils vien
 
 Le participatif fonctionne moins comme une philosophie que comme une discipline.
 
-Dans les organisations que tu accompagnes, cherche-t-on surtout à rendre les managers plus ouverts… ou à leur apprendre concrètement comment faire vivre une contribution utile jusqu’à la décision ?
+Dans les organisations que tu accompagnes, cherche-t-on surtout à rendre les managers plus ouverts, ou à leur apprendre concrètement comment faire vivre une contribution utile jusqu’à la décision ?

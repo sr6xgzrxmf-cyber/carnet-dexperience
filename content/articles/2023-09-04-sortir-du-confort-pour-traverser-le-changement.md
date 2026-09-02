@@ -116,8 +116,8 @@ Le confort commence à céder quand on voit apparaître de petits signes :
 
 Ce sont ces signaux qui montrent qu’un passage devient possible.
 
-## La vraie question
+## Un travail de déplacement
 
 Sortir du confort ne devrait jamais être une injonction morale. C’est un travail de déplacement.
 
-Avant de demander à une équipe de changer, te demandes-tu vraiment ce que ses routines lui permettent encore de tenir… ou regardes-tu seulement ce qu’elles empêchent ?
+Avant de demander à une équipe de changer, je m’oblige à regarder ce que ses routines lui permettent encore de tenir, et pas seulement ce qu’elles l’empêchent de voir.

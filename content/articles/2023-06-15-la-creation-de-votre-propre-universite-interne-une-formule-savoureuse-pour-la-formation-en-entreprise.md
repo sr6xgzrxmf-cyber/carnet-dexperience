@@ -112,4 +112,4 @@ Elle n’a pas besoin d’être gigantesque pour être utile. Elle a besoin d’
 
 C’est souvent à ça qu’on reconnaît les meilleurs dispositifs : ils ne donnent pas seulement accès à des contenus. Ils rendent un métier plus transmissible.
 
-Dans ton organisation, si tu voulais créer une université interne demain, partirais-tu d’un catalogue de ressources… ou des situations où la transmission casse déjà aujourd’hui ?
+Si tu voulais créer une université interne demain, partirais-tu d’un catalogue de ressources, ou des situations où la transmission casse déjà aujourd’hui ?

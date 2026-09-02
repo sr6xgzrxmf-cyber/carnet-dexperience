@@ -22,7 +22,7 @@ series:
 
 Le dossier est prêt. Le contact semble pertinent et l’échange précédent s’est bien passé. J’envoie le mail, je ferme ma session et je passe à autre chose.
 
-Pendant quelques jours, aucune notification n’apparaît. Ni refus. Ni question. Ni relance.
+Pendant quelques jours, aucune notification n’apparaît : ni refus, ni question, ni relance.
 
 Un vide s’installe et, sans m’en rendre compte, je commence à le remplir.
 
@@ -60,7 +60,7 @@ Le silence ne contenait pas les messages que je lui prêtais. C’était moi qui
 
 Cette prise de recul m’a appris autre chose. Les organisations n’observent pas seulement les projets. Elles observent aussi la manière dont ceux qui les portent traversent les périodes où rien n’avance.
 
-Beaucoup d’initiatives disparaissent après un premier vide. Continuer à exister sans validation immédiate envoie déjà un signal. Pas un signal spectaculaire. Un signal de tenue.
+Beaucoup d’initiatives disparaissent après un premier vide. Continuer à exister sans validation immédiate envoie déjà un signal — discret, mais un signal de tenue.
 
 Je pensais apprendre à relancer. J’apprenais surtout :
 
@@ -73,8 +73,6 @@ Je pensais apprendre à relancer. J’apprenais surtout :
 
 Une image m’a aidé à formuler ce déplacement : les répétitions de notre chœur. Rémi, notre chef de chœur, nous répète souvent que les silences sont presque plus importants que les notes. Pas parce qu’ils remplissent la musique, mais parce qu’ils révèlent sa qualité. Un silence mal tenu brouille l’ensemble. Un silence maîtrisé rend le chant plus net, plus précis, plus professionnel.
 
-En repensant à mes démarches, j’ai compris que le parallèle était exact. Longtemps, j’ai vu les silences comme des vides à combler. Aujourd’hui, je les considère comme des éléments de la partition. Ils ne sont pas là pour me décourager, mais pour rappeler que la construction d’un projet passe aussi par des moments où rien ne se voit.
+En repensant à mes démarches, j’ai compris que le parallèle était exact. Longtemps, j’ai vu les silences comme des vides à combler ; aujourd’hui, je les considère comme des éléments de la partition. Ils ne sont pas là pour me décourager, mais pour rappeler que la construction d’un projet passe aussi par des moments où rien ne se voit.
 
-Dans le fond, je croyais apprendre à gérer les réponses. J’apprenais à habiter les silences. Et avec le recul, je crois que cette faculté à poursuivre sans validation immédiate fait souvent la différence entre une idée qui s’effiloche et un projet qui finit par exister.
-
-Quand le silence s’installe, qu’est-ce que tu es vraiment en train d’écouter : le réel, ou ce que tu projettes dessus ?
+Je croyais apprendre à gérer les réponses ; j’apprenais à habiter les silences. Avec le recul, cette faculté à poursuivre sans validation immédiate fait souvent la différence entre une idée qui s’effiloche et un projet qui finit par exister. Un silence dit rarement quelque chose de nous ; il attend surtout de voir si le projet lui survit.

@@ -24,15 +24,7 @@ Tester sans indicateurs n’a pas supprimé l’incertitude. Il l’a maquillée
 
 ## Le vrai danger : confondre expérience et preuve
 
-Une expérience produit des impressions. Une preuve produit une décision.  
-Sans indicateurs définis à l’avance, un test devient un récit subjectif, interprétable à l’infini.
-
-Sur le terrain, cela se traduit par des phrases floues :  
-« On a l’impression que… »  
-« Globalement, ça fonctionne… »  
-« Certains trouvent que… »
-
-Aucune de ces phrases ne permet de trancher.
+Une expérience produit des impressions ; une preuve produit une décision. Sans indicateurs définis à l’avance, un test devient un récit subjectif, interprétable à l’infini. Sur le terrain, cela donne des phrases floues — « on a l’impression que… », « globalement, ça fonctionne… », « certains trouvent que… » — dont aucune ne permet de trancher.
 
 ## Un indicateur n’est pas un KPI lourd
 
@@ -42,11 +34,7 @@ Un indicateur utile répond à une seule question : *est-ce que c’est mieux qu
 
 ## Choisir peu, mais choisir avant
 
-Karim ne définit jamais plus de deux ou trois indicateurs par test. Et surtout, il les choisit **avant** de lancer le prototype.
-
-Temps gagné. Nombre de sollicitations. Taux de réouverture d’un sujet. Niveau de tension perçu sur une échelle simple. Peu importe, tant que le critère est partagé.
-
-Ce choix préalable empêche la réécriture a posteriori.
+Karim ne définit jamais plus de deux ou trois indicateurs par test, et surtout il les choisit **avant** de lancer le prototype : temps gagné, nombre de sollicitations, taux de réouverture d’un sujet, niveau de tension perçu sur une échelle simple. Peu importe, tant que le critère est partagé. Ce choix préalable empêche la réécriture a posteriori.
 
 ## Mesurer, ce n’est pas surveiller
 
@@ -58,7 +46,6 @@ Sans cela, le test devient un compromis mou, où personne n’assume vraiment la
 
 Quand les indicateurs sont clairs, la décision cesse d’être personnelle. Elle devient factuelle. Même imparfaite, elle est assumable.
 
-Tester sans indicateurs rassure sur le moment. Tester avec indicateurs permet d’avancer réellement.
+Tester sans indicateurs rassure sur le moment ; tester avec indicateurs permet d’avancer réellement.
 
-La vraie question à se poser est donc celle-ci :  
-**si ton test se terminait aujourd’hui, qu’est-ce qui te permettrait de décider — factuellement — de continuer ou d’arrêter ?**
+Si ton test se terminait aujourd’hui, qu’est-ce qui te permettrait de décider, factuellement, de continuer ou d’arrêter ?

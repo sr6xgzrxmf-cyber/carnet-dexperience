@@ -16,27 +16,21 @@ series:
 
 ## Le mail qu’on écrit trop vite
 
-Karim connaît bien ce moment. Une tension. Une incompréhension. Une décision mal vécue. L’envie immédiate d’écrire. Tout est clair dans sa tête. Les arguments sont prêts. Le mail s’écrit presque tout seul.
+Karim connaît bien ce moment : une tension, une incompréhension, une décision mal vécue, et l’envie immédiate d’écrire. Tout est clair dans sa tête, les arguments sont prêts, le mail s’écrit presque tout seul. C’est souvent là que l’escalade commence.
 
-C’est souvent à ce moment-là que l’escalade commence.
-
-Un mail écrit sous tension n’est pas un outil de clarification. C’est une arme rhétorique. Même bien formulé, il fige les positions et pousse l’autre à se défendre.
+Un mail écrit sous tension n’est pas un outil de clarification. C’est une arme rhétorique : même bien formulé, il fige les positions et pousse l’autre à se défendre.
 
 ## Le vrai problème n’est pas le fond, mais le canal
 
-Beaucoup de conflits ne viennent pas de ce qui est dit, mais **de la manière dont c’est dit**. L’écrit supprime le ton, le regard, les nuances. Il transforme une intention de clarification en attaque perçue.
+Beaucoup de conflits ne viennent pas de ce qui est dit, mais **de la manière dont c’est dit**. L’écrit supprime le ton, le regard, les nuances, et transforme une intention de clarification en attaque perçue.
 
 Quand l’enjeu est relationnel, l’écrit arrive trop tôt.
 
 ## Parler d’abord pour désamorcer
 
-Karim adopte une règle simple :  
-quand la tension est là, **il parle avant d’écrire**.
+Karim adopte une règle simple : quand la tension est là, **il parle avant d’écrire**. Un échange direct, même court — dix minutes suffisent souvent — permet de poser les intentions, d’entendre l’autre, de corriger les malentendus. La discussion ne vise pas à convaincre, mais à réaligner.
 
-Un échange direct, même court — dix minutes suffisent souvent — permet de poser les intentions, d’entendre l’autre, de corriger les malentendus. La discussion ne vise pas à convaincre, mais à réaligner.
-
-La phrase d’entrée est clé :  
-« Est-ce qu’on peut en parler quelques minutes pour clarifier avant d’aller plus loin ? »
+La phrase d’entrée est clé : « Est-ce qu’on peut en parler quelques minutes pour clarifier avant d’aller plus loin ? »
 
 Cette demande change immédiatement la posture.
 
@@ -62,5 +56,4 @@ Cette séquence en deux temps — parler puis écrire — évite la plupart des 
 
 Le mail cesse d’être une arme. Il redevient un outil.
 
-La vraie question à se poser est donc celle-ci :  
-**ce que tu t’apprêtes à écrire gagnerait-il à être d’abord dit de vive voix ?**
+Ce que tu t’apprêtes à écrire gagnerait-il à être d’abord dit de vive voix ?

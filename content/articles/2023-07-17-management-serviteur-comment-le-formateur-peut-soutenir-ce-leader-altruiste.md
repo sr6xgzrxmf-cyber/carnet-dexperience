@@ -55,14 +55,9 @@ Ce n’est pas spectaculaire. C’est souvent même assez discret. Mais dans une
 
 Comme beaucoup de styles apparemment vertueux, le management serviteur se dégrade quand il est mal compris.
 
-Le manager veut aider, alors il absorbe tout.
-Il veut être disponible, alors il n’arbitre plus.
-Il veut protéger l’équipe, alors il filtre trop et finit par épuiser tout le monde, lui compris.
+Le manager veut aider, alors il absorbe tout ; il veut être disponible, alors il n’arbitre plus ; il veut protéger l’équipe, alors il filtre trop et finit par épuiser tout le monde, lui compris.
 
-À ce moment-là, le service devient compensation.
-
-On ne développe plus l’équipe, on la porte.
-On ne sécurise plus le cadre, on amortit en silence tous les dysfonctionnements du système.
+À ce moment-là, le service devient compensation : on ne développe plus l’équipe, on la porte ; on ne sécurise plus le cadre, on amortit en silence tous les dysfonctionnements du système.
 
 ## Ce qu’une formation devrait vraiment travailler
 
@@ -110,4 +105,4 @@ Un manager serviteur ne cherche pas à être aimé. Il cherche à créer un envi
 
 Dans beaucoup d’organisations, c’est déjà considérable.
 
-La vraie question est peut-être celle-ci : quand tu rencontres un manager qui “aide beaucoup”, vois-tu un vrai travail de soutien… ou une manière élégante de compenser un système qui tient mal ?
+Quand tu rencontres un manager qui « aide beaucoup », y vois-tu un vrai travail de soutien, ou une manière élégante de compenser un système qui tient mal ?

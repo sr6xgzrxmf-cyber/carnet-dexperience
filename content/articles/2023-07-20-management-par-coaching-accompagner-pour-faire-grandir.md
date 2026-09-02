@@ -41,8 +41,7 @@ Mais dans des environnements où les compétences doivent évoluer vite, il devi
 
 Le terme est tellement valorisé qu’il sert parfois à tout et n’importe quoi.
 
-Un manager n’est pas en posture de coaching simplement parce qu’il pose plus de questions.
-Il n’est pas non plus dans le coaching quand il évite de trancher, repousse les arbitrages ou transforme chaque difficulté en conversation sans fin.
+Un manager n’est pas en posture de coaching simplement parce qu’il pose plus de questions, ni quand il évite de trancher, repousse les arbitrages ou transforme chaque difficulté en conversation sans fin.
 
 Le management par coaching devient faible quand :
 
@@ -103,4 +102,4 @@ Il devient particulièrement utile quand une organisation veut développer les p
 
 Entre ces deux extrêmes, il y a une posture plus fine : faire penser, faire essayer, faire relire, puis recadrer si nécessaire.
 
-Dans les situations que tu observes, les managers cherchent-ils réellement à faire grandir les personnes… ou se contentent-ils de parler d’autonomie sans créer les conditions pour qu’elle apparaisse ?
+Dans les situations que tu observes, les managers cherchent-ils réellement à faire grandir les personnes, ou se contentent-ils de parler d’autonomie sans créer les conditions pour qu’elle apparaisse ?

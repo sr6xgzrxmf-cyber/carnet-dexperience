@@ -40,10 +40,7 @@ On ne parle plus seulement d’un principe. On parle d’une situation.
 
 ## Ce que le storytelling n’est pas
 
-Le storytelling n’est pas une couche émotionnelle ajoutée à un contenu faible.
-Ce n’est pas non plus l’art de divertir la salle pour faire passer le temps.
-
-Utilisé comme simple habillage, il fatigue vite.
+Le storytelling n’est pas une couche émotionnelle ajoutée à un contenu faible, ni l’art de divertir la salle pour faire passer le temps. Utilisé comme simple habillage, il fatigue vite.
 
 Un récit n’a de valeur pédagogique que s’il éclaire réellement quelque chose :
 
@@ -57,11 +54,7 @@ Sinon, on se souvient peut-être de l’histoire. Pas de ce qu’elle devait per
 
 ## Ce qu’il permet en formation
 
-Quand il est bien utilisé, le storytelling fait au moins trois choses utiles.
-
-D’abord, il crée de l’attention.
-Ensuite, il facilite la projection : chacun peut comparer avec une situation proche de la sienne.
-Enfin, il ouvre la discussion, parce qu’un récit appelle naturellement plusieurs lectures.
+Quand il est bien utilisé, le storytelling fait au moins trois choses : il crée de l’attention, il facilite la projection (chacun peut comparer avec une situation proche de la sienne), et il ouvre la discussion, parce qu’un récit appelle naturellement plusieurs lectures.
 
 C’est particulièrement utile pour travailler des sujets complexes, relationnels ou sensibles, là où un exposé purement conceptuel laisse trop de distance.
 
@@ -88,25 +81,17 @@ Sans ce travail de liaison, le récit reste agréable mais sous-exploité.
 
 ## Les erreurs les plus fréquentes
 
-On rate souvent le storytelling de trois façons.
+On rate souvent le storytelling de trois façons :
 
-La première : raconter une anecdote trop longue, dont on ne sait plus ce qu’elle vient prouver.
-
-La deuxième : choisir une histoire trop parfaite, trop lisse, qui ne laisse aucune prise au débat.
-
-La troisième : utiliser le récit à la place du travail d’analyse.
+- raconter une anecdote trop longue, dont on ne sait plus ce qu’elle vient prouver ;
+- choisir une histoire trop parfaite, trop lisse, qui ne laisse aucune prise au débat ;
+- utiliser le récit à la place du travail d’analyse.
 
 Or une bonne histoire n’achève pas la réflexion. Elle la rend possible.
 
 ## Ce qu’il change dans l’apprentissage
 
-Le storytelling ne remplace pas les méthodes, les modèles ou les outils. Il leur donne un point d’ancrage humain.
-
-Il aide à retenir parce qu’il fait sentir.
-Il aide à comprendre parce qu’il relie.
-Il aide à agir parce qu’il rend le concept moins abstrait.
-
-Dans des dispositifs de formation, cette qualité vaut beaucoup.
+Le storytelling ne remplace pas les méthodes, les modèles ou les outils : il leur donne un point d’ancrage humain. Il aide à retenir parce qu’il fait sentir, à comprendre parce qu’il relie, à agir parce qu’il rend le concept moins abstrait. Dans des dispositifs de formation, cette qualité vaut beaucoup.
 
 ## Le vrai enjeu
 
@@ -114,4 +99,4 @@ Former, ce n’est pas seulement transmettre des contenus exacts. C’est aussi 
 
 Le storytelling devient alors autre chose qu’un levier de communication. Il devient un levier de transfert.
 
-Quand tu racontes une situation en formation, est-ce que tu aides réellement les personnes à penser et agir autrement… ou est-ce que tu ajoutes simplement une belle histoire à un contenu qui reste trop loin du réel ?
+Quand tu racontes une situation en formation, aides-tu réellement les personnes à penser et agir autrement, ou ajoutes-tu simplement une belle histoire à un contenu qui reste trop loin du réel ?

@@ -49,8 +49,7 @@ On présente parfois le sujet comme une opposition simple :
 
 Le terrain est plus subtil que cela.
 
-Les plus jeunes peuvent manier les outils sans toujours avoir la profondeur de recul.
-Les plus expérimentés peuvent hésiter devant une interface tout en portant une compréhension très fine des situations, des clients, des contraintes et des risques.
+Les plus jeunes peuvent manier les outils sans toujours avoir la profondeur de recul. Les plus expérimentés peuvent hésiter devant une interface tout en portant une compréhension très fine des situations, des clients, des contraintes et des risques.
 
 Le problème commence quand l’un des deux savoirs est invisibilisé.
 
@@ -58,8 +57,7 @@ Le problème commence quand l’un des deux savoirs est invisibilisé.
 
 Ce qui traverse les générations, ce n’est pas seulement la différence de codes. C’est le sentiment de ne plus être au centre du jeu quand le monde bouge.
 
-Hier, cela pouvait passer par la mécanique, la technique, les nouveaux gestes.
-Aujourd’hui, cela passe souvent par le numérique, les plateformes, les rythmes d’apprentissage, les nouveaux langages du travail.
+Hier, cela pouvait passer par la mécanique, la technique, les nouveaux gestes. Aujourd’hui, cela passe souvent par le numérique, les plateformes, les rythmes d’apprentissage, les nouveaux langages du travail.
 
 Mais la sensation, elle, change peu : quelqu’un voit apparaître une compétence valorisée qu’il ne maîtrise pas encore, et se demande silencieusement ce que cela dit de sa place.
 
@@ -123,4 +121,4 @@ Dans les faits, beaucoup de résistances tombent dès que :
 
 Le film me rappelle finalement quelque chose de très simple : la nouveauté déplace toujours un peu les places, mais elle ne devrait pas forcer certains à sortir du jeu.
 
-Dans tes formations, les différences de génération servent-elles à enrichir la transmission… ou laissent-elles encore certains participants se sentir discrètement “plus à leur place” que d’autres ?
+Dans mes formations, je surveille surtout ça : que les différences de génération nourrissent la transmission, sans laisser personne se sentir discrètement moins à sa place que les autres.

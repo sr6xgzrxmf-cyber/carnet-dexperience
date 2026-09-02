@@ -19,8 +19,7 @@ series:
 
 La phrase arrive à la pause, souvent discrètement. Quelqu’un quitte la salle plus vite que les autres. Une personne revient systématiquement en retard après les ateliers. Une autre ne prend jamais la parole tant qu’on ne la sollicite pas directement. Un homme monopolise l’échange sans même s’en rendre compte. Une femme formule une idée, qui n’est reprise qu’une fois reformulée par un collègue.
 
-On pourrait croire à des détails de groupe.
-En réalité, ils disent souvent quelque chose de plus structurel.
+On pourrait croire à des détails de groupe. En réalité, ils disent souvent quelque chose de plus structurel.
 
 C’est là que la question du genre devient précieuse en formation des adultes.
 
@@ -76,15 +75,7 @@ Une séance en fin de journée, par exemple, n’a pas le même coût pour tout 
 
 ## La parole n’est jamais distribuée naturellement
 
-L’un des endroits où le genre devient très visible, c’est la dynamique de parole.
-
-Qui coupe ?
-Qui reformule ?
-Qui s’excuse avant de parler ?
-Qui parle longtemps sans être recadré ?
-Qui est lu comme “assertif”, et qui est lu comme “agressif” pour un niveau d’intensité comparable ?
-
-Ces mécanismes sont parfois minuscules, mais ils façonnent l’expérience d’apprentissage.
+L’un des endroits où le genre devient très visible, c’est la dynamique de parole. Qui coupe, qui reformule, qui s’excuse avant de parler, qui parle longtemps sans être recadré, qui est lu comme « assertif » quand un autre serait lu comme « agressif » pour une intensité comparable ? Ces mécanismes sont parfois minuscules, mais ils façonnent l’expérience d’apprentissage.
 
 Une formation qui ne regarde jamais cela risque de croire que le groupe “fonctionne”, alors qu’une partie des participants apprend dans des conditions relationnelles dégradées.
 
@@ -111,9 +102,6 @@ La question est donc simple :
 
 la formation va-t-elle faire comme si tout cela n’existait pas, ou va-t-elle ajuster son cadre pour que l’apprentissage soit un peu plus juste ?
 
-C’est là, à mes yeux, que l’apport d’Edmée Ollagnier reste précieux. Il ne consiste pas à ajouter un thème. Il consiste à déplacer le regard.
+C’est là, à mes yeux, que l’apport d’Edmée Ollagnier reste précieux : il ne consiste pas à ajouter un thème, mais à déplacer le regard. Former des adultes, ce n’est pas seulement transmettre un contenu à un groupe abstrait, c’est travailler avec des personnes situées, dans des rapports réels, avec des disponibilités inégales et des légitimités parfois fragiles.
 
-Former des adultes, ce n’est pas seulement transmettre un contenu à un groupe abstrait.
-C’est travailler avec des personnes situées, dans des rapports réels, avec des disponibilités inégales et des légitimités parfois fragiles.
-
-Dans les formations que tu observes, qu’est-ce qui est présenté comme “normal” alors que ce cadre avantage déjà certains participants plus que d’autres ?
+Dans les formations que tu observes, qu’est-ce qui passe pour « normal » alors que ce cadre avantage déjà certains participants plus que d’autres ?

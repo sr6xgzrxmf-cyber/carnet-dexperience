@@ -31,9 +31,7 @@ On parle souvent de cet équilibre comme s’il fallait répartir équitablement
 - un peu d’exercices ;
 - puis le compte serait bon.
 
-En réalité, le sujet n’est pas quantitatif. Il est fonctionnel.
-
-La vraie question est : de quoi les personnes ont-elles besoin, à ce moment-là, pour comprendre puis agir ?
+En réalité, le sujet n’est pas quantitatif, il est fonctionnel : de quoi les personnes ont-elles besoin, à ce moment-là, pour comprendre puis agir ?
 
 Parfois il faut commencer par un cadre théorique net pour éviter de pratiquer à vide. Parfois il faut au contraire partir d’une situation concrète, puis remonter vers le concept. Ce n’est pas une affaire de proportion fixe. C’est une affaire de séquence juste.
 
@@ -65,18 +63,9 @@ C’est souvent à cet endroit que la formation devient utile. Non quand les id�
 
 ## Ce qui fait rater l’équilibre
 
-Deux écueils reviennent souvent.
+Deux écueils reviennent souvent. Le premier : trop de théorie, trop tôt — la salle comprend globalement, mais décroche parce qu’elle ne voit pas encore où poser les concepts. Le second : trop de pratique sans grille de lecture — on multiplie les mises en situation, les jeux, les cas, sans donner aux participants de quoi relire ce qu’ils viennent de vivre.
 
-Le premier : trop de théorie, trop tôt.
-La salle comprend globalement, mais décroche parce qu’elle ne voit pas encore où poser les concepts.
-
-Le second : trop de pratique sans grille de lecture.
-On fait des mises en situation, des jeux, des cas, mais sans donner aux participants de quoi relire ce qu’ils viennent de vivre.
-
-Dans les deux cas, quelque chose manque :
-
-- soit le sens ;
-- soit le transfert.
+Dans le premier cas, il manque le transfert ; dans le second, il manque le sens.
 
 ## Ce qu’un bon enchaînement produit
 
@@ -87,13 +76,7 @@ Une formation tient souvent mieux quand elle alterne quatre mouvements simples :
 - faire essayer ;
 - relire ce qui s’est passé.
 
-C’est cette boucle qui transforme peu à peu une information en compétence.
-
-La théorie éclaire.
-La pratique éprouve.
-Le débrief consolide.
-
-Sans ce troisième temps, beaucoup d’exercices restent de simples parenthèses.
+C’est cette boucle qui transforme peu à peu une information en compétence : la théorie éclaire, la pratique éprouve, le débrief consolide. Sans ce troisième temps, beaucoup d’exercices restent de simples parenthèses.
 
 ## Le rôle du formateur
 
@@ -112,17 +95,10 @@ Cette lecture fine vaut plus qu’un plan de formation parfaitement symétrique.
 
 Si tu veux tester l’équilibre de ton dispositif, une question simple suffit souvent :
 
-après cette séquence, la personne saura-t-elle seulement répéter ce que tu as dit, ou saura-t-elle faire quelque chose de plus dans sa propre situation ?
-
-Si elle peut réciter sans agir, il manque de la pratique.
-Si elle agit sans comprendre ce qu’elle fait, il manque de la théorie.
+après cette séquence, la personne saura-t-elle seulement répéter ce que tu as dit, ou faire quelque chose de plus dans sa propre situation ? Si elle peut réciter sans agir, il manque de la pratique ; si elle agit sans comprendre ce qu’elle fait, il manque de la théorie.
 
 ## Ce qu’il faut viser
 
-Le bon équilibre n’est pas une moyenne. C’est une tension productive.
+Le bon équilibre n’est pas une moyenne, c’est une tension productive : assez de théorie pour éviter la superficialité, assez de pratique pour éviter l’abstraction, assez de reprise pour que l’une et l’autre se rencontrent vraiment.
 
-Assez de théorie pour éviter la superficialité.
-Assez de pratique pour éviter l’abstraction.
-Assez de reprise pour que l’une et l’autre se rencontrent vraiment.
-
-Dans tes formations, qu’est-ce qui manque le plus souvent : des concepts qui éclairent… ou des situations qui permettent enfin de les éprouver ?
+Dans tes formations, qu’est-ce qui manque le plus souvent : des concepts qui éclairent, ou des situations qui permettent enfin de les éprouver ?

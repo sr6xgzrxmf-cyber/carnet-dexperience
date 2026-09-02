@@ -19,80 +19,30 @@ series:
   order: 5
 ---
 
-## “Vous devriez peut-être le présenter autrement.”
+## « Vous devriez peut-être le présenter autrement. »
 
-La voix est calme. Bienveillante même. Nous sommes dans une salle de réunion vitrée, en fin d’après-midi. L’échange avance. Les questions sont pertinentes. Le projet intéresse. Et pourtant, quelque chose glisse.
+La voix est calme, bienveillante même. Nous sommes dans une salle de réunion vitrée, en fin d’après-midi. L’échange avance, les questions sont pertinentes, le projet intéresse. Et pourtant, quelque chose glisse.
 
-On me suggère de “recentrer le discours”. D’être “plus universel”. De mettre moins en avant la dimension queer. D’éviter certains termes qui pourraient “complexifier la communication”.
+On me suggère de « recentrer le discours », d’être « plus universel », de mettre moins en avant la dimension queer, d’éviter certains termes qui pourraient « complexifier la communication ». Je sens tout de suite la tentation de plier, de simplifier ; la gorge se contracte, comme si les bons mots étaient déjà prêts à sortir pour faire passer le message. Rien de brutal : tout est formulé stratégiquement, presque rassurant. Et c’est précisément ce qui me trouble.
 
-Je sens immédiatement la tentation de plier. De simplifier. La gorge se contracte. Comme si les bons mots étaient déjà prêts à sortir, pour faire plus fluide, pour faire passer le message.
+Parce que je comprends, presque sans bruit, que si je veux, je peux obtenir plus de « oui ». Je commence à connaître les mots qui calment, les formulations qui passent mieux, les angles qui réduisent les frictions. Je sais déjà comment les structures traduisent les projets pour les rendre compatibles avec leurs équilibres internes. Et je sens le danger : à force d’adapter le projet pour qu’il soit accepté partout, je risque de construire quelque chose qui ne lui ressemble plus.
 
-Rien de brutal. Tout est formulé stratégiquement, presque rassurant.
+Pendant longtemps, je pensais qu’il existait deux catégories, les projets sincères et les projets « marketés ». La réalité est plus trouble. Un projet a besoin d’être traduit pour circuler, sinon il reste enfermé dans son propre langage. Mais à partir de quand la traduction devient-elle une déformation ? Quand j’adoucis certains termes, est-ce que je facilite l’écoute, ou est-ce que je rends le projet plus acceptable au prix de sa colonne vertébrale ?
 
-Et c’est précisément ce qui me trouble.
-
-Parce que je comprends, presque sans bruit, que si je veux, je peux obtenir plus de “oui”.
-
-Je commence à connaître les mots qui calment.
-
-Les formulations qui passent mieux.
-
-Les angles qui réduisent les frictions.
-
-Je sais déjà comment les structures traduisent les projets pour les rendre compatibles avec leurs équilibres internes.
-
-Et je sens le danger apparaître.
-
-À force d’adapter le projet pour qu’il soit accepté partout, je risque de construire quelque chose qui ne lui ressemble plus.
-
-Pendant longtemps, je pensais qu’il existait deux catégories : les projets sincères, et les projets “marketés”. La réalité est plus trouble. Un projet a besoin d’être traduit pour circuler. Sinon, il reste enfermé dans son propre langage. Mais à partir de quand la traduction devient-elle une déformation ?
-
-Quand je parle d’inclusion, est-ce que je simplifie… ou est-ce que j’efface ? Quand j’adoucis certains termes, est-ce que je facilite l’écoute… ou est-ce que je rends le projet plus acceptable au prix de sa colonne vertébrale ?
-
-Je m’arrête. Je laisse un silence s’installer. Pas un silence vide. Un silence pesant.
+Je m’arrête et je laisse un silence s’installer — pas un silence vide, un silence pesant.
 
 > « Et si on laissait le projet tel qu’il est ? Même si ça complexifie un peu la lecture. »
 
-Le silence se déplace. Quelqu’un sourit. Quelqu’un hoche la tête. La posture de la table change. On passe d’une demande de lissage à une proposition d’ancrage.
+Le silence se déplace. Quelqu’un sourit, quelqu’un hoche la tête. La posture de la table change : on passe d’une demande de lissage à une proposition d’ancrage.
 
-Je réalise alors que les partenariats ne se dégradent pas toujours dans le conflit. Parfois, ils se dégradent dans des micro-ajustements successifs. Des “oui” poliment égrenés. Des versions adoucies qui finissent par vider le propos de sa singularité.
+Je réalise alors que les partenariats ne se dégradent pas toujours dans le conflit. Parfois, ils se dégradent dans des micro-ajustements successifs, des « oui » poliment égrenés, des versions adoucies qui finissent par vider le propos de sa singularité. À force de convaincre, on construit un discours optimisé pour les structures et déconnecté de ce qui avait rendu le projet nécessaire au départ.
 
-À force de convaincre, on construit un discours optimisé pour les structures… mais déconnecté de ce qui avait rendu le projet nécessaire au départ.
+Mon enjeu n’a jamais été de devenir « meilleur en vente », mais d’apprendre à construire des compatibilités sans manipuler la relation. Je n’ai jamais refusé d’adapter mon langage, d’être structuré, de rendre un projet lisible. J’ai refusé autre chose :
 
-Mon enjeu n’a jamais été de devenir “meilleur en vente”.
+- survendre des résultats que je ne maîtrise pas ;
+- lisser le propos jusqu’à le rendre inoffensif ;
+- utiliser des promesses émotionnelles pour accélérer une décision.
 
-Il était d’apprendre à construire des compatibilités sans manipuler la relation.
+Parce qu’à long terme, un partenariat construit sur une version déformée finit presque toujours par créer une fatigue relationnelle : quelqu’un sent que quelque chose n’est plus aligné. Les collaborations les plus solides ne sont pas celles où tout devient simple immédiatement, mais celles où les contraintes peuvent être dites clairement, où les désaccords restent possibles, où le projet peut rester reconnaissable sans se travestir pour exister.
 
-Je n’ai jamais refusé :
-- d’adapter mon langage,
-- d’être structuré,
-- de rendre un projet lisible.
-
-J’ai refusé autre chose.
-
-Survendre des résultats que je ne maîtrise pas.
-
-Lisser le propos jusqu’à le rendre inoffensif.
-
-Utiliser des promesses émotionnelles pour accélérer une décision.
-
-Parce qu’à long terme, un partenariat construit sur une version déformée finit presque toujours par créer une fatigue relationnelle. Quelqu’un finit par sentir que quelque chose n’est plus aligné.
-
-Les collaborations les plus solides ne sont pas celles où tout devient simple immédiatement.
-
-Ce sont celles où :
-- les contraintes peuvent être dites clairement,
-- les désaccords restent possibles,
-- le projet peut rester reconnaissable sans devoir se travestir pour exister.
-
-Je crois aujourd’hui qu’un bon partenariat ne commence pas quand tout le monde est convaincu.
-
-Il commence quand chacun peut comprendre ce qu’il soutient réellement — sans que le projet ait besoin de devenir quelqu’un d’autre pour être accepté.
-
-Et cette différence se joue dans le silence qui suit une proposition honnête. Dans la manière de tenir sa forme sans la durcir. Dans le courage de laisser le projet tel qu’il est, même si ça fait moins de “oui” sur le moment.
-
-Le rôle d’un partenariat n’est pas de rendre un projet acceptable à tout prix.
-
-C’est de trouver l’endroit où il peut rester reconnaissable.
-
-Jusqu’où peux-tu adapter un projet sans commencer à le déformer ?
+Un bon partenariat ne commence pas quand tout le monde est convaincu. Il commence quand chacun peut comprendre ce qu’il soutient réellement, sans que le projet ait besoin de devenir quelqu’un d’autre pour être accepté. Son rôle n’est pas de rendre un projet acceptable à tout prix, mais de trouver l’endroit où il peut rester reconnaissable. Jusqu’où peux-tu adapter un projet sans commencer à le déformer ?

@@ -49,11 +49,9 @@ Ces exemples permettent aux autres d’identifier quand et pourquoi faire appel 
 
 ## Poser des limites pour durer
 
-Un rôle-noyau sans limites devient vite un puits sans fond. Faciliter ne signifie pas porter la responsabilité finale, ni absorber les tensions à la place des autres.
+Un rôle-noyau sans limites devient vite un puits sans fond. Faciliter ne signifie pas porter la responsabilité finale ni absorber les tensions à la place des autres.
 
-Karim apprend à poser des frontières claires : il facilite le cadre, pas l’exécution. Il aide à décider, mais ne décide pas pour. Il fluidifie, mais ne compense pas les manques structurels.
-
-Ces limites protègent le rôle autant que la personne.
+Karim apprend à poser des frontières claires : il facilite le cadre, pas l’exécution ; il aide à décider, sans décider pour ; il fluidifie, sans compenser les manques structurels. Ces limites protègent le rôle autant que la personne.
 
 ## Installer des rituels visibles
 
@@ -63,7 +61,6 @@ Ces rituels rendent la posture lisible et légitime. Le rôle cesse d’être in
 
 ## Le leadership qui apaise le collectif
 
-Le facilitateur n’est pas un chef discret. Il joue un autre jeu. Il crée les conditions pour que l’équipe soit bonne, sans se mettre au centre. Son pouvoir n’est pas dans l’autorité, mais dans la clarté qu’il installe.
+Le facilitateur n’est pas un chef discret, il joue un autre jeu : il crée les conditions pour que l’équipe soit bonne, sans se mettre au centre. Son pouvoir n’est pas dans l’autorité, mais dans la clarté qu’il installe.
 
-La vraie question à se poser est donc celle-ci :  
-**quel rôle-noyau pourrais-tu nommer et assumer aujourd’hui pour rendre le collectif plus fluide — même sans titre officiel ?**
+Quel rôle-noyau pourrais-tu nommer et assumer aujourd’hui pour rendre le collectif plus fluide, même sans titre officiel ?

@@ -50,23 +50,13 @@ Prenons un exemple très simple :
 - « Désolé pour l’attente » met au centre l’attente.
 - « Merci d’avoir patienté » met au centre l’effort du client.
 
-Le fait objectif ne change pas. Mais la relation, elle, change.
-
-Dans un cas, le client est ramené à ce qu’il a subi.
-Dans l’autre, il est reconnu pour ce qu’il a déjà accepté.
-
-Cette différence paraît minime. En réalité, elle modifie le climat émotionnel de l’échange.
+Le fait objectif ne change pas. Mais la relation, elle, change : dans un cas, le client est ramené à ce qu’il a subi ; dans l’autre, il est reconnu pour ce qu’il a déjà accepté. Cette différence paraît minime, et pourtant elle modifie le climat émotionnel de l’échange.
 
 ## Attention : il ne s’agit pas d’interdire le mot “désolé”
 
 Il faut être précis ici. L’idée n’est pas de supprimer toute excuse.
 
-Quand il y a une vraie faute, un vrai tort causé, un vrai manquement, l’excuse reste juste. Parfois, elle est même indispensable.
-
-Le problème n’est pas l’excuse sincère.
-Le problème est l’excuse réflexe.
-
-Celle que l’on utilise pour tout :
+Quand il y a une vraie faute, un vrai tort causé, un vrai manquement, l’excuse reste juste — parfois même indispensable. Le problème n’est pas l’excuse sincère, c’est l’excuse réflexe : celle que l’on utilise pour tout :
 
 - même quand aucune faute réelle n’a été commise,
 - même quand une reformulation plus utile existe,

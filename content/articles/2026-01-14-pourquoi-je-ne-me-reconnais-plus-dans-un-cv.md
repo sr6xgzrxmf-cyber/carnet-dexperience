@@ -14,8 +14,7 @@ series:
 
 ## Ce que je refuse, d’abord
 
-Je n’ai plus rien à prouver, seulement quelque chose à offrir.  
-Et pour offrir juste, il faut commencer par refuser clairement.
+Je n’ai plus rien à prouver, seulement quelque chose à offrir. Et pour offrir juste, il faut commencer par refuser clairement.
 
 Je refuse les environnements professionnels où l’on demande de lisser les parcours, de masquer les erreurs, de transformer des trajectoires humaines en narrations artificiellement propres. Je refuse les organisations où l’échec est vécu comme une faute plutôt que comme un signal, un apprentissage, parfois même un point de bascule nécessaire.
 
@@ -25,13 +24,9 @@ Ces refus ne sont pas des postures. Ils sont le résultat de l’expérience. Du
 
 ## Le CV comme surface, l’expérience comme profondeur
 
-Le CV a son utilité. Il rassure, il structure, il permet de situer.  
-Mais il reste une surface.
+Le CV a son utilité : il rassure, il structure, il permet de situer. Mais il reste une surface. Ce qu’il ne dit pas — ou très mal — ce sont les détours, les hésitations, les apprentissages invisibles : les moments où l’on a dû improviser, réparer, tenir malgré l’incertitude, les ajustements fins, les intuitions, les renoncements parfois plus formateurs que les réussites affichables.
 
-Ce qu’il ne dit pas — ou très mal — ce sont les détours, les hésitations, les apprentissages invisibles. Les moments où l’on a dû improviser, réparer, tenir malgré l’incertitude. Les ajustements fins, les intuitions, les renoncements parfois plus formateurs que les réussites affichables.
-
-Ce site n’est pas un CV augmenté.  
-C’est un carnet d’expérience.
+Ce site n’est pas un CV augmenté, c’est un carnet d’expérience.
 
 Un espace où le parcours professionnel est raconté comme il est réellement vécu : fait de couches successives, de contextes mouvants, de décisions prises sans certitude totale. Un espace où la compétence ne se réduit pas à un intitulé de poste, mais se lit dans la manière de traverser les situations.
 
@@ -59,7 +54,6 @@ Ce manifeste n’est pas une conclusion. C’est un point de départ.
 
 À travers cette série d’articles, je partage une manière de penser le travail, la transmission, la création de valeur. Non comme une vérité à adopter, mais comme une expérience à observer, à discuter, à questionner.
 
-Si ce carnet peut servir à quelque chose, c’est peut-être à cela :  
-offrir un espace où le parcours professionnel redevient une matière vivante, discutable, perfectible.
+Si ce carnet peut servir à quelque chose, c’est peut-être à cela : offrir un espace où le parcours professionnel redevient une matière vivante, discutable, perfectible.
 
 Et vous, dans votre propre trajectoire, qu’avez-vous accepté trop longtemps sans jamais le questionner vraiment ?

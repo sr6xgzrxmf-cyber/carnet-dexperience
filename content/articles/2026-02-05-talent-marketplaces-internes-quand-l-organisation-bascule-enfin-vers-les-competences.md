@@ -57,22 +57,18 @@ Surtout, elles acceptent une phase d’apprentissage. Une organisation orientée
 
 ## Champ lexical — pour se comprendre
 
-**Talent marketplaces internes**  
-Plateformes internes de mise en relation entre besoins projets et compétences disponibles dans l’entreprise.
+**Talent marketplaces internes** — Plateformes internes de mise en relation entre besoins projets et compétences disponibles dans l’entreprise.
 
-**Organisation orientée compétences (skills-first)**  
-Logique organisationnelle qui privilégie les compétences mobilisables plutôt que les seuls intitulés de poste ou niveaux hiérarchiques.
+**Organisation orientée compétences (skills-first)** — Logique organisationnelle qui privilégie les compétences mobilisables plutôt que les seuls intitulés de poste ou niveaux hiérarchiques.
 
-**Pilotage par projets**  
-Mode de fonctionnement où le travail est structuré autour de missions et de projets transverses, plutôt que de silos fixes.
+**Pilotage par projets** — Mode de fonctionnement où le travail est structuré autour de missions et de projets transverses, plutôt que de silos fixes.
 
-**Matching compétences / besoins**  
-Processus — parfois assisté par l’IA — visant à rapprocher compétences déclarées, expériences et besoins opérationnels.
+**Matching compétences / besoins** — Processus, parfois assisté par l’IA, visant à rapprocher compétences déclarées, expériences et besoins opérationnels.
 
 ## Une bascule plus culturelle que technologique
 
 Les talent marketplaces internes ne sont ni une mode, ni une solution miracle. Elles agissent comme un révélateur. Elles montrent ce que l’organisation est prête — ou non — à reconnaître : que la valeur ne se situe plus seulement dans les postes, mais dans la capacité collective à mobiliser les bonnes compétences au bon moment.
 
-La vraie question n’est donc pas de savoir si l’entreprise est prête technologiquement. Mais si elle est prête, culturellement et managérialement, à abandonner une partie de ses certitudes.
+L’enjeu n’est pas de savoir si l’entreprise est prête technologiquement, mais si elle est prête, culturellement et managérialement, à abandonner une partie de ses certitudes.
 
-Votre organisation continue-t-elle à piloter des organigrammes… ou commence-t-elle enfin à mobiliser ce qu’elle sait déjà faire, sans toujours oser le nommer ?
+Votre organisation continue-t-elle à piloter des organigrammes, ou commence-t-elle enfin à mobiliser ce qu’elle sait déjà faire, sans toujours oser le nommer ?

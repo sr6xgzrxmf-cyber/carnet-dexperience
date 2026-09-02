@@ -19,17 +19,15 @@ Un site peut être techniquement impeccable et rester éditorialement vide. Une 
 
 ## Écrire pour être utile, pas pour être brillant
 
-Il y a une tentation constante, quand on écrit dans un cadre professionnel, managérial ou stratégique : vouloir paraître intelligent. Soigner la formule. Lisser le propos. Accumuler les concepts. Faire entendre que l’on maîtrise.  
-Cette tentation est compréhensible. Elle est aussi, bien souvent, stérile.
+Il y a une tentation constante, quand on écrit dans un cadre professionnel, managérial ou stratégique : vouloir paraître intelligent — soigner la formule, lisser le propos, accumuler les concepts, faire entendre qu’on maîtrise. Cette tentation est compréhensible ; elle est aussi, bien souvent, stérile.
 
-Sur le terrain, dans les équipes, dans les réseaux, dans les salles de formation ou les réunions de pilotage, une autre attente domine : être aidé. Pas impressionné. Aidé à voir plus clair, à décider, à ajuster une posture, à comprendre ce qui bloque vraiment.
+Sur le terrain, dans les équipes, dans les réseaux, dans les salles de formation ou les réunions de pilotage, une autre attente domine : être aidé, pas impressionné. Aidé à voir plus clair, à décider, à ajuster une posture, à comprendre ce qui bloque vraiment.
 
 Écrire pour être utile commence souvent par un renoncement : celui d’écrire pour être brillant.
 
 ## La naissance d’une voix n’est pas un exercice de style
 
-La voix éditoriale ne naît pas d’un ton « trouvé ». Elle se construit dans la confrontation répétée à la réalité du travail.  
-On ne trouve pas sa voix en cherchant à se distinguer. On la trouve en assumant ce que l’on voit, ce que l’on comprend, et ce que l’on ne comprend pas encore.
+La voix éditoriale ne naît pas d’un ton « trouvé », elle se construit dans la confrontation répétée à la réalité du travail. On ne la trouve pas en cherchant à se distinguer, mais en assumant ce que l’on voit, ce que l’on comprend, et ce que l’on ne comprend pas encore.
 
 Une voix juste ne cherche pas à convaincre par l’autorité. Elle parle depuis une position située : celle de quelqu’un qui a observé, tenté, échoué, ajusté. Elle accepte d’être parfois inconfortable, parce qu’elle ne cherche pas l’adhésion immédiate mais la résonance durable.
 
@@ -37,9 +35,7 @@ C’est souvent là que se produit le basculement : quand l’écriture cesse d�
 
 ## Trouver le ton juste : ni simpliste, ni surplombant
 
-Écrire pour des praticiens impose une tension permanente.  
-Trop simple, et l’on tombe dans la recette creuse.  
-Trop théorique, et l’on perd celles et ceux qui n’ont ni le temps ni l’envie de traduire.
+Écrire pour des praticiens impose une tension permanente : trop simple, on tombe dans la recette creuse ; trop théorique, on perd celles et ceux qui n’ont ni le temps ni l’envie de traduire.
 
 Le ton juste se situe ailleurs : dans une écriture qui respecte l’intelligence du lecteur sans lui demander un effort inutile. Une écriture qui nomme précisément les situations, les frictions, les angles morts — sans les envelopper de concepts décoratifs.
 
@@ -47,9 +43,6 @@ Le terrain n’a pas besoin d’être vulgarisé. Il a besoin d’être reconnu.
 
 ## Parler à ceux qui travaillent vraiment
 
-Écrire pour être utile, c’est finalement choisir son public. Et accepter que ce choix en exclue d’autres.  
-Un texte ancré dans le réel du travail n’est pas toujours séduisant. Il est parfois rugueux, parfois inconfortable. Mais il a une vertu rare : il accompagne.
+Écrire pour être utile, c’est finalement choisir son public, et accepter que ce choix en exclue d’autres. Un texte ancré dans le réel du travail n’est pas toujours séduisant : il est parfois rugueux, parfois inconfortable. Mais il a une vertu rare : il accompagne.
 
-À l’heure où tout le monde peut publier, la question n’est peut-être plus « mon site est-il prêt ? » mais une autre, plus exigeante :
-
-**à qui mon écriture rend-elle réellement service ?**
+À l’heure où tout le monde peut publier, la vraie exigence n’est plus la mise en ligne, c’est de savoir à qui son écriture rend réellement service.

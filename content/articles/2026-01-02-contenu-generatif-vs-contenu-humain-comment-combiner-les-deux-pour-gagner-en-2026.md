@@ -25,10 +25,7 @@ L’IA fait gagner beaucoup de temps sur des tâches qui consommaient auparavant
 - nettoyer ;
 - accélérer le travail de variation.
 
-Utilisée proprement, elle agit comme un accélérateur de préparation.
-
-Elle est très bonne pour faire apparaître de la matière.
-Elle est moins fiable pour décider quelle matière mérite d’être gardée.
+Utilisée proprement, elle agit comme un accélérateur de préparation : très bonne pour faire apparaître de la matière, moins fiable pour décider quelle matière mérite d’être gardée.
 
 ## Ce qu’elle ne sait pas porter à ta place
 
@@ -129,10 +126,6 @@ Si le volume augmente mais que tout se ressemble, tu as surtout industrialisé l
 
 ## La vraie ligne de partage
 
-La question n’est plus : l’IA va-t-elle remplacer l’écriture humaine ?
+La question n’est plus « l’IA va-t-elle remplacer l’écriture humaine ? », mais : sur quelles tâches veux-tu gagner du temps, et sur quelles tâches refuses-tu de céder la main parce qu’elles engagent ton discernement ? Un contenu devient intéressant quand quelqu’un y a mis autre chose que de la vitesse.
 
-La question plus sérieuse est : sur quelles tâches veux-tu gagner du temps, et sur quelles tâches refuses-tu de céder la main parce qu’elles engagent ton discernement ?
-
-Un contenu devient intéressant quand quelqu’un y a mis autre chose que de la vitesse.
-
-Dans ton propre système éditorial, l’IA t’aide-t-elle à penser plus juste… ou t’aide-t-elle surtout à publier plus sans renforcer ce qui te rend réellement reconnaissable ?
+Dans ton propre système éditorial, l’IA t’aide-t-elle à penser plus juste, ou surtout à publier plus sans renforcer ce qui te rend réellement reconnaissable ?

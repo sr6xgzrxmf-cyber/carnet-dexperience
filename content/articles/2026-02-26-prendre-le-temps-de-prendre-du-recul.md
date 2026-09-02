@@ -100,15 +100,10 @@ Mais c’est souvent là que se protège la qualité d’une décision.
 
 Le plus important n’est pas que je sois devenu plus lent. Je ne crois pas que ce soit le bon mot.
 
-Je dirais plutôt que je suis devenu plus sélectif sur ce qui mérite ma vitesse.
+Je dirais plutôt que je suis devenu plus sélectif sur ce qui mérite ma vitesse. Certaines choses gagnent à être prises immédiatement ; d’autres gagnent beaucoup à être laissées hors de la première impulsion. Ce discernement-là m’a paru plus précieux, avec le temps, que la simple capacité à aller vite.
 
-Certaines choses gagnent à être prises immédiatement.
-D’autres gagnent beaucoup à être laissées hors de la première impulsion.
-
-Ce discernement-là m’a paru plus précieux, avec le temps, que la simple capacité à aller vite.
-
-## La vraie question
+## Ta réactivité, ou ton recul
 
 On demande souvent comment gagner du temps. On demande moins souvent à partir de quel moment la vitesse commence à coûter plus qu’elle ne rapporte.
 
-Dans ton propre rythme de travail, qu’est-ce qui mérite encore ta réactivité… et qu’est-ce qui aurait surtout besoin de ton recul ?
+Dans ton propre rythme de travail, qu’est-ce qui mérite encore ta réactivité, et qu’est-ce qui aurait surtout besoin de ton recul ?

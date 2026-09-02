@@ -34,13 +34,7 @@ La question n’est donc pas de savoir si ce carnet a un public. La question est
 
 ## À qui il parle vraiment
 
-Ce carnet parle d’abord à des personnes qui reconnaissent le travail réel quand elles le lisent.
-
-Pas le travail raconté comme performance.
-Pas le travail réduit à des slogans.
-Pas le travail emballé en solution toute prête.
-
-Mais le travail :
+Ce carnet parle d’abord à des personnes qui reconnaissent le travail réel quand elles le lisent — pas le travail raconté comme performance, réduit à des slogans ou emballé en solution toute prête, mais le travail :
 
 - imparfait ;
 - relationnel ;
@@ -123,7 +117,7 @@ Le filtrage n’est donc pas un défaut secondaire. Il fait partie de la fonctio
 
 Le carnet gagne en lisibilité au moment même où il renonce à une partie de son extensibilité.
 
-## La vraie question
+## Élargir sans fin, ou préciser
 
 Tout média finit par devoir choisir entre élargir sans fin son adresse ou la préciser suffisamment pour que quelque chose de plus singulier puisse s’y tenir.
 

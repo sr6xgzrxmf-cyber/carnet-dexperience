@@ -22,7 +22,7 @@ export default function SiteHeader() {
     { href: "/", label: "Accueil", active: false },
     { href: "/parcours", label: "Parcours", active: isParcours },
     { href: "/articles", label: "Articles", active: isArticles },
-    { href: "/atelier", label: "Comment je peux aider", active: isAccompagnement },
+    { href: "/atelier", label: "Accompagnement", active: isAccompagnement },
     { href: "/contact", label: "Contact", active: isContact },
   ];
 
@@ -64,11 +64,11 @@ export default function SiteHeader() {
 
               {isAccompagnement ? (
                 <span className={activeClass} aria-current="page">
-                  Comment je peux aider
+                  Accompagnement
                 </span>
               ) : (
                 <Link href="/atelier" className={linkClass}>
-                  Comment je peux aider
+                  Accompagnement
                 </Link>
               )}
 

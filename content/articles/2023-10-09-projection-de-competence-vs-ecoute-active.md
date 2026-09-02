@@ -21,15 +21,15 @@ La qualité d’une vente ne repose pas uniquement sur la maîtrise du produit, 
 
 La projection de compétence apparaît lorsque le vendeur suppose que le client partage son niveau de connaissance, son vocabulaire et sa logique. Cette posture est généralement inconsciente : plus un vendeur est expert, plus il risque de croire que son client l’est aussi.
 
-Dans la vente de smartphones, cela se traduit par un flot de termes comme « 5G », « RAM » ou « processeur » sans jamais vérifier si le client comprend réellement.  
-Dans l’automobile, un vendeur peut expliquer les avantages d’une transmission intégrale sans s’assurer que le client sait ce que cela signifie pour son usage quotidien.
+Dans la vente de smartphones, cela se traduit par un flot de termes comme « 5G », « RAM » ou « processeur » sans jamais vérifier si le client comprend réellement. Dans l’automobile, un vendeur vante les avantages d’une transmission intégrale sans s’assurer que le client voit ce que cela change pour son usage quotidien.
 
 ### Les risques
 
-Cette posture produit plusieurs effets négatifs :  
-- des recommandations mal alignées
-- un sentiment de confusion chez le client
-- une perte de personnalisation
+Cette posture produit plusieurs effets négatifs :
+
+- des recommandations mal alignées ;
+- un sentiment de confusion chez le client ;
+- une perte de personnalisation ;
 - et, souvent, une perte de confiance.
 
 Un vendeur qui projette ses compétences parle beaucoup, questionne peu et utilise un langage qui éloigne au lieu de rapprocher.
@@ -42,24 +42,22 @@ Un vendeur de vêtements qui demande pour quelle occasion la tenue est recherch�
 
 ### Pourquoi elle est décisive
 
-L’écoute active permet :  
-- une personnalisation fine
-- la création d’un climat de confiance
-- une augmentation naturelle du taux de transformation
+L’écoute active permet :
+
+- une personnalisation fine ;
+- la création d’un climat de confiance ;
+- une augmentation naturelle du taux de transformation ;
 - une fidélisation plus forte.
 
 Elle repose sur des questions ouvertes, la reformulation, la validation et un langage clair.
 
 ## Deux logiques opposées
 
-La projection de compétence est centrée sur le vendeur.  
-L’écoute active est centrée sur le client.
-
-La première pousse à expliquer, démontrer, convaincre.  
-La seconde invite à comprendre, ajuster, accompagner.
-
-Dans la projection, la relation est transactionnelle.  
-Dans l’écoute, elle devient relationnelle.
+|  | Projection de compétence | Écoute active |
+| --- | --- | --- |
+| Centrée sur | le vendeur | le client |
+| Mouvement | expliquer, démontrer, convaincre | comprendre, ajuster, accompagner |
+| Relation | transactionnelle | relationnelle |
 
 ## Comment réduire la projection de compétence
 
@@ -83,14 +81,12 @@ Plus un vendeur écoute, plus il vend juste.
 
 ## Trouver l’équilibre
 
-L’objectif n’est pas de renoncer à l’expertise, mais de la mettre au service du client.  
-La compétence doit éclairer, pas écraser.
+L’objectif n’est pas de renoncer à l’expertise, mais de la mettre au service du client. La compétence doit éclairer, pas écraser.
 
 L’écoute active permet de savoir **quand** et **comment** mobiliser son expertise pour qu’elle réponde réellement au besoin exprimé.
 
 ## En conclusion
 
-Vendre, ce n’est pas prouver qu’on sait.  
-C’est montrer qu’on a compris.
+Vendre, ce n’est pas prouver qu’on sait. C’est montrer qu’on a compris.
 
 Lorsque l’écoute remplace la projection, la vente cesse d’être une performance pour devenir une relation. Et c’est là que naissent la confiance, la fidélité et la réussite durable.

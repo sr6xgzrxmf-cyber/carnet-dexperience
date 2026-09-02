@@ -25,8 +25,7 @@ Le nom est devenu célèbre, parfois trop. On s’en sert facilement pour moquer
 
 En 1999, les psychologues David Dunning et Justin Kruger décrivent un mécanisme simple et redoutable : dans certains domaines, les personnes les moins compétentes ne sont pas seulement moins performantes. Elles ont aussi moins d’outils pour évaluer correctement leur propre niveau.
 
-Autrement dit, elles ne se trompent pas seulement sur le sujet.
-Elles se trompent aussi sur leur capacité à se situer.
+Autrement dit, elles ne se trompent pas seulement sur le sujet : elles se trompent aussi sur leur capacité à se situer.
 
 Ce décalage n’a rien de mystérieux. Pour reconnaître la qualité d’un raisonnement, d’un geste technique, d’une décision ou d’une analyse, il faut déjà posséder un minimum des critères qui permettent d’en juger.
 
@@ -60,7 +59,7 @@ D’abord, un premier pic de confiance :
 
 Puis vient le moment inverse. La personne commence à pratiquer, à se confronter aux erreurs, aux questions qu’elle n’avait pas prévues, aux nuances qu’elle n’avait pas vues. La confiance baisse. Parfois brutalement.
 
-Enfin, avec le travail, l’expérience et des retours fiables, une confiance plus juste peut revenir. Moins spectaculaire. Mais beaucoup plus solide.
+Enfin, avec le travail, l’expérience et des retours fiables, une confiance plus juste peut revenir — moins spectaculaire, mais beaucoup plus solide.
 
 Cette trajectoire n’est pas une humiliation. C’est souvent une bonne nouvelle. Elle signifie que l’on commence enfin à voir le sujet tel qu’il est.
 

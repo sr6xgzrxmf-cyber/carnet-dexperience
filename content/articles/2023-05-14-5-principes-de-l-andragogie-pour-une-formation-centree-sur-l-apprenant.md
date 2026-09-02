@@ -49,8 +49,7 @@ Former des adultes ne consiste donc pas seulement à apporter un contenu. Cela c
 
 Ignorer cette expérience produit un effet très simple : la personne se sent soit infantilisée, soit jugée, soit inutilement contredite. À l’inverse, partir de ce qu’elle fait déjà permet de déplacer la formation du terrain de la leçon vers celui de l’ajustement.
 
-On n’est plus en train de dire : “voilà la bonne manière”.
-On est en train de dire : “voilà comment ton expérience peut devenir plus précise, plus sûre ou plus efficace”.
+On ne dit plus « voilà la bonne manière », mais « voilà comment ton expérience peut devenir plus précise, plus sûre ou plus efficace ».
 
 ## 3. Un adulte apprend mieux à partir d’un problème qu’à partir d’un programme
 
@@ -113,14 +112,6 @@ Une formation d’adultes réussie ne produit pas seulement de la compréhension
 
 ## Ce que Malcolm Knowles avait vu avant beaucoup d’autres
 
-La force de Knowles n’est pas seulement d’avoir théorisé une différence entre pédagogie et andragogie. C’est d’avoir pris les adultes au sérieux.
+La force de Knowles n’est pas seulement d’avoir théorisé une différence entre pédagogie et andragogie : c’est d’avoir pris les adultes au sérieux. Non comme des « grands enfants », des récepteurs à convaincre ou des apprenants abstraits, mais comme des personnes qui viennent avec du vécu, des contraintes, de l’orgueil parfois, de la fatigue souvent, et une exigence très saine : ne pas perdre leur temps.
 
-Pas comme des “grands enfants”.
-Pas comme des récepteurs à convaincre.
-Pas comme des apprenants abstraits.
-
-Mais comme des personnes qui viennent avec du vécu, des contraintes, de l’orgueil parfois, de la fatigue souvent, et une exigence très saine : ne pas perdre leur temps.
-
-Au fond, former des adultes revient peut-être à cela : ne jamais oublier qu’ils apprennent avec leur intelligence, leur métier, leur histoire… et leur dignité.
-
-Dans tes formations, qu’est-ce qui tient encore du programme… et qu’est-ce qui part vraiment de la réalité de ceux qui sont dans la salle ?
+Au fond, former des adultes revient peut-être à cela : ne jamais oublier qu’ils apprennent avec leur intelligence, leur métier, leur histoire… et leur dignité. Reste à vérifier, dans une formation donnée, ce qui part encore d’un programme et ce qui part vraiment de la réalité de ceux qui sont dans la salle.

@@ -31,29 +31,26 @@ C’est précisément ce passage que beaucoup évitent, par prudence ou par peur
 
 ## La chaîne simple en cinq étapes
 
-Karim apprend à structurer systématiquement ses messages selon une chaîne claire, lisible, réutilisable.
+Karim apprend à structurer systématiquement ses messages selon une chaîne claire, lisible, réutilisable :
 
-D’abord, le chiffre. Factuel, incontestable.  
-Ensuite, la lecture : ce chiffre augmente ou baisse pour une raison précise, observable sur le terrain.  
-Puis la déduction : si cette tendance se poursuit, voilà ce que cela implique.  
-Vient ensuite la proposition d’action : une mesure concrète, réaliste, limitée dans le temps.  
-Enfin, le suivi : quand et comment on vérifie l’effet de cette action.
+1. **Le chiffre** — factuel, incontestable.
+2. **La lecture** — ce chiffre augmente ou baisse pour une raison précise, observable sur le terrain.
+3. **La déduction** — si cette tendance se poursuit, voilà ce que cela implique.
+4. **La proposition d’action** — une mesure concrète, réaliste, limitée dans le temps.
+5. **Le suivi** — quand et comment on vérifie l’effet de cette action.
 
-Formulé simplement, cela donne :  
-« Ce chiffre raconte X. J’en déduis Y. Donc je propose Z d’ici deux semaines, puis on mesure à nouveau. »
+Formulé simplement : « Ce chiffre raconte X. J’en déduis Y. Donc je propose Z d’ici deux semaines, puis on mesure à nouveau. »
 
 ## Assumer une lecture, même imparfaite
 
 Un indicateur peut toujours être interprété de plusieurs manières. Et c’est normal. Ce qui est attendu d’un professionnel en posture de pilotage, ce n’est pas la vérité absolue, mais une hypothèse argumentée.
 
-Proposer trois lectures possibles, puis en privilégier une, montre de la maturité. Cela ouvre la discussion sans s’effacer. Le manager peut compléter, ajuster, challenger — mais la dynamique est lancée.
-
-À ce moment-là, Karim n’apporte plus des chiffres. Il apporte une grille de décision.
+Proposer trois lectures possibles, puis en privilégier une, montre de la maturité. Cela ouvre la discussion sans s’effacer : le manager peut compléter, ajuster, challenger, mais la dynamique est lancée. À ce moment-là, Karim n’apporte plus des chiffres, il apporte une grille de décision.
 
 ## Le chiffre devient un outil de dialogue
 
-Lorsqu’un indicateur est relié à une lecture et à une action, il change de statut. Il ne sert plus à justifier le passé, mais à orienter l’avenir. Les échanges deviennent plus courts, plus concrets, plus utiles.
+Lorsqu’un indicateur est relié à une lecture et à une action, il change de statut : il ne sert plus à justifier le passé, mais à orienter l’avenir. Les échanges deviennent plus courts, plus concrets, plus utiles.
 
-C’est souvent à ce moment précis que l’on commence à être identifié comme quelqu’un qui « prend du recul », non pas parce qu’il s’éloigne du terrain, mais parce qu’il en extrait du sens.
+C’est souvent à ce moment qu’on est identifié comme quelqu’un qui « prend du recul » — non parce qu’il s’éloigne du terrain, mais parce qu’il en extrait du sens.
 
-La vraie question n’est donc pas de savoir si tes indicateurs sont bons, mais si tu te contentes de les montrer — ou si tu t’autorises à raconter ce qu’ils disent et à proposer ce que tu ferais, maintenant.
+Avoir de bons indicateurs ne suffit pas. Ce qui change tout, c’est de s’autoriser à raconter ce qu’ils disent et à proposer ce qu’on ferait, maintenant.

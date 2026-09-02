@@ -114,4 +114,4 @@ Le microlearning plaît parce qu’il épouse les rythmes actuels du travail. Ma
 
 En ce sens, ce n’est pas seulement une question de format. C’est une question d’exigence éditoriale et pédagogique.
 
-Quand tu regardes un dispositif de microlearning, vois-tu une vraie aide au bon moment… ou seulement un contenu raccourci pour mieux s’adapter à la baisse d’attention générale ?
+Quand tu regardes un dispositif de microlearning, y vois-tu une vraie aide au bon moment, ou seulement un contenu raccourci pour s’adapter à la baisse d’attention générale ?

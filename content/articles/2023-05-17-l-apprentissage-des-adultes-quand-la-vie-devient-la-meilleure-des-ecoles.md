@@ -72,4 +72,4 @@ Une bonne formation ne se contente pas d’être claire. Elle redonne des prises
 
 C’est souvent là que la vie devient vraiment la meilleure des écoles : non pas parce qu’elle suffirait à tout enseigner seule, mais parce qu’elle donne à chaque apprentissage une matière sur laquelle s’ancrer.
 
-Dans tes formations, est-ce que l’expérience des participants reste un préambule poli, ou est-ce qu’elle devient vraiment la matière du travail ?
+L’expérience des participants reste-t-elle, dans tes formations, un préambule poli, ou devient-elle vraiment la matière du travail ?

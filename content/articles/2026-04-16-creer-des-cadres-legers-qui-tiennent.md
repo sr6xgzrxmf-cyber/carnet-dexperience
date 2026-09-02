@@ -72,8 +72,7 @@ Dans la pratique, les cadres les plus utiles ont souvent trois qualités :
 - ils sont reliés à des situations réelles ;
 - ils sont repris dans les moments où ils comptent.
 
-Un cadre ne tient pas parce qu’il est bien écrit.
-Il tient parce qu’il redevient disponible au bon moment.
+Un cadre ne tient pas parce qu’il est bien écrit, mais parce qu’il redevient disponible au bon moment.
 
 ## Le rôle du facilitateur ou du manager
 
@@ -97,18 +96,12 @@ Entre un “merci de communiquer mieux entre vous” et trois règles comme :
 - on signale un blocage avant qu’il devienne un retard ;
 - on arbitre en réunion, pas en couloir ;
 
-la différence est immense.
-
-Le premier cadre dit une intention.
-Le second donne des prises.
+la différence est immense : le premier cadre dit une intention, le second donne des prises.
 
 ## Le vrai risque
 
-Quand un cadre est trop lourd, on le contourne.
-Quand il est trop léger au mauvais sens du terme, chacun y projette ce qu’il veut.
+Quand un cadre est trop lourd, on le contourne ; quand il est trop léger au mauvais sens du terme, chacun y projette ce qu’il veut. Le bon niveau de légèreté est donc exigeant : enlever ce qui encombre sans retirer ce qui structure.
 
-Le bon niveau de légèreté est donc exigeant. Il faut enlever ce qui encombre sans retirer ce qui structure.
+## Utiles, ou seulement écrits
 
-## La vraie question
-
-Dans tes propres environnements, quels cadres sont encore respectés parce qu’ils sont réellement utiles… et lesquels continuent surtout d’exister parce qu’ils ont été écrits une fois quelque part ?
+Dans tes propres environnements, quels cadres sont encore respectés parce qu’ils sont réellement utiles, et lesquels continuent surtout d’exister parce qu’ils ont été écrits une fois quelque part ?

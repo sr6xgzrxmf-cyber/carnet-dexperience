@@ -87,8 +87,6 @@ Parce que la répétition de cette formule révèle parfois moins une faiblesse 
 - une sécurité psychologique insuffisante,
 - ou un apprentissage qui arrive sans ancrage dans le travail réel.
 
-Former des adultes, ce n’est pas seulement transmettre un contenu. C’est construire des conditions dans lesquelles quelqu’un peut redevenir débutant sans se sentir diminué.
+Former des adultes, ce n’est pas seulement transmettre un contenu, c’est construire des conditions dans lesquelles quelqu’un peut redevenir débutant sans se sentir diminué. C’est là que tout se joue.
 
-Et c’est là que tout se joue.
-
-La prochaine fois qu’un participant dira « je suis nul », qu’est-ce que tu entendras vraiment : un manque de compétence, ou une tentative de se protéger ?
+La prochaine fois qu’un participant dira « je suis nul », l’enjeu est d’entendre ce qui se cache derrière : un vrai manque de compétence, ou une tentative de se protéger.

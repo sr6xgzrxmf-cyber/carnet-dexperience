@@ -91,4 +91,4 @@ Une formation efficace ne s’ajuste pas seulement au niveau des compétences. E
 
 Et c’est peut-être là le travail le plus fin du formateur : ne pas seulement transmettre un contenu, mais lire l’écosystème qui décidera si ce contenu pourra réellement prendre.
 
-Quand tu construis une formation, est-ce que tu regardes seulement le thème à traiter… ou aussi la culture managériale dans laquelle ce thème devra vivre ?
+Quand tu construis une formation, regardes-tu seulement le thème à traiter, ou aussi la culture managériale dans laquelle ce thème devra vivre ?

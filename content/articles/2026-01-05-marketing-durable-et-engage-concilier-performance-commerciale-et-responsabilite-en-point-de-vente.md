@@ -70,11 +70,7 @@ Cette précision change tout. Elle évite le greenwashing involontaire, mais ell
 
 ## Performance et responsabilité ne s’opposent pas ici
 
-On continue parfois à parler de durabilité comme d’une couche morale ajoutée à la vente.
-
-Sur le terrain, c’est souvent plus simple.
-
-Quand un client comprend mieux :
+On continue parfois à parler de durabilité comme d’une couche morale ajoutée à la vente. Sur le terrain, c’est souvent plus simple. Quand un client comprend mieux :
 
 - ce qu’il achète ;
 - pourquoi cela durera ;
@@ -108,8 +104,8 @@ Il faut les aider à :
 
 Le marketing durable cesse alors d’être un discours imposé. Il devient une compétence de relation.
 
-## La vraie question
+## Enrichir le discours, ou aider à décider
 
 En point de vente, la durabilité n’a de valeur que si elle résiste à la conversation la plus simple : celle d’un client qui veut savoir ce qu’il achète vraiment.
 
-Dans ton univers commercial, la responsabilité sert-elle surtout à enrichir le discours… ou aide-t-elle réellement les équipes à faire prendre de meilleures décisions aux clients ?
+Dans ton univers commercial, la responsabilité sert-elle surtout à enrichir le discours, ou aide-t-elle réellement les équipes à faire prendre de meilleures décisions aux clients ?

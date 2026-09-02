@@ -77,8 +77,7 @@ Il a besoin de sentir :
 - comment cela s’inscrit dans sa vie,
 - ce que cela peut lui permettre de redevenir, de réparer ou de construire.
 
-Sans cela, l’effort reste extérieur.
-Avec cela, il commence à faire sens.
+Sans cela, l’effort reste extérieur ; avec cela, il commence à faire sens.
 
 Ce sens peut prendre des formes très différentes :
 
@@ -100,10 +99,7 @@ Il devient essentiel de :
 - réduire le coût symbolique de l’erreur,
 - et aider la personne à se situer autrement que par le manque.
 
-Un bon dispositif ne cherche pas seulement à faire comprendre. Il cherche aussi à déplacer légèrement la perception de soi :
-
-non pas vers une confiance artificielle,
-mais vers une forme de légitimité retrouvée.
+Un bon dispositif ne cherche pas seulement à faire comprendre. Il cherche aussi à déplacer légèrement la perception de soi — non vers une confiance artificielle, mais vers une forme de légitimité retrouvée.
 
 ## L’expérience passée peut être un frein… ou une ressource
 
@@ -125,15 +121,7 @@ Quelqu’un qui se sentait incompétent peut soudain se redresser quand il compr
 
 ## Sans preuve de progression, l’auto-concept se referme
 
-Un adulte a besoin de sentir que quelque chose bouge.
-
-Pas forcément de manière spectaculaire. Mais de manière visible.
-
-Une correction mieux intégrée.
-Une tâche réalisée seul.
-Une prise de parole moins défensive.
-Un langage plus précis.
-Une erreur mieux comprise.
+Un adulte a besoin de sentir que quelque chose bouge — pas forcément de manière spectaculaire, mais de manière visible : une correction mieux intégrée, une tâche réalisée seul, une prise de parole moins défensive, un langage plus précis, une erreur mieux comprise.
 
 Ces micro-preuves sont cruciales. Elles permettent de réécrire progressivement le récit intérieur :
 

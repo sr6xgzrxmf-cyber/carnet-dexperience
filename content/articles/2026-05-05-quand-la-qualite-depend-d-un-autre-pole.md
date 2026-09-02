@@ -24,11 +24,7 @@ C’est une situation fréquente — et dangereuse — si elle n’est pas trait
 
 ## Le piège de la personnalisation
 
-Quand la qualité dépend d’un autre pôle, deux réflexes apparaissent.  
-Soit on se justifie sans cesse.  
-Soit on accuse l’autre, explicitement ou non.
-
-Dans les deux cas, la relation se dégrade. Et surtout, le problème reste entier : le système continue de produire les mêmes frictions.
+Quand la qualité dépend d’un autre pôle, deux réflexes apparaissent : soit on se justifie sans cesse, soit on accuse l’autre, explicitement ou non. Dans les deux cas, la relation se dégrade, et le problème reste entier : le système continue de produire les mêmes frictions.
 
 ## Sécuriser ne veut pas dire se protéger seul
 
@@ -38,16 +34,12 @@ Il change donc de posture : au lieu de défendre son périmètre, il cherche à 
 
 ## Rendre visible la dépendance
 
-Premier geste : rendre la dépendance explicite.  
-Pas sous forme de plainte, mais de constat.
-
-« Sur ces dossiers, la qualité finale dépend de trois éléments qui viennent de votre côté. Quand ils manquent, on perd du temps tous les deux. »
-
-Nommer l’interface change la discussion. On ne parle plus de personnes, mais de flux.
+Premier geste : rendre la dépendance explicite — non sous forme de plainte, mais de constat. « Sur ces dossiers, la qualité finale dépend de trois éléments qui viennent de votre côté. Quand ils manquent, on perd du temps tous les deux. » Nommer l’interface change la discussion : on ne parle plus de personnes, mais de flux.
 
 ## Déplacer la responsabilité vers le process
 
-Karim ne demande pas à l’autre pôle de “faire mieux”. Il propose un cadre commun :  
+Karim ne demande pas à l’autre pôle de « faire mieux », il propose un cadre commun :
+
 - ce qui est attendu en entrée,
 - à quel moment,
 - avec quel niveau de complétude.
@@ -62,9 +54,6 @@ Cette approche évite le rapport hiérarchique ou émotionnel. Elle transforme u
 
 ## Passer de la plainte à la maîtrise
 
-Sécuriser sans subir, ce n’est pas tout contrôler. C’est accepter la dépendance tout en la rendant lisible, discutable et améliorable.
+Sécuriser sans subir, ce n’est pas tout contrôler : c’est accepter la dépendance tout en la rendant lisible, discutable et améliorable. La qualité cesse alors d’être un sujet défensif, elle devient un objet de coopération.
 
-La qualité cesse alors d’être un sujet défensif. Elle devient un objet de coopération.
-
-La vraie question à se poser est donc celle-ci :  
-**quelle dépendance implicite fragilise aujourd’hui ton travail — et comment pourrais-tu la rendre visible sans accuser ?**
+Quelle dépendance implicite fragilise aujourd’hui ton travail — et comment pourrais-tu la rendre visible sans accuser ?

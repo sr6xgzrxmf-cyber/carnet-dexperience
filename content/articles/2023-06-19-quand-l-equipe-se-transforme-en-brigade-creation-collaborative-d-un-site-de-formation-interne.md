@@ -46,7 +46,7 @@ Autrement dit, le projet cesse d’être “le site de formation imaginé par qu
 
 Il faut quand même éviter une autre illusion : demander aux experts suffit rarement à produire du bon contenu.
 
-Quelqu’un peut être excellent dans son métier et très peu outillé pour l’expliquer. Ou bien expliquer trop vite. Ou bien oublier tout ce qui lui semble évident. Ou bien produire un contenu trop dense, trop technique, trop peu progressif.
+Quelqu’un peut être excellent dans son métier et très peu outillé pour l’expliquer : il va trop vite, il oublie tout ce qui lui semble évident, il produit un contenu trop dense, trop technique, trop peu progressif.
 
 C’est pour ça qu’un projet collaboratif a besoin d’un vrai travail d’édition :
 
@@ -75,7 +75,7 @@ Ce n’est pas un rôle d’auteur unique. C’est un rôle de composition.
 
 L’autre piège des projets collaboratifs, c’est l’accumulation brute. Quand chacun envoie ses idées, ses documents, ses méthodes, ses notes, on produit vite une masse impressionnante mais difficile à utiliser.
 
-La question n’est donc pas seulement “comment faire participer tout le monde ?”. La vraie question est : comment faire en sorte que cette participation produise quelque chose de plus lisible, et non de plus confus ?
+La question n’est pas seulement « comment faire participer tout le monde ? », mais « comment faire en sorte que cette participation produise quelque chose de plus lisible, et non de plus confus ? ».
 
 Cela suppose quelques choix simples :
 
@@ -99,4 +99,4 @@ Une bonne université interne n’a pas besoin que tout le monde écrive tout. E
 
 Quand cela fonctionne, le résultat est plus qu’un site. C’est une mémoire de travail rendue partageable.
 
-Dans tes projets de transmission, est-ce que tu demandes surtout aux équipes de valider un dispositif déjà pensé, ou est-ce que tu leur donnes vraiment une place dans ce qui mérite d’être transmis ?
+Dans tes projets de transmission, demandes-tu surtout aux équipes de valider un dispositif déjà pensé, ou leur donnes-tu vraiment une place dans ce qui mérite d’être transmis ?

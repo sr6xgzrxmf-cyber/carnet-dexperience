@@ -45,7 +45,7 @@ C’est là que la posture bascule.
 
 Le vendeur n’est plus tout à fait dans le conseil. Il devient la personne qui finalise une transaction déjà close.
 
-Ce glissement est discret, mais important : il réduit la qualité de présence, la valeur perçue et la différence entre un simple encaissement et une vraie relation de service.
+Ce glissement est discret, mais important : il réduit la qualité de présence, la valeur perçue, et la différence entre un simple encaissement et une vraie relation de service.
 
 ## Ce que la formule empêche
 
@@ -56,10 +56,7 @@ Cette phrase coupe souvent court à plusieurs choses utiles :
 - la recommandation sincère d’un complément pertinent,
 - et parfois même la prévention d’une future frustration.
 
-Prenons un exemple simple. Un client achète un appareil, mais rien dans la conversation ne l’aide à anticiper la protection, l’entretien, la compatibilité ou la prise en main. Il dit donc “non” à la mauvaise question… puis revient quelques jours plus tard avec un besoin qui aurait pu être identifié plus tôt.
-
-Le problème n’était pas le manque d’intérêt.
-Le problème était le manque d’ouverture.
+Prenons un exemple simple. Un client achète un appareil, mais rien dans la conversation ne l’aide à anticiper la protection, l’entretien, la compatibilité ou la prise en main. Il dit donc « non » à la mauvaise question… puis revient quelques jours plus tard avec un besoin qui aurait pu être identifié plus tôt. Le problème n’était pas le manque d’intérêt, c’était le manque d’ouverture.
 
 ## Ouvrir au lieu de clôturer
 
@@ -72,9 +69,7 @@ Par exemple :
 - « Si votre usage ressemble à ce que vous m’avez décrit, je peux vous montrer une option qui change vraiment l’expérience. »
 - « Avant de finaliser, je veux juste vérifier un point pour m’assurer que vous repartez avec quelque chose de vraiment cohérent. »
 
-Dans ces formulations, le vendeur ne pousse pas. Il guide.
-
-Il reste dans une logique de lecture et d’utilité, pas dans une logique de pression.
+Dans ces formulations, le vendeur ne pousse pas, il guide : il reste dans une logique de lecture et d’utilité, pas de pression.
 
 ## Le vrai sujet : la vente comme conversation
 

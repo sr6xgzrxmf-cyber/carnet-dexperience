@@ -5,7 +5,6 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import DevKeyWarningTrace from "@/components/dev/DevKeyWarningTrace";
 import SiteFooter from "@/components/SiteFooter";
 
 const siteUrl = "https://www.carnetdexperience.fr";
@@ -115,10 +114,12 @@ export default function RootLayout({
 
         <SiteFooter />
 
-        <Analytics />
-        <SpeedInsights />
-
-        {process.env.NODE_ENV !== "production" ? <DevKeyWarningTrace /> : null}
+        {process.env.NODE_ENV === "production" ? (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        ) : null}
       </body>
     </html>
   );

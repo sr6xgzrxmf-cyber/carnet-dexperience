@@ -11,11 +11,9 @@ tags:
   - "organisation"
 ---
 
-Il y a une promesse implicite, presque jamais formulée, mais profondément ancrée dans les organisations : *le meilleur fera grandir les autres*.  
-Alors on promeut. On confie une équipe. On officialise un nouveau rôle. Et on espère que tout suivra.
+Il y a une promesse implicite, presque jamais formulée, mais profondément ancrée dans les organisations : *le meilleur fera grandir les autres*. Alors on promeut, on confie une équipe, on officialise un nouveau rôle, et on espère que tout suivra.
 
-Pourtant, sur le terrain, les trajectoires managériales les plus fragiles commencent souvent de cette manière.  
-Cet article propose un éclairage clair et pragmatique sur une question que beaucoup se posent sans toujours oser la formuler. Et il se conclura par une piste concrète : **ce que l’entreprise peut réellement mettre en place pour accompagner un futur manager**, au-delà des intentions.
+Pourtant, sur le terrain, les trajectoires managériales les plus fragiles commencent souvent de cette manière. Cet article éclaire une question que beaucoup se posent sans toujours oser la formuler, et se conclut par une piste concrète : **ce que l’entreprise peut réellement mettre en place pour accompagner un futur manager**, au-delà des intentions.
 
 ## L’illusion confortable de la promotion naturelle
 
@@ -65,9 +63,6 @@ Elles acceptent aussi une vérité parfois inconfortable : la promotion interne 
 
 ## La vraie question derrière la promotion
 
-La question n’est donc pas : *est-ce un excellent technicien ?*  
-Mais plutôt : *a-t-il envie de changer de métier ? Est-il prêt à apprendre, à désapprendre, à déplacer sa valeur de la performance individuelle vers la responsabilité collective ?*
+La question n’est donc pas « est-ce un excellent technicien ? », mais « a-t-il envie de changer de métier ? Est-il prêt à apprendre, à désapprendre, à déplacer sa valeur de la performance individuelle vers la responsabilité collective ? ».
 
-Manager est un métier à part entière. Il mérite d’être choisi, préparé et accompagné.
-
-Et si, avant de promouvoir, les organisations se demandaient moins *qui est le meilleur*… et davantage *qui est prêt à devenir autre chose* ?
+Manager est un métier à part entière : il mérite d’être choisi, préparé et accompagné. Avant de promouvoir, la bonne question porte moins sur *qui est le meilleur* que sur *qui est prêt à devenir autre chose*.

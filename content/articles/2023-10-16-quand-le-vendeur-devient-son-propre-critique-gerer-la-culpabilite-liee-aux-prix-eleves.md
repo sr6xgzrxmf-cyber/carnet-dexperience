@@ -102,8 +102,6 @@ Bien vendre un produit cher ne consiste pas à réciter une défense automatique
 - ce qu’il apporte réellement,
 - et aussi, parfois, pour qui il n’est pas le bon choix.
 
-C’est ce discernement-là qui transforme la gêne en crédibilité.
+C’est ce discernement-là qui transforme la gêne en crédibilité. Le vendeur ne devient pas fier parce qu’il « réussit à faire passer » un prix élevé, mais plus juste parce qu’il sait relier ce prix à une valeur réelle, située, compréhensible.
 
-Le vendeur ne devient pas fier parce qu’il “réussit à faire passer” un prix élevé. Il devient plus juste parce qu’il sait relier ce prix à une valeur réelle, située, compréhensible.
-
-Quand un prix te met mal à l’aise, qu’est-ce qu’il révèle vraiment : un manque de confiance… ou un manque de clarté sur la valeur que tu proposes ?
+Quand un prix te met mal à l’aise, qu’est-ce qu’il révèle vraiment : un manque de confiance, ou un manque de clarté sur la valeur que tu proposes ?

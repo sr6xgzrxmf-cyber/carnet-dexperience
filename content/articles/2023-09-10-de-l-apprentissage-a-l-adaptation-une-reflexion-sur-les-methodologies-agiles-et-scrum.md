@@ -98,8 +98,7 @@ On oppose parfois deux camps :
 
 Cette opposition m’intéresse peu si elle reste théorique.
 
-Une méthode totalement déformée finit par perdre son intérêt.
-Une méthode appliquée sans intelligence du contexte finit par rigidifier ce qu’elle devait aider.
+Une méthode totalement déformée finit par perdre son intérêt ; une méthode appliquée sans intelligence du contexte finit par rigidifier ce qu’elle devait aider.
 
 La bonne question n’est pas de savoir s’il faut être pur ou pragmatique. La bonne question est de savoir ce qu’on adapte sans perdre le cœur de la méthode.
 
@@ -117,11 +116,6 @@ Sans cela, l’adaptation devient du flottement.
 
 ## Le vrai intérêt
 
-Ce qui me semble le plus fort dans l’agilité, ce n’est pas la promesse de rapidité. C’est la promesse d’une correction plus lucide.
+Ce qui me semble le plus fort dans l’agilité, ce n’est pas la promesse de rapidité. C’est la promesse d’une correction plus lucide. On avance, on regarde ce que cela produit, on ajuste. Et l’on améliore non seulement ce que l’on fait, mais aussi la manière dont on le fait.
 
-On avance.
-On regarde ce que cela produit.
-On ajuste.
-Et l’on améliore non seulement ce que l’on fait, mais aussi la manière dont on le fait.
-
-Dans ton travail, quand tu parles d’agilité, cherches-tu à adopter une méthode… ou cherches-tu vraiment à apprendre plus vite de ce que le réel te renvoie ?
+Quand une équipe me parle d’agilité, je regarde rarement si les rituels sont bien tenus. Je regarde si elle apprend vraiment plus vite de ce que le réel lui renvoie.

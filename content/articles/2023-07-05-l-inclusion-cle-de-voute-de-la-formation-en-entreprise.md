@@ -42,9 +42,7 @@ Beaucoup d’organisations restent bloquées sur une idée simple : être équit
 
 En formation, cette logique atteint vite sa limite. Des apprenants peuvent partager un même objectif sans disposer des mêmes appuis pour y accéder.
 
-Certains ont besoin de plus de temps.
-D’autres d’un autre canal.
-D’autres encore d’une consigne plus explicite, d’un cadre plus progressif, d’une moindre mise en visibilité au départ.
+Certains ont besoin de plus de temps, d’autres d’un autre canal, d’autres encore d’une consigne plus explicite, d’un cadre plus progressif, d’une moindre mise en visibilité au départ.
 
 L’inclusion n’abolit pas l’exigence. Elle travaille les conditions d’accès à cette exigence.
 
@@ -103,4 +101,4 @@ Veut-elle seulement diffuser un message identique à tous ? Ou cherche-t-elle à
 
 La différence entre les deux est profonde. Elle sépare la communication interne habillée en formation d’un véritable travail de développement.
 
-Quand tu regardes un dispositif de formation, repères-tu surtout ce qu’il transmet… ou aussi ce qu’il rend possible, et pour qui ?
+Quand tu regardes un dispositif de formation, repères-tu surtout ce qu’il transmet, ou aussi ce qu’il rend possible, et pour qui ?

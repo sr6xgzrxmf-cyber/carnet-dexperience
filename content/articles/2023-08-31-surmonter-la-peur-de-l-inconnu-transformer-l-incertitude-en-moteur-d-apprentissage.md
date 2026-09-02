@@ -74,8 +74,7 @@ L’incertitude ne disparaît pas complètement, mais elle devient traversable.
 
 Dans beaucoup de situations, tout se joue dans l’entrée.
 
-Si le premier contact avec la nouveauté est trop brutal, la peur se rigidifie.
-Si le premier pas est accessible, l’expérience peut basculer.
+Si le premier contact avec la nouveauté est trop brutal, la peur se rigidifie ; si le premier pas est accessible, l’expérience peut basculer.
 
 C’est pourquoi les mises en situation progressives, les exercices simples mais réels, les démonstrations claires ou le tutorat de proximité sont souvent plus efficaces qu’un grand discours rassurant.
 
@@ -105,10 +104,8 @@ Il vaut mieux éviter :
 
 La peur de l’inconnu ne se dissout pas dans l’enthousiasme du formateur. Elle diminue quand la personne perçoit qu’elle peut avancer sans se perdre.
 
-## Le vrai enjeu
+## Rendre le passage concret
 
-Transformer l’incertitude en moteur d’apprentissage ne signifie pas faire aimer l’inconnu pour lui-même.
+Transformer l’incertitude en moteur d’apprentissage ne signifie pas faire aimer l’inconnu pour lui-même. Cela signifie créer des conditions où l’inconnu cesse d’être une menace opaque pour devenir un espace où l’on peut progressivement reprendre prise.
 
-Cela signifie créer des conditions où l’inconnu cesse d’être une menace opaque pour devenir un espace où l’on peut progressivement reprendre prise.
-
-Quand quelqu’un résiste à une nouveauté, cherches-tu à le rassurer avec des mots… ou à rendre le passage suffisamment concret pour qu’il ose réellement s’y engager ?
+Devant quelqu’un qui recule, les mots rassurants servent peu. Ce qui l’aide à s’engager, c’est un passage assez concret pour qu’il voie où il met les pieds.

@@ -78,12 +78,7 @@ Ce n’est pas du laxisme. C’est de la régulation.
 
 ## Ajuster n’est pas céder
 
-Il arrive qu’un cadre doive être reformulé, allégé, resserré ou rendu plus concret.
-
-Ce n’est pas un aveu de faiblesse. C’est parfois exactement ce qui permet de le rendre enfin tenable.
-
-Un cadre vivant n’est pas un cadre mou.
-C’est un cadre qui supporte d’être réarticulé au réel sans perdre sa fonction.
+Il arrive qu’un cadre doive être reformulé, allégé, resserré ou rendu plus concret. Ce n’est pas un aveu de faiblesse : c’est parfois exactement ce qui permet de le rendre enfin tenable. Un cadre vivant n’est pas un cadre mou, c’est un cadre qui supporte d’être réarticulé au réel sans perdre sa fonction.
 
 ## Le rôle du manager ou du facilitateur
 
@@ -105,11 +100,8 @@ Deux erreurs reviennent souvent :
 - durcir trop vite ;
 - relativiser trop vite.
 
-Durcir trop vite produit parfois de l’obéissance apparente sans appropriation.
-Relativiser trop vite dissout le cadre jusqu’à le rendre décoratif.
+Durcir trop vite produit parfois de l’obéissance apparente sans appropriation ; relativiser trop vite dissout le cadre jusqu’à le rendre décoratif. La bonne posture est plus exigeante : relire ce que le non-respect révèle avant de choisir la réponse.
 
-La bonne posture est plus exigeante : relire ce que le non-respect révèle avant de choisir la réponse.
+## Un problème de discipline, ou de conception
 
-## La vraie question
-
-Quand un cadre ne tient pas, vois-tu d’abord un problème de discipline… ou acceptes-tu de regarder ce que cet écart raconte sur la manière dont la règle a été conçue, comprise et réellement vécue ?
+Quand un cadre ne tient pas, vois-tu d’abord un problème de discipline, ou acceptes-tu de regarder ce que cet écart raconte sur la manière dont la règle a été conçue, comprise et réellement vécue ?

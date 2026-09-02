@@ -106,4 +106,4 @@ Construire une culture d’apprentissage, ce n’est pas convaincre les gens que
 
 Le vrai travail consiste à fabriquer un environnement où apprendre n’entre pas en concurrence permanente avec le fait de “tenir la journée”.
 
-Quand tu regardes une organisation qui dit valoriser l’apprentissage, vois-tu surtout une offre de formation… ou vois-tu des conditions de travail qui permettent réellement d’apprendre ?
+Quand tu regardes une organisation qui dit valoriser l’apprentissage, vois-tu surtout une offre de formation, ou des conditions de travail qui permettent réellement d’apprendre ?

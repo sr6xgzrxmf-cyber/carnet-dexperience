@@ -17,9 +17,7 @@ La question arrive souvent à un moment où l’autre n’a déjà plus envie de
 
 Un message vocal, un Slack, une fin de réunion, un appel un peu tendu. Quelqu’un te résume rapidement une situation et attend presque immédiatement une direction : faut-il répondre ? recadrer ? dire non ? relancer ? couper court ?
 
-Pendant longtemps, j’ai cru que ma valeur se jouait là : dans la rapidité de la réponse. Être capable de dire vite quoi faire. Rassurer. Trancher. Réduire l’inconfort.
-
-Avec le temps, j’ai compris autre chose : très souvent, ce qui est demandé n’est pas encore assez clair pour mériter une conclusion.
+Pendant longtemps, j’ai cru que ma valeur se jouait là : dans la rapidité de la réponse — dire vite quoi faire, rassurer, trancher, réduire l’inconfort. Avec le temps, j’ai compris autre chose : très souvent, ce qui est demandé n’est pas encore assez clair pour mériter une conclusion.
 
 ## Ce qui se passe quand on répond trop vite
 
@@ -87,11 +85,7 @@ Penser, ici, c’est dire :
 - « Mon hypothèse, c’est que… » ;
 - « Je peux me tromper, mais j’ai l’impression que… »
 
-Cette étape change beaucoup de choses.
-
-Tu n’imposes pas un diagnostic. Tu proposes une lecture située, assumée, corrigible.
-
-Tu évites ainsi deux excès :
+Cette étape change beaucoup de choses : tu n’imposes pas un diagnostic, tu proposes une lecture située, assumée, corrigible. Tu évites ainsi deux excès :
 
 - l’illusion de certitude ;
 - la fausse modestie qui cache mal un conseil déjà prêt.
@@ -145,7 +139,7 @@ Depuis que j’essaie de tenir cette posture, plusieurs choses se sont déplacé
 
 Ce n’est pas spectaculaire. C’est beaucoup plus utile que spectaculaire.
 
-## La vraie question
+## Clarifier, ou conclure à sa place
 
 Dans beaucoup d’environnements professionnels, on valorise celui qui répond vite. On valorise moins celui qui aide à penser proprement avant d’agir.
 

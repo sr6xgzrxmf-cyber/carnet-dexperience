@@ -38,12 +38,7 @@ Autrement dit, il aide à faire tenir l’interdépendance.
 
 ## Pourquoi il échoue si souvent
 
-Beaucoup de projets échouent moins par manque d’énergie que par manque de structure.
-
-On lance vite.
-On réunit les bonnes personnes.
-On remplit un planning.
-Et l’on découvre ensuite que plusieurs éléments n’ont jamais été clarifiés :
+Beaucoup de projets échouent moins par manque d’énergie que par manque de structure. On lance vite, on réunit les bonnes personnes, on remplit un planning — et l’on découvre ensuite que plusieurs éléments n’ont jamais été clarifiés :
 
 - qui porte vraiment la décision ;
 - ce qui est non négociable ;
@@ -98,4 +93,4 @@ On aime souvent parler du projet comme d’une aventure. L’image n’est pas m
 
 Le management par projets est intéressant précisément parce qu’il oblige à rendre cette architecture visible.
 
-Dans les projets que tu vois passer, l’équipe sait-elle seulement où elle va… ou sait-elle aussi comment elle corrigera la trajectoire quand le réel commencera à résister ?
+Dans les projets que tu vois passer, l’équipe sait-elle seulement où elle va, ou aussi comment elle corrigera la trajectoire quand le réel commencera à résister ?

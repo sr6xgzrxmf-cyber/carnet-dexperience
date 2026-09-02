@@ -3,7 +3,7 @@ import TrackedLink from "@/components/TrackedLink";
 import styles from "./offer.module.css";
 
 export const metadata: Metadata = {
-  title: "Comment je peux aider",
+  title: "Accompagnement",
   description:
     "Un accompagnement pour clarifier une situation complexe, transmettre un cadre et rendre les usages réellement adoptables.",
 };

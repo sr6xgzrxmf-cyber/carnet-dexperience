@@ -50,8 +50,4 @@ Cette fiche permet de :
 
 ## Principe clé
 
-Cette fiche n’est pas là pour “forcer” une réponse.  
-Elle est là pour **t’aider à décider**.
-
-La vraie question à se poser est donc celle-ci :  
-**quels prospects méritent encore ton énergie — et lesquels peuvent être classés sans regret ?**
+Cette fiche n’est pas là pour « forcer » une réponse. Elle est là pour t’aider à décider : à la fin du cycle, certains prospects méritent encore ton énergie, d’autres peuvent être classés sans regret. La fiche sert à trancher entre les deux.

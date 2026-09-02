@@ -71,14 +71,7 @@ Autrement dit, la formation ne doit pas célébrer un style. Elle doit apprendre
 
 ## Le point de bascule utile
 
-Le vrai apprentissage, ici, consiste souvent à repérer le moment où l’autorité cesse de clarifier et commence à appauvrir.
-
-Quand le manager corrige tout lui-même.
-Quand les équipes n’osent plus signaler les irritants.
-Quand le silence est interprété comme de l’adhésion.
-Quand la conformité remplace la compréhension.
-
-C’est dans ces détails que se joue la qualité du style, beaucoup plus que dans les grandes déclarations de principe.
+Le vrai apprentissage, ici, consiste souvent à repérer le moment où l’autorité cesse de clarifier et commence à appauvrir : quand le manager corrige tout lui-même, quand les équipes n’osent plus signaler les irritants, quand le silence est pris pour de l’adhésion, quand la conformité remplace la compréhension. C’est dans ces détails que se joue la qualité du style, beaucoup plus que dans les grandes déclarations de principe.
 
 ## Former sans caricaturer
 
@@ -100,4 +93,4 @@ de quoi ce cadre autoritaire est-il, ici, la réponse ?
 
 Tant que cette question n’est pas posée, on forme des postures sans comprendre ce qu’elles essaient de tenir.
 
-Dans ton regard de formateur, quand tu rencontres un management autoritaire, vois-tu d’abord un problème de style… ou cherches-tu à comprendre ce qu’il essaie de sécuriser ?
+Quand tu rencontres un management autoritaire, y vois-tu d’abord un problème de style, ou cherches-tu à comprendre ce qu’il essaie de sécuriser ?

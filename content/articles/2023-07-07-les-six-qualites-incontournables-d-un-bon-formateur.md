@@ -17,27 +17,15 @@ series:
 
 Le vidéoprojecteur ne se connecte pas. Une participante monopolise la parole. Deux autres décrochent. Quelqu’un te dit que “ce n’est pas du tout ce qu’on lui avait vendu”. Le support est prêt, le contenu est solide, et pourtant la séance réelle commence seulement maintenant.
 
-C’est souvent dans ce moment-là qu’on reconnaît un bon formateur.
-
-Pas à la beauté du slide.
-Pas à la maîtrise théorique du sujet.
-Pas au niveau d’énergie affiché.
-
-Mais à ce qu’il sait faire quand le réel entre dans la salle.
+C’est souvent dans ce moment-là qu’on reconnaît un bon formateur : non à la beauté du slide, à la maîtrise théorique du sujet ou au niveau d’énergie affiché, mais à ce qu’il sait faire quand le réel entre dans la salle.
 
 Voici les six qualités qui comptent le plus, à mes yeux, dans ce travail-là.
 
 ## 1. Savoir lire une salle
 
-Avant même de transmettre, un formateur doit capter.
+Avant même de transmettre, un formateur doit capter : qui est inquiet, qui s’ennuie déjà, qui fait semblant d’avoir compris, qui est en train de perdre la face, qui résiste pour de bonnes raisons ?
 
-Qui est inquiet ?
-Qui s’ennuie déjà ?
-Qui fait semblant d’avoir compris ?
-Qui est en train de perdre la face ?
-Qui résiste pour de bonnes raisons ?
-
-Lire une salle, ce n’est pas “sentir l’ambiance” de façon vague. C’est repérer les signaux faibles qui vont décider de la suite : le niveau de fatigue, le rapport au sujet, le coût symbolique de l’apprentissage, les rapports de statut entre les personnes.
+Lire une salle, ce n’est pas « sentir l’ambiance » de façon vague. C’est repérer les signaux faibles qui vont décider de la suite : le niveau de fatigue, le rapport au sujet, le coût symbolique de l’apprentissage, les rapports de statut entre les personnes.
 
 Un formateur qui ne voit pas cela continue souvent à dérouler. Un bon formateur ajuste.
 
@@ -66,13 +54,7 @@ Former, ce n’est pas montrer qu’on sait beaucoup. C’est faire en sorte que
 
 ## 4. Adapter sans perdre le fil
 
-Une bonne séance n’est presque jamais une séance totalement fidèle à son plan initial.
-
-Il faut parfois ralentir.
-Reprendre une consigne.
-Changer un exercice.
-Déplacer un exemple.
-Répondre à une objection qui n’était pas prévue.
+Une bonne séance n’est presque jamais totalement fidèle à son plan initial. Il faut parfois ralentir, reprendre une consigne, changer un exercice, déplacer un exemple, répondre à une objection qui n’était pas prévue.
 
 L’adaptabilité est donc centrale, mais elle ne signifie pas céder à tout. Le vrai savoir-faire consiste à bouger sans se dissoudre. À ajuster la forme sans perdre l’intention.
 
@@ -104,12 +86,7 @@ Cette posture n’a rien de spectaculaire. Elle évite pourtant l’un des pièg
 
 ## Au fond, un bon formateur fait plus que transmettre
 
-Il observe.
-Il régule.
-Il protège.
-Il traduit.
-Il ajuste.
-Il apprend en même temps que les autres apprennent.
+Il observe, il régule, il protège, il traduit, il ajuste — et il apprend en même temps que les autres apprennent.
 
 C’est pour cela qu’un bon formateur n’est pas seulement un expert. C’est quelqu’un qui tient une salle sans l’écraser, qui fait progresser sans humilier, et qui transforme un contenu en expérience de travail.
 

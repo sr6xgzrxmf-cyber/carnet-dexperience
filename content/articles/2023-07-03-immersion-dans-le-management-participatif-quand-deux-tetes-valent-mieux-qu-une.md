@@ -95,10 +95,8 @@ C’est cette dernière partie qui manque souvent. On parle volontiers de partic
 
 ## Ce qu’il faut vérifier en premier
 
-Quand une organisation dit vouloir aller vers plus de participatif, la bonne question n’est peut-être pas “comment faire parler davantage les équipes ?”
+Quand une organisation dit vouloir aller vers plus de participatif, la question n’est peut-être pas « comment faire parler davantage les équipes ? », mais « savons-nous déjà dire clairement ce qui est ouvert à la contribution, et ce qui ne l’est pas ? ».
 
-La bonne question est peut-être : savons-nous déjà dire clairement ce qui est ouvert à la contribution, et ce qui ne l’est pas ?
+Sans cette clarté, le participatif devient une promesse floue ; avec elle, il peut redevenir une vraie méthode de travail.
 
-Sans cette clarté, le participatif devient une promesse floue. Avec elle, il peut redevenir une vraie méthode de travail.
-
-Dans les espaces que tu accompagnes, la participation produit-elle de la meilleure décision… ou seulement une impression plus douce de réunion ?
+Dans les espaces que tu accompagnes, la participation produit-elle de meilleures décisions, ou seulement une impression plus douce de réunion ?

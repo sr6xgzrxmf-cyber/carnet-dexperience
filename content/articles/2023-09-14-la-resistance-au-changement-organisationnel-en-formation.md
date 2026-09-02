@@ -107,7 +107,7 @@ On sous-estime souvent l’importance des signaux faibles :
 
 Ces signes montrent souvent que la résistance ne porte pas sur le contenu, mais sur le cadre plus large.
 
-## Le vrai enjeu
+## Un espace de passage
 
 Dans un changement organisationnel, la formation ne doit pas être pensée comme un outil de persuasion. Elle doit être pensée comme un espace de passage.
 
@@ -119,4 +119,4 @@ Un espace où l’on peut :
 - voir ce qui se gagne ;
 - reprendre prise.
 
-Quand une organisation change, demandes-tu à la formation de faire adhérer… ou lui donnes-tu les moyens d’accompagner réellement ce que le système est en train de déplacer ?
+Quand une organisation change, la formation ne fera pas adhérer à sa place. Ce qu’elle peut faire, si on lui en donne les moyens, c’est accompagner ce que le système est en train de déplacer.

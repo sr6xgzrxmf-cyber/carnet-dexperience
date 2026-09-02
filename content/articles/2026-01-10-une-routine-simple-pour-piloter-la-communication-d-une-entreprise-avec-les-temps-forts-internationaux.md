@@ -44,17 +44,7 @@ Le bon usage est exactement inverse : se servir du calendrier pour choisir plus 
 
 ## La question qui compte
 
-Pour chaque date, la vraie question n’est pas :
-
-faut-il publier ?
-
-La vraie question est :
-
-avons-nous quelque chose de légitime, utile ou cohérent à apporter sur ce sujet ?
-
-Si la réponse est non, ne pas publier est souvent une meilleure décision que produire un contenu de présence.
-
-Le calendrier devient alors un filtre, pas une injonction.
+Pour chaque date, la question n’est pas « faut-il publier ? », mais « avons-nous quelque chose de légitime, utile ou cohérent à apporter sur ce sujet ? ». Si la réponse est non, ne pas publier est souvent une meilleure décision que produire un contenu de présence. Le calendrier devient alors un filtre, pas une injonction.
 
 ## Une routine simple qui tient
 

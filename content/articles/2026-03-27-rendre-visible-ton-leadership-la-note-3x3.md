@@ -40,10 +40,7 @@ Résultat : la contribution existe, mais elle reste diffuse.
 
 ## À quoi sert vraiment la note 3×3
 
-Elle ne sert pas à embellir ton action.
-Elle ne sert pas non plus à te mettre en scène.
-
-Elle sert à rendre lisible une contribution transversale avec un niveau de simplicité suffisamment fort pour que quelqu’un d’extérieur au détail comprenne :
+Elle ne sert ni à embellir ton action, ni à te mettre en scène. Elle sert à rendre lisible une contribution transversale, avec un niveau de simplicité suffisant pour que quelqu’un d’extérieur au détail comprenne :
 
 - ce que tu as vu ;
 - ce que tu as proposé ;
@@ -124,6 +121,6 @@ Si la note perd son ancrage dans des situations réelles, elle redevient un obje
 
 Sa valeur tient au lien direct entre observation, intervention et effet.
 
-## La vraie question
+## Lisible sans être enjolivé
 
 Si ton leadership devait être compris par quelqu’un qui ne voit pas tes gestes au quotidien, saurais-tu le rendre lisible sans l’enjoliver, sans l’écraser, et sans le laisser se dissoudre dans l’invisible ?

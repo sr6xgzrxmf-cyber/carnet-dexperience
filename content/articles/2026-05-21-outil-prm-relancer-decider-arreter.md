@@ -16,10 +16,8 @@ series:
 
 ## À quoi sert PRM
 
-PRM est un **outil de décision**, pas une méthode de pression commerciale.  
-Il permet de transformer un listing flou en **boucles fermées**, avec un cadre clair, assumé et mesurable.
+PRM est un outil de décision, pas une méthode de pression commerciale. Il transforme un listing flou en boucles fermées, avec un cadre clair, assumé et mesurable. Il répond à trois besoins terrain :
 
-Il répond à trois besoins terrain :
 - relancer sans harceler,
 - décider sans culpabiliser,
 - arrêter sans se dévaloriser.
@@ -28,15 +26,9 @@ Il répond à trois besoins terrain :
 
 ## Le principe PRM
 
-**P — Prospection / Priorisation**  
-Tu travailles sur un nombre limité de contacts, choisis consciemment.
-
-**R — Relance structurée**  
-3 tentatives par jour × 3 jours maximum.  
-Un SMS clair, annoncé, qui pose le cadre.
-
-**M — Mesure et décision**  
-À la fin du cycle : réponse, suite datée, ou arrêt assumé.
+- **P — Prospection / Priorisation.** Tu travailles sur un nombre limité de contacts, choisis consciemment.
+- **R — Relance structurée.** Trois tentatives par jour, sur trois jours maximum. Un SMS clair, annoncé, qui pose le cadre.
+- **M — Mesure et décision.** À la fin du cycle : réponse, suite datée, ou arrêt assumé.
 
 ---
 
@@ -59,9 +51,7 @@ Un SMS clair, annoncé, qui pose le cadre.
 
 ## Pourquoi ça fonctionne
 
-PRM enlève l’émotion de la relance.  
-Il remplace la culpabilité par une règle claire.  
-Il redonne de la **maîtrise mentale** à celui qui agit.
+PRM enlève l’émotion de la relance. Là où il y avait de la culpabilité, il met une règle claire, et il redonne de la maîtrise mentale à celui qui agit.
 
 ---
 
@@ -73,5 +63,4 @@ Il redonne de la **maîtrise mentale** à celui qui agit.
 - formateurs,
 - toute personne qui doit relancer sans s’abîmer.
 
-La vraie question à se poser est donc celle-ci :  
-**quelles relances ouvertes aujourd’hui t’empêchent de décider clairement ?**
+Le premier gain, souvent, c’est de voir combien de relances traînent ouvertes « par défaut » — et d’en fermer la moitié dès le premier passage.

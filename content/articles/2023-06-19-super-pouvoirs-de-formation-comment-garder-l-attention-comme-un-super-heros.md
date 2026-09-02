@@ -92,4 +92,4 @@ Le vrai enjeu n’est pas de produire une intensité constante. C’est de relan
 
 Former, ce n’est pas capturer l’attention une fois pour toutes. C’est la regagner, la redistribuer et la réancrer au fil de la séquence.
 
-Dans tes formations, quand l’attention baisse, est-ce que tu cherches surtout à réanimer la salle… ou à comprendre ce qui, dans le dispositif, a cessé de mettre les gens réellement au travail ?
+Quand l’attention baisse, cherches-tu surtout à réanimer la salle, ou à comprendre ce qui, dans le dispositif, a cessé de mettre les gens réellement au travail ?

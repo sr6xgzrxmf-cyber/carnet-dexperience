@@ -19,7 +19,7 @@ export default function SiteFooter() {
         <nav className="grid content-start gap-2 text-sm text-neutral-600 dark:text-neutral-400">
           <Link href="/parcours">Parcours</Link>
           <Link href="/articles">Articles</Link>
-          <Link href="/atelier">Comment je peux aider</Link>
+          <Link href="/atelier">Accompagnement</Link>
           <Link href="/contact">Contact</Link>
         </nav>
 

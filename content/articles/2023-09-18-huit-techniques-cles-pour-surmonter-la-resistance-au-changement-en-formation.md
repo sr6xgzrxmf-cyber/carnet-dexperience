@@ -72,7 +72,7 @@ Des étapes plus courtes permettent :
 - de créer des réussites intermédiaires ;
 - de limiter la sensation de saut dans le vide.
 
-La progressivité n’est pas un manque d’ambition. C’est souvent une condition d’appropriation.
+La progressivité n’est pas un manque d’ambition : c’est souvent ce qui rend le changement appropriable.
 
 ## 5. Donner un vrai droit à l’essai
 
@@ -86,7 +86,7 @@ Si l’on veut que les personnes testent autre chose, il faut que l’espace de 
 - le retour ;
 - la reprise.
 
-Sans ce droit, l’apprentissage ressemble à une exposition. Avec lui, il redevient une progression.
+Sans ce droit, l’apprentissage ressemble à une exposition ; avec lui, il redevient une progression.
 
 ## 6. Protéger du temps et de l’énergie
 
@@ -143,8 +143,8 @@ Ils travaillent :
 
 Autrement dit, ils traitent la résistance comme une information utile, pas comme une faute à corriger.
 
-## La vraie question de clôture
+## Ce qui manque le plus souvent
 
 Accompagner un changement en formation, ce n’est pas seulement transmettre un nouveau contenu. C’est créer les conditions pour que des personnes puissent quitter une manière de faire sans se sentir perdues, déclassées ou simplement écrasées par le passage.
 
-Parmi ces huit leviers, lequel manque le plus souvent dans les dispositifs que tu rencontres : le sens, le temps, le cadre… ou la manière de rendre le changement vraiment traversable ?
+Dans les dispositifs que je rencontre, ce n’est presque jamais le contenu qui manque. C’est le temps, le cadre, ou le soin apporté à rendre le passage traversable.

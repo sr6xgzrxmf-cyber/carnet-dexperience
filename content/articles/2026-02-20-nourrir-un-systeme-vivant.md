@@ -35,9 +35,7 @@ Autrement dit, le système continue peut-être de produire, mais il cesse peu à
 
 ## La veille n’est pas une collecte
 
-C’est souvent là que la veille est mal comprise.
-
-Beaucoup imaginent qu’il faut :
+C’est souvent là que la veille est mal comprise. Beaucoup imaginent qu’il faut :
 
 - lire davantage ;
 - sauvegarder plus ;
@@ -57,11 +55,7 @@ Une veille trop large fatigue. Une veille bien réglée nourrit.
 
 ## Le rythme est aussi une matière de travail
 
-J’ai longtemps sous-estimé ce point.
-
-On parle facilement des sujets, des formats, des outils. On parle moins du rythme comme d’un objet éditorial à part entière.
-
-Or un système vivant a besoin d’une respiration tenable :
+J’ai longtemps sous-estimé ce point. On parle facilement des sujets, des formats, des outils ; on parle moins du rythme comme d’un objet éditorial à part entière. Or un système vivant a besoin d’une respiration tenable :
 
 - des moments de sortie ;
 - des moments de collecte ;
@@ -121,8 +115,8 @@ Cultiver, cela veut dire :
 - laisser certaines idées mûrir ;
 - privilégier la justesse à la simple régularité.
 
-Ce déplacement m’a beaucoup appris. Il m’a fait comprendre qu’un système éditorial ne tient pas seulement par structure. Il tient par qualité d’entretien.
+Ce déplacement m’a beaucoup appris : un système éditorial ne tient pas seulement par structure, il tient par qualité d’entretien.
 
-## La vraie question
+## Nourrir, ou faire semblant d’avancer
 
 Quand un média commence à vivre pour de bon, la question n’est plus seulement de produire. Elle devient plus exigeante : sais-tu reconnaître ce qui le nourrit vraiment, et ce qui te donne seulement l’illusion de le faire avancer ?

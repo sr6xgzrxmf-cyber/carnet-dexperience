@@ -20,11 +20,7 @@ C’est là que la notion de marque personnelle devient intéressante, et parfoi
 
 ## La visibilité n’est plus un critère suffisant
 
-Dans un environnement saturé, beaucoup de personnes savent désormais se rendre visibles.
-
-Ce qui manque plus souvent, c’est la lisibilité.
-
-On regarde une présence en ligne et l’on se demande :
+Dans un environnement saturé, beaucoup de personnes savent désormais se rendre visibles. Ce qui manque plus souvent, c’est la lisibilité. On regarde une présence en ligne et l’on se demande :
 
 - qu’est-ce que cette personne défend réellement ?
 - quels choix assume-t-elle ?
@@ -98,8 +94,8 @@ Construire une marque personnelle crédible demande aussi d’accepter quelques 
 
 Cette sélectivité peut sembler risquée. En réalité, elle est souvent le début de la confiance.
 
-## La vraie question
+## Une stratégie de visibilité, ou une trace cohérente
 
-À l’ère de la transparence, une marque personnelle ne se juge plus seulement à la qualité de sa mise en scène. Elle se juge à la cohérence entre ce qu’elle dit, ce qu’elle montre, ce qu’elle fait et ce qu’elle accepte de ne pas faire.
+À l’ère de la transparence, une marque personnelle ne se juge plus seulement à la qualité de sa mise en scène : elle se juge à la cohérence entre ce qu’elle dit, ce qu’elle montre, ce qu’elle fait et ce qu’elle accepte de ne pas faire.
 
-Quand tu regardes ta propre présence, vois-tu surtout une stratégie de visibilité… ou une trace suffisamment cohérente pour que quelqu’un puisse comprendre ce que tu tiens vraiment ?
+Quand tu regardes ta propre présence, vois-tu surtout une stratégie de visibilité, ou une trace suffisamment cohérente pour que quelqu’un puisse comprendre ce que tu tiens vraiment ?

@@ -22,13 +22,11 @@ Le problème n’est pas le volume de travail, mais l’absence de filtre. Dire 
 
 ## Pourquoi on se justifie trop
 
-Dire non met mal à l’aise. Alors on explique. On contextualise. On se défend par avance. Et plus on se justifie, plus le refus semble fragile, négociable, temporaire.
-
-Cette sur-justification envoie un signal implicite : *ma priorité n’est pas vraiment une priorité*. Le cadre se fissure.
+Dire non met mal à l’aise. Alors on explique, on contextualise, on se défend par avance — et plus on se justifie, plus le refus semble fragile, négociable, temporaire. Cette sur-justification envoie un signal implicite : *ma priorité n’est pas vraiment une priorité*. Le cadre se fissure.
 
 ## Dire non, ce n’est pas s’opposer
 
-Un non professionnel n’est ni sec ni agressif. Il est posé, factuel, aligné avec un cap clair. Karim apprend à répondre autrement :
+Un non professionnel n’est ni sec ni agressif : il est posé, factuel, aligné avec un cap clair. Karim apprend à répondre autrement :
 
 « Aujourd’hui, mes priorités sont X et Y. Je ne peux pas prendre ce sujet sans déplacer l’un des deux. »
 
@@ -44,7 +42,6 @@ Tenir une posture adulte implique d’assumer qu’un non est un non — sans de
 
 Un refus posé permet à l’autre de décider : reporter, déléguer, reformuler, arbitrer. À l’inverse, un oui flou crée des attentes irréalistes et alimente les tensions futures.
 
-Dire non sans se justifier, ce n’est pas se fermer. C’est rendre les arbitrages possibles.
+Dire non sans se justifier, ce n’est pas se fermer, c’est rendre les arbitrages possibles.
 
-La vraie question à se poser est donc celle-ci :  
-**quand tu dis oui aujourd’hui, à quoi dis-tu non sans le dire ?**
+Quand tu dis oui aujourd’hui, à quoi dis-tu non sans le dire ?

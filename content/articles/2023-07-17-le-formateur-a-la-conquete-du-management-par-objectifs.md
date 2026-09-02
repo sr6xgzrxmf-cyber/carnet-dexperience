@@ -103,6 +103,4 @@ Le management par objectifs n’est pas intéressant parce qu’il met la perfor
 
 Il devient intéressant quand il permet d’éviter l’arbitraire et de rendre le travail plus lisible pour tout le monde.
 
-La vraie question n’est donc peut-être pas : faut-il plus ou moins d’objectifs ?
-
-Elle est plutôt : les objectifs que tu vois dans les organisations servent-ils réellement à faire progresser le travail, ou servent-ils surtout à habiller le pilotage ?
+La question n’est donc pas de savoir s’il faut plus ou moins d’objectifs, mais si les objectifs que tu vois dans les organisations servent réellement à faire progresser le travail, ou surtout à habiller le pilotage.

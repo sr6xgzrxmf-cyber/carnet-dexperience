@@ -85,13 +85,7 @@ La qualité de la lecture détermine la qualité de la réponse.
 
 ## Une règle de terrain utile
 
-Je trouve une distinction simple assez opérante :
-
-tout ce qu’on peut encore nommer sur le problème sans glisser vers l’attaque de la personne relève souvent de la tension.
-
-Quand la discussion sur le problème devient presque impossible parce que tout passe déjà par la défense, l’accusation ou la blessure relationnelle, on est probablement entré dans autre chose.
-
-Ce n’est pas une science exacte. C’est un repère de travail.
+Une distinction simple est assez opérante : tout ce qu’on peut encore nommer sur le problème sans glisser vers l’attaque de la personne relève souvent de la tension. Quand la discussion sur le fond devient presque impossible parce que tout passe déjà par la défense, l’accusation ou la blessure relationnelle, on est probablement entré dans autre chose. Ce n’est pas une science exacte, c’est un repère de travail.
 
 ## Ce que cela change dans la posture
 
@@ -111,6 +105,6 @@ Face à un conflit, il faut davantage :
 
 Le même geste ne convient pas aux deux situations.
 
-## La vraie question
+## Tension régulable, ou conflit installé
 
-Dans ton équipe, ce que tu observes aujourd’hui relève-t-il d’une tension encore régulable… ou d’un conflit déjà installé que vous continuez peut-être à appeler “simple désaccord” pour ne pas avoir à le traiter vraiment ?
+Dans ton équipe, ce que tu observes aujourd’hui relève-t-il d’une tension encore régulable, ou d’un conflit déjà installé que vous continuez peut-être à appeler « simple désaccord » pour ne pas avoir à le traiter vraiment ?

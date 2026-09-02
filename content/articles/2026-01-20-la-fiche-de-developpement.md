@@ -13,7 +13,7 @@ series:
   order: 3.5
 ---
 
-Entre deux épisodes, je te propose un outil. Pas un « bonus ». Un raccourci. Quand une situation devient floue, on cherche souvent une phrase qui calme. En réalité, ce qui stabilise, ce n’est pas une formule. C’est une clarification. Revenir au réel : ce que tu as fait, ce que tu sais faire, ce que tu veux, et ce que tu fais ensuite.
+Entre deux épisodes, je te propose un outil — moins un bonus qu’un raccourci. Quand une situation devient floue, on cherche souvent une phrase qui calme. Ce qui stabilise, ce n’est pas une formule, c’est une clarification : revenir au réel — ce que tu as fait, ce que tu sais faire, ce que tu veux, et ce que tu fais ensuite.
 
 Cette fiche sert à ça. Elle est courte, structurée, et elle t’oblige à transformer une impression (« je suis perdu », « je stagne », « je ne sais pas quoi viser ») en éléments actionnables : un récit simple, des compétences nommées, des critères, puis un plan.
 
@@ -33,4 +33,4 @@ Tu peux télécharger le PDF et le remplir à ta façon. Ou répondre en ligne :
 - Télécharger le PDF : [fiche-developpement.pdf](/downloads/fiche-developpement.pdf)
 - Répondre en ligne (et recevoir ton récap complet) : [Accéder à la fiche](/atelier/fiche)
 
-La question qui compte, avant de passer à l’épisode suivant : qu’est-ce qui, dans ta situation, mérite d’être clarifié maintenant — avant que le flou ne décide à ta place ?
+Avant de passer à l’épisode suivant : qu’est-ce qui, dans ta situation, gagnerait à être mis au clair dès maintenant ?

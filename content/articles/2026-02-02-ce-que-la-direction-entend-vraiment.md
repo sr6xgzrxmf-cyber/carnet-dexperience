@@ -118,11 +118,10 @@ Quand ce type de formulation s’installe, on voit apparaître :
 - des désaccords plus nets ;
 - une relation plus adulte entre remontée terrain et décision.
 
-Le terrain cesse d’espérer qu’on devine.
-La direction cesse d’attendre qu’on simplifie seule ce qu’elle ne peut pas traiter.
+Le terrain cesse d’espérer qu’on devine ; la direction cesse d’attendre qu’on simplifie seule ce qu’elle ne peut pas traiter.
 
-## La vraie question
+## Le vécu, ou l’arbitrage
 
-Parler à la direction ne consiste pas à renoncer au réel du terrain. Cela consiste à le rendre saisissable dans un cadre où l’on ne décide pas à partir d’une intensité, mais à partir d’une lecture.
+Parler à la direction ne consiste pas à renoncer au réel du terrain, mais à le rendre saisissable dans un cadre où l’on ne décide pas à partir d’une intensité, mais d’une lecture.
 
 La prochaine fois qu’un sujet important remontera, parleras-tu de ce qui est vécu… ou sauras-tu déjà le traduire en arbitrage que quelqu’un peut réellement rendre ?

@@ -37,22 +37,13 @@ Cette phrase change tout. Elle désamorce la peur de l’irréversible.
 
 ## La méthode en cinq étapes
 
-Le prototype tient dans un cadre clair et limité.
+Le prototype tient dans un cadre clair et limité :
 
-1) **Définir le périmètre**  
-Ce qui est testé — et ce qui ne l’est pas.
-
-2) **Fixer une durée**  
-Trente jours. Pas plus. Une fin claire rassure.
-
-3) **Poser les règles du test**  
-Qui fait quoi, avec quelles limites.
-
-4) **Définir ce qui sera mesuré**  
-Avant / après. Pas des impressions, des faits.
-
-5) **Prévoir le bilan et la décision**  
-On décide à la fin : on garde, on ajuste, ou on arrête.
+1. **Définir le périmètre.** Ce qui est testé — et ce qui ne l’est pas.
+2. **Fixer une durée.** Trente jours, pas plus : une fin claire rassure.
+3. **Poser les règles du test.** Qui fait quoi, avec quelles limites.
+4. **Définir ce qui sera mesuré.** Avant / après, des faits plutôt que des impressions.
+5. **Prévoir le bilan et la décision.** On décide à la fin : on garde, on ajuste, ou on arrête.
 
 ## Un exemple très concret
 
@@ -62,9 +53,6 @@ Karim propose de modifier l’organisation d’un accueil public. Les avis sont 
 
 ## La posture proactive
 
-Prototyper, c’est refuser la posture d’attente. C’est montrer qu’on peut avancer sans certitude absolue, mais avec méthode. Cette posture est souvent perçue comme rassurante, parce qu’elle est réversible et mesurable.
+Prototyper, c’est refuser la posture d’attente : montrer qu’on peut avancer sans certitude absolue, mais avec méthode. Cette posture est souvent perçue comme rassurante, parce qu’elle est réversible et mesurable. Elle transforme un désaccord en expérience partagée.
 
-Elle transforme un désaccord en expérience partagée.
-
-La vraie question à se poser est donc celle-ci :  
-**quelle idée pourrait sortir du débat simplement en étant testée pendant 30 jours ?**
+Quelle idée pourrait sortir du débat simplement en étant testée pendant 30 jours ?

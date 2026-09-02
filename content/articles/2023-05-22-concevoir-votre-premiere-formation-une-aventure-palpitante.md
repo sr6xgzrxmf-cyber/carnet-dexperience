@@ -77,11 +77,7 @@ Les moyens pédagogiques comptent, bien sûr. Mais ils arrivent après le cadrag
 
 Une méthode devient juste quand elle sert une intention claire.
 
-Si tu veux entraîner à reformuler, il faut une situation où quelqu’un reformule vraiment.
-Si tu veux travailler la prise de décision, il faut une séquence où il faut trancher.
-Si tu veux faire progresser une posture, il faut une scène qui expose cette posture.
-
-Autrement dit : ce n’est pas l’outil qui fait la pédagogie. C’est l’usage précis qu’on en fait.
+Si tu veux entraîner à reformuler, il faut une situation où quelqu’un reformule vraiment ; pour travailler la prise de décision, une séquence où il faut trancher ; pour faire progresser une posture, une scène qui l’expose. Ce n’est pas l’outil qui fait la pédagogie, c’est l’usage précis qu’on en fait.
 
 ## Une formation mal pensée se voit surtout après
 
@@ -105,4 +101,4 @@ La bonne nouvelle, c’est qu’on n’a pas besoin d’être inspiré pour bien
 
 Une première formation n’a pas besoin d’être brillante. Elle a besoin d’être juste.
 
-Quand tu construis une formation, est-ce que tu pars d’abord d’un thème séduisant, ou d’une situation réelle que tu veux vraiment aider à transformer ?
+Quand tu construis une formation, pars-tu d’abord d’un thème séduisant, ou d’une situation réelle que tu veux vraiment aider à transformer ?

@@ -17,9 +17,7 @@ series:
 
 Quand cette phrase surgit à propos d’une formation, elle est souvent interprétée comme un manque d’engagement.
 
-Très souvent, ce n’est pas ça.
-
-C’est juste une phrase exacte.
+Très souvent, ce n’est pas ça. C’est juste une phrase exacte.
 
 La personne ne dit pas qu’elle refuse d’apprendre par principe. Elle dit qu’elle ne voit pas où faire tenir cet apprentissage dans une journée déjà saturée, dans une équipe déjà tendue, dans un rythme déjà trop haut.
 
@@ -121,4 +119,4 @@ La résistance liée à la surcharge commence à diminuer quand les personnes pe
 
 À ce moment-là, apprendre ne ressemble plus à une dépense. Cela redevient un investissement crédible.
 
-Dans les organisations que tu observes, la formation est-elle pensée comme une partie du travail… ou comme quelque chose qu’il faudrait réussir à caser malgré lui ?
+Dans les organisations que je croise, la formation la mieux reçue n’est pas la plus courte ni la plus ludique. C’est celle qui a été pensée comme une partie du travail, et non comme une chose à caser malgré lui.

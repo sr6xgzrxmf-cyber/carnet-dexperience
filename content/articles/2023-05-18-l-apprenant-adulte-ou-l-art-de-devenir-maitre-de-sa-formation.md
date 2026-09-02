@@ -26,7 +26,7 @@ L’apprenant adulte ne cherche pas seulement à suivre un parcours. Il cherche 
 
 On présente souvent l’autonomie de l’adulte comme une qualité personnelle, presque morale. En réalité, c’est surtout une donnée pédagogique.
 
-Un adulte arrive avec ses contraintes, ses priorités, son rapport au temps, ses critères d’utilité. Il fait rapidement le tri entre ce qui lui paraît transférable et ce qui lui semble décoratif. Si le cadre reste flou, il décroche. Pas forcément physiquement. Mais intérieurement.
+Un adulte arrive avec ses contraintes, ses priorités, son rapport au temps, ses critères d’utilité. Il fait rapidement le tri entre ce qui lui paraît transférable et ce qui lui semble décoratif. Si le cadre reste flou, il décroche — pas forcément physiquement, mais intérieurement.
 
 À l’inverse, quand il comprend clairement :
 
@@ -87,4 +87,4 @@ Quand un adulte devient maître de sa formation, ce n’est pas parce qu’il s�
 
 Et c’est souvent à ça qu’on reconnaît une séquence juste : les participants ne repartent pas seulement avec des notes. Ils repartent avec une manière plus nette de regarder leur propre pratique.
 
-Dans tes dispositifs, est-ce que l’apprenant adulte est seulement invité à suivre, ou est-ce qu’il a réellement de quoi s’approprier le travail ?
+Dans tes dispositifs, l’apprenant adulte est-il seulement invité à suivre, ou a-t-il réellement de quoi s’approprier le travail ?

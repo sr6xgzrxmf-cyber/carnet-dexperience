@@ -50,14 +50,7 @@ Ce type d’apprentissage a donc une qualité très précieuse : il réduit la d
 
 ## Ce qui l’empêche de produire tout son effet
 
-Le problème, c’est qu’il reste souvent invisible.
-
-Il dépend de quelques personnes généreuses.
-Il circule de manière inégale.
-Il s’épuise dans les silos.
-Il disparaît quand quelqu’un part.
-
-Et parfois, au lieu d’être reconnu comme une richesse, il est même vécu comme une perte de temps : trop d’échanges, trop de coordination, pas assez de “production”.
+Le problème, c’est qu’il reste souvent invisible : il dépend de quelques personnes généreuses, circule de manière inégale, s’épuise dans les silos, disparaît quand quelqu’un part. Et parfois, au lieu d’être reconnu comme une richesse, il est même vécu comme une perte de temps : trop d’échanges, trop de coordination, pas assez de « production ».
 
 Une entreprise peut donc avoir beaucoup d’apprentissage informel… sans jamais réussir à en faire un levier collectif.
 
@@ -119,4 +112,4 @@ Là, l’apprentissage social commence à devenir une vraie infrastructure.
 
 Dans beaucoup d’organisations, la connaissance existe déjà. Elle est dispersée, incarnée, parfois très fine. Ce qui manque, ce n’est pas toujours plus de contenu. C’est une manière de faire circuler ce qui est déjà là.
 
-Quand tu regardes une équipe, vois-tu un collectif qui apprend ensemble… ou vois-tu surtout une somme de compétences individuelles qui cohabitent sans vraiment se transmettre ?
+La plupart des équipes apprennent déjà ensemble, sans le nommer. Le travail ne consiste pas à créer cette dynamique. Il consiste à la voir, puis à lui donner de quoi tenir.

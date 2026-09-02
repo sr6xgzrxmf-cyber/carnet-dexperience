@@ -17,8 +17,7 @@ series:
 
 ## Une phrase banale, un signal fort
 
-« Tout est prioritaire. »  
-Karim l’entend souvent. Parfois il la prononce lui-même. Sur le moment, elle donne l’impression d’un engagement total. En réalité, elle masque un problème plus profond.
+« Tout est prioritaire. » Karim l’entend souvent, et il la prononce lui-même parfois. Sur le moment, elle donne l’impression d’un engagement total. En réalité, elle masque un problème plus profond.
 
 Quand tout est prioritaire, plus rien ne l’est vraiment. Et surtout, plus personne ne sait arbitrer.
 
@@ -46,5 +45,4 @@ Les équipes ne demandent pas que tout soit faisable. Elles demandent de savoir 
 
 Quand ce cadre est posé, la charge devient lisible, et l’engagement se stabilise.
 
-La vraie question à se poser n’est donc pas “comment tout faire”, mais celle-ci :  
-**quand tout semble prioritaire, qui prend réellement la responsabilité de choisir ?**
+La question n’est pas « comment tout faire », mais : quand tout semble prioritaire, qui prend réellement la responsabilité de choisir ?

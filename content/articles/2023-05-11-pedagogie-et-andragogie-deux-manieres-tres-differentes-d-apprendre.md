@@ -63,11 +63,7 @@ Cette différence change tout.
 
 ## Le vrai déplacement : de la transmission à l’appropriation
 
-La pédagogie peut viser d’abord la compréhension d’un contenu.
-
-L’andragogie, elle, doit viser son appropriation.
-
-Ce n’est pas seulement une différence de méthode. C’est une différence de finalité. Un adulte n’entre pas en formation pour “avoir vu” un sujet. Il entre pour mieux agir, mieux décider, mieux comprendre une situation, corriger une pratique ou débloquer un problème.
+La pédagogie peut viser d’abord la compréhension d’un contenu ; l’andragogie, elle, doit viser son appropriation. Ce n’est pas seulement une différence de méthode, c’est une différence de finalité. Un adulte n’entre pas en formation pour « avoir vu » un sujet, mais pour mieux agir, mieux décider, mieux comprendre une situation, corriger une pratique ou débloquer un problème.
 
 Il apprend moins pour accumuler que pour transformer.
 
@@ -96,19 +92,13 @@ Cela veut dire :
 - accueillir l’expérience sans la sanctuariser,
 - et aider chacun à produire du sens à partir de ce qu’il vit déjà.
 
-Le formateur ne “remplit” pas des adultes. Il travaille avec quelque chose qui existe déjà, parfois de manière très solide, parfois de manière très défensive.
-
-Et c’est précisément ce qui rend l’exercice plus complexe qu’une simple transmission descendante.
+Le formateur ne « remplit » pas des adultes : il travaille avec quelque chose qui existe déjà, parfois de manière très solide, parfois de manière très défensive. C’est précisément ce qui rend l’exercice plus complexe qu’une simple transmission descendante.
 
 ## Là où les malentendus commencent
 
 Beaucoup de formations échouent parce qu’elles sont conçues comme si tous les publics apprenaient de la même façon.
 
-On prend un contenu juste.
-On le met dans un support propre.
-On déroule.
-
-Puis on s’étonne que les adultes décrochent, contestent, résistent, ou ne réutilisent presque rien.
+On prend un contenu juste, on le met dans un support propre, on déroule. Puis on s’étonne que les adultes décrochent, contestent, résistent, ou ne réutilisent presque rien.
 
 En réalité, ils n’ont pas forcément rejeté le fond. Ils ont parfois simplement senti qu’on leur demandait d’apprendre dans un cadre qui ne correspondait ni à leur position d’adulte, ni à leur manière d’entrer dans un sujet.
 
@@ -125,4 +115,4 @@ Mais elles demandent des responsabilités différentes :
 
 Et cette pertinence ne se décrète pas. Elle se construit dans la relation entre le sujet, le vécu des personnes et ce qu’elles pourront réellement en faire.
 
-Dans les formations que tu vois aujourd’hui, qu’est-ce qui est encore pensé comme un cours… et qu’est-ce qui est vraiment conçu pour des adultes déjà en train de travailler ?
+Dans les formations que tu vois aujourd’hui, combien sont encore pensées comme un cours, et combien sont vraiment conçues pour des adultes déjà en train de travailler ?

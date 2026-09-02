@@ -23,15 +23,15 @@ const situations = [
 
 const method = [
   {
-    title: "Clarifier",
+    title: "Rendre visible ce qui se joue",
     text: "Nommer les faits, les attentes et le véritable point de friction, sans ajouter une couche de complexité.",
   },
   {
-    title: "Transmettre",
+    title: "Donner une forme partageable",
     text: "Transformer ce qui a été compris en cadre lisible, partageable et utilisable par les personnes concernées.",
   },
   {
-    title: "Faire adopter",
+    title: "Installer l’usage dans la durée",
     text: "Relier le cadre au travail réel, observer ce qui résiste et ajuster jusqu’à ce que l’usage tienne.",
   },
 ];
@@ -134,7 +134,9 @@ export default function HomePage() {
         <div className={styles.fullBleedInner}>
           <div className={styles.methodLayout}>
             <div className={styles.methodIntro}>
-              <p className={styles.eyebrow}>Une méthode simple</p>
+              <p className={styles.eyebrow}>
+                Clarifier, transmettre, faire adopter — concrètement
+              </p>
               <h2>Du flou à un cadre qui tient dans le réel</h2>
               <p>
                 Je ne viens pas ajouter une méthode hors sol. Je rends visible ce

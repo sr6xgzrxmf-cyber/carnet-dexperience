@@ -22,13 +22,13 @@ Dans ces moments-là, beaucoup cherchent une méthode miracle. Un nouvel outil. 
 
 ## Le vrai risque : l’épuisement silencieux
 
-Sous surcharge, Karim constate un glissement insidieux. Il travaille beaucoup, mais sans effet visible. Il compense. Il absorbe. Il “tient”. Jusqu’au moment où la fatigue s’installe, et où plus rien ne semble avancer vraiment.
+Sous surcharge, Karim constate un glissement insidieux. Il travaille beaucoup, mais sans effet visible : il compense, il absorbe, il « tient » — jusqu’au moment où la fatigue s’installe et où plus rien ne semble avancer.
 
-Le problème n’est pas l’intensité. C’est l’absence de repères stables : tout devient prioritaire, donc tout devient flou.
+Le problème n’est pas l’intensité, c’est l’absence de repères stables : tout devient prioritaire, donc tout devient flou.
 
 ## Le recentrage opérationnel : tenir sans s’user
 
-Recentrer ne veut pas dire ralentir. Cela signifie **choisir ce qui mérite encore de l’énergie**. Karim adopte alors un cadre minimaliste, pensé pour résister au chaos, pas pour l’optimiser.
+Recentrer ne veut pas dire ralentir, mais **choisir ce qui mérite encore de l’énergie**. Karim adopte alors un cadre minimaliste, pensé pour résister au chaos, pas pour l’optimiser.
 
 Ce cadre repose sur un triptyque simple.
 
@@ -58,9 +58,6 @@ Tenir dans la durée implique d’accepter que tout ne soit pas fait. Et que ce 
 
 ## Une routine, pas une performance
 
-Cette routine minimale ne cherche pas l’excellence. Elle vise la **constance**. Elle permet de traverser les périodes de rush sans s’épuiser, en maintenant un cap lisible.
+Cette routine minimale ne cherche pas l’excellence, elle vise la **constance** : traverser les périodes de rush sans s’épuiser, en maintenant un cap lisible. Quand tout s’agite autour, ce cadre devient un point fixe — et c’est souvent tout ce dont on a besoin pour tenir.
 
-Quand tout s’agite autour, ce cadre devient un point fixe. Et c’est souvent tout ce dont on a besoin pour tenir.
-
-La question à se poser n’est donc pas “comment faire plus”, mais celle-ci :  
-**cette semaine, quelles sont mes trois priorités, quelle action visible je produis chaque jour, et quel temps suis-je prêt à protéger pour y parvenir ?**
+La bonne question n’est pas « comment faire plus », mais : cette semaine, quelles sont mes trois priorités, quelle action visible je produis chaque jour, et quel temps suis-je prêt à protéger pour y parvenir ?

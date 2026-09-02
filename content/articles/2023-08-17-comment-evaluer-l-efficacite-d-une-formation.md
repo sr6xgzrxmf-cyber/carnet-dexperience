@@ -19,9 +19,7 @@ La phrase revient souvent à la fin d’une formation.
 
 Elle fait plaisir, bien sûr. Elle rassure aussi un peu. La salle a suivi, les échanges étaient bons, l’ambiance correcte, les participants repartent avec une impression positive. Mais si l’on s’arrête là, on confond vite satisfaction et efficacité.
 
-Or une formation peut être agréable, dense, stimulante… et laisser très peu de traces dans le travail réel.
-
-La vraie question commence après le “c’était très bien”.
+Or une formation peut être agréable, dense, stimulante… et laisser très peu de traces dans le travail réel. L’évaluation qui compte commence après le « c’était très bien ».
 
 ## Ce qu’on cherche vraiment à savoir
 
@@ -135,15 +133,13 @@ Quelques erreurs reviennent souvent :
 
 Une bonne évaluation n’est pas une démonstration forcée. C’est une lecture honnête de ce qui a changé, et de ce qui n’a pas encore pris.
 
-## La vraie question
+## Ce qui a changé, pas ce qui a plu
 
-Évaluer l’efficacité d’une formation, ce n’est pas défendre la formation à tout prix. C’est se donner les moyens de distinguer :
+Évaluer l’efficacité d’une formation, ce n’est pas la défendre à tout prix. C’est se donner les moyens de distinguer :
 
 - ce qui a réellement servi ;
 - ce qui était intéressant mais peu transférable ;
 - ce qui doit être repris autrement ;
 - ce qui aurait dû être travaillé ailleurs que dans un dispositif de formation.
 
-Au fond, la question n’est peut-être pas : la formation a-t-elle été bonne ?
-
-La vraie question est plutôt : qu’est-ce qui est devenu plus juste, plus clair ou plus maîtrisé dans le travail après son passage ?
+Au fond, la question n’est pas de savoir si la formation a été bonne, mais ce qui est devenu plus juste, plus clair ou plus maîtrisé dans le travail après son passage.

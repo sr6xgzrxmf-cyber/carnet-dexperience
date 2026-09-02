@@ -35,10 +35,7 @@ On peut montrer qu’il existe :
 - des sessions régulières ;
 - des statistiques de complétion.
 
-Mais un catalogue dit très peu de choses sur la compétence réellement produite.
-
-Il montre une offre.
-Il ne montre pas encore une transformation.
+Mais un catalogue dit très peu de choses sur la compétence réellement produite : il montre une offre, pas encore une transformation.
 
 ## L’écart classique
 
@@ -63,10 +60,7 @@ et qu’on commence à demander :
 
 « Qu’est-ce que les personnes doivent être capables de faire un peu mieux, un peu plus juste, un peu plus vite, dans le réel ? »
 
-Cette question change tout.
-
-On ne part plus d’un stock de contenus.
-On part d’une compétence cible.
+Cette question change tout : on ne part plus d’un stock de contenus, on part d’une compétence cible.
 
 ## Ce que cela change dans la conception
 

@@ -12,14 +12,9 @@ series:
 
 ## Ce que j’aurais pu faire
 
-J’aurais pu fermer une partie du site.
-J’aurais pu mettre davantage d’appels à action.
-J’aurais pu pousser plus fort l’inscription, la capture, la conversion.
-J’aurais pu écrire plus court, plus vite, plus “efficace”.
+J’aurais pu fermer une partie du site, mettre davantage d’appels à l’action, pousser plus fort l’inscription, la capture, la conversion, écrire plus court, plus vite, plus « efficace ». Beaucoup de ces choix auraient sans doute eu leur logique, et amélioré certains indicateurs.
 
-Beaucoup de ces choix auraient sans doute eu leur logique. Ils auraient peut-être même amélioré certains indicateurs.
-
-Mais à un moment, j’ai compris qu’un média ne se définit pas seulement par ce qu’il construit. Il se définit aussi par ce qu’il refuse d’ajouter.
+Mais à un moment, j’ai compris qu’un média ne se définit pas seulement par ce qu’il construit : il se définit aussi par ce qu’il refuse d’ajouter.
 
 ## Le faux luxe du “tout est possible”
 
@@ -93,11 +88,7 @@ Je ne pense pas que ces choix soient mauvais en soi. Je pense simplement qu’il
 
 ## Le rôle du refus
 
-Refuser n’est pas ici une posture morale.
-
-C’est une manière de garder l’espace habitable.
-
-Chaque refus :
+Refuser n’est pas ici une posture morale, c’est une manière de garder l’espace habitable. Chaque refus :
 
 - protège une cohérence ;
 - clarifie la promesse implicite ;
@@ -108,22 +99,8 @@ Dans un projet éditorial, le non n’est pas un frein. C’est souvent une arch
 
 ## Ce que cela filtre
 
-En pratique, ce cadre trie déjà beaucoup de choses.
+En pratique, ce cadre trie déjà beaucoup de choses. Certaines personnes lisent et s’en vont ; d’autres comprennent immédiatement qu’elles n’entrent pas dans ce type de rythme ; d’autres encore restent précisément parce que le lieu n’essaie pas de les capturer. Ce filtrage n’est pas un dommage collatéral, il fait partie du projet.
 
-Certaines personnes lisent et s’en vont.
-D’autres comprennent immédiatement qu’elles n’entrent pas dans ce type de rythme.
-D’autres encore restent précisément parce que le lieu n’essaie pas de les capturer.
+## Les « oui » faciles et les « non » clairs
 
-Ce filtrage n’est pas un dommage collatéral. Il fait partie du projet.
-
-## La vraie question
-
-Construire un média, ce n’est pas seulement demander :
-
-qu’est-ce que je veux montrer ?
-
-C’est aussi demander :
-
-qu’est-ce que je dois refuser pour que ce que je montre reste fidèle à ce que je suis en train de bâtir ?
-
-Dans ce que tu construis toi-même, quels “oui” faciles commencent peut-être à coûter plus cher que les “non” clairs que tu n’as pas encore formulés ?
+Construire un média, ce n’est pas seulement demander « qu’est-ce que je veux montrer ? », c’est aussi demander « qu’est-ce que je dois refuser pour que ce que je montre reste fidèle à ce que je suis en train de bâtir ? ». Dans ce que tu construis toi-même, quels « oui » faciles commencent peut-être à coûter plus cher que les « non » clairs que tu n’as pas encore formulés ?

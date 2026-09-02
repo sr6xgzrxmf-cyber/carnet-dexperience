@@ -23,29 +23,26 @@ Pourtant, le bilan est une opportunité rare : montrer non pas ce que tu as fait
 
 ## Passer de la justification à la trajectoire
 
-Un bilan professionnel efficace ne cherche pas à prouver qu’on avait raison. Il montre qu’on a compris, ajusté, et avancé. La clé est là : faire apparaître une trajectoire lisible, pas une défense argumentée.
-
-Karim apprend à structurer ses mails autour d’une trame simple, toujours la même, qui sécurise la posture et facilite la lecture.
+Un bilan efficace ne cherche pas à prouver qu’on avait raison, il montre qu’on a compris, ajusté, avancé. La clé est là : faire apparaître une trajectoire lisible, pas une défense argumentée. Karim apprend à structurer ses mails autour d’une trame simple, toujours la même, qui sécurise la posture et facilite la lecture.
 
 ## La trame en cinq temps
 
-D’abord, le point de départ. Où en étais-tu ? Quelle était la situation initiale, sans l’enjoliver ni la minimiser.  
-Ensuite, les conseils reçus. Ce que le manager ou l’environnement a pointé, demandé, suggéré. Les citer explicitement montre que le message a été entendu.  
-Puis les changements opérés. Ce que tu as concrètement modifié dans ta manière de faire, d’organiser, de communiquer.  
-Viennent ensuite les résultats. Pas forcément spectaculaires, mais observables : ce qui a évolué, ce qui commence à fonctionner différemment.  
-Enfin, la consolidation. Ce que tu proposes pour la suite : maintenir, ajuster, approfondir.
+1. **Point de départ.** Où en étais-tu ? La situation initiale, sans l’enjoliver ni la minimiser.
+2. **Conseils reçus.** Ce que le manager ou l’environnement a pointé, demandé, suggéré. Les citer explicitement montre que le message a été entendu.
+3. **Changements opérés.** Ce que tu as concrètement modifié dans ta manière de faire, d’organiser, de communiquer.
+4. **Résultats.** Pas forcément spectaculaires, mais observables : ce qui a évolué, ce qui commence à fonctionner différemment.
+5. **Consolidation.** Ce que tu proposes pour la suite : maintenir, ajuster, approfondir.
 
-Formulé simplement, cela donne :  
-« Point de départ : … / Conseils reçus : … / Changements : … / Résultats : … / Suite proposée : … »
+Formulé simplement : « Point de départ : … / Conseils reçus : … / Changements : … / Résultats : … / Suite proposée : … »
 
 ## Pourquoi cette trame fonctionne
 
 Cette structure désamorce la plupart des tensions. Elle montre de l’écoute sans soumission, de l’action sans agitation, et de la lucidité sans auto-flagellation. Le manager n’a plus besoin de relancer pour comprendre où tu en es.
 
-Surtout, elle appelle naturellement une réponse utile. Puisque tu proposes une suite, tu ouvres un espace de validation, d’ajustement ou de décision. Le bilan devient un outil de pilotage, pas un exercice scolaire.
+Surtout, elle appelle naturellement une réponse utile : puisque tu proposes une suite, tu ouvres un espace de validation, d’ajustement ou de décision. Le bilan devient un outil de pilotage, pas un exercice scolaire.
 
 ## Un mail qui prépare la prochaine étape
 
-Avec cette trame, Karim constate un changement net : les réponses deviennent plus précises, plus engageantes. Le dialogue progresse. Le bilan n’est plus un point final, mais un tremplin.
+Avec cette trame, Karim constate un changement net : les réponses deviennent plus précises, plus engageantes, le dialogue progresse. Le bilan n’est plus un point final, mais un tremplin.
 
-La vraie question à se poser est donc simple : quand tu fais un bilan, cherches-tu à expliquer le passé — ou à rendre visible le chemin que tu es en train de construire ?
+Quand tu fais un bilan, l’enjeu n’est pas d’expliquer le passé, mais de rendre visible le chemin que tu es en train de construire.

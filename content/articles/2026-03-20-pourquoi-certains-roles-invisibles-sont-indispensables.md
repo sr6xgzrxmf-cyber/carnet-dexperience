@@ -23,13 +23,14 @@ Sur le terrain, d’autres rôles existent. Ils n’ont pas de titre clair, parf
 
 ## Les rôles que personne n’a officiellement demandés
 
-Karim observe toujours les mêmes figures revenir, quels que soient les contextes :  
-celui qui reformule quand tout le monde parle à côté,  
-celle qui apaise une réunion tendue,  
-celui qui rend un outil compréhensible,  
-celle qui relie des équipes qui ne se parlent plus.
+Karim observe toujours les mêmes figures revenir, quels que soient les contextes :
 
-Ces rôles n’apparaissent dans aucun organigramme. Et pourtant, ils sont indispensables.
+- celui qui reformule quand tout le monde parle à côté,
+- celle qui apaise une réunion tendue,
+- celui qui rend un outil compréhensible,
+- celle qui relie des équipes qui ne se parlent plus.
+
+Ces rôles n’apparaissent dans aucun organigramme, et pourtant ils sont indispensables.
 
 ## Invisibles ne veut pas dire accessoires
 
@@ -45,7 +46,6 @@ Le problème n’est pas l’absence de compétences. C’est l’absence de **l
 
 ## Lire autrement la valeur
 
-Reconnaître ces rôles, c’est accepter que la valeur ne se mesure pas uniquement en production directe. C’est comprendre que certaines fonctions existent pour **permettre** le travail des autres.
+Reconnaître ces rôles, c’est accepter que la valeur ne se mesure pas uniquement en production directe : certaines fonctions existent pour **permettre** le travail des autres.
 
-La vraie question à se poser n’est donc pas “qui fait quoi”, mais celle-ci :  
-**quels rôles rendent le système viable au quotidien, même s’ils ne sont jamais formalisés ?**
+La question n’est pas « qui fait quoi », mais : quels rôles rendent le système viable au quotidien, même s’ils ne sont jamais formalisés ?

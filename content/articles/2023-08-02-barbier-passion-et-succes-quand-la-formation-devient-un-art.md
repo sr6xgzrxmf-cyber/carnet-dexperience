@@ -87,8 +87,7 @@ Ce n’est pas seulement un mauvais choix individuel. C’est souvent une faible
 
 Le succès professionnel devient vite un mot creux si l’on n’accepte pas qu’il désigne des choses différentes selon les personnes.
 
-Pour certains, progresser veut dire prendre plus de pouvoir.
-Pour d’autres, cela veut dire gagner en liberté, en maîtrise, en réputation, en finesse de geste ou en qualité de relation.
+Pour certains, progresser veut dire prendre plus de pouvoir ; pour d’autres, gagner en liberté, en maîtrise, en réputation, en finesse de geste ou en qualité de relation.
 
 Ce n’est pas moins ambitieux. C’est simplement une autre grammaire de la réussite.
 
@@ -105,4 +104,4 @@ Tant qu’une seule de ces voies est racontée comme la vraie progression, beauc
 
 Ce jour-là, chez le barbier, la discussion ne parlait pas seulement de coiffure. Elle parlait de ce que nos organisations savent reconnaître, et de ce qu’elles poussent parfois à quitter trop vite.
 
-Quand tu observes une “évolution de carrière”, vois-tu une progression réelle… ou simplement un déplacement vers le seul modèle de réussite que l’organisation sait encore raconter ?
+Quand tu observes une « évolution de carrière », y vois-tu une progression réelle, ou un simple déplacement vers le seul modèle de réussite que l’organisation sait encore raconter ?

@@ -113,8 +113,8 @@ La résistance commence souvent à diminuer quand les personnes sentent trois ch
 
 À partir de là, la discussion devient beaucoup plus honnête. On ne vend plus un dispositif. On accompagne un passage.
 
-## La vraie question
+## Un signal, pas un blocage
 
 Résister au changement n’est pas forcément s’opposer au progrès. C’est parfois signaler que le passage proposé est trop flou, trop coûteux ou trop peu relié au réel.
 
-Quand tu rencontres de la résistance dans une formation, est-ce que tu y vois d’abord un manque d’ouverture… ou un message sur ce que le dispositif n’a pas encore réussi à sécuriser ?
+Face à une résistance, je gagne du temps à la lire comme un renseignement plutôt que comme un défaut de caractère. Elle m’indique presque toujours ce que le dispositif n’a pas encore réussi à sécuriser.

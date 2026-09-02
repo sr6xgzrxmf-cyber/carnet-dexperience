@@ -93,10 +93,8 @@ Ce qu’ils rejettent, ce n’est pas le jeu. C’est le dispositif creux qui ch
 
 C’est probablement le point le plus important. Le ludique n’est pas l’ennemi de l’exigence. Il peut au contraire rendre cette exigence plus praticable.
 
-Une séquence bien conçue peut être à la fois sérieuse, précise, structurée et agréable à vivre. Elle peut faire travailler sans écraser. Elle peut mettre au défi sans humilier.
+Une séquence bien conçue peut être à la fois sérieuse, précise, structurée et agréable à vivre : elle peut faire travailler sans écraser, mettre au défi sans humilier.
 
-La vraie question n’est donc pas : faut-il ou non gamifier ?
+La question n’est donc pas de savoir s’il faut gamifier, mais comment utiliser certaines mécaniques du jeu pour rendre le travail plus impliquant, sans trahir le sujet.
 
-La vraie question est : de quelle manière puis-je utiliser certaines mécaniques du jeu pour rendre le travail plus impliquant, sans trahir le sujet ?
-
-Dans tes formations, quand tu rends une séquence plus ludique, est-ce que tu aides vraiment les participants à mieux travailler… ou est-ce que tu essaies surtout de compenser un cadre pédagogique encore trop faible ?
+Quand tu rends une séquence plus ludique, aides-tu vraiment les participants à mieux travailler, ou cherches-tu surtout à compenser un cadre pédagogique encore trop faible ?

@@ -78,8 +78,8 @@ Quand une erreur devient analysable, elle redevient formatrice. Quand elle reste
 
 Une bonne séquence pour adultes ne devrait pas seulement transmettre une idée. Elle devrait produire un mouvement : un problème mieux vu, une hypothèse reformulée, une pratique testée, un réflexe remis en cause.
 
-Le contenu compte, bien sûr. Mais le contenu seul ne suffit pas. Il faut une prise. Une tâche. Une décision. Un point de friction. Quelque chose qui oblige à sortir du simple acquiescement.
+Le contenu compte, bien sûr, mais il ne suffit pas seul. Il faut une prise : une tâche, une décision, un point de friction — quelque chose qui oblige à sortir du simple acquiescement.
 
 C’est souvent comme ça que l’apprentissage devient mémorable : quand une idée s’accroche à un problème traversé ensemble, parfois avec sérieux, parfois avec un éclat de rire au bon moment.
 
-Dans tes formations, est-ce que les adultes ont surtout des choses à écouter, ou de vrais problèmes à travailler ?
+Dans tes formations, les adultes ont-ils surtout des choses à écouter, ou de vrais problèmes à travailler ?

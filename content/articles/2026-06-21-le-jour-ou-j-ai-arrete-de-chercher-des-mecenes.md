@@ -31,9 +31,7 @@ La colonne “mécènes” dans notre tableau était vide. C’était devenu mon
 
 ## Ce que la recherche de mécénat m’a forcé à apprendre
 
-Très vite, la réalité m’a rattrapé. Les entreprises ne répondent pas toujours. Les budgets sont serrés. Les circuits internes prennent du temps. Les réponses positives ne signifient pas nécessairement un engagement. Les refus ne ferment pas toujours la relation.
-
-Autrement dit, je ne cherchais pas seulement des fonds. J’apprenais à :
+Très vite, la réalité m’a rattrapé : les entreprises ne répondent pas toujours, les budgets sont serrés, les circuits internes prennent du temps. Un « oui » ne vaut pas engagement, un refus ne ferme pas toujours la relation. Je ne cherchais pas seulement des fonds — j’apprenais à :
 
 - relancer sans m’épuiser,
 - lire les engagements réels,
@@ -48,11 +46,7 @@ Le mécénat cessait d’être une simple question d’argent. Il devenait une �
 
 Progressivement, d’autres leviers sont apparus. Nous avons activé les médias. Des journalistes de France 3 et du Progrès se sont intéressés à l’aventure. Nous avons lancé des actions sur les réseaux sociaux, créé des QR codes, transformé les choristes en ambassadeurs. Nous avons parlé au CSE, identifié des relais internes dans des entreprises, envoyé des vidéos, des affiches et des témoignages.
 
-Sans l’avoir nommé tout de suite, j’étais en train de faire autre chose que de chercher un chèque.
-
-Je construisais un écosystème.
-
-Chaque refus ouvrait parfois un autre type d’accès. Chaque contact élargissait le cercle. Chaque silence m’obligeait à tenir la note un peu plus longtemps. Le travail n’était plus de collectionner des réponses, mais de faire circuler le projet dans des espaces où je n’étais pas toujours présent : un fil Instagram, une newsletter d’entreprise, une discussion d’équipe, une recommandation interne.
+Sans l’avoir nommé tout de suite, je faisais autre chose que chercher un chèque : je construisais un écosystème. Chaque refus ouvrait parfois un autre type d’accès, chaque contact élargissait le cercle, chaque silence m’obligeait à tenir la note un peu plus longtemps. Le travail n’était plus de collectionner des réponses, mais de faire circuler le projet dans des espaces où je n’étais pas toujours présent : un fil Instagram, une newsletter d’entreprise, une discussion d’équipe, une recommandation interne.
 
 ## Le soir du concert, le résultat était ailleurs
 
@@ -70,6 +64,4 @@ Avec le recul, je comprends que “chercher des mécènes” était un point de 
 
 L’argent est resté nécessaire. On ne produit pas un concert sans moyens. Mais il a cessé d’être le seul baromètre. Ce qui comptait vraiment, c’était de créer les conditions pour que le projet vive au-delà de nos propres limites : un réseau, des relais, des personnes qui s’approprient l’histoire et la transmettent.
 
-Le concert du 6 juin n’était pas une clôture. C’était la manifestation visible d’une transformation plus silencieuse : passer de la quête de ressources à la construction d’un système vivant.
-
-Quand tu crois chercher des moyens pour faire avancer un projet, es-tu peut-être déjà en train de construire l’écosystème dont il a besoin ?
+Le concert du 6 juin n’était pas une clôture, mais la manifestation visible d’une transformation plus silencieuse : passer de la quête de ressources à la construction d’un système vivant. On croit souvent chercher des moyens pour un projet, alors qu’on est déjà en train de bâtir l’écosystème dont il aura besoin pour tenir sans nous.

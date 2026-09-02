@@ -54,12 +54,7 @@ Mais cet atout n’apparaît que si le contenu est pensé comme un point d’app
 
 ## Le piège classique : numériser sans éditorialiser
 
-Beaucoup de dispositifs échouent parce qu’ils transposent en ligne des contenus qui n’étaient déjà pas très solides hors ligne.
-
-On met des PDF sur une plateforme.
-On ajoute quelques vidéos.
-On produit des quiz de vérification.
-Et l’on espère que la seule accessibilité numérique suffira à créer de l’engagement.
+Beaucoup de dispositifs échouent parce qu’ils transposent en ligne des contenus qui n’étaient déjà pas très solides hors ligne. On met des PDF sur une plateforme, on ajoute quelques vidéos, on produit des quiz de vérification, et l’on espère que la seule accessibilité numérique suffira à créer de l’engagement.
 
 En réalité, le numérique rend simplement plus visible la faiblesse éditoriale quand elle existe déjà.
 
@@ -105,6 +100,4 @@ Là, le digital devient un levier. Pas avant.
 
 ## La vraie ligne de partage
 
-Le sujet n’est donc pas de savoir si la formation doit devenir digitale. Cette bascule a déjà eu lieu.
-
-La vraie question est plus exigeante : le numérique aide-t-il ici à apprendre mieux, plus vite, plus justement… ou sert-il surtout à rendre plus moderne une offre qui n’a pas encore trouvé son utilité ?
+Le sujet n’est pas de savoir si la formation doit devenir digitale : cette bascule a déjà eu lieu. La question plus exigeante est : le numérique aide-t-il ici à apprendre mieux, plus vite, plus justement, ou sert-il surtout à rendre plus moderne une offre qui n’a pas encore trouvé son utilité ?

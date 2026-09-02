@@ -93,15 +93,10 @@ Le laissez-faire séduit parce qu’il semble proposer une solution élégante �
 
 Mais il séduit parfois aussi pour une mauvaise raison : il permet de ne pas affronter la difficulté du management réel.
 
-Laisser faire peut être une marque de confiance.
-Cela peut aussi être une manière de ne pas cadrer, de ne pas arbitrer, de ne pas recadrer.
+Laisser faire peut être une marque de confiance. Ce peut aussi être une manière de ne pas cadrer, de ne pas arbitrer, de ne pas recadrer.
 
-## La bonne question à se poser
+## Ce qui rend la liberté possible
 
-Quand une équipe fonctionne en mode très autonome, la question n’est pas seulement “jusqu’où peut-on lui laisser de la liberté ?”
+Quand une équipe fonctionne en mode très autonome, la question n’est pas seulement « jusqu’où peut-on lui laisser de la liberté ? », mais « qu’est-ce qui tient déjà assez bien pour rendre cette liberté possible ? ». Si la réponse est floue, il y a de fortes chances que l’autonomie affichée repose surtout sur de la compensation silencieuse côté équipe.
 
-La vraie question est peut-être : qu’est-ce qui tient déjà suffisamment bien pour rendre cette liberté possible ?
-
-Si la réponse est floue, il y a de fortes chances que l’autonomie affichée repose surtout sur de la compensation silencieuse côté équipe.
-
-Dans les environnements que tu observes, l’autonomie est-elle construite… ou simplement supposée ?
+Dans les environnements que tu observes, l’autonomie est-elle construite, ou simplement supposée ?

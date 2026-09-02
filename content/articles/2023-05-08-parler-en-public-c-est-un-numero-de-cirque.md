@@ -96,12 +96,6 @@ C’est pour cela qu’un intervenant vivant, légèrement imparfait mais habit�
 
 À la fin, la prise de parole ne consiste pas à effacer le trac. Elle consiste à ne plus lui obéir entièrement.
 
-Le trac peut rester.
-La voix peut bouger un peu.
-Une phrase peut sortir moins bien.
+Le trac peut rester, la voix peut bouger un peu, une phrase peut sortir moins bien. Mais si la personne tient, reprend, continue, alors quelque chose se transforme : elle ne cherche plus à paraître sans faille, elle commence à parler depuis un endroit plus vrai. Et c’est souvent là qu’on écoute vraiment.
 
-Mais si la personne tient, reprend, continue, alors quelque chose se transforme : elle ne cherche plus à paraître sans faille. Elle commence à parler depuis un endroit plus vrai.
-
-Et c’est souvent là que l’on écoute vraiment.
-
-Quand tu prends la parole, qu’est-ce que tu essaies le plus de protéger : ton message, ou ton image ?
+Quand tu prends la parole, à quoi tiens-tu le plus : à faire passer ton message, ou à protéger ton image ?

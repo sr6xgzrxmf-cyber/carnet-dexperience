@@ -21,8 +21,7 @@ series:
 
 Des noms, des relances, des suivis, des “à reprendre”, des “peut-être plus tard”, des “je reviens vers vous”, des silences qui durent depuis des semaines. Tout reste ouvert, donc tout continue d’occuper une partie de l’attention.
 
-On appelle parfois cela de la persévérance.
-Souvent, c’est surtout une difficulté à décider qu’un cycle est terminé.
+On appelle parfois cela de la persévérance. Souvent, c’est surtout une difficulté à décider qu’un cycle est terminé.
 
 ## Pourquoi on relance trop longtemps
 
@@ -55,12 +54,7 @@ Continuer à relancer au-delà d’un cycle lisible ne produit pas forcément pl
 
 ## S’arrêter n’est pas renoncer
 
-J’aime bien cette distinction :
-
-renoncer, c’est lâcher sans avoir vraiment piloté ;
-s’arrêter, c’est fermer une boucle après avoir fait ce qui devait être fait.
-
-Quand une séquence de relance a été claire, datée, propre, cohérente, l’arrêt devient une décision de gestion.
+Une distinction utile : renoncer, c’est lâcher sans avoir vraiment piloté ; s’arrêter, c’est fermer une boucle après avoir fait ce qui devait être fait. Quand une séquence de relance a été claire, datée, propre, cohérente, l’arrêt devient une décision de gestion.
 
 On ne jette pas le contact. On change simplement son statut.
 
@@ -87,8 +81,7 @@ Il faut un cadre :
 - une dernière formulation claire ;
 - puis une décision.
 
-Sans cadre, l’arrêt ressemble à de la fatigue.
-Avec un cadre, il ressemble à du pilotage.
+Sans cadre, l’arrêt ressemble à de la fatigue ; avec un cadre, il ressemble à du pilotage.
 
 ## La bonne fermeture
 
