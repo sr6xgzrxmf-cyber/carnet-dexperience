@@ -1,6 +1,7 @@
 ---
 title: "Une bonne pratique vaut davantage quand elle circule"
-date: 2026-09-02
+cover: /images/articles/2026-09-09-une-bonne-pratique-vaut-davantage-quand-elle-circule.jpg
+date: 2026-09-09
 excerpt: "Féliciter une réussite est agréable. Comprendre comment elle s'est produite et permettre aux autres de s'en emparer peut transformer une reconnaissance individuelle en apprentissage collectif."
 series:
   name: Ce qui donne de la valeur à une vente

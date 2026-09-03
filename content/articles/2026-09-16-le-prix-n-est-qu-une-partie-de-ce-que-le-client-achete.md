@@ -1,6 +1,7 @@
 ---
 title: "Le prix n'est qu'une partie de ce que le client achète"
-date: 2026-09-03
+cover: /images/articles/2026-09-16-le-prix-n-est-qu-une-partie-de-ce-que-le-client-achete.jpg
+date: 2026-09-16
 excerpt: "Quand deux propositions semblent comparables, réduire la discussion au prix peut faire oublier ce que l'entreprise cherche réellement à sécuriser : du temps, de la continuité, du service et parfois de la tranquillité."
 series:
   name: Ce qui donne de la valeur à une vente

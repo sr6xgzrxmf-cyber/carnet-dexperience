@@ -1,6 +1,7 @@
 ---
 title: "La vente est terminée. Le service commence."
-date: 2026-09-05
+cover: /images/articles/2026-09-30-la-vente-est-terminee-le-service-commence.jpg
+date: 2026-09-30
 excerpt: "Signer une commande prouve qu'un client a choisi une solution. Cela ne prouve pas encore que cette solution fonctionnera dans son quotidien."
 series:
   name: Ce qui donne de la valeur à une vente

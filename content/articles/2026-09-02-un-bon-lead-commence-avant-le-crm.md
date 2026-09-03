@@ -1,6 +1,7 @@
 ---
 title: "Un bon lead commence avant le CRM"
-date: 2026-09-01
+cover: /images/articles/2026-09-02-un-bon-lead-commence-avant-le-crm.jpg
+date: 2026-09-02
 excerpt: "Une opportunité commerciale ne commence pas au premier appel. Elle commence souvent quelques minutes plus tôt, lorsqu'une personne prend le temps d'observer, de questionner et de transmettre ce qu'elle a compris."
 series:
   name: Ce qui donne de la valeur à une vente

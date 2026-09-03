@@ -1,6 +1,7 @@
 ---
 title: "Quand l'environnement entre réellement dans la décision"
-date: 2026-09-04
+cover: /images/articles/2026-09-23-quand-l-environnement-entre-reellement-dans-la-decision.jpg
+date: 2026-09-23
 excerpt: "Un engagement environnemental peut rester un discours de marque. Il devient beaucoup plus intéressant lorsqu'un client commence à l'utiliser comme un véritable critère d'arbitrage."
 series:
   name: Ce qui donne de la valeur à une vente
