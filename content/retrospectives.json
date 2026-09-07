@@ -14,7 +14,8 @@
     "triangles-equilibre": "Quatre textes pour comprendre pourquoi une décision, une formation ou un projet peuvent sembler justes sans encore tenir dans la réalité. Cette série relie trois conditions concrètes : donner envie d’adopter, rendre autonome et devenir lisible.",
     "former-des-adultes": "Principes, outils et situations pour concevoir, animer et améliorer l’apprentissage des adultes.",
     "relancer-decider-arreter": "Une mini-série autour de la méthode PRM : relancer sans harceler, décider sans s’épuiser, arrêter clairement.",
-    "vendre-n-est-plus-convaincre": "Une série sur la bascule du commercial vers une posture de clarification, de diagnostic et d’aide à la décision."
+    "vendre-n-est-plus-convaincre": "Une série sur la bascule du commercial vers une posture de clarification, de diagnostic et d’aide à la décision.",
+    "triangles-arbitrage": "Sept situations où il faut choisir : une décision, une formation, un briefing, un renfort d’été ne peuvent pas tout garder. Cette série rend visibles les renoncements — ce qu’on gagne d’un côté, ce qu’on perd de l’autre, et ce qu’on ne peut pas tenir en même temps."
   },
   "featuredSeriesTeasers": {
     "atelier-de-posture": {
@@ -41,6 +42,10 @@
     },
     "vendre-n-est-plus-convaincre": {
       "benefit": "Une série sur la bascule du commercial vers une posture de clarification, de diagnostic et d’aide à la décision."
+    },
+    "triangles-arbitrage": {
+      "benefit": "Pour voir comment je rends explicites les arbitrages d’une décision : ce qu’on garde, ce qu’on lâche, et ce qu’on ne peut pas avoir en même temps.",
+      "forWhom": "Une bonne entrée si vous devez prioriser des moyens, des formats ou des objectifs sous contrainte."
     }
   }
 }
