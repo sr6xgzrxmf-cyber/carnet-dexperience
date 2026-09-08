@@ -17,12 +17,16 @@ export default function TrackingConsentBanner() {
     } else window.dispatchEvent(new Event("cde-tracking-consent"));
     setVisible(false);
   }
-  return <aside aria-label="Choix de mesure d’audience" className="fixed inset-x-4 bottom-4 z-[100] mx-auto max-w-2xl rounded-2xl border border-neutral-300 bg-white p-5 shadow-2xl dark:border-neutral-700 dark:bg-neutral-950">
-    <p className="font-semibold">Mesure d’audience anonyme</p>
-    <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Avec votre accord, ce site distingue les visites pendant 30 jours et mesure les pages lues, la durée, le défilement et les clics. Aucune adresse IP n’est conservée. <Link className="underline" href="/confidentialite">En savoir plus</Link></p>
-    <div className="mt-4 flex flex-wrap gap-3">
-      <button type="button" onClick={() => choose("accepted")} className="rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-semibold text-white dark:bg-neutral-100 dark:text-neutral-900">Accepter</button>
-      <button type="button" onClick={() => choose("refused")} className="rounded-full border border-neutral-300 px-5 py-2.5 text-sm font-semibold dark:border-neutral-700">Refuser</button>
+  return <aside aria-label="Choix des cookies" className="fixed inset-x-0 bottom-0 z-[100] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur dark:border-neutral-700 dark:bg-neutral-950/95">
+    <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="max-w-3xl">
+        <p className="text-sm font-semibold">Ce site respecte votre vie privée</p>
+        <p className="mt-0.5 text-sm text-neutral-600 dark:text-neutral-400">Nous utilisons des technologies de mesure d’audience pour comprendre les visites et améliorer le site. Vos données sont conservées 30 jours et votre adresse IP n’est pas enregistrée. <Link className="whitespace-nowrap underline" href="/confidentialite">Gérer mes choix</Link></p>
+      </div>
+      <div className="flex shrink-0 flex-wrap gap-2">
+        <button type="button" onClick={() => choose("refused")} className="rounded-full border border-neutral-300 px-4 py-2 text-sm font-semibold dark:border-neutral-700">Tout refuser</button>
+        <button type="button" onClick={() => choose("accepted")} className="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white dark:bg-neutral-100 dark:text-neutral-900">Tout accepter</button>
+      </div>
     </div>
   </aside>;
 }
