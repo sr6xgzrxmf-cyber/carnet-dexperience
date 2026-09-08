@@ -19,3 +19,20 @@ model Submission {
 
   @@index([email])
 }
+
+model AnalyticsEvent {
+  id         String   @id @default(uuid())
+  createdAt  DateTime @default(now())
+  kind       String
+  eventType  String
+  sessionId  String?
+  path       String
+  referrer   String?
+  source     String?
+  userAgent  String?
+  metadata   Json     @default("{}")
+
+  @@index([createdAt])
+  @@index([kind, createdAt])
+  @@index([sessionId, createdAt])
+}

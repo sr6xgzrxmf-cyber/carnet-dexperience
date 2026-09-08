@@ -76,6 +76,14 @@ export default function ConfidentialitePage() {
           GitHub pour les commentaires, appliquent leurs propres règles de
           confidentialité.
         </p>
+        <p>
+          Le site conserve également, pendant la session du navigateur, un
+          identifiant aléatoire afin de comprendre l’enchaînement anonyme des
+          pages consultées et des clics. Aucune adresse IP, aucun nom et aucune
+          adresse électronique ne sont enregistrés à cette fin. Les passages de
+          robots déclarés comme services d’intelligence artificielle sont
+          comptabilisés séparément à partir de leur signature technique.
+        </p>
 
         <h2>Vos droits</h2>
         <p>

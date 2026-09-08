@@ -6,6 +6,7 @@ import SiteHeader from "@/components/SiteHeader";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import SiteFooter from "@/components/SiteFooter";
+import AnalyticsJourneyTracker from "@/components/AnalyticsJourneyTracker";
 
 const siteUrl = "https://www.carnetdexperience.fr";
 
@@ -113,6 +114,8 @@ export default function RootLayout({
         <main className="site-container py-10 sm:py-14">{children}</main>
 
         <SiteFooter />
+
+        <AnalyticsJourneyTracker />
 
         {process.env.NODE_ENV === "production" ? (
           <>

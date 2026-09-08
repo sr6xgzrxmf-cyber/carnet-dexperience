@@ -12,6 +12,7 @@ const items: Item[] = [
   { href: "/admin/series", label: "Séries" },
   { href: "/admin/retrospectives", label: "Rétrospectives" },
   { href: "/admin/calendrier", label: "Calendrier" },
+  { href: "/admin/analytics", label: "Visiteurs humains et IA" },
 ];
 
 function isActive(pathname: string, href: string) {
