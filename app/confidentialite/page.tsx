@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "@/app/editorial-system.module.css";
+import TrackingPreferences from "@/components/TrackingPreferences";
 
 export const metadata: Metadata = {
   title: "Confidentialité et données personnelles",
@@ -14,7 +15,7 @@ export default function ConfidentialitePage() {
       <header className={styles.readingHeader}>
         <p className={styles.eyebrow}>Informations et droits</p>
         <h1 className={styles.titleCompact}>Confidentialité et données personnelles</h1>
-        <p className={styles.readingMeta}>Dernière mise à jour : 24 juillet 2026</p>
+        <p className={styles.readingMeta}>Dernière mise à jour : 8 septembre 2026</p>
       </header>
 
       <div className={styles.prose}>
@@ -77,13 +78,21 @@ export default function ConfidentialitePage() {
           confidentialité.
         </p>
         <p>
-          Le site conserve également, pendant la session du navigateur, un
-          identifiant aléatoire afin de comprendre l’enchaînement anonyme des
-          pages consultées et des clics. Aucune adresse IP, aucun nom et aucune
-          adresse électronique ne sont enregistrés à cette fin. Les passages de
+          Le site conserve également un identifiant aléatoire pendant 30 jours
+          afin de distinguer anonymement un nouveau navigateur d’un navigateur
+          déjà venu et de comprendre l’enchaînement des pages consultées et des
+          clics. Les données de mesure associées sont supprimées après 30 jours.
+          Aucune adresse IP, aucun nom et aucune adresse électronique ne sont
+          enregistrés à cette fin. Les passages de
           robots déclarés comme services d’intelligence artificielle sont
           comptabilisés séparément à partir de leur signature technique.
         </p>
+        <p>
+          Ce suivi détaillé n’est activé qu’après votre accord. Vous pouvez
+          refuser ou retirer ce choix à tout moment. Le refus ne limite pas
+          l’accès au site.
+        </p>
+        <TrackingPreferences />
 
         <h2>Vos droits</h2>
         <p>

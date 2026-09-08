@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import SiteFooter from "@/components/SiteFooter";
 import AnalyticsJourneyTracker from "@/components/AnalyticsJourneyTracker";
+import TrackingConsentBanner from "@/components/TrackingConsentBanner";
 
 const siteUrl = "https://www.carnetdexperience.fr";
 
@@ -116,6 +117,7 @@ export default function RootLayout({
         <SiteFooter />
 
         <AnalyticsJourneyTracker />
+        <TrackingConsentBanner />
 
         {process.env.NODE_ENV === "production" ? (
           <>

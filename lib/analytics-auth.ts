@@ -5,6 +5,7 @@ const sign = (value: string) => process.env.ANALYTICS_AUTH_SECRET
   ? createHmac("sha256", process.env.ANALYTICS_AUTH_SECRET).update(value).digest("hex") : "";
 
 export const analyticsCookieName = () => COOKIE_NAME;
+export const analyticsClientKey = (value: string) => sign(`login:${value}`);
 export function createAnalyticsSession() {
   const expires = String(Date.now() + 1000 * 60 * 60 * 12);
   return `${expires}.${sign(expires)}`;

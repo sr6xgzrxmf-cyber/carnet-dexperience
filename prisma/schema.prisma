@@ -36,3 +36,12 @@ model AnalyticsEvent {
   @@index([kind, createdAt])
   @@index([sessionId, createdAt])
 }
+
+model AdminLoginAttempt {
+  id        String   @id @default(uuid())
+  keyHash   String
+  createdAt DateTime @default(now())
+
+  @@index([keyHash, createdAt])
+  @@index([createdAt])
+}
