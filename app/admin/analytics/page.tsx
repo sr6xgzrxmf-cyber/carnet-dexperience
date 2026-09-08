@@ -19,9 +19,13 @@ export default async function AnalyticsDashboard() {
     prisma.analyticsEvent.findMany({ where: { kind: "ai_referral", eventType: "page_view", createdAt: { gte: since }, sessionId: { not: null } }, distinct: ["sessionId"], select: { sessionId: true } }),
   ]);
   const humanSessions = new Set(humanPageViews.map((event) => event.sessionId).filter(Boolean));
+  const visitorBySession = new Map(humanPageViews.flatMap((event) => {
+    const visitorId = metadata(event.metadata).visitorId;
+    return event.sessionId && typeof visitorId === "string" && visitorId ? [[event.sessionId, visitorId] as const] : [];
+  }));
   const humanVisitors = new Set(humanPageViews.map((event) => {
     const value = metadata(event.metadata).visitorId;
-    return typeof value === "string" && value ? value : event.sessionId;
+    return typeof value === "string" && value ? value : event.sessionId ? visitorBySession.get(event.sessionId) ?? event.sessionId : null;
   }).filter(Boolean));
   const journeys = new Map<string, typeof events>();
   for (const event of [...events].reverse()) {
