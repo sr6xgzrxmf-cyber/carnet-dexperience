@@ -230,6 +230,10 @@
   scrollbar-width: thin;
 }
 
+.portfolioCycle {
+  display: contents;
+}
+
 .portfolioTile {
   position: relative;
   min-width: 0;

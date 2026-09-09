@@ -11,6 +11,7 @@ type Article = {
   date: string | null;
   cover: string | null;
   effectiveStatus: string;
+  searchText: string;
 };
 
 const sizeLabels: Record<Size, string> = {
@@ -23,6 +24,8 @@ export default function HighlightsAdminPage() {
   const [items, setItems] = useState<Highlight[]>([]);
   const [articles, setArticles] = useState<Article[]>([]);
   const [selected, setSelected] = useState("");
+  const [search, setSearch] = useState("");
+  const [searchOpen, setSearchOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
@@ -47,6 +50,24 @@ export default function HighlightsAdminPage() {
     [articles]
   );
   const available = articles.filter((article) => !items.some((item) => item.slug === article.slug));
+  const searchResults = useMemo(() => {
+    const query = search
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("fr")
+      .trim();
+    if (!query) return [];
+
+    return available
+      .filter((article) => {
+        const searchable = `${article.title} ${article.slug} ${article.date ?? ""} ${article.searchText ?? ""}`
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLocaleLowerCase("fr");
+        return searchable.includes(query);
+      })
+      .slice(0, 10);
+  }, [available, search]);
 
   function update(index: number, patch: Partial<Highlight>) {
     setItems((current) => current.map((item, i) => (i === index ? { ...item, ...patch } : item)));
@@ -70,6 +91,8 @@ export default function HighlightsAdminPage() {
       { slug: selected, label: article?.effectiveStatus === "scheduled" ? "À paraître" : "Article", size: "compact", active: true },
     ]);
     setSelected("");
+    setSearch("");
+    setSearchOpen(false);
   }
 
   async function save() {
@@ -114,12 +137,63 @@ export default function HighlightsAdminPage() {
 
       <section className="rounded-2xl border border-neutral-200 bg-white/70 p-4 dark:border-neutral-800 dark:bg-neutral-950/20">
         <div className="flex flex-col gap-3 sm:flex-row">
-          <select value={selected} onChange={(event) => setSelected(event.target.value)} className="min-w-0 flex-1 rounded-xl border bg-transparent px-3 py-2 text-sm">
-            <option value="">Choisir un article…</option>
-            {available.map((article) => (
-              <option key={article.slug} value={article.slug}>{article.title} · {article.date ?? "sans date"}</option>
-            ))}
-          </select>
+          <div className="relative min-w-0 flex-1">
+            <input
+              type="search"
+              value={search}
+              role="combobox"
+              aria-label="Rechercher un article"
+              aria-expanded={searchOpen && Boolean(search.trim())}
+              aria-controls="highlight-search-results"
+              aria-autocomplete="list"
+              placeholder="Rechercher un article par titre, date ou mot-clé…"
+              onFocus={() => setSearchOpen(true)}
+              onBlur={() => setSearchOpen(false)}
+              onKeyDown={(event) => {
+                if (event.key === "Escape") setSearchOpen(false);
+                if (event.key === "Enter" && searchResults.length === 1) {
+                  event.preventDefault();
+                  setSelected(searchResults[0].slug);
+                  setSearch(searchResults[0].title);
+                  setSearchOpen(false);
+                }
+              }}
+              onChange={(event) => {
+                setSearch(event.target.value);
+                setSelected("");
+                setSearchOpen(true);
+              }}
+              className="w-full rounded-xl border bg-transparent px-3 py-2 text-sm"
+            />
+            {searchOpen && search.trim() ? (
+              <div
+                id="highlight-search-results"
+                role="listbox"
+                className="absolute z-20 mt-2 max-h-80 w-full overflow-y-auto rounded-xl border border-neutral-200 bg-white p-1 shadow-xl dark:border-neutral-700 dark:bg-neutral-950"
+              >
+                {searchResults.length ? searchResults.map((article) => (
+                  <button
+                    key={article.slug}
+                    type="button"
+                    role="option"
+                    aria-selected={selected === article.slug}
+                    onMouseDown={(event) => event.preventDefault()}
+                    onClick={() => {
+                      setSelected(article.slug);
+                      setSearch(article.title);
+                      setSearchOpen(false);
+                    }}
+                    className="block w-full rounded-lg px-3 py-2 text-left hover:bg-neutral-100 focus:bg-neutral-100 focus:outline-none dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                  >
+                    <span className="block text-sm font-medium">{article.title}</span>
+                    <span className="mt-1 block text-xs text-neutral-500">{article.date ?? "sans date"} · {article.effectiveStatus}</span>
+                  </button>
+                )) : (
+                  <p className="px-3 py-4 text-sm text-neutral-500">Aucun article trouvé.</p>
+                )}
+              </div>
+            ) : null}
+          </div>
           <button onClick={add} disabled={!selected} className="rounded-xl border px-4 py-2 text-sm font-semibold disabled:opacity-40">Ajouter</button>
         </div>
       </section>

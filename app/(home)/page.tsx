@@ -5,6 +5,7 @@ import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
 import { getArticleBySlug } from "@/lib/articles";
 import { readHomeHighlights } from "@/lib/home-highlights";
+import PortfolioLoop from "./PortfolioLoop";
 
 const situations = [
   {
@@ -132,7 +133,7 @@ export default function HomePage() {
             </div>
             <p>Faites glisser pour découvrir les articles.</p>
           </div>
-          <div className={styles.portfolioRail}>
+          <PortfolioLoop>
             {highlights.map(({ highlight, article }, index) => (
               <Fragment key={article.slug}>
                 <Link
@@ -182,7 +183,7 @@ export default function HomePage() {
                 <span className={styles.portfolioAction}>Explorer les textes et les séries →</span>
               </span>
             </Link>
-          </div>
+          </PortfolioLoop>
         </section>
       ) : null}
 

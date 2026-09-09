@@ -26,6 +26,11 @@ export async function GET() {
     cover: article.meta.cover ?? null,
     status: normalizeEditorialStatus(article.meta.status),
     effectiveStatus: effectiveEditorialStatus(article.meta.status, article.meta.date),
+    searchText: [
+      article.meta.excerpt ?? "",
+      ...(article.meta.tags ?? []),
+      article.content,
+    ].join(" "),
   }));
 
   return NextResponse.json({ items: readHomeHighlights(), articles });

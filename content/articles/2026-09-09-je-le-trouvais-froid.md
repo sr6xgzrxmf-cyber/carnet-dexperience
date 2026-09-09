@@ -1,8 +1,11 @@
 ---
-title: "Je le trouvais froid. C'est lui qui est venu m'aider."
+title: Je le trouvais froid. C'est lui qui est venu m'aider.
 cover: /images/articles/2026-09-16-je-le-trouvais-froid.jpg
-date: 2026-09-16
-excerpt: "Travailler dans plusieurs pays m'a moins appris la culture des autres que la mienne : ce que je prenais pour une manière normale de travailler n'était qu'une manière culturelle de travailler."
+date: "2026-09-09"
+excerpt: >-
+  Travailler dans plusieurs pays m'a moins appris la culture des autres que la
+  mienne : ce que je prenais pour une manière normale de travailler n'était
+  qu'une manière culturelle de travailler.
 series:
   name: Hors-série
   slug: hors-serie

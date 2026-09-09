@@ -125,6 +125,12 @@
       "label": "Données et responsabilité",
       "size": "tall",
       "active": false
+    },
+    {
+      "slug": "2026-09-16-je-le-trouvais-froid",
+      "label": "À paraître",
+      "size": "feature",
+      "active": true
     }
   ]
 }
