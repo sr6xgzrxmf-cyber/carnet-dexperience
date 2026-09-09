@@ -1,19 +1,24 @@
 ---
-cover: /images/articles/2026-10-14-quand-linsecurite-du-manager-devient-le-probleme-de-lequipe.jpg
-date: 2026-10-14
-excerpt: "Lorsqu'un manager transforme sa peur de perdre sa place en contrôle, l'équipe finit par consacrer son énergie à le rassurer. Distinguer les faits, ce qu'ils provoquent et ce qui nécessite réellement une action permet de remettre le travail au centre."
+cover: >-
+  /images/articles/2026-10-14-quand-linsecurite-du-manager-devient-le-probleme-de-lequipe.jpg
+date: "2026-10-28"
+excerpt: >-
+  Lorsqu'un manager transforme sa peur de perdre sa place en contrôle, l'équipe
+  finit par consacrer son énergie à le rassurer. Distinguer les faits, ce qu'ils
+  provoquent et ce qui nécessite réellement une action permet de remettre le
+  travail au centre.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 5
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- insécurité
-- surmanagement
-- autonomie
-- leadership
-- ted lasso
+  - management
+  - insécurité
+  - surmanagement
+  - autonomie
+  - leadership
+  - ted lasso
 title: Quand l'insécurité du manager devient le problème de l'équipe
 ---
 

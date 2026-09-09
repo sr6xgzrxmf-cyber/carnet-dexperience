@@ -1,22 +1,24 @@
 ---
-cover: /images/articles/2026-10-09-faire-avec-moins-sans-faire-comme-si-moins-suffisait.jpg
-date: 2026-10-09
-excerpt: Une contrainte peut stimuler l'inventivité. Elle ne transforme
-  pas pour autant le manque de moyens en modèle de management. À
-  Richmond, construire une équipe féminine avec moins oblige à
-  distinguer créativité, arbitrage et sous-investissement.
+cover: >-
+  /images/articles/2026-10-09-faire-avec-moins-sans-faire-comme-si-moins-suffisait.jpg
+date: "2026-10-12"
+excerpt: >-
+  Une contrainte peut stimuler l'inventivité. Elle ne transforme pas pour autant
+  le manque de moyens en modèle de management. À Richmond, construire une équipe
+  féminine avec moins oblige à distinguer créativité, arbitrage et
+  sous-investissement.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 3
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- ressources
-- arbitrage
-- transformation
-- organisation
-- ted lasso
+  - management
+  - ressources
+  - arbitrage
+  - transformation
+  - organisation
+  - ted lasso
 title: Faire avec moins sans faire comme si moins suffisait
 ---
 

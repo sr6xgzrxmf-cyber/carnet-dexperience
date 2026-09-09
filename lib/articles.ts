@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import remarkGfm from "remark-gfm";
+import { normalizeArticleDate } from "./article-date";
 
 const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
@@ -81,6 +82,9 @@ function parisTodayISO(now: Date = new Date()): string {
 function toParisISODate(input: unknown): string | null {
   if (!input) return null;
 
+  const normalized = normalizeArticleDate(input);
+  if (normalized) return normalized;
+
   if (input instanceof Date) {
     const t = input.getTime();
     if (!Number.isFinite(t)) return null;
@@ -90,23 +94,6 @@ function toParisISODate(input: unknown): string | null {
   if (typeof input === "number") {
     if (!Number.isFinite(input)) return null;
     return parisTodayISO(new Date(input));
-  }
-
-  if (typeof input === "string") {
-    const s = input.trim();
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
-    if (m) return s; // déjà canonique
-
-    const t = Date.parse(s);
-    if (!Number.isNaN(t)) return parisTodayISO(new Date(t));
-
-    return null;
-  }
-
-  if (typeof input === "object") {
-    const obj = input as { date?: unknown; value?: unknown };
-    if (typeof obj.date === "string") return toParisISODate(obj.date);
-    if (typeof obj.value === "string") return toParisISODate(obj.value);
   }
 
   return null;

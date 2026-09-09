@@ -1,12 +1,13 @@
 ---
-title: "Pourquoi les premiers utilisateurs ne suffisent pas à faire adopter un outil"
-date: "2026-09-02"
+title: Pourquoi les premiers utilisateurs ne suffisent pas à faire adopter un outil
+date: "2026-08-12"
 excerpt: >-
   Un QR code pensé pour mieux préparer les échanges inquiétait surtout les
   spécialistes. Les premiers utilisateurs n’ont pas servi à imposer l’outil,
   mais à révéler les conditions nécessaires pour que l’équipe puisse l’adopter.
-cover: /images/articles/2026-09-02-pourquoi-les-premiers-utilisateurs-ne-suffisent-pas-a-faire-adopter-un-outil.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+cover: >-
+  /images/articles/2026-09-02-pourquoi-les-premiers-utilisateurs-ne-suffisent-pas-a-faire-adopter-un-outil.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - adoption
   - changement
@@ -14,8 +15,8 @@ tags:
   - expérience client
   - accompagnement
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 1.5
 ---
 

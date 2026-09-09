@@ -1,24 +1,24 @@
 ---
-cover: /images/articles/2026-10-12-pour-casser-les-silos-donnez-leur-quelque-chose-a-resoudre-ensemble.jpg
-date: 2026-10-12
-excerpt: "Demander à des équipes de mieux collaborer ne suffit pas
-  toujours. Lorsque défenseuses, milieux et attaquantes restent entre
-  elles, Richmond expérimente une autre voie : créer une raison concrète
-  d'avoir besoin les unes des autres."
+cover: >-
+  /images/articles/2026-10-12-pour-casser-les-silos-donnez-leur-quelque-chose-a-resoudre-ensemble.jpg
+date: "2026-10-14"
+excerpt: >-
+  Demander à des équipes de mieux collaborer ne suffit pas toujours. Lorsque
+  défenseuses, milieux et attaquantes restent entre elles, Richmond expérimente
+  une autre voie : créer une raison concrète d'avoir besoin les unes des autres.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 4
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- collaboration
-- silos
-- collectif
-- coopération
-- ted lasso
-title: Pour casser les silos, donnez-leur quelque chose à résoudre
-  ensemble
+  - management
+  - collaboration
+  - silos
+  - collectif
+  - coopération
+  - ted lasso
+title: 'Pour casser les silos, donnez-leur quelque chose à résoudre ensemble'
 ---
 
 Les défenseuses restent avec les défenseuses. Les milieux avec les milieux. Les attaquantes avec les attaquantes. Tout le monde appartient pourtant à la même équipe. Même maillot. Même club. Même terrain. Même objectif général. Et malgré cela, les groupes se reforment naturellement autour de leur fonction.

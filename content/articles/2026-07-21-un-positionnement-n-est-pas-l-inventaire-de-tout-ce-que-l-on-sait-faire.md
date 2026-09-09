@@ -1,12 +1,13 @@
 ---
-title: "Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire"
-date: "2026-08-27"
+title: Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire
+date: "2026-07-21"
 excerpt: >-
   Après seize années chez Apple, je pensais disposer de toutes les preuves
   nécessaires pour expliquer ma valeur. Elles étaient si nombreuses qu’elles
   finissaient pourtant par rendre mon projet illisible.
-cover: /images/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+cover: >-
+  /images/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - positionnement
   - identité professionnelle
@@ -14,8 +15,8 @@ tags:
   - lisibilité
   - preuves
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 3
 ---
 

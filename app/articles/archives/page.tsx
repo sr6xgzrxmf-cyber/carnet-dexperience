@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
+import { normalizeArticleDate } from "@/lib/article-date";
 import styles from "@/app/editorial-system.module.css";
 
 export const metadata: Metadata = {
@@ -21,17 +22,7 @@ type ArticleMeta = {
 
 function getItemMeta(item: ArticleItem): ArticleMeta {
   const meta = item?.meta ?? {};
-  const rawDate = meta?.date;
-  const date =
-    typeof rawDate === "string"
-      ? rawDate
-      : rawDate instanceof Date
-        ? rawDate.toISOString().slice(0, 10)
-        : typeof rawDate === "number"
-          ? new Date(rawDate).toISOString().slice(0, 10)
-          : rawDate != null
-            ? String(rawDate)
-            : "";
+  const date = normalizeArticleDate(meta?.date) ?? "";
   const rawSeries =
     meta?.series && typeof meta.series === "object"
       ? (meta.series as { name?: unknown; slug?: unknown; order?: unknown })

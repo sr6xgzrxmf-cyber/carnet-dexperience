@@ -7,6 +7,7 @@ import {
   getArticleBySlug,
   isPublishedDate,
   markdownToHtml,
+  toTimestamp,
   type ArticleItem,
 } from "@/lib/articles";
 import GiscusComments from "@/components/GiscusComments";
@@ -14,6 +15,7 @@ import ShareBar from "@/components/ShareBar";
 import TrackedLink from "@/components/TrackedLink";
 import type { Metadata } from "next";
 import { getArticleThemes } from "@/lib/article-themes";
+import { normalizeArticleDate } from "@/lib/article-date";
 import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
@@ -101,16 +103,7 @@ export async function generateMetadata({
 function formatDate(
   date?: string | number | Date | { date?: unknown; value?: unknown }
 ) {
-  if (!date) return "";
-  if (typeof date === "string") return date;
-  if (typeof date === "number") return new Date(date).toISOString().slice(0, 10);
-  if (date instanceof Date) return date.toISOString().slice(0, 10);
-  if (typeof date === "object") {
-    const obj = date as { date?: unknown; value?: unknown };
-    if (typeof obj.date === "string") return obj.date;
-    if (typeof obj.value === "string") return obj.value;
-  }
-  return "";
+  return normalizeArticleDate(date) ?? "";
 }
 
 function getSeriesInfo(item: ArticleItem): {
@@ -140,9 +133,7 @@ function getSeriesInfo(item: ArticleItem): {
 }
 
 function asDateValue(date: unknown): number {
-  if (typeof date !== "string") return 0;
-  const timestamp = Date.parse(date);
-  return Number.isFinite(timestamp) ? timestamp : 0;
+  return toTimestamp(date);
 }
 
 function getSlug(item: ArticleItem): string {
@@ -179,8 +170,8 @@ export default async function ArticleDetailPage({
     "@id": `${siteUrl}/articles/${slug}#article`,
     headline: item.meta?.title ?? slug,
     description: item.meta?.excerpt ?? "",
-    datePublished: item.meta?.date ? String(item.meta.date) : undefined,
-    dateModified: item.meta?.date ? String(item.meta.date) : undefined,
+    datePublished: formatDate(item.meta?.date) || undefined,
+    dateModified: formatDate(item.meta?.updated) || formatDate(item.meta?.date) || undefined,
     mainEntityOfPage: `${siteUrl}/articles/${slug}`,
     author: { "@id": `${siteUrl}/#laurent-guyonnet` },
     publisher: { "@id": `${siteUrl}/#website` },

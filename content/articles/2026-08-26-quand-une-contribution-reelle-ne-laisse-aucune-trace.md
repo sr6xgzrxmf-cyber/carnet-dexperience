@@ -1,12 +1,13 @@
 ---
-title: "Quand une contribution réelle ne laisse aucune trace"
-date: "2026-09-04"
+title: Quand une contribution réelle ne laisse aucune trace
+date: "2026-08-26"
 excerpt: >-
   Un atelier peut rassurer, faire comprendre et préparer une décision sans
   produire de vente immédiate. Comment reconnaître ce travail quand ses effets
   se répartissent entre plusieurs moments, personnes et systèmes ?
-cover: /images/articles/2026-09-04-quand-une-contribution-reelle-ne-laisse-aucune-trace.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+cover: >-
+  /images/articles/2026-09-04-quand-une-contribution-reelle-ne-laisse-aucune-trace.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - positionnement
   - formation
@@ -14,8 +15,8 @@ tags:
   - retail
   - expérience client
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 3.5
 ---
 

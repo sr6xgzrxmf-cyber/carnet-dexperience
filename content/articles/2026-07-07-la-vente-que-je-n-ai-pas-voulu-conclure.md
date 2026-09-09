@@ -1,10 +1,11 @@
 ---
-title: "La vente que je n’ai pas voulu conclure"
-date: "2026-08-25"
+title: La vente que je n’ai pas voulu conclure
+date: "2026-07-07"
 excerpt: >-
   Le client était venu acheter vingt-quatre iPad. Je lui ai proposé de repartir
   avec deux. Ce jour-là, j’ai compris qu’un déploiement commence rarement par le
-  nombre d’appareils : il commence par le sens, la simplicité et l’accompagnement.
+  nombre d’appareils : il commence par le sens, la simplicité et
+  l’accompagnement.
 cover: /images/articles/2026-08-25-la-vente-que-je-n-ai-pas-voulu-conclure.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
@@ -14,8 +15,8 @@ tags:
   - simplicité
   - B2B
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 1
 ---
 

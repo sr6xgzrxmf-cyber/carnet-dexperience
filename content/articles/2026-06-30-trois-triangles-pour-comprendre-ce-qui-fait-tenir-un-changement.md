@@ -1,12 +1,13 @@
 ---
-title: "Trois triangles pour comprendre ce qui fait tenir un changement"
-date: "2026-08-24"
+title: Trois triangles pour comprendre ce qui fait tenir un changement
+date: "2026-06-30"
 excerpt: >-
   Une décision, une formation ou un parcours peuvent sembler solides et rester
   sans effet. Trois triangles permettent de repérer la force manquante entre
   l’intention et la réalité : adoption, autonomie et positionnement.
-cover: /images/articles/2026-08-24-trois-triangles-pour-comprendre-ce-qui-fait-tenir-un-changement.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+cover: >-
+  /images/articles/2026-08-24-trois-triangles-pour-comprendre-ce-qui-fait-tenir-un-changement.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - transformation
   - adoption
@@ -14,8 +15,8 @@ tags:
   - positionnement
   - accompagnement
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 0
 ---
 

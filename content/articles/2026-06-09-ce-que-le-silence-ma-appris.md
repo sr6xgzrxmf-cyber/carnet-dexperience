@@ -1,6 +1,6 @@
 ---
 title: Ce que le silence m’a appris
-date: "2026-06-07"
+date: "2026-06-09"
 excerpt: >-
   J’ai longtemps cru que les silences étaient des réponses. En réalité, ils
   étaient souvent des espaces que je remplissais moi-même.

@@ -4,6 +4,7 @@ import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 import { getAllArticles } from "./articles";
+import { normalizeArticleDate } from "./article-date";
 
 export type ImageReference = {
   file: string;
@@ -75,8 +76,7 @@ function toFamilyKey(fileName: string) {
 }
 
 function toArticleDate(value: unknown): string | null {
-  if (typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value)) return value;
-  return null;
+  return normalizeArticleDate(value);
 }
 
 export function getImageReviewData(): ImageReviewData {

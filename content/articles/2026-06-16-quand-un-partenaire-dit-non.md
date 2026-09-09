@@ -1,6 +1,6 @@
 ---
 title: Quand un partenaire dit non… et que ça devient une opportunité
-date: "2026-06-14"
+date: "2026-06-16"
 excerpt: >-
   Un refus ne met pas fin à une relation. Il révèle souvent ce qui est
   réellement possible — à condition de savoir le lire.

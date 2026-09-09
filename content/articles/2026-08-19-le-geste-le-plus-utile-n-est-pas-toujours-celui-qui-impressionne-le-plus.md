@@ -1,12 +1,13 @@
 ---
-title: "Le geste le plus utile n’est pas toujours celui qui impressionne le plus"
-date: "2026-09-03"
+title: Le geste le plus utile n’est pas toujours celui qui impressionne le plus
+date: "2026-08-19"
 excerpt: >-
   Une fonction spectaculaire peut séduire sans aider. Dans un Apple Store, un
   geste simple pour déplacer le curseur a parfois plus de valeur qu’une
   démonstration brillante : il permet au client de reprendre la main.
-cover: /images/articles/2026-09-03-le-geste-le-plus-utile-n-est-pas-toujours-celui-qui-impressionne-le-plus.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+cover: >-
+  /images/articles/2026-09-03-le-geste-le-plus-utile-n-est-pas-toujours-celui-qui-impressionne-le-plus.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - autonomie
   - transmission
@@ -14,8 +15,8 @@ tags:
   - retail
   - expérience client
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 2.5
 ---
 

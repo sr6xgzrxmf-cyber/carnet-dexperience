@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { listLocalArticleFiles } from "@/lib/local-article-files";
+import { normalizeArticleDate } from "@/lib/article-date";
 
 
 function isLocalRequest(req: NextRequest) {
@@ -45,7 +46,7 @@ export async function GET(req: NextRequest) {
     return {
       slug,
       title: String(data.title ?? slug),
-      date: data.date ? String(data.date).slice(0, 10) : null,
+      date: normalizeArticleDate(data.date),
       excerpt: data.excerpt ? String(data.excerpt) : null,
       cover: data.cover ? String(data.cover) : null,
       tags: Array.isArray(data.tags) ? data.tags.map((t) => String(t)) : [],

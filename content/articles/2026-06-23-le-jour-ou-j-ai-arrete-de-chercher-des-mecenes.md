@@ -1,6 +1,6 @@
 ---
 title: Le jour où j’ai arrêté de chercher des mécènes
-date: "2026-06-21"
+date: "2026-06-23"
 excerpt: >-
   Au fil des mois, le mécénat est devenu un prétexte pour bâtir un écosystème.
   Quand l’argent n’est plus la fin mais un catalyseur, l’objectif se déplace :

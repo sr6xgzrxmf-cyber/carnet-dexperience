@@ -1,22 +1,23 @@
 ---
 cover: /images/articles/2026-10-13-heureusement-que-quelquun-nest-pas-daccord.jpg
-date: 2026-10-13
-excerpt: Keeley voit immédiatement le potentiel de Zelda. Rebecca voit
-  d'abord le risque. Leur désaccord rappelle qu'une bonne équipe de
-  décision n'est pas celle où tout le monde pense pareil, mais celle où
-  des regards différents peuvent réellement améliorer l'idée.
+date: "2026-10-21"
+excerpt: >-
+  Keeley voit immédiatement le potentiel de Zelda. Rebecca voit d'abord le
+  risque. Leur désaccord rappelle qu'une bonne équipe de décision n'est pas
+  celle où tout le monde pense pareil, mais celle où des regards différents
+  peuvent réellement améliorer l'idée.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 4.1
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- décision
-- désaccord
-- collaboration
-- leadership
-- ted lasso
+  - management
+  - décision
+  - désaccord
+  - collaboration
+  - leadership
+  - ted lasso
 title: Heureusement que quelqu'un n'est pas d'accord
 ---
 

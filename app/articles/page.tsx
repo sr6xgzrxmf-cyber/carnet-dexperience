@@ -10,6 +10,7 @@ import {
 } from "@/content/editorial";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import { ARTICLE_THEMES, getArticleThemes } from "@/lib/article-themes";
+import { normalizeArticleDate } from "@/lib/article-date";
 import type { Metadata } from "next";
 import ArticlesCatalog from "./_components/ArticlesCatalog";
 import styles from "@/app/editorial-system.module.css";
@@ -51,17 +52,7 @@ function normalizeCoverSrc(cover: unknown): string | null {
 function getItemMeta(item: ArticleItem): ArticleMeta {
   const m = item?.meta ?? {};
   const tags = Array.isArray(m?.tags) ? m.tags.map(String) : [];
-  const rawDate = m?.date;
-  const date =
-    typeof rawDate === "string"
-      ? rawDate
-      : rawDate instanceof Date
-        ? rawDate.toISOString().slice(0, 10)
-        : typeof rawDate === "number"
-          ? new Date(rawDate).toISOString().slice(0, 10)
-          : rawDate != null
-            ? String(rawDate)
-            : "";
+  const date = normalizeArticleDate(m?.date) ?? "";
   const rawSeries =
     m?.series && typeof m.series === "object"
       ? (m.series as { name?: unknown; title?: unknown; slug?: unknown; order?: unknown })
@@ -115,10 +106,7 @@ function parisTodayISO(now: Date = new Date()): string {
 }
 
 function normalizeISODate(input?: string | null): string | null {
-  if (!input) return null;
-  const s = String(input).trim();
-  if (!s) return null;
-  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
+  return normalizeArticleDate(input);
 }
 
 function isPublishedParis(date: string | null | undefined, now: Date): boolean {

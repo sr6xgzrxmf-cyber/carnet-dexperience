@@ -1,19 +1,23 @@
 ---
-cover: /images/articles/2026-10-15-un-objectif-rate-nest-pas-toujours-un-progres-rate.jpg
-date: 2026-10-15
-excerpt: "Un objectif peut être manqué alors que la trajectoire révèle une progression importante. Pour piloter justement, il faut regarder ensemble la cible, le point de départ, le résultat et les capacités acquises."
+cover: >-
+  /images/articles/2026-10-15-un-objectif-rate-nest-pas-toujours-un-progres-rate.jpg
+date: "2026-11-04"
+excerpt: >-
+  Un objectif peut être manqué alors que la trajectoire révèle une progression
+  importante. Pour piloter justement, il faut regarder ensemble la cible, le
+  point de départ, le résultat et les capacités acquises.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 6
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- pilotage
-- performance
-- indicateurs
-- transformation
-- progression
-- ted lasso
+  - pilotage
+  - performance
+  - indicateurs
+  - transformation
+  - progression
+  - ted lasso
 title: Un objectif raté n'est pas toujours un progrès raté
 ---
 

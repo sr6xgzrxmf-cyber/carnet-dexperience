@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { findLocalArticleFile } from "@/lib/local-article-files";
+import { normalizeArticleDate } from "@/lib/article-date";
 
 
 const IS_LOCAL =
@@ -11,11 +12,11 @@ const IS_LOCAL =
 
 type Body = { slug: string; date: string };
 
-function quoteDateInFrontmatter(raw: string) {
-  // Remplace une ligne "date: 2026-01-25" par 'date: "2026-01-25"'
+function writeCanonicalDateInFrontmatter(raw: string, date: string) {
+  // Le format canonique du site reste : date: "2026-01-25"
   return raw.replace(
-    /^date:\s*(\d{4}-\d{2}-\d{2})\s*$/m,
-    'date: "$1"'
+    /^date:\s*.*$/m,
+    `date: "${date}"`
   );
 }
 
@@ -33,7 +34,13 @@ export async function PATCH(req: Request) {
     return NextResponse.json({ error: "Missing slug or date" }, { status: 400 });
   }
 
-  const newDate = String(body.date).slice(0, 10);
+  const newDate = normalizeArticleDate(body.date);
+  if (!newDate) {
+    return NextResponse.json(
+      { error: "Invalid date. Expected a calendar date such as 2026-01-25." },
+      { status: 400 }
+    );
+  }
 
   const oldSlug = body.slug;
   const oldPath = findLocalArticleFile(oldSlug);
@@ -48,7 +55,7 @@ export async function PATCH(req: Request) {
 
   const nextData = { ...parsed.data, date: newDate };
   let nextRaw = matter.stringify(parsed.content ?? "", nextData);
-  nextRaw = quoteDateInFrontmatter(nextRaw);
+  nextRaw = writeCanonicalDateInFrontmatter(nextRaw, newDate);
 
   // 2) Rename si le slug commence par une date
   // ex: 2026-01-10-mon-article => 2026-01-25-mon-article

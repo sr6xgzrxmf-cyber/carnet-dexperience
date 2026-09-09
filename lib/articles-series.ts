@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { normalizeArticleDate } from "./article-date";
 
 export type ArticleSeries = { slug: string; order: number };
 
@@ -50,7 +51,7 @@ export function getAllArticlesMetaForSeries(): ArticleMetaForSeries[] {
     items.push({
       slug,
       title,
-      date: typeof data.date === "string" ? data.date : undefined,
+      date: normalizeArticleDate(data.date) ?? undefined,
       cover: typeof data.cover === "string" ? data.cover : undefined,
       series,
     });

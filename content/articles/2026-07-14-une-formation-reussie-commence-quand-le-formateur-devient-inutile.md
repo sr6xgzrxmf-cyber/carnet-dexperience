@@ -1,12 +1,14 @@
 ---
-title: "Une formation réussie commence quand le formateur devient inutile"
-date: "2026-08-26"
+title: Une formation réussie commence quand le formateur devient inutile
+date: "2026-07-14"
 excerpt: >-
   Revenir au même atelier ne signifie pas forcément que l’on n’a pas compris.
   Une enseignante très réticente au Mac m’a appris que l’autonomie se construit
-  parfois en confrontant plusieurs explications jusqu’à créer sa propre cohérence.
-cover: /images/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
-source: "Laurent Guyonnet — Carnet d’expérience"
+  parfois en confrontant plusieurs explications jusqu’à créer sa propre
+  cohérence.
+cover: >-
+  /images/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
+source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - formation
   - autonomie
@@ -14,8 +16,8 @@ tags:
   - transmission
   - appropriation
 series:
-  name: "Les triangles d’équilibre"
-  slug: "triangles-equilibre"
+  name: Les triangles d’équilibre
+  slug: triangles-equilibre
   order: 2
 ---
 

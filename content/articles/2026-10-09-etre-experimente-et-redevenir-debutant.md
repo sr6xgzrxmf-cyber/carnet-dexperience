@@ -1,22 +1,22 @@
 ---
 cover: /images/articles/2026-10-08-etre-experimente-et-redevenir-debutant.jpg
-date: 2026-10-08
-excerpt: L'expérience nous donne des repères, pas un droit automatique à
-  avoir raison. En revenant à Richmond pour entraîner une équipe
-  féminine, Ted découvre qu'on peut être compétent dans son métier et
-  débutant dans son nouveau contexte.
+date: "2026-10-09"
+excerpt: >-
+  L'expérience nous donne des repères, pas un droit automatique à avoir raison.
+  En revenant à Richmond pour entraîner une équipe féminine, Ted découvre qu'on
+  peut être compétent dans son métier et débutant dans son nouveau contexte.
 series:
-  name: "Ted Lasso : recommencer autrement"
+  name: 'Ted Lasso : recommencer autrement'
   order: 2
   slug: ted-lasso-recommencer-autrement
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- expérience
-- apprentissage
-- légitimité
-- ted lasso
+  - management
+  - leadership
+  - expérience
+  - apprentissage
+  - légitimité
+  - ted lasso
 title: Être expérimenté et redevenir débutant
 ---
 
