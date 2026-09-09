@@ -10,8 +10,13 @@ type PortfolioLoopProps = {
 export default function PortfolioLoop({ children }: PortfolioLoopProps) {
   const railRef = useRef<HTMLDivElement>(null);
   const cycleWidthRef = useRef(0);
+  // Position de défilement pilotée par l'animation. On l'écrit en absolu dans
+  // `scrollLeft` sans jamais relire `scrollLeft` à l'intérieur du rAF : Safari
+  // y renvoie une valeur périmée, ce qui fige le `scrollLeft += x`.
+  const positionRef = useRef(0);
   const repositioningRef = useRef(false);
   const pausedRef = useRef(false);
+  const hoveringRef = useRef(false);
   const resumeAtRef = useRef(0);
 
   useLayoutEffect(() => {
@@ -27,6 +32,18 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
 
     cycleWidthRef.current = cycleWidth;
     rail.scrollLeft = cycleWidth;
+    positionRef.current = cycleWidth;
+
+    // Les cycles clonés (0 et 2) restent cliquables et survolables — ils
+    // occupent la moitié de la fenêtre pendant la boucle — mais on les sort
+    // de l'ordre de tabulation (ils sont déjà `aria-hidden`).
+    rail
+      .querySelectorAll<HTMLElement>(
+        '[data-cycle="0"] a, [data-cycle="0"] button, [data-cycle="2"] a, [data-cycle="2"] button',
+      )
+      .forEach((element) => {
+        element.tabIndex = -1;
+      });
   }, [children]);
 
   useEffect(() => {
@@ -43,13 +60,15 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
 
       if (
         !pausedRef.current &&
+        !hoveringRef.current &&
         currentTime >= resumeAtRef.current &&
         document.visibilityState === "visible"
       ) {
-        pendingDistance += (elapsed / 1000) * 18;
+        pendingDistance += (elapsed / 1000) * 34;
         const wholePixels = Math.floor(pendingDistance);
         if (wholePixels > 0) {
-          rail.scrollLeft += wholePixels;
+          positionRef.current += wholePixels;
+          rail.scrollLeft = positionRef.current;
           pendingDistance -= wholePixels;
         }
       }
@@ -72,6 +91,13 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
     const cycleWidth = cycleWidthRef.current;
     if (!cycleWidth) return;
 
+    // Événement de scroll déclenché par l'utilisateur (drag, molette) et non
+    // par l'animation : on adopte cette position pour poursuivre la dérive
+    // depuis là. Les écritures de l'animation restent, elles, alignées.
+    if (Math.abs(rail.scrollLeft - positionRef.current) > 8) {
+      positionRef.current = rail.scrollLeft;
+    }
+
     let nextPosition: number | null = null;
     if (rail.scrollLeft < cycleWidth * 0.5) {
       nextPosition = rail.scrollLeft + cycleWidth;
@@ -82,6 +108,7 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
     if (nextPosition === null) return;
     repositioningRef.current = true;
     rail.scrollLeft = nextPosition;
+    positionRef.current = nextPosition;
     requestAnimationFrame(() => {
       repositioningRef.current = false;
     });
@@ -92,8 +119,17 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
       ref={railRef}
       className={styles.portfolioRail}
       onScroll={keepInsideMiddleCycle}
+      onMouseEnter={() => { hoveringRef.current = true; }}
+      onMouseLeave={() => {
+        hoveringRef.current = false;
+        pauseTemporarily(1200);
+      }}
       onPointerDown={() => { pausedRef.current = true; }}
       onPointerUp={() => {
+        pausedRef.current = false;
+        pauseTemporarily();
+      }}
+      onPointerCancel={() => {
         pausedRef.current = false;
         pauseTemporarily();
       }}
@@ -111,7 +147,6 @@ export default function PortfolioLoop({ children }: PortfolioLoopProps) {
           data-cycle={cycle}
           className={styles.portfolioCycle}
           aria-hidden={cycle === 1 ? undefined : true}
-          inert={cycle === 1 ? undefined : true}
         >
           {children}
         </div>

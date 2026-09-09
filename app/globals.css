@@ -40,6 +40,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  /* Contient les sections full-bleed (width: 100vw) : évite un léger
+     débordement horizontal quand la barre de défilement verticale réduit
+     la largeur utile (Windows, souris avec barre classique). */
+  overflow-x: clip;
 }
 
 :where(a, button, input, textarea, select, [tabindex]):focus-visible {

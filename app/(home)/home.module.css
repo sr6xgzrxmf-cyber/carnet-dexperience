@@ -220,13 +220,12 @@
   margin-left: -50vw;
   padding: 0 0 0 max(24px, calc((100vw - 1120px) / 2));
   display: grid;
-  grid-auto-flow: column dense;
+  grid-auto-flow: column;
   grid-auto-columns: 300px;
   grid-template-rows: repeat(2, 178px);
   gap: 12px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  scroll-snap-type: inline proximity;
   scrollbar-width: thin;
 }
 
@@ -241,7 +240,6 @@
   border-radius: 2px;
   background: var(--navy);
   color: white;
-  scroll-snap-align: start;
   isolation: isolate;
 }
 
