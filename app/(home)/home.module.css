@@ -263,6 +263,17 @@
   transform: scale(1.035);
 }
 
+.portfolioVisual {
+  pointer-events: none;
+}
+
+.portfolioVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8, 12, 18, 0.04), rgba(8, 12, 18, 0.18));
+}
+
 .portfolioShade {
   position: absolute;
   inset: 0;
@@ -312,15 +323,15 @@
 }
 
 .portfolioCta {
-  background: var(--sage);
-  color: #101510;
+  background: var(--sage-soft);
+  color: var(--ink);
 }
 
 .portfolioCta::before {
   content: "";
   position: absolute;
   inset: 18px;
-  border: 1px solid rgba(16, 21, 16, 0.25);
+  border: 1px solid rgba(23, 24, 23, 0.2);
 }
 
 .portfolioCtaMark {

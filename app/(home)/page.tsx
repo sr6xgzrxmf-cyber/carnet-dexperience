@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Fragment } from "react";
 import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
 import { getArticleBySlug } from "@/lib/articles";
@@ -38,6 +39,12 @@ const method = [
   },
 ];
 
+const portfolioVisuals = [
+  "/images/articles/2026-02-02-ce-que-la-direction-entend-vraiment.jpg",
+  "/images/articles/2026-03-17-devenir-facilitateur-le-leadership-discret.jpg",
+  "/images/articles/2026-05-15-comprendre-comment-une-organisation-ecoute.jpg",
+];
+
 export default function HomePage() {
   const highlights = readHomeHighlights().flatMap((highlight) => {
     if (!highlight.active) return [];
@@ -45,6 +52,19 @@ export default function HomePage() {
     if (!article) return [];
     return [{ highlight, article }];
   });
+
+  const needsVisualAfter = (index: number) => {
+    if (highlights[index]?.highlight.size !== "compact") return false;
+    if (highlights[index + 1]?.highlight.size === "compact") return false;
+
+    let compactRunLength = 1;
+    for (let previous = index - 1; previous >= 0; previous -= 1) {
+      if (highlights[previous].highlight.size !== "compact") break;
+      compactRunLength += 1;
+    }
+
+    return compactRunLength % 2 === 1;
+  };
 
   return (
     <div className={styles.page}>
@@ -108,33 +128,48 @@ export default function HomePage() {
           <div className={styles.portfolioHeading}>
             <div>
               <p className={styles.eyebrow}>Le travail en situation</p>
-              <h2 id="portfolio-title">Quelques traces choisies</h2>
+              <h2 id="portfolio-title">Des compétences en action</h2>
             </div>
-            <p>Faites glisser pour parcourir les articles mis en avant.</p>
+            <p>Faites glisser pour découvrir les articles.</p>
           </div>
           <div className={styles.portfolioRail}>
-            {highlights.map(({ highlight, article }) => (
-              <Link
-                key={article.slug}
-                href={`/articles/${article.slug}`}
-                className={`${styles.portfolioTile} ${styles[`portfolio_${highlight.size}`]}`}
-              >
-                {article.meta.cover ? (
-                  <Image
-                    src={article.meta.cover}
-                    alt=""
-                    fill
-                    sizes={highlight.size === "feature" ? "(max-width: 700px) 88vw, 620px" : "(max-width: 700px) 76vw, 360px"}
-                    className={styles.portfolioImage}
-                  />
+            {highlights.map(({ highlight, article }, index) => (
+              <Fragment key={article.slug}>
+                <Link
+                  href={`/articles/${article.slug}`}
+                  className={`${styles.portfolioTile} ${styles[`portfolio_${highlight.size}`]}`}
+                >
+                  {article.meta.cover ? (
+                    <Image
+                      src={article.meta.cover}
+                      alt=""
+                      fill
+                      sizes={highlight.size === "feature" ? "(max-width: 700px) 88vw, 620px" : "(max-width: 700px) 76vw, 360px"}
+                      className={styles.portfolioImage}
+                    />
+                  ) : null}
+                  <span className={styles.portfolioShade} aria-hidden />
+                  <span className={styles.portfolioContent}>
+                    <span className={styles.portfolioLabel}>{highlight.label || "Article"}</span>
+                    <strong>{article.meta.title}</strong>
+                    <span className={styles.portfolioAction}>Lire l’article →</span>
+                  </span>
+                </Link>
+                {needsVisualAfter(index) ? (
+                  <div
+                    className={`${styles.portfolioTile} ${styles.portfolio_compact} ${styles.portfolioVisual}`}
+                    aria-hidden="true"
+                  >
+                    <Image
+                      src={portfolioVisuals[index % portfolioVisuals.length]}
+                      alt=""
+                      fill
+                      sizes="(max-width: 700px) 76vw, 300px"
+                      className={styles.portfolioImage}
+                    />
+                  </div>
                 ) : null}
-                <span className={styles.portfolioShade} aria-hidden />
-                <span className={styles.portfolioContent}>
-                  <span className={styles.portfolioLabel}>{highlight.label || "Article"}</span>
-                  <strong>{article.meta.title}</strong>
-                  <span className={styles.portfolioAction}>Lire l’article →</span>
-                </span>
-              </Link>
+              </Fragment>
             ))}
             <Link
               href="/articles"
