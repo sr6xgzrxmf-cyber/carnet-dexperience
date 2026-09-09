@@ -94,41 +94,41 @@
       "slug": "2026-03-31-recollectiviser-sans-conflit",
       "label": "Collectif",
       "size": "compact",
-      "active": false
+      "active": true
     },
     {
       "slug": "2026-02-17-hygiene-de-langage",
       "label": "Communication",
-      "size": "compact",
-      "active": false
+      "size": "tall",
+      "active": true
     },
     {
       "slug": "2026-04-14-arreter-de-debattre-tester-30-jours",
       "label": "Expérimentation",
       "size": "compact",
-      "active": false
+      "active": true
     },
     {
       "slug": "2026-08-31-une-decision-ne-peut-pas-tout-garder",
       "label": "Arbitrage",
       "size": "compact",
-      "active": false
+      "active": true
     },
     {
       "slug": "2026-09-02-un-bon-lead-commence-avant-le-crm",
       "label": "Organisation commerciale",
       "size": "tall",
-      "active": false
+      "active": true
     },
     {
       "slug": "08-ce-qui-entre-dans-la-base-et-qui-la-valide",
       "label": "Données et responsabilité",
-      "size": "tall",
-      "active": false
+      "size": "compact",
+      "active": true
     },
     {
-      "slug": "2026-09-16-je-le-trouvais-froid",
-      "label": "À paraître",
+      "slug": "2026-09-09-je-le-trouvais-froid",
+      "label": "Article",
       "size": "feature",
       "active": true
     }
