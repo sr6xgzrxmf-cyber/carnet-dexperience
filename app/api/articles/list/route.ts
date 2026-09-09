@@ -5,6 +5,7 @@ import path from "path";
 import matter from "gray-matter";
 import { listLocalArticleFiles } from "@/lib/local-article-files";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { effectiveEditorialStatus, normalizeEditorialStatus } from "@/lib/editorial-status";
 
 
 function isLocalRequest(req: NextRequest) {
@@ -47,6 +48,8 @@ export async function GET(req: NextRequest) {
       slug,
       title: String(data.title ?? slug),
       date: normalizeArticleDate(data.date),
+      status: normalizeEditorialStatus(data.status),
+      effectiveStatus: effectiveEditorialStatus(data.status, data.date),
       excerpt: data.excerpt ? String(data.excerpt) : null,
       cover: data.cover ? String(data.cover) : null,
       tags: Array.isArray(data.tags) ? data.tags.map((t) => String(t)) : [],

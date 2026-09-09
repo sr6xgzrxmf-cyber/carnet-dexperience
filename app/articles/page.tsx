@@ -11,6 +11,7 @@ import {
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import { ARTICLE_THEMES, getArticleThemes } from "@/lib/article-themes";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { effectiveEditorialStatus, isEditoriallyPublished, normalizeEditorialStatus, type EditorialStatus } from "@/lib/editorial-status";
 import type { Metadata } from "next";
 import ArticlesCatalog from "./_components/ArticlesCatalog";
 import styles from "@/app/editorial-system.module.css";
@@ -32,6 +33,7 @@ type ArticleMeta = {
   slug: string;
   title: string;
   date?: string;
+  status?: EditorialStatus;
   excerpt?: string;
   cover?: string | null;
   source?: string;
@@ -82,6 +84,7 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
     slug: item?.slug ?? "",
     title: m?.title ?? "",
     date,
+    status: normalizeEditorialStatus(m?.status) ?? undefined,
     excerpt: m?.excerpt ?? "",
     cover,
     source: m?.source ?? "Carnet d’expérience",
@@ -95,24 +98,8 @@ function firstParam(value?: string | string[]): string {
   return Array.isArray(value) ? value[0] ?? "" : value ?? "";
 }
 
-function parisTodayISO(now: Date = new Date()): string {
-  // YYYY-MM-DD en Europe/Paris
-  return new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Paris",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
-}
-
 function normalizeISODate(input?: string | null): string | null {
   return normalizeArticleDate(input);
-}
-
-function isPublishedParis(date: string | null | undefined, now: Date): boolean {
-  const d = normalizeISODate(date);
-  if (!d) return true; // pas de date => visible
-  return d <= parisTodayISO(now);
 }
 
 function formatUpcomingDate(date?: string): string {
@@ -255,10 +242,18 @@ export default async function ArticlesHubPage(props: {
   // Les séries ont besoin de connaître leur premier article planifié pour
   // annoncer proprement une publication à venir, même en production.
   const raw = await getAllArticles({ includeFuture: true });
-  const all = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
+  const loaded = (raw ?? []).map(getItemMeta).filter((a) => a.slug);
+  const all = allowFuture
+    ? loaded
+    : loaded.filter((article) => {
+        const status = effectiveEditorialStatus(article.status, article.date, now);
+        return status !== "draft" && status !== "review" && status !== "archived";
+      });
 
   // Published vs À paraître
-  const published = all.filter((a) => isPublishedParis(a.date ?? null, now));
+  const published = all.filter((a) =>
+    isEditoriallyPublished(a.status, a.date ?? null, now)
+  );
 
   // ✅ En dev/preview : Résultats affiche tout (publiés + futurs)
   // ✅ En prod : Résultats affiche uniquement les publiés
@@ -290,7 +285,9 @@ export default async function ArticlesHubPage(props: {
       .filter((a) => a.series?.slug === slug)
       .sort((a, b) => (a.series?.order ?? 9999) - (b.series?.order ?? 9999));
 
-    const items = allItems.filter((a) => isPublishedParis(a.date ?? null, now));
+    const items = allItems.filter((a) =>
+      isEditoriallyPublished(a.status, a.date ?? null, now)
+    );
 
     const start = items.find((a) => (a.series?.order ?? 9999) === 0) ?? items[0];
     const plannedStart =
@@ -389,7 +386,7 @@ export default async function ArticlesHubPage(props: {
     seriesLength: article.series?.slug
       ? seriesLengths.get(article.series.slug)
       : undefined,
-    futureLabel: !isPublishedParis(article.date ?? null, now),
+    futureLabel: !isEditoriallyPublished(article.status, article.date ?? null, now),
   }));
 
   return (

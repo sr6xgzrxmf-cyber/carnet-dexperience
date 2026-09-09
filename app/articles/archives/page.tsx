@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllArticles, isPublishedDate, type ArticleItem } from "@/lib/articles";
+import { getAllArticles, isArticlePublished, type ArticleItem } from "@/lib/articles";
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import { normalizeArticleDate } from "@/lib/article-date";
 import styles from "@/app/editorial-system.module.css";
@@ -59,7 +59,12 @@ export default async function ArticlesArchivesPage(props: {
   const selectedSeries = searchParams?.series ?? null;
 
   const raw = await getAllArticles();
-  const allItems = (raw ?? []).map(getItemMeta).filter((article) => article.slug);
+  const allowUnpublished =
+    process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
+  const visibleRaw = allowUnpublished
+    ? raw
+    : raw.filter((article) => isArticlePublished(article.meta, new Date()));
+  const allItems = (visibleRaw ?? []).map(getItemMeta).filter((article) => article.slug);
   let items = [...allItems].sort((a, b) =>
     (b.date ?? "").localeCompare(a.date ?? "")
   );
@@ -133,7 +138,8 @@ export default async function ArticlesArchivesPage(props: {
 
         <ul className={styles.archiveList}>
           {items.map((article) => {
-            const published = isPublishedDate(article.date, new Date());
+            const source = raw.find((item) => item.slug === article.slug);
+            const published = source ? isArticlePublished(source.meta, new Date()) : false;
             return (
               <li key={article.slug} className={styles.archiveItem}>
                 <Link

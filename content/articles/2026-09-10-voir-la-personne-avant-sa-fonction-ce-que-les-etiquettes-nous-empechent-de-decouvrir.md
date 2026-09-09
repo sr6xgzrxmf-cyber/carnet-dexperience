@@ -1,24 +1,27 @@
 ---
-cover: /images/articles/2026-09-17-voir-la-personne-avant-sa-fonction-ce-que-les-etiquettes-nous-empechent-de-decouvrir.jpg
-date: 2026-09-17
-excerpt: Un poste nous dit ce qu'une personne est censée faire. Il ne
-  dit ni tout ce qu'elle sait faire, ni ce qu'elle pourrait devenir. À
-  Richmond, les personnages les plus intéressants commencent souvent là
-  où leur étiquette s'arrête.
+cover: >-
+  /images/articles/2026-09-17-voir-la-personne-avant-sa-fonction-ce-que-les-etiquettes-nous-empechent-de-decouvrir.jpg
+date: "2026-09-10"
+excerpt: >-
+  Un poste nous dit ce qu'une personne est censée faire. Il ne dit ni tout ce
+  qu'elle sait faire, ni ce qu'elle pourrait devenir. À Richmond, les
+  personnages les plus intéressants commencent souvent là où leur étiquette
+  s'arrête.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 2
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- potentiel
-- reconnaissance
-- inclusion
-- ted lasso
-title: "Voir la personne avant sa fonction : ce que les étiquettes nous
-  empêchent de découvrir"
+  - management
+  - leadership
+  - potentiel
+  - reconnaissance
+  - inclusion
+  - ted lasso
+title: >-
+  Voir la personne avant sa fonction : ce que les étiquettes nous empêchent de
+  découvrir
 ---
 
 **Combien de personnes de votre équipe connaissez-vous surtout par leur fonction — et depuis combien de temps ne leur avez-vous pas posé une question qui sortait de ce rôle ?**

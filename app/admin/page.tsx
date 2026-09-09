@@ -62,6 +62,16 @@ export default function AdminHomePage() {
           desc="Vue de production / planification (ta page existante)."
           href="/admin/calendrier"
         />
+        <Card
+          title="Mises en avant"
+          desc="Compose le portfolio horizontal de l’accueil : choix, ordre, taille et visibilité des tuiles."
+          href="/admin/mises-en-avant"
+        />
+        <Card
+          title="Historique"
+          desc="Retrouve les changements de dates, statuts, métadonnées et mises en avant effectués en local."
+          href="/admin/historique"
+        />
       </section>
 
       <section className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15 p-6">

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { normalizeArticleDate } from "@/lib/article-date";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 const PUBLIC_DIR = path.join(process.cwd(), "public");
@@ -41,9 +42,7 @@ function fileExistsPublic(publicPath: string) {
 }
 
 function normalizeDate(v: unknown): string | null {
-  if (v == null) return null;
-  const s = String(v).slice(0, 10);
-  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
+  return normalizeArticleDate(v);
 }
 
 function guessCover(slug: string) {

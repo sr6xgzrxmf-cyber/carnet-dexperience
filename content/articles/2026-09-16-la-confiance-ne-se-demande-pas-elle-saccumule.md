@@ -1,23 +1,24 @@
 ---
 cover: /images/articles/2026-09-21-la-confiance-ne-se-demande-pas-elle-saccumule.jpg
-date: 2026-09-21
-excerpt: "La confiance ne naît pas d'une déclaration d'intention. Elle
-  se construit dans les détails, les décisions et les preuves répétées.
-  À Richmond, Ted découvre qu'on ne demande pas aux autres de nous faire
-  confiance : on leur donne progressivement des raisons de le faire."
+date: "2026-09-16"
+excerpt: >-
+  La confiance ne naît pas d'une déclaration d'intention. Elle se construit dans
+  les détails, les décisions et les preuves répétées. À Richmond, Ted découvre
+  qu'on ne demande pas aux autres de nous faire confiance : on leur donne
+  progressivement des raisons de le faire.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 4
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- confiance
-- exemplarité
-- culture
-- ted lasso
-title: "La confiance ne se demande pas : elle s'accumule"
+  - management
+  - leadership
+  - confiance
+  - exemplarité
+  - culture
+  - ted lasso
+title: 'La confiance ne se demande pas : elle s''accumule'
 ---
 
 Ted Lasso arrive à Richmond avec un léger problème de crédibilité. Il ne connaît pas vraiment le football anglais, il vient entraîner une équipe professionnelle, les supporters le considèrent comme une plaisanterie, la presse attend sa chute et Rebecca l'a engagé précisément parce qu'elle espère le voir échouer. Difficile de trouver meilleur contexte pour commencer une relation de confiance.

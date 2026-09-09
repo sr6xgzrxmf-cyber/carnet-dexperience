@@ -1,23 +1,24 @@
 ---
-cover: /images/articles/2026-09-18-ecouter-avant-de-resoudre-quand-aider-signifie-parfois-ne-rien-resoudre.jpg
-date: 2026-09-18
-excerpt: "Face à un problème, notre premier réflexe est souvent de
-  chercher une solution. Ted Lasso rappelle qu'accompagner commence
-  parfois ailleurs : comprendre ce dont l'autre a réellement besoin."
+cover: >-
+  /images/articles/2026-09-18-ecouter-avant-de-resoudre-quand-aider-signifie-parfois-ne-rien-resoudre.jpg
+date: "2026-09-15"
+excerpt: >-
+  Face à un problème, notre premier réflexe est souvent de chercher une
+  solution. Ted Lasso rappelle qu'accompagner commence parfois ailleurs :
+  comprendre ce dont l'autre a réellement besoin.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 3
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- écoute
-- accompagnement
-- coaching
-- communication
-- ted lasso
-title: "Écouter avant de résoudre : quand aider signifie parfois ne rien
-  résoudre"
+  - management
+  - écoute
+  - accompagnement
+  - coaching
+  - communication
+  - ted lasso
+title: 'Écouter avant de résoudre : quand aider signifie parfois ne rien résoudre'
 ---
 
 Il existe une forme d'aide particulièrement séduisante : celle qui consiste à trouver la solution. Quelqu'un arrive avec un problème, nous l'écoutons quelques secondes, et notre cerveau ouvre immédiatement le dossier « solutions disponibles », sélectionne trois conseils, ajoute éventuellement une expérience personnelle et prépare déjà la phrase : **« Tu sais ce que tu devrais faire ? »**

@@ -3,6 +3,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { findLocalArticleFile, listLocalArticleFiles } from "@/lib/local-article-files";
+import { normalizeArticleDate } from "@/lib/article-date";
+import { appendAdminHistory } from "@/lib/admin-history";
+import { normalizeEditorialStatus, type EditorialStatus } from "@/lib/editorial-status";
 
 
 const IS_LOCAL =
@@ -22,6 +25,7 @@ type UpdateBody = {
   patch: {
     title?: string;
     date?: string | null;
+    status?: EditorialStatus | null;
     excerpt?: string | null;
     cover?: string | null;
     tags?: string[] | null;
@@ -44,6 +48,11 @@ function readArticle(slug: string) {
 
 function writeArticle(filePath: string, content: string) {
   fs.writeFileSync(filePath, content, "utf8");
+}
+
+function canonicalizeDateLine(raw: string, value: unknown): string {
+  const date = normalizeArticleDate(value);
+  return date ? raw.replace(/^date:\s*.*$/m, `date: "${date}"`) : raw;
 }
 
 function toNumberOrNull(v: unknown): number | null {
@@ -69,7 +78,19 @@ export async function PATCH(req: Request) {
   const slug = body.slug;
   const dryRun = !!body.dryRun;
 
+  if (typeof body.patch.date === "string" && !normalizeArticleDate(body.patch.date)) {
+    return NextResponse.json({ error: "Invalid date" }, { status: 400 });
+  }
+  if (
+    typeof body.patch.status === "string" &&
+    !normalizeEditorialStatus(body.patch.status)
+  ) {
+    return NextResponse.json({ error: "Invalid editorial status" }, { status: 400 });
+  }
+
   const { filePath, parsed } = readArticle(slug);
+  let nextSlug = slug;
+  let nextFilePath = filePath;
   type Frontmatter = Record<string, unknown> & { series?: Record<string, unknown> | null };
   const nextData: Frontmatter = { ...(parsed.data ?? {}) } as Frontmatter;
 
@@ -77,7 +98,25 @@ export async function PATCH(req: Request) {
   if (typeof body.patch.title === "string") nextData.title = body.patch.title;
 
   if (body.patch.date === null) delete nextData.date;
-  else if (typeof body.patch.date === "string") nextData.date = body.patch.date;
+  else if (typeof body.patch.date === "string") {
+    nextData.date = normalizeArticleDate(body.patch.date)!;
+    const datedSlug = /^(\d{4}-\d{2}-\d{2})-(.+)$/.exec(slug);
+    if (datedSlug && datedSlug[1] !== nextData.date) {
+      nextSlug = `${nextData.date}-${datedSlug[2]}`;
+      nextFilePath = path.join(path.dirname(filePath), `${nextSlug}.md`);
+      if (fs.existsSync(nextFilePath)) {
+        return NextResponse.json(
+          { error: `Target filename already exists: ${nextSlug}.md` },
+          { status: 409 }
+        );
+      }
+    }
+  } else if (nextData.date !== undefined) {
+    nextData.date = normalizeArticleDate(nextData.date) ?? nextData.date;
+  }
+
+  if (body.patch.status === null) delete nextData.status;
+  else if (typeof body.patch.status === "string") nextData.status = body.patch.status;
 
   if (body.patch.excerpt === null) delete nextData.excerpt;
   else if (typeof body.patch.excerpt === "string") nextData.excerpt = body.patch.excerpt;
@@ -151,7 +190,13 @@ export async function PATCH(req: Request) {
           sibSeries.order = newOrder;
           sib.data.series = sibSeries;
 
-          const nextRaw = matter.stringify(sib.content, sib.data);
+          if (sib.data.date !== undefined) {
+            sib.data.date = normalizeArticleDate(sib.data.date) ?? sib.data.date;
+          }
+          const nextRaw = canonicalizeDateLine(
+            matter.stringify(sib.content, sib.data),
+            sib.data.date
+          );
           writes.push({ filePath: sib.filePath, raw: nextRaw });
           updatedFiles.push(path.relative(process.cwd(), sib.filePath));
         }
@@ -160,21 +205,34 @@ export async function PATCH(req: Request) {
   }
 
   // Write current article (always last)
-  const nextRawCurrent = matter.stringify(parsed.content ?? "", nextData);
-  writes.push({ filePath, raw: nextRawCurrent });
-  updatedFiles.push(path.relative(process.cwd(), filePath));
+  const nextRawCurrent = canonicalizeDateLine(
+    matter.stringify(parsed.content ?? "", nextData),
+    nextData.date
+  );
+  writes.push({ filePath: nextFilePath, raw: nextRawCurrent });
+  updatedFiles.push(path.relative(process.cwd(), nextFilePath));
 
   // Dedupe
   const seen = new Set<string>();
   const finalWrites = writes.filter((w) => (seen.has(w.filePath) ? false : (seen.add(w.filePath), true)));
 
   if (!dryRun) {
+    if (nextFilePath !== filePath) fs.renameSync(filePath, nextFilePath);
     for (const w of finalWrites) writeArticle(w.filePath, w.raw);
+    appendAdminHistory({
+      action: "article.update",
+      target: nextSlug,
+      summary: `Métadonnées modifiées (${Object.keys(body.patch).join(", ")})`,
+      before: Object.fromEntries(Object.keys(body.patch).map((key) => [key, parsed.data?.[key]])),
+      after: Object.fromEntries(Object.keys(body.patch).map((key) => [key, nextData[key]])),
+    });
   }
 
   return NextResponse.json({
     ok: true,
     dryRun,
+    slug: nextSlug,
+    renamed: nextSlug !== slug,
     updated: Array.from(new Set(updatedFiles)),
   });
 }

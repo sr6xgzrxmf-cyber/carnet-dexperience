@@ -1,23 +1,23 @@
 ---
 cover: /images/articles/2026-09-25-be-a-goldfish-une-erreur-nest-pas-une-identite.jpg
-date: 2026-09-25
-excerpt: Apprendre d'une erreur exige de s'en souvenir assez longtemps
-  pour comprendre ce qu'elle nous enseigne, puis de savoir la laisser
-  derrière nous. À Richmond, le fameux poisson rouge de Ted parle moins
-  d'oubli que de capacité à repartir.
+date: "2026-09-24"
+excerpt: >-
+  Apprendre d'une erreur exige de s'en souvenir assez longtemps pour comprendre
+  ce qu'elle nous enseigne, puis de savoir la laisser derrière nous. À Richmond,
+  le fameux poisson rouge de Ted parle moins d'oubli que de capacité à repartir.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 8
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- apprentissage
-- erreur
-- résilience
-- feedback
-- ted lasso
-title: "Be a goldfish : une erreur n'est pas une identité"
+  - management
+  - apprentissage
+  - erreur
+  - résilience
+  - feedback
+  - ted lasso
+title: 'Be a goldfish : une erreur n''est pas une identité'
 ---
 
 Dani Rojas rate un penalty. Cela pourrait rester un événement assez banal dans la vie d'un footballeur. Sauf que le ballon frappe Earl, le lévrier mascotte de Richmond, qui meurt. Nous avons connu des journées professionnelles compliquées. Celle-ci place tout de même la barre assez haut.

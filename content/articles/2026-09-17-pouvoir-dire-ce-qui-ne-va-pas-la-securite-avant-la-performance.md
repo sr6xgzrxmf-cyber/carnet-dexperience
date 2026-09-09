@@ -1,24 +1,24 @@
 ---
-cover: /images/articles/2026-09-22-pouvoir-dire-ce-qui-ne-va-pas-la-securite-avant-la-performance.jpg
-date: 2026-09-22
-excerpt: Une équipe ne devient pas performante parce que personne n'y
-  rencontre de difficulté. Elle progresse lorsque les difficultés, les
-  désaccords et les erreurs peuvent être exprimés assez tôt pour devenir
-  utiles.
+cover: >-
+  /images/articles/2026-09-22-pouvoir-dire-ce-qui-ne-va-pas-la-securite-avant-la-performance.jpg
+date: "2026-09-17"
+excerpt: >-
+  Une équipe ne devient pas performante parce que personne n'y rencontre de
+  difficulté. Elle progresse lorsque les difficultés, les désaccords et les
+  erreurs peuvent être exprimés assez tôt pour devenir utiles.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 5
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- sécurité psychologique
-- feedback
-- vulnérabilité
-- ted lasso
-title: "Pouvoir dire ce qui ne va pas : la sécurité avant la
-  performance"
+  - management
+  - leadership
+  - sécurité psychologique
+  - feedback
+  - vulnérabilité
+  - ted lasso
+title: 'Pouvoir dire ce qui ne va pas : la sécurité avant la performance'
 ---
 
 Dans une équipe, il existe une phrase particulièrement rassurante : **« Tout va bien. »** Elle permet de terminer une réunion à l'heure, elle évite une conversation inconfortable, elle donne au manager le sentiment agréable que la situation est maîtrisée. Et elle peut être parfaitement fausse.

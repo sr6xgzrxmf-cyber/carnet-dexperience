@@ -1,16 +1,20 @@
 ---
-title: "Be curious, not judgmental : ce que nous inventons sur les autres"
-date: 2026-09-16
-excerpt: "Avant même de juger une personne, nous avons souvent déjà construit une histoire sur elle. À Richmond, une partie de fléchettes montre pourquoi la curiosité est d'abord une discipline du regard."
-cover: /images/articles/2026-09-16-be-curious-not-judgmental-ce-que-nous-inventons-sur-les-autres.jpg
+title: 'Be curious, not judgmental : ce que nous inventons sur les autres'
+date: "2026-09-09"
+excerpt: >-
+  Avant même de juger une personne, nous avons souvent déjà construit une
+  histoire sur elle. À Richmond, une partie de fléchettes montre pourquoi la
+  curiosité est d'abord une discipline du regard.
+cover: >-
+  /images/articles/2026-09-16-be-curious-not-judgmental-ce-que-nous-inventons-sur-les-autres.jpg
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- curiosité
-- biais
-- écoute
-- ted lasso
+  - management
+  - leadership
+  - curiosité
+  - biais
+  - écoute
+  - ted lasso
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon

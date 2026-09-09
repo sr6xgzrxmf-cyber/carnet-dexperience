@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
+import { getArticleBySlug } from "@/lib/articles";
+import { readHomeHighlights } from "@/lib/home-highlights";
 
 const situations = [
   {
@@ -37,6 +39,13 @@ const method = [
 ];
 
 export default function HomePage() {
+  const highlights = readHomeHighlights().flatMap((highlight) => {
+    if (!highlight.active) return [];
+    const article = getArticleBySlug(highlight.slug, { includeFuture: false });
+    if (!article) return [];
+    return [{ highlight, article }];
+  });
+
   return (
     <div className={styles.page}>
       <section className={styles.hero}>
@@ -93,6 +102,54 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {highlights.length ? (
+        <section className={styles.portfolio} aria-labelledby="portfolio-title">
+          <div className={styles.portfolioHeading}>
+            <div>
+              <p className={styles.eyebrow}>Le travail en situation</p>
+              <h2 id="portfolio-title">Quelques traces choisies</h2>
+            </div>
+            <p>Faites glisser pour parcourir les articles mis en avant.</p>
+          </div>
+          <div className={styles.portfolioRail}>
+            {highlights.map(({ highlight, article }) => (
+              <Link
+                key={article.slug}
+                href={`/articles/${article.slug}`}
+                className={`${styles.portfolioTile} ${styles[`portfolio_${highlight.size}`]}`}
+              >
+                {article.meta.cover ? (
+                  <Image
+                    src={article.meta.cover}
+                    alt=""
+                    fill
+                    sizes={highlight.size === "feature" ? "(max-width: 700px) 88vw, 620px" : "(max-width: 700px) 76vw, 360px"}
+                    className={styles.portfolioImage}
+                  />
+                ) : null}
+                <span className={styles.portfolioShade} aria-hidden />
+                <span className={styles.portfolioContent}>
+                  <span className={styles.portfolioLabel}>{highlight.label || "Article"}</span>
+                  <strong>{article.meta.title}</strong>
+                  <span className={styles.portfolioAction}>Lire l’article →</span>
+                </span>
+              </Link>
+            ))}
+            <Link
+              href="/articles"
+              className={`${styles.portfolioTile} ${styles.portfolio_tall} ${styles.portfolioCta}`}
+            >
+              <span className={styles.portfolioCtaMark} aria-hidden>→</span>
+              <span className={styles.portfolioContent}>
+                <span className={styles.portfolioLabel}>Tout le carnet</span>
+                <strong>Voir tous les articles</strong>
+                <span className={styles.portfolioAction}>Explorer les textes et les séries →</span>
+              </span>
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       <section className={styles.signalBand}>
         <div className={styles.signalGrid}>

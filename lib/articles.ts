@@ -5,6 +5,10 @@ import { remark } from "remark";
 import html from "remark-html";
 import remarkGfm from "remark-gfm";
 import { normalizeArticleDate } from "./article-date";
+import {
+  isEditoriallyPublished,
+  type EditorialStatus,
+} from "./editorial-status";
 
 const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
@@ -12,6 +16,7 @@ export type ArticleMeta = {
   title: string;
   date?: string | number | Date | { date?: unknown; value?: unknown };
   updated?: string | number | Date | { date?: unknown; value?: unknown };
+  status?: EditorialStatus;
   tags?: string[];
   cover?: string; // "/images/articles/xxx.jpg"
   source?: string;
@@ -110,6 +115,13 @@ export function isPublishedDate(input: unknown, now: Date = new Date()): boolean
   return d <= parisTodayISO(now);
 }
 
+export function isArticlePublished(
+  meta: Pick<ArticleMeta, "date" | "status">,
+  now: Date = new Date()
+): boolean {
+  return isEditoriallyPublished(meta.status, meta.date, now);
+}
+
 /* =========================
    Cache (mémoire) simple
 ========================= */
@@ -199,7 +211,7 @@ export function getAllArticles(options?: { includeFuture?: boolean }): ArticleIt
   if (includeFuture) return items;
 
   const now = new Date();
-  return items.filter((a) => isPublishedDate(a.meta.date, now));
+  return items.filter((a) => isArticlePublished(a.meta, now));
 }
 
 /**
@@ -226,7 +238,7 @@ export function getArticleBySlug(
   const item = bySlug.get(clean) ?? null;
   if (!item) return null;
 
-  if (!includeFuture && !isPublishedDate(item.meta?.date, new Date())) return null;
+  if (!includeFuture && !isArticlePublished(item.meta, new Date())) return null;
 
   return item;
 }

@@ -1,22 +1,23 @@
 ---
-cover: /images/articles/2026-09-15-ted-lasso-ce-que-le-divertissement-peut-nous-transmettre.jpg
-date: 2026-09-15
-excerpt: Et si une série pouvait nous apprendre à mieux observer le
-  management, les relations et le changement sans jamais prendre la
-  forme d'un manuel ? À Richmond, les principes se découvrent d'abord
-  dans les situations.
+cover: >-
+  /images/articles/2026-09-15-ted-lasso-ce-que-le-divertissement-peut-nous-transmettre.jpg
+date: "2026-09-08"
+excerpt: >-
+  Et si une série pouvait nous apprendre à mieux observer le management, les
+  relations et le changement sans jamais prendre la forme d'un manuel ? À
+  Richmond, les principes se découvrent d'abord dans les situations.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 0
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- apprentissage
-- relations humaines
-- ted lasso
-title: "Ted Lasso : ce que le divertissement peut nous transmettre"
+  - management
+  - leadership
+  - apprentissage
+  - relations humaines
+  - ted lasso
+title: 'Ted Lasso : ce que le divertissement peut nous transmettre'
 ---
 
 Il arrive qu'une série nous fasse rire, qu'on s'attache à ses personnages, qu'on attende l'épisode suivant et qu'on en cite quelques répliques entre amis. Et puis il arrive qu'elle laisse autre chose : une phrase qui revient quelques jours plus tard, une situation qui ressemble étrangement à quelque chose que l'on vit au travail, un personnage que l'on jugeait agaçant et que l'on finit par comprendre, une décision qui semblait évidente et qui, soudain, ne l'est plus autant.

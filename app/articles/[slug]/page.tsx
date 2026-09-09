@@ -5,7 +5,7 @@ import Script from "next/script";
 import {
   getAllArticles,
   getArticleBySlug,
-  isPublishedDate,
+  isArticlePublished,
   markdownToHtml,
   toTimestamp,
   type ArticleItem,
@@ -16,6 +16,7 @@ import TrackedLink from "@/components/TrackedLink";
 import type { Metadata } from "next";
 import { getArticleThemes } from "@/lib/article-themes";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { effectiveEditorialStatus, EDITORIAL_STATUS_LABELS } from "@/lib/editorial-status";
 import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
@@ -59,7 +60,7 @@ export async function generateMetadata({
   const resolvedParams = params instanceof Promise ? await params : params;
   const item = getArticleBySlug(resolvedParams.slug, { includeFuture: true });
   if (!item) return {};
-  const published = isPublishedDate(item.meta?.date, new Date());
+  const published = isArticlePublished(item.meta, new Date());
   const canonical = `${siteUrl}/articles/${resolvedParams.slug}`;
   const description = getSeoDescription(item);
   const title = getSeoTitle(item, resolvedParams.slug);
@@ -149,7 +150,8 @@ export default async function ArticleDetailPage({
   const item = getArticleBySlug(slug, { includeFuture: true });
   if (!item) return notFound();
 
-  const isFuture = !isPublishedDate(item.meta?.date, new Date());
+  const isFuture = !isArticlePublished(item.meta, new Date());
+  const editorialStatus = effectiveEditorialStatus(item.meta.status, item.meta.date);
   const allowFuture =
     process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
   if (isFuture && !allowFuture) return notFound();
@@ -213,7 +215,7 @@ export default async function ArticleDetailPage({
   const currentDate = asDateValue(current.meta?.date);
   const related = allItems
     .filter((candidate) => getSlug(candidate) !== slug)
-    .filter((candidate) => isPublishedDate(candidate.meta?.date, new Date()))
+    .filter((candidate) => isArticlePublished(candidate.meta, new Date()))
     .map((candidate) => {
       const candidateSeries = getSeriesInfo(candidate);
       const candidateTags = Array.isArray(candidate.meta?.tags) ? candidate.meta.tags : [];
@@ -264,7 +266,7 @@ export default async function ArticleDetailPage({
 
         <div className={styles.readingMeta}>
           {item.meta.source ? <span>{item.meta.source}</span> : null}
-          {isFuture ? <span className={styles.tag}>À paraître</span> : null}
+          {isFuture ? <span className={styles.tag}>{EDITORIAL_STATUS_LABELS[editorialStatus]}</span> : null}
         </div>
 
         {item.meta.impact && (item.meta.impact.text || item.meta.impact.example) ? (

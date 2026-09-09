@@ -16,6 +16,8 @@ type Item = {
   seriesName: string | null;
   seriesSlug: string | null;
   seriesOrder: number | null;
+  status: "draft" | "review" | "scheduled" | "published" | "archived" | null;
+  effectiveStatus: "draft" | "review" | "scheduled" | "published" | "archived";
 };
 
 function colorFromSlug(slug: string) {
@@ -28,6 +30,14 @@ function colorFromSlug(slug: string) {
 const NO_SERIES = {
   label: "Hors série",
   color: "hsl(210 80% 55%)",
+};
+
+const STATUS_LABELS: Record<Item["effectiveStatus"], string> = {
+  draft: "Brouillon",
+  review: "À relire",
+  scheduled: "Programmé",
+  published: "Publié",
+  archived: "Archivé",
 };
 
 function isLocalHost() {
@@ -48,6 +58,7 @@ type ArticlePatch = {
   cover: string | null;
   tags: string[] | null;
   series: SeriesPatch | null;
+  status: "draft" | "review" | "scheduled" | "published" | "archived" | null;
 };
 
 function Modal({
@@ -121,6 +132,7 @@ export default function CalendrierArticlesPage() {
   const [fSeriesSlug, setFSeriesSlug] = useState<"NONE" | string>("NONE");
   const [fSeriesName, setFSeriesName] = useState("");
   const [fSeriesOrder, setFSeriesOrder] = useState<string>("");
+  const [fStatus, setFStatus] = useState<"AUTO" | "draft" | "review" | "scheduled" | "published" | "archived">("AUTO");
 
   async function refresh() {
     const res = await fetch("/api/articles/list");
@@ -170,7 +182,10 @@ export default function CalendrierArticlesPage() {
 
         return {
           id: it.slug,
-          title: it.title, // ✅ titre seul
+          title:
+            it.effectiveStatus === "published"
+              ? it.title
+              : `[${STATUS_LABELS[it.effectiveStatus]}] ${it.title}`,
           start: it.date!,
           allDay: true,
           backgroundColor: color,
@@ -193,6 +208,7 @@ export default function CalendrierArticlesPage() {
     setFSeriesSlug("NONE");
     setFSeriesName("");
     setFSeriesOrder("");
+    setFStatus("AUTO");
   }
 
   async function openEditor(slug: string) {
@@ -208,6 +224,7 @@ export default function CalendrierArticlesPage() {
     setFSeriesSlug(it?.seriesSlug ? it.seriesSlug : "NONE");
     setFSeriesName(it?.seriesName ?? "");
     setFSeriesOrder(it?.seriesOrder != null ? String(it.seriesOrder) : "");
+    setFStatus(it?.status ?? "AUTO");
   }
 
   async function saveEditor() {
@@ -232,6 +249,7 @@ export default function CalendrierArticlesPage() {
               name: fSeriesName.trim() ? fSeriesName.trim() : null,
               order: fSeriesOrder.trim() ? Number(fSeriesOrder.trim()) : null,
             },
+      status: fStatus === "AUTO" ? null : fStatus,
     };
 
     setSaving(true);
@@ -433,6 +451,18 @@ export default function CalendrierArticlesPage() {
           </div>
 
           <div style={{ display: "grid", gap: 6 }}>
+            <label style={{ fontWeight: 600 }}>Statut éditorial</label>
+            <select value={fStatus} onChange={(e) => setFStatus(e.target.value as typeof fStatus)} style={{ padding: 10, borderRadius: 10, border: "1px solid rgba(0,0,0,0.18)" }}>
+              <option value="AUTO">Automatique selon la date</option>
+              <option value="draft">Brouillon</option>
+              <option value="review">À relire</option>
+              <option value="scheduled">Programmé</option>
+              <option value="published">Publié</option>
+              <option value="archived">Archivé</option>
+            </select>
+          </div>
+
+          <div style={{ display: "grid", gap: 6 }}>
             <label style={{ fontWeight: 600 }}>Excerpt</label>
             <textarea value={fExcerpt} onChange={(e) => setFExcerpt(e.target.value)} rows={3} style={{ padding: 10, borderRadius: 10, border: "1px solid rgba(0,0,0,0.18)" }} />
           </div>
@@ -490,7 +520,13 @@ export default function CalendrierArticlesPage() {
             />
           </div>
 
-          <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 8 }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 10, justifyContent: "space-between", marginTop: 8 }}>
+            {selectedSlug ? (
+              <a href={`/articles/${selectedSlug}?preview=1`} target="_blank" rel="noreferrer" style={{ padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(0,0,0,0.18)" }}>
+                Prévisualiser l’article ↗
+              </a>
+            ) : <span />}
+            <div style={{ display: "flex", gap: 10 }}>
             <button
               onClick={() => resetEditor()}
               disabled={saving}
@@ -505,6 +541,7 @@ export default function CalendrierArticlesPage() {
             >
               {saving ? "Enregistrement…" : "Enregistrer"}
             </button>
+            </div>
           </div>
         </div>
       </Modal>

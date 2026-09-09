@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "slug": "2026-09-09-be-curious-not-judgmental-ce-que-nous-inventons-sur-les-autres",
+      "label": "Article",
+      "size": "tall",
+      "active": true
+    },
+    {
+      "slug": "2026-02-24-remonter-une-photo-strategique",
+      "label": "Pilotage",
+      "size": "tall",
+      "active": true
+    },
+    {
+      "slug": "2026-07-07-la-vente-que-je-n-ai-pas-voulu-conclure",
+      "label": "Éthique commerciale",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-07-14-une-formation-reussie-commence-quand-le-formateur-devient-inutile",
+      "label": "Transmission",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "01-jai-compris-le-rag-puis-jai-du-remplir-points-de-vigilance",
+      "label": "IA et discernement",
+      "size": "feature",
+      "active": true
+    },
+    {
+      "slug": "2026-05-18-construire-un-partenariat-sans-devenir-commercial",
+      "label": "Partenariat",
+      "size": "tall",
+      "active": true
+    },
+    {
+      "slug": "2026-08-12-pourquoi-les-premiers-utilisateurs-ne-suffisent-pas-a-faire-adopter-un-outil",
+      "label": "Adoption",
+      "size": "tall",
+      "active": true
+    },
+    {
+      "slug": "2026-02-16-demenager-une-equipe-sans-en-etre-le-manager",
+      "label": "Leadership transversal",
+      "size": "feature",
+      "active": true
+    },
+    {
+      "slug": "2026-09-09-une-bonne-pratique-vaut-davantage-quand-elle-circule",
+      "label": "Savoirs collectifs",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-02-19-de-kpi-a-decision",
+      "label": "Décision par les données",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-06-16-quand-un-partenaire-dit-non",
+      "label": "Négociation",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-03-13-tout-est-prioritaire-signal-d-alerte-managerial",
+      "label": "Priorisation",
+      "size": "tall",
+      "active": true
+    },
+    {
+      "slug": "2026-09-01-le-client-qui-voulait-tout-recevoir-chez-lui",
+      "label": "Expérience client",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-08-26-quand-une-contribution-reelle-ne-laisse-aucune-trace",
+      "label": "Preuves",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-06-30-trois-triangles-pour-comprendre-ce-qui-fait-tenir-un-changement",
+      "label": "Transformation",
+      "size": "feature",
+      "active": true
+    },
+    {
+      "slug": "2026-03-31-recollectiviser-sans-conflit",
+      "label": "Collectif",
+      "size": "compact",
+      "active": false
+    },
+    {
+      "slug": "2026-02-17-hygiene-de-langage",
+      "label": "Communication",
+      "size": "compact",
+      "active": true
+    },
+    {
+      "slug": "2026-04-14-arreter-de-debattre-tester-30-jours",
+      "label": "Expérimentation",
+      "size": "compact",
+      "active": false
+    },
+    {
+      "slug": "2026-08-31-une-decision-ne-peut-pas-tout-garder",
+      "label": "Arbitrage",
+      "size": "compact",
+      "active": false
+    },
+    {
+      "slug": "2026-09-02-un-bon-lead-commence-avant-le-crm",
+      "label": "Organisation commerciale",
+      "size": "tall",
+      "active": false
+    },
+    {
+      "slug": "08-ce-qui-entre-dans-la-base-et-qui-la-valide",
+      "label": "Données et responsabilité",
+      "size": "tall",
+      "active": false
+    }
+  ]
+}

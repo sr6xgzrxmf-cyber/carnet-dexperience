@@ -11,7 +11,9 @@ const items: Item[] = [
   { href: "/admin/images", label: "Images" },
   { href: "/admin/series", label: "Séries" },
   { href: "/admin/retrospectives", label: "Rétrospectives" },
+  { href: "/admin/mises-en-avant", label: "Mises en avant" },
   { href: "/admin/calendrier", label: "Calendrier" },
+  { href: "/admin/historique", label: "Historique" },
   { href: "/admin/analytics", label: "Visiteurs humains et IA" },
 ];
 

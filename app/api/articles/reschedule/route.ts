@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { findLocalArticleFile } from "@/lib/local-article-files";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { appendAdminHistory } from "@/lib/admin-history";
 
 
 const IS_LOCAL =
@@ -52,6 +53,7 @@ export async function PATCH(req: Request) {
   // 1) Mise à jour YAML
   const raw = fs.readFileSync(oldPath, "utf8");
   const parsed = matter(raw);
+  const previousDate = normalizeArticleDate(parsed.data?.date);
 
   const nextData = { ...parsed.data, date: newDate };
   let nextRaw = matter.stringify(parsed.content ?? "", nextData);
@@ -79,6 +81,13 @@ export async function PATCH(req: Request) {
       // On renomme d’abord, puis on écrit le contenu modifié dans le nouveau fichier
       fs.renameSync(oldPath, newPath);
       fs.writeFileSync(newPath, nextRaw, "utf8");
+      appendAdminHistory({
+        action: "article.reschedule",
+        target: newSlug,
+        summary: `Date déplacée de ${previousDate ?? "sans date"} à ${newDate}`,
+        before: { slug: oldSlug, date: previousDate },
+        after: { slug: newSlug, date: newDate },
+      });
 
       return NextResponse.json({ ok: true, slug: newSlug, renamed: true });
     }
@@ -86,6 +95,13 @@ export async function PATCH(req: Request) {
 
   // Sinon : pas de rename, on écrit dans le fichier existant
   fs.writeFileSync(oldPath, nextRaw, "utf8");
+  appendAdminHistory({
+    action: "article.reschedule",
+    target: oldSlug,
+    summary: `Date déplacée de ${previousDate ?? "sans date"} à ${newDate}`,
+    before: { slug: oldSlug, date: previousDate },
+    after: { slug: oldSlug, date: newDate },
+  });
 
   return NextResponse.json({ ok: true, slug: oldSlug, renamed: false });
 }

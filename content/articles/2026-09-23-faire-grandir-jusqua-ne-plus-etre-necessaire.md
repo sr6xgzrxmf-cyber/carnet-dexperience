@@ -1,22 +1,23 @@
 ---
 cover: /images/articles/2026-09-24-faire-grandir-jusqua-ne-plus-etre-necessaire.jpg
-date: 2026-09-24
-excerpt: Le leadership ne se mesure pas seulement à ce qui fonctionne
-  lorsque le manager est présent. À Richmond, faire grandir les autres
-  signifie progressivement leur donner assez de confiance, de cadre et
-  d'autonomie pour qu'ils puissent agir sans lui.
+date: "2026-09-23"
+excerpt: >-
+  Le leadership ne se mesure pas seulement à ce qui fonctionne lorsque le
+  manager est présent. À Richmond, faire grandir les autres signifie
+  progressivement leur donner assez de confiance, de cadre et d'autonomie pour
+  qu'ils puissent agir sans lui.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 7
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- autonomie
-- délégation
-- coaching
-- ted lasso
+  - management
+  - leadership
+  - autonomie
+  - délégation
+  - coaching
+  - ted lasso
 title: Faire grandir jusqu'à ne plus être nécessaire
 ---
 

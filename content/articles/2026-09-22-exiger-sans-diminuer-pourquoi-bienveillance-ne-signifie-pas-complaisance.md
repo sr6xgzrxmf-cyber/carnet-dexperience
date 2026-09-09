@@ -1,24 +1,24 @@
 ---
-cover: /images/articles/2026-09-23-exiger-sans-diminuer-pourquoi-bienveillance-ne-signifie-pas-complaisance.jpg
-date: 2026-09-23
-excerpt: Être bienveillant ne signifie pas abaisser le niveau
-  d'exigence. À Richmond, les personnages progressent parce qu'ils sont
-  soutenus, mais aussi parce que quelqu'un finit par leur dire ce qu'ils
-  ont besoin d'entendre.
+cover: >-
+  /images/articles/2026-09-23-exiger-sans-diminuer-pourquoi-bienveillance-ne-signifie-pas-complaisance.jpg
+date: "2026-09-22"
+excerpt: >-
+  Être bienveillant ne signifie pas abaisser le niveau d'exigence. À Richmond,
+  les personnages progressent parce qu'ils sont soutenus, mais aussi parce que
+  quelqu'un finit par leur dire ce qu'ils ont besoin d'entendre.
 series:
   name: Ce que Ted Lasso nous apprend sans nous faire la leçon
   order: 6
   slug: ce-que-ted-lasso-nous-apprend-sans-nous-faire-la-lecon
 source: Laurent Guyonnet — Carnet d'expérience
 tags:
-- management
-- leadership
-- exigence
-- bienveillance
-- feedback
-- ted lasso
-title: "Exiger sans diminuer : pourquoi bienveillance ne signifie pas
-  complaisance"
+  - management
+  - leadership
+  - exigence
+  - bienveillance
+  - feedback
+  - ted lasso
+title: 'Exiger sans diminuer : pourquoi bienveillance ne signifie pas complaisance'
 ---
 
 Ted Lasso est gentil. C'est même probablement l'une des premières choses que l'on remarque chez lui. Il écoute, encourage, apporte des biscuits, retient les prénoms, pardonne beaucoup et semble capable de trouver quelque chose de positif chez à peu près n'importe qui. Ce qui pourrait conduire à une conclusion assez confortable : **être un bon manager, c'est être gentil.**
