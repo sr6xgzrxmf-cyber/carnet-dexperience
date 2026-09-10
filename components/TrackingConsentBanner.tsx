@@ -9,6 +9,12 @@ export default function TrackingConsentBanner() {
   useEffect(() => { setVisible(!localStorage.getItem(TRACKING_CHOICE_KEY)); }, []);
   if (!visible) return null;
   function choose(value: "accepted" | "refused") {
+    void fetch("/api/analytics/consent", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      keepalive: true,
+      body: JSON.stringify({ choice: value }),
+    });
     localStorage.setItem(TRACKING_CHOICE_KEY, value);
     if (value === "refused") {
       localStorage.removeItem("cde_analytics_visitor");

@@ -11,13 +11,27 @@ function display(value: unknown) { return typeof value === "number" || (typeof v
 
 export default async function AnalyticsDashboard() {
   const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  const consentSince = new Date();
+  consentSince.setUTCHours(0, 0, 0, 0);
+  consentSince.setUTCDate(consentSince.getUTCDate() - 29);
   await prisma.analyticsEvent.deleteMany({ where: { createdAt: { lt: since } } });
-  const [events, humanPageViews, aiVisits, aiReferralSessions] = await Promise.all([
-    prisma.analyticsEvent.findMany({ where: { createdAt: { gte: since } }, orderBy: { createdAt: "desc" }, take: 250 }),
+  const [events, humanPageViews, aiVisits, aiReferralSessions, consentCounts] = await Promise.all([
+    prisma.analyticsEvent.findMany({ where: { createdAt: { gte: since }, kind: { not: "consent" } }, orderBy: { createdAt: "desc" }, take: 250 }),
     prisma.analyticsEvent.findMany({ where: { kind: "human", eventType: "page_view", createdAt: { gte: since }, sessionId: { not: null } }, select: { sessionId: true, metadata: true } }),
     prisma.analyticsEvent.count({ where: { kind: "ai", createdAt: { gte: since } } }),
     prisma.analyticsEvent.findMany({ where: { kind: "ai_referral", eventType: "page_view", createdAt: { gte: since }, sessionId: { not: null } }, distinct: ["sessionId"], select: { sessionId: true } }),
+    prisma.analyticsEvent.findMany({ where: { kind: "consent", createdAt: { gte: consentSince } }, select: { eventType: true, metadata: true } }),
   ]);
+  const countChoices = (choice: "accepted" | "refused") => consentCounts
+    .filter((item) => item.eventType === choice)
+    .reduce((sum, item) => {
+      const count = metadata(item.metadata).count;
+      return sum + (typeof count === "number" ? count : 0);
+    }, 0);
+  const acceptedChoices = countChoices("accepted");
+  const refusedChoices = countChoices("refused");
+  const totalChoices = acceptedChoices + refusedChoices;
+  const refusalRate = totalChoices ? Math.round((refusedChoices / totalChoices) * 100) : 0;
   const humanSessions = new Set(humanPageViews.map((event) => event.sessionId).filter(Boolean));
   const visitorBySession = new Map(humanPageViews.flatMap((event) => {
     const visitorId = metadata(event.metadata).visitorId;
@@ -47,6 +61,16 @@ export default async function AnalyticsDashboard() {
       {[["Visiteurs humains", humanVisitors.size], ["Sessions humaines", humanSessions.size], ["Visites de robots IA", aiVisits], ["Sessions depuis une IA", aiReferralSessions.length]].map(([title, value]) =>
         <section key={String(title)} className="rounded-2xl border border-neutral-200 bg-white/70 p-5 dark:border-neutral-800 dark:bg-neutral-950/20"><p className="text-sm text-neutral-500">{title}</p><strong className="mt-2 block text-3xl">{value}</strong></section>)}
     </div>
+    <section className="mt-8 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="font-semibold">Choix de mesure d’audience</h2>
+        <span className="text-xs text-neutral-500">30 derniers jours · choix enregistrés, pas personnes uniques</span>
+      </div>
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
+        {[["Acceptations", acceptedChoices], ["Refus", refusedChoices], ["Part des refus", `${refusalRate} %`]].map(([title, value]) =>
+          <div key={String(title)} className="rounded-xl bg-neutral-100/70 p-4 dark:bg-neutral-900/60"><p className="text-sm text-neutral-500">{title}</p><strong className="mt-2 block text-3xl">{value}</strong></div>)}
+      </div>
+    </section>
     <section className="mt-8 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
       <div className="flex items-baseline justify-between gap-4"><h2 className="font-semibold">Parcours récents</h2><span className="text-xs text-neutral-500">Un bloc par navigateur reconnu</span></div>
       <div className="mt-4 grid gap-4 xl:grid-cols-2">{recentJourneys.map(([visitorId, journey]) => {

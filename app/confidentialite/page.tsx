@@ -92,6 +92,12 @@ export default function ConfidentialitePage() {
           refuser ou retirer ce choix à tout moment. Le refus ne limite pas
           l’accès au site.
         </p>
+        <p>
+          Lorsque vous acceptez ou refusez, le site incrémente uniquement un
+          total quotidien pour ce choix. Cette mesure agrégée ne conserve ni
+          identifiant, ni adresse IP, ni navigateur, ni page consultée. Elle ne
+          permet pas de reconnaître une personne ou de suivre sa navigation.
+        </p>
         <TrackingPreferences />
 
         <h2>Vos droits</h2>
