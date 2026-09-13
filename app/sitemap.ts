@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles, toTimestamp } from "@/lib/articles";
 import { getAllParcours } from "@/lib/parcours";
+import { getAllSeriesWithEpisodes } from "@/lib/series-pages";
 
 const SITE_URL = "https://www.carnetdexperience.fr";
 
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { url: `${SITE_URL}/parcours`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/articles`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/series`, changeFrequency: "weekly", priority: 0.8 },
     {
       url: `${SITE_URL}/articles/archives`,
       changeFrequency: "weekly",
@@ -57,11 +59,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const seriesRoutes: MetadataRoute.Sitemap = getAllSeriesWithEpisodes().map((entry) => ({
+    url: `${SITE_URL}/series/${encodeURIComponent(entry.series.slug)}`,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
   const parcoursRoutes: MetadataRoute.Sitemap = parcours.map((item) => ({
     url: `${SITE_URL}/parcours/${encodeURIComponent(item.slug)}`,
     changeFrequency: "yearly",
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...parcoursRoutes, ...articleRoutes];
+  return [...staticRoutes, ...seriesRoutes, ...parcoursRoutes, ...articleRoutes];
 }

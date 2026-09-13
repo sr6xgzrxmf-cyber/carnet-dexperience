@@ -16,6 +16,7 @@ import TrackedLink from "@/components/TrackedLink";
 import type { Metadata } from "next";
 import { getArticleThemes } from "@/lib/article-themes";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { formatReadingTime } from "@/lib/reading-time";
 import { effectiveEditorialStatus, EDITORIAL_STATUS_LABELS } from "@/lib/editorial-status";
 import styles from "@/app/editorial-system.module.css";
 
@@ -156,6 +157,7 @@ export default async function ArticleDetailPage({
     process.env.NODE_ENV !== "production" || process.env.VERCEL_ENV === "preview";
   if (isFuture && !allowFuture) return notFound();
   const contentHtml = await markdownToHtml(item.content);
+  const readingTime = formatReadingTime(item.readingMinutes);
 
   function toAbsoluteUrl(url?: string) {
     if (!url) return undefined;
@@ -255,7 +257,16 @@ export default async function ArticleDetailPage({
         </Link>
 
         <p className={styles.eyebrow} style={{ marginTop: 34 }}>
-          {currentSeries.title ? `${currentSeries.title} · ` : ""}
+          {currentSeries.title ? (
+            <>
+              {currentSeries.slug ? (
+                <Link href={`/series/${currentSeries.slug}`}>{currentSeries.title}</Link>
+              ) : (
+                currentSeries.title
+              )}
+              {" · "}
+            </>
+          ) : null}
           {item.meta.date ? formatDate(item.meta.date) : "Carnet d’expérience"}
         </p>
         <h1 className={styles.titleCompact}>{item.meta.title}</h1>
@@ -265,7 +276,9 @@ export default async function ArticleDetailPage({
         ) : null}
 
         <div className={styles.readingMeta}>
-          {item.meta.source ? <span>{item.meta.source}</span> : null}
+          {readingTime || item.meta.source ? (
+            <span>{[readingTime, item.meta.source].filter(Boolean).join(" · ")}</span>
+          ) : null}
           {isFuture ? <span className={styles.tag}>{EDITORIAL_STATUS_LABELS[editorialStatus]}</span> : null}
         </div>
 

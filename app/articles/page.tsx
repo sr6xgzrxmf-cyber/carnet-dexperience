@@ -11,6 +11,7 @@ import {
 import { getAllSeriesCatalog } from "@/lib/series-catalog";
 import { ARTICLE_THEMES, getArticleThemes } from "@/lib/article-themes";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { formatReadingTime } from "@/lib/reading-time";
 import { effectiveEditorialStatus, isEditoriallyPublished, normalizeEditorialStatus, type EditorialStatus } from "@/lib/editorial-status";
 import type { Metadata } from "next";
 import ArticlesCatalog from "./_components/ArticlesCatalog";
@@ -40,6 +41,7 @@ type ArticleMeta = {
   tags?: string[];
   themes: string[];
   series?: { name?: string; title?: string; slug?: string; order?: number };
+  readingMinutes?: number;
 };
 
 function normalizeCoverSrc(cover: unknown): string | null {
@@ -91,6 +93,7 @@ function getItemMeta(item: ArticleItem): ArticleMeta {
     tags,
     themes: getArticleThemes(tags),
     series,
+    readingMinutes: item?.readingMinutes ?? 0,
   };
 }
 
@@ -203,7 +206,11 @@ function ArticlePreviewCard({
               À paraître
             </span>
           ) : article.date ? (
-            <span className={styles.meta}>{article.date}</span>
+            <span className={styles.meta}>
+              {[article.date, formatReadingTime(article.readingMinutes)]
+                .filter(Boolean)
+                .join(" · ")}
+            </span>
           ) : null}
         </div>
 
@@ -387,6 +394,7 @@ export default async function ArticlesHubPage(props: {
       ? seriesLengths.get(article.series.slug)
       : undefined,
     futureLabel: !isEditoriallyPublished(article.status, article.date ?? null, now),
+    readingMinutes: article.readingMinutes,
   }));
 
   return (
@@ -535,6 +543,10 @@ export default async function ArticlesHubPage(props: {
           <p className={styles.sectionCopy}>
             Ces séries servent de points d&apos;entrée éditoriaux. Elles permettent de
             comprendre une ligne de travail, une mécanique ou une bifurcation importante.
+            <br />
+            <Link href="/series" className={styles.textLink}>
+              Voir toutes les séries <span aria-hidden>→</span>
+            </Link>
           </p>
         </div>
 
@@ -629,10 +641,7 @@ export default async function ArticlesHubPage(props: {
                       </ul>
 
                       <div className="mt-3 text-xs text-neutral-500">
-                        <Link
-                          href={`/articles/archives?series=${s.slug}`}
-                          className="hover:underline"
-                        >
+                        <Link href={`/series/${s.slug}`} className="hover:underline">
                           Voir toute la série →
                         </Link>
                       </div>

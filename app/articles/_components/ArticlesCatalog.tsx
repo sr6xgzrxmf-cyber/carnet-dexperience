@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { track } from "@vercel/analytics";
 import styles from "@/app/editorial-system.module.css";
+import { formatReadingTime } from "@/lib/reading-time";
 
 const PAGE_SIZE = 12;
 
@@ -21,6 +22,7 @@ export type CatalogArticle = {
   seriesOrder?: number;
   seriesLength?: number;
   futureLabel?: boolean;
+  readingMinutes?: number;
 };
 
 type ArticlesCatalogProps = {
@@ -219,6 +221,11 @@ export default function ArticlesCatalog({
                   <h3 className={styles.articleTitle}>{article.title}</h3>
                   {article.excerpt ? (
                     <p className={styles.articleExcerpt}>{article.excerpt}</p>
+                  ) : null}
+                  {!article.futureLabel && formatReadingTime(article.readingMinutes) ? (
+                    <p className={styles.meta}>
+                      {formatReadingTime(article.readingMinutes)}
+                    </p>
                   ) : null}
                 </div>
               </Link>

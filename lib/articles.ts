@@ -9,6 +9,7 @@ import {
   isEditoriallyPublished,
   type EditorialStatus,
 } from "./editorial-status";
+import { estimateReadingMinutes } from "./reading-time";
 
 const articlesDirectory = path.join(process.cwd(), "content", "articles");
 
@@ -31,6 +32,7 @@ export type ArticleItem = {
   slug: string;
   meta: ArticleMeta;
   content: string;
+  readingMinutes: number;
 };
 
 /**
@@ -168,7 +170,12 @@ function readAllFromDisk(fileNames: string[]): ArticleItem[] {
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
-    return { slug, meta: data as ArticleMeta, content };
+    return {
+      slug,
+      meta: data as ArticleMeta,
+      content,
+      readingMinutes: estimateReadingMinutes(content),
+    };
   });
 
   return items.sort((a, b) => {

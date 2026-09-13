@@ -5,6 +5,7 @@ import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
 import { getArticleBySlug, getPublishedArticles, type ArticleMeta } from "@/lib/articles";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { formatReadingTime } from "@/lib/reading-time";
 import { readHomeHighlights } from "@/lib/home-highlights";
 import PortfolioLoop from "./PortfolioLoop";
 
@@ -345,7 +346,11 @@ export default function HomePage() {
                   <span className={styles.latestShade} aria-hidden />
                   <span className={styles.latestContent}>
                     {date ? (
-                      <span className={styles.latestDate}>{date}</span>
+                      <span className={styles.latestDate}>
+                        {[date, formatReadingTime(article.readingMinutes)]
+                          .filter(Boolean)
+                          .join(" · ")}
+                      </span>
                     ) : null}
                     <strong>{article.meta.title}</strong>
                     {isFeatured && article.meta.excerpt ? (
