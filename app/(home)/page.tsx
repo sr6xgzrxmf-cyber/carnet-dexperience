@@ -3,9 +3,28 @@ import Link from "next/link";
 import { Fragment } from "react";
 import TrackedLink from "@/components/TrackedLink";
 import styles from "./home.module.css";
-import { getArticleBySlug } from "@/lib/articles";
+import { getArticleBySlug, getPublishedArticles, type ArticleMeta } from "@/lib/articles";
+import { normalizeArticleDate } from "@/lib/article-date";
 import { readHomeHighlights } from "@/lib/home-highlights";
 import PortfolioLoop from "./PortfolioLoop";
+
+function formatArticleDate(date: ArticleMeta["date"]): string | null {
+  const iso = normalizeArticleDate(date);
+  if (!iso) return null;
+
+  return new Intl.DateTimeFormat("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(`${iso}T12:00:00`));
+}
+
+function normalizeCoverSrc(cover: unknown): string | null {
+  if (typeof cover !== "string" || !cover.trim()) return null;
+  const s = cover.trim();
+  if (/^https?:\/\//i.test(s)) return s;
+  return s.startsWith("/") ? s : `/${s}`;
+}
 
 const situations = [
   {
@@ -47,12 +66,42 @@ const portfolioVisuals = [
 ];
 
 export default function HomePage() {
-  const highlights = readHomeHighlights().flatMap((highlight) => {
+  const publishedArticles = getPublishedArticles();
+  const latestArticles = publishedArticles.slice(0, 5);
+  const latestArticle = latestArticles[0] ?? null;
+  const remainingArticlesCount = Math.max(
+    publishedArticles.length - latestArticles.length,
+    0,
+  );
+
+  const curatedHighlights = readHomeHighlights().flatMap((highlight) => {
     if (!highlight.active) return [];
+    if (latestArticle && highlight.slug === latestArticle.slug) return [];
     const article = getArticleBySlug(highlight.slug, { includeFuture: false });
     if (!article) return [];
-    return [{ highlight, article }];
+    return [{ highlight, article, isLatest: false as const }];
   });
+
+  const highlights = latestArticle
+    ? (() => {
+        const latestEntry = {
+          highlight: {
+            slug: latestArticle.slug,
+            label: "Dernier article publié",
+            size: "feature" as const,
+            active: true,
+          },
+          article: latestArticle,
+          isLatest: true as const,
+        };
+        const middleIndex = Math.floor(curatedHighlights.length / 2);
+        return [
+          ...curatedHighlights.slice(0, middleIndex),
+          latestEntry,
+          ...curatedHighlights.slice(middleIndex),
+        ];
+      })()
+    : curatedHighlights;
 
   const needsVisualAfter = (index: number) => {
     if (highlights[index]?.highlight.size !== "compact") return false;
@@ -134,44 +183,75 @@ export default function HomePage() {
             <p>Faites glisser pour découvrir les articles.</p>
           </div>
           <PortfolioLoop>
-            {highlights.map(({ highlight, article }, index) => (
-              <Fragment key={article.slug}>
-                <Link
-                  href={`/articles/${article.slug}`}
-                  className={`${styles.portfolioTile} ${styles[`portfolio_${highlight.size}`]}`}
-                >
+            {highlights.map(({ highlight, article, isLatest }, index) => {
+              const tileClassName = `${styles.portfolioTile} ${styles[`portfolio_${highlight.size}`]} ${
+                isLatest ? styles.portfolioLatest : ""
+              }`;
+              const tileContent = (
+                <>
                   {article.meta.cover ? (
                     <Image
                       src={article.meta.cover}
                       alt=""
                       fill
                       sizes={highlight.size === "feature" ? "(max-width: 700px) 88vw, 620px" : "(max-width: 700px) 76vw, 360px"}
-                      className={styles.portfolioImage}
+                      className={`${styles.portfolioImage} ${isLatest ? styles.portfolioImageMono : ""}`}
                     />
                   ) : null}
-                  <span className={styles.portfolioShade} aria-hidden />
-                  <span className={styles.portfolioContent}>
-                    <span className={styles.portfolioLabel}>{highlight.label || "Article"}</span>
+                  {isLatest ? null : (
+                    <span className={styles.portfolioShade} aria-hidden />
+                  )}
+                  <span
+                    className={`${styles.portfolioContent} ${
+                      isLatest ? styles.portfolioContentLight : ""
+                    }`}
+                  >
+                    <span
+                      className={`${styles.portfolioLabel} ${
+                        isLatest ? styles.portfolioLabelLatest : ""
+                      }`}
+                    >
+                      {isLatest ? "Dernier article publié" : highlight.label || "Article"}
+                    </span>
                     <strong>{article.meta.title}</strong>
                     <span className={styles.portfolioAction}>Lire l’article →</span>
                   </span>
-                </Link>
-                {needsVisualAfter(index) ? (
-                  <div
-                    className={`${styles.portfolioTile} ${styles.portfolio_compact} ${styles.portfolioVisual}`}
-                    aria-hidden="true"
-                  >
-                    <Image
-                      src={portfolioVisuals[index % portfolioVisuals.length]}
-                      alt=""
-                      fill
-                      sizes="(max-width: 700px) 76vw, 300px"
-                      className={styles.portfolioImage}
-                    />
-                  </div>
-                ) : null}
-              </Fragment>
-            ))}
+                </>
+              );
+
+              return (
+                <Fragment key={article.slug}>
+                  {isLatest ? (
+                    <TrackedLink
+                      href={`/articles/${article.slug}`}
+                      className={tileClassName}
+                      eventName="home_portfolio_latest_clicked"
+                      eventData={{ slug: article.slug }}
+                    >
+                      {tileContent}
+                    </TrackedLink>
+                  ) : (
+                    <Link href={`/articles/${article.slug}`} className={tileClassName}>
+                      {tileContent}
+                    </Link>
+                  )}
+                  {needsVisualAfter(index) ? (
+                    <div
+                      className={`${styles.portfolioTile} ${styles.portfolio_compact} ${styles.portfolioVisual}`}
+                      aria-hidden="true"
+                    >
+                      <Image
+                        src={portfolioVisuals[index % portfolioVisuals.length]}
+                        alt=""
+                        fill
+                        sizes="(max-width: 700px) 76vw, 300px"
+                        className={styles.portfolioImage}
+                      />
+                    </div>
+                  ) : null}
+                </Fragment>
+              );
+            })}
             <Link
               href="/articles"
               className={`${styles.portfolioTile} ${styles.portfolio_tall} ${styles.portfolioCta}`}
@@ -222,6 +302,75 @@ export default function HomePage() {
           Voir toutes les situations et l’accompagnement <span aria-hidden>→</span>
         </Link>
       </section>
+
+      {latestArticles.length ? (
+        <section className={styles.section} aria-labelledby="latest-title">
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className={styles.eyebrow}>Le carnet</p>
+              <h2 id="latest-title">Les derniers articles</h2>
+            </div>
+            <p>Les textes les plus récents, toutes séries confondues.</p>
+          </div>
+
+          <div className={styles.latestGrid}>
+            {latestArticles.map((article, index) => {
+              const date = formatArticleDate(article.meta.date);
+              const coverSrc = normalizeCoverSrc(article.meta.cover);
+              const isFeatured = index === 0;
+
+              return (
+                <TrackedLink
+                  key={article.slug}
+                  href={`/articles/${article.slug}`}
+                  className={`${styles.latestTile} ${
+                    isFeatured ? styles.latestFeature : styles.latestCompact
+                  }`}
+                  eventName="home_latest_article_clicked"
+                  eventData={{ slug: article.slug, position: index + 1 }}
+                >
+                  {coverSrc ? (
+                    <Image
+                      src={coverSrc}
+                      alt=""
+                      fill
+                      sizes={
+                        isFeatured
+                          ? "(max-width: 900px) 100vw, 560px"
+                          : "(max-width: 900px) 50vw, 260px"
+                      }
+                      className={styles.latestImage}
+                    />
+                  ) : null}
+                  <span className={styles.latestShade} aria-hidden />
+                  <span className={styles.latestContent}>
+                    {date ? (
+                      <span className={styles.latestDate}>{date}</span>
+                    ) : null}
+                    <strong>{article.meta.title}</strong>
+                    {isFeatured && article.meta.excerpt ? (
+                      <span className={styles.latestExcerpt}>
+                        {article.meta.excerpt}
+                      </span>
+                    ) : null}
+                  </span>
+                </TrackedLink>
+              );
+            })}
+          </div>
+
+          <TrackedLink
+            className={styles.textLink}
+            href="/articles"
+            eventName="home_latest_view_all_clicked"
+          >
+            {remainingArticlesCount > 0
+              ? `Voir les ${remainingArticlesCount} autres articles`
+              : "Voir tous les articles"}{" "}
+            <span aria-hidden>→</span>
+          </TrackedLink>
+        </section>
+      ) : null}
 
       <section className={`${styles.fullBleed} ${styles.softSection}`}>
         <div className={styles.fullBleedInner}>
