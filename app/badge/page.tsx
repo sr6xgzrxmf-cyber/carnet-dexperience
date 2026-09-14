@@ -113,6 +113,8 @@ export default function BadgePage() {
     };
   }, [url, colors]);
 
+  const [copied, setCopied] = useState(false);
+
   async function copyUrl() {
     try {
       await navigator.clipboard.writeText(url);
@@ -124,6 +126,8 @@ export default function BadgePage() {
       document.execCommand("copy");
       document.body.removeChild(ta);
     }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1600);
   }
 
 // MODE PRÉSENTATION — overlay type Photos.app
@@ -137,8 +141,10 @@ if (present) {
         backgroundColor: "#000",
         zIndex: 9999,
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        gap: "18px",
         touchAction: "manipulation",
       }}
     >
@@ -157,6 +163,16 @@ if (present) {
           dangerouslySetInnerHTML={{ __html: svg }}
         />
       </div>
+
+      <p
+        style={{
+          color: "rgba(255,255,255,0.35)",
+          fontSize: "12px",
+          textAlign: "center",
+        }}
+      >
+        Double-tapez pour revenir
+      </p>
 
       <style jsx>{`
         :global(svg) {
@@ -253,15 +269,20 @@ if (present) {
                 onClick={copyUrl}
                 className="rounded-xl px-3 py-2 text-sm font-medium"
                 style={{
-                  background: prefersDark
-                    ? "rgba(255,255,255,0.10)"
-                    : "rgba(0,0,0,0.06)",
-                  border: prefersDark
-                    ? "1px solid rgba(255,255,255,0.14)"
-                    : "1px solid rgba(0,0,0,0.10)",
+                  background: copied
+                    ? "rgba(120,132,119,0.25)"
+                    : prefersDark
+                      ? "rgba(255,255,255,0.10)"
+                      : "rgba(0,0,0,0.06)",
+                  border: copied
+                    ? "1px solid rgba(120,132,119,0.5)"
+                    : prefersDark
+                      ? "1px solid rgba(255,255,255,0.14)"
+                      : "1px solid rgba(0,0,0,0.10)",
+                  transition: "background 150ms ease, border-color 150ms ease",
                 }}
               >
-                Copier l’URL
+                {copied ? "Copié ✓" : "Copier l’URL"}
               </button>
 
               <button
@@ -328,7 +349,7 @@ if (present) {
         </p>
 
         <p className="mt-2 text-[11px] opacity-60 text-center">
-          Touchez le QR pour l’afficher en plein écran.
+          Double-tapez le QR pour l’afficher en plein écran.
         </p>
       </div>
     </main>
