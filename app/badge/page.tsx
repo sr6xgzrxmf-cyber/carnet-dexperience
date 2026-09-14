@@ -82,6 +82,24 @@ export default function BadgePage() {
     }
   }, [present]);
 
+  // Depuis une icône ajoutée à l'écran d'accueil (mode "Web Clip"), c'est
+  // cette balise — pas theme-color — qui contrôle l'apparence de la zone de
+  // l'encoche. "black-translucent" laisse le contenu s'étendre en dessous.
+  useEffect(() => {
+    const tag = document.querySelector<HTMLMetaElement>(
+      'meta[name="apple-mobile-web-app-status-bar-style"]'
+    );
+    if (!tag) return;
+
+    if (present) {
+      const previous = tag.getAttribute("content");
+      tag.setAttribute("content", "black-translucent");
+      return () => {
+        if (previous) tag.setAttribute("content", previous);
+      };
+    }
+  }, [present]);
+
   // Filet de sécurité : si le calque plein écran ne recouvre pas parfaitement
   // la zone de l'encoche/barre de statut sur certains iPhone, ce qui apparaît
   // en dessous doit déjà être noir plutôt que le fond crème du site.
