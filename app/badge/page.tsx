@@ -61,6 +61,27 @@ export default function BadgePage() {
   // ✅ NOUVEAU : mode présentation (QR seul)
   const [present, setPresent] = useState(false);
 
+  // La zone de la barre de statut/encoche n'est pas repeinte par le contenu
+  // de la page : sans ceci, Safari y affiche la couleur de <meta
+  // name="theme-color"> par défaut au lieu du noir du mode présentation.
+  useEffect(() => {
+    const tags = Array.from(
+      document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')
+    );
+    if (!tags.length) return;
+
+    if (present) {
+      const previous = tags.map((tag) => tag.getAttribute("content"));
+      tags.forEach((tag) => tag.setAttribute("content", "#000000"));
+      return () => {
+        tags.forEach((tag, index) => {
+          const value = previous[index];
+          if (value) tag.setAttribute("content", value);
+        });
+      };
+    }
+  }, [present]);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
