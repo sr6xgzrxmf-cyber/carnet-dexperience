@@ -323,7 +323,7 @@ if (present) {
           `}</style>
         </div>
 
-        <p className="mt-3 text-xs opacity-70 text-center">
+        <p className="mt-3 text-xs opacity-70 text-center break-words">
           {url.replace("https://", "")}
         </p>
 

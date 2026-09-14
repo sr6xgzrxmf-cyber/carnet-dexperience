@@ -27,7 +27,7 @@ export default function SiteHeader() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-200/70 bg-[#f5f3ee]/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90 print:hidden">
+    <header className="sticky top-0 z-40 border-b border-neutral-200/70 bg-[#f5f3ee]/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90 print:hidden pt-[env(safe-area-inset-top)]">
       <div className="site-container flex min-h-[72px] items-center gap-6">
         <Link
           href="/"
