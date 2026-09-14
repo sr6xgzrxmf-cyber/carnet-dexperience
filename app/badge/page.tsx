@@ -82,6 +82,25 @@ export default function BadgePage() {
     }
   }, [present]);
 
+  // Filet de sécurité : si le calque plein écran ne recouvre pas parfaitement
+  // la zone de l'encoche/barre de statut sur certains iPhone, ce qui apparaît
+  // en dessous doit déjà être noir plutôt que le fond crème du site.
+  useEffect(() => {
+    if (!present) return;
+
+    const { style } = document.documentElement;
+    const previousHtmlBg = style.backgroundColor;
+    const previousBodyBg = document.body.style.backgroundColor;
+
+    style.backgroundColor = "#000";
+    document.body.style.backgroundColor = "#000";
+
+    return () => {
+      style.backgroundColor = previousHtmlBg;
+      document.body.style.backgroundColor = previousBodyBg;
+    };
+  }, [present]);
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -158,7 +177,10 @@ if (present) {
       onDoubleClick={() => setPresent(false)}
       style={{
         position: "fixed",
-        inset: 0,
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100dvh",
         backgroundColor: "#000",
         zIndex: 9999,
         display: "flex",
