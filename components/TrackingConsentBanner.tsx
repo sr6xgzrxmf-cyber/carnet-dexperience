@@ -20,7 +20,8 @@ export default function TrackingConsentBanner() {
       localStorage.removeItem("cde_analytics_visitor");
       sessionStorage.removeItem("cde_analytics_session");
       sessionStorage.removeItem("cde_analytics_origin");
-    } else window.dispatchEvent(new Event("cde-tracking-consent"));
+    }
+    window.dispatchEvent(new Event("cde-tracking-consent"));
     setVisible(false);
   }
   return <aside aria-label="Choix des cookies" className="fixed inset-x-0 bottom-0 z-[100] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur dark:border-neutral-700 dark:bg-neutral-950/95">
