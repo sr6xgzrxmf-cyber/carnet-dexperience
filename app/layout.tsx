@@ -40,7 +40,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw",
+    google: [
+      "pqYX0KqYycbGy3Bhid-rjOcJsUvGZ2cEgkk0y29iVWw",
+      "x7Gv4qpzNk-GnKB2E4-3YZkBwBDyHXqRY1lOJ6uTWEI",
+    ],
   },
   openGraph: {
     type: "website",
