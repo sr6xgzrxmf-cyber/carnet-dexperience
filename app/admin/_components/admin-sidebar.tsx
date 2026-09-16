@@ -26,7 +26,7 @@ export default function AdminSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="sticky top-6 h-[calc(100vh-3rem)]">
+    <aside className="md:sticky md:top-6 md:h-[calc(100vh-3rem)]">
       <div className="overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-950/15">
         <div className="border-b border-neutral-200 dark:border-neutral-800 px-4 py-4">
           <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
