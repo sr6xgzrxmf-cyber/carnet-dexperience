@@ -1,0 +1,30 @@
+"use server";
+import { cookies, headers } from "next/headers";
+import { redirect } from "next/navigation";
+import { gammVertClientKey, gammVertCookieName, areCorrectGammVertCredentials, createGammVertSession } from "@/lib/gamm-vert-auth";
+import { prisma } from "@/lib/db";
+
+export async function loginGammVert(_state: { error: string }, formData: FormData) {
+  const requestHeaders = await headers();
+  const address = requestHeaders.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+  const keyHash = gammVertClientKey(address);
+  const now = Date.now();
+  const windowStart = new Date(now - 15 * 60 * 1000);
+  const cleanupBefore = new Date(now - 24 * 60 * 60 * 1000);
+  const [, failures] = await Promise.all([
+    prisma.adminLoginAttempt.deleteMany({ where: { createdAt: { lt: cleanupBefore } } }),
+    prisma.adminLoginAttempt.count({ where: { keyHash, createdAt: { gte: windowStart } } }),
+  ]);
+  if (failures >= 5) return { error: "Trop de tentatives. Réessayez dans 15 minutes." };
+  const username = String(formData.get("username") ?? "");
+  const password = String(formData.get("password") ?? "");
+  if (!areCorrectGammVertCredentials(username, password)) {
+    await prisma.adminLoginAttempt.create({ data: { keyHash } });
+    return { error: "Identifiant ou mot de passe incorrect." };
+  }
+  await prisma.adminLoginAttempt.deleteMany({ where: { keyHash } });
+  const store = await cookies();
+  store.set(gammVertCookieName(), createGammVertSession(), { httpOnly: true, sameSite: "strict",
+    secure: process.env.NODE_ENV === "production", path: "/projets/jardin-partage", maxAge: 60 * 60 * 12 });
+  redirect("/projets/jardin-partage");
+}

@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<title>Le Jardin Partagé</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+  :root{
+    color-scheme: light;
+    --bg: #F8F3E3;
+    --surface: #FEFCF3;
+    --surface-alt: #F1EAD4;
+    --ink: #232B18;
+    --ink-soft: #5C6647;
+    --almond: #5F7B45;
+    --almond-deep: #33431F;
+    --gold: #B4841F;
+    --rust: #B0552E;
+    --line: #E1D5AC;
+    --shadow: rgba(51,67,31,0.10);
+    --on-accent: #FBFAF1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --bg: #161C10;
+      --surface: #1E2617;
+      --surface-alt: #26301C;
+      --ink: #EDE8D6;
+      --ink-soft: #B9C2A0;
+      --almond: #92B96C;
+      --almond-deep: #C4DA9E;
+      --gold: #DCB158;
+      --rust: #E08A5C;
+      --line: #37432A;
+      --shadow: rgba(0,0,0,0.4);
+      --on-accent: #1B2312;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg: #161C10;
+    --surface: #1E2617;
+    --surface-alt: #26301C;
+    --ink: #EDE8D6;
+    --ink-soft: #B9C2A0;
+    --almond: #92B96C;
+    --almond-deep: #C4DA9E;
+    --gold: #DCB158;
+    --rust: #E08A5C;
+    --line: #37432A;
+    --shadow: rgba(0,0,0,0.4);
+    --on-accent: #1B2312;
+  }
+
+  *{ box-sizing: border-box; }
+  [hidden]{ display: none !important; }
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Karla', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-inline: 0;
+  }
+  img{ max-width: 100%; }
+  h1,h2,h3{ text-wrap: balance; }
+  a{ color: var(--almond-deep); }
+  :root[data-theme="dark"] a, @media (prefers-color-scheme: dark){ a{ color: var(--gold); } }
+
+  .page{ max-width: 980px; margin: 0 auto; padding: 0 20px 48px; }
+
+  .topbar{ padding-top: 28px; margin-bottom: 22px; }
+  .brand{ display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .brand-mark{ width: 40px; height: 40px; color: var(--gold); flex-shrink: 0; }
+  .brand-mark svg{ width: 100%; height: 100%; }
+  .brand-text h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--almond-deep);
+    margin: 0;
+    line-height: 1.05;
+  }
+  .brand-text .tagline{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 3px 0 0;
+  }
+  .topbar .lede{
+    font-size: 15px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .tabs{
+    display: flex;
+    gap: 6px;
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px;
+    margin-bottom: 26px;
+    max-width: fit-content;
+    flex-wrap: wrap;
+  }
+  .tab{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    padding: 9px 16px;
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease;
+  }
+  .tab:hover{ color: var(--ink); }
+  .tab[aria-selected="true"]{
+    background: var(--almond-deep);
+    color: var(--on-accent);
+  }
+  :root[data-theme="dark"] .tab[aria-selected="true"], @media (prefers-color-scheme: dark){ .tab[aria-selected="true"]{ background: var(--almond-deep); color: var(--on-accent); } }
+
+  .panel-intro{ margin: 0 0 18px; color: var(--ink-soft); font-size: 14.5px; max-width: 66ch; }
+
+  .add-box{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 22px;
+    overflow: hidden;
+  }
+  .add-toggle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 13px 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--almond-deep);
+  }
+  :root[data-theme="dark"] .add-toggle, @media (prefers-color-scheme: dark){ .add-toggle{ color: var(--gold); } }
+  .add-toggle .chevron{ transition: transform .15s ease; color: var(--ink-soft); }
+  .add-toggle[aria-expanded="true"] .chevron{ transform: rotate(180deg); }
+  .add-form{
+    padding: 4px 16px 16px;
+    display: grid;
+    gap: 10px;
+  }
+  .add-form.row2{ grid-template-columns: 1fr 1fr; }
+  .add-form .full{ grid-column: 1 / -1; }
+  .field{ display: flex; flex-direction: column; gap: 4px; }
+  .field label{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+  }
+  .field input, .field select, .field textarea{
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+  .field textarea{ resize: vertical; min-height: 52px; }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline: 2px solid var(--almond);
+    outline-offset: 1px;
+  }
+  .submit-btn{
+    justify-self: start;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 13.5px;
+    color: var(--on-accent);
+    background: var(--almond-deep);
+    border: none;
+    border-radius: 999px;
+    padding: 9px 20px;
+    cursor: pointer;
+  }
+  .submit-btn:hover{ opacity: 0.9; }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 14px;
+  }
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px var(--shadow);
+  }
+  .card.is-new{ animation: settle .6s ease; }
+  @keyframes settle{
+    from{ background: var(--surface-alt); }
+    to{ background: var(--surface); }
+  }
+  @media (prefers-reduced-motion: reduce){ .card.is-new{ animation: none; } }
+
+  .card-head{ display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+  .card h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink);
+    margin: 0;
+  }
+  .tag{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .tag.offre{ background: color-mix(in srgb, var(--almond) 22%, var(--surface)); color: var(--almond-deep); }
+  .tag.recherche{ background: color-mix(in srgb, var(--rust) 22%, var(--surface)); color: var(--rust); }
+  :root[data-theme="dark"] .tag.offre, @media (prefers-color-scheme: dark){ .tag.offre{ color: var(--almond-deep); } }
+
+  .card p.desc{ font-size: 13.5px; color: var(--ink-soft); margin: 0 0 8px; }
+  .card .meta{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed var(--line);
+    padding-top: 8px;
+  }
+
+  .atelier-card h3{ margin-bottom: 2px; }
+  .atelier-when{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .atelier-foot{
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px dashed var(--line);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .places{ font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--ink-soft); }
+  .places b{ color: var(--ink); }
+  .reserve-btn{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    color: var(--almond-deep);
+    background: transparent;
+    border: 1px solid var(--almond);
+    border-radius: 999px;
+    padding: 5px 13px;
+    cursor: pointer;
+  }
+  :root[data-theme="dark"] .reserve-btn, @media (prefers-color-scheme: dark){ .reserve-btn{ color: var(--almond-deep); background: var(--almond); } }
+  .reserve-btn:hover{ background: var(--almond); color: var(--on-accent); }
+  .reserve-btn[disabled]{ opacity: 0.5; cursor: not-allowed; }
+  .reserve-form{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); display: none; gap: 8px; }
+  .reserve-form.open{ display: grid; }
+  .reserve-form input{
+    font-family: 'Karla', sans-serif; font-size: 13px;
+    border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px;
+    background: var(--bg); color: var(--ink);
+  }
+  .reserve-confirm{ font-size: 12.5px; color: var(--almond-deep); font-weight: 700; margin-top: 8px; }
+  :root[data-theme="dark"] .reserve-confirm, @media (prefers-color-scheme: dark){ .reserve-confirm{ color: var(--gold); } }
+  .complet-badge{
+    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase;
+    color: var(--rust); font-weight: 600;
+  }
+
+  .reseau-card .activite{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+    color: var(--almond); margin: 0 0 6px;
+  }
+  .reseau-card .zone{ color: var(--ink-soft); }
+
+  .footer{
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+    font-size: 12.5px; color: var(--ink-soft);
+  }
+
+  @media (max-width: 460px){
+    .brand-text h1{ font-size: 22px; }
+    .add-form.row2{ grid-template-columns: 1fr; }
+    .tab{ font-size: 12.5px; padding: 8px 12px; }
+  }
+</style>
+
+<div class="page">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3.5-2.5-5-6-5 0 3.5 2.5 5 6 5Z"/></svg></span>
+      <div class="brand-text">
+        <h1>Le Jardin Partagé</h1>
+        <p class="tagline">Prototype — démonstration · Gamm Vert Lozanne</p>
+      </div>
+    </div>
+    <p class="lede">Échanger des graines entre clients, réserver un atelier, retrouver les professionnels indépendants du secteur — un aperçu de ce que pourrait devenir l'espace numérique du magasin. Essayez : vos ajouts s'affichent tout de suite, et restent sur cet appareil si vous revenez.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" id="tabbtn-graines" data-tab="graines" role="tab" aria-selected="true" aria-controls="panel-graines">Échange de graines</button>
+    <button class="tab" id="tabbtn-ateliers" data-tab="ateliers" role="tab" aria-selected="false" aria-controls="panel-ateliers">Ateliers</button>
+    <button class="tab" id="tabbtn-reseau" data-tab="reseau" role="tab" aria-selected="false" aria-controls="panel-reseau">Réseau local</button>
+  </nav>
+
+  <main>
+    <section id="panel-graines" class="panel" role="tabpanel" aria-labelledby="tabbtn-graines">
+      <p class="panel-intro">Ce que les client·es proposent ou recherchent en ce moment — graines, boutures, plants en surplus.</p>
+
+      <div class="add-box">
+        <button class="add-toggle" aria-expanded="false" aria-controls="form-graines">
+          <span>+ Publier une annonce</span>
+          <span class="chevron">▾</span>
+        </button>
+        <form class="add-form row2" id="form-graines" hidden>
+          <div class="field"><label for="g-plante">Plante</label><input id="g-plante" required placeholder="ex. Tomate ancienne"></div>
+          <div class="field"><label for="g-type">Type</label>
+            <select id="g-type"><option value="offre">J'en propose</option><option value="recherche">J'en recherche</option></select>
+          </div>
+          <div class="field full"><label for="g-desc">Description</label><textarea id="g-desc" required placeholder="Variété, quantité, conditions d'échange…"></textarea></div>
+          <div class="field"><label for="g-prenom">Prénom</label><input id="g-prenom" required placeholder="ex. Camille"></div>
+          <button type="submit" class="submit-btn full">Publier</button>
+        </form>
+      </div>
+
+      <div class="grid" id="grid-graines"></div>
+    </section>
+
+    <section id="panel-ateliers" class="panel" role="tabpanel" aria-labelledby="tabbtn-ateliers" hidden>
+      <p class="panel-intro">Les prochaines sessions en magasin — places limitées, réservation directe.</p>
+      <div class="grid" id="grid-ateliers"></div>
+    </section>
+
+    <section id="panel-reseau" class="panel" role="tabpanel" aria-labelledby="tabbtn-reseau" hidden>
+      <p class="panel-intro">Les indépendants du secteur, à proximité, pour orienter les client·es au-delà de ce que propose le magasin.</p>
+
+      <div class="add-box">
+        <button class="add-toggle" aria-expanded="false" aria-controls="form-reseau">
+          <span>+ Rejoindre le réseau</span>
+          <span class="chevron">▾</span>
+        </button>
+        <form class="add-form row2" id="form-reseau" hidden>
+          <div class="field"><label for="r-nom">Nom / activité</label><input id="r-nom" required placeholder="ex. Julie Marquant — Paysagiste"></div>
+          <div class="field"><label for="r-zone">Zone</label><input id="r-zone" required placeholder="ex. Lozanne et alentours"></div>
+          <div class="field full"><label for="r-desc">Description</label><textarea id="r-desc" required placeholder="Ce que vous proposez…"></textarea></div>
+          <div class="field"><label for="r-contact">Contact</label><input id="r-contact" required placeholder="email ou téléphone"></div>
+          <button type="submit" class="submit-btn full">Rejoindre</button>
+        </form>
+      </div>
+
+      <div class="grid" id="grid-reseau"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Prototype interactif réalisé par Laurent Guyonnet, en complément de la candidature envoyée à Gamm Vert Lozanne. Les contenus visibles au chargement sont des exemples ; vos propres ajouts restent visibles sur cet appareil.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var seedGraines = [
+    { plante:"Tomate ancienne Cœur de Bœuf", type:"offre", desc:"Une dizaine de graines récoltées cet été, bien mûres. Échange contre autre chose de saison.", auteur:"Sophie", when:"il y a 2 jours" },
+    { plante:"Capucine grimpante", type:"offre", desc:"Plein de gousses cette année — je partage volontiers, comestibles et jolies en bordure.", auteur:"Marc", when:"il y a 4 jours" },
+    { plante:"Pavot de Californie", type:"recherche", desc:"Je cherche des graines pour un talus sec plein sud, si quelqu'un en a en trop.", auteur:"Élodie", when:"il y a 5 jours" },
+    { plante:"Haricots grimpants Coco rouge", type:"offre", desc:"Variété familiale, très productive. Quelques poignées disponibles.", auteur:"Yannick", when:"il y a 6 jours" },
+    { plante:"Basilic grand vert", type:"recherche", desc:"Le mien a monté en graines trop tôt cette année, je repars de zéro.", auteur:"Nadia", when:"il y a 1 semaine" }
+  ];
+
+  var seedAteliers = [
+    { titre:"Composition florale de saison", date:"Samedi 3 octobre", horaire:"10h – 12h", capacite:8, inscrits:5, animateur:"Laurent G.", desc:"Bouquet automnal avec les fleurs de la semaine." },
+    { titre:"Art de la table", date:"Samedi 10 octobre", horaire:"14h – 16h", capacite:8, inscrits:8, animateur:"Camille D.", desc:"Composer un centre de table pour un repas de fête." },
+    { titre:"Initiation à l'ikebana", date:"Samedi 17 octobre", horaire:"10h – 12h", capacite:6, inscrits:2, animateur:"Laurent G.", desc:"Les bases de la composition florale japonaise." },
+    { titre:"Bouquet de mariée, les fondamentaux", date:"Samedi 7 novembre", horaire:"14h – 16h30", capacite:6, inscrits:4, animateur:"Camille D.", desc:"Structure, tenue et fraîcheur d'un bouquet de cérémonie." }
+  ];
+
+  var seedReseau = [
+    { nom:"Julie Marquant — Paysagiste", zone:"Lozanne et Vallée d'Azergues", desc:"Aménagement de jardins et conseils en plantation, sur rendez-vous.", contact:"julie.marquant@example.fr" },
+    { nom:"Thomas Bréal — Fleuriste événementiel", zone:"Chazay-d'Azergues", desc:"Mariages et réceptions, en complément des prestations du magasin.", contact:"06 xx xx xx xx" },
+    { nom:"Anne-Laure Fontanel — Apicultrice", zone:"L'Arbresle", desc:"Miel local et sensibilisation à la pollinisation, ateliers possibles.", contact:"contact@example-miel.fr" },
+    { nom:"Karim Belaïd — Ébéniste", zone:"Civrieux-d'Azergues", desc:"Jardinières et contenants sur mesure, pour l'atelier bois envisagé.", contact:"karim.belaid@example.fr" }
+  ];
+
+  var state = { graines: seedGraines.slice(), ateliers: seedAteliers.slice(), reseau: seedReseau.slice() };
+
+  function loadLocal(){
+    try{
+      var raw = window.localStorage.getItem("jardin-partage-ajouts");
+      if(!raw) return;
+      var extra = JSON.parse(raw);
+      if(extra.graines) state.graines = extra.graines.concat(state.graines);
+      if(extra.reseau) state.reseau = extra.reseau.concat(state.reseau);
+    }catch(e){ /* pas de stockage disponible, on continue sans */ }
+  }
+  function saveLocal(newGraine, newReseau){
+    try{
+      var raw = window.localStorage.getItem("jardin-partage-ajouts");
+      var extra = raw ? JSON.parse(raw) : { graines: [], reseau: [] };
+      if(newGraine) extra.graines = [newGraine].concat(extra.graines || []);
+      if(newReseau) extra.reseau = [newReseau].concat(extra.reseau || []);
+      window.localStorage.setItem("jardin-partage-ajouts", JSON.stringify(extra));
+    }catch(e){ /* stockage indisponible : les ajouts restent visibles pour cette visite seulement */ }
+  }
+
+  function el(tag, cls, html){
+    var e = document.createElement(tag);
+    if(cls) e.className = cls;
+    if(html !== undefined) e.innerHTML = html;
+    return e;
+  }
+  function esc(s){
+    var d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function renderGraines(highlightFirst){
+    var grid = document.getElementById("grid-graines");
+    grid.innerHTML = "";
+    state.graines.forEach(function(g, i){
+      var card = el("div", "card" + (highlightFirst && i === 0 ? " is-new" : ""));
+      card.innerHTML =
+        '<div class="card-head"><h3>' + esc(g.plante) + '</h3>' +
+        '<span class="tag ' + g.type + '">' + (g.type === "offre" ? "Propose" : "Recherche") + '</span></div>' +
+        '<p class="desc">' + esc(g.desc) + '</p>' +
+        '<div class="meta"><span>' + esc(g.auteur) + '</span><span>' + esc(g.when) + '</span></div>';
+      grid.appendChild(card);
+    });
+  }
+
+  function renderAteliers(){
+    var grid = document.getElementById("grid-ateliers");
+    grid.innerHTML = "";
+    state.ateliers.forEach(function(a, idx){
+      var restantes = a.capacite - a.inscrits;
+      var card = el("div", "card atelier-card");
+      card.innerHTML =
+        '<h3>' + esc(a.titre) + '</h3>' +
+        '<div class="atelier-when">' + esc(a.date) + ' · ' + esc(a.horaire) + '</div>' +
+        '<p class="desc">' + esc(a.desc) + ' — animé par ' + esc(a.animateur) + '.</p>' +
+        '<div class="atelier-foot">' +
+          '<span class="places">' + (restantes > 0 ? ('<b>' + restantes + '</b> place' + (restantes > 1 ? "s" : "") + ' sur ' + a.capacite) : '') + (restantes <= 0 ? '<span class="complet-badge">Complet</span>' : '') + '</span>' +
+          (restantes > 0 ? '<button class="reserve-btn" data-idx="' + idx + '">Réserver</button>' : '') +
+        '</div>' +
+        '<form class="reserve-form" id="reserve-form-' + idx + '">' +
+          '<input type="text" placeholder="Votre nom" required id="reserve-nom-' + idx + '">' +
+          '<input type="email" placeholder="Votre email" required id="reserve-email-' + idx + '">' +
+          '<button type="submit" class="submit-btn">Confirmer</button>' +
+          '<div class="reserve-confirm" hidden id="reserve-confirm-' + idx + '">Réservation enregistrée — à bientôt !</div>' +
+        '</form>';
+      grid.appendChild(card);
+    });
+
+    grid.querySelectorAll(".reserve-btn").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var idx = btn.getAttribute("data-idx");
+        var form = document.getElementById("reserve-form-" + idx);
+        form.classList.toggle("open");
+      });
+    });
+    grid.querySelectorAll(".reserve-form").forEach(function(form, idx){
+      form.addEventListener("submit", function(ev){
+        ev.preventDefault();
+        var a = state.ateliers[idx];
+        if(a.capacite - a.inscrits <= 0) return;
+        a.inscrits += 1;
+        document.getElementById("reserve-confirm-" + idx).hidden = false;
+        window.setTimeout(function(){ renderAteliers(); }, 900);
+      });
+    });
+  }
+
+  function renderReseau(highlightFirst){
+    var grid = document.getElementById("grid-reseau");
+    grid.innerHTML = "";
+    state.reseau.forEach(function(r, i){
+      var card = el("div", "card reseau-card" + (highlightFirst && i === 0 ? " is-new" : ""));
+      card.innerHTML =
+        '<h3>' + esc(r.nom) + '</h3>' +
+        '<p class="activite">' + esc(r.zone) + '</p>' +
+        '<p class="desc">' + esc(r.desc) + '</p>' +
+        '<div class="meta"><span>' + esc(r.contact) + '</span><span></span></div>';
+      grid.appendChild(card);
+    });
+  }
+
+  function setupTabs(){
+    var tabs = document.querySelectorAll(".tab");
+    tabs.forEach(function(tab){
+      tab.addEventListener("click", function(){
+        tabs.forEach(function(t){ t.setAttribute("aria-selected", "false"); });
+        tab.setAttribute("aria-selected", "true");
+        document.querySelectorAll(".panel").forEach(function(p){ p.hidden = true; });
+        document.getElementById("panel-" + tab.getAttribute("data-tab")).hidden = false;
+      });
+    });
+  }
+
+  function setupAddToggles(){
+    document.querySelectorAll(".add-toggle").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var form = document.getElementById(btn.getAttribute("aria-controls"));
+        var open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!open));
+        form.hidden = open;
+      });
+    });
+  }
+
+  function setupForms(){
+    document.getElementById("form-graines").addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var g = {
+        plante: document.getElementById("g-plante").value.trim(),
+        type: document.getElementById("g-type").value,
+        desc: document.getElementById("g-desc").value.trim(),
+        auteur: document.getElementById("g-prenom").value.trim(),
+        when: "à l'instant"
+      };
+      if(!g.plante || !g.desc || !g.auteur) return;
+      state.graines.unshift(g);
+      saveLocal(g, null);
+      renderGraines(true);
+      ev.target.reset();
+    });
+
+    document.getElementById("form-reseau").addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var r = {
+        nom: document.getElementById("r-nom").value.trim(),
+        zone: document.getElementById("r-zone").value.trim(),
+        desc: document.getElementById("r-desc").value.trim(),
+        contact: document.getElementById("r-contact").value.trim()
+      };
+      if(!r.nom || !r.desc || !r.contact) return;
+      state.reseau.unshift(r);
+      saveLocal(null, r);
+      renderReseau(true);
+      ev.target.reset();
+    });
+  }
+
+  function start(){
+    loadLocal();
+    renderGraines(false);
+    renderAteliers();
+    renderReseau(false);
+    setupTabs();
+    setupAddToggles();
+    setupForms();
+  }
+
+  if(window.claude && window.claude.hot && window.claude.hot.ready){
+    window.claude.hot.ready(start);
+  } else {
+    start();
+  }
+})();
+</script>
+
+</html>

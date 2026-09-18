@@ -13,6 +13,7 @@ export default function robots(): MetadataRoute.Robots {
         "/outils/",
         "/badge/",
         "/atelier/fiche/",
+        "/projets/",
       ],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
