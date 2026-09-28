@@ -1,5 +1,5 @@
 ---
-title: "Pilotage opérationnel & performance"
+title: "Formateur et coordinateur opérationnel"
 company: "Apple Retail"
 location: "Lille"
 role: "Orchestration magasin, KPI et expérience client"
@@ -9,7 +9,7 @@ tags: ["apple", "retail", "opérations", "kpi", "expérience client"]
 highlights:
   - "Orchestration quotidienne d’un magasin à forte intensité"
   - "Gestion des situations sensibles et escalades"
-  - "Optimisation des flux et pilotage Créatif Propar les indicateurs"
+  - "Optimisation des flux et pilotage Creative Pro par les indicateurs"
 source: "CV + expérience terrain"
 ---
 

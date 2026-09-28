@@ -88,8 +88,8 @@ const siteJsonLd = {
       "@id": `${siteUrl}/#laurent-guyonnet`,
       name: "Laurent Guyonnet",
       url: siteUrl,
-      // Mets ici uniquement des URLs publiques solides si tu en as
-      // sameAs: ["https://github.com/…", "https://…"],
+      jobTitle: "Chef de projet formation et transformation numérique",
+      sameAs: ["https://www.linkedin.com/in/laurentguyonnet"],
     },
   ],
 };

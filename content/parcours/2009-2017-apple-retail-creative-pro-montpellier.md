@@ -1,5 +1,5 @@
 ---
-title: "Éducation & pédagogie terrain"
+title: "Formateur et coordinateur de projets pédagogiques"
 company: "Apple Retail"
 location: "Montpellier"
 role: "Pédagogie, projets éducatifs et adoption des usages"

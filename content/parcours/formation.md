@@ -3,11 +3,17 @@ title: "Formation"
 type: "formation"
 tags: ["formation", "pédagogie", "commerce", "numérique", "agilité"]
 items:
-  - label: "Développeur Scrum Master"
+  - label: "Master Chef de projet digital (Bac+5, en cours)"
+    org: "YouWeb"
+    year: "2027"
+  - label: "Certificat Scrum Master"
     org: "Coursera"
     year: "2023"
-  - label: "Bac+3 Communication"
-    org: "Esarc, Aix-en-Provence"
+  - label: "Bac+3 Communication publicitaire et visuelle"
+    org: "Escome"
+    year: "2006"
+  - label: "BTS Communication des entreprises"
+    org: "Escome"
     year: "2005"
   - label: "BTS Force de vente (non terminé)"
     org: "Institut Robin, Aix-en-Provence"
@@ -28,7 +34,18 @@ Chaque étape a ajouté une couche à ma manière de travailler : raconter, tran
 
 ---
 
-### **Scrum Master – Développeur Agile**  
+### **Master Chef de projet digital (en cours)**  
+*YouWeb — août 2026 à février 2027 · Bac+5*
+
+Une formation orientée pilotage de projets digitaux, qui inclut le bloc « Expert en ingénierie de données » du titre **RNCP40875** : données, conformité RGPD, Python, analyse et visualisation.
+
+Elle prolonge seize ans de conception de dispositifs de formation et de documentation : l'objectif est d'ajouter la dimension gestion de projet digital et structuration des données au service de la transmission.
+
+Je raconte cette formation au fil de l'eau dans la série [Carnet de formation IA](/series/carnet-de-formation-ia).
+
+---
+
+### **Certificat Scrum Master**  
 *Coursera — 2023*
 
 Cette formation est venue formaliser ce que je pratiquais déjà sur le terrain chez Apple :  
@@ -45,8 +62,8 @@ Elle m’a donné un cadre méthodologique pour ce que je faisais intuitivement 
 
 ---
 
-### **Bac +3 Communication**  
-*ESARC, Aix-en-Provence — 2005*
+### **Bac+3 Communication publicitaire et visuelle**  
+*Escome — 2006*
 
 Cette formation m’a apporté les bases de :  
 - la stratégie de communication,  
@@ -59,6 +76,13 @@ C’est là que j’ai appris à penser en termes de **narration, d’image et d
 - la formation,  
 - la vente,  
 - et l’expérience client.
+
+---
+
+### **BTS Communication des entreprises**  
+*Escome — 2003 à 2005*
+
+Ce BTS m'a donné les bases de la communication — stratégie, création de supports, relations avec les publics — que le Bac+3 est ensuite venu approfondir.
 
 ---
 

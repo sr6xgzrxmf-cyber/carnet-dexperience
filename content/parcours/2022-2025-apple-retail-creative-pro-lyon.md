@@ -1,5 +1,5 @@
 ---
-title: "Architecture d’adoption & transmission"
+title: "Formateur et référent transformation numérique et IA"
 company: "Apple Retail"
 location: "Lyon"
 role: "Formation, innovation et adoption des usages"

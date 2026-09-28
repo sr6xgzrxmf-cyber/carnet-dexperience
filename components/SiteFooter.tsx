@@ -21,6 +21,9 @@ export default function SiteFooter() {
           <Link href="/articles">Articles</Link>
           <Link href="/atelier">Accompagnement</Link>
           <Link href="/contact">Contact</Link>
+          <a href="https://www.linkedin.com/in/laurentguyonnet" target="_blank" rel="noopener noreferrer me">
+            LinkedIn ↗
+          </a>
         </nav>
 
         <p className="m-0 text-sm text-neutral-500 sm:text-right dark:text-neutral-500">
