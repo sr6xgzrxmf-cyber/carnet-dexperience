@@ -1,2 +1,7 @@
 import LoginForm from "./LoginForm";
-export default function AnalyticsLoginPage() { return <LoginForm />; }
+import { safeAdminRedirect } from "@/lib/analytics-auth";
+
+export default async function AnalyticsLoginPage({ searchParams }: { searchParams: Promise<{ next?: string }> }) {
+  const { next } = await searchParams;
+  return <LoginForm next={safeAdminRedirect(next)} />;
+}

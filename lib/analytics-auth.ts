@@ -5,6 +5,17 @@ const sign = (value: string) => process.env.ANALYTICS_AUTH_SECRET
   ? createHmac("sha256", process.env.ANALYTICS_AUTH_SECRET).update(value).digest("hex") : "";
 
 export const analyticsCookieName = () => COOKIE_NAME;
+// La session protège toute l'administration (pages /admin et routes /api/admin).
+export const ADMIN_COOKIE_PATH = "/";
+// Anciennes sessions, limitées aux statistiques : à effacer à la déconnexion.
+export const LEGACY_ADMIN_COOKIE_PATH = "/admin/analytics";
+export const ADMIN_LOGIN_PATH = "/admin/analytics-login";
+// En local (next dev), l'administration reste ouverte comme avant.
+export const isLocalAdmin = () => process.env.NODE_ENV !== "production" && !process.env.VERCEL;
+export function safeAdminRedirect(raw: unknown) {
+  const value = typeof raw === "string" ? raw : "";
+  return /^\/admin(\/|$)/.test(value) && !value.startsWith(ADMIN_LOGIN_PATH) ? value : "/admin";
+}
 export const analyticsClientKey = (value: string) => sign(`login:${value}`);
 export function createAnalyticsSession() {
   const expires = String(Date.now() + 1000 * 60 * 60 * 12);

@@ -1,7 +1,7 @@
 "use server";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { analyticsClientKey, analyticsCookieName, areCorrectAnalyticsCredentials, createAnalyticsSession } from "@/lib/analytics-auth";
+import { ADMIN_COOKIE_PATH, analyticsClientKey, analyticsCookieName, areCorrectAnalyticsCredentials, createAnalyticsSession, safeAdminRedirect } from "@/lib/analytics-auth";
 import { prisma } from "@/lib/db";
 
 export async function loginAnalytics(_state: { error: string }, formData: FormData) {
@@ -25,6 +25,6 @@ export async function loginAnalytics(_state: { error: string }, formData: FormDa
   await prisma.adminLoginAttempt.deleteMany({ where: { keyHash } });
   const store = await cookies();
   store.set(analyticsCookieName(), createAnalyticsSession(), { httpOnly: true, sameSite: "strict",
-    secure: process.env.NODE_ENV === "production", path: "/admin/analytics", maxAge: 60 * 60 * 12 });
-  redirect("/admin/analytics");
+    secure: process.env.NODE_ENV === "production", path: ADMIN_COOKIE_PATH, maxAge: 60 * 60 * 12 });
+  redirect(safeAdminRedirect(formData.get("next")));
 }
