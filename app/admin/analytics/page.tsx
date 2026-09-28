@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/db";
 import { logoutAnalytics } from "./actions";
+import RecentJourneys, { buildSessions } from "./RecentJourneys";
 
 export const dynamic = "force-dynamic";
 const kindLabel: Record<string, string> = { human: "Humain", ai: "Robot IA", ai_referral: "Arrivée depuis une IA" };
@@ -9,7 +10,8 @@ function metadata(value: unknown) {
 }
 function display(value: unknown) { return typeof value === "number" || (typeof value === "string" && value) ? String(value) : "—"; }
 
-export default async function AnalyticsDashboard() {
+export default async function AnalyticsDashboard({ searchParams }: { searchParams: Promise<{ moi?: string }> }) {
+  const showOwn = (await searchParams).moi === "1";
   const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
   const consentSince = new Date();
   consentSince.setUTCHours(0, 0, 0, 0);
@@ -41,17 +43,19 @@ export default async function AnalyticsDashboard() {
     const value = metadata(event.metadata).visitorId;
     return typeof value === "string" && value ? value : event.sessionId ? visitorBySession.get(event.sessionId) ?? event.sessionId : null;
   }).filter(Boolean));
-  const journeys = new Map<string, typeof events>();
-  for (const event of [...events].reverse()) {
+  const journeyEvents = await prisma.analyticsEvent.findMany({
+    where: { createdAt: { gte: since }, kind: { in: ["human", "ai_referral"] }, sessionId: { not: null },
+      eventType: { in: ["page_view", "engagement", "download"] } },
+    orderBy: { createdAt: "desc" }, take: 2000,
+  });
+  // Un navigateur déjà vu connecté à l'administration est considéré comme le mien.
+  const ownVisitors = new Set(journeyEvents.flatMap((event) => {
     const meta = metadata(event.metadata);
-    const visitorId = typeof meta.visitorId === "string" ? meta.visitorId : null;
-    if (!visitorId) continue;
-    const journey = journeys.get(visitorId) ?? [];
-    journey.push(event);
-    journeys.set(visitorId, journey);
-  }
-  const recentJourneys = [...journeys.entries()].sort((a, b) =>
-    (b[1].at(-1)?.createdAt.getTime() ?? 0) - (a[1].at(-1)?.createdAt.getTime() ?? 0)).slice(0, 30);
+    return meta.isAdmin === true && typeof meta.visitorId === "string" ? [meta.visitorId] : [];
+  }));
+  const allSessions = buildSessions(journeyEvents, ownVisitors, true);
+  const visibleSessions = showOwn ? allSessions : buildSessions(journeyEvents, ownVisitors, false);
+  const recentSessions = visibleSessions.slice(0, 20);
   return <div>
     <div className="flex flex-wrap items-start justify-between gap-4"><div><p className="font-mono text-xs uppercase tracking-widest text-neutral-500">30 derniers jours</p>
     <h1 className="mt-2 font-[var(--font-lora)] text-4xl">Visiteurs humains et IA</h1></div>
@@ -71,16 +75,7 @@ export default async function AnalyticsDashboard() {
           <div key={String(title)} className="rounded-xl bg-neutral-100/70 p-4 dark:bg-neutral-900/60"><p className="text-sm text-neutral-500">{title}</p><strong className="mt-2 block text-3xl">{value}</strong></div>)}
       </div>
     </section>
-    <section className="mt-8 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
-      <div className="flex items-baseline justify-between gap-4"><h2 className="font-semibold">Parcours récents</h2><span className="text-xs text-neutral-500">Un bloc par navigateur reconnu</span></div>
-      <div className="mt-4 grid gap-4 xl:grid-cols-2">{recentJourneys.map(([visitorId, journey]) => {
-        const firstMeta = metadata(journey[0]?.metadata); const sessionCount = new Set(journey.map((item) => item.sessionId).filter(Boolean)).size;
-        return <article key={visitorId} className="rounded-xl bg-neutral-100/70 p-4 dark:bg-neutral-900/60">
-          <div className="flex flex-wrap justify-between gap-2"><strong className="font-mono text-sm">Visiteur {visitorId.slice(0, 8)}</strong><span className="text-xs text-neutral-500">{sessionCount} session{sessionCount > 1 ? "s" : ""} · {display(firstMeta.browser)} · {display(firstMeta.device)}</span></div>
-          <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">{journey.slice(-12).map((event, index) => { const meta = metadata(event.metadata); return <span key={event.id} className="contents"><span className="rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 dark:border-neutral-700 dark:bg-neutral-950" title={eventLabel[event.eventType] ?? event.eventType}>{event.eventType === "engagement" ? `${display(meta.durationSeconds)} s · ${display(meta.maxScrollPercent)} %` : event.eventType === "download" ? `Téléchargement : ${String(meta.destination ?? event.path)}` : event.path}</span>{index < Math.min(journey.length, 12) - 1 ? <span className="text-neutral-400">→</span> : null}</span>; })}</div>
-        </article>;
-      })}{!recentJourneys.length ? <p className="text-sm text-neutral-500">Aucun parcours humain enregistré pour le moment.</p> : null}</div>
-    </section>
+    <RecentJourneys sessions={recentSessions} showOwn={showOwn} hiddenCount={allSessions.length - visibleSessions.length} />
     <section className="mt-8 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800">
       <div className="border-b border-neutral-200 px-5 py-4 font-semibold dark:border-neutral-800">Activité récente</div>
       <div className="overflow-x-auto"><table className="w-full text-left text-sm">

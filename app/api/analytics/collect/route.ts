@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { prisma } from "@/lib/db";
 import { describeUserAgent, identifyAiBot, identifyAiReferral, identifyTrafficSource } from "@/lib/analytics-classification";
+import { analyticsCookieName, isValidAnalyticsSession } from "@/lib/analytics-auth";
 
 function text(value: unknown, limit = 255) {
   return typeof value === "string" && value ? value.slice(0, limit) : null;
@@ -32,6 +33,8 @@ export async function POST(request: NextRequest) {
     sessionId: typeof body.sessionId === "string" ? body.sessionId.slice(0, 80) : null,
     path, referrer, source, userAgent,
     metadata: { ...clientMetadata, ...device, visitorId,
+      // Visite faite par l'administrateur connecté : permet de masquer ses propres parcours.
+      isAdmin: isValidAnalyticsSession(request.cookies.get(analyticsCookieName())?.value),
       utmSource, utmMedium: text(body.utmMedium), utmCampaign: text(body.utmCampaign),
       utmContent: text(body.utmContent), utmTerm: text(body.utmTerm), clickId: text(body.clickId),
       acceptLanguage: request.headers.get("accept-language")?.slice(0, 255) ?? null,
