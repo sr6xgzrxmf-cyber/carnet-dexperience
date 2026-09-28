@@ -1,8 +1,12 @@
 ---
-title: "Ils voulaient cinq ordinateurs. Je me suis intéressé à leur métier."
-cover: /images/articles/2026-10-07-ils-voulaient-cinq-ordinateurs-je-me-suis-interesse-a-leur-metier.jpg
-date: 2026-10-07
-excerpt: "Un client sait souvent ce qu'il veut acheter. Comprendre ce qu'il cherche réellement à accomplir peut faire apparaître une autre manière de lui être utile."
+title: Ils voulaient cinq ordinateurs. Je me suis intéressé à leur métier.
+cover: >-
+  /images/articles/2026-10-07-ils-voulaient-cinq-ordinateurs-je-me-suis-interesse-a-leur-metier.jpg
+date: "2026-10-08"
+excerpt: >-
+  Un client sait souvent ce qu'il veut acheter. Comprendre ce qu'il cherche
+  réellement à accomplir peut faire apparaître une autre manière de lui être
+  utile.
 series:
   name: Ce qui donne de la valeur à une vente
   order: 6
