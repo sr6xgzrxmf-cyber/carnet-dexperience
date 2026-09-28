@@ -6,7 +6,7 @@ excerpt: >-
   nécessaires pour expliquer ma valeur. Elles étaient si nombreuses qu’elles
   finissaient pourtant par rendre mon projet illisible.
 cover: >-
-  /images/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
+  /images/articles/2026-07-21-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - positionnement

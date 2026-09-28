@@ -7,7 +7,7 @@ excerpt: >-
   parfois en confrontant plusieurs explications jusqu’à créer sa propre
   cohérence.
 cover: >-
-  /images/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
+  /images/articles/2026-07-14-une-formation-reussie-commence-quand-le-formateur-devient-inutile.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - formation

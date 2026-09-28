@@ -6,7 +6,7 @@ excerpt: >-
   avec deux. Ce jour-là, j’ai compris qu’un déploiement commence rarement par le
   nombre d’appareils : il commence par le sens, la simplicité et
   l’accompagnement.
-cover: /images/articles/2026-08-25-la-vente-que-je-n-ai-pas-voulu-conclure.jpg
+cover: /images/articles/2026-07-07-la-vente-que-je-n-ai-pas-voulu-conclure.jpg
 source: Laurent Guyonnet — Carnet d’expérience
 tags:
   - adoption

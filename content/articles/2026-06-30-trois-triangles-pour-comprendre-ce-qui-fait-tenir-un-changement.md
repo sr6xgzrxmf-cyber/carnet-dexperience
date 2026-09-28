@@ -52,7 +52,7 @@ L’enjeu n’est donc pas de transformer une expérience Apple en méthode univ
 
 **Sens + simplicité + accompagnement = adoption.**
 
-Dans [« La vente que je n’ai pas voulu conclure »](/articles/2026-08-25-la-vente-que-je-n-ai-pas-voulu-conclure), un dirigeant arrive avec une demande qui ressemble au scénario idéal d’une vente B2B : vingt-quatre iPad, un besoin de modernisation et une volonté de décider rapidement. Une technicienne formule pourtant le risque réel : si la tablette ajoute une étape à sa journée, elle restera dans le coffre.
+Dans [« La vente que je n’ai pas voulu conclure »](/articles/2026-07-07-la-vente-que-je-n-ai-pas-voulu-conclure), un dirigeant arrive avec une demande qui ressemble au scénario idéal d’une vente B2B : vingt-quatre iPad, un besoin de modernisation et une volonté de décider rapidement. Une technicienne formule pourtant le risque réel : si la tablette ajoute une étape à sa journée, elle restera dans le coffre.
 
 À partir de cette phrase, la vente change de nature. Il ne s’agit plus seulement de choisir et de commander des appareils : il faut relier le projet à une difficulté vécue, rendre un premier usage praticable et créer les conditions pour que les défauts apparaissent avant le déploiement général. Le récit pose une question simple : une décision prise par le dirigeant suffit-elle à prouver que le changement sera adopté par celles et ceux qui devront le vivre ?
 
@@ -60,7 +60,7 @@ Dans [« La vente que je n’ai pas voulu conclure »](/articles/2026-08-25-la-v
 
 **Comprendre + essayer + réutiliser = autonomie.**
 
-Dans [« Une formation réussie commence quand le formateur devient inutile »](/articles/2026-08-26-une-formation-reussie-commence-quand-le-formateur-devient-inutile), une enseignante découvre le Mac et les iPad introduits dans son établissement. Elle ne rejette pas seulement un nouvel outil : elle a perdu la fluidité professionnelle qu’elle possédait sur PC, notamment avec Publisher. Des gestes devenus invisibles redeviennent laborieux, et l’organisation parle d’innovation au moment où elle vit une déqualification provisoire.
+Dans [« Une formation réussie commence quand le formateur devient inutile »](/articles/2026-07-14-une-formation-reussie-commence-quand-le-formateur-devient-inutile), une enseignante découvre le Mac et les iPad introduits dans son établissement. Elle ne rejette pas seulement un nouvel outil : elle a perdu la fluidité professionnelle qu’elle possédait sur PC, notamment avec Publisher. Des gestes devenus invisibles redeviennent laborieux, et l’organisation parle d’innovation au moment où elle vit une déqualification provisoire.
 
 La première séance ne résout pas cette tension. La suite oblige à reconsidérer ce qu’on appelle une formation réussie : comprendre une explication, effectuer un geste sous le regard du formateur et savoir réutiliser ce geste dans son propre contexte sont trois expériences différentes. Le récit pose alors une autre question : lorsqu’une personne revient demander de l’aide, faut-il y voir la preuve qu’elle n’a pas compris, ou une étape dans la construction de son autonomie ?
 
@@ -68,7 +68,7 @@ La première séance ne résout pas cette tension. La suite oblige à reconsidé
 
 **Identité + preuves + lisibilité = positionnement.**
 
-Dans [« Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire »](/articles/2026-08-27-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire), la question devient plus personnelle : comment rendre compréhensible un parcours de seize années sans le réduire ni demander aux autres d’en reconstruire eux-mêmes la cohérence ?
+Dans [« Un positionnement n’est pas l’inventaire de tout ce que l’on sait faire »](/articles/2026-07-21-un-positionnement-n-est-pas-l-inventaire-de-tout-ce-que-l-on-sait-faire), la question devient plus personnelle : comment rendre compréhensible un parcours de seize années sans le réduire ni demander aux autres d’en reconstruire eux-mêmes la cohérence ?
 
 La scène centrale se déroule encore en magasin. Je suis en shadow avec un spécialiste qui accompagne un client dans le choix d’un iPhone. Il connaît parfaitement sa gamme. Pourtant, plus il craint de perdre le client, plus il ajoute de modèles, de caractéristiques et de possibilités. Ce réflexe dépasse largement la vente : lorsque nous avons peur de perdre une opportunité, nous essayons de devenir compatibles avec toutes, et nous multiplions les compétences et les preuves jusqu’à rendre notre contribution difficile à identifier. Le récit interroge donc ce que nous retirons, ce que nous plaçons au premier plan, et la différence entre montrer toute notre valeur et permettre à quelqu’un de la comprendre.
 
