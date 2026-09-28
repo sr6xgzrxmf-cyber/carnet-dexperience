@@ -3,13 +3,12 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { normalizeArticleDate } from "@/lib/article-date";
+import { adminUnauthorized, isAdminRequest } from "@/lib/admin-access";
+import { isLocalAdmin } from "@/lib/analytics-auth";
+import { listRepoPaths } from "@/lib/github-content";
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 const PUBLIC_DIR = path.join(process.cwd(), "public");
-
-const IS_LOCAL =
-  process.env.NODE_ENV !== "production" &&
-  !process.env.VERCEL;
 
 type Series = { name?: unknown; slug?: unknown; order?: unknown };
 
@@ -34,11 +33,22 @@ Les images doivent ressembler à une photo de magazine ou de plateau photo racon
 Voici la scène que je veux illustrer :
 `;
 
-function fileExistsPublic(publicPath: string) {
-  // publicPath like "/images/articles/xxx.jpg"
-  if (!publicPath.startsWith("/")) return false;
-  const abs = path.join(PUBLIC_DIR, publicPath);
-  return fs.existsSync(abs);
+// publicPath like "/images/articles/xxx.jpg"
+type PublicFileCheck = (publicPath: string) => boolean;
+
+// En ligne, public/ n'est pas embarqué dans les fonctions serveur : on
+// vérifie l'existence des fichiers dans le dépôt GitHub.
+async function publicFileChecker(): Promise<PublicFileCheck> {
+  if (isLocalAdmin()) {
+    return (publicPath) => publicPath.startsWith("/") && fs.existsSync(path.join(PUBLIC_DIR, publicPath));
+  }
+  try {
+    const paths = await listRepoPaths("public/");
+    return (publicPath) => publicPath.startsWith("/") && paths.has(`public${publicPath}`);
+  } catch {
+    // Sans accès GitHub, on ne signale pas de faux fichiers manquants.
+    return () => true;
+  }
 }
 
 function normalizeDate(v: unknown): string | null {
@@ -81,13 +91,9 @@ function extractLinkedFiles(md: string) {
 }
 
 export async function GET() {
-  if (!IS_LOCAL) {
-    return NextResponse.json(
-      { error: "Not supported in production. Local-only admin feature." },
-      { status: 403 }
-    );
-  }
+  if (!(await isAdminRequest())) return adminUnauthorized();
 
+  const fileExistsPublic = await publicFileChecker();
   const files = fs.existsSync(ARTICLES_DIR)
     ? fs.readdirSync(ARTICLES_DIR).filter((f) => f.endsWith(".md"))
     : [];

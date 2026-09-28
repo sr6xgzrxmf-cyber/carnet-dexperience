@@ -2,19 +2,10 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import matter from "gray-matter";
 import { findLocalArticleFile } from "@/lib/local-article-files";
-
-
-const IS_LOCAL =
-  process.env.NODE_ENV !== "production" &&
-  !process.env.VERCEL;
+import { adminUnauthorized, isAdminRequest } from "@/lib/admin-access";
 
 export async function GET(req: Request) {
-  if (!IS_LOCAL) {
-    return NextResponse.json(
-      { error: "Not supported in production. Local-only admin feature." },
-      { status: 403 }
-    );
-  }
+  if (!(await isAdminRequest())) return adminUnauthorized();
 
   const url = new URL(req.url);
   const slug = url.searchParams.get("slug");

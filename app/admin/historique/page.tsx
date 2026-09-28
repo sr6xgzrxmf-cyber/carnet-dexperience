@@ -16,14 +16,19 @@ export default function AdminHistoryPage() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [source, setSource] = useState<"local" | "github">("local");
 
   useEffect(() => {
     fetch("/api/admin/history", { cache: "no-store" })
       .then(async (res) => {
-        if (!res.ok) throw new Error("L’historique est disponible uniquement en local.");
-        return res.json();
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || "Historique indisponible.");
+        return data;
       })
-      .then((data) => setEntries(data.entries ?? []))
+      .then((data) => {
+        setEntries(data.entries ?? []);
+        setSource(data.source === "github" ? "github" : "local");
+      })
       .catch((reason) => setError(reason instanceof Error ? reason.message : "Erreur"))
       .finally(() => setLoading(false));
   }, []);
@@ -31,10 +36,12 @@ export default function AdminHistoryPage() {
   return (
     <main className="space-y-6">
       <header>
-        <p className="text-sm text-neutral-500">Administration locale</p>
+        <p className="text-sm text-neutral-500">{source === "github" ? "Administration en ligne" : "Administration locale"}</p>
         <h1 className="mt-1 text-3xl font-semibold tracking-tight">Historique éditorial</h1>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600 dark:text-neutral-300">
-          Les changements de dates, de métadonnées, de statuts et de mises en avant sont conservés sur cet ordinateur.
+          {source === "github"
+            ? "Les 50 derniers commits du site sur GitHub, y compris ceux faits depuis l’administration en ligne."
+            : "Les changements de dates, de métadonnées, de statuts et de mises en avant sont conservés sur cet ordinateur."}
         </p>
       </header>
 

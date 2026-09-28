@@ -34,7 +34,7 @@ export default function HighlightsAdminPage() {
   useEffect(() => {
     fetch("/api/admin/highlights", { cache: "no-store" })
       .then(async (res) => {
-        if (!res.ok) throw new Error("Cette administration fonctionne uniquement en local.");
+        if (!res.ok) throw new Error("Impossible de charger les mises en avant.");
         return res.json();
       })
       .then((data) => {
@@ -107,7 +107,7 @@ export default function HighlightsAdminPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Enregistrement impossible");
       setItems(data.items ?? items);
-      setMessage("Mises en avant enregistrées.");
+      setMessage(data.message || "Mises en avant enregistrées.");
     } catch (error) {
       setMessage(error instanceof Error ? error.message : "Erreur");
     } finally {

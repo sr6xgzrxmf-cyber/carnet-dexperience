@@ -122,6 +122,7 @@ export default function CalendrierArticlesPage() {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [editorOpen, setEditorOpen] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [notice, setNotice] = useState("");
 
   // Editor fields
   const [fTitle, setFTitle] = useState("");
@@ -307,7 +308,22 @@ export default function CalendrierArticlesPage() {
             border: "1px solid rgba(255, 193, 7, 0.35)",
           }}
         >
-          <strong>Outil éditorial local.</strong> Cette page est un outil de travail : en production, les modifications ne sont pas appliquées.
+          <strong>Mode en ligne.</strong> Tu peux déplacer un article par glisser-déposer : le changement est enregistré sur GitHub et visible sur le site après le redéploiement (1 à 2 minutes). L’édition complète d’un article reste disponible en local.
+        </div>
+      )}
+
+      {notice && (
+        <div
+          role="status"
+          style={{
+            marginBottom: 16,
+            padding: 12,
+            borderRadius: 12,
+            background: "rgba(34, 197, 94, 0.12)",
+            border: "1px solid rgba(34, 197, 94, 0.35)",
+          }}
+        >
+          {notice}
         </div>
       )}
 
@@ -411,8 +427,16 @@ export default function CalendrierArticlesPage() {
                 body: JSON.stringify({ slug, date }),
               });
 
+              const json = await res.json().catch(() => ({}));
               if (!res.ok) {
                 arg.revert();
+                setNotice(json.error ? `Échec : ${json.error}` : "Échec du déplacement.");
+                return;
+              }
+              if (json.message) {
+                // En ligne, la liste ne change qu'après redéploiement : on garde
+                // l'article à sa nouvelle place plutôt que de recharger.
+                setNotice(`« ${arg.event.title} » déplacé au ${date}. ${json.message}`);
                 return;
               }
               refresh();
@@ -536,7 +560,8 @@ export default function CalendrierArticlesPage() {
             </button>
             <button
               onClick={() => saveEditor()}
-              disabled={saving}
+              disabled={saving || !local}
+              title={local ? undefined : "Édition complète disponible en local uniquement"}
               style={{ padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(0,0,0,0.18)", background: "rgba(0,0,0,0.06)" }}
             >
               {saving ? "Enregistrement…" : "Enregistrer"}

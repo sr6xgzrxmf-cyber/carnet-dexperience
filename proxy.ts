@@ -6,7 +6,7 @@ import { ADMIN_LOGIN_PATH, analyticsCookieName, isLocalAdmin, isValidAnalyticsSe
 function guardAdmin(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
   const isAdminPage = pathname === "/admin" || pathname.startsWith("/admin/");
-  const isAdminApi = pathname.startsWith("/api/admin/");
+  const isAdminApi = pathname.startsWith("/api/admin/") || pathname.startsWith("/api/articles/");
   if (!isAdminPage && !isAdminApi) return null;
   if (pathname === ADMIN_LOGIN_PATH || isLocalAdmin()) return NextResponse.next();
   if (isValidAnalyticsSession(request.cookies.get(analyticsCookieName())?.value)) return NextResponse.next();
@@ -46,6 +46,7 @@ export const config = {
     "/admin",
     "/admin/:path*",
     "/api/admin/:path*",
+    "/api/articles/:path*",
     "/((?!api|admin|_next|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:png|jpg|jpeg|gif|webp|svg|ico|css|js|woff2?|pdf|docx)).*)",
   ],
 };

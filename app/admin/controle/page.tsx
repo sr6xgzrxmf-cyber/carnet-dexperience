@@ -174,7 +174,7 @@ export default function ControleEditorialPage() {
             border: "1px solid rgba(255, 193, 7, 0.35)",
           }}
         >
-          <strong>Outil éditorial local.</strong> Ce contrôle lit les fichiers du disque : il n’est pas fait pour la production.
+          <strong>Mode en ligne.</strong> Ce contrôle reflète la dernière version déployée du site ; les images sont vérifiées dans le dépôt GitHub.
         </div>
       )}
 
