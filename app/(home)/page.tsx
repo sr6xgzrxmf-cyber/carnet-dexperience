@@ -9,6 +9,8 @@ import { formatReadingTime } from "@/lib/reading-time";
 import { readHomeHighlights } from "@/lib/home-highlights";
 import PortfolioLoop from "./PortfolioLoop";
 
+export const revalidate = 300;
+
 function formatArticleDate(date: ArticleMeta["date"]): string | null {
   const iso = normalizeArticleDate(date);
   if (!iso) return null;
