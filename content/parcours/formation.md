@@ -10,10 +10,10 @@ items:
     org: "Coursera"
     year: "2023"
   - label: "Bac+3 Communication publicitaire et visuelle"
-    org: "Escome"
+    org: "Escome, Aix-en-Provence"
     year: "2006"
   - label: "BTS Communication des entreprises"
-    org: "Escome"
+    org: "Escome, Aix-en-Provence"
     year: "2005"
   - label: "BTS Force de vente (non terminé)"
     org: "Institut Robin, Aix-en-Provence"
@@ -63,7 +63,7 @@ Elle m’a donné un cadre méthodologique pour ce que je faisais intuitivement 
 ---
 
 ### **Bac+3 Communication publicitaire et visuelle**  
-*Escome — 2006*
+*Escome, Aix-en-Provence — 2006*
 
 Cette formation m’a apporté les bases de :  
 - la stratégie de communication,  
@@ -80,7 +80,7 @@ C’est là que j’ai appris à penser en termes de **narration, d’image et d
 ---
 
 ### **BTS Communication des entreprises**  
-*Escome — 2003 à 2005*
+*Escome, Aix-en-Provence — 2003 à 2005*
 
 Ce BTS m'a donné les bases de la communication — stratégie, création de supports, relations avec les publics — que le Bac+3 est ensuite venu approfondir.
 
