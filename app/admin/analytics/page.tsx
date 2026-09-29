@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/db";
 import { logoutAnalytics } from "./actions";
 import RecentJourneys, { buildSessions } from "./RecentJourneys";
+import TrafficCharts from "./TrafficCharts";
 
 export const dynamic = "force-dynamic";
 const kindLabel: Record<string, string> = { human: "Humain", ai: "Robot IA", ai_referral: "Arrivée depuis une IA" };
@@ -56,6 +57,9 @@ export default async function AnalyticsDashboard({ searchParams }: { searchParam
   const allSessions = buildSessions(journeyEvents, ownVisitors, true);
   const visibleSessions = showOwn ? allSessions : buildSessions(journeyEvents, ownVisitors, false);
   const recentSessions = visibleSessions.slice(0, 20);
+  const aiVisitDates = (await prisma.analyticsEvent.findMany({
+    where: { kind: "ai", createdAt: { gte: since } }, select: { createdAt: true },
+  })).map((event) => event.createdAt);
   return <div>
     <div className="flex flex-wrap items-start justify-between gap-4"><div><p className="font-mono text-xs uppercase tracking-widest text-neutral-500">30 derniers jours</p>
     <h1 className="mt-2 font-[var(--font-lora)] text-4xl">Visiteurs humains et IA</h1></div>
@@ -65,6 +69,7 @@ export default async function AnalyticsDashboard({ searchParams }: { searchParam
       {[["Visiteurs humains", humanVisitors.size], ["Sessions humaines", humanSessions.size], ["Visites de robots IA", aiVisits], ["Sessions depuis une IA", aiReferralSessions.length]].map(([title, value]) =>
         <section key={String(title)} className="rounded-2xl border border-neutral-200 bg-white/70 p-5 dark:border-neutral-800 dark:bg-neutral-950/20"><p className="text-sm text-neutral-500">{title}</p><strong className="mt-2 block text-3xl">{value}</strong></section>)}
     </div>
+    <TrafficCharts sessions={visibleSessions} aiVisitDates={aiVisitDates} showOwn={showOwn} />
     <section className="mt-8 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="font-semibold">Choix de mesure d’audience</h2>

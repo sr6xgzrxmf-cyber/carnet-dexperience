@@ -21,7 +21,7 @@ type PageVisit = {
   download: string | null;
 };
 
-type Session = {
+export type Session = {
   id: string;
   visitorId: string | null;
   start: Date;
@@ -74,7 +74,7 @@ function str(value: unknown) {
 
 // Une session qui démarre depuis le site lui-même (onglet rouvert) compte comme un accès direct.
 function sourceLabel(source: string | null) {
-  if (!source || /carnet-?dexperience/i.test(source)) return "Accès direct";
+  if (!source || /carnet-?dexperience|localhost|127\.0\.0\.1/i.test(source)) return "Accès direct";
   return source;
 }
 
