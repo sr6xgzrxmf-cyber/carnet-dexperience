@@ -1,12 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import { gammVertCookieName, isGammVertOwnerSession } from "@/lib/gamm-vert-auth";
+import QrShare from "./QrShare";
 import Widget from "./Widget";
 import { logoutGammVert } from "./actions";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export default function JardinPartagePage() {
+export default async function JardinPartagePage() {
+  const isOwner = isGammVertOwnerSession((await cookies()).get(gammVertCookieName())?.value);
   const filePath = path.join(process.cwd(), "content", "private", "jardin-partage.html");
   const html = fs.readFileSync(filePath, "utf8");
   return (
@@ -34,6 +38,7 @@ export default function JardinPartagePage() {
         Prototype interactif présenté en complément de la candidature spontanée envoyée à Gamm Vert Lozanne : échange de
         graines entre clients, réservation d&rsquo;ateliers, mise en relation avec les indépendants locaux.
       </p>
+      {isOwner ? <QrShare /> : null}
       <Widget html={html} />
     </div>
   );

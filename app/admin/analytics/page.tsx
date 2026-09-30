@@ -5,7 +5,7 @@ import TrafficCharts from "./TrafficCharts";
 
 export const dynamic = "force-dynamic";
 const kindLabel: Record<string, string> = { human: "Humain", ai: "Robot IA", ai_referral: "Arrivée depuis une IA" };
-const eventLabel: Record<string, string> = { page_view: "Page vue", internal_click: "Clic interne", outbound_click: "Départ du site", engagement: "Lecture", download: "Téléchargement" };
+const eventLabel: Record<string, string> = { page_view: "Page vue", internal_click: "Clic interne", outbound_click: "Départ du site", engagement: "Lecture", download: "Téléchargement", qr_scan: "Scan du QR code" };
 function metadata(value: unknown) {
   return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
 }
@@ -57,6 +57,17 @@ export default async function AnalyticsDashboard({ searchParams }: { searchParam
   const allSessions = buildSessions(journeyEvents, ownVisitors, true);
   const visibleSessions = showOwn ? allSessions : buildSessions(journeyEvents, ownVisitors, false);
   const recentSessions = visibleSessions.slice(0, 20);
+  // Scans des QR codes du prototype, regroupés par étiquette.
+  const qrScans = await prisma.analyticsEvent.findMany({
+    where: { eventType: "qr_scan", createdAt: { gte: since } }, orderBy: { createdAt: "desc" }, select: { createdAt: true, metadata: true },
+  });
+  const qrByLabel = [...qrScans.reduce((map, scan) => {
+    const raw = metadata(scan.metadata).label;
+    const label = typeof raw === "string" && raw ? raw : "Sans étiquette";
+    const entry = map.get(label) ?? { count: 0, last: scan.createdAt };
+    entry.count += 1;
+    return map.set(label, entry);
+  }, new Map<string, { count: number; last: Date }>())];
   const aiVisitDates = (await prisma.analyticsEvent.findMany({
     where: { kind: "ai", createdAt: { gte: since } }, select: { createdAt: true },
   })).map((event) => event.createdAt);
@@ -79,6 +90,18 @@ export default async function AnalyticsDashboard({ searchParams }: { searchParam
         {[["Acceptations", acceptedChoices], ["Refus", refusedChoices], ["Part des refus", `${refusalRate} %`]].map(([title, value]) =>
           <div key={String(title)} className="rounded-xl bg-neutral-100/70 p-4 dark:bg-neutral-900/60"><p className="text-sm text-neutral-500">{title}</p><strong className="mt-2 block text-3xl">{value}</strong></div>)}
       </div>
+    </section>
+    <section className="mt-8 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
+      <div className="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 className="font-semibold">Accès par QR code</h2>
+        <span className="text-xs text-neutral-500">30 derniers jours · prototype Le Jardin Partagé</span>
+      </div>
+      {qrByLabel.length ? <ul className="mt-4 grid gap-2">
+        {qrByLabel.map(([label, entry]) => <li key={label} className="flex flex-wrap items-baseline justify-between gap-2 rounded-xl bg-neutral-100/70 px-4 py-3 text-sm dark:bg-neutral-900/60">
+          <span className="font-medium">{label}</span>
+          <span className="text-neutral-600 dark:text-neutral-400"><strong className="text-neutral-900 dark:text-neutral-100">{entry.count}</strong> scan{entry.count > 1 ? "s" : ""} · dernier le {entry.last.toLocaleString("fr-FR", { timeZone: "Europe/Paris", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" })}</span>
+        </li>)}
+      </ul> : <p className="mt-3 text-sm text-neutral-500">Aucun QR code scanné pour le moment.</p>}
     </section>
     <RecentJourneys sessions={recentSessions} showOwn={showOwn} hiddenCount={allSessions.length - visibleSessions.length} />
     <section className="mt-8 overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800">

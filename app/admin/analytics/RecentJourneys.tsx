@@ -57,6 +57,7 @@ const SOURCE_STYLES: Record<string, { mark: string; className: string }> = {
   ChatGPT: { mark: "AI", className: "bg-[#10a37f] text-white" },
   Perplexity: { mark: "AI", className: "bg-[#20808d] text-white" },
   Claude: { mark: "AI", className: "bg-[#d97757] text-white" },
+  "Le Jardin Partagé": { mark: "JP", className: "bg-[#0E664E] text-white" },
   "Accès direct": { mark: "→", className: "bg-neutral-200 text-neutral-700 dark:bg-neutral-800 dark:text-neutral-200" },
 };
 
@@ -75,6 +76,7 @@ function str(value: unknown) {
 // Une session qui démarre depuis le site lui-même (onglet rouvert) compte comme un accès direct.
 function sourceLabel(source: string | null) {
   if (!source || /carnet-?dexperience|localhost|127\.0\.0\.1/i.test(source)) return "Accès direct";
+  if (source === "jardin-partage") return "Le Jardin Partagé";
   return source;
 }
 
