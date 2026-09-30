@@ -4,369 +4,472 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-</head>
 <title>Le Jardin Partagé</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+  /* Palette inspirée de la charte du site Gamm vert : vert sapin, gris clair, rouge promo. */
   :root{
     color-scheme: light;
-    --bg: #F8F3E3;
-    --surface: #FEFCF3;
-    --surface-alt: #F1EAD4;
-    --ink: #232B18;
-    --ink-soft: #5C6647;
-    --almond: #5F7B45;
-    --almond-deep: #33431F;
-    --gold: #B4841F;
-    --rust: #B0552E;
-    --line: #E1D5AC;
-    --shadow: rgba(51,67,31,0.10);
-    --on-accent: #FBFAF1;
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-alt: #F3F4F1;
+    --ink: #313131;
+    --ink-soft: #626261;
+    --primary: #0E664E;
+    --primary-deep: #014243;
+    --primary-soft: #E9F3ED;
+    --on-primary: #FFFFFF;
+    --band: #0E664E;
+    --red: #B8322F;
+    --red-soft: #FBEAEA;
+    --line: #E3E4E0;
+    --shadow: rgba(1,66,67,0.08);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       color-scheme: dark;
-      --bg: #161C10;
-      --surface: #1E2617;
-      --surface-alt: #26301C;
-      --ink: #EDE8D6;
-      --ink-soft: #B9C2A0;
-      --almond: #92B96C;
-      --almond-deep: #C4DA9E;
-      --gold: #DCB158;
-      --rust: #E08A5C;
-      --line: #37432A;
-      --shadow: rgba(0,0,0,0.4);
-      --on-accent: #1B2312;
+      --bg: #0F1714;
+      --surface: #17221E;
+      --surface-alt: #1F2C27;
+      --ink: #ECEFEA;
+      --ink-soft: #A9B3AE;
+      --primary: #6CCBA6;
+      --primary-deep: #9BE0C4;
+      --primary-soft: #1C3A30;
+      --on-primary: #0F1714;
+      --band: #0B4A39;
+      --red: #F08A86;
+      --red-soft: #3A1F1E;
+      --line: #2A3833;
+      --shadow: rgba(0,0,0,0.35);
     }
   }
   :root[data-theme="dark"]{
     color-scheme: dark;
-    --bg: #161C10;
-    --surface: #1E2617;
-    --surface-alt: #26301C;
-    --ink: #EDE8D6;
-    --ink-soft: #B9C2A0;
-    --almond: #92B96C;
-    --almond-deep: #C4DA9E;
-    --gold: #DCB158;
-    --rust: #E08A5C;
-    --line: #37432A;
-    --shadow: rgba(0,0,0,0.4);
-    --on-accent: #1B2312;
+    --bg: #0F1714;
+    --surface: #17221E;
+    --surface-alt: #1F2C27;
+    --ink: #ECEFEA;
+    --ink-soft: #A9B3AE;
+    --primary: #6CCBA6;
+    --primary-deep: #9BE0C4;
+    --primary-soft: #1C3A30;
+    --on-primary: #0F1714;
+    --band: #0B4A39;
+    --red: #F08A86;
+    --red-soft: #3A1F1E;
+    --line: #2A3833;
+    --shadow: rgba(0,0,0,0.35);
   }
 
   *{ box-sizing: border-box; }
   [hidden]{ display: none !important; }
+  html, body{ margin: 0; }
   body{
-    margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Karla', system-ui, sans-serif;
+    font-family: 'Roboto', Arial, system-ui, sans-serif;
     font-size: 15px;
-    line-height: 1.5;
-    padding-inline: 0;
+    line-height: 1.55;
   }
-  img{ max-width: 100%; }
-  h1,h2,h3{ text-wrap: balance; }
-  a{ color: var(--almond-deep); }
-  :root[data-theme="dark"] a, @media (prefers-color-scheme: dark){ a{ color: var(--gold); } }
-
-  .page{ max-width: 980px; margin: 0 auto; padding: 0 20px 48px; }
-
-  .topbar{ padding-top: 28px; margin-bottom: 22px; }
-  .brand{ display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-  .brand-mark{ width: 40px; height: 40px; color: var(--gold); flex-shrink: 0; }
-  .brand-mark svg{ width: 100%; height: 100%; }
-  .brand-text h1{
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 26px;
-    color: var(--almond-deep);
-    margin: 0;
-    line-height: 1.05;
-  }
-  .brand-text .tagline{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin: 3px 0 0;
-  }
-  .topbar .lede{
-    font-size: 15px;
-    color: var(--ink-soft);
-    max-width: 62ch;
-    margin: 0;
+  h1,h2,h3{ font-family: 'Poppins', Arial, sans-serif; text-wrap: balance; }
+  a{ color: var(--primary); }
+  button{ font-family: inherit; }
+  button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
   }
 
-  .tabs{
-    display: flex;
-    gap: 6px;
-    background: var(--surface-alt);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 4px;
-    margin-bottom: 26px;
-    max-width: fit-content;
-    flex-wrap: wrap;
+  /* Bandeau vert, comme l'en-tête du site */
+  .band{ background: var(--band); color: #FFFFFF; }
+  .band-inner{
+    max-width: 1040px; margin: 0 auto; padding: 18px 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   }
+  .brand{ display: flex; align-items: center; gap: 12px; }
+  .brand-mark{ width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.14); display: grid; place-items: center; flex-shrink: 0; }
+  .brand-mark svg{ width: 24px; height: 24px; }
+  .brand h1{ margin: 0; font-size: 22px; font-weight: 700; line-height: 1.1; color: #FFFFFF; }
+  .brand .tagline{ margin: 2px 0 0; font-size: 12.5px; opacity: .85; }
+  .reset-btn{
+    font-size: 13px; font-weight: 500; color: #FFFFFF;
+    background: transparent; border: 1px solid rgba(255,255,255,0.55); border-radius: 4px;
+    padding: 7px 12px; cursor: pointer;
+  }
+  .reset-btn:hover{ background: rgba(255,255,255,0.12); }
+
+  .page{ max-width: 1040px; margin: 0 auto; padding: 22px 20px 40px; }
+  .lede{ margin: 0 0 20px; max-width: 70ch; color: var(--ink-soft); font-size: 15.5px; }
+
+  /* Onglets en pastilles, comme les catégories du site */
+  .tabs{ display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
   .tab{
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    font-size: 13.5px;
-    color: var(--ink-soft);
-    background: transparent;
-    border: none;
-    border-radius: 999px;
-    padding: 9px 16px;
-    cursor: pointer;
-    transition: background .15s ease, color .15s ease;
+    font-weight: 500; font-size: 14px; color: var(--ink);
+    background: var(--surface-alt); border: 1px solid transparent; border-radius: 8px;
+    padding: 9px 16px; cursor: pointer; transition: background .15s ease, color .15s ease;
   }
-  .tab:hover{ color: var(--ink); }
-  .tab[aria-selected="true"]{
-    background: var(--almond-deep);
-    color: var(--on-accent);
-  }
-  :root[data-theme="dark"] .tab[aria-selected="true"], @media (prefers-color-scheme: dark){ .tab[aria-selected="true"]{ background: var(--almond-deep); color: var(--on-accent); } }
+  .tab:hover{ border-color: var(--line); }
+  .tab[aria-selected="true"]{ background: var(--primary); color: var(--on-primary); }
+  .tab.tab-why{ background: var(--primary-soft); color: var(--primary); }
+  .tab.tab-why[aria-selected="true"]{ background: var(--primary); color: var(--on-primary); }
 
-  .panel-intro{ margin: 0 0 18px; color: var(--ink-soft); font-size: 14.5px; max-width: 66ch; }
+  .panel-head{ display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .panel-head h2{ margin: 0; font-size: 20px; font-weight: 600; }
+  .panel-intro{ margin: 4px 0 0; color: var(--ink-soft); font-size: 14.5px; max-width: 66ch; }
 
-  .add-box{
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    margin-bottom: 22px;
-    overflow: hidden;
+  /* Filtre Propose / Recherche */
+  .filter{ display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .filter button{
+    font-size: 13px; font-weight: 500; color: var(--ink-soft); background: var(--surface);
+    border: none; border-right: 1px solid var(--line); padding: 7px 12px; cursor: pointer;
   }
+  .filter button:last-child{ border-right: none; }
+  .filter button[aria-pressed="true"]{ background: var(--surface-alt); color: var(--ink); font-weight: 700; }
+  .filter .count{ font-weight: 400; color: var(--ink-soft); margin-left: 4px; }
+
+  .add-box{ background: var(--surface-alt); border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
   .add-toggle{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 13px 16px;
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: var(--almond-deep);
+    width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    background: none; border: none; cursor: pointer; padding: 13px 16px;
+    font-weight: 700; font-size: 14px; color: var(--primary);
   }
-  :root[data-theme="dark"] .add-toggle, @media (prefers-color-scheme: dark){ .add-toggle{ color: var(--gold); } }
   .add-toggle .chevron{ transition: transform .15s ease; color: var(--ink-soft); }
   .add-toggle[aria-expanded="true"] .chevron{ transform: rotate(180deg); }
-  .add-form{
-    padding: 4px 16px 16px;
-    display: grid;
-    gap: 10px;
-  }
+  .add-form{ padding: 2px 16px 16px; display: grid; gap: 12px; }
   .add-form.row2{ grid-template-columns: 1fr 1fr; }
   .add-form .full{ grid-column: 1 / -1; }
   .field{ display: flex; flex-direction: column; gap: 4px; }
-  .field label{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--ink-soft);
+  .field label{ font-size: 12.5px; font-weight: 500; color: var(--ink-soft); }
+  .field input, .field select, .field textarea, .reserve-form input{
+    font-family: inherit; font-size: 14px; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 9px 10px;
   }
-  .field input, .field select, .field textarea{
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    color: var(--ink);
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    padding: 8px 10px;
-  }
-  .field textarea{ resize: vertical; min-height: 52px; }
-  .field input:focus, .field select:focus, .field textarea:focus{
-    outline: 2px solid var(--almond);
-    outline-offset: 1px;
-  }
-  .submit-btn{
-    justify-self: start;
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    font-size: 13.5px;
-    color: var(--on-accent);
-    background: var(--almond-deep);
-    border: none;
-    border-radius: 999px;
-    padding: 9px 20px;
-    cursor: pointer;
-  }
-  .submit-btn:hover{ opacity: 0.9; }
+  .field textarea{ resize: vertical; min-height: 56px; }
 
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 14px;
+  .btn{
+    justify-self: start; font-weight: 700; font-size: 14px;
+    color: #FFFFFF; background: #0E664E; border: none; border-radius: 4px;
+    padding: 10px 20px; cursor: pointer;
   }
+  .btn:hover{ background: #014243; }
+  .btn-outline{
+    font-weight: 700; font-size: 13px; color: var(--primary);
+    background: transparent; border: 1px solid var(--primary); border-radius: 4px;
+    padding: 6px 14px; cursor: pointer;
+  }
+  .btn-outline:hover{ background: var(--primary-soft); }
+
+  .grid{ display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
   .card{
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 14px 16px;
-    box-shadow: 0 1px 2px var(--shadow);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px; box-shadow: 0 1px 3px var(--shadow);
+    display: flex; flex-direction: column;
   }
-  .card.is-new{ animation: settle .6s ease; }
-  @keyframes settle{
-    from{ background: var(--surface-alt); }
-    to{ background: var(--surface); }
-  }
+  .card.is-new{ animation: settle .8s ease; }
+  @keyframes settle{ from{ background: var(--primary-soft); } to{ background: var(--surface); } }
   @media (prefers-reduced-motion: reduce){ .card.is-new{ animation: none; } }
 
   .card-head{ display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
-  .card h3{
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--ink);
-    margin: 0;
-  }
+  .card h3{ font-weight: 600; font-size: 16px; line-height: 1.3; margin: 0; }
   .tag{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 2px 8px;
-    border-radius: 999px;
-    white-space: nowrap;
+    font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 4px; white-space: nowrap;
   }
-  .tag.offre{ background: color-mix(in srgb, var(--almond) 22%, var(--surface)); color: var(--almond-deep); }
-  .tag.recherche{ background: color-mix(in srgb, var(--rust) 22%, var(--surface)); color: var(--rust); }
-  :root[data-theme="dark"] .tag.offre, @media (prefers-color-scheme: dark){ .tag.offre{ color: var(--almond-deep); } }
-
-  .card p.desc{ font-size: 13.5px; color: var(--ink-soft); margin: 0 0 8px; }
+  .tag.offre{ background: var(--primary-soft); color: var(--primary); }
+  .tag.recherche{ background: var(--red-soft); color: var(--red); }
+  .tag.donne{ background: #FCEBDD; color: #9A4210; }
+  .surprise-check{ display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+  .card p.desc{ font-size: 14px; color: var(--ink-soft); margin: 0 0 12px; flex: 1; }
   .card .meta{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--ink-soft);
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px dashed var(--line);
-    padding-top: 8px;
+    font-size: 12.5px; color: var(--ink-soft);
+    display: flex; justify-content: space-between; gap: 8px;
+    border-top: 1px solid var(--line); padding-top: 10px;
   }
+  .card .meta strong{ color: var(--ink); font-weight: 500; }
+  .empty{ color: var(--ink-soft); font-size: 14px; }
+  .slot{ font-weight: 700; color: var(--primary); }
 
-  .atelier-card h3{ margin-bottom: 2px; }
-  .atelier-when{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 8px;
+  /* Grainothèque du magasin : une maison à alvéoles, comme un hôtel à abeilles */
+  .banner{ margin: 0 0 20px; }
+  .banner img{
+    display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; object-fit: cover;
+    border-radius: 8px; background: var(--surface-alt);
   }
+  .banner-atelier img{ aspect-ratio: 21 / 9; object-position: center 45%; }
+  .banner figcaption{ margin-top: 6px; font-size: 12.5px; color: var(--ink-soft); }
+  .hive{
+    display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 22px; align-items: center;
+    border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; margin: 24px 0 0; background: var(--surface);
+  }
+  .hive svg{ width: 100%; height: auto; display: block; }
+  .hive h3{ margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+  .hive .hive-intro{ margin: 0 0 12px; font-size: 14px; color: var(--ink-soft); }
+  .hive ol{ margin: 0; padding: 0; list-style: none; display: grid; gap: 9px; counter-reset: step; }
+  .hive li{ display: grid; grid-template-columns: 26px 1fr; gap: 10px; font-size: 14px; align-items: start; }
+  .hive li::before{
+    counter-increment: step; content: counter(step);
+    width: 24px; height: 24px; border-radius: 50%; background: var(--primary-soft); color: var(--primary);
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 12.5px; display: grid; place-items: center;
+  }
+  .hive .hive-count{ margin: 12px 0 0; font-size: 13px; color: var(--ink-soft); }
+  .hive .hive-count b{ color: var(--ink); }
+  .hive-num{ font: 700 7.5px 'Roboto', sans-serif; fill: #E9D3AE; text-anchor: middle; }
+  .hive-num.on-env{ fill: #6B4A26; font-size: 7px; }
+  .hive-cell-group.is-new .hive-cell{ stroke: #2FBF8C; stroke-width: 2.5; }
+  .hive-crate-label{ font: 700 10.5px 'Roboto', sans-serif; fill: #FFF8EC; text-anchor: middle; letter-spacing: .1em; }
+
+  .atelier-img{
+    display: block; width: calc(100% + 32px); max-width: none; margin: -16px -16px 14px;
+    height: auto; aspect-ratio: 5 / 2; object-fit: cover; border-radius: 8px 8px 0 0; background: var(--surface-alt);
+  }
+  .atelier-card{ overflow: hidden; }
+  .atelier-theme{
+    align-self: flex-start; font-size: 11.5px; font-weight: 700; border-radius: 4px; padding: 3px 9px; margin-bottom: 10px;
+    background: var(--surface-alt); color: var(--ink-soft);
+  }
+  .atelier-theme.famille{ background: #FCEBDD; color: #9A4210; }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .atelier-theme.famille{ background: #3A2618; color: #F4A66E; } }
+  :root[data-theme="dark"] .atelier-theme.famille{ background: #3A2618; color: #F4A66E; }
+  .atelier-when{ font-size: 13.5px; font-weight: 700; color: var(--primary); margin: 4px 0 8px; }
   .atelier-foot{
-    display: flex; align-items: center; justify-content: space-between;
-    border-top: 1px dashed var(--line);
-    padding-top: 10px;
-    margin-top: 10px;
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    border-top: 1px solid var(--line); padding-top: 10px;
   }
-  .places{ font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--ink-soft); }
+  .places{ font-size: 13px; color: var(--ink-soft); }
   .places b{ color: var(--ink); }
-  .reserve-btn{
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    font-size: 12.5px;
-    color: var(--almond-deep);
-    background: transparent;
-    border: 1px solid var(--almond);
-    border-radius: 999px;
-    padding: 5px 13px;
-    cursor: pointer;
-  }
-  :root[data-theme="dark"] .reserve-btn, @media (prefers-color-scheme: dark){ .reserve-btn{ color: var(--almond-deep); background: var(--almond); } }
-  .reserve-btn:hover{ background: var(--almond); color: var(--on-accent); }
-  .reserve-btn[disabled]{ opacity: 0.5; cursor: not-allowed; }
-  .reserve-form{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); display: none; gap: 8px; }
+  .places-bar{ display: block; width: 90px; height: 5px; border-radius: 3px; background: var(--surface-alt); margin-top: 4px; overflow: hidden; }
+  .places-bar span{ display: block; height: 100%; background: var(--primary); }
+  .complet{ font-size: 12px; font-weight: 700; color: var(--red); background: var(--red-soft); border-radius: 4px; padding: 3px 9px; }
+  .reserve-form{ margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); display: none; gap: 8px; }
   .reserve-form.open{ display: grid; }
-  .reserve-form input{
-    font-family: 'Karla', sans-serif; font-size: 13px;
-    border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px;
-    background: var(--bg); color: var(--ink);
-  }
-  .reserve-confirm{ font-size: 12.5px; color: var(--almond-deep); font-weight: 700; margin-top: 8px; }
-  :root[data-theme="dark"] .reserve-confirm, @media (prefers-color-scheme: dark){ .reserve-confirm{ color: var(--gold); } }
-  .complet-badge{
-    font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; text-transform: uppercase;
-    color: var(--rust); font-weight: 600;
-  }
+  .reserve-confirm{ font-size: 13px; color: var(--primary); font-weight: 700; }
 
-  .reseau-card .activite{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
-    color: var(--almond); margin: 0 0 6px;
+  .reseau-card .zone{ font-size: 12.5px; font-weight: 500; color: var(--primary); margin: 2px 0 8px; }
+
+  /* Onglet « Ce que ça apporte au magasin » */
+  .why-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 26px; }
+  .why-card{ background: var(--surface-alt); border-radius: 8px; padding: 18px; }
+  .why-card .num{
+    width: 34px; height: 34px; border-radius: 50%; background: var(--primary); color: var(--on-primary);
+    display: grid; place-items: center; font-family: 'Poppins', sans-serif; font-weight: 700; margin-bottom: 10px;
   }
-  .reseau-card .zone{ color: var(--ink-soft); }
+  .why-card h3{ margin: 0 0 6px; font-size: 16.5px; font-weight: 600; }
+  .why-card p{ margin: 0; font-size: 14px; color: var(--ink-soft); }
+  .why-card .from{ display: block; margin-top: 10px; font-size: 12.5px; font-weight: 500; color: var(--primary); }
+  .why-cols{ display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; }
+  .why-box{ border: 1px solid var(--line); border-radius: 8px; padding: 18px; background: var(--surface); }
+  .why-box h3{ margin: 0 0 12px; font-size: 16px; font-weight: 600; }
+  .steps{ list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .steps li{ display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+  .steps .when{ font-size: 12px; font-weight: 700; color: var(--primary); background: var(--primary-soft); border-radius: 4px; padding: 3px 8px; white-space: nowrap; }
+  .steps b{ display: block; font-weight: 500; }
+  .steps span.desc{ font-size: 13.5px; color: var(--ink-soft); }
+  .kpis{ margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 14px; }
+  .kpis li::marker{ color: var(--primary); }
 
   .footer{
-    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+    margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line);
     font-size: 12.5px; color: var(--ink-soft);
   }
+  .footer p{ margin: 0 0 4px; }
 
-  @media (max-width: 460px){
-    .brand-text h1{ font-size: 22px; }
-    .add-form.row2{ grid-template-columns: 1fr; }
-    .tab{ font-size: 12.5px; padding: 8px 12px; }
+  .toast{
+    position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
+    background: #313131; color: #FFFFFF; font-size: 13.5px; border-radius: 4px; padding: 9px 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.2);
+  }
+
+  /* Interrupteur Vue client / Vue équipe */
+  .band-actions{ display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .view-toggle{ display: inline-flex; border: 1px solid rgba(255,255,255,0.55); border-radius: 4px; overflow: hidden; }
+  .view-toggle button{
+    font-size: 13px; font-weight: 700; color: #FFFFFF; background: transparent; border: none;
+    padding: 7px 13px; cursor: pointer;
+  }
+  .view-toggle button[aria-pressed="true"]{ background: #FFFFFF; color: #014243; }
+  body.is-equipe .band{ background: #014243; }
+  .team-flag{
+    display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: #014243; background: #D6EEDF; border-radius: 4px; padding: 3px 8px; margin-bottom: 10px;
+  }
+
+  /* Vue équipe */
+  .stats{ display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-bottom: 30px; }
+  .stat{ border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; background: var(--surface); }
+  .stat p{ margin: 0; font-size: 13px; color: var(--ink-soft); }
+  .stat strong{ display: block; font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 600; margin: 4px 0 2px; color: var(--ink); }
+  .stat.alert strong{ color: var(--red); }
+  .eq-section{ margin-bottom: 34px; }
+  .eq-form{ background: var(--surface-alt); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .plan{ display: grid; gap: 10px; }
+  .plan-row{
+    display: grid; grid-template-columns: 64px 1fr 150px auto; gap: 16px; align-items: center;
+    border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: var(--surface);
+  }
+  .plan-row.is-new{ border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-soft); }
+  .plan-row.is-cancelled .plan-main, .plan-row.is-cancelled .plan-fill, .plan-row.is-cancelled .plan-date{ opacity: .45; }
+  .plan-date{ text-align: center; background: var(--surface-alt); border-radius: 6px; padding: 6px 4px; line-height: 1.1; }
+  .plan-date small{ display: block; font-size: 11px; color: var(--ink-soft); text-transform: capitalize; }
+  .plan-date b{ display: block; font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600; }
+  .plan-main h3{ margin: 2px 0 2px; font-size: 15px; font-weight: 600; }
+  .plan-main p{ margin: 0; font-size: 13px; color: var(--ink-soft); }
+  .plan-main .atelier-theme{ margin: 0; }
+  .plan-fill{ font-size: 13px; color: var(--ink-soft); }
+  .plan-fill b{ color: var(--ink); }
+  .plan-fill .places-bar{ width: 100%; height: 6px; }
+  .plan-fill.full .places-bar span{ background: var(--red); }
+  .plan-actions{ display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .mini{
+    font-size: 12.5px; font-weight: 500; color: var(--ink); background: var(--surface-alt);
+    border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; cursor: pointer; white-space: nowrap;
+  }
+  .mini:hover{ border-color: var(--primary); color: var(--primary); }
+  .mini[disabled]{ cursor: default; color: var(--primary); border-color: transparent; background: var(--primary-soft); }
+  .mini.danger:hover{ border-color: var(--red); color: var(--red); }
+  .plan-inscrits{ grid-column: 1 / -1; border-top: 1px dashed var(--line); padding-top: 10px; }
+  .plan-inscrits ul{ margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .plan-inscrits li{ font-size: 12.5px; background: var(--surface-alt); border-radius: 4px; padding: 3px 9px; }
+  .plan-inscrits li.from-demo{ background: var(--primary-soft); color: var(--primary); font-weight: 700; }
+  .eq-cols{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+  .eq-cols .why-box p.small{ margin: -6px 0 12px; font-size: 13px; color: var(--ink-soft); }
+  .eq-list{ list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .eq-list li{ display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 13.5px; }
+  .eq-list li span small{ display: block; font-size: 12px; color: var(--ink-soft); }
+  .stock-num{ font-family: 'Poppins', sans-serif; font-size: 26px; font-weight: 600; }
+  .stock-alert{ font-size: 13px; font-weight: 700; color: var(--red); margin: 2px 0 10px; }
+  .stock-ok{ font-size: 13px; font-weight: 700; color: var(--primary); margin: 2px 0 10px; }
+  .checklist{ list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 13.5px; }
+  .checklist label{ display: flex; gap: 8px; align-items: flex-start; cursor: pointer; }
+  .checklist input{ margin-top: 3px; accent-color: #0E664E; }
+  .checklist input:checked + span{ text-decoration: line-through; color: var(--ink-soft); }
+  .card.is-cancelled{ opacity: .6; }
+
+  @media (max-width: 760px){
+    .plan-row{ grid-template-columns: 56px 1fr; }
+    .plan-fill, .plan-actions{ grid-column: 1 / -1; }
+    .plan-actions{ justify-content: flex-start; }
+  }
+
+  @media (max-width: 640px){
+    .add-form.row2, .why-cols, .hive{ grid-template-columns: 1fr; }
+    .hive svg{ max-width: 280px; margin: 0 auto; }
+    .brand h1{ font-size: 19px; }
+    .tab{ font-size: 13px; padding: 8px 12px; }
   }
 </style>
+</head>
+<body>
 
-<div class="page">
-  <header class="topbar">
+<header class="band">
+  <div class="band-inner">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3.5-2.5-5-6-5 0 3.5 2.5 5 6 5Z"/></svg></span>
-      <div class="brand-text">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3.5-2.5-5-6-5 0 3.5 2.5 5 6 5Z"/></svg></span>
+      <div>
         <h1>Le Jardin Partagé</h1>
-        <p class="tagline">Prototype — démonstration · Gamm Vert Lozanne</p>
+        <p class="tagline" id="tagline">Prototype de démonstration · pour Gamm vert Lozanne</p>
       </div>
     </div>
-    <p class="lede">Échanger des graines entre clients, réserver un atelier, retrouver les professionnels indépendants du secteur — un aperçu de ce que pourrait devenir l'espace numérique du magasin. Essayez : vos ajouts s'affichent tout de suite, et restent sur cet appareil si vous revenez.</p>
-  </header>
+    <div class="band-actions">
+      <div class="view-toggle" role="group" aria-label="Choisir la vue">
+        <button type="button" data-view="client" aria-pressed="true">Vue client</button>
+        <button type="button" data-view="equipe" aria-pressed="false">Vue équipe</button>
+      </div>
+      <button class="reset-btn" id="reset-demo" type="button">↺ Réinitialiser la démo</button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <div id="view-client">
+  <p class="lede">Échanger des graines entre clients, réserver un atelier, retrouver les professionnels indépendants du secteur : un aperçu de ce que pourrait devenir l'espace numérique du magasin. Essayez, vos ajouts s'affichent tout de suite.</p>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button class="tab" id="tabbtn-graines" data-tab="graines" role="tab" aria-selected="true" aria-controls="panel-graines">Échange de graines</button>
-    <button class="tab" id="tabbtn-ateliers" data-tab="ateliers" role="tab" aria-selected="false" aria-controls="panel-ateliers">Ateliers</button>
+    <button class="tab" id="tabbtn-ateliers" data-tab="ateliers" role="tab" aria-selected="false" aria-controls="panel-ateliers">Ateliers en magasin</button>
     <button class="tab" id="tabbtn-reseau" data-tab="reseau" role="tab" aria-selected="false" aria-controls="panel-reseau">Réseau local</button>
+    <button class="tab tab-why" id="tabbtn-magasin" data-tab="magasin" role="tab" aria-selected="false" aria-controls="panel-magasin">Ce que ça apporte au magasin</button>
   </nav>
 
   <main>
     <section id="panel-graines" class="panel" role="tabpanel" aria-labelledby="tabbtn-graines">
-      <p class="panel-intro">Ce que les client·es proposent ou recherchent en ce moment — graines, boutures, plants en surplus.</p>
+      <div class="panel-head">
+        <div>
+          <h2>Échange de graines</h2>
+          <p class="panel-intro">Ce que les clients proposent ou recherchent en ce moment : graines, boutures, plants en surplus. Les échanges se font au point d'accueil du magasin.</p>
+        </div>
+        <div class="filter" role="group" aria-label="Filtrer les annonces">
+          <button type="button" data-filter="tout" aria-pressed="true">Tout<span class="count" id="count-tout"></span></button>
+          <button type="button" data-filter="offre" aria-pressed="false">Propose<span class="count" id="count-offre"></span></button>
+          <button type="button" data-filter="recherche" aria-pressed="false">Recherche<span class="count" id="count-recherche"></span></button>
+          <button type="button" data-filter="donne" aria-pressed="false">Servez-vous<span class="count" id="count-donne"></span></button>
+        </div>
+      </div>
+
+      <figure class="banner">
+        <img src="/images/jardin-partage/grainotheque.jpg" alt="La grainothèque en bois à alvéoles, avec son présentoir à pochettes et le bac « Servez-vous »" width="1200" height="400">
+        <figcaption>La grainothèque, au point d'accueil du magasin : 52 alvéoles, des pochettes et un crayon à disposition.</figcaption>
+      </figure>
 
       <div class="add-box">
-        <button class="add-toggle" aria-expanded="false" aria-controls="form-graines">
+        <button class="add-toggle" type="button" aria-expanded="false" aria-controls="form-graines">
           <span>+ Publier une annonce</span>
           <span class="chevron">▾</span>
         </button>
         <form class="add-form row2" id="form-graines" hidden>
-          <div class="field"><label for="g-plante">Plante</label><input id="g-plante" required placeholder="ex. Tomate ancienne"></div>
+          <div class="field"><label for="g-plante">Plante</label><input id="g-plante" required placeholder="ex. Tomate ancienne">
+            <label class="surprise-check"><input type="checkbox" id="g-surprise"> Pochette surprise (on ne dit pas ce que c'est)</label></div>
           <div class="field"><label for="g-type">Type</label>
-            <select id="g-type"><option value="offre">J'en propose</option><option value="recherche">J'en recherche</option></select>
+            <select id="g-type"><option value="offre">J'en propose à l'échange</option><option value="donne">J'en ai trop : servez-vous</option><option value="recherche">J'en recherche</option></select>
           </div>
           <div class="field full"><label for="g-desc">Description</label><textarea id="g-desc" required placeholder="Variété, quantité, conditions d'échange…"></textarea></div>
           <div class="field"><label for="g-prenom">Prénom</label><input id="g-prenom" required placeholder="ex. Camille"></div>
-          <button type="submit" class="submit-btn full">Publier</button>
+          <button type="submit" class="btn full">Publier</button>
         </form>
       </div>
 
       <div class="grid" id="grid-graines"></div>
+
+      <div class="hive">
+        <svg id="hive-svg" viewBox="0 0 318 384" role="img" aria-label="La grainothèque : une maison à alvéoles où attendent les pochettes de graines"></svg>
+        <div>
+          <h3>La grainothèque, au point d'accueil</h3>
+          <p class="hive-intro">En magasin, l'échange passe par une petite maison en bois à alvéoles, comme un hôtel à abeilles. Chaque alvéole accueille une pochette de graines en attendant qu'un autre jardinier l'échange.</p>
+          <ol>
+            <li><span>Je prends une pochette dans le présentoir, sur le côté.</span></li>
+            <li><span>J'y glisse mes graines et j'écris avec le stylo attaché le nom de la plante (ou « Surprise ! ») et mon prénom ou un pseudo.</span></li>
+            <li><span>Je la dépose dans une alvéole libre (il y en a 52). Si je publie aussi une annonce en ligne, son numéro s'y affiche.</span></li>
+            <li><span>Un autre jardinier la récupère et laisse, s'il le souhaite, ses propres graines en échange.</span></li>
+            <li><span>J'en ai trop ? Je dépose mes pochettes dans le bac « Servez-vous » : chacun se sert librement, sans échange.</span></li>
+          </ol>
+          <p class="hive-count" id="hive-count"></p>
+        </div>
+      </div>
     </section>
 
     <section id="panel-ateliers" class="panel" role="tabpanel" aria-labelledby="tabbtn-ateliers" hidden>
-      <p class="panel-intro">Les prochaines sessions en magasin — places limitées, réservation directe.</p>
+      <div class="panel-head">
+        <div>
+          <h2>Ateliers en magasin</h2>
+          <p class="panel-intro">Les prochaines sessions du samedi : places limitées, réservation directe.</p>
+        </div>
+      </div>
+      <figure class="banner banner-atelier">
+        <img src="/images/jardin-partage/lieu-atelier.jpg" alt="L'espace atelier au milieu des rayons : une grande table en bois, des bulbes et des outils, un écran annonçant l'atelier du jour" width="1100" height="619">
+        <figcaption>L'espace atelier, au milieu des rayons : une grande table, le matériel prêt, et un écran qui annonce l'atelier du jour.</figcaption>
+      </figure>
       <div class="grid" id="grid-ateliers"></div>
     </section>
 
     <section id="panel-reseau" class="panel" role="tabpanel" aria-labelledby="tabbtn-reseau" hidden>
-      <p class="panel-intro">Les indépendants du secteur, à proximité, pour orienter les client·es au-delà de ce que propose le magasin.</p>
+      <div class="panel-head">
+        <div>
+          <h2>Réseau local</h2>
+          <p class="panel-intro">Les indépendants du secteur, pour orienter les clients au-delà de ce que propose le magasin, et co-animer des ateliers.</p>
+        </div>
+      </div>
 
       <div class="add-box">
-        <button class="add-toggle" aria-expanded="false" aria-controls="form-reseau">
+        <button class="add-toggle" type="button" aria-expanded="false" aria-controls="form-reseau">
           <span>+ Rejoindre le réseau</span>
           <span class="chevron">▾</span>
         </button>
@@ -375,90 +478,394 @@
           <div class="field"><label for="r-zone">Zone</label><input id="r-zone" required placeholder="ex. Lozanne et alentours"></div>
           <div class="field full"><label for="r-desc">Description</label><textarea id="r-desc" required placeholder="Ce que vous proposez…"></textarea></div>
           <div class="field"><label for="r-contact">Contact</label><input id="r-contact" required placeholder="email ou téléphone"></div>
-          <button type="submit" class="submit-btn full">Rejoindre</button>
+          <button type="submit" class="btn full">Rejoindre</button>
         </form>
       </div>
 
       <div class="grid" id="grid-reseau"></div>
     </section>
+
+    <section id="panel-magasin" class="panel" role="tabpanel" aria-labelledby="tabbtn-magasin" hidden>
+      <div class="panel-head">
+        <div>
+          <h2>Ce que ça apporte au magasin</h2>
+          <p class="panel-intro">Trois leviers, qui s'appuient sur ce que le magasin fait déjà : le conseil, le lien avec les clients et l'ancrage dans la vallée.</p>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <div class="num">1</div>
+          <h3>Fidéliser</h3>
+          <p>Les clients reviennent pour échanger, pas seulement pour acheter. Le magasin devient un lieu de rendez-vous entre jardiniers du secteur.</p>
+          <span class="from">→ Échange de graines</span>
+        </article>
+        <article class="why-card">
+          <div class="num">2</div>
+          <h3>Faire venir en magasin</h3>
+          <p>Chaque atelier réunit un groupe un samedi, avec les fournitures achetées sur place. Chaque pochette déposée ou récupérée à la grainothèque passe par l'accueil.</p>
+          <span class="from">→ Ateliers et point d'échange</span>
+        </article>
+        <article class="why-card">
+          <div class="num">3</div>
+          <h3>S'ancrer localement</h3>
+          <p>Orienter un client vers un paysagiste ou une apicultrice du coin plutôt que le laisser repartir sans réponse, et gagner des partenaires pour les ateliers.</p>
+          <span class="from">→ Réseau local</span>
+        </article>
+      </div>
+
+      <div class="why-cols">
+        <div class="why-box">
+          <h3>Une mise en place progressive</h3>
+          <ol class="steps">
+            <li><span class="when">Mois 1</span><div><b>Tester l'échange de graines</b><span class="desc">Installer la grainothèque à alvéoles à l'accueil (pochettes et stylo fournis) et une page simple, pour vérifier que les clients jouent le jeu.</span></div></li>
+            <li><span class="when">Mois 2–3</span><div><b>Ouvrir la réservation des ateliers</b><span class="desc">Partir du planning existant, ajouter l'inscription en ligne et un rappel la veille.</span></div></li>
+            <li><span class="when">Mois 4+</span><div><b>Constituer le réseau local</b><span class="desc">Quelques indépendants de confiance d'abord, puis des ateliers co-animés.</span></div></li>
+          </ol>
+        </div>
+        <div class="why-box">
+          <h3>Ce qu'on suivrait</h3>
+          <ul class="kpis">
+            <li>Annonces publiées et échanges conclus au point d'accueil</li>
+            <li>Taux de remplissage des ateliers</li>
+            <li>Achats réalisés le jour d'un atelier</li>
+            <li>Nombre de partenaires actifs dans le réseau</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+  </div>
+
+  <div id="view-equipe" hidden>
+    <span class="team-flag">Vue équipe · démo</span>
+    <p class="lede">L'envers du décor : ce que l'équipe du magasin utilise pour faire vivre le Jardin Partagé. Tout ce qui se fait ici apparaît aussitôt dans la vue client.</p>
+
+    <div class="stats" id="eq-stats"></div>
+
+    <section class="eq-section">
+      <div class="panel-head">
+        <div>
+          <h2>Planning des ateliers</h2>
+          <p class="panel-intro">Préparer, remplir, rappeler : tout le suivi d'un atelier au même endroit.</p>
+        </div>
+        <button class="btn" id="eq-new-toggle" type="button" aria-expanded="false" aria-controls="form-atelier">+ Créer un atelier</button>
+      </div>
+
+      <form class="add-form row2 eq-form" id="form-atelier" hidden>
+        <div class="field"><label for="a-titre">Titre</label><input id="a-titre" required placeholder="ex. Tailler ses rosiers"></div>
+        <div class="field"><label for="a-theme">Thème</label>
+          <select id="a-theme"><option>Jardin</option><option>Potager</option><option>Floral</option><option>Parents-enfants</option></select>
+        </div>
+        <div class="field"><label for="a-date">Date</label><input id="a-date" type="date" required></div>
+        <div class="field"><label for="a-horaire">Horaire</label>
+          <select id="a-horaire"><option>10h – 12h</option><option>14h – 16h</option><option>14h – 16h30</option></select>
+        </div>
+        <div class="field"><label for="a-capacite">Places</label><input id="a-capacite" type="number" min="2" max="30" value="8" required></div>
+        <div class="field"><label for="a-animateur">Animé par</label><input id="a-animateur" required value="l'équipe du magasin"></div>
+        <div class="field full"><label for="a-desc">Description</label><textarea id="a-desc" required placeholder="Ce que les participants vont faire et emporter…"></textarea></div>
+        <div class="field full"><label for="a-img">Photo</label>
+          <select id="a-img">
+            <option value="/images/jardin-partage/lieu-atelier.jpg">Espace atelier (par défaut)</option>
+            <option value="/images/jardin-partage/bulbes.jpg">Bulbes</option>
+            <option value="/images/jardin-partage/potager-hiver.jpg">Potager</option>
+            <option value="/images/jardin-partage/composition-florale.jpg">Composition florale</option>
+            <option value="/images/jardin-partage/art-de-la-table.jpg">Art de la table</option>
+            <option value="/images/jardin-partage/citrouille.jpg">Citrouilles</option>
+          </select>
+        </div>
+        <button type="submit" class="btn full">Publier l'atelier</button>
+      </form>
+
+      <div class="plan" id="eq-planning"></div>
+    </section>
+
+    <section class="eq-section">
+      <div class="panel-head">
+        <div>
+          <h2>Grainothèque : entretien</h2>
+          <p class="panel-intro">Un tour de dix minutes, le lundi matin, suffit à la garder vivante.</p>
+        </div>
+      </div>
+      <div class="eq-cols">
+        <div class="why-box">
+          <h3>Alvéoles à libérer</h3>
+          <p class="small">Pochettes déposées depuis plus de 3 mois : elles rejoignent le bac « Servez-vous ».</p>
+          <ul class="eq-list" id="eq-old"></ul>
+        </div>
+        <div class="why-box">
+          <h3>Pochettes vierges</h3>
+          <div id="eq-stock"></div>
+        </div>
+        <div class="why-box">
+          <h3>Tour de la semaine</h3>
+          <ul class="checklist">
+            <li><label><input type="checkbox"><span>Vérifier le crayon et sa ficelle</span></label></li>
+            <li><label><input type="checkbox"><span>Réassortir le présentoir de pochettes vierges</span></label></li>
+            <li><label><input type="checkbox"><span>Libérer les alvéoles de plus de 3 mois</span></label></li>
+            <li><label><input type="checkbox"><span>Trier le bac « Servez-vous »</span></label></li>
+            <li><label><input type="checkbox"><span>Mettre à jour l'écran de l'espace atelier</span></label></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <footer class="footer">
-    <p>Prototype interactif réalisé par Laurent Guyonnet, en complément de la candidature envoyée à Gamm Vert Lozanne. Les contenus visibles au chargement sont des exemples ; vos propres ajouts restent visibles sur cet appareil.</p>
+    <p>Prototype interactif réalisé par Laurent Guyonnet, en complément de sa candidature à Gamm vert Lozanne. Proposition personnelle, non affiliée à l'enseigne.</p>
+    <p>Les contenus visibles au chargement sont des exemples ; vos ajouts restent sur cet appareil jusqu'à la réinitialisation de la démo.</p>
   </footer>
 </div>
+
+<div class="toast" id="toast" role="status" hidden></div>
 
 <script>
 (function(){
   "use strict";
 
+  var STORAGE_KEY = "jardin-partage-ajouts";
+
   var seedGraines = [
-    { plante:"Tomate ancienne Cœur de Bœuf", type:"offre", desc:"Une dizaine de graines récoltées cet été, bien mûres. Échange contre autre chose de saison.", auteur:"Sophie", when:"il y a 2 jours" },
-    { plante:"Capucine grimpante", type:"offre", desc:"Plein de gousses cette année — je partage volontiers, comestibles et jolies en bordure.", auteur:"Marc", when:"il y a 4 jours" },
+    { plante:"Tomate ancienne Cœur de Bœuf", type:"offre", desc:"Une dizaine de graines récoltées cet été, bien mûres. Échange contre autre chose de saison.", auteur:"Sophie", when:"il y a 2 jours", slot:9 },
+    { plante:"Capucine grimpante", type:"offre", desc:"Plein de gousses cette année, je partage volontiers. Comestibles et jolies en bordure.", auteur:"Marc", when:"il y a 4 jours", slot:24 },
     { plante:"Pavot de Californie", type:"recherche", desc:"Je cherche des graines pour un talus sec plein sud, si quelqu'un en a en trop.", auteur:"Élodie", when:"il y a 5 jours" },
-    { plante:"Haricots grimpants Coco rouge", type:"offre", desc:"Variété familiale, très productive. Quelques poignées disponibles.", auteur:"Yannick", when:"il y a 6 jours" },
-    { plante:"Basilic grand vert", type:"recherche", desc:"Le mien a monté en graines trop tôt cette année, je repars de zéro.", auteur:"Nadia", when:"il y a 1 semaine" }
+    { plante:"Haricots grimpants Coco rouge", type:"offre", desc:"Variété familiale, très productive. Quelques poignées disponibles.", auteur:"Yannick", when:"il y a 6 jours", slot:36 },
+    { plante:"Basilic grand vert", type:"recherche", desc:"Le mien a monté en graines trop tôt cette année, je repars de zéro.", auteur:"Nadia", when:"il y a 1 semaine" },
+    { plante:"Souci officinal (calendula)", type:"donne", desc:"J'en ai récolté beaucoup trop : plusieurs pochettes dans le bac, servez-vous !", auteur:"Josiane", when:"il y a 3 jours" },
+    { plante:"Pochette surprise", type:"offre", desc:"Un mélange de fleurs de mon jardin, à découvrir au printemps.", auteur:"Hugo", when:"il y a 1 jour", slot:41 }
   ];
 
+  // Les ateliers tombent toujours sur les prochains samedis, pour que la démo reste à jour ;
+  // l'atelier d'Halloween, lui, a lieu le samedi qui précède (ou qui tombe) le 31 octobre.
   var seedAteliers = [
-    { titre:"Composition florale de saison", date:"Samedi 3 octobre", horaire:"10h – 12h", capacite:8, inscrits:5, animateur:"Laurent G.", desc:"Bouquet automnal avec les fleurs de la semaine." },
-    { titre:"Art de la table", date:"Samedi 10 octobre", horaire:"14h – 16h", capacite:8, inscrits:8, animateur:"Camille D.", desc:"Composer un centre de table pour un repas de fête." },
-    { titre:"Initiation à l'ikebana", date:"Samedi 17 octobre", horaire:"10h – 12h", capacite:6, inscrits:2, animateur:"Laurent G.", desc:"Les bases de la composition florale japonaise." },
-    { titre:"Bouquet de mariée, les fondamentaux", date:"Samedi 7 novembre", horaire:"14h – 16h30", capacite:6, inscrits:4, animateur:"Camille D.", desc:"Structure, tenue et fraîcheur d'un bouquet de cérémonie." }
+    { weeks:0, theme:"Jardin", titre:"Planter ses bulbes de printemps", img:"/images/jardin-partage/bulbes.jpg", alt:"Mains plantant des bulbes de tulipe dans la terre", horaire:"10h – 12h", capacite:10, inscrits:6, animateur:"l'équipe du rayon jardin", desc:"Tulipes, narcisses, crocus : profondeur, exposition et associations." },
+    { weeks:1, theme:"Floral", titre:"Composition florale de saison", img:"/images/jardin-partage/composition-florale.jpg", alt:"Mains composant un bouquet d'automne aux dahlias", horaire:"14h – 16h", capacite:8, inscrits:8, animateur:"Laurent G.", desc:"Un bouquet d'automne avec les fleurs et feuillages de la semaine." },
+    { halloween:true, theme:"Parents-enfants", famille:true, titre:"Ma citrouille d'Halloween", img:"/images/jardin-partage/citrouille.jpg", alt:"Parents et enfants creusant des citrouilles d'Halloween", horaire:"14h – 16h", capacite:8, inscrits:5, animateur:"l'équipe du magasin", desc:"Choisir, creuser et décorer sa citrouille en famille. Chaque famille repart avec sa lanterne… et le nécessaire pour la soupe de potiron. Une place par famille." },
+    { weeks:2, theme:"Potager", titre:"Préparer son potager pour l'hiver", img:"/images/jardin-partage/potager-hiver.jpg", alt:"Paillage de paille sur un potager en carrés", horaire:"10h – 12h", capacite:10, inscrits:3, animateur:"l'équipe du rayon jardin", desc:"Paillage, engrais verts et semis d'automne pour un sol prêt au printemps." },
+    { weeks:5, theme:"Floral", titre:"Art de la table pour les fêtes", img:"/images/jardin-partage/art-de-la-table.jpg", alt:"Centre de table de fête en sapin et fleurs blanches", horaire:"14h – 16h", capacite:8, inscrits:5, animateur:"Laurent G.", desc:"Composer un centre de table pour un repas de fête." }
   ];
 
   var seedReseau = [
-    { nom:"Julie Marquant — Paysagiste", zone:"Lozanne et Vallée d'Azergues", desc:"Aménagement de jardins et conseils en plantation, sur rendez-vous.", contact:"julie.marquant@example.fr" },
+    { nom:"Julie Marquant — Paysagiste", zone:"Lozanne et vallée d'Azergues", desc:"Aménagement de jardins et conseils en plantation, sur rendez-vous.", contact:"julie.marquant@example.fr" },
     { nom:"Thomas Bréal — Fleuriste événementiel", zone:"Chazay-d'Azergues", desc:"Mariages et réceptions, en complément des prestations du magasin.", contact:"06 xx xx xx xx" },
     { nom:"Anne-Laure Fontanel — Apicultrice", zone:"L'Arbresle", desc:"Miel local et sensibilisation à la pollinisation, ateliers possibles.", contact:"contact@example-miel.fr" },
-    { nom:"Karim Belaïd — Ébéniste", zone:"Civrieux-d'Azergues", desc:"Jardinières et contenants sur mesure, pour l'atelier bois envisagé.", contact:"karim.belaid@example.fr" }
+    { nom:"Karim Belaïd — Ébéniste", zone:"Civrieux-d'Azergues", desc:"Jardinières et contenants sur mesure, pour un futur atelier bois.", contact:"karim.belaid@example.fr" }
   ];
 
-  var state = { graines: seedGraines.slice(), ateliers: seedAteliers.slice(), reseau: seedReseau.slice() };
+  // Pochettes déposées directement en magasin, sans annonce en ligne (le cas le plus courant), avec leur ancienneté.
+  var seedShop = [
+    { slot:2, mois:4 }, { slot:5, mois:1 }, { slot:13, mois:2 }, { slot:16, mois:5 }, { slot:20, mois:0 },
+    { slot:22, mois:1 }, { slot:27, mois:3 }, { slot:31, mois:0 }, { slot:34, mois:2 }, { slot:38, mois:1 },
+    { slot:43, mois:4 }, { slot:46, mois:0 }, { slot:50, mois:2 }
+  ];
+  var NOMS = ["Sophie Martin", "Marc Dubois", "Élodie Roux", "Yannick Petit", "Nadia Benali", "Hugo Lefèvre",
+    "Camille Garnier", "Josiane Morel", "Thomas Faure", "Léa Bonnet", "Karim Haddad", "Chloé Mercier"];
+  var STOCK_SEUIL = 50;
+
+  var state, filter = "tout", view = "client", lastCreated = null;
+
+  function copy(list){ return list.map(function(item){ return Object.assign({}, item); }); }
+  function resetState(){
+    var ateliers = copy(seedAteliers);
+    ateliers.forEach(function(a, i){
+      a.date = a.halloween ? halloweenSaturday() : saturday(a.weeks);
+      a.noms = [];
+      for(var k = 0; k < a.inscrits; k++){
+        var nom = NOMS[(i * 5 + k) % NOMS.length];
+        a.noms.push(a.famille ? "Famille " + nom.split(" ")[1] : nom.split(" ")[0] + " " + nom.split(" ")[1].charAt(0) + ".");
+      }
+    });
+    sortAteliers(ateliers);
+    state = { graines: copy(seedGraines), ateliers: ateliers, reseau: copy(seedReseau), shop: copy(seedShop), pochettes: 38 };
+  }
+
+  function sortAteliers(list){ list.sort(function(a, b){ return a.date - b.date; }); }
 
   function loadLocal(){
     try{
-      var raw = window.localStorage.getItem("jardin-partage-ajouts");
+      var raw = window.localStorage.getItem(STORAGE_KEY);
       if(!raw) return;
       var extra = JSON.parse(raw);
       if(extra.graines) state.graines = extra.graines.concat(state.graines);
       if(extra.reseau) state.reseau = extra.reseau.concat(state.reseau);
+      if(extra.ateliers){
+        extra.ateliers.forEach(function(a){ a.date = new Date(a.date); a.noms = []; a.inscrits = 0; });
+        state.ateliers = state.ateliers.concat(extra.ateliers);
+        sortAteliers(state.ateliers);
+      }
     }catch(e){ /* pas de stockage disponible, on continue sans */ }
   }
   function saveLocal(newGraine, newReseau){
     try{
-      var raw = window.localStorage.getItem("jardin-partage-ajouts");
+      var raw = window.localStorage.getItem(STORAGE_KEY);
       var extra = raw ? JSON.parse(raw) : { graines: [], reseau: [] };
       if(newGraine) extra.graines = [newGraine].concat(extra.graines || []);
       if(newReseau) extra.reseau = [newReseau].concat(extra.reseau || []);
-      window.localStorage.setItem("jardin-partage-ajouts", JSON.stringify(extra));
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(extra));
     }catch(e){ /* stockage indisponible : les ajouts restent visibles pour cette visite seulement */ }
   }
-
-  function el(tag, cls, html){
-    var e = document.createElement(tag);
-    if(cls) e.className = cls;
-    if(html !== undefined) e.innerHTML = html;
-    return e;
+  function saveAtelier(a){
+    try{
+      var raw = window.localStorage.getItem(STORAGE_KEY);
+      var extra = raw ? JSON.parse(raw) : {};
+      var copyA = Object.assign({}, a, { date: a.date.toISOString(), noms: undefined });
+      extra.ateliers = (extra.ateliers || []).concat([copyA]);
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(extra));
+    }catch(e){}
   }
+  function clearLocal(){
+    try{ window.localStorage.removeItem(STORAGE_KEY); }catch(e){}
+  }
+
   function esc(s){
     var d = document.createElement("div");
     d.textContent = s;
     return d.innerHTML;
   }
 
+  var dateFormat = new Intl.DateTimeFormat("fr-FR", { weekday:"long", day:"numeric", month:"long" });
+  function saturday(weeks){
+    var d = new Date();
+    d.setHours(12, 0, 0, 0);
+    var delta = (6 - d.getDay() + 7) % 7 || 7;
+    d.setDate(d.getDate() + delta + weeks * 7);
+    return d;
+  }
+  function halloweenSaturday(){
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    for(var year = today.getFullYear(); ; year++){
+      var d = new Date(year, 9, 31, 12);
+      d.setDate(d.getDate() - (d.getDay() + 1) % 7);
+      if(d >= today) return d;
+    }
+  }
+  function formatDate(d){
+    var label = dateFormat.format(d);
+    return label.charAt(0).toUpperCase() + label.slice(1);
+  }
+
   function renderGraines(highlightFirst){
     var grid = document.getElementById("grid-graines");
     grid.innerHTML = "";
-    state.graines.forEach(function(g, i){
-      var card = el("div", "card" + (highlightFirst && i === 0 ? " is-new" : ""));
+    var counts = { tout: state.graines.length, offre: 0, donne: 0, recherche: 0 };
+    state.graines.forEach(function(g){ counts[g.type] += 1; });
+    Object.keys(counts).forEach(function(k){ document.getElementById("count-" + k).textContent = counts[k]; });
+
+    var shown = state.graines.filter(function(g){ return filter === "tout" || g.type === filter; });
+    shown.forEach(function(g, i){
+      var card = document.createElement("article");
+      card.className = "card" + (highlightFirst && i === 0 ? " is-new" : "");
       card.innerHTML =
         '<div class="card-head"><h3>' + esc(g.plante) + '</h3>' +
-        '<span class="tag ' + g.type + '">' + (g.type === "offre" ? "Propose" : "Recherche") + '</span></div>' +
+        '<span class="tag ' + g.type + '">' + ({ offre: "Propose", donne: "Servez-vous", recherche: "Recherche" }[g.type] || "Propose") + '</span></div>' +
         '<p class="desc">' + esc(g.desc) + '</p>' +
-        '<div class="meta"><span>' + esc(g.auteur) + '</span><span>' + esc(g.when) + '</span></div>';
+        '<div class="meta"><strong>' + esc(g.auteur) + '</strong><span>' +
+          (g.slot ? '<span class="slot">Alvéole ' + g.slot + '</span> · ' : '') + esc(g.when) + '</span></div>';
       grid.appendChild(card);
     });
+    if(!shown.length) grid.innerHTML = '<p class="empty">Aucune annonce dans cette catégorie pour le moment.</p>';
+    renderHive(highlightFirst && state.graines[0] ? state.graines[0].slot : null);
+    notifyHeight();
+  }
+
+  // 52 alvéoles en nid d'abeille : 8 rangées, alternativement 7 et 6.
+  var HIVE_ROWS = [7, 6, 7, 6, 7, 6, 7, 6], HIVE_SIZE = 52;
+
+  function usedSlots(){
+    var used = {};
+    state.shop.forEach(function(p){ used[p.slot] = "magasin"; });
+    state.graines.forEach(function(g){ if(g.slot) used[g.slot] = g; });
+    return used;
+  }
+  function freeSlot(){
+    var used = usedSlots();
+    for(var n = 1; n <= HIVE_SIZE; n++) if(!used[n]) return n;
+    return null;
+  }
+
+  function hexPoints(cx, cy, r){
+    var pts = [];
+    for(var k = 0; k < 6; k++){
+      var a = Math.PI / 180 * (60 * k - 90);
+      pts.push((cx + r * Math.cos(a)).toFixed(1) + "," + (cy + r * Math.sin(a)).toFixed(1));
+    }
+    return pts.join(" ");
+  }
+
+  // Pochette kraft qui dépasse de l'alvéole, légèrement inclinée.
+  function envelope(cx, cy, tilt, w, h){
+    return '<g transform="rotate(' + tilt + ' ' + cx + ' ' + cy + ')">' +
+      '<rect x="' + (cx - w / 2) + '" y="' + (cy - h / 2) + '" width="' + w + '" height="' + h + '" rx="1" fill="url(#kraft)" stroke="#9C7443" stroke-width=".8"/>' +
+      '<path d="M' + (cx - w / 2) + ' ' + (cy - h / 2) + ' L' + cx + ' ' + (cy + h * 0.05) + ' L' + (cx + w / 2) + ' ' + (cy - h / 2) + '" fill="none" stroke="#9C7443" stroke-width=".8"/>' +
+      '<path d="M' + (cx - w * 0.3) + ' ' + (cy + h * 0.28) + ' q' + (w * 0.15) + ' -2 ' + (w * 0.3) + ' 0 t' + (w * 0.3) + ' 0" fill="none" stroke="#5B4126" stroke-width=".7"/>' +
+    '</g>';
+  }
+
+  function renderHive(newSlot){
+    var svg = document.getElementById("hive-svg");
+    var used = usedSlots();
+    var r = 16, w = Math.sqrt(3) * r, gx = 36, gy = 96;
+    var parts = [
+      '<defs>' +
+        '<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8C896"/><stop offset=".55" stop-color="#D6AC72"/><stop offset="1" stop-color="#C39058"/></linearGradient>' +
+        '<linearGradient id="wood-side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B98549"/><stop offset="1" stop-color="#9E6E38"/></linearGradient>' +
+        '<linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15795C"/><stop offset="1" stop-color="#0A523F"/></linearGradient>' +
+        '<radialGradient id="hole" cx=".5" cy=".4" r=".65"><stop offset="0" stop-color="#3A2513"/><stop offset=".75" stop-color="#5A3B1E"/><stop offset="1" stop-color="#7A5230"/></radialGradient>' +
+        '<linearGradient id="kraft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3C79D"/><stop offset="1" stop-color="#CFAE7E"/></linearGradient>' +
+        '<linearGradient id="crate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B7844B"/><stop offset="1" stop-color="#94662F"/></linearGradient>' +
+      '</defs>',
+      // Ombre au sol, toit à bardeaux, façade en bois
+      '<ellipse cx="160" cy="374" rx="150" ry="7" fill="#000" opacity=".10"/>',
+      '<polygon points="10,84 133,20 256,84" fill="url(#roof)"/>',
+      '<path d="M40 70 H226 M62 58 H204 M86 46 H180 M110 33 H156" stroke="#0A4A39" stroke-width="1" opacity=".55"/>',
+      '<rect x="22" y="82" width="222" height="236" rx="3" fill="url(#wood)" stroke="#8A5A2B" stroke-width="1.5"/>',
+      '<rect x="244" y="86" width="8" height="232" fill="url(#wood-side)"/>',
+      '<path d="M30 110 q40 -3 80 0 t80 0 M30 200 q40 3 80 0 t90 0 M30 290 q50 -3 100 0 t90 0" fill="none" stroke="#B98B55" stroke-width=".6" opacity=".6"/>',
+      // Présentoir à pochettes vierges sur le côté, avec son crayon attaché par une ficelle
+      '<rect x="258" y="206" width="40" height="112" rx="2" fill="url(#wood-side)" stroke="#7A4E22" stroke-width="1"/>',
+      envelope(272, 200, -6, 22, 26), envelope(284, 198, 4, 22, 26),
+      '<path d="M296 222 C 312 240, 300 262, 309 286" fill="none" stroke="#C9B28A" stroke-width="1.2"/>',
+      '<g transform="rotate(18 309 300)"><rect x="306" y="284" width="6" height="30" rx="1" fill="#E3B23C" stroke="#8A6A1E" stroke-width=".6"/><polygon points="306,314 312,314 309,321" fill="#E9D3AE"/></g>'
+    ];
+
+    var n = 0;
+    HIVE_ROWS.forEach(function(count, row){
+      var offset = (7 - count) * w / 2;
+      for(var col = 0; col < count; col++){
+        n += 1;
+        var cx = +(gx + offset + col * w + w / 2).toFixed(1);
+        var cy = +(gy + r + row * 1.5 * r).toFixed(1);
+        var g = used[n];
+        var label = g === "magasin" ? "Alvéole " + n + " : pochette déposée en magasin"
+          : g ? "Alvéole " + n + " : " + g.plante + " (" + g.auteur + ")" : "Alvéole " + n + " : libre";
+        var cell = '<g class="hive-cell-group' + (n === newSlot ? ' is-new' : '') + '"><title>' + esc(label) + '</title>' +
+          '<polygon class="hive-cell" points="' + hexPoints(cx, cy, r - 1) + '" fill="url(#hole)" stroke="#8A5A2B" stroke-width="1.4"/>';
+        if(g){
+          var tilt = ((n * 37) % 13) - 6;
+          cell += envelope(cx, cy - 2, tilt, 17, 20) +
+            (g !== "magasin" ? '<text class="hive-num on-env" x="' + cx + '" y="' + (cy + 5) + '">' + n + '</text>' : '');
+        } else {
+          cell += '<text class="hive-num" x="' + cx + '" y="' + (cy + 2.8) + '">' + n + '</text>';
+        }
+        parts.push(cell + '</g>');
+      }
+    });
+
+    // Bac « Servez-vous » devant la maison, pour les graines en surplus
+    [[70, -9], [96, 5], [122, -3], [148, 8], [174, -6], [200, 3]].forEach(function(e){ parts.push(envelope(e[0], 326, e[1], 22, 26)); });
+    parts.push('<rect x="50" y="332" width="176" height="36" rx="3" fill="url(#crate)" stroke="#6E4A20" stroke-width="1.2"/>');
+    parts.push('<path d="M50 344 H226 M50 356 H226" stroke="#6E4A20" stroke-width=".6" opacity=".5"/>');
+    parts.push('<text class="hive-crate-label" x="138" y="354">SERVEZ-VOUS</text>');
+
+    svg.innerHTML = parts.join("");
+    var online = state.graines.filter(function(g){ return g.slot; }).length;
+    var full = online + state.shop.length;
+    var dons = state.graines.filter(function(g){ return g.type === "donne"; }).length;
+    document.getElementById("hive-count").innerHTML =
+      '<b>' + full + '</b> pochettes en attente, dont <b>' + online + '</b> annoncée' + (online > 1 ? 's' : '') + ' en ligne · ' +
+      '<b>' + (HIVE_SIZE - full) + '</b> alvéole' + (HIVE_SIZE - full > 1 ? 's' : '') + ' libre' + (HIVE_SIZE - full > 1 ? 's' : '') + ' sur ' + HIVE_SIZE +
+      ' · <b>' + dons + '</b> variété' + (dons > 1 ? 's' : '') + ' dans le bac Servez-vous';
   }
 
   function renderAteliers(){
@@ -466,54 +873,244 @@
     grid.innerHTML = "";
     state.ateliers.forEach(function(a, idx){
       var restantes = a.capacite - a.inscrits;
-      var card = el("div", "card atelier-card");
+      var card = document.createElement("article");
+      card.className = "card atelier-card" + (a.annule ? " is-cancelled" : "");
       card.innerHTML =
+        (a.img ? '<img class="atelier-img" src="' + esc(a.img) + '" alt="' + esc(a.alt || "") + '" loading="lazy" width="900" height="300">' : '') +
+        '<span class="atelier-theme' + (a.famille ? ' famille' : '') + '">' + esc(a.theme) + '</span>' +
         '<h3>' + esc(a.titre) + '</h3>' +
-        '<div class="atelier-when">' + esc(a.date) + ' · ' + esc(a.horaire) + '</div>' +
-        '<p class="desc">' + esc(a.desc) + ' — animé par ' + esc(a.animateur) + '.</p>' +
+        '<div class="atelier-when">' + esc(formatDate(a.date)) + ' · ' + esc(a.horaire) + '</div>' +
+        '<p class="desc">' + esc(a.desc) + ' Animé par ' + esc(a.animateur) + (/\.$/.test(a.animateur) ? '' : '.') + '</p>' +
         '<div class="atelier-foot">' +
-          '<span class="places">' + (restantes > 0 ? ('<b>' + restantes + '</b> place' + (restantes > 1 ? "s" : "") + ' sur ' + a.capacite) : '') + (restantes <= 0 ? '<span class="complet-badge">Complet</span>' : '') + '</span>' +
-          (restantes > 0 ? '<button class="reserve-btn" data-idx="' + idx + '">Réserver</button>' : '') +
+          (a.annule ? '<span class="places">Atelier annulé</span><span class="complet">Annulé</span>' : restantes > 0
+            ? '<span class="places"><b>' + restantes + '</b> place' + (restantes > 1 ? "s" : "") + ' sur ' + a.capacite +
+              '<span class="places-bar" aria-hidden="true"><span style="width:' + Math.round(a.inscrits / a.capacite * 100) + '%"></span></span></span>' +
+              '<button class="btn-outline" type="button" data-idx="' + idx + '">Réserver</button>'
+            : '<span class="places">' + a.capacite + ' inscrits</span><span class="complet">Complet</span>') +
         '</div>' +
         '<form class="reserve-form" id="reserve-form-' + idx + '">' +
-          '<input type="text" placeholder="Votre nom" required id="reserve-nom-' + idx + '">' +
-          '<input type="email" placeholder="Votre email" required id="reserve-email-' + idx + '">' +
-          '<button type="submit" class="submit-btn">Confirmer</button>' +
-          '<div class="reserve-confirm" hidden id="reserve-confirm-' + idx + '">Réservation enregistrée — à bientôt !</div>' +
+          '<input type="text" placeholder="Votre nom" required aria-label="Votre nom">' +
+          '<input type="email" placeholder="Votre email" required aria-label="Votre email">' +
+          '<button type="submit" class="btn">Confirmer</button>' +
+          '<div class="reserve-confirm" hidden id="reserve-confirm-' + idx + '">Réservation enregistrée, à samedi !</div>' +
         '</form>';
       grid.appendChild(card);
     });
 
-    grid.querySelectorAll(".reserve-btn").forEach(function(btn){
+    grid.querySelectorAll(".btn-outline").forEach(function(btn){
       btn.addEventListener("click", function(){
-        var idx = btn.getAttribute("data-idx");
-        var form = document.getElementById("reserve-form-" + idx);
-        form.classList.toggle("open");
+        document.getElementById("reserve-form-" + btn.getAttribute("data-idx")).classList.toggle("open");
+        notifyHeight();
       });
     });
-    grid.querySelectorAll(".reserve-form").forEach(function(form, idx){
+    grid.querySelectorAll(".reserve-form").forEach(function(form){
       form.addEventListener("submit", function(ev){
         ev.preventDefault();
+        var idx = Number(form.id.replace("reserve-form-", ""));
         var a = state.ateliers[idx];
-        if(a.capacite - a.inscrits <= 0) return;
+        if(a.annule || a.capacite - a.inscrits <= 0) return;
         a.inscrits += 1;
+        a.noms.push({ nom: form.querySelector('input[type="text"]').value.trim() || "Inscription en ligne", demo: true });
         document.getElementById("reserve-confirm-" + idx).hidden = false;
-        window.setTimeout(function(){ renderAteliers(); }, 900);
+        window.setTimeout(function(){ renderAteliers(); renderEquipe(); }, 1000);
       });
     });
+    notifyHeight();
   }
 
   function renderReseau(highlightFirst){
     var grid = document.getElementById("grid-reseau");
     grid.innerHTML = "";
     state.reseau.forEach(function(r, i){
-      var card = el("div", "card reseau-card" + (highlightFirst && i === 0 ? " is-new" : ""));
+      var card = document.createElement("article");
+      card.className = "card reseau-card" + (highlightFirst && i === 0 ? " is-new" : "");
       card.innerHTML =
         '<h3>' + esc(r.nom) + '</h3>' +
-        '<p class="activite">' + esc(r.zone) + '</p>' +
+        '<p class="zone">' + esc(r.zone) + '</p>' +
         '<p class="desc">' + esc(r.desc) + '</p>' +
-        '<div class="meta"><span>' + esc(r.contact) + '</span><span></span></div>';
+        '<div class="meta"><span>' + esc(r.contact) + '</span></div>';
       grid.appendChild(card);
+    });
+    notifyHeight();
+  }
+
+  function renderAll(){
+    renderGraines(false);
+    renderAteliers();
+    renderReseau(false);
+    renderEquipe();
+  }
+
+  // ---------- Vue équipe
+  var dayShort = new Intl.DateTimeFormat("fr-FR", { weekday:"short" });
+  var monthShort = new Intl.DateTimeFormat("fr-FR", { month:"short" });
+
+  function renderEquipe(){
+    var actifs = state.ateliers.filter(function(a){ return !a.annule; });
+    var places = actifs.reduce(function(sum, a){ return sum + a.capacite; }, 0);
+    var inscrits = actifs.reduce(function(sum, a){ return sum + a.inscrits; }, 0);
+    var enAttente = state.graines.filter(function(g){ return g.slot; }).length + state.shop.length;
+    var vieilles = state.shop.filter(function(p){ return p.mois >= 3; });
+    var tiles = [
+      ["Remplissage des ateliers", (places ? Math.round(inscrits / places * 100) : 0) + " %", "sur les " + actifs.length + " prochains ateliers", false],
+      ["Inscrits à venir", inscrits, "pour " + places + " places proposées", false],
+      ["Pochettes en attente", enAttente, "dans les 52 alvéoles de la grainothèque", false],
+      ["À libérer", vieilles.length, "pochettes de plus de 3 mois", vieilles.length > 0]
+    ];
+    document.getElementById("eq-stats").innerHTML = tiles.map(function(t){
+      return '<div class="stat' + (t[3] ? ' alert' : '') + '"><p>' + t[0] + '</p><strong>' + t[1] + '</strong><p>' + t[2] + '</p></div>';
+    }).join("");
+
+    var plan = document.getElementById("eq-planning");
+    plan.innerHTML = "";
+    state.ateliers.forEach(function(a, i){
+      var full = a.inscrits >= a.capacite;
+      var row = document.createElement("article");
+      row.className = "plan-row" + (a.annule ? " is-cancelled" : "") + (a === lastCreated ? " is-new" : "");
+      var noms = a.noms.map(function(n){
+        return typeof n === "string" ? '<li>' + esc(n) + '</li>' : '<li class="from-demo" title="Inscription faite pendant la démo">' + esc(n.nom) + '</li>';
+      }).join("");
+      row.innerHTML =
+        '<div class="plan-date"><small>' + esc(dayShort.format(a.date)) + '</small><b>' + a.date.getDate() + '</b><small>' + esc(monthShort.format(a.date)) + '</small></div>' +
+        '<div class="plan-main"><span class="atelier-theme' + (a.famille || a.theme === "Parents-enfants" ? ' famille' : '') + '">' + esc(a.theme) + '</span>' +
+          '<h3>' + esc(a.titre) + (a === lastCreated ? ' · <span class="slot">nouveau</span>' : '') + '</h3>' +
+          '<p>' + esc(a.horaire) + ' · ' + esc(a.animateur) + '</p></div>' +
+        '<div class="plan-fill' + (full ? ' full' : '') + '">' +
+          (a.annule ? '<b>Annulé</b>' : '<b>' + a.inscrits + ' / ' + a.capacite + '</b> inscrits' + (full ? ' · complet' : '')) +
+          '<span class="places-bar" aria-hidden="true"><span style="width:' + Math.min(100, Math.round(a.inscrits / a.capacite * 100)) + '%"></span></span></div>' +
+        '<div class="plan-actions">' +
+          '<button class="mini" type="button" data-act="inscrits" data-i="' + i + '" aria-expanded="false">Inscrits (' + a.inscrits + ')</button>' +
+          (a.annule ? '' : '<button class="mini" type="button" data-act="rappel" data-i="' + i + '"' + (a.rappel || !a.inscrits ? ' disabled' : '') + '>' + (a.rappel ? 'Rappel programmé ✓' : 'Envoyer le rappel') + '</button>') +
+          '<button class="mini" type="button" data-act="export" data-i="' + i + '"' + (a.inscrits ? '' : ' hidden') + '>Exporter</button>' +
+          '<button class="mini danger" type="button" data-act="annuler" data-i="' + i + '">' + (a.annule ? 'Rétablir' : 'Annuler') + '</button>' +
+        '</div>' +
+        '<div class="plan-inscrits" hidden>' + (noms ? '<ul>' + noms + '</ul>' : '<p class="empty">Aucun inscrit pour le moment.</p>') + '</div>';
+      plan.appendChild(row);
+    });
+
+    var old = document.getElementById("eq-old");
+    old.innerHTML = vieilles.length ? vieilles.map(function(p){
+      return '<li><span>Alvéole ' + p.slot + '<small>déposée il y a ' + p.mois + ' mois</small></span>' +
+        '<button class="mini" type="button" data-free="' + p.slot + '">Libérer</button></li>';
+    }).join("") : '<li class="empty">Rien à libérer cette semaine.</li>';
+
+    var low = state.pochettes < STOCK_SEUIL;
+    document.getElementById("eq-stock").innerHTML =
+      '<div class="stock-num">' + state.pochettes + '</div>' +
+      '<p class="' + (low ? 'stock-alert' : 'stock-ok') + '">' + (low ? 'Sous le seuil de ' + STOCK_SEUIL + ' : à réassortir' : 'Stock suffisant') + '</p>' +
+      '<p class="panel-intro" style="margin:0 0 12px">Environ 25 pochettes partent chaque semaine. Le présentoir en contient une trentaine.</p>' +
+      (low ? '<button class="mini" type="button" id="eq-order">Commander 200 pochettes</button>' : '');
+    notifyHeight();
+  }
+
+  function setupEquipe(){
+    document.getElementById("eq-planning").addEventListener("click", function(ev){
+      var btn = ev.target.closest("button[data-act]");
+      if(!btn) return;
+      var a = state.ateliers[Number(btn.getAttribute("data-i"))];
+      var act = btn.getAttribute("data-act");
+      if(act === "inscrits"){
+        var box = btn.closest(".plan-row").querySelector(".plan-inscrits");
+        box.hidden = !box.hidden;
+        btn.setAttribute("aria-expanded", String(!box.hidden));
+        notifyHeight();
+        return;
+      }
+      if(act === "rappel"){
+        a.rappel = true;
+        toast("Rappel programmé la veille à 18h pour " + a.inscrits + " inscrit" + (a.inscrits > 1 ? "s" : "") + " (simulation).");
+      }
+      if(act === "export") toast("Liste des inscrits exportée pour l'atelier « " + a.titre + " » (simulation).");
+      if(act === "annuler"){
+        a.annule = !a.annule;
+        toast(a.annule ? "Atelier annulé : les inscrits sont prévenus par email (simulation)." : "Atelier rétabli : il est de nouveau réservable.");
+        renderAteliers();
+      }
+      renderEquipe();
+    });
+
+    document.getElementById("eq-old").addEventListener("click", function(ev){
+      var btn = ev.target.closest("button[data-free]");
+      if(!btn) return;
+      var slot = Number(btn.getAttribute("data-free"));
+      state.shop = state.shop.filter(function(p){ return p.slot !== slot; });
+      renderHive(null);
+      renderEquipe();
+      toast("Alvéole " + slot + " libérée : la pochette rejoint le bac Servez-vous.");
+    });
+
+    document.getElementById("eq-stock").addEventListener("click", function(ev){
+      if(!ev.target.closest("#eq-order")) return;
+      state.pochettes += 200;
+      renderEquipe();
+      toast("Commande de 200 pochettes kraft envoyée au fournisseur (simulation).");
+    });
+
+    var toggle = document.getElementById("eq-new-toggle");
+    var form = document.getElementById("form-atelier");
+    toggle.addEventListener("click", function(){
+      var open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      form.hidden = open;
+      if(!open){
+        var d = saturday(3);
+        document.getElementById("a-date").value = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+      }
+      notifyHeight();
+    });
+    form.addEventListener("submit", function(ev){
+      ev.preventDefault();
+      var theme = document.getElementById("a-theme").value;
+      var img = document.getElementById("a-img");
+      var a = {
+        titre: document.getElementById("a-titre").value.trim(),
+        theme: theme,
+        famille: theme === "Parents-enfants",
+        date: new Date(document.getElementById("a-date").value + "T12:00:00"),
+        horaire: document.getElementById("a-horaire").value,
+        capacite: Math.max(2, Number(document.getElementById("a-capacite").value) || 8),
+        animateur: document.getElementById("a-animateur").value.trim(),
+        desc: document.getElementById("a-desc").value.trim(),
+        img: img.value,
+        alt: img.options[img.selectedIndex].text,
+        inscrits: 0,
+        noms: []
+      };
+      if(!a.titre || !a.desc || !a.animateur || isNaN(a.date)) return;
+      state.ateliers.push(a);
+      sortAteliers(state.ateliers);
+      saveAtelier(a);
+      lastCreated = a;
+      form.reset();
+      form.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      renderAteliers();
+      renderEquipe();
+      toast("Atelier publié : passez en vue client, il est déjà réservable.");
+    });
+  }
+
+  function setView(next){
+    view = next;
+    document.body.classList.toggle("is-equipe", view === "equipe");
+    document.getElementById("view-client").hidden = view !== "client";
+    document.getElementById("view-equipe").hidden = view !== "equipe";
+    document.getElementById("tagline").textContent = view === "equipe"
+      ? "Vue équipe (démo) · les outils internes du magasin"
+      : "Prototype de démonstration · pour Gamm vert Lozanne";
+    document.querySelectorAll(".view-toggle button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-view") === view)); });
+    // Au premier retour en vue client après une création, on montre directement l'onglet des ateliers.
+    if(view === "client" && lastCreated && !lastCreated.montre){
+      lastCreated.montre = true;
+      document.getElementById("tabbtn-ateliers").click();
+    }
+    window.scrollTo(0, 0);
+    notifyHeight();
+  }
+
+  function setupViews(){
+    document.querySelectorAll(".view-toggle button").forEach(function(b){
+      b.addEventListener("click", function(){ setView(b.getAttribute("data-view")); });
     });
   }
 
@@ -525,8 +1122,30 @@
         tab.setAttribute("aria-selected", "true");
         document.querySelectorAll(".panel").forEach(function(p){ p.hidden = true; });
         document.getElementById("panel-" + tab.getAttribute("data-tab")).hidden = false;
+        notifyHeight();
       });
     });
+  }
+
+  function setupFilter(){
+    var buttons = document.querySelectorAll(".filter button");
+    buttons.forEach(function(btn){
+      btn.addEventListener("click", function(){
+        filter = btn.getAttribute("data-filter");
+        buttons.forEach(function(b){ b.setAttribute("aria-pressed", String(b === btn)); });
+        renderGraines(false);
+      });
+    });
+  }
+
+  function closeForms(){
+    document.querySelectorAll(".add-toggle").forEach(function(btn){
+      btn.setAttribute("aria-expanded", "false");
+      document.getElementById(btn.getAttribute("aria-controls")).hidden = true;
+    });
+    document.querySelectorAll(".add-form").forEach(function(form){ form.reset(); });
+    document.getElementById("g-plante").disabled = false;
+    document.getElementById("g-plante").required = true;
   }
 
   function setupAddToggles(){
@@ -536,25 +1155,40 @@
         var open = btn.getAttribute("aria-expanded") === "true";
         btn.setAttribute("aria-expanded", String(!open));
         form.hidden = open;
+        notifyHeight();
       });
     });
   }
 
   function setupForms(){
+    document.getElementById("g-surprise").addEventListener("change", function(ev){
+      var input = document.getElementById("g-plante");
+      input.disabled = ev.target.checked;
+      input.required = !ev.target.checked;
+    });
     document.getElementById("form-graines").addEventListener("submit", function(ev){
       ev.preventDefault();
       var g = {
-        plante: document.getElementById("g-plante").value.trim(),
+        plante: document.getElementById("g-surprise").checked ? "Pochette surprise" : document.getElementById("g-plante").value.trim(),
         type: document.getElementById("g-type").value,
         desc: document.getElementById("g-desc").value.trim(),
         auteur: document.getElementById("g-prenom").value.trim(),
         when: "à l'instant"
       };
       if(!g.plante || !g.desc || !g.auteur) return;
+      if(g.type === "offre") g.slot = freeSlot();
       state.graines.unshift(g);
       saveLocal(g, null);
+      if(filter !== "tout" && filter !== g.type){
+        filter = "tout";
+        document.querySelectorAll(".filter button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === "tout")); });
+      }
       renderGraines(true);
       ev.target.reset();
+      document.getElementById("g-plante").disabled = false;
+      document.getElementById("g-plante").required = true;
+      if(g.type === "donne") toast("Annonce publiée : déposez vos pochettes dans le bac Servez-vous.");
+      if(g.type === "offre") toast(g.slot ? "Annonce publiée : déposez votre pochette dans l'alvéole " + g.slot + "." : "Annonce publiée : la grainothèque est pleine, confiez votre pochette à l'accueil.");
     });
 
     document.getElementById("form-reseau").addEventListener("submit", function(ev){
@@ -573,22 +1207,57 @@
     });
   }
 
+  var toastTimer;
+  function toast(message){
+    var node = document.getElementById("toast");
+    node.textContent = message;
+    node.hidden = false;
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(function(){ node.hidden = true; }, 2200);
+  }
+
+  function setupReset(){
+    document.getElementById("reset-demo").addEventListener("click", function(){
+      clearLocal();
+      resetState();
+      lastCreated = null;
+      document.querySelectorAll(".checklist input").forEach(function(c){ c.checked = false; });
+      filter = "tout";
+      document.querySelectorAll(".filter button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === "tout")); });
+      closeForms();
+      renderAll();
+      document.getElementById("tabbtn-graines").click();
+      setView("client");
+      toast("Démo réinitialisée : seuls les exemples sont affichés.");
+    });
+  }
+
+  // Intégrée dans le site, la page indique sa hauteur pour éviter une double barre de défilement.
+  function notifyHeight(){
+    if(window.parent === window) return;
+    window.requestAnimationFrame(function(){
+      try{ window.parent.postMessage({ type:"jardin-partage-height", height: Math.ceil(document.body.getBoundingClientRect().height) }, "*"); }catch(e){}
+    });
+  }
+
   function start(){
+    resetState();
     loadLocal();
-    renderGraines(false);
-    renderAteliers();
-    renderReseau(false);
+    renderAll();
     setupTabs();
+    setupFilter();
     setupAddToggles();
     setupForms();
+    setupReset();
+    setupEquipe();
+    setupViews();
+    notifyHeight();
+    window.addEventListener("resize", notifyHeight);
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(notifyHeight);
   }
 
-  if(window.claude && window.claude.hot && window.claude.hot.ready){
-    window.claude.hot.ready(start);
-  } else {
-    start();
-  }
+  start();
 })();
 </script>
-
+</body>
 </html>

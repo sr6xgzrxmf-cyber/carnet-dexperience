@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     "/api/articles/**/*": ["./content/**/*"],
     "/api/admin/**/*": ["./content/**/*"],
     "/admin/**/*": ["./content/**/*"],
+    "/projets/jardin-partage/**/*": ["./content/private/**/*"],
   },
 };
 

@@ -16,9 +16,19 @@ export default function JardinPartagePage() {
           <p className="font-mono text-xs uppercase tracking-widest text-neutral-500">Accès privé — candidature Gamm Vert Lozanne</p>
           <h1 className="mt-2 font-[var(--font-lora)] text-4xl">Le Jardin Partagé</h1>
         </div>
-        <form action={logoutGammVert}>
-          <button className="rounded-full border border-neutral-300 px-4 py-2 text-sm font-semibold dark:border-neutral-700">Se déconnecter</button>
-        </form>
+        <div className="flex flex-wrap gap-2">
+          <a
+            href="/projets/jardin-partage/demo"
+            target="_blank"
+            rel="noopener"
+            className="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-neutral-900"
+          >
+            Ouvrir en plein écran ↗
+          </a>
+          <form action={logoutGammVert}>
+            <button className="rounded-full border border-neutral-300 px-4 py-2 text-sm font-semibold dark:border-neutral-700">Se déconnecter</button>
+          </form>
+        </div>
       </div>
       <p className="mt-3 max-w-3xl text-sm text-neutral-600 dark:text-neutral-400">
         Prototype interactif présenté en complément de la candidature spontanée envoyée à Gamm Vert Lozanne : échange de
