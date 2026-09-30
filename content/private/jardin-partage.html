@@ -269,10 +269,12 @@
 
   /* Encart auteur : la porte vers le carnet d'expérience */
   .author{
-    margin-top: 40px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: start;
-    background: var(--primary-soft); border-radius: 8px; padding: 22px;
+    margin-top: 40px; display: grid; grid-template-columns: 200px 1fr; gap: 28px; align-items: center;
+    background: var(--primary-soft); border-radius: 8px; padding: 24px;
   }
-  .author-photo{ width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: #FFFFFF; }
+  /* Portrait détouré dans un cercle invisible : le bas est arrondi, la tête dépasse librement. */
+  .author-frame{ width: 200px; aspect-ratio: 380 / 436; border-radius: 0 0 100px 100px; overflow: hidden; }
+  .author-photo{ display: block; width: 100%; height: auto; }
   .author-kicker{ margin: 0; font-size: 12.5px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: .06em; }
   .author h2{ margin: 2px 0 8px; font-size: 20px; font-weight: 600; }
   .author-body > p{ margin: 0 0 14px; font-size: 14.5px; color: var(--ink-soft); max-width: 68ch; }
@@ -285,6 +287,28 @@
     font-size: 12.5px; color: var(--ink-soft);
   }
   .footer p{ margin: 0 0 4px; }
+
+  /* Écran d'accueil affiché après le scan d'un QR code */
+  .welcome{
+    position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 24px;
+    background: #0E664E; color: #FFFFFF; text-align: center; transition: opacity .5s ease;
+  }
+  .welcome.is-leaving{ opacity: 0; pointer-events: none; }
+  .welcome-inner{ max-width: 420px; }
+  .welcome-mark{ width: 64px; height: 64px; margin: 0 auto 18px; border-radius: 50%; background: rgba(255,255,255,.14); display: grid; place-items: center; }
+  .welcome-mark svg{ width: 34px; height: 34px; }
+  .welcome h2{ margin: 0 0 8px; font-size: 28px; font-weight: 700; line-height: 1.15; color: #FFFFFF; }
+  .welcome p{ margin: 0 0 6px; font-size: 15.5px; opacity: .9; }
+  .welcome-count{ margin-top: 26px !important; font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 500; opacity: 1 !important; }
+  .welcome-count b{ display: inline-block; min-width: 1ch; font-size: 22px; }
+  .welcome-bar{ height: 4px; border-radius: 2px; background: rgba(255,255,255,.25); margin: 12px auto 22px; max-width: 220px; overflow: hidden; }
+  .welcome-bar span{ display: block; height: 100%; width: 0; background: #FFFFFF; animation: fill 3s linear forwards; }
+  @keyframes fill{ to{ width: 100%; } }
+  .welcome-btn{
+    font-size: 14px; font-weight: 700; color: #0E664E; background: #FFFFFF; border: none; border-radius: 4px;
+    padding: 10px 20px; cursor: pointer;
+  }
+  @media (prefers-reduced-motion: reduce){ .welcome, .welcome-bar span{ transition: none; animation: none; width: 100%; } }
 
   .toast{
     position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
@@ -365,6 +389,7 @@
 
   @media (max-width: 640px){
     .add-form.row2, .why-cols, .hive, .author{ grid-template-columns: 1fr; }
+    .author-frame{ width: 170px; border-radius: 0 0 85px 85px; margin: 0 auto; }
     .hive svg{ max-width: 280px; margin: 0 auto; }
     .brand h1{ font-size: 19px; }
     .tab{ font-size: 13px; padding: 8px 12px; }
@@ -625,7 +650,7 @@
   </div>
 
   <aside class="author" aria-labelledby="author-title">
-    <img class="author-photo" src="/images/jardin-partage/laurent.png" alt="Portrait de Laurent Guyonnet" width="120" height="120" loading="lazy">
+    <div class="author-frame"><img class="author-photo" src="/images/jardin-partage/laurent.png" alt="Portrait de Laurent Guyonnet, en polo et casquette verts" width="380" height="436" loading="lazy"></div>
     <div class="author-body">
       <p class="author-kicker">Qui a imaginé ce prototype ?</p>
       <h2 id="author-title">Laurent Guyonnet</h2>
@@ -646,6 +671,18 @@
 </div>
 
 <div class="toast" id="toast" role="status" hidden></div>
+
+<div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title" hidden>
+  <div class="welcome-inner">
+    <div class="welcome-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3.5-2.5-5-6-5 0 3.5 2.5 5 6 5Z"/></svg></div>
+    <h2 id="welcome-title">Bienvenue dans Le Jardin Partagé</h2>
+    <p>Le prototype imaginé par Laurent Guyonnet pour Gamm vert Lozanne.</p>
+    <p>Échangez des graines, réservez un atelier, puis passez en vue équipe pour voir l'envers du décor.</p>
+    <p class="welcome-count" aria-live="polite">Ouverture dans <b id="welcome-n">3</b></p>
+    <div class="welcome-bar" aria-hidden="true"><span></span></div>
+    <button class="welcome-btn" id="welcome-go" type="button">Entrer maintenant</button>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -1268,7 +1305,34 @@
     });
   }
 
+  // Après un scan de QR code (?bienvenue=1) : court écran d'accueil avec décompte, une seule fois.
+  function setupWelcome(){
+    var params = new URLSearchParams(window.location.search);
+    if(params.get("bienvenue") !== "1") return;
+    params.delete("bienvenue");
+    var clean = window.location.pathname + (params.toString() ? "?" + params : "") + window.location.hash;
+    try{ window.history.replaceState(null, "", clean); }catch(e){}
+
+    var screen = document.getElementById("welcome");
+    var counter = document.getElementById("welcome-n");
+    var remaining = 3, timer;
+    screen.hidden = false;
+    function close(){
+      window.clearInterval(timer);
+      screen.classList.add("is-leaving");
+      window.setTimeout(function(){ screen.hidden = true; }, 500);
+    }
+    timer = window.setInterval(function(){
+      remaining -= 1;
+      if(remaining <= 0) return close();
+      counter.textContent = remaining;
+    }, 1000);
+    document.getElementById("welcome-go").addEventListener("click", close);
+    document.getElementById("welcome-go").focus();
+  }
+
   function start(){
+    setupWelcome();
     resetState();
     loadLocal();
     renderAll();

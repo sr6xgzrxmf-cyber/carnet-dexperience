@@ -21,7 +21,7 @@ export async function createAccessQr(_state: QrResult | null, formData: FormData
   if (!label) return { error: "Donnez une étiquette au QR code, par exemple « Entretien Gamm vert Lozanne »." };
 
   const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "carnet-dexperience.fr";
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "www.carnetdexperience.fr";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
   const { key, expires } = createGammVertAccessKey(label);
   const url = `${protocol}://${host}/projets/jardin-partage/acces?cle=${key}`;

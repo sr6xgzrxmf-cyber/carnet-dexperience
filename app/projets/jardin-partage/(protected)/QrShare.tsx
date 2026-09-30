@@ -7,11 +7,30 @@ export default function QrShare() {
   const [result, action, pending] = useActionState<QrResult | null, FormData>(createAccessQr, null);
   const [large, setLarge] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [open, setOpen] = useState(false);
   const qr = result && "url" in result ? result : null;
+
+  // Replié par défaut, pour ne pas apparaître quand la page est montrée à l'écran.
+  if (!open) {
+    return (
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="mt-4 rounded-full border border-neutral-300 px-4 py-2 text-sm font-semibold text-neutral-700 dark:border-neutral-700 dark:text-neutral-300"
+      >
+        QR code d’accès ▾
+      </button>
+    );
+  }
 
   return (
     <section className="mt-6 rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800">
-      <h2 className="font-semibold">Partager l’accès par QR code</h2>
+      <div className="flex items-start justify-between gap-3">
+        <h2 className="font-semibold">Partager l’accès par QR code</h2>
+        <button type="button" onClick={() => setOpen(false)} className="text-sm font-semibold text-neutral-500 underline underline-offset-4">
+          Masquer
+        </button>
+      </div>
       <p className="mt-1 max-w-3xl text-sm text-neutral-600 dark:text-neutral-400">
         Le QR code ouvre le prototype en plein écran, sans identifiant ni mot de passe. Il reste valable 60 jours. Chaque scan est compté
         sous son étiquette dans les statistiques.

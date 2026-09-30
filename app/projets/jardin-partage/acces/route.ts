@@ -29,7 +29,7 @@ export async function GET(request: NextRequest) {
     })
     .catch(() => undefined);
 
-  const response = NextResponse.redirect(new URL("/projets/jardin-partage/demo", request.url));
+  const response = NextResponse.redirect(new URL("/projets/jardin-partage/demo?bienvenue=1", request.url));
   response.cookies.set(gammVertCookieName(), createGammVertSession("qr"), gammVertCookieOptions(true));
   return response;
 }
