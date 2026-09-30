@@ -11,9 +11,14 @@ function metadata(value: unknown) {
 }
 function display(value: unknown) { return typeof value === "number" || (typeof value === "string" && value) ? String(value) : "—"; }
 
+// Début de la fenêtre de 30 jours, calculé à chaque requête (page rendue dynamiquement).
+function thirtyDaysAgo() {
+  return new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+}
+
 export default async function AnalyticsDashboard({ searchParams }: { searchParams: Promise<{ moi?: string }> }) {
   const showOwn = (await searchParams).moi === "1";
-  const since = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+  const since = thirtyDaysAgo();
   const consentSince = new Date();
   consentSince.setUTCHours(0, 0, 0, 0);
   consentSince.setUTCDate(consentSince.getUTCDate() - 29);

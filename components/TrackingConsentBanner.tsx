@@ -1,12 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { TRACKING_CHOICE_KEY } from "@/components/AnalyticsJourneyTracker";
 
+// Le bandeau s'affiche tant qu'aucun choix n'est enregistré ; il se met à jour
+// quand un choix est fait ici, ailleurs sur le site (événement) ou dans un autre onglet (storage).
+function subscribe(onChange: () => void) {
+  window.addEventListener("cde-tracking-consent", onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener("cde-tracking-consent", onChange);
+    window.removeEventListener("storage", onChange);
+  };
+}
+function hasNoChoice() {
+  try {
+    return !localStorage.getItem(TRACKING_CHOICE_KEY);
+  } catch {
+    return false;
+  }
+}
+
 export default function TrackingConsentBanner() {
-  const [visible, setVisible] = useState(false);
-  useEffect(() => { setVisible(!localStorage.getItem(TRACKING_CHOICE_KEY)); }, []);
+  const visible = useSyncExternalStore(subscribe, hasNoChoice, () => false);
   if (!visible) return null;
   function choose(value: "accepted" | "refused") {
     void fetch("/api/analytics/consent", {
@@ -22,7 +39,6 @@ export default function TrackingConsentBanner() {
       sessionStorage.removeItem("cde_analytics_origin");
     }
     window.dispatchEvent(new Event("cde-tracking-consent"));
-    setVisible(false);
   }
   return <aside aria-label="Choix des cookies" className="fixed inset-x-0 bottom-0 z-[100] border-t border-neutral-300 bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(0,0,0,0.08)] backdrop-blur dark:border-neutral-700 dark:bg-neutral-950/95">
     <div className="mx-auto flex max-w-6xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

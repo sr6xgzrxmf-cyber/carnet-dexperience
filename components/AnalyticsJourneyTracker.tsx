@@ -43,7 +43,7 @@ function identity() { return { sessionId: getSessionId(), visitorId: getVisitorI
 
 export default function AnalyticsJourneyTracker() {
   const pathname = usePathname();
-  const startTime = useRef(Date.now());
+  const startTime = useRef(0);
   const activeTime = useRef(0);
   const maxScroll = useRef(0);
   const sentForPath = useRef("");

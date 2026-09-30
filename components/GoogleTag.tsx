@@ -23,6 +23,8 @@ export default function GoogleTag() {
 
   return (
     <>
+      {/* GoogleTag n'est rendu que dans app/layout.tsx : beforeInteractive y est prévu par Next.js (App Router). */}
+      {/* eslint-disable-next-line @next/next/no-before-interactive-script-outside-document */}
       <Script id="google-consent-default" strategy="beforeInteractive">
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
