@@ -164,8 +164,8 @@ export default function HomePage() {
             className={styles.portrait}
             src="/images/laurent-portrait-cropped.png"
             alt="Laurent Guyonnet"
-            width={1900}
-            height={2200}
+            width={1165}
+            height={1350}
             priority
             sizes="(max-width: 900px) 90vw, 460px"
           />
