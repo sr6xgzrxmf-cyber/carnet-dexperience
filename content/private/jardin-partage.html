@@ -244,6 +244,49 @@
   .reserve-form.open{ display: grid; }
   .reserve-confirm{ font-size: 13px; color: var(--primary); font-weight: 700; }
 
+  .agenda{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .agenda a{ font-size: 12.5px; font-weight: 700; color: var(--primary); text-decoration: none; border: 1px solid var(--line); border-radius: 4px; padding: 5px 10px; background: var(--surface); }
+  .agenda a:hover{ border-color: var(--primary); }
+
+  /* Bar à compositions */
+  .collections{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .collection{ font-size: 14px; font-weight: 500; color: var(--ink); background: var(--surface-alt); border: 1px solid transparent; border-radius: 8px; padding: 8px 14px; cursor: pointer; display: inline-flex; gap: 8px; align-items: baseline; }
+  .collection small{ font-size: 12px; color: var(--ink-soft); }
+  .collection[aria-pressed="true"]{ background: var(--primary); color: var(--on-primary); }
+  .collection[aria-pressed="true"] small{ color: var(--on-primary); opacity: .85; }
+  .recette .liste{ margin: 0 0 10px; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; }
+  .recette .liste li{ display: grid; grid-template-columns: 78px 1fr; gap: 8px; }
+  .recette .liste span{ font-size: 12.5px; font-weight: 500; color: var(--ink-soft); }
+  .recette ol{ margin: 0 0 10px; padding-left: 20px; font-size: 14px; display: grid; gap: 3px; }
+  .recette ol li::marker{ color: var(--primary); font-weight: 700; }
+  .recette .apres{ font-size: 13px; background: var(--primary-soft); color: var(--ink); border-radius: 6px; padding: 8px 10px; margin-top: auto; }
+  .bar-qr{ margin-top: 20px; border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; background: var(--surface-alt); font-size: 14px; }
+  .bar-qr h3{ margin: 0 0 6px; font-size: 16px; font-weight: 600; }
+  .bar-qr p{ margin: 0; color: var(--ink-soft); }
+
+  /* Tableau de bord du pilote (vue équipe) */
+  .stat.objectif{ border-color: var(--primary); box-shadow: inset 0 0 0 1px var(--primary); }
+  .jauge{ height: 8px; background: var(--surface-alt); border-radius: 4px; position: relative; margin: 6px 0 6px; }
+  .jauge i{ position: absolute; inset: 0 auto 0 0; background: var(--primary); border-radius: 4px; }
+  .jauge b{ position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink); }
+  .pastille{ display: inline-block; font-size: 12px; font-weight: 700; color: var(--primary); background: var(--primary-soft); border-radius: 4px; padding: 2px 8px; }
+  .graph-box{ border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; background: var(--surface); }
+  .graph-box h3{ margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+  .legende{ display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--ink-soft); margin: 6px 0 4px; }
+  .legende span{ display: inline-flex; align-items: center; gap: 6px; }
+  .legende i{ width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .svg-zone{ overflow-x: auto; }
+  .svg-zone svg{ display: block; width: 100%; min-width: 520px; height: auto; }
+  .svg-zone text{ font-family: 'Roboto', Arial, sans-serif; font-size: 12px; fill: var(--ink-soft); }
+  .svg-zone .vlab{ fill: var(--ink); font-weight: 700; font-size: 11px; }
+  .graph-box details{ margin-top: 10px; font-size: 13.5px; }
+  .graph-box summary{ cursor: pointer; color: var(--primary); font-weight: 700; }
+  .table-zone{ overflow-x: auto; }
+  .table-zone table{ border-collapse: collapse; margin-top: 8px; min-width: 420px; font-variant-numeric: tabular-nums; }
+  .table-zone th, .table-zone td{ text-align: right; padding: 5px 10px; border-bottom: 1px solid var(--line); }
+  .table-zone th:first-child, .table-zone td:first-child{ text-align: left; }
+  .fictif{ font-size: 12.5px; color: var(--ink-soft); margin: -8px 0 14px; }
+
   .reseau-card .zone{ font-size: 12.5px; font-weight: 500; color: var(--primary); margin: 2px 0 8px; }
 
   /* Onglet « Ce que ça apporte au magasin » */
@@ -419,11 +462,12 @@
 
 <div class="page">
   <div id="view-client">
-  <p class="lede">Échanger des graines entre clients, réserver un atelier, retrouver les professionnels indépendants du secteur : un aperçu de ce que pourrait devenir l'espace numérique du magasin. Essayez, vos ajouts s'affichent tout de suite.</p>
+  <p class="lede">Réserver un atelier, composer sa coupe de plantes au bar, échanger des graines, retrouver les partenaires du secteur : un aperçu de l'espace numérique du magasin pendant le pilote d'un an. Essayez, vos ajouts s'affichent tout de suite.</p>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button class="tab" id="tabbtn-graines" data-tab="graines" role="tab" aria-selected="true" aria-controls="panel-graines">Échange de graines</button>
     <button class="tab" id="tabbtn-ateliers" data-tab="ateliers" role="tab" aria-selected="false" aria-controls="panel-ateliers">Ateliers en magasin</button>
+    <button class="tab" id="tabbtn-bar" data-tab="bar" role="tab" aria-selected="false" aria-controls="panel-bar">Bar à compositions</button>
     <button class="tab" id="tabbtn-reseau" data-tab="reseau" role="tab" aria-selected="false" aria-controls="panel-reseau">Réseau local</button>
     <button class="tab tab-why" id="tabbtn-magasin" data-tab="magasin" role="tab" aria-selected="false" aria-controls="panel-magasin">Ce que ça apporte au magasin</button>
   </nav>
@@ -498,11 +542,30 @@
       <div class="grid" id="grid-ateliers"></div>
     </section>
 
+    <section id="panel-bar" class="panel" role="tabpanel" aria-labelledby="tabbtn-bar" hidden>
+      <div class="panel-head">
+        <div>
+          <h2>Bar à compositions</h2>
+          <p class="panel-intro">Choisissez une recette, prenez les plantes en rayon et composez votre coupe au bar, avec l'aide de l'équipe. Aucune fleur coupée : tout se replante ensuite au jardin ou sur le balcon.</p>
+        </div>
+      </div>
+      <figure class="banner">
+        <img src="/images/jardin-partage/bar-compositions.jpg" alt="Un bar à compositions en bois clair au cœur du rayon plantes : plantes en pot classées par couleur, contenants, terreau et ficelle" width="1376" height="768">
+        <figcaption>Le bar, au cœur du rayon plantes : pour composer, on passe devant les plantes, les contenants et les terreaux. Visuel d'intention, généré par IA.</figcaption>
+      </figure>
+      <div class="collections" id="collections" role="group" aria-label="Collections"></div>
+      <div class="grid" id="grid-recettes"></div>
+      <div class="bar-qr">
+        <h3>Un QR code sur le bar</h3>
+        <p>Affiché à hauteur des yeux, il ouvre directement cette page sur le téléphone du client, avec les recettes de la collection du moment. L'affiche ne change jamais : seule la collection change, une par temps fort.</p>
+      </div>
+    </section>
+
     <section id="panel-reseau" class="panel" role="tabpanel" aria-labelledby="tabbtn-reseau" hidden>
       <div class="panel-head">
         <div>
           <h2>Réseau local</h2>
-          <p class="panel-intro">Les indépendants du secteur, pour orienter les clients au-delà de ce que propose le magasin, et co-animer des ateliers.</p>
+          <p class="panel-intro">Les indépendants du secteur, pour orienter les clients au-delà de ce que propose le magasin, et co-animer des ateliers. Les fiches ci-dessous sont des exemples.</p>
         </div>
       </div>
 
@@ -512,7 +575,7 @@
           <span class="chevron">▾</span>
         </button>
         <form class="add-form row2" id="form-reseau" hidden>
-          <div class="field"><label for="r-nom">Nom / activité</label><input id="r-nom" required placeholder="ex. Julie Marquant — Paysagiste"></div>
+          <div class="field"><label for="r-nom">Nom / activité</label><input id="r-nom" required placeholder="ex. Paysagiste"></div>
           <div class="field"><label for="r-zone">Zone</label><input id="r-zone" required placeholder="ex. Lozanne et alentours"></div>
           <div class="field full"><label for="r-desc">Description</label><textarea id="r-desc" required placeholder="Ce que vous proposez…"></textarea></div>
           <div class="field"><label for="r-contact">Contact</label><input id="r-contact" required placeholder="email ou téléphone"></div>
@@ -554,20 +617,23 @@
 
       <div class="why-cols">
         <div class="why-box">
-          <h3>Une mise en place progressive</h3>
+          <h3>Un an, en deux temps</h3>
           <ol class="steps">
-            <li><span class="when">Mois 1</span><div><b>Tester l'échange de graines</b><span class="desc">Installer la grainothèque à alvéoles à l'accueil (pochettes et stylo fournis) et une page simple, pour vérifier que les clients jouent le jeu.</span></div></li>
-            <li><span class="when">Mois 2–3</span><div><b>Ouvrir la réservation des ateliers</b><span class="desc">Partir du planning existant, ajouter l'inscription en ligne et un rappel la veille.</span></div></li>
-            <li><span class="when">Mois 4+</span><div><b>Constituer le réseau local</b><span class="desc">Quelques indépendants de confiance d'abord, puis des ateliers co-animés.</span></div></li>
+            <li><span class="when">Décembre</span><div><b>Noël comme premier test</b><span class="desc">La collection « jardin d'hiver » au bar, montée avec le stock de Noël, et une journée des santonniers.</span></div></li>
+            <li><span class="when">Déc. → mai</span><div><b>Le pilote à Lozanne</b><span class="desc">Ateliers, bar à compositions et grainothèque, de la Saint-Valentin à la Fête des Mères, avec un suivi chaque mois.</span></div></li>
+            <li><span class="when">Début juin</span><div><b>Bilan chiffré et décision</b><span class="desc">On continue, on ajuste ou on arrête, sur la base des indicateurs.</span></div></li>
+            <li><span class="when">Juin → nov.</span><div><b>Le kit et le réseau</b><span class="desc">Un kit atelier clé en main, testé dans un ou deux autres magasins SoVert, jusqu'à Halloween et la Toussaint.</span></div></li>
           </ol>
         </div>
         <div class="why-box">
-          <h3>Ce qu'on suivrait</h3>
+          <h3>Ce qu'on suivrait chaque mois</h3>
           <ul class="kpis">
-            <li>Annonces publiées et échanges conclus au point d'accueil</li>
-            <li>Taux de remplissage des ateliers</li>
-            <li>Achats réalisés le jour d'un atelier</li>
-            <li>Nombre de partenaires actifs dans le réseau</li>
+            <li><b>Objectif : +15 % de panier moyen</b> chez les clients du bar et des ateliers, comparés aux autres clients</li>
+            <li>Fréquentation de l'espace atelier et du bar</li>
+            <li>Taux de remplissage des ateliers et réinscriptions</li>
+            <li>Compositions vendues au bar, par collection</li>
+            <li>Pertes de plantes abîmées ou invendues</li>
+            <li>Avis des clients à la sortie des ateliers</li>
           </ul>
         </div>
       </div>
@@ -584,6 +650,26 @@
     <section class="eq-section">
       <div class="panel-head">
         <div>
+          <h2>Tableau de bord du pilote</h2>
+          <p class="panel-intro">Le suivi mensuel de décembre à mai, avec l'objectif de +15 % de panier moyen.</p>
+        </div>
+      </div>
+      <p class="fictif">Chiffres fictifs, pour montrer le suivi.</p>
+      <div class="stats" id="eq-pilote"></div>
+      <div class="graph-box">
+        <h3>Panier moyen par mois</h3>
+        <div class="legende"><span><i style="background:var(--primary)"></i>Clients du bar et des ateliers</span><span><i style="background:var(--line)"></i>Autres clients</span></div>
+        <div class="svg-zone" id="eq-graph"></div>
+        <details>
+          <summary>Voir le tableau des valeurs</summary>
+          <div class="table-zone" id="eq-table"></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="eq-section">
+      <div class="panel-head">
+        <div>
           <h2>Planning des ateliers</h2>
           <p class="panel-intro">Préparer, remplir, rappeler : tout le suivi d'un atelier au même endroit.</p>
         </div>
@@ -593,7 +679,7 @@
       <form class="add-form row2 eq-form" id="form-atelier" hidden>
         <div class="field"><label for="a-titre">Titre</label><input id="a-titre" required placeholder="ex. Tailler ses rosiers"></div>
         <div class="field"><label for="a-theme">Thème</label>
-          <select id="a-theme"><option>Jardin</option><option>Potager</option><option>Floral</option><option>Parents-enfants</option></select>
+          <select id="a-theme"><option>Jardin</option><option>Potager</option><option>Compositions</option><option>Parents-enfants</option></select>
         </div>
         <div class="field"><label for="a-date">Date</label><input id="a-date" type="date" required></div>
         <div class="field"><label for="a-horaire">Horaire</label>
@@ -607,8 +693,7 @@
             <option value="/images/jardin-partage/lieu-atelier.jpg">Espace atelier (par défaut)</option>
             <option value="/images/jardin-partage/bulbes.jpg">Bulbes</option>
             <option value="/images/jardin-partage/potager-hiver.jpg">Potager</option>
-            <option value="/images/jardin-partage/composition-florale.jpg">Composition florale</option>
-            <option value="/images/jardin-partage/art-de-la-table.jpg">Art de la table</option>
+            <option value="/images/jardin-partage/bar-compositions.jpg">Bar à compositions</option>
             <option value="/images/jardin-partage/citrouille.jpg">Citrouilles</option>
           </select>
         </div>
@@ -677,7 +762,7 @@
     <div class="welcome-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3.5-2.5-5-6-5 0 3.5 2.5 5 6 5Z"/></svg></div>
     <h2 id="welcome-title">Bienvenue dans Le Jardin Partagé</h2>
     <p>Le prototype imaginé par Laurent Guyonnet pour Gamm vert Lozanne.</p>
-    <p>Échangez des graines, réservez un atelier, puis passez en vue équipe pour voir l'envers du décor.</p>
+    <p>Réservez un atelier, choisissez une recette au bar, puis passez en vue équipe pour voir le tableau de bord du pilote.</p>
     <p class="welcome-count" aria-live="polite">Ouverture dans <b id="welcome-n">3</b></p>
     <div class="welcome-bar" aria-hidden="true"><span></span></div>
     <button class="welcome-btn" id="welcome-go" type="button">Entrer maintenant</button>
@@ -704,17 +789,18 @@
   // l'atelier d'Halloween, lui, a lieu le samedi qui précède (ou qui tombe) le 31 octobre.
   var seedAteliers = [
     { weeks:0, theme:"Jardin", titre:"Planter ses bulbes de printemps", img:"/images/jardin-partage/bulbes.jpg", alt:"Mains plantant des bulbes de tulipe dans la terre", horaire:"10h – 12h", capacite:10, inscrits:6, animateur:"l'équipe du rayon jardin", desc:"Tulipes, narcisses, crocus : profondeur, exposition et associations." },
-    { weeks:1, theme:"Floral", titre:"Composition florale de saison", img:"/images/jardin-partage/composition-florale.jpg", alt:"Mains composant un bouquet d'automne aux dahlias", horaire:"14h – 16h", capacite:8, inscrits:8, animateur:"Laurent G.", desc:"Un bouquet d'automne avec les fleurs et feuillages de la semaine." },
+    { weeks:1, theme:"Compositions", titre:"Composer sa coupe replantable", img:"/images/jardin-partage/bar-compositions.jpg", alt:"Le bar à compositions, avec ses plantes en pot et ses contenants", horaire:"14h – 16h", capacite:8, inscrits:8, animateur:"l'équipe végétal du magasin", desc:"Trois plantes en pot, un contenant, un peu de mousse : une coupe de saison à offrir, puis à replanter au jardin." },
     { halloween:true, theme:"Parents-enfants", famille:true, titre:"Ma citrouille d'Halloween", img:"/images/jardin-partage/citrouille.jpg", alt:"Parents et enfants creusant des citrouilles d'Halloween", horaire:"14h – 16h", capacite:8, inscrits:5, animateur:"l'équipe du magasin", desc:"Choisir, creuser et décorer sa citrouille en famille. Chaque famille repart avec sa lanterne… et le nécessaire pour la soupe de potiron. Une place par famille." },
     { weeks:2, theme:"Potager", titre:"Préparer son potager pour l'hiver", img:"/images/jardin-partage/potager-hiver.jpg", alt:"Paillage de paille sur un potager en carrés", horaire:"10h – 12h", capacite:10, inscrits:3, animateur:"l'équipe du rayon jardin", desc:"Paillage, engrais verts et semis d'automne pour un sol prêt au printemps." },
-    { weeks:5, theme:"Floral", titre:"Art de la table pour les fêtes", img:"/images/jardin-partage/art-de-la-table.jpg", alt:"Centre de table de fête en sapin et fleurs blanches", horaire:"14h – 16h", capacite:8, inscrits:5, animateur:"Laurent G.", desc:"Composer un centre de table pour un repas de fête." }
+    { weeks:4, theme:"Parents-enfants", famille:true, titre:"Peindre son santon", img:"/images/jardin-partage/lieu-atelier.jpg", alt:"L'espace atelier du magasin, prêt à accueillir les familles", horaire:"14h – 15h", capacite:8, inscrits:6, animateur:"un santonnier invité", desc:"Pendant la journée des santonniers : chaque enfant peint son santon et repart avec, dans une petite boîte. Le décor végétal de la crèche est en rayon. Dès 6 ans." },
+    { weeks:5, theme:"Compositions", titre:"Le jardin d'hiver : la coupe des fêtes", img:"/images/jardin-partage/entreprises-evenements.jpg", alt:"Petites plantes en pot emballées de kraft, prêtes à offrir", horaire:"10h – 12h", capacite:8, inscrits:5, animateur:"l'équipe végétal du magasin", desc:"Rose de Noël, skimmia, gaulthérie et conifère nain : un cadeau qui ne se jette pas en janvier, il se replante." }
   ];
 
   var seedReseau = [
-    { nom:"Julie Marquant — Paysagiste", zone:"Lozanne et vallée d'Azergues", desc:"Aménagement de jardins et conseils en plantation, sur rendez-vous.", contact:"julie.marquant@example.fr" },
-    { nom:"Thomas Bréal — Fleuriste événementiel", zone:"Chazay-d'Azergues", desc:"Mariages et réceptions, en complément des prestations du magasin.", contact:"06 xx xx xx xx" },
-    { nom:"Anne-Laure Fontanel — Apicultrice", zone:"L'Arbresle", desc:"Miel local et sensibilisation à la pollinisation, ateliers possibles.", contact:"contact@example-miel.fr" },
-    { nom:"Karim Belaïd — Ébéniste", zone:"Civrieux-d'Azergues", desc:"Jardinières et contenants sur mesure, pour un futur atelier bois.", contact:"karim.belaid@example.fr" }
+    { nom:"Paysagiste du secteur", zone:"Exemple de partenaire", desc:"Aménagement de jardins et conseils en plantation, pour orienter les clients qui ont un projet plus large.", contact:"Contact via l'accueil du magasin" },
+    { nom:"Apiculteur ou apicultrice", zone:"Exemple de partenaire", desc:"Miel local et sensibilisation à la pollinisation : co-animation possible d'un atelier plantes mellifères.", contact:"Contact via l'accueil du magasin" },
+    { nom:"Santonnier ou santonnière", zone:"Exemple de partenaire", desc:"Démonstration et vente pendant la journée des santonniers, atelier « peindre son santon » pour les enfants.", contact:"Contact via l'accueil du magasin" },
+    { nom:"Producteur de la coopérative", zone:"Exemple de partenaire", desc:"Ateliers « du champ à l'assiette » avec les produits du réseau coopératif.", contact:"Contact via l'accueil du magasin" }
   ];
 
   // Pochettes déposées directement en magasin, sans annonce en ligne (le cas le plus courant), avec leur ancienneté.
@@ -954,10 +1040,9 @@
             : '<span class="places">' + a.capacite + ' inscrits</span><span class="complet">Complet</span>') +
         '</div>' +
         '<form class="reserve-form" id="reserve-form-' + idx + '">' +
-          '<input type="text" placeholder="Votre nom" required aria-label="Votre nom">' +
-          '<input type="email" placeholder="Votre email" required aria-label="Votre email">' +
+          '<input type="text" placeholder="Votre prénom" required aria-label="Votre prénom" maxlength="40">' +
           '<button type="submit" class="btn">Confirmer</button>' +
-          '<div class="reserve-confirm" hidden id="reserve-confirm-' + idx + '">Réservation enregistrée, à samedi !</div>' +
+          '<div class="reserve-confirm" hidden id="reserve-confirm-' + idx + '"></div>' +
         '</form>';
       grid.appendChild(card);
     });
@@ -975,10 +1060,87 @@
         var a = state.ateliers[idx];
         if(a.annule || a.capacite - a.inscrits <= 0) return;
         a.inscrits += 1;
-        a.noms.push({ nom: form.querySelector('input[type="text"]').value.trim() || "Inscription en ligne", demo: true });
-        document.getElementById("reserve-confirm-" + idx).hidden = false;
-        window.setTimeout(function(){ renderAteliers(); renderEquipe(); }, 1000);
+        var prenom = form.querySelector('input[type="text"]').value.trim() || "Inscription en ligne";
+        a.noms.push({ nom: prenom, demo: true });
+        form.querySelector('input[type="text"]').hidden = true;
+        form.querySelector('button[type="submit"]').hidden = true;
+        var confirm = document.getElementById("reserve-confirm-" + idx);
+        confirm.innerHTML = "Réservation enregistrée, " + esc(prenom) + ". À bientôt au magasin !" + agendaLinks(a);
+        confirm.hidden = false;
+        // La carte reste ouverte pour laisser le temps d'ajouter l'atelier à l'agenda ; les compteurs se mettent à jour.
+        renderEquipe();
+        notifyHeight();
       });
+    });
+    notifyHeight();
+  }
+
+  // Liens « ajouter à l'agenda » : on ne transmet que l'atelier, jamais le prénom.
+  var ADRESSE = "Gamm vert Lozanne, 33 chemin du Vavre, 69380 Lozanne";
+  function agendaLinks(a){
+    var m = /(\d{1,2})h(\d{2})?\s*[–-]\s*(\d{1,2})h(\d{2})?/.exec(a.horaire || "");
+    if(!m) return "";
+    function stamp(h, min){
+      var d = new Date(a.date); d.setHours(Number(h), Number(min || 0), 0, 0);
+      var p = function(n){ return String(n).padStart(2, "0"); };
+      return { g: d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + "T" + p(d.getHours()) + p(d.getMinutes()) + "00",
+               o: d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()) + "T" + p(d.getHours()) + ":" + p(d.getMinutes()) + ":00" };
+    }
+    var debut = stamp(m[1], m[2]), fin = stamp(m[3], m[4]);
+    var details = a.desc + " Animé par " + a.animateur + ".";
+    var g = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(a.titre) + "&dates=" + debut.g + "/" + fin.g +
+      "&ctz=Europe/Paris&location=" + encodeURIComponent(ADRESSE) + "&details=" + encodeURIComponent(details);
+    var o = "https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=" + encodeURIComponent(a.titre) +
+      "&startdt=" + debut.o + "&enddt=" + fin.o + "&location=" + encodeURIComponent(ADRESSE) + "&body=" + encodeURIComponent(details);
+    return '<div class="agenda"><a href="' + g + '" target="_blank" rel="noopener">Ajouter à Google Agenda</a><a href="' + o + '" target="_blank" rel="noopener">Ajouter à Outlook</a></div>';
+  }
+
+  // ---------- Bar à compositions : une collection par temps fort
+  var COLLECTIONS = [
+    { id:"hiver", nom:"Le jardin d'hiver", statut:"Noël", recettes:[
+      { nom:"La coupe des fêtes", format:"Format moyen, environ 30 cm", plantes:"Rose de Noël, skimmia, gaulthérie", contenant:"Panier en osier garni de mousse", deco:"Pommes de pin, brindilles", apres:"Après les fêtes, replantez à mi-ombre, dans un sol frais." },
+      { nom:"Le petit conifère", format:"Petit format, environ 20 cm", plantes:"Conifère nain, lierre panaché, cyclamen blanc", contenant:"Pot en céramique grise", deco:"Mousse, petits cailloux blancs", apres:"Au printemps, le conifère part au jardin, le lierre en bordure." }
+    ]},
+    { id:"japon", nom:"La collection japonaise", statut:"Toute l'année", recettes:[
+      { nom:"Le kokedama", format:"Une plante en boule de mousse", plantes:"Petite fougère ou lierre", contenant:"Boule de terreau entourée de mousse, ficelle naturelle", deco:"Coupelle en ardoise", apres:"Trempez la boule dix minutes quand elle devient légère." },
+      { nom:"Le jardin zen", format:"Coupe basse, environ 25 cm", plantes:"Pin nain, mousse en coussin, skimmia", contenant:"Coupe basse en grès non émaillé", deco:"Galets de rivière", apres:"Le pin et le skimmia se replantent en pot ou au jardin." }
+    ]},
+    { id:"valentin", nom:"Saint-Valentin", statut:"Février", recettes:[
+      { nom:"La coupe à deux", format:"Format moyen, environ 30 cm", plantes:"Kalanchoé rouge, anthurium, lierre", contenant:"Coupe en céramique blanche", deco:"Ruban de lin", apres:"Plantes d'intérieur : lumière vive, sans soleil direct." }
+    ]},
+    { id:"meres", nom:"Fête des Mères", statut:"Mai", recettes:[
+      { nom:"Le panier fleuri", format:"Format moyen, environ 30 cm", plantes:"Hortensia rose, marguerite, lierre panaché", contenant:"Panier rond en osier garni de mousse", deco:"Ruban de lin", apres:"L'hortensia et la marguerite se replantent au jardin dès la fin de la floraison." }
+    ]},
+    { id:"halloween", nom:"Le jardin hanté", statut:"Octobre", recettes:[
+      { nom:"La coupe sombre", format:"Format moyen, environ 30 cm", plantes:"Heuchère pourpre, herbe noire du Japon, carex bronze", contenant:"Pot noir mat", deco:"Petites coloquintes, mousse", apres:"Presque tout est vivace : replantez au jardin après Halloween." }
+    ]}
+  ];
+  var ETAPES = ["Une couche de terreau au fond du contenant.", "La plante la plus haute à l'arrière.", "Les deux autres devant, puis du terreau pour combler, sans tasser.", "La mousse et la décoration, puis un arrosage léger."];
+  var collectionActive = "hiver";
+
+  function renderBar(){
+    var zone = document.getElementById("collections");
+    zone.innerHTML = "";
+    COLLECTIONS.forEach(function(c){
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "collection";
+      b.setAttribute("aria-pressed", String(c.id === collectionActive));
+      b.innerHTML = esc(c.nom) + ' <small>' + esc(c.statut) + '</small>';
+      b.addEventListener("click", function(){ collectionActive = c.id; renderBar(); });
+      zone.appendChild(b);
+    });
+    var col = COLLECTIONS.filter(function(c){ return c.id === collectionActive; })[0];
+    var grid = document.getElementById("grid-recettes");
+    grid.innerHTML = "";
+    col.recettes.forEach(function(r){
+      var card = document.createElement("article");
+      card.className = "card recette";
+      card.innerHTML = '<span class="atelier-theme">' + esc(col.nom) + '</span><h3>' + esc(r.nom) + '</h3>' +
+        '<p class="desc" style="flex:0">' + esc(r.format) + '</p>' +
+        '<ul class="liste"><li><span>Plantes</span>' + esc(r.plantes) + '</li><li><span>Contenant</span>' + esc(r.contenant) + '</li><li><span>Déco</span>' + esc(r.deco) + '</li></ul>' +
+        '<ol>' + ETAPES.map(function(e){ return '<li>' + esc(e) + '</li>'; }).join("") + '</ol>' +
+        '<div class="apres">' + esc(r.apres) + '</div>';
+      grid.appendChild(card);
     });
     notifyHeight();
   }
@@ -1003,6 +1165,7 @@
     renderGraines(false);
     renderAteliers();
     renderReseau(false);
+    renderBar();
     renderEquipe();
   }
 
@@ -1066,6 +1229,53 @@
       '<p class="panel-intro" style="margin:0 0 12px">Environ 25 pochettes partent chaque semaine. Le présentoir en contient une trentaine.</p>' +
       (low ? '<button class="mini" type="button" id="eq-order">Commander 200 pochettes</button>' : '');
     notifyHeight();
+  }
+
+  // Données fictives du pilote, de décembre à mai
+  var MOIS_PILOTE = ["Déc.", "Janv.", "Févr.", "Mars", "Avr.", "Mai"];
+  var PANIER_PART = [44.1, 45.2, 46.6, 47.5, 47.3, 48.9];
+  var PANIER_AUTRES = [39.5, 38.9, 40.1, 41.0, 40.6, 41.8];
+  function euros(n){ return n.toFixed(2).replace(".", ",") + " €"; }
+
+  function renderPilote(){
+    var moy = function(t){ return t.reduce(function(a, b){ return a + b; }, 0) / t.length; };
+    var pp = moy(PANIER_PART), pa = moy(PANIER_AUTRES);
+    var ecart = Math.round((pp / pa - 1) * 1000) / 10;
+    document.getElementById("eq-pilote").innerHTML =
+      '<div class="stat objectif"><p>Panier moyen</p><strong>+' + String(ecart).replace(".", ",") + ' %</strong><p>' + euros(pp) + ' contre ' + euros(pa) + '</p>' +
+        '<div class="jauge" aria-hidden="true"><i style="width:' + Math.min(100, ecart / 20 * 100) + '%"></i><b style="left:75%"></b></div>' +
+        (ecart >= 15 ? '<span class="pastille">✓ Objectif +15 % atteint</span>' : '<p>Objectif : +15 %</p>') + '</div>' +
+      '<div class="stat"><p>Compositions vendues au bar</p><strong>412</strong><p>dont 168 « jardin d\'hiver »</p></div>' +
+      '<div class="stat"><p>Pertes de plantes</p><strong>2,1 %</strong><p>abîmées ou invendues</p></div>' +
+      '<div class="stat"><p>Fréquentation</p><strong>1 240</strong><p>passages à l\'espace atelier et au bar</p></div>' +
+      '<div class="stat"><p>Avis clients</p><strong>4,7 / 5</strong><p>à la sortie des ateliers</p></div>';
+
+    var W = 640, H = 250, m = { h:16, d:12, b:30, g:46 }, iw = W - m.g - m.d, ih = H - m.h - m.b;
+    var min = 30, max = 55, y = function(v){ return m.h + ih - (v - min) / (max - min) * ih; };
+    var bande = iw / MOIS_PILOTE.length, bl = 22, gap = 2;
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Panier moyen par mois, clients du bar et des ateliers comparés aux autres clients">';
+    [30, 35, 40, 45, 50, 55].forEach(function(t){
+      svg += '<line x1="' + m.g + '" x2="' + (W - m.d) + '" y1="' + y(t) + '" y2="' + y(t) + '" stroke="var(--line)" stroke-width="1"/>' +
+        '<text x="' + (m.g - 8) + '" y="' + (y(t) + 4) + '" text-anchor="end">' + t + ' €</text>';
+    });
+    function barre(x, v, couleur, info){
+      var top = y(v), base = y(min), r = 4;
+      return '<path d="M' + x + ',' + base + ' V' + (top + r) + ' Q' + x + ',' + top + ' ' + (x + r) + ',' + top + ' H' + (x + bl - r) + ' Q' + (x + bl) + ',' + top + ' ' + (x + bl) + ',' + (top + r) + ' V' + base + ' Z" fill="' + couleur + '"><title>' + esc(info) + '</title></path>';
+    }
+    MOIS_PILOTE.forEach(function(mo, i){
+      var cx = m.g + bande * i + bande / 2, x1 = cx - bl - gap / 2, x2 = cx + gap / 2;
+      var v1 = PANIER_PART[i], v2 = PANIER_AUTRES[i], ec = Math.round((v1 / v2 - 1) * 100);
+      svg += barre(x1, v1, "var(--primary)", mo + " · clients du bar et des ateliers : " + euros(v1));
+      svg += barre(x2, v2, "var(--line)", mo + " · autres clients : " + euros(v2));
+      svg += '<text x="' + cx + '" y="' + (H - 10) + '" text-anchor="middle">' + mo + '</text>';
+      if(i === 0 || i === MOIS_PILOTE.length - 1) svg += '<text class="vlab" x="' + (x1 + bl / 2) + '" y="' + (y(v1) - 6) + '" text-anchor="middle">+' + ec + ' %</text>';
+    });
+    svg += '<line x1="' + m.g + '" x2="' + (W - m.d) + '" y1="' + y(min) + '" y2="' + y(min) + '" stroke="var(--ink-soft)" stroke-width="1"/></svg>';
+    document.getElementById("eq-graph").innerHTML = svg;
+
+    var t = '<table><thead><tr><th>Mois</th><th>Bar et ateliers</th><th>Autres clients</th><th>Écart</th></tr></thead><tbody>';
+    MOIS_PILOTE.forEach(function(mo, i){ t += '<tr><td>' + mo + '</td><td>' + euros(PANIER_PART[i]) + '</td><td>' + euros(PANIER_AUTRES[i]) + '</td><td>+' + Math.round((PANIER_PART[i] / PANIER_AUTRES[i] - 1) * 100) + ' %</td></tr>'; });
+    document.getElementById("eq-table").innerHTML = t + '</tbody></table>';
   }
 
   function setupEquipe(){
@@ -1343,6 +1553,7 @@
     setupReset();
     setupEquipe();
     setupViews();
+    renderPilote();
     notifyHeight();
     window.addEventListener("resize", notifyHeight);
     if(document.fonts && document.fonts.ready) document.fonts.ready.then(notifyHeight);

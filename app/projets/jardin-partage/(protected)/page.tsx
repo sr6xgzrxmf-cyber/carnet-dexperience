@@ -35,8 +35,8 @@ export default async function JardinPartagePage() {
         </div>
       </div>
       <p className="mt-3 max-w-3xl text-sm text-neutral-600 dark:text-neutral-400">
-        Prototype interactif présenté en complément de la candidature spontanée envoyée à Gamm Vert Lozanne : échange de
-        graines entre clients, réservation d&rsquo;ateliers, mise en relation avec les indépendants locaux.
+        Prototype interactif présenté en complément de la candidature spontanée envoyée au Groupe Oxyane : réservation
+        d&rsquo;ateliers, recettes du bar à compositions, échange de graines et tableau de bord du pilote d&rsquo;un an.
       </p>
       {isOwner ? <QrShare /> : null}
       <Widget html={html} />
