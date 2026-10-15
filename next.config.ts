@@ -9,6 +9,17 @@ const nextConfig: NextConfig = {
     "/admin/**/*": ["./content/**/*"],
     "/projets/jardin-partage/**/*": ["./content/private/**/*"],
   },
+  // Liens courts à partager sur LinkedIn : ils mènent à la page visée et
+  // étiquettent la visite pour les statistiques.
+  async redirects() {
+    return [
+      {
+        source: "/donnees",
+        destination: "/series/mes-donnees-a-la-maison?utm_source=LinkedIn&utm_campaign=mes-donnees",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
