@@ -680,6 +680,39 @@
   color: var(--ink);
 }
 
+.linkedinContact {
+  margin-top: 56px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 28px;
+  padding: 26px 28px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--sage);
+  background: var(--paper-bright);
+}
+
+.linkedinContact > div {
+  flex: 1 1 320px;
+}
+
+.linkedinContactTitle {
+  margin: 0;
+  font-family: var(--font-lora), Georgia, serif;
+  font-size: clamp(21px, 2.4vw, 25px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.linkedinContactText {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
 .articleCard {
   min-height: 100%;
   display: flex;

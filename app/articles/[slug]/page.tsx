@@ -18,6 +18,7 @@ import { getArticleThemes } from "@/lib/article-themes";
 import { normalizeArticleDate } from "@/lib/article-date";
 import { formatReadingTime } from "@/lib/reading-time";
 import { effectiveEditorialStatus, EDITORIAL_STATUS_LABELS } from "@/lib/editorial-status";
+import LinkedInContact from "@/components/LinkedInContact";
 import styles from "@/app/editorial-system.module.css";
 
 export const revalidate = 300;
@@ -326,6 +327,8 @@ export default async function ArticleDetailPage({
         className={styles.prose}
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
+
+      <LinkedInContact article={slug} />
 
       <section className={styles.cta} aria-labelledby="article-offer-title">
         <p className={styles.cardEyebrow}>Passer de la réflexion à la situation réelle</p>

@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "slug": "2026-10-15-pourquoi-je-veux-garder-mes-donnees-a-la-maison",
+      "label": "Souveraineté numérique",
+      "size": "feature",
+      "active": true
+    },
+    {
+      "slug": "2026-10-15-locataire-de-mes-outils-jai-voulu-devenir-proprietaire",
+      "label": "Données à la maison",
+      "size": "tall",
+      "active": true
+    },
+    {
       "slug": "2026-09-09-be-curious-not-judgmental-ce-que-nous-inventons-sur-les-autres",
       "label": "Article",
       "size": "tall",
