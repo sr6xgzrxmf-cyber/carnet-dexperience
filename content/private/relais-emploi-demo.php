@@ -78,6 +78,40 @@ add_action('wp_body_open', function () {
   $tour = esc_url(home_url('/visite-guidee/'));
   echo '<div style="background:#89c63a;color:#19283d;text-align:center;font:600 14px/1.4 Poppins,sans-serif;padding:8px 16px">Site de démonstration — données fictives — maquette proposée par Laurent Guyonnet (session 188) · <a href="' . $tour . '" style="color:#19283d;text-decoration:underline">← Visite guidée</a></div>';
 });
+// Barre des huit étapes, fixée en bas de chaque écran (site et administration) : on navigue sans chercher.
+function relais_tour_bar() {
+  $steps = [
+    ['Mail de bienvenue', home_url('/visite-guidee/')],
+    ['Inscription', home_url('/inscription-session-189/')],
+    ['Fiches bénévole', admin_url('admin.php?page=fluent_forms&route=entries&form_id=3')],
+    ['Pitch final', home_url('/pitch-final-session-189/')],
+    ['Nouvelles', home_url('/reseau/donnez-nous-de-vos-nouvelles/')],
+    ['Article bénévole', admin_url('edit.php?post_status=pending&post_type=post')],
+    ['Newsletter n° 0', admin_url('admin.php?page=mailpoet-newsletter-editor&id=1')],
+    ['Abonnés', admin_url('admin.php?page=mailpoet-subscribers')],
+  ];
+  $uri = $_SERVER['REQUEST_URI'] ?? '';
+  $current = 0;
+  foreach ([2 => 'inscription-session-189', 4 => 'pitch-final-session-189', 5 => 'donnez-nous-de-vos-nouvelles', 3 => 'page=fluent_forms', 6 => 'post_status=pending', 7 => 'mailpoet-newsletter-editor', 8 => 'mailpoet-subscribers', 1 => 'visite-guidee'] as $n => $needle) {
+    if (strpos($uri, $needle) !== false) { $current = $n; break; }
+  }
+  $links = '';
+  foreach ($steps as $i => [$label, $url]) {
+    $n = $i + 1;
+    $links .= '<a href="' . esc_url($url) . '" style="padding:6px 10px;border-radius:999px;text-decoration:none;white-space:nowrap;'
+      . ($n === $current ? 'background:#19283d;color:#fff' : 'background:#fff;color:#19283d;border:1px solid #b1d2e1') . '">' . $n . '. ' . esc_html($label) . '</a>';
+  }
+  $prev = $current > 1 ? '<a href="' . esc_url($steps[$current - 2][1]) . '" style="color:#19283d;white-space:nowrap">← Précédente</a>' : '';
+  if ($current && $current < 8) $next = '<a href="' . esc_url($steps[$current][1]) . '" style="color:#19283d;font-weight:700;white-space:nowrap">Étape suivante →</a>';
+  elseif (!$current) $next = '<a href="' . esc_url($steps[0][1]) . '" style="color:#19283d;font-weight:700;white-space:nowrap">Commencer la visite →</a>';
+  else $next = '';
+  echo '<div id="relais-tour" style="position:fixed;left:0;right:0;bottom:0;z-index:999999;background:#e6f2d8;border-top:3px solid #89c63a;font:13px/1.3 Poppins,-apple-system,sans-serif;padding:8px 12px;display:flex;gap:12px;align-items:center;overflow-x:auto">'
+    . '<strong style="color:#19283d;white-space:nowrap">Visite guidée</strong>' . $prev . $next
+    . '<span style="display:flex;gap:6px">' . $links . '</span></div>'
+    . '<style>body{padding-bottom:64px!important}</style>';
+}
+add_action('wp_footer', 'relais_tour_bar');
+add_action('admin_footer', 'relais_tour_bar');
 // Les pages protégées rappellent le mot de passe de démonstration.
 add_filter('the_password_form', function ($form) {
   return '<p style="background:#fff4d6;border-left:4px solid #ff4b34;padding:10px 14px"><strong>Démonstration :</strong> le mot de passe de cette page est <strong>Relais189</strong>. Dans la réalité, il serait donné dans le mail de bienvenue.</p>' . $form;
