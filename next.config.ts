@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
     "/api/admin/**/*": ["./content/**/*"],
     "/admin/**/*": ["./content/**/*"],
     "/projets/jardin-partage/**/*": ["./content/private/**/*"],
+    "/projets/relais-emploi/**/*": ["./content/private/**/*"],
   },
   // Liens courts à partager sur LinkedIn : ils mènent à la page visée et
   // étiquettent la visite pour les statistiques.

@@ -44,6 +44,8 @@ const STATIC_PAGES: Record<string, string> = {
   "/situations-d-intervention": "Situations d’intervention",
   "/projets/jardin-partage": "Le Jardin Partagé",
   "/projets/jardin-partage/login": "Le Jardin Partagé · connexion",
+  "/projets/relais-emploi": "Relais Emploi · démonstration",
+  "/projets/relais-emploi/login": "Relais Emploi · connexion",
 };
 
 // Couleurs et initiales des provenances les plus courantes.
