@@ -78,6 +78,13 @@ function blueprint(setupCode: string) {
   };
 }
 
+// Le blueprint passe dans l'URL en base64 : en JSON brut, les « % » du script cassent le décodage.
+function toBase64(text: string) {
+  let binary = "";
+  for (const byte of new TextEncoder().encode(text)) binary += String.fromCharCode(byte);
+  return btoa(binary);
+}
+
 export default function Demo({ setupCode }: { setupCode: string }) {
   const frame = useRef<HTMLIFrameElement>(null);
   const stage = useRef<HTMLDivElement>(null);
@@ -85,12 +92,15 @@ export default function Demo({ setupCode }: { setupCode: string }) {
   const started = useRef(false);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
   const [active, setActive] = useState(0);
+  const [slow, setSlow] = useState(false);
 
   // WordPress Playground fait tourner WordPress dans le navigateur : rien n'est envoyé ni conservé.
   useEffect(() => {
     if (started.current || !frame.current) return;
     started.current = true;
     const iframe = frame.current;
+    // Chrome qui bloque le stockage tiers empêche le démarrage intégré : on propose alors un onglet dédié.
+    window.setTimeout(() => setSlow(true), 90_000);
     (async () => {
       const url = `${PLAYGROUND}/client/index.js`;
       const { startPlaygroundWeb } = await import(/* webpackIgnore: true */ url);
@@ -180,6 +190,20 @@ export default function Demo({ setupCode }: { setupCode: string }) {
                 </button>
               </>
             )}
+            {slow || status === "error" ? (
+              <div className="mt-4 max-w-md text-sm">
+                <p>Toujours rien ? Certains navigateurs bloquent le WordPress intégré à la page.</p>
+                <a
+                  href={`${PLAYGROUND}/#${toBase64(JSON.stringify(blueprint(setupCode)))}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block rounded-full bg-neutral-900 px-4 py-2 font-semibold text-white"
+                >
+                  Ouvrir la démonstration dans un nouvel onglet
+                </a>
+                <p className="mt-2 text-xs text-neutral-500">Le même WordPress, sur le site de WordPress Playground : suivez les étapes ci-dessus avec le menu du site.</p>
+              </div>
+            ) : null}
           </div>
         ) : null}
       </div>
