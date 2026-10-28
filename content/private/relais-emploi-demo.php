@@ -75,12 +75,30 @@ else { $gp['hide_title'] = false; update_option('generate_settings', $gp); } // 
 file_put_contents(WP_CONTENT_DIR . '/mu-plugins/relais-demo.php', <<<'PHP'
 <?php
 add_action('wp_body_open', function () {
-  echo '<div style="background:#89c63a;color:#19283d;text-align:center;font:600 14px/1.4 Poppins,sans-serif;padding:8px 16px">Site de démonstration — données fictives — maquette proposée par Laurent Guyonnet (session 188)</div>';
+  $tour = esc_url(home_url('/visite-guidee/'));
+  echo '<div style="background:#89c63a;color:#19283d;text-align:center;font:600 14px/1.4 Poppins,sans-serif;padding:8px 16px">Site de démonstration — données fictives — maquette proposée par Laurent Guyonnet (session 188) · <a href="' . $tour . '" style="color:#19283d;text-decoration:underline">← Visite guidée</a></div>';
+});
+// Les pages protégées rappellent le mot de passe de démonstration.
+add_filter('the_password_form', function ($form) {
+  return '<p style="background:#fff4d6;border-left:4px solid #ff4b34;padding:10px 14px"><strong>Démonstration :</strong> le mot de passe de cette page est <strong>Relais189</strong>. Dans la réalité, il serait donné dans le mail de bienvenue.</p>' . $form;
 });
 // MailPoet signale qu'il tourne dans Playground : inutile pour la démonstration.
 add_action('admin_head', function () { echo '<style>[data-notice="wordpress-playground-notice"]{display:none}</style>'; });
+// Dans l'administration, chaque écran de la visite dit ce que l'on regarde.
 add_action('admin_notices', function () {
-  echo '<div class="notice notice-info"><p><strong>Démonstration :</strong> les participants et les réponses sont fictifs. Vous pouvez tout essayer : rien n’est conservé à la fermeture de la page.</p></div>';
+  $page = $_GET['page'] ?? '';
+  $steps = [
+    'fluent_forms' => ['3', 'Les fiches côté bénévole', 'Chaque fiche d’inscription arrive ici, jamais sur le site public. Ouvrez une fiche pour la lire, puis « Exporter » pour obtenir le tableur à coller dans la liste réseau.'],
+    'mailpoet-newsletter-editor' => ['7', 'La newsletter n° 0', 'Le numéro reprend les pitchs finaux acceptés, les nouvelles des anciens et l’article du bénévole. On le modifie en glissant des blocs, puis on l’envoie.'],
+    'mailpoet-subscribers' => ['8', 'Les abonnés', 'Seuls ceux qui ont coché la case reçoivent la newsletter. Les anciens s’abonnent eux-mêmes et se désabonnent en un clic.'],
+  ];
+  if (isset($steps[$page])) $step = $steps[$page];
+  elseif (($GLOBALS['pagenow'] ?? '') === 'edit.php' && ($_GET['post_status'] ?? '') === 'pending') $step = ['6', 'L’article d’un bénévole', 'Michel a un compte « Contributeur » : son article attend ici qu’un responsable le relise et clique sur « Publier ».'];
+  else $step = null;
+  $tour = esc_url(home_url('/visite-guidee/'));
+  $title = $step ? 'Étape ' . $step[0] . ' — ' . $step[1] . ' : ' : 'Démonstration : ';
+  $text = $step ? $step[2] : 'les participants et les réponses sont fictifs. Vous pouvez tout essayer : rien n’est conservé à la fermeture de la page.';
+  echo '<div class="notice notice-info"><p><strong>' . esc_html($title) . '</strong>' . esc_html($text) . ' <a href="' . $tour . '">← Revenir à la visite guidée</a></p></div>';
 });
 PHP);
 
@@ -285,8 +303,10 @@ $urlInscription = home_url('/inscription-session-189/');
 $urlPitch = home_url('/pitch-final-session-189/');
 $urlNouvelles = home_url('/reseau/donnez-nous-de-vos-nouvelles/');
 $urlNewsletter = home_url('/reseau/recevoir-la-newsletter/');
+$urlVisite = home_url('/visite-guidee/');
 $home = relais_page('Accueil', <<<HTML
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"accent"} --><h1 class="wp-block-heading has-text-align-center has-accent-color has-text-color">Relais Emploi Lyon | Le réseau des participants</h1><!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"background":"#fff4d6"}}} --><p class="has-background" style="background-color:#fff4d6;padding:12px 16px"><strong>Démonstration :</strong> vous découvrez la maquette ? Commencez par la <a href="{$urlVisite}">visite guidée en huit étapes</a>.</p><!-- /wp:paragraph -->
 <!-- wp:paragraph --><p>Cette maquette reprend le site du Relais pour montrer, sur un vrai WordPress, comment faire vivre le réseau des participants : inscription en ligne, pitch final, nouvelles des anciens et newsletter.</p><!-- /wp:paragraph -->
 <!-- wp:heading --><h2 class="wp-block-heading">Le parcours en quatre pages</h2><!-- /wp:heading -->
 <!-- wp:list --><ul><!-- wp:list-item --><li><a href="{$urlInscription}">Inscription à la session 189</a> (page protégée, mot de passe : Relais189)</li><!-- /wp:list-item --><!-- wp:list-item --><li><a href="{$urlPitch}">Pitch final</a> (même mot de passe)</li><!-- /wp:list-item --><!-- wp:list-item --><li><a href="{$urlNouvelles}">Donnez-nous de vos nouvelles</a></li><!-- /wp:list-item --><!-- wp:list-item --><li><a href="{$urlNewsletter}">Recevoir la newsletter</a></li><!-- /wp:list-item --></ul><!-- /wp:list -->
@@ -308,6 +328,36 @@ $pitchPage = relais_page('Pitch final — session 189', <<<HTML
 <!-- wp:paragraph --><p>Dernière séance : déposez ici la version aboutie de votre pitch. Seule cette version peut être publiée dans la newsletter, et seulement si vous cochez la case.</p><!-- /wp:paragraph -->
 <!-- wp:shortcode -->[fluentform id="{$formPitch}"]<!-- /wp:shortcode -->
 HTML, ['post_password' => 'Relais189', 'post_name' => 'pitch-final-session-189']);
+// La visite guidée : le WordPress se comprend seul, même ouvert hors de la page de Laurent.
+$urlHome = home_url('/');
+$urlFiches = admin_url('admin.php?page=fluent_forms&route=entries&form_id=' . $formInscription);
+$urlAttente = admin_url('edit.php?post_status=pending&post_type=post');
+$urlLettre = admin_url('admin.php?page=mailpoet-newsletter-editor&id=1');
+$urlAbonnes = admin_url('admin.php?page=mailpoet-subscribers');
+$visite = relais_page('Visite guidée', <<<HTML
+<!-- wp:heading {"level":1} --><h1 class="wp-block-heading">Visite guidée de la démonstration</h1><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Ce WordPress est une <strong>maquette du site du Relais Emploi Lyon</strong>, proposée par Laurent Guyonnet (session 188). Elle montre comment faire vivre le réseau des participants : <strong>récolter les informations dès l’inscription</strong>, puis <strong>les entretenir avec une newsletter</strong>. Même thème que le site actuel, deux extensions gratuites (Fluent Forms et MailPoet), des personnes fictives. Vous pouvez tout essayer : rien n’est conservé.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p>Suivez les huit étapes dans l’ordre. Le lien « ← Visite guidée », dans le bandeau vert ou dans l’administration, vous ramène toujours ici.</p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">1. Le mail de bienvenue (bénévole)</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Après l’entretien d’accueil, le bénévole envoie un mail type, préparé une fois pour toutes :</p><!-- /wp:paragraph -->
+<!-- wp:quote --><blockquote class="wp-block-quote"><!-- wp:paragraph --><p><strong>Objet : Bienvenue dans la session 189</strong><br>Bonjour Sabrina, bienvenue dans la session 189 ! Avant la première séance du lundi 2 novembre, merci de remplir votre fiche d’inscription : <a href="{$urlInscription}">lien</a>. Mot de passe : <strong>Relais189</strong>. Vous y trouverez aussi le premier exercice, « L’art de se présenter ». Pour ajouter toutes les séances à votre agenda en un clic : [lien de l’agenda].</p><!-- /wp:paragraph --></blockquote><!-- /wp:quote -->
+<!-- wp:heading --><h2 class="wp-block-heading">2. La fiche d’inscription (participant)</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>La page n’apparaît ni dans le menu ni dans Google. Mot de passe : <strong>Relais189</strong>. La fiche contient le premier exercice et les cases de consentement ; vous pouvez l’envoyer pour de vrai. → <a href="{$urlInscription}">Ouvrir la fiche d’inscription</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">3. Les fiches côté bénévole</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Chaque fiche arrive dans l’administration, jamais sur le site public. Le bénévole les lit, les filtre, puis les exporte en tableur pour la liste réseau. → <a href="{$urlFiches}">Voir les fiches reçues</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">4. Le pitch final (participant)</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>À la dernière séance, chacun dépose la version aboutie de son pitch (même mot de passe : <strong>Relais189</strong>). Seule cette version peut paraître dans la newsletter, et seulement si la case est cochée. → <a href="{$urlPitch}">Ouvrir le pitch final</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">5. Les nouvelles des anciens</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Les anciens donnent leurs nouvelles en deux minutes. Elles mettent à jour la liste réseau et nourrissent le numéro suivant. → <a href="{$urlNouvelles}">Ouvrir « Donnez-nous de vos nouvelles »</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">6. L’article d’un bénévole</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Michel a un compte « Contributeur » : son article attend qu’un responsable le relise et le publie. → <a href="{$urlAttente}">Voir l’article en attente</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">7. La newsletter n° 0</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Pitchs finaux acceptés, nouvelles des anciens, article du bénévole, aux couleurs du site. On la modifie en glissant des blocs. → <a href="{$urlLettre}">Ouvrir la newsletter dans l’éditeur</a></p><!-- /wp:paragraph -->
+<!-- wp:heading --><h2 class="wp-block-heading">8. Les abonnés</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Seuls ceux qui ont coché la case reçoivent la newsletter ; les anciens s’abonnent eux-mêmes depuis <a href="{$urlNewsletter}">« Recevoir la newsletter »</a> et se désabonnent en un clic. → <a href="{$urlAbonnes}">Voir les abonnés</a></p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><a href="{$urlHome}">Voir la page d’accueil du site</a></p><!-- /wp:paragraph -->
+HTML, ['post_name' => 'visite-guidee']);
+update_post_meta($visite, '_generate-disable-headline', 'true');
 $actualites = relais_page('Actualités', '');
 update_option('show_on_front', 'page');
 update_option('page_on_front', $home);

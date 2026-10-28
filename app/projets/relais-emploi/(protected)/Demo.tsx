@@ -62,7 +62,7 @@ const PLAYGROUND = "https://playground.wordpress.net";
 
 function blueprint(setupCode: string) {
   return {
-    landingPage: "/",
+    landingPage: "/visite-guidee/",
     preferredVersions: { php: "8.2", wp: "latest" },
     features: { networking: true },
     login: true,
